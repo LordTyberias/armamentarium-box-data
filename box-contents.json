@@ -2756,6 +2756,17 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/combat-patrol-chaos-space-marines-new-"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Thousand Sons",
+      "productCodes": [
+        "99120102195"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-thousand-sons",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-thousand-sons"
+      ],
+      "generation": "current"
     }
   ]
 }
