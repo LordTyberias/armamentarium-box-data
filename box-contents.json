@@ -2590,6 +2590,20 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/combat-patrol-dark-angels2"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Blood Angels",
+      "productCodes": [
+        "99120101412"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-blood-angels",
+        "https://abyssgamestore.ca/products/combat-patrol-blood-angels-41-25",
+        "https://radaddel.de/products/blood-angels-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-blood-angels-1",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/combat-patrol-blood-angels-new-"
+      ],
+      "generation": "current"
     }
   ]
 }
