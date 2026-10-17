@@ -2052,6 +2052,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Introductory Set",
+      "productCodes": [
+        "60010299050"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/age-of-sigmar-introductory-set",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/age-of-sigmar-introductory-set"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormcast Eternals Liberators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Skaven Clanrats",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
