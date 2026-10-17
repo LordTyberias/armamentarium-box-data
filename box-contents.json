@@ -1285,6 +1285,54 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Kill Team - Murderwing",
+      "productCodes": [
+        "99120102232"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-kill-team-murderwing",
+        "https://www.retrofixgames.com/products/kill-team-murderwing",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/kill-team/kill-team-murderwing"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Lord with Jump Pack",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Champion",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Shrieker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Curseclaw",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Skysear",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Huntmaster",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
