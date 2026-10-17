@@ -2353,6 +2353,60 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Deathwatch Upgrade Pack ( 39-15 )",
+      "productCodes": [
+        "99070109007"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/deathwatch-upgrade-pack-39-15",
+        "https://www.retrofixgames.com/products/warhammer-40k-deathwatch-upgrades",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/deathwatch/deathwatch-upgrades",
+        "https://radaddel.de/products/deathwatch-upgrades"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deathwatch Space Marine shoulder pads",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Deathwatch Space Marine Terminator shoulder pads",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Deathwatch Space Marine Sergeant chest plate",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Deathwatch Space Marine Sergeant helmets",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Deathwatch Space Marine power sword",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Deathwatch backpack icon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Deathwatch vehicle/walker icons",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
