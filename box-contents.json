@@ -2465,6 +2465,118 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Upgrades and Transfers",
+      "productCodes": [
+        "99120101369"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-upgrades-and-transfers",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-upgrades-and-transfers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mk X Tacticus Armour shoulder pads",
+              "count": 12
+            },
+            {
+              "role": "team",
+              "name": "Mk X Gravis Armour shoulder pads",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Mk VI power armour shoulder pad",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "multi-melta for use with Black Templars vehicles",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Initiate Heads",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Marshal's head",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Neophyte heads",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Neophyte arms with combat shotguns",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "alternate arm options",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "arm option with a choice of two hands",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Astartes chainsword in scabbard",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Black Templars backpack with a recess along its top edge for use with accessories",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "purity seals",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "larger honorific ribbons",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "sanctified grenade",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "ribbon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "lanterns",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "relic bones",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "burning candle stacks",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
