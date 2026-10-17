@@ -2826,6 +2826,17 @@
         "https://radaddel.de/products/orks-combat-patrol"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Aeldari",
+      "productCodes": [
+        "99120104097"
+      ],
+      "sources": [
+        "https://radaddel.de/products/aeldari-combat-patrol",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/combat-patrol-aeldari"
+      ],
+      "generation": "current"
     }
   ]
 }
