@@ -2996,6 +2996,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Imperial Agents - Imperial Navy Breachers",
+      "productCodes": [
+        "99120108152"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-imperial-agents-imperial-navy-breachers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-imperial-navy-breachers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Navis Sergeant-at-Arms",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Navis Armsmen armed with a Navis shotgun and a close combat weapon",
+              "count": 7
+            },
+            {
+              "role": "team",
+              "name": "Navis Armsman armed with a Navis las-volley",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Navis Armsman armed with a Navis heavy shotgun",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
