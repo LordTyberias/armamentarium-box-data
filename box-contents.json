@@ -1325,6 +1325,64 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Kill Team - Murderwing",
+      "productCodes": [
+        "99120102232"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-kill-team-murderwing",
+        "https://www.retrofixgames.com/products/kill-team-murderwing",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/kill-team/kill-team-murderwing"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Lord with Jump Pack",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "741a-e56f-b153-4161",
+              "entryId": "f3f1-7739-135c-d22b",
+              "name": "Champion",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "741a-e56f-b153-4161",
+              "entryId": "0e13-64ac-9f30-bfa0",
+              "name": "Shrieker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "741a-e56f-b153-4161",
+              "entryId": "f1ca-abb5-7b70-4b7e",
+              "name": "Curseclaw",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "741a-e56f-b153-4161",
+              "entryId": "0f20-7e51-c7cc-715d",
+              "name": "Skysear",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "741a-e56f-b153-4161",
+              "entryId": "6d03-f8ae-f0e0-1426",
+              "name": "Huntmaster",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
