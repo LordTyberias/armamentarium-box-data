@@ -46,16 +46,18 @@ public static partial class ContentLines
                 continue;
             }
 
-            var name = match.Groups["name"].Value;
+            // "Captain: Leads the brothers" and "Captain – Guides the brothers" end the name at the shop's description,
+            // so neither an excluded word nor an "and 2" in the description reaches the checks below.
+            var nonPlayer = NonPlayer().IsMatch(match.Groups["name"].Value);
+            var name = WithoutDescription(match.Groups["name"].Value);
             if (Excluded().IsMatch(name))
             {
                 continue;
             }
 
             // "10 Termagants and 1 Ripper Swarm non-player operatives" is two lines; the marker belongs to both.
-            var nonPlayer = NonPlayer().IsMatch(name);
             var count = int.Parse(match.Groups["count"].Value);
-            var and = AndCount().Match(name);
+            var and = NextAnd(name);
             while (true)
             {
                 var part = and.Success ? name[..and.Index] : name;
@@ -73,7 +75,7 @@ public static partial class ContentLines
 
                 count = int.Parse(and.Groups["count"].Value);
                 name = name[(and.Index + and.Length)..];
-                and = AndCount().Match(name);
+                and = NextAnd(name);
             }
         }
 
@@ -107,12 +109,26 @@ public static partial class ContentLines
     public static string DisplayName(string name) =>
         Spaces().Replace(DisplayFiller().Replace(name, " "), " ").Trim();
 
+    private static string WithoutDescription(string name)
+    {
+        var colon = name.IndexOf(':');
+        var dash = DescriptionDash().Match(name);
+        var end = dash.Success && (colon < 0 || dash.Index < colon) ? dash.Index : colon;
+        return end >= 0 ? name[..end] : name;
+    }
+
+    // An "and 2" inside a parenthesis ("with rifles and 2 grenades") is prose, not a second line.
+    private static Match NextAnd(string name)
+    {
+        var and = AndCount().Match(name);
+        var parenthesis = name.IndexOf('(');
+        return and.Success && (parenthesis < 0 || and.Index < parenthesis) ? and : Match.Empty;
+    }
+
     private static string Cut(string name, bool alternative)
     {
         var end = name.Length;
-        // "Captain: Leads the brothers" and "Captain – Leads the brothers" end the name at the description.
-        var dash = DescriptionDash().Match(name);
-        foreach (var stop in new[] { name.IndexOf('('), name.IndexOf(','), name.IndexOf(':'), dash.Success ? dash.Index : -1 })
+        foreach (var stop in new[] { name.IndexOf('('), name.IndexOf(',') })
         {
             if (stop >= 0 && stop < end)
             {

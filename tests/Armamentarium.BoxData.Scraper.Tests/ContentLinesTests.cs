@@ -107,6 +107,19 @@ public sealed class ContentLinesTests
     }
 
     [TestMethod]
+    public void Parse_WordsInTheDescription_NeitherDropNorSplitTheLine()
+    {
+        var lines = ContentLines.Parse(
+            "<p>- 1x Captain – Guides the brothers with tools</p><p>- 1x Sergeant: leads the squad and 2 others</p>" +
+            "<p>- 5x Troopers (with rifles and 2 grenades)</p>");
+
+        CollectionAssert.AreEqual(
+            new[] { new Line(1, "Captain", false, false), new Line(1, "Sergeant", false, false),
+                new Line(5, "Troopers", false, false) },
+            lines.ToArray());
+    }
+
+    [TestMethod]
     public void Parse_NonPlayerMarker_IsFlagged()
     {
         var lines = ContentLines.Parse(
