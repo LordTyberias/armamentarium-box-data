@@ -12,7 +12,9 @@ Wants=network-online.target
 [Service]
 Type=oneshot
 ExecStart=/usr/bin/dotnet /srv/armamentarium-box-data/current/Armamentarium.BoxData.Scraper.dll
-# A full backlog run at five seconds per request and shop takes hours.
+# The first pass over the backlog takes about five hours (five seconds per request and
+# shop; miniset.net only after a finding elsewhere); the timeout leaves room, and a
+# stopped run resumes from its saved state.
 TimeoutStartSec=20h
 
 # A throwaway account per run; the state survives in /var/lib/armamentarium-box-data,

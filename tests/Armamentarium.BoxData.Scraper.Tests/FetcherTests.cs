@@ -127,6 +127,23 @@ public sealed class FetcherTests
     }
 
     [TestMethod]
+    [DataRow(HttpStatusCode.TooManyRequests)]
+    [DataRow(HttpStatusCode.ServiceUnavailable)]
+    public async Task Get_BlockPageWithFailureStatus_RestsTheHostAtOnce(HttpStatusCode status)
+    {
+        var handler = new Answers(_ => new HttpResponseMessage(status)
+        {
+            Content = new StringContent("Access to this page has been temporarily restricted."),
+        });
+        using var fetcher = Make(handler);
+
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        Assert.AreEqual(1, handler.Requested.Count);
+    }
+
+    [TestMethod]
     public async Task Get_BlockPageServedWithOk_RestsTheHostToo()
     {
         var handler = new Answers(_ => new HttpResponseMessage(HttpStatusCode.OK)
@@ -139,6 +156,36 @@ public sealed class FetcherTests
         await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
 
         Assert.AreEqual(1, handler.Requested.Count);
+    }
+
+    [TestMethod]
+    public async Task Get_LargePageMentioningARestriction_IsAPage()
+    {
+        var handler = new Answers(_ => new HttpResponseMessage(HttpStatusCode.OK)
+        {
+            Content = new StringContent(new string('x', 20_000) + " temporarily restricted "),
+        });
+        using var fetcher = Make(handler);
+
+        Assert.IsNotNull(await fetcher.GetAsync("https://shop.test/a", default));
+        Assert.IsNotNull(await fetcher.GetAsync("https://shop.test/b", default));
+        Assert.AreEqual(2, handler.Requested.Count);
+    }
+
+    [TestMethod]
+    public async Task Get_EachHostKeepsItsOwnInterval()
+    {
+        using var fetcher = new Fetcher(
+            new Dictionary<string, TimeSpan> { ["slow.test"] = TimeSpan.FromHours(1), ["fast.test"] = TimeSpan.Zero },
+            _ => { },
+            new Answers(_ => Status(HttpStatusCode.OK)));
+
+        await fetcher.GetAsync("https://slow.test/a", default);
+        await fetcher.GetAsync("https://fast.test/a", default);
+        await fetcher.GetAsync("https://fast.test/b", default);
+
+        using var wait = new CancellationTokenSource(TimeSpan.FromMilliseconds(200));
+        await Assert.ThrowsAsync<OperationCanceledException>(() => fetcher.GetAsync("https://slow.test/b", wait.Token));
     }
 
     [TestMethod]

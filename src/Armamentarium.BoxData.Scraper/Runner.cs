@@ -115,9 +115,33 @@ public sealed class Runner(
         persist?.Invoke();
     }
 
+    // A slow source (miniset.net, one request a minute) never confirms a box alone, so it is asked only when a fast one has
+    // found the product and the fast findings alone would not make a proposal; otherwise its interval would set the pace of
+    // the whole run (ADR 0003 §6).
     private async Task<(List<Listing> Listings, int Failed)> FindAsync(Product product, CancellationToken cancellationToken)
     {
-        var found = await Task.WhenAll(sources.Select(async source =>
+        var fast = sources.Where(s => s.Interval <= Page.DefaultInterval).ToList();
+        var (listings, failed) = await AskAsync(fast, product, cancellationToken);
+        var slow = sources.Except(fast).ToList();
+        if (listings.Count > 0 && slow.Count > 0 && !Suffices(product, listings))
+        {
+            var (more, moreFailed) = await AskAsync(slow, product, cancellationToken);
+            listings.AddRange(more);
+            failed += moreFailed;
+        }
+
+        return (listings, failed);
+    }
+
+    private static bool Suffices(Product product, IReadOnlyList<Listing> listings) =>
+        ProductCatalogue.IsCombatPatrol(product)
+            ? listings.Select(l => l.Url).Distinct().Count() >= 2
+            : Agreement.Agree(listings).Entries is not null;
+
+    private async Task<(List<Listing> Listings, int Failed)> AskAsync(
+        IEnumerable<ISource> asked, Product product, CancellationToken cancellationToken)
+    {
+        var found = await Task.WhenAll(asked.Select(async source =>
         {
             try
             {

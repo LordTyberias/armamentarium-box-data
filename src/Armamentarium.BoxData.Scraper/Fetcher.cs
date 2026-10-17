@@ -3,7 +3,8 @@ using System.Net;
 namespace Armamentarium.BoxData.Scraper;
 
 /// <summary>
-/// The only way to a shop: allowlisted hosts, https, at most one request per five seconds and host, redirects only within
+/// The only way to a shop: allowlisted hosts, https, at most one request per host interval (five seconds, a minute for
+/// miniset.net), redirects only within
 /// the host (ADR 0003 §5–§7). An answer that is not 200 is no finding (null) — a captcha or challenge is logged, never worked
 /// around. A shop that does not answer (network, timeout, 429, 5xx) throws <see cref="FetchFailedException"/>, so the run
 /// can tell "not listed" from "not asked"; after <see cref="MaxFailuresInARow"/> such failures the host rests for the run.
@@ -18,13 +19,13 @@ public sealed class Fetcher : IFetcher, IDisposable
 
     private const int MaxRedirects = 3;
 
-    private readonly HttpClient _http;
     // What a host serves instead of the page once it has restricted this client (measured: miniset.net, 2026-10-17).
     private static readonly string[] BlockMarkers = ["temporarily restricted", "suspicious automated activity"];
 
     // Block pages measured at 1.3 kB; the smallest shop answer that carries data is a short JSON, never a whole page.
     private const int BlockPageMaxLength = 16 * 1024;
 
+    private readonly HttpClient _http;
     private readonly Action<string> _log;
     private readonly Dictionary<string, HostGate> _gates;
 
@@ -99,18 +100,18 @@ public sealed class Fetcher : IFetcher, IDisposable
                     continue;
                 }
 
-                if (status == 429 || status >= 500)
-                {
-                    throw Failed(gate, $"{uri} answered {status}");
-                }
-
-                // The block page can come with 200 as well (miniset.net); it is small, a shop page is not.
+                // The block page can come with any status, 200 included (miniset.net); it is small, a shop page is not.
                 var page = await response.Content.ReadAsStringAsync(cancellationToken);
                 if (page.Length < BlockPageMaxLength && BlockMarkers.Any(m => page.Contains(m, StringComparison.OrdinalIgnoreCase)))
                 {
                     gate.Failures = MaxFailuresInARow;
                     _log($"{uri} answered {status} with a block page: the host restricts this client; it rests for the rest of the run");
                     throw new FetchFailedException($"{uri.Host} restricts this client");
+                }
+
+                if (status == 429 || status >= 500)
+                {
+                    throw Failed(gate, $"{uri} answered {status}");
                 }
 
                 gate.Failures = 0;
