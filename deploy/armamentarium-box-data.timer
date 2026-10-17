@@ -1,12 +1,13 @@
 # /etc/systemd/system/armamentarium-box-data.timer
 #
-# Once a day (ADR 0003 §2). Persistent catches a run missed while the server was down.
+# On the 1st and the 15th of every month (ADR 0004). Persistent catches a run missed
+# while the server was down.
 
 [Unit]
-Description=Daily run of the Armamentarium box contents scraper
+Description=Fortnightly run of the Armamentarium box contents scraper
 
 [Timer]
-OnCalendar=*-*-* 03:00
+OnCalendar=*-*-01,15 03:00
 RandomizedDelaySec=1h
 Persistent=true
 

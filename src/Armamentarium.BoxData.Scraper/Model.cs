@@ -17,8 +17,11 @@ public sealed record ProposedEntry(
 /// <summary>Either the entries and the source URLs behind them, or why the box waits.</summary>
 public sealed record AgreementResult(IReadOnlyList<ProposedEntry>? Entries, IReadOnlyList<string> Sources, string? Waiting);
 
-/// <summary>A draft pull request: branch, title, body and the whole table as it would be committed.</summary>
-public sealed record Proposal(string Branch, string Title, string Body, string Table);
+/// <summary>
+/// A pull request: branch, title, body and the whole table as it would be committed. A draft waits for the maintainer;
+/// with <c>--auto-merge</c> the service opens it ready and merges it itself (ADR 0004).
+/// </summary>
+public sealed record Proposal(string Branch, string Title, string Body, string Table, bool Draft = true);
 
 public interface IFetcher
 {
@@ -43,5 +46,12 @@ public interface IRepository
 
     Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken);
 
-    Task ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken);
+    /// <summary>Opens the pull request; returns its number.</summary>
+    Task<int> ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken);
+
+    /// <summary>Merges the pull request.</summary>
+    Task MergeAsync(int number, CancellationToken cancellationToken);
+
+    /// <summary>Deletes a branch whose pull request is merged.</summary>
+    Task DeleteBranchAsync(string branch, CancellationToken cancellationToken);
 }

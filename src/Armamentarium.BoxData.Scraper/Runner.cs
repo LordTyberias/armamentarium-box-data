@@ -5,7 +5,9 @@ namespace Armamentarium.BoxData.Scraper;
 
 /// <summary>
 /// One run (ADR 0003 §10–§12): works through the candidates until five scraper pull requests are open; a product the
-/// shops confirm becomes a draft box, or new article numbers of a box already in the table.
+/// shops confirm becomes a draft box, or new article numbers of a box already in the table. With <c>autoMerge</c> each
+/// pull request is merged at once and the next one is built on the merged table (ADR 0004); entries get the ids of the
+/// one root entry their name names in <c>catalogues</c>.
 /// </summary>
 public sealed class Runner(
     IRepository repository,
@@ -13,7 +15,9 @@ public sealed class Runner(
     IFetcher fetcher,
     ScanState state,
     Action<string> log,
-    Action? persist = null)
+    Action? persist = null,
+    bool autoMerge = false,
+    CatalogueIndex? catalogues = null)
 {
     public const int MaxOpen = 5;
 
@@ -82,9 +86,10 @@ public sealed class Runner(
                 continue;
             }
 
+            int number;
             try
             {
-                await repository.ProposeAsync(proposal, sha, cancellationToken);
+                number = await repository.ProposeAsync(proposal, sha, cancellationToken);
             }
             catch (GitHubException ex)
             {
@@ -93,9 +98,39 @@ public sealed class Runner(
                 continue;
             }
 
-            open.Add(proposal.Branch);
             Mark(codes, now);
             log($"proposed {proposal.Branch}: {proposal.Title}");
+            if (!autoMerge)
+            {
+                open.Add(proposal.Branch);
+                continue;
+            }
+
+            try
+            {
+                await repository.MergeAsync(number, cancellationToken);
+            }
+            catch (GitHubException ex)
+            {
+                // The pull request stays open and counts like a draft; the maintainer sees why in the journal.
+                log($"{proposal.Branch} not merged: {ex.Message}");
+                open.Add(proposal.Branch);
+                continue;
+            }
+
+            log($"merged {proposal.Branch}");
+            try
+            {
+                await repository.DeleteBranchAsync(proposal.Branch, cancellationToken);
+            }
+            catch (GitHubException ex)
+            {
+                // The merge stands; a branch left behind only blocks a later proposal of the same name.
+                log($"{proposal.Branch} merged, branch not deleted: {ex.Message}");
+            }
+
+            (text, sha) = await repository.GetTableAsync(cancellationToken);
+            known = Table.Codes(Table.Read(text));
         }
     }
 
@@ -174,10 +209,14 @@ public sealed class Runner(
             notes.Add("The box name is the catalogue name; set the English product name.");
         }
 
-        var body = new StringBuilder()
-            .AppendLine("Draft from the scraper service (ADR 0003). Before merging, complete by hand: catalogue ids")
-            .AppendLine("(`catalogueId` with `entryId` or `choice`), readings, catalogue names and roles. The merge is the hand check.")
-            .AppendLine()
+        var body = autoMerge
+            ? new StringBuilder()
+                .AppendLine("From the scraper service, merged by the scraper service (`--auto-merge`, ADR 0004). Ids come from a")
+                .AppendLine("catalogue entry of exactly the same name; an entry without ids had no such entry.")
+            : new StringBuilder()
+                .AppendLine("Draft from the scraper service (ADR 0003). Before merging, complete by hand: catalogue ids")
+                .AppendLine("(`catalogueId` with `entryId` or `choice`), readings, catalogue names and roles. The merge is the hand check.");
+        body.AppendLine()
             .AppendLine($"**Box name:** {Text.Code(name)}  ")
             .AppendLine($"**Article numbers:** {string.Join(", ", codes)}  ")
             .AppendLine($"**Catalogue name and status:** {Text.Code(product.Name)}, {Text.Code(product.Status)}")
@@ -208,15 +247,19 @@ public sealed class Runner(
             }
 
             var readings = ProductCatalogue.ReadingsOf(product);
-            box = Table.Box(name, codes, agreement.Sources, readings, agreement.Entries);
+            box = Table.Box(name, codes, agreement.Sources, readings, agreement.Entries, IdsOf);
             Sources(body, agreement.Sources);
             body.AppendLine($"**Entries** (in every reading: {string.Join(", ", readings)})")
                 .AppendLine()
-                .AppendLine("| Entry | Count | Confirmed by |")
-                .AppendLine("|---|---|---|");
+                .AppendLine("| Entry | Count | Confirmed by | Ids |")
+                .AppendLine("|---|---|---|---|");
             foreach (var entry in agreement.Entries)
             {
-                body.AppendLine($"| {Text.Code(entry.Name)} | {string.Join(" or ", entry.Counts)} | {string.Join(", ", entry.Hosts)} |");
+                var ids = readings.Select(r => IdsOf(r, entry.Name) is { } e ? $"{r}: {Text.Code(e.CatalogueId)} {Text.Code(e.EntryId)}" : null)
+                    .OfType<string>()
+                    .ToList();
+                body.AppendLine($"| {Text.Code(entry.Name)} | {string.Join(" or ", entry.Counts)} | {string.Join(", ", entry.Hosts)} | " +
+                    $"{(ids.Count > 0 ? string.Join("; ", ids) : "none")} |");
             }
 
             body.AppendLine();
@@ -237,8 +280,12 @@ public sealed class Runner(
 
         var table = Table.Read(text);
         Table.AddBox(table, box);
-        return new Proposal($"{GitHubRepository.BranchPrefix}{codes[0]}", $"data: add {name}", body.ToString(), Table.Write(table));
+        return new Proposal(
+            $"{GitHubRepository.BranchPrefix}{codes[0]}", $"data: add {name}", body.ToString(), Table.Write(table), Draft: !autoMerge);
     }
+
+    // Ids by name only while the service merges by itself (ADR 0004); a draft leaves them to the maintainer.
+    private RootEntry? IdsOf(string reading, string name) => autoMerge ? catalogues?.Find(reading, name) : null;
 
     private Proposal? LanguageVariants(string knownCode, IReadOnlyList<string> added, IReadOnlyList<Listing> listings, string text)
     {
@@ -260,7 +307,11 @@ public sealed class Runner(
         }
 
         return new Proposal(
-            $"{GitHubRepository.BranchPrefix}{added[0]}", $"data: add language variants to {name}", body.ToString(), Table.Write(table));
+            $"{GitHubRepository.BranchPrefix}{added[0]}",
+            $"data: add language variants to {name}",
+            body.ToString(),
+            Table.Write(table),
+            Draft: !autoMerge);
     }
 
     private static void Sources(StringBuilder body, IEnumerable<string> urls)

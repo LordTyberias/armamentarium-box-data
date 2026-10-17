@@ -1,19 +1,21 @@
 # /etc/systemd/system/armamentarium-box-data.service
 #
 # The scraper service of ADR 0003: one run, started by armamentarium-box-data.timer.
-# It opens draft pull requests in LordTyberias/armamentarium-box-data and never
-# merges. No port, no restart, no sudoers line: the timer starts it.
+# It opens pull requests in LordTyberias/armamentarium-box-data. With --auto-merge it
+# merges each one itself (ADR 0004) until the table is filled; without it, it opens
+# drafts and never merges. No port, no restart, no sudoers line: the timer starts it.
 
 [Unit]
-Description=Armamentarium box contents scraper (draft pull requests)
+Description=Armamentarium box contents scraper
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/dotnet /srv/armamentarium-box-data/current/Armamentarium.BoxData.Scraper.dll
-# The first pass over the backlog takes about five hours (five seconds per request and
-# shop; miniset.net only after a finding elsewhere); the timeout leaves room, and a
+# Remove --auto-merge (daemon-reload) when the maintainer merges by hand again.
+ExecStart=/usr/bin/dotnet /srv/armamentarium-box-data/current/Armamentarium.BoxData.Scraper.dll --auto-merge
+# A pass over the whole backlog takes hours (five seconds per request and shop;
+# miniset.net only after a finding elsewhere); the timeout leaves room, and a
 # stopped run resumes from its saved state.
 TimeoutStartSec=20h
 

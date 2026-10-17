@@ -3,17 +3,19 @@ using System.Runtime.InteropServices;
 namespace Armamentarium.BoxData.Scraper;
 
 /// <summary>
-/// Entry point of the daily run (ADR 0003 §2). systemd hands the token in through <c>LoadCredential</c>
+/// Entry point of a run on the 1st and the 15th (ADR 0004 §6). systemd hands the token in through <c>LoadCredential</c>
 /// (<c>$CREDENTIALS_DIRECTORY/github-token</c>) and the state directory through <c>$STATE_DIRECTORY</c>.
 ///
 ///   --dry-run        reads GitHub without a token, writes nothing, prints each proposal instead of opening it
 ///   --code &lt;number&gt;  searches this one article number only, whatever the state says (with --dry-run for a check)
+///   --auto-merge     opens each pull request ready and merges it at once (ADR 0004); with --dry-run it only says so
 /// </summary>
 public static class Program
 {
     public static async Task<int> Main(string[] args)
     {
         var dryRun = args.Contains("--dry-run");
+        var autoMerge = args.Contains("--auto-merge");
         var codeAt = Array.IndexOf(args, "--code");
         var onlyCode = codeAt >= 0 && codeAt + 1 < args.Length ? args[codeAt + 1] : null;
         void Log(string line) => Console.WriteLine(line);
@@ -48,9 +50,19 @@ public static class Program
             var state = statePath is null ? new ScanState() : ScanState.Load(statePath);
             var products = ProductCatalogue.Parse(await github.GetStringAsync(ProductCatalogue.ProductsUrl, stop.Token));
             Log($"{products.Count} Games Workshop products in the catalogue");
+            // Ids by name only while the service merges by itself (ADR 0004); drafts stay without ids for the maintainer.
+            var catalogues = autoMerge ? await CatalogueIndex.LoadAsync(github, Log, stop.Token) : null;
 
             using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
-            await new Runner(repository, Sources.All, fetcher, state, Log, statePath is null ? null : () => state.Save(statePath))
+            await new Runner(
+                    repository,
+                    Sources.All,
+                    fetcher,
+                    state,
+                    Log,
+                    statePath is null ? null : () => state.Save(statePath),
+                    autoMerge,
+                    catalogues)
                 .RunAsync(products, DateTimeOffset.UtcNow, stop.Token, onlyCode);
             return 0;
         }
@@ -86,11 +98,20 @@ public static class Program
         public Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken) =>
             inner.OpenScraperBranchesAsync(cancellationToken);
 
-        public Task ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
+        public Task<int> ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
         {
-            log($"--- would open draft {proposal.Branch}: {proposal.Title}");
+            log($"--- would open {(proposal.Draft ? "draft" : "pull request")} {proposal.Branch}: {proposal.Title}");
             log(proposal.Body);
+            return Task.FromResult(0);
+        }
+
+        // Nothing was opened, so nothing is merged; the run reads the unchanged table again and goes on.
+        public Task MergeAsync(int number, CancellationToken cancellationToken)
+        {
+            log("--- would merge it");
             return Task.CompletedTask;
         }
+
+        public Task DeleteBranchAsync(string branch, CancellationToken cancellationToken) => Task.CompletedTask;
     }
 }

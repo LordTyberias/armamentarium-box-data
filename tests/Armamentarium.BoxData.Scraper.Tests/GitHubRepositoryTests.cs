@@ -52,11 +52,12 @@ public sealed class GitHubRepositoryTests
     {
         var handler = new Recorder(request => request.Method == HttpMethod.Get
             ? Json("""{"object":{"sha":"main-sha"}}""")
-            : Json("{}", HttpStatusCode.Created));
+            : Json("""{"number":12}""", HttpStatusCode.Created));
 
-        await new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
+        var number = await new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
             new Proposal("scraper/60010199002", "data: add Kill Team: B", "body", "{}\n"), "file-sha", default);
 
+        Assert.AreEqual(12, number);
         var r = handler.Requests;
         Assert.AreEqual(4, r.Count);
         Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/git/ref/heads/main", r[0].Path);
@@ -77,6 +78,56 @@ public sealed class GitHubRepositoryTests
         }
 
         Assert.IsTrue(r.All(x => x.Auth == $"Bearer {Token}"));
+    }
+
+    [TestMethod]
+    public async Task Propose_NotADraft_OpensAReadyPullRequest()
+    {
+        var handler = new Recorder(request => request.Method == HttpMethod.Get
+            ? Json("""{"object":{"sha":"main-sha"}}""")
+            : Json("""{"number":3}""", HttpStatusCode.Created));
+
+        await new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
+            new Proposal("scraper/60010199002", "data: add B", "body", "{}\n", Draft: false), "file-sha", default);
+
+        using var pull = JsonDocument.Parse(handler.Requests[3].Body!);
+        Assert.IsFalse(pull.RootElement.GetProperty("draft").GetBoolean());
+    }
+
+    [TestMethod]
+    public async Task Merge_MergesThePullRequest()
+    {
+        var handler = new Recorder(_ => Json("""{"merged":true}"""));
+
+        await new GitHubRepository(new HttpClient(handler), Token).MergeAsync(12, default);
+
+        var r = handler.Requests.Single();
+        Assert.AreEqual(HttpMethod.Put, r.Method);
+        Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/pulls/12/merge", r.Path);
+    }
+
+    [TestMethod]
+    public async Task DeleteBranch_DeletesTheRef()
+    {
+        var handler = new Recorder(_ => Json("", HttpStatusCode.NoContent));
+
+        await new GitHubRepository(new HttpClient(handler), Token).DeleteBranchAsync("scraper/60010199002", default);
+
+        var r = handler.Requests.Single();
+        Assert.AreEqual(HttpMethod.Delete, r.Method);
+        Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/git/refs/heads/scraper/60010199002", r.Path);
+    }
+
+    [TestMethod]
+    public async Task Merge_Refused_FailsAndKeepsTheBranch()
+    {
+        var handler = new Recorder(_ => Json("""{"message":"Pull Request is not mergeable"}""", HttpStatusCode.MethodNotAllowed));
+
+        var error = await Assert.ThrowsExactlyAsync<GitHubException>(
+            () => new GitHubRepository(new HttpClient(handler), Token).MergeAsync(12, default));
+
+        StringAssert.Contains(error.Message, "405");
+        Assert.IsFalse(handler.Requests.Any(r => r.Method == HttpMethod.Delete));
     }
 
     [TestMethod]

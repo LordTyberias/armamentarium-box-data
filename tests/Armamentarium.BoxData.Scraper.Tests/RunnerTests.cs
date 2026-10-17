@@ -43,15 +43,23 @@ public sealed class RunnerTests
 
         public Func<Proposal, Exception?> Fail { get; init; } = _ => null;
 
+        public Func<string, Exception?> FailMerge { get; init; } = _ => null;
+
         public List<Proposal> Proposals { get; } = [];
 
+        public List<string> Merged { get; } = [];
+
+        public List<string> ShasProposedOn { get; } = [];
+
+        private string _table = Table;
+
         public Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken) =>
-            Task.FromResult((Table, "sha"));
+            Task.FromResult((_table, $"sha{Merged.Count}"));
 
         public Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken) =>
             Task.FromResult<IReadOnlyList<string>>(Open);
 
-        public Task ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
+        public Task<int> ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
         {
             if (Fail(proposal) is { } error)
             {
@@ -59,8 +67,27 @@ public sealed class RunnerTests
             }
 
             Proposals.Add(proposal);
+            ShasProposedOn.Add(tableSha);
+            return Task.FromResult(Proposals.Count);
+        }
+
+        public Task MergeAsync(int number, CancellationToken cancellationToken)
+        {
+            var branch = Proposals[number - 1].Branch;
+            if (FailMerge(branch) is { } error)
+            {
+                throw error;
+            }
+
+            _table = Proposals[number - 1].Table;
+            Merged.Add(branch);
             return Task.CompletedTask;
         }
+
+        public Func<string, Exception?> FailDelete { get; init; } = _ => null;
+
+        public Task DeleteBranchAsync(string branch, CancellationToken cancellationToken) =>
+            FailDelete(branch) is { } error ? Task.FromException(error) : Task.CompletedTask;
     }
 
     private sealed class FixedSource(string host, Func<Product, Listing?> find, TimeSpan? interval = null) : ISource
@@ -90,13 +117,127 @@ public sealed class RunnerTests
         new FixedSource(host, p => new Listing(host, $"https://{host}/{p.Code}", false, "Kill Team: New", lines, [p.Ean!]));
 
     private static async Task<(FakeRepository Repo, ScanState State, List<string> Log)> Run(
-        IReadOnlyList<Product> products, IReadOnlyList<ISource> sources, FakeRepository? repo = null, ScanState? state = null)
+        IReadOnlyList<Product> products,
+        IReadOnlyList<ISource> sources,
+        FakeRepository? repo = null,
+        ScanState? state = null,
+        bool autoMerge = false,
+        CatalogueIndex? catalogues = null)
     {
         repo ??= new FakeRepository();
         state ??= new ScanState();
         var log = new List<string>();
-        await new Runner(repo, sources, new NoFetcher(), state, log.Add).RunAsync(products, Now, default);
+        await new Runner(repo, sources, new NoFetcher(), state, log.Add, autoMerge: autoMerge, catalogues: catalogues)
+            .RunAsync(products, Now, default);
         return (repo, state, log);
+    }
+
+    private static ISource[] TwoShops(params Line[] lines) => [Shop("a.test", lines), Shop("b.test", lines)];
+
+    [TestMethod]
+    public async Task Run_WithoutAutoMerge_OpensDraftsAndMergesNothing()
+    {
+        var (repo, _, _) = await Run([P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)));
+
+        Assert.IsTrue(repo.Proposals.Single().Draft);
+        Assert.AreEqual(0, repo.Merged.Count);
+    }
+
+    [TestMethod]
+    public async Task Run_AutoMerge_MergesEachBoxAndBuildsTheNextOnTheMergedTable()
+    {
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002"), P("60010199003", "5011921000003")],
+            TwoShops(new Line(5, "Blade Guards", false, false)),
+            autoMerge: true);
+
+        CollectionAssert.AreEqual(new[] { "scraper/60010199002", "scraper/60010199003" }, repo.Merged);
+        Assert.IsFalse(repo.Proposals[0].Draft);
+        StringAssert.Contains(repo.Proposals[0].Body, "merged by the scraper service");
+        StringAssert.Contains(repo.Proposals[1].Table, "\"60010199002\"");
+        CollectionAssert.AreEqual(new[] { "sha0", "sha1" }, repo.ShasProposedOn);
+    }
+
+    [TestMethod]
+    public async Task Run_AutoMerge_KeepsGoingPastFiveMergedBoxes()
+    {
+        var products = Enumerable.Range(10, 7).Select(i => P($"600101990{i}", $"50119210000{i}")).ToList();
+
+        var (repo, _, _) = await Run(products, TwoShops(new Line(5, "Blade Guards", false, false)), autoMerge: true);
+
+        Assert.AreEqual(7, repo.Merged.Count);
+    }
+
+    [TestMethod]
+    public async Task Run_MergeRefused_LeavesThePullRequestOpenAndLogs()
+    {
+        var repo = new FakeRepository { FailMerge = _ => new GitHubException("GitHub PUT pulls/1/merge answered 405") };
+
+        var (_, state, log) = await Run(
+            [P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)), repo, autoMerge: true);
+
+        Assert.AreEqual(0, repo.Merged.Count);
+        Assert.IsTrue(log.Any(l => l.Contains("405", StringComparison.Ordinal)));
+        Assert.IsFalse(state.IsDue("60010199002", Now));
+    }
+
+    [TestMethod]
+    public async Task Run_FiveRefusedMerges_StopTheRun()
+    {
+        var repo = new FakeRepository { FailMerge = _ => new GitHubException("answered 405") };
+        var products = Enumerable.Range(10, 6).Select(i => P($"600101990{i}", $"50119210000{i}")).ToList();
+
+        await Run(products, TwoShops(new Line(5, "Blade Guards", false, false)), repo, autoMerge: true);
+
+        Assert.AreEqual(5, repo.Proposals.Count);
+    }
+
+    [TestMethod]
+    public async Task Run_MergedButBranchNotDeleted_CountsAsMergedAndReadsTheTable()
+    {
+        var repo = new FakeRepository { FailDelete = _ => new GitHubException("answered 422") };
+
+        var (_, _, log) = await Run(
+            [P("60010199002", "5011921000002"), P("60010199003", "5011921000003")],
+            TwoShops(new Line(5, "Blade Guards", false, false)),
+            repo,
+            autoMerge: true);
+
+        Assert.AreEqual(2, repo.Merged.Count);
+        StringAssert.Contains(repo.Proposals[1].Table, "\"60010199002\"");
+        Assert.IsTrue(log.Any(l => l.Contains("branch not deleted", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_CatalogueHit_WritesTheIdsAndAMissKeepsTheName()
+    {
+        var catalogues = new CatalogueIndex();
+        catalogues.AddCatalogue("kt", "Blades.cat", System.Text.Encoding.UTF8.GetBytes(
+            """<catalogue id="cat-blades" name="Blades" library="false"><selectionEntries><selectionEntry type="model" id="se-guard" name="Blade Guard"/></selectionEntries></catalogue>"""));
+
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002")],
+            TwoShops(new Line(5, "Blade Guards", false, false), new Line(1, "Seer of Nowhere", false, false)),
+            autoMerge: true,
+            catalogues: catalogues);
+
+        var table = repo.Proposals.Single().Table;
+        StringAssert.Contains(table, "\"catalogueId\": \"cat-blades\"");
+        StringAssert.Contains(table, "\"entryId\": \"se-guard\"");
+        Assert.AreEqual(1, table.Split("\"entryId\"").Length - 1);
+    }
+
+    [TestMethod]
+    public async Task Run_DraftWithoutAutoMerge_CarriesNoIds()
+    {
+        var catalogues = new CatalogueIndex();
+        catalogues.AddCatalogue("kt", "Blades.cat", System.Text.Encoding.UTF8.GetBytes(
+            """<catalogue id="cat-blades" name="Blades" library="false"><selectionEntries><selectionEntry type="model" id="se-guard" name="Blade Guard"/></selectionEntries></catalogue>"""));
+
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)), catalogues: catalogues);
+
+        Assert.IsFalse(repo.Proposals.Single().Table.Contains("\"entryId\"", StringComparison.Ordinal));
     }
 
     [TestMethod]
