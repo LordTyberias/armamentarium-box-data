@@ -2079,6 +2079,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: City of Ash",
+      "productCodes": [
+        "01010299051",
+        "60010299051"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-city-of-ash",
+        "https://radaddel.de/products/spearhead-city-of-ash-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "plastic relic objectives",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
