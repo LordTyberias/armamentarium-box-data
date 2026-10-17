@@ -1963,6 +1963,67 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Starter Set",
+      "productCodes": [
+        "01010299045",
+        "60010299045"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/age-of-sigmar-starter-set",
+        "https://abyssgamestore.ca/products/age-of-sigmar-starter-set-80-19",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-starter-set",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/age-of-sigmar-starter-set-",
+        "https://radaddel.de/products/age-of-sigmar-starter-set-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Push-fit",
+              "count": 35
+            },
+            {
+              "role": "team",
+              "name": "Lord-Veritant with 1x Gryph-crow",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Prosecutors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Stormcast Eternals Liberators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Grey Seer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Warlock Engineer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Rat Ogors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Skaven Clanrats",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
