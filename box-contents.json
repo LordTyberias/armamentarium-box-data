@@ -1593,6 +1593,89 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Space Marines - Combat Patrol Starter Set (EN)",
+      "productCodes": [
+        "60010199067"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-combat-patrol-starter-set-en",
+        "https://abyssgamestore.ca/products/warhammer-40-000-ultimate-starter-set-40-05",
+        "https://www.retrofixgames.com/products/warhammer-40k-ultimate-starter-set"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "dc24-dd64-5d97-df3c",
+              "name": "Captain in Terminator Armour",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "2468-24f5-ad9b-8388",
+              "name": "Librarian in Terminator Armour",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Terminators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Infernus Marines",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Winged Tyranid Prime",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "b6ac-f091-a018-dab2",
+              "name": "Psychophage",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Von Ryan’s Leapers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "6de-ccee-11b4-be3e",
+              "name": "Barbgaunts",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "359c-db2c-681a-8d62",
+              "name": "Termagants",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Ripper Swarms",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "30\" by 22.4\" double-sided gaming boards",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
