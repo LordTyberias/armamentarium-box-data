@@ -8,12 +8,14 @@ namespace Armamentarium.BoxData.Scraper;
 ///
 ///   --dry-run        reads GitHub without a token, writes nothing, prints each proposal instead of opening it
 ///   --code &lt;number&gt;  searches this one article number only, whatever the state says (with --dry-run for a check)
+///   --auto-merge     opens each pull request ready and merges it at once (ADR 0004); with --dry-run it only says so
 /// </summary>
 public static class Program
 {
     public static async Task<int> Main(string[] args)
     {
         var dryRun = args.Contains("--dry-run");
+        var autoMerge = args.Contains("--auto-merge");
         var codeAt = Array.IndexOf(args, "--code");
         var onlyCode = codeAt >= 0 && codeAt + 1 < args.Length ? args[codeAt + 1] : null;
         void Log(string line) => Console.WriteLine(line);
@@ -48,9 +50,18 @@ public static class Program
             var state = statePath is null ? new ScanState() : ScanState.Load(statePath);
             var products = ProductCatalogue.Parse(await github.GetStringAsync(ProductCatalogue.ProductsUrl, stop.Token));
             Log($"{products.Count} Games Workshop products in the catalogue");
+            var catalogues = await CatalogueIndex.LoadAsync(github, Log, stop.Token);
 
             using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
-            await new Runner(repository, Sources.All, fetcher, state, Log, statePath is null ? null : () => state.Save(statePath))
+            await new Runner(
+                    repository,
+                    Sources.All,
+                    fetcher,
+                    state,
+                    Log,
+                    statePath is null ? null : () => state.Save(statePath),
+                    autoMerge,
+                    catalogues)
                 .RunAsync(products, DateTimeOffset.UtcNow, stop.Token, onlyCode);
             return 0;
         }
@@ -86,10 +97,17 @@ public static class Program
         public Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken) =>
             inner.OpenScraperBranchesAsync(cancellationToken);
 
-        public Task ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
+        public Task<int> ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
         {
-            log($"--- would open draft {proposal.Branch}: {proposal.Title}");
+            log($"--- would open {(proposal.Draft ? "draft" : "pull request")} {proposal.Branch}: {proposal.Title}");
             log(proposal.Body);
+            return Task.FromResult(0);
+        }
+
+        // Nothing was opened, so nothing is merged; the run reads the unchanged table again and goes on.
+        public Task MergeAsync(int number, string branch, CancellationToken cancellationToken)
+        {
+            log($"--- would merge {branch}");
             return Task.CompletedTask;
         }
     }

@@ -87,7 +87,9 @@ An edition without a reading falls back to the app's name-based candidates.
 
 An entry carries either `catalogueId` with `entryId`, or `catalogueId` with `choice`, or neither. An entry with neither
 is a name and a model count only: the box holds these models, but no catalogue entry of this reading matches them. It is
-shown, not addable. Ids are never guessed from a similar name.
+shown, not addable. Ids are never guessed from a similar name. The one exception is the scraper service while it merges
+by itself (`docs/adr/0004-auto-merge-and-ids-by-name.md`): it sets ids where an entry's name names exactly one catalogue
+root entry of its reading.
 
 A `choice` option may share its `entryId` with a fixed entry of the same reading (two Aspirants fixed, a third model
 free): the fixed entry counts its own models, the choice counts the remaining freely built ones.
@@ -109,10 +111,11 @@ when an entry of the same name exists.
 Every number is checked against at least two independent sources (publisher articles, retailer listings carrying the
 publisher's text, reviews). Numbers the sources disagree on go in as `countCandidates` until settled.
 
-The table changes only through a merged pull request. Each pull request passes this repository's review loop first; the
-merge by the maintainer is the hand check.
+The table changes only through a merged pull request. Each pull request by hand passes this repository's review loop
+first; the merge by the maintainer is the hand check.
 
-A scraper service (`src/`, decision in `docs/adr/0003-scraper-service.md`) opens **draft** pull requests for boxes it
-finds in allowlisted shops, one per box: article numbers, sources, and each model line confirmed by two sources, without
-catalogue ids. The maintainer adds ids, readings and catalogue names and checks the preset roles in the branch before
-merging.
+A scraper service (`src/`, decisions in `docs/adr/0003-scraper-service.md` and `docs/adr/0004-auto-merge-and-ids-by-name.md`)
+opens pull requests for boxes it finds in allowlisted shops, one per box: article numbers, sources, and each model line
+confirmed by two sources. Until the table is filled it runs with `--auto-merge`: it sets the ids of exactly one name hit
+in the catalogues of the reading and merges each pull request itself, unchecked. Without the switch it opens drafts
+without ids, and the maintainer adds ids, readings and catalogue names and checks the preset roles before merging.

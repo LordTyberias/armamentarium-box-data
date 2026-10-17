@@ -24,13 +24,17 @@ public static class Table
     public static IReadOnlySet<string> Codes(JsonNode table) =>
         Boxes(table).SelectMany(b => b["productCodes"]!.AsArray()).Select(c => (string)c!).ToHashSet(StringComparer.Ordinal);
 
-    /// <summary>A draft box: one block per reading, entries with name and count only, no ids (ADR 0003 §10).</summary>
+    /// <summary>
+    /// A box: one block per reading, entries with name and count, and ids where <paramref name="idsOf"/> names the one
+    /// root entry of that reading (ADR 0004); without it, no ids (ADR 0003 §10).
+    /// </summary>
     public static JsonObject Box(
         string name,
         IReadOnlyList<string> codes,
         IReadOnlyList<string> sources,
         IReadOnlyList<string> readings,
-        IReadOnlyList<ProposedEntry> entries) =>
+        IReadOnlyList<ProposedEntry> entries,
+        Func<string, string, RootEntry?>? idsOf = null) =>
         new()
         {
             ["name"] = name,
@@ -39,7 +43,7 @@ public static class Table
             ["readings"] = new JsonArray(readings.Select(r => (JsonNode)new JsonObject
             {
                 ["reading"] = r,
-                ["entries"] = new JsonArray(entries.Select(e => Entry(e, r)).ToArray()),
+                ["entries"] = new JsonArray(entries.Select(e => Entry(e, r, idsOf?.Invoke(r, e.Name))).ToArray()),
             }).ToArray()),
         };
 
@@ -97,13 +101,19 @@ public static class Table
     private static JsonArray Array(IEnumerable<string> values) => new(values.Select(v => (JsonNode)v).ToArray());
 
     // A non-player model is an `npo` only in Kill Team; in any other reading it is an `extra` (README, Entry).
-    private static JsonNode Entry(ProposedEntry entry, string reading)
+    private static JsonNode Entry(ProposedEntry entry, string reading, RootEntry? ids)
     {
         var node = new JsonObject
         {
             ["role"] = !entry.NonPlayer ? "team" : reading == "kt" ? "npo" : "extra",
-            ["name"] = entry.Name,
         };
+        if (ids is not null)
+        {
+            node["catalogueId"] = ids.CatalogueId;
+            node["entryId"] = ids.EntryId;
+        }
+
+        node["name"] = entry.Name;
         if (entry.Counts.Count == 1)
         {
             node["count"] = entry.Counts[0];

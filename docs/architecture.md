@@ -31,22 +31,27 @@ The table, the schema and the README form **one contract**. A change to one that
   decision; ADR 0002 decided that an added reading value does not raise the number, because a reader of format 1 ignores
   a reading it does not know.
 - **No guessed data.** Catalogue ids come from the catalogues, never from a similar name; counts come from at least two
-  sources, disagreement is recorded as `countCandidates`.
+  sources, disagreement is recorded as `countCandidates`. One named exception (ADR 0004): while the service runs with
+  `--auto-merge`, it sets ids where an entry's name names exactly one root entry of its reading.
 
 ## 4 — Scraper service
 
-Fixed by Armamentarium ADR 0118 §4 and its Addendum ARMAM-591, built under ARMAM-591, decided in ADR 0003:
+Fixed by Armamentarium ADR 0118 §4 and its Addenda ARMAM-591 and ARMAM-593, built under ARMAM-591, decided in ADR 0003
+and ADR 0004:
 
 - Its own .NET 10 project **in this repository**, not part of `Armamentarium.slnx`, never shipped with the app.
-- Runs once a day on the project's own server (systemd timer).
-- Changes the table **only through a pull request**; it never merges. The merge is the hand check.
-- Write access through a fine-grained token scoped to this repository only (contents and pull requests), at most 90 days,
-  stored outside every repository, never logged.
+- Runs on the 1st and the 15th of every month on the project's own server (systemd timer).
+- Changes the table **only through a pull request**. With `--auto-merge` (ADR 0004) it merges each one itself until the
+  maintainer removes the switch; without it, it never merges and the merge is the hand check.
+- Write access through a fine-grained token scoped to this repository only (contents and pull requests), without expiry
+  (ADR 0004), stored outside every repository, never logged.
+- Catalogue ids from the catalogues of a compiled allowlist of repositories (ADR 0004 §3), downloaded per run.
 - Candidates from warhub-catalog `products.json`, one request per run to a compiled address (ADR 0003 §4).
 - Sources from a compiled allowlist, no open search; at most one request per five seconds and host (per minute where a
   host restricts faster clients, ADR 0003 §6); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
-- Proposes **draft** pull requests, one per box, without catalogue ids; every entry confirmed by two sources.
+- Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
+  a ready one with the ids of exactly one name hit, merged at once.
 - Every further dependency of the service is decided with a reason (ADR in `docs/adr/`).
 
 ## 5 — Not in this repository

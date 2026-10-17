@@ -2,6 +2,10 @@
 
 **Status:** Accepted (2026-10-17, Armamentarium ARMAM-591). Founded on Armamentarium ADR 0118 §4 and its Addendum ARMAM-591.
 
+**Overridden in part by ADR 0004** (ARMAM-593): §2 "once a day" (now the 1st and 15th), the token's "at most 90 days"
+(now without expiry); while `--auto-merge` runs also §10 "draft … no ids; the maintainer adds ids … before merging" and
+§12 "until five scraper pull requests are open"; and Rejected "Ids by exact name match against the catalogues".
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:

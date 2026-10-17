@@ -9,7 +9,8 @@ public sealed class GitHubException(string message) : Exception(message);
 
 /// <summary>
 /// This repository through the GitHub REST API (ADR 0003 §3): reads the table, lists the open scraper pull requests,
-/// opens a draft pull request. It never merges. The token, when present, goes only into the Authorization header.
+/// opens a pull request and, with <c>--auto-merge</c>, merges it (ADR 0004). The token, when present, goes only into the
+/// Authorization header.
 /// </summary>
 public sealed class GitHubRepository(HttpClient http, string? token) : IRepository
 {
@@ -37,7 +38,7 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
             .ToList();
     }
 
-    public async Task ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
+    public async Task<int> ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
     {
         string mainSha;
         using (var main = await SendAsync(HttpMethod.Get, $"repos/{Repository}/git/ref/heads/main", null, cancellationToken))
@@ -63,14 +64,15 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
                 ["branch"] = proposal.Branch,
             }, cancellationToken)).Dispose();
 
-            (await SendAsync(HttpMethod.Post, $"repos/{Repository}/pulls", new JsonObject
+            using var pull = await SendAsync(HttpMethod.Post, $"repos/{Repository}/pulls", new JsonObject
             {
                 ["title"] = proposal.Title,
                 ["head"] = proposal.Branch,
                 ["base"] = "main",
                 ["body"] = proposal.Body,
-                ["draft"] = true,
-            }, cancellationToken)).Dispose();
+                ["draft"] = proposal.Draft,
+            }, cancellationToken);
+            return pull.RootElement.GetProperty("number").GetInt32();
         }
         catch (Exception failure)
         {
@@ -87,6 +89,17 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
 
             throw;
         }
+    }
+
+    public async Task MergeAsync(int number, string branch, CancellationToken cancellationToken)
+    {
+        (await SendAsync(HttpMethod.Put, $"repos/{Repository}/pulls/{number}/merge", new JsonObject
+        {
+            ["merge_method"] = "merge",
+        }, cancellationToken)).Dispose();
+
+        // Merged: the branch has done its work, and leaving it would block the next proposal of the same name.
+        (await SendAsync(HttpMethod.Delete, $"repos/{Repository}/git/refs/heads/{branch}", null, cancellationToken)).Dispose();
     }
 
     private async Task<JsonDocument> SendAsync(HttpMethod method, string path, JsonObject? body, CancellationToken cancellationToken)
