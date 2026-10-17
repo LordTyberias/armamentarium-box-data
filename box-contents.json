@@ -2257,6 +2257,52 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Getting Started with Space Marines (11th Edition)",
+      "productCodes": [
+        "60170101003"
+      ],
+      "sources": [
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/warhammer-40000-armageddon/warhammer-40000-getting-started-with-space-marines",
+        "https://radaddel.de/products/warhammer-40-000-getting-started-with-space-marines-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Captain with Relic Shield",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "78eb-9334-f5c0-6095",
+              "name": "Librarian",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Intercessors",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Vanguard Veterans",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "2e1f-9342-f5e8-37ab",
+              "name": "Land Speeder",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
