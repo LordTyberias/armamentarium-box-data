@@ -2629,6 +2629,20 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-salamanders"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Black Templars",
+      "productCodes": [
+        "99120101428"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-black-templars",
+        "https://abyssgamestore.ca/products/combat-patrol-black-templars-73-553",
+        "https://radaddel.de/products/black-templars-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-black-templars-1",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-black-templars"
+      ],
+      "generation": "current"
     }
   ]
 }
