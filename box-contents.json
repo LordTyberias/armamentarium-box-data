@@ -2235,6 +2235,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Briar and Bone",
+      "productCodes": [
+        "60120299006"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warcry-briar-and-bone",
+        "https://elementgames.co.uk/clearance-sale/warcry-briar-and-bone-english-"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "plastic miniatures",
+              "count": 16
+            }
+          ]
+        }
+      ]
     }
   ]
 }
