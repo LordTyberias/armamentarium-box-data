@@ -10,9 +10,9 @@ pull requests daily (ARMAM-591), which raises the volume further.
 
 ## Decision
 
-- `/review-loop` (`.claude/commands/review-loop.md`) runs before every pull request; all blocking findings are closed
-  before it is opened.
-- Five repository-local reviewers in `.claude/agents/`: `security-reviewer`, `architect-reviewer`, `requirements-reviewer`,
+- A review loop runs before every pull request; all blocking findings are closed before it is opened. Its definition is
+  kept locally by the maintainer and is not part of this repository.
+- Five repository-specific reviewers: `security-reviewer`, `architect-reviewer`, `requirements-reviewer`,
   `code-reviewer`, `performance-reviewer`. No global or generic reviewer replaces them.
 - Authority on conflict: security > architect > requirements > code > performance.
 - Blocking: every architect finding; `must-fix` of requirements, code and performance; security `critical`/`high`
