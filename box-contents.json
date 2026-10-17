@@ -1285,6 +1285,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Introductory Set (EN)",
+      "productCodes": [
+        "60010199059"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-introductory-set-en",
+        "https://abyssgamestore.ca/products/warhammer-40-000-introductory-set-40-04",
+        "https://www.retrofixgames.com/products/warhammer-40k-introductory-set"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Infernus Marines",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Termagants",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Ripper Swarm",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
