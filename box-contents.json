@@ -1855,6 +1855,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy: False Gods (PB)",
+      "productCodes": [
+        "60010213001"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-ogor-mawtribes-army-set",
+        "https://radaddel.de/products/ogor-mawtribes-army-set-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tyrant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Maulbeast Cavalry",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Ironguts",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Gluttons",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
