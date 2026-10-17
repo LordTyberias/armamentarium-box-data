@@ -2815,6 +2815,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Orks - Combat Patrol",
+      "productCodes": [
+        "99120103115"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-orks-combat-patrol",
+        "https://radaddel.de/products/orks-combat-patrol"
+      ],
+      "generation": "current"
     }
   ]
 }
