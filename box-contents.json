@@ -1285,6 +1285,118 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Celestian Insidiants",
+      "productCodes": [
+        "99120108125"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/kill-team-celestian-insidiants",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/kill-team/kill-team-celestian-insidiants"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Superior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Denuncia",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Censor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Reliquarius",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Abjuror",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Mortisanctus",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cremators",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Warriors",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "construction guide",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Superior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Denuncia",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Censor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Reliquarius",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Abjuror",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Mortisanctus",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cremators",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Warriors",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "construction guide",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
