@@ -1285,6 +1285,63 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40,000 - Starter Set ( 40-03 )",
+      "productCodes": [
+        "60010199058"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warhammer-40-000-starter-set-40-03",
+        "https://www.retrofixgames.com/products/warhammer-40k-starter-set"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Captain in Terminator Armour",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Terminators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Infernus Marines",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Winged Tyranid Prime",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Psychophage",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Von Ryan’s Leapers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Termagants",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Ripper Swarms",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
