@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Armamentarium.BoxData.Scraper/Armamentarium.BoxData.Scraper.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Armamentarium.BoxData.Scraper.Tests/Armamentarium.BoxData.Scraper.Tests.csproj" />
+  </Folder>
+</Solution>

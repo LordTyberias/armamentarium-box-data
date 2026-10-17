@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- The scraper service of ADR 0003. No package reference: the server runs it on the ASP.NET Core runtime's shared
+       framework, and every further dependency is a decision with an ADR (docs/architecture.md §4). -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Armamentarium.BoxData.Scraper.Tests" />
+  </ItemGroup>
+
+</Project>

@@ -1,2 +1,5 @@
 .claude/
 CLAUDE.md
+bin/
+obj/
+TestResults/
