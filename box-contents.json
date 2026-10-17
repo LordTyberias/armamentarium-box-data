@@ -2407,6 +2407,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer COMBAT PATROL: SPACE MARINES New",
+      "productCodes": [
+        "99120101280"
+      ],
+      "sources": [
+        "https://tistaminis.com/products/warhammer-combat-patrol-space-marines",
+        "https://abyssgamestore.ca/products/combat-patrol-space-marines-48-80"
+      ],
+      "generation": "current"
     }
   ]
 }
