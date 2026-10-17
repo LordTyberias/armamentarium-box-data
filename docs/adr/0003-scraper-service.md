@@ -57,9 +57,18 @@ The table grows only by hand so far. Measured on 2026-10-17:
    measured worse: three Shopify shops answered `/products/<handle>.js` with 429, which they answer with 200 to the own name
    (2026-10-17).
 8. **Only facts:** a number and a model name per line. Terrain, datacards, dice, markers, tokens, mats, rule books,
-   dossiers, rulers, transfers, bases and part counts are dropped, and so is every line under a heading that names one of
-   them ("15 plastic terrain pieces"). An alternative build named on a line is dropped and the
-   line counted as its base build, noted in the pull request.
+   dossiers, rulers, transfers, bases, part counts, paints, brushes, clippers, tools, construction guides and handbooks are
+   dropped, and so is every line under a heading that names one of them: a counted heading ("15 plastic terrain pieces"),
+   a line ending in a colon ("these interchangeable parts:"), or a counted line without a bullet that ends in one ("5x
+   Citadel Colour paints, including:"). A counted line without a bullet whose bulleted lines below add up to its count
+   ("11x Space Marines" over "1x Captain", "5x Terminators", "5x Infernus Marines") is their total and dropped; a model
+   whose equipment is listed below it with the same count would be lost with it, which the maintainer's check catches. The
+   name ends at a spaced dash or at a colon followed by four words or more, where the shop's description begins; a
+   shorter colon belongs to a title ("Warhammer 40,000: Battle Report Book"). An excluded word or an "and 2" in that
+   description drops or splits nothing, nor does an "and 2" inside a parenthesis; an excluded word in a parenthesis or
+   after a comma still drops the line. "10 Termagants and 1 Ripper Swarm" (or "and 1x") is two lines, a non-player
+   marker counting for both (measured on the first server run, Armamentarium ARMAM-593). An
+   alternative build named on a line is dropped and the line counted as its base build, noted in the pull request.
 9. **Agreement:** names are compared normalised (lower case, without `operative`, `miniature`, `non-player`, plural `s`,
    punctuation). The same count in two sources gives `count`; different counts give `countCandidates`. A German source
    confirms lines only by position, when its number of lines and its sequence of counts equal an English source's. Every

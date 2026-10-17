@@ -65,6 +65,89 @@ public sealed class ContentLinesTests
     }
 
     [TestMethod]
+    public void Parse_GroupTotalOverItsMembers_IsDropped()
+    {
+        var lines = ContentLines.Parse(
+            "<p>7x Iron Brothers</p><p>Grim warriors of the line.</p>" +
+            "<p>- 1x Captain: Leads the brothers into battle, sword in hand</p>" +
+            "<p>- 6x Line Troopers – Steady soldiers with rifles</p>" +
+            "<p>3x Greenskins</p><p>- 2x Lads</p>");
+
+        CollectionAssert.AreEqual(
+            new[] { new Line(1, "Captain", false, false), new Line(6, "Line Troopers", false, false),
+                new Line(3, "Greenskins", false, false), new Line(2, "Lads", false, false) },
+            lines.ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_LinesUnderAnExcludedLineEndingInAColon_AreDropped()
+    {
+        var lines = ContentLines.Parse(
+            "<p>- 5x Line Troopers</p>" +
+            "<p>3x 12ml Citadel Colour paints – Colours for your first army, including:</p>" +
+            "<p>- 1x Grime Grey</p><p>- 2x Rust Red</p>" +
+            "<p>The four troopers can choose from these interchangeable parts:</p>" +
+            "<p>• 8 heads</p><p>• 4 sets of grenades</p>" +
+            "<p>Contents:</p><p>• 1 Citadel Starter Brush</p><p>• 1x Citadel Starter Clippers</p>" +
+            "<p>• 1 construction guide</p><p>• 1x Hobby tools</p><p>• 2x Warlords</p>");
+
+        CollectionAssert.AreEqual(new[] { "Line Troopers", "Warlords" }, lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_TwoCountsJoinedByAnd_AreTwoLines()
+    {
+        var lines = ContentLines.Parse(
+            "<p>– 10 Beast Lads and 1 Hog Rider non-player operatives</p><p>– 5 Greenskins und 2 Squigs</p>");
+
+        CollectionAssert.AreEqual(
+            new[] { new Line(10, "Beast Lads", true, false), new Line(1, "Hog Rider non-player operatives", true, false),
+                new Line(5, "Greenskins", false, false), new Line(2, "Squigs", false, false) },
+            lines.ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_WordsInTheDescription_NeitherDropNorSplitTheLine()
+    {
+        var lines = ContentLines.Parse(
+            "<p>- 1x Captain – Guides the brothers with tools</p><p>- 1x Sergeant: leads the squad and 2 others</p>" +
+            "<p>- 5x Troopers (with rifles and 2 grenades)</p>");
+
+        CollectionAssert.AreEqual(
+            new[] { new Line(1, "Captain", false, false), new Line(1, "Sergeant", false, false),
+                new Line(5, "Troopers", false, false) },
+            lines.ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_AndAfterAClosedParenthesisOrWithX_SplitsTheLine()
+    {
+        var lines = ContentLines.Parse("<p>- 2x Lads (heavy weapon) and 1 Boss</p><p>- 5 Greenskins and 2x Squigs</p>");
+
+        CollectionAssert.AreEqual(
+            new[] { "Lads:2", "Boss:1", "Greenskins:5", "Squigs:2" },
+            lines.Select(l => $"{l.Name}:{l.Count}").ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_IndentedBullets_StayBulletsUnderTheirTotal()
+    {
+        var lines = ContentLines.Parse("<p>3x Iron Brothers</p><p>  - 1x Captain</p><p>  - 2x Line Troopers</p>");
+
+        CollectionAssert.AreEqual(new[] { "Captain", "Line Troopers" }, lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_AColonInsideATitle_IsNoDescription()
+    {
+        var lines = ContentLines.Parse(
+            "<p>• 1x Warhammer 40,000: Battle Report Book</p><p>• 1x Kill Team: Murderwing Transfer Sheet</p>" +
+            "<p>• 2x Warlords</p>");
+
+        CollectionAssert.AreEqual(new[] { "Warlords" }, lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
     public void Parse_NonPlayerMarker_IsFlagged()
     {
         var lines = ContentLines.Parse(
