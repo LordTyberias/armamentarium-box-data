@@ -2577,6 +2577,19 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Dark Angels",
+      "productCodes": [
+        "99120101406"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-dark-angels",
+        "https://abyssgamestore.ca/products/combat-patrol-dark-angels-73-44",
+        "https://radaddel.de/products/dark-angels-combat-patrol",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/combat-patrol-dark-angels2"
+      ],
+      "generation": "current"
     }
   ]
 }
