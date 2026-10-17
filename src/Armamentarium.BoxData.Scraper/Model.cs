@@ -30,6 +30,9 @@ public interface ISource
 {
     string Host { get; }
 
+    /// <summary>The least time between two requests to this host (ADR 0003 §6).</summary>
+    TimeSpan Interval { get; }
+
     /// <summary>The shop's listing of the product, or null when the shop does not confirm it.</summary>
     Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken);
 }

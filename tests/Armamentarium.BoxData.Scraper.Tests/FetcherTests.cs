@@ -30,7 +30,7 @@ public sealed class FetcherTests
     }
 
     private static Fetcher Make(Answers handler, List<string>? log = null) =>
-        new(new HashSet<string> { "shop.test" }, (log ?? []).Add, handler, TimeSpan.Zero);
+        new(new Dictionary<string, TimeSpan> { ["shop.test"] = TimeSpan.Zero }, (log ?? []).Add, handler);
 
     [TestMethod]
     public async Task Get_HostOutsideTheAllowlist_IsRefused()
@@ -109,6 +109,36 @@ public sealed class FetcherTests
 
         Assert.AreEqual(Fetcher.MaxFailuresInARow, handler.Requested.Count);
         Assert.AreEqual(1, log.Count(l => l.Contains("skipped for the rest of the run", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Get_BlockPage_RestsTheHostAtOnce()
+    {
+        var handler = new Answers(_ => new HttpResponseMessage(HttpStatusCode.Forbidden)
+        {
+            Content = new StringContent("Access to this page has been temporarily restricted due to suspicious automated activity."),
+        });
+        using var fetcher = Make(handler);
+
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        Assert.AreEqual(1, handler.Requested.Count);
+    }
+
+    [TestMethod]
+    public async Task Get_BlockPageServedWithOk_RestsTheHostToo()
+    {
+        var handler = new Answers(_ => new HttpResponseMessage(HttpStatusCode.OK)
+        {
+            Content = new StringContent("<title>Access Temporarily Restricted</title> Your access has been temporarily restricted due to suspicious activity."),
+        });
+        using var fetcher = Make(handler);
+
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        Assert.AreEqual(1, handler.Requested.Count);
     }
 
     [TestMethod]

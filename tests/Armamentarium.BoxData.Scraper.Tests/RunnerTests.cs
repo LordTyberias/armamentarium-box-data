@@ -67,6 +67,8 @@ public sealed class RunnerTests
     {
         public string Host => host;
 
+        public TimeSpan Interval => TimeSpan.Zero;
+
         public Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken) =>
             Task.FromResult(find(product));
     }

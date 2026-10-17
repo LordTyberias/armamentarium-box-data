@@ -14,9 +14,12 @@ public static class Sources
         new ShopifySource("tistaminis.com", German: false),
         new ShopifySource("abyssgamestore.ca", German: false),
         new ShopifySource("radaddel.de", German: true),
+        // Its terms forbid scraping; the maintainer carries that risk (Armamentarium ADR 0118 Addendum ARMAM-591).
+        new ShopifySource("www.retrofixgames.com", German: false),
         new JtlShopSource("www.fantasywelt.de", German: true),
         new JtlShopSource("taschengelddieb.de", German: true),
         new ElementGamesSource(),
+        new MinisetSource(),
     ];
 }
 
@@ -24,6 +27,8 @@ internal static partial class Page
 {
     // Search results tried per product and shop; the right product is among the first in every shop measured.
     public const int Tries = 3;
+
+    public static readonly TimeSpan DefaultInterval = TimeSpan.FromSeconds(5);
 
     // Every pattern that runs over a shop page has a time limit; a page built to stall a pattern costs one source, not the run.
     public const int RegexTimeout = 2_000;
@@ -56,6 +61,8 @@ internal static partial class Page
 /// <summary>Shopify: product search by EAN, confirmed by a variant's barcode in <c>/products/&lt;handle&gt;.js</c>.</summary>
 public sealed partial record ShopifySource(string Host, bool German) : ISource
 {
+    public TimeSpan Interval => Page.DefaultInterval;
+
     public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
     {
         if (product.Ean is not { } ean)
@@ -121,6 +128,8 @@ public sealed partial record ShopifySource(string Host, bool German) : ISource
 /// <summary>JTL shop: search by EAN, confirmed by <c>itemprop="gtin13"</c>; the description sits in the description tab.</summary>
 public sealed partial record JtlShopSource(string Host, bool German) : ISource
 {
+    public TimeSpan Interval => Page.DefaultInterval;
+
     public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
     {
         if (product.Ean is not { } ean)
@@ -189,6 +198,8 @@ public sealed partial class ElementGamesSource : ISource
 {
     public string Host => "elementgames.co.uk";
 
+    public TimeSpan Interval => Page.DefaultInterval;
+
     public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
     {
         var search = await fetcher.GetAsync($"https://{Host}/search?q={product.Code}&ajax=1", cancellationToken);
@@ -234,4 +245,27 @@ public sealed partial class ElementGamesSource : ISource
 
     [GeneratedRegex(@"SKU / Product Code:</label>\s*<div class=""productOption"">\s*([0-9]+)\s*<", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Sku();
+}
+
+/// <summary>
+/// miniset.net: one page per article number (<c>/sets/gw-&lt;code&gt;</c>), confirmed by its canonical address. The host
+/// restricts clients after about a dozen requests at five seconds, so it is asked once a minute.
+/// </summary>
+public sealed class MinisetSource : ISource
+{
+    public string Host => "miniset.net";
+
+    public TimeSpan Interval => TimeSpan.FromSeconds(60);
+
+    public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
+    {
+        var url = $"https://{Host}/sets/gw-{product.Code}";
+        var page = await fetcher.GetAsync(url, cancellationToken);
+        if (page is null || !page.Contains($"<link rel=\"canonical\" href=\"{url}\"", StringComparison.Ordinal))
+        {
+            return null;
+        }
+
+        return new Listing(Host, url, false, Page.Title(page), ContentLines.Parse(Page.Section(page, "data-lang=\"en\"")), []);
+    }
 }
