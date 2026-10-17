@@ -2024,6 +2024,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar : Introductory Set (80-15)",
+      "productCodes": [
+        "01010299046",
+        "60010299046"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/age-of-sigmar-introductory-set-80-15",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-introductory-set"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormcast Eternals Liberators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Skaven Clanrats",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
