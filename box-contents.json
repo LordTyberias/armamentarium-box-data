@@ -1817,6 +1817,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness - Darkoath Army Set ( 83-92 )",
+      "productCodes": [
+        "01010201002",
+        "60010201002"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/slaves-to-darkness-darkoath-army-set-83-92",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-darkoath-army-set"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Darkoath Wilderfiend",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Darkoath Chieftain on Warsteed",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Darkoath Fellriders",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Darkoath Marauders",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
