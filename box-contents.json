@@ -2180,6 +2180,61 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy: Age of Darkness: Saturnine",
+      "productCodes": [
+        "01013099002",
+        "60013099002"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/horus-heresy-age-of-darkness-saturnine-eng",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-age-of-darkness-saturnine",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/the-horus-heresy-age-of-darkness-saturnine-eng-",
+        "https://radaddel.de/products/horus-heresy-age-of-darkness-saturnine-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Saturnine Praetor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Centurion in MKII power armour",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Saturnine Dreadnought",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Araknae Quad Accelerator Platform",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Saturnine Terminators",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Legionaries in MKII power armour",
+              "count": 40
+            },
+            {
+              "role": "team",
+              "name": "Disintegrator weapons upgrades",
+              "count": 36
+            }
+          ]
+        }
+      ]
     }
   ]
 }
