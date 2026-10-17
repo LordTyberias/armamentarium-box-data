@@ -1,0 +1,93 @@
+using System.Net;
+using System.Text;
+using System.Text.Json;
+
+namespace Armamentarium.BoxData.Scraper.Tests;
+
+[TestClass]
+public sealed class GitHubRepositoryTests
+{
+    private const string Token = "github_pat_SECRET_VALUE";
+
+    private sealed class Recorder(Func<HttpRequestMessage, HttpResponseMessage> answer) : HttpMessageHandler
+    {
+        public List<(HttpMethod Method, string Path, string? Body, string? Auth)> Requests { get; } = [];
+
+        protected override async Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            var body = request.Content is null ? null : await request.Content.ReadAsStringAsync(cancellationToken);
+            Requests.Add((request.Method, request.RequestUri!.PathAndQuery, body, request.Headers.Authorization?.ToString()));
+            return answer(request);
+        }
+    }
+
+    private static HttpResponseMessage Json(string json, HttpStatusCode status = HttpStatusCode.OK) =>
+        new(status) { Content = new StringContent(json, Encoding.UTF8, "application/json") };
+
+    [TestMethod]
+    public async Task GetTable_DecodesContentAndSha()
+    {
+        var content = Convert.ToBase64String(Encoding.UTF8.GetBytes("{\"format\": 1}\n"));
+        var handler = new Recorder(_ => Json($$"""{"sha":"abc","content":"{{content[..4]}}\n{{content[4..]}}"}"""));
+
+        var (text, sha) = await new GitHubRepository(new HttpClient(handler), null).GetTableAsync(default);
+
+        Assert.AreEqual("{\"format\": 1}\n", text);
+        Assert.AreEqual("abc", sha);
+        Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/contents/box-contents.json?ref=main", handler.Requests[0].Path);
+    }
+
+    [TestMethod]
+    public async Task OpenScraperBranches_KeepsOnlyScraperHeads()
+    {
+        var handler = new Recorder(_ => Json("""[{"head":{"ref":"scraper/60010199001"}},{"head":{"ref":"data/manual"}}]"""));
+
+        var branches = await new GitHubRepository(new HttpClient(handler), null).OpenScraperBranchesAsync(default);
+
+        CollectionAssert.AreEqual(new[] { "scraper/60010199001" }, branches.ToArray());
+    }
+
+    [TestMethod]
+    public async Task Propose_CreatesBranchCommitAndDraftPullRequest()
+    {
+        var handler = new Recorder(request => request.Method == HttpMethod.Get
+            ? Json("""{"object":{"sha":"main-sha"}}""")
+            : Json("{}", HttpStatusCode.Created));
+
+        await new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
+            new Proposal("scraper/60010199002", "data: add Kill Team: B", "body", "{}\n"), "file-sha", default);
+
+        var r = handler.Requests;
+        Assert.AreEqual(4, r.Count);
+        Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/git/ref/heads/main", r[0].Path);
+        StringAssert.Contains(r[1].Body, "\"refs/heads/scraper/60010199002\"");
+        StringAssert.Contains(r[1].Body, "\"main-sha\"");
+        Assert.AreEqual(HttpMethod.Put, r[2].Method);
+        using (var put = JsonDocument.Parse(r[2].Body!))
+        {
+            Assert.AreEqual("{}\n", Encoding.UTF8.GetString(Convert.FromBase64String(put.RootElement.GetProperty("content").GetString()!)));
+            Assert.AreEqual("file-sha", put.RootElement.GetProperty("sha").GetString());
+            Assert.AreEqual("scraper/60010199002", put.RootElement.GetProperty("branch").GetString());
+        }
+
+        using (var pull = JsonDocument.Parse(r[3].Body!))
+        {
+            Assert.IsTrue(pull.RootElement.GetProperty("draft").GetBoolean());
+            Assert.AreEqual("main", pull.RootElement.GetProperty("base").GetString());
+        }
+
+        Assert.IsTrue(r.All(x => x.Auth == $"Bearer {Token}"));
+    }
+
+    [TestMethod]
+    public async Task Failure_NamesStatusButNeverTheToken()
+    {
+        var handler = new Recorder(_ => Json($$"""{"message":"Bad credentials"}""", HttpStatusCode.Unauthorized));
+
+        var error = await Assert.ThrowsExactlyAsync<GitHubException>(
+            () => new GitHubRepository(new HttpClient(handler), Token).OpenScraperBranchesAsync(default));
+
+        StringAssert.Contains(error.Message, "401");
+        Assert.IsFalse(error.ToString().Contains(Token, StringComparison.Ordinal));
+    }
+}

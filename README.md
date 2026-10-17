@@ -64,6 +64,9 @@ box's contents as that game's catalogues name them.
 |---|---|---|
 | `kt` | Kill Team (2024) | Kill Team |
 | `40k` | Warhammer 40,000 10th and 11th edition | 10th, 11th |
+| `aos` | Age of Sigmar, Spearhead boxes included | none yet |
+| `tow` | The Old World | none yet |
+| `hh` | Horus Heresy | none yet |
 
 `reading` is neither a game system id nor an edition id of the app, and not the `.gst` id either (the two 40k editions
 carry different ones). Entry ids are shared by 10th and 11th edition and resolve in the catalogue of whichever is chosen.
@@ -108,3 +111,7 @@ publisher's text, reviews). Numbers the sources disagree on go in as `countCandi
 
 The table changes only through a merged pull request. Each pull request passes this repository's review loop first; the
 merge by the maintainer is the hand check.
+
+A scraper service (`src/`, decision in `docs/adr/0003-scraper-service.md`) opens **draft** pull requests for boxes it
+finds in allowlisted shops, one per box: article numbers, sources, and each model line confirmed by two sources, without
+catalogue ids. The maintainer adds ids, readings and catalogue names in the branch before merging.

@@ -1,0 +1,49 @@
+# /etc/systemd/system/armamentarium-box-data.service
+#
+# The scraper service of ADR 0003: one run, started by armamentarium-box-data.timer.
+# It opens draft pull requests in LordTyberias/armamentarium-box-data and never
+# merges. No port, no restart, no sudoers line: the timer starts it.
+
+[Unit]
+Description=Armamentarium box contents scraper (draft pull requests)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/dotnet /srv/armamentarium-box-data/current/Armamentarium.BoxData.Scraper.dll
+# A full backlog run at five seconds per request and shop takes hours.
+TimeoutStartSec=20h
+
+# A throwaway account per run; the state survives in /var/lib/armamentarium-box-data,
+# passed in as $STATE_DIRECTORY.
+DynamicUser=yes
+StateDirectory=armamentarium-box-data
+
+# The GitHub token reaches the service from here and from nowhere else: systemd
+# reads the root-owned 0600 file and hands it over as $CREDENTIALS_DIRECTORY/github-token.
+# Never Environment=, which would show the value in systemctl show.
+LoadCredential=github-token:/etc/armamentarium-box-data/github-token
+
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+Environment=DOTNET_NOLOGO=1
+Environment=DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# Sandboxing as for the web services; this one writes only its state directory.
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+ProtectClock=true
+RestrictNamespaces=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=false
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+SystemCallFilter=@system-service
+SystemCallErrorNumber=EPERM

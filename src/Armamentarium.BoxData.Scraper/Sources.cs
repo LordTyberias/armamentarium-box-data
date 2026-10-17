@@ -1,0 +1,234 @@
+using System.Net;
+using System.Text.Json;
+using System.Text.RegularExpressions;
+
+namespace Armamentarium.BoxData.Scraper;
+
+/// <summary>The compiled allowlist (ADR 0003 §5). A shop not listed here is never asked.</summary>
+public static class Sources
+{
+    public static IReadOnlyList<ISource> All { get; } =
+    [
+        new ShopifySource("www.wellplayed.ch", German: false),
+        new ShopifySource("www.irresistibleforce.com.au", German: false),
+        new ShopifySource("tistaminis.com", German: false),
+        new ShopifySource("abyssgamestore.ca", German: false),
+        new ShopifySource("radaddel.de", German: true),
+        new JtlShopSource("www.fantasywelt.de", German: true),
+        new JtlShopSource("taschengelddieb.de", German: true),
+        new ElementGamesSource(),
+    ];
+}
+
+internal static partial class Page
+{
+    // Search results tried per product and shop; the right product is among the first in every shop measured.
+    public const int Tries = 3;
+
+    public static string Title(string html)
+    {
+        var match = Heading().Match(html);
+        return match.Success ? WebUtility.HtmlDecode(Tag().Replace(match.Groups[1].Value, string.Empty)).Trim() : string.Empty;
+    }
+
+    /// <summary>The description from its marker on, at most 30,000 characters; empty without the marker.</summary>
+    public static string Section(string html, string marker)
+    {
+        var start = html.IndexOf(marker, StringComparison.Ordinal);
+        return start < 0 ? string.Empty : html.Substring(start, Math.Min(30_000, html.Length - start));
+    }
+
+    public static bool IsUsed(string text) => Used().IsMatch(text);
+
+    [GeneratedRegex("<h1[^>]*>(.*?)</h1>", RegexOptions.Singleline | RegexOptions.IgnoreCase)]
+    private static partial Regex Heading();
+
+    [GeneratedRegex("<[^>]*>")]
+    private static partial Regex Tag();
+
+    [GeneratedRegex(@"\bused\b|gebraucht", RegexOptions.IgnoreCase)]
+    private static partial Regex Used();
+}
+
+/// <summary>Shopify: product search by EAN, confirmed by a variant's barcode in <c>/products/&lt;handle&gt;.js</c>.</summary>
+public sealed partial record ShopifySource(string Host, bool German) : ISource
+{
+    public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
+    {
+        if (product.Ean is not { } ean)
+        {
+            return null;
+        }
+
+        var suggest = await fetcher.GetAsync(
+            $"https://{Host}/search/suggest.json?q={ean}&resources[type]=product", cancellationToken);
+        if (suggest is null)
+        {
+            return null;
+        }
+
+        List<string> handles;
+        using (var document = JsonDocument.Parse(suggest))
+        {
+            handles = document.RootElement.GetProperty("resources").GetProperty("results").GetProperty("products")
+                .EnumerateArray()
+                .Select(p => p.TryGetProperty("handle", out var h) ? h.GetString() : null)
+                .OfType<string>()
+                .Where(h => Handle().IsMatch(h))
+                .Take(Page.Tries)
+                .ToList();
+        }
+
+        foreach (var handle in handles)
+        {
+            var json = await fetcher.GetAsync($"https://{Host}/products/{handle}.js", cancellationToken);
+            if (json is null)
+            {
+                continue;
+            }
+
+            using var document = JsonDocument.Parse(json);
+            var root = document.RootElement;
+            var barcodes = root.GetProperty("variants").EnumerateArray()
+                .Select(v => v.TryGetProperty("barcode", out var b) && b.ValueKind == JsonValueKind.String ? b.GetString() : null)
+                .OfType<string>()
+                .Where(b => b.Length > 0)
+                .Distinct()
+                .ToList();
+            if (!barcodes.Contains(ean))
+            {
+                continue;
+            }
+
+            var title = Text(root, "title");
+            if (Page.IsUsed(title) || Page.IsUsed(Text(root, "vendor")))
+            {
+                return null;
+            }
+
+            return new Listing(
+                Host, $"https://{Host}/products/{handle}", German, title, ContentLines.Parse(Text(root, "description")), barcodes);
+        }
+
+        return null;
+    }
+
+    private static string Text(JsonElement root, string name) =>
+        root.TryGetProperty(name, out var value) && value.ValueKind == JsonValueKind.String ? value.GetString() ?? "" : "";
+
+    [GeneratedRegex("^[a-z0-9][a-z0-9-]*$")]
+    private static partial Regex Handle();
+}
+
+/// <summary>JTL shop: search by EAN, confirmed by <c>itemprop="gtin13"</c>; the description sits in the description tab.</summary>
+public sealed partial record JtlShopSource(string Host, bool German) : ISource
+{
+    public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
+    {
+        if (product.Ean is not { } ean)
+        {
+            return null;
+        }
+
+        var searchUrl = $"https://{Host}/?qs={ean}";
+        var search = await fetcher.GetAsync(searchUrl, cancellationToken);
+        if (search is null)
+        {
+            return null;
+        }
+
+        // A single hit can come back as the product page itself.
+        if (Confirms(search, ean))
+        {
+            return ListingOf(searchUrl, search);
+        }
+
+        var links = ProductBox().Matches(search)
+            .Select(m => ProductLink(Host).Match(search, m.Index, Math.Min(4_000, search.Length - m.Index)))
+            .Where(m => m.Success)
+            .Select(m => $"https://{Host}/{m.Groups[1].Value}")
+            .Distinct()
+            .Take(Page.Tries)
+            .ToList();
+
+        foreach (var link in links)
+        {
+            var page = await fetcher.GetAsync(link, cancellationToken);
+            if (page is not null && Confirms(page, ean))
+            {
+                return ListingOf(link, page);
+            }
+        }
+
+        return null;
+    }
+
+    private Listing? ListingOf(string url, string page)
+    {
+        var title = Page.Title(page);
+        return Page.IsUsed(title)
+            ? null
+            : new Listing(Host, url, German, title, ContentLines.Parse(Page.Section(page, "id=\"tab-description\"")), []);
+    }
+
+    private static bool Confirms(string page, string ean) =>
+        Gtin().Matches(page).Any(m => m.Groups[1].Value == ean);
+
+    private static Regex ProductLink(string host) =>
+        new($@"(?:href|action)=""https://{Regex.Escape(host)}/([A-Za-z0-9][A-Za-z0-9_.\-/]*)""");
+
+    [GeneratedRegex(@"class=""[^""]*\bproductbox\b")]
+    private static partial Regex ProductBox();
+
+    [GeneratedRegex(@"itemprop=""gtin13""[^>]*>\s*(\d{8,14})\s*<")]
+    private static partial Regex Gtin();
+}
+
+/// <summary>Element Games: search by article number, confirmed by the page's "SKU / Product Code". No EAN on the page.</summary>
+public sealed partial class ElementGamesSource : ISource
+{
+    public string Host => "elementgames.co.uk";
+
+    public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
+    {
+        var search = await fetcher.GetAsync($"https://{Host}/search?q={product.Code}&ajax=1", cancellationToken);
+        if (search is null)
+        {
+            return null;
+        }
+
+        List<string> paths;
+        using (var document = JsonDocument.Parse(search))
+        {
+            paths = document.RootElement.EnumerateArray()
+                .Select(r => r.TryGetProperty("FullUrl", out var u) ? u.GetString() : null)
+                .OfType<string>()
+                .Where(p => PathShape().IsMatch(p))
+                .Take(Page.Tries)
+                .ToList();
+        }
+
+        foreach (var path in paths)
+        {
+            var url = $"https://{Host}/{path}";
+            var page = await fetcher.GetAsync(url, cancellationToken);
+            if (page is null || !Sku().Matches(page).Any(m => m.Groups[1].Value == product.Code))
+            {
+                continue;
+            }
+
+            var title = Page.Title(page);
+            return Page.IsUsed(title)
+                ? null
+                : new Listing(Host, url, false, title, ContentLines.Parse(Page.Section(page, "<div itemprop=\"description\">")), []);
+        }
+
+        return null;
+    }
+
+    [GeneratedRegex(@"^[a-z0-9][a-z0-9\-/]*$")]
+    private static partial Regex PathShape();
+
+    [GeneratedRegex(@"SKU / Product Code:</label>\s*<div class=""productOption"">\s*(\d+)\s*<")]
+    private static partial Regex Sku();
+}

@@ -12,7 +12,7 @@
   },
   "$defs": {
     "id": { "type": "string", "minLength": 1 },
-    "reading": { "enum": ["kt", "40k"] },
+    "reading": { "enum": ["kt", "40k", "aos", "tow", "hh"] },
     "box": {
       "type": "object",
       "additionalProperties": false,

@@ -16,7 +16,8 @@ app bundles a fixed commit of it; it never fetches it at runtime). Everything el
 | Schema | `box-contents.schema.json` | JSON Schema draft 2020-12 of the table. The table references it with `$schema`. |
 | Contract prose | `README.md` | The rules the schema cannot express (key uniqueness across boxes, what goes in, NPO fallback, sources). |
 | Decisions | `docs/adr/` | This repository's decisions, index `docs/adr/INDEX.md`. |
-| Scraper service | not yet present | Planned (Armamentarium ticket ARMAM-591). See §4. |
+| Scraper service | `src/Armamentarium.BoxData.Scraper/`, tests `tests/`, solution `armamentarium-box-data.slnx` | Opens draft pull requests with new boxes (ADR 0003). See §4. |
+| Operation | `deploy/` | systemd service and timer, deploy script. Runbook: Armamentarium `docs/server/betrieb.md`. |
 
 The table, the schema and the README form **one contract**. A change to one that the other two do not follow is a defect.
 
@@ -26,21 +27,23 @@ The table, the schema and the README form **one contract**. A change to one that
   changed, a new required field) raises `format` by one, in the table and in the schema's `const` together. Adding an
   optional field a reader may ignore does not.
 - **Keys** are full article numbers (`productCodes`), never the nine-digit remainder.
-- **Readings** are `kt` and `40k` only, a reading family, not an app id. A new reading is a format decision.
+- **Readings** are `kt`, `40k`, `aos`, `tow`, `hh` (ADR 0002), a reading family, not an app id. A new reading is a format
+  decision.
 - **No guessed data.** Catalogue ids come from the catalogues, never from a similar name; counts come from at least two
   sources, disagreement is recorded as `countCandidates`.
 
-## 4 — Scraper service (planned)
+## 4 — Scraper service
 
-Fixed by Armamentarium ADR 0118 §4, to be built under ARMAM-591:
+Fixed by Armamentarium ADR 0118 §4 and its Addendum ARMAM-591, built under ARMAM-591, decided in ADR 0003:
 
 - Its own .NET 10 project **in this repository**, not part of `Armamentarium.slnx`, never shipped with the app.
 - Runs once a day on the project's own server (systemd timer).
 - Changes the table **only through a pull request**; it never merges. The merge is the hand check.
 - Write access through a fine-grained token scoped to this repository only (contents and pull requests), at most 90 days,
   stored outside every repository, never logged.
-- Sources from a compiled allowlist, no open search; at most one request per five seconds and host; own user agent with
-  the project's contact address.
+- Sources from a compiled allowlist, no open search; at most one request per five seconds and host; own user agent
+  without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
+- Proposes **draft** pull requests, one per box, without catalogue ids; every entry confirmed by two sources.
 - Every further dependency of the service is decided with a reason (ADR in `docs/adr/`).
 
 ## 5 — Not in this repository

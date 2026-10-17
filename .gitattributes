@@ -1,2 +1,4 @@
 * text=auto eol=crlf
 LICENSE -text
+*.service text eol=lf
+*.timer text eol=lf
