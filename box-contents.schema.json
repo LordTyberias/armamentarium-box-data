@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/LordTyberias/armamentarium-box-data/box-contents.schema.json",
+  "title": "Box contents, format 1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["format", "boxes"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "format": { "const": 1 },
+    "boxes": { "type": "array", "items": { "$ref": "#/$defs/box" } }
+  },
+  "$defs": {
+    "id": { "type": "string", "minLength": 1 },
+    "reading": { "enum": ["kt", "40k"] },
+    "box": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "productCodes", "sources"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "productCodes": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[0-9]{6,11}$" }
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^https://" }
+        },
+        "generation": { "enum": ["current", "legacy"] },
+        "readings": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/readingBlock" }
+        }
+      },
+      "oneOf": [
+        { "required": ["readings"], "not": { "required": ["generation"] } },
+        { "required": ["generation"], "not": { "required": ["readings"] } }
+      ]
+    },
+    "readingBlock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reading", "entries"],
+      "properties": {
+        "reading": { "$ref": "#/$defs/reading" },
+        "entries": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/entry" } }
+      }
+    },
+    "choiceOption": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entryId", "name"],
+      "properties": {
+        "entryId": { "$ref": "#/$defs/id" },
+        "name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "name"],
+      "properties": {
+        "role": { "enum": ["team", "npo", "extra"] },
+        "reading": { "$ref": "#/$defs/reading" },
+        "catalogueId": { "$ref": "#/$defs/id" },
+        "entryId": { "$ref": "#/$defs/id" },
+        "choice": { "type": "array", "minItems": 2, "uniqueItems": true, "items": { "$ref": "#/$defs/choiceOption" } },
+        "name": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 1 },
+        "countCandidates": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": { "type": "integer", "minimum": 1 }
+        }
+      },
+      "allOf": [
+        {
+          "oneOf": [
+            { "required": ["count"], "not": { "required": ["countCandidates"] } },
+            { "required": ["countCandidates"], "not": { "required": ["count"] } }
+          ]
+        },
+        {
+          "oneOf": [
+            {
+              "required": ["catalogueId", "entryId"],
+              "not": { "required": ["choice"] }
+            },
+            {
+              "required": ["catalogueId", "choice"],
+              "not": { "required": ["entryId"] }
+            },
+            {
+              "not": {
+                "anyOf": [
+                  { "required": ["catalogueId"] },
+                  { "required": ["entryId"] },
+                  { "required": ["choice"] }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
