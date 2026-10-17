@@ -2689,6 +2689,62 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-ultramarines"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Ultramarines: Captain Titus & The Wardens of Ultramar",
+      "productCodes": [
+        "99120101459"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ultramarines-captain-titus-the-wardens-of-ultramar",
+        "https://www.retrofixgames.com/products/captain-titus-the-wardens-of-ultramar",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/captain-titus-and-the-wardens-of-ultramar",
+        "https://radaddel.de/products/ultramarines-captain-titus-and-the-wardens-of-ultramar"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "596f-dbdc-41e7-088a",
+              "name": "Captain Titus",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Plenipotentiary Lucia Vestha",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Astropath Dainal Kornelius",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Legatus Aemelia Minervas",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Commodore Gaius Silva",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Veteran Sergeant Metaurus",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ancient Gadriel",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
