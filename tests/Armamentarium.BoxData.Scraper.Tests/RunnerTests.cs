@@ -185,12 +185,26 @@ public sealed class RunnerTests
         var (repo, _, _) = await Run(
             [P("60010199002", "5011921000002")],
             TwoShops(new Line(5, "Blade Guards", false, false), new Line(1, "Seer of Nowhere", false, false)),
+            autoMerge: true,
             catalogues: catalogues);
 
         var table = repo.Proposals.Single().Table;
         StringAssert.Contains(table, "\"catalogueId\": \"cat-blades\"");
         StringAssert.Contains(table, "\"entryId\": \"se-guard\"");
         Assert.AreEqual(1, table.Split("\"entryId\"").Length - 1);
+    }
+
+    [TestMethod]
+    public async Task Run_DraftWithoutAutoMerge_CarriesNoIds()
+    {
+        var catalogues = new CatalogueIndex();
+        catalogues.AddCatalogue("kt", "Blades.cat", System.Text.Encoding.UTF8.GetBytes(
+            """<catalogue id="cat-blades" name="Blades" library="false"><selectionEntries><selectionEntry type="model" id="se-guard" name="Blade Guard"/></selectionEntries></catalogue>"""));
+
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)), catalogues: catalogues);
+
+        Assert.IsFalse(repo.Proposals.Single().Table.Contains("\"entryId\"", StringComparison.Ordinal));
     }
 
     [TestMethod]

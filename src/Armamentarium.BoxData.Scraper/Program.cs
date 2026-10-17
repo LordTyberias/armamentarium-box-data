@@ -50,7 +50,8 @@ public static class Program
             var state = statePath is null ? new ScanState() : ScanState.Load(statePath);
             var products = ProductCatalogue.Parse(await github.GetStringAsync(ProductCatalogue.ProductsUrl, stop.Token));
             Log($"{products.Count} Games Workshop products in the catalogue");
-            var catalogues = await CatalogueIndex.LoadAsync(github, Log, stop.Token);
+            // Ids by name only while the service merges by itself (ADR 0004); drafts stay without ids for the maintainer.
+            var catalogues = autoMerge ? await CatalogueIndex.LoadAsync(github, Log, stop.Token) : null;
 
             using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
             await new Runner(

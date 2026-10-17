@@ -16,7 +16,7 @@ app bundles a fixed commit of it; it never fetches it at runtime). Everything el
 | Schema | `box-contents.schema.json` | JSON Schema draft 2020-12 of the table. The table references it with `$schema`. |
 | Contract prose | `README.md` | The rules the schema cannot express (key uniqueness across boxes, what goes in, NPO fallback, sources). |
 | Decisions | `docs/adr/` | This repository's decisions, index `docs/adr/INDEX.md`. |
-| Scraper service | `src/Armamentarium.BoxData.Scraper/`, tests `tests/`, solution `armamentarium-box-data.slnx` | Opens draft pull requests with new boxes (ADR 0003). See §4. |
+| Scraper service | `src/Armamentarium.BoxData.Scraper/`, tests `tests/`, solution `armamentarium-box-data.slnx` | Opens pull requests with new boxes (ADR 0003); with `--auto-merge` sets ids by name and merges them itself (ADR 0004). See §4. |
 | Operation | `deploy/` | systemd service and timer, deploy script. Runbook: Armamentarium `docs/server/betrieb.md`. `*.service` and `*.timer` are LF (`.gitattributes`, `.editorconfig`): systemd reads a trailing CR as part of a value. Every other file stays CRLF. |
 
 The table, the schema and the README form **one contract**. A change to one that the other two do not follow is a defect.

@@ -274,7 +274,8 @@ public sealed class Runner(
             $"{GitHubRepository.BranchPrefix}{codes[0]}", $"data: add {name}", body.ToString(), Table.Write(table), Draft: !autoMerge);
     }
 
-    private RootEntry? IdsOf(string reading, string name) => catalogues?.Find(reading, name);
+    // Ids by name only while the service merges by itself (ADR 0004); a draft leaves them to the maintainer.
+    private RootEntry? IdsOf(string reading, string name) => autoMerge ? catalogues?.Find(reading, name) : null;
 
     private Proposal? LanguageVariants(string knownCode, IReadOnlyList<string> added, IReadOnlyList<Listing> listings, string text)
     {
