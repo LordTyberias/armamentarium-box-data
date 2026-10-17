@@ -120,6 +120,34 @@ public sealed class ContentLinesTests
     }
 
     [TestMethod]
+    public void Parse_AndAfterAClosedParenthesisOrWithX_SplitsTheLine()
+    {
+        var lines = ContentLines.Parse("<p>- 2x Lads (heavy weapon) and 1 Boss</p><p>- 5 Greenskins and 2x Squigs</p>");
+
+        CollectionAssert.AreEqual(
+            new[] { "Lads:2", "Boss:1", "Greenskins:5", "Squigs:2" },
+            lines.Select(l => $"{l.Name}:{l.Count}").ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_IndentedBullets_StayBulletsUnderTheirTotal()
+    {
+        var lines = ContentLines.Parse("<p>3x Iron Brothers</p><p>  - 1x Captain</p><p>  - 2x Line Troopers</p>");
+
+        CollectionAssert.AreEqual(new[] { "Captain", "Line Troopers" }, lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_AColonInsideATitle_IsNoDescription()
+    {
+        var lines = ContentLines.Parse(
+            "<p>• 1x Warhammer 40,000: Battle Report Book</p><p>• 1x Kill Team: Murderwing Transfer Sheet</p>" +
+            "<p>• 2x Warlords</p>");
+
+        CollectionAssert.AreEqual(new[] { "Warlords" }, lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
     public void Parse_NonPlayerMarker_IsFlagged()
     {
         var lines = ContentLines.Parse(

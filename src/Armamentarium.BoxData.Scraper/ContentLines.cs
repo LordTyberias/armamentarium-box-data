@@ -111,18 +111,29 @@ public static partial class ContentLines
 
     private static string WithoutDescription(string name)
     {
-        var colon = name.IndexOf(':');
         var dash = DescriptionDash().Match(name);
-        var end = dash.Success && (colon < 0 || dash.Index < colon) ? dash.Index : colon;
-        return end >= 0 ? name[..end] : name;
+        if (dash.Success)
+        {
+            name = name[..dash.Index];
+        }
+
+        // A colon in a title ("Warhammer 40,000: Battle Report Book") keeps its few words; a description runs longer.
+        var colon = name.IndexOf(':');
+        var described = colon >= 0 && name[(colon + 1)..].Split(' ', StringSplitOptions.RemoveEmptyEntries).Length >= 4;
+        return described ? name[..colon] : name;
     }
 
     // An "and 2" inside a parenthesis ("with rifles and 2 grenades") is prose, not a second line.
     private static Match NextAnd(string name)
     {
         var and = AndCount().Match(name);
-        var parenthesis = name.IndexOf('(');
-        return and.Success && (parenthesis < 0 || and.Index < parenthesis) ? and : Match.Empty;
+        if (!and.Success)
+        {
+            return and;
+        }
+
+        var before = name[..and.Index];
+        return before.Count(c => c == '(') == before.Count(c => c == ')') ? and : Match.Empty;
     }
 
     private static string Cut(string name, bool alternative)
@@ -156,7 +167,7 @@ public static partial class ContentLines
 
     // "Inhalt: 1x Seer - 5x Guards": the colon and every dash before a further count start a new line. A dash at the start
     // of a line is its bullet, not a separator.
-    [GeneratedRegex(@"(?:[ \t][-–—•][ \t]|:[ \t])(?=[0-9]{1,3}\s?[x×]\s)", RegexOptions.None, Page.RegexTimeout)]
+    [GeneratedRegex(@"(?:(?<=\S)[ \t][-–—•][ \t]|:[ \t])(?=[0-9]{1,3}\s?[x×]\s)", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex InlineSeparator();
 
     [GeneratedRegex(@"^\s*(?:(?<bullet>[-–—•*·])\s*)?(?<count>[0-9]{1,3})\s*(?<x>[x×](?=\s))?\s+(?<name>\S.*?)\s*$", RegexOptions.None, Page.RegexTimeout)]
@@ -177,7 +188,7 @@ public static partial class ContentLines
     [GeneratedRegex(@"alternativ|can be built as|\bor\b|\boder\b", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex AlternativeBuild();
 
-    [GeneratedRegex(@"\s(and|und)\s(?<count>[0-9]{1,3})\s+(?=\S)", RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    [GeneratedRegex(@"\s(and|und)\s(?<count>[0-9]{1,3})\s?[x×]?\s+(?=\S)", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex AndCount();
 
     [GeneratedRegex(@"\s[-–—]\s", RegexOptions.None, Page.RegexTimeout)]
