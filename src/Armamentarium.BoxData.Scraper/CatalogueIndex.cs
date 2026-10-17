@@ -1,5 +1,7 @@
 using System.IO.Compression;
 using System.Text.Json;
+using System.Text.RegularExpressions;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace Armamentarium.BoxData.Scraper;
@@ -17,7 +19,7 @@ public sealed record CatalogueSource(string Reading, string Owner, string Reposi
 /// The root entries of the catalogues of every reading, by normalised name (ADR 0004). A name gets ids only when it
 /// names exactly one root entry of its reading; one name in two catalogues, or none, gets none.
 /// </summary>
-public sealed class CatalogueIndex
+public sealed partial class CatalogueIndex
 {
     /// <summary>The compiled allowlist of catalogue repositories (ADR 0004). Nothing else is downloaded.</summary>
     public static readonly CatalogueSource[] Sources =
@@ -49,20 +51,18 @@ public sealed class CatalogueIndex
     /// <summary>A reading whose sources could not all be read gets no ids in this run: a missing source could hide a twin.</summary>
     public void MarkUnavailable(string reading) => _unavailable.Add(reading);
 
-    /// <summary>Reads one catalogue file, BattleScribe XML (.cat) or JSON; a library or anything else adds nothing.</summary>
-    public void AddCatalogue(string reading, string fileName, byte[] content)
-    {
-        if (fileName.EndsWith(".cat", StringComparison.OrdinalIgnoreCase))
-        {
-            AddXml(reading, content);
-        }
-        else if (fileName.EndsWith(".json", StringComparison.OrdinalIgnoreCase))
-        {
-            AddJson(reading, content);
-        }
-    }
+    /// <summary>
+    /// Reads one catalogue file, BattleScribe XML (.cat) or JSON; a library or anything else adds nothing. False when the
+    /// file cannot be read whole: not well-formed, a document type declaration, or an id outside the BattleScribe form.
+    /// </summary>
+    public bool AddCatalogue(string reading, string fileName, byte[] content) =>
+        fileName.EndsWith(".cat", StringComparison.OrdinalIgnoreCase) ? AddXml(reading, content)
+        : !fileName.EndsWith(".json", StringComparison.OrdinalIgnoreCase) || AddJson(reading, content);
 
-    /// <summary>Reads every catalogue of a repository archive in memory; nothing is unpacked to disk.</summary>
+    /// <summary>
+    /// Reads every catalogue of a repository archive in memory; nothing is unpacked to disk. A file that is skipped or
+    /// unreadable leaves the whole reading without ids for this run (logged): it could hold the twin of a name.
+    /// </summary>
     public void AddArchive(string reading, Stream zip, int maxEntryBytes, Action<string> log)
     {
         using var archive = new ZipArchive(zip, ZipArchiveMode.Read, leaveOpen: true);
@@ -74,23 +74,27 @@ public sealed class CatalogueIndex
                 continue;
             }
 
+            string? problem = null;
             if (entry.Length > maxEntryBytes)
             {
-                log($"{reading}: {Text.Clean(entry.Name)} skipped, {entry.Length} bytes");
-                continue;
+                problem = $"{entry.Length} bytes";
             }
-
-            using var stream = entry.Open();
-            using var buffer = new MemoryStream();
-            // The declared length can lie; the copy stops one byte past the limit.
-            CopyAtMost(stream, buffer, maxEntryBytes + 1);
-            if (buffer.Length > maxEntryBytes)
+            else
             {
-                log($"{reading}: {Text.Clean(entry.Name)} skipped, larger than declared");
-                continue;
+                using var stream = entry.Open();
+                using var buffer = new MemoryStream();
+                // The declared length can lie; the copy stops one byte past the limit.
+                CopyAtMost(stream, buffer, maxEntryBytes + 1);
+                problem = buffer.Length > maxEntryBytes ? "larger than declared"
+                    : !AddCatalogue(reading, entry.Name, buffer.ToArray()) ? "unreadable"
+                    : null;
             }
 
-            AddCatalogue(reading, entry.Name, buffer.ToArray());
+            if (problem is not null)
+            {
+                MarkUnavailable(reading);
+                log($"{reading}: {Text.Clean(entry.Name)} {problem}, no ids for this reading");
+            }
         }
     }
 
@@ -98,10 +102,11 @@ public sealed class CatalogueIndex
     /// Downloads every source of the allowlist and reads it. A source that fails leaves its reading without ids for this
     /// run (logged); the run goes on.
     /// </summary>
-    public static async Task<CatalogueIndex> LoadAsync(HttpClient http, Action<string> log, CancellationToken cancellationToken)
+    public static async Task<CatalogueIndex> LoadAsync(
+        HttpClient http, Action<string> log, CancellationToken cancellationToken, IReadOnlyList<CatalogueSource>? sources = null)
     {
         var index = new CatalogueIndex();
-        foreach (var source in Sources)
+        foreach (var source in sources ?? Sources)
         {
             try
             {
@@ -137,8 +142,11 @@ public sealed class CatalogueIndex
         response.EnsureSuccessStatusCode();
         using var release = JsonDocument.Parse(await response.Content.ReadAsStringAsync(cancellationToken));
         var tag = release.RootElement.GetProperty("tag_name").GetString() ?? "";
-        // The tag goes into a URL path: only the characters release tags use.
-        return tag.Length > 0 && tag.All(c => char.IsAsciiLetterOrDigit(c) || c is '.' or '-' or '_')
+        // The tag goes into a URL path: only the characters release tags use, starting with a letter or digit, no "..".
+        return tag.Length > 0
+            && char.IsAsciiLetterOrDigit(tag[0])
+            && !tag.Contains("..", StringComparison.Ordinal)
+            && tag.All(c => char.IsAsciiLetterOrDigit(c) || c is '.' or '-' or '_')
             ? tag
             : throw new InvalidDataException("unexpected release tag");
     }
@@ -153,38 +161,42 @@ public sealed class CatalogueIndex
         }
     }
 
-    private void AddXml(string reading, byte[] content)
+    private bool AddXml(string reading, byte[] content)
     {
         XElement root;
         try
         {
             using var stream = new MemoryStream(content);
-            // No DTD, no external entities: the default XmlReaderSettings prohibit DTD processing.
-            root = XElement.Load(stream);
+            // No document type declaration at all, so no entity expansion; BattleScribe catalogues carry none.
+            using var reader = XmlReader.Create(stream, new XmlReaderSettings { DtdProcessing = DtdProcessing.Prohibit, XmlResolver = null });
+            root = XElement.Load(reader);
         }
-        catch (System.Xml.XmlException)
+        catch (XmlException)
         {
-            return;
+            return false;
         }
 
-        if (root.Name.LocalName != "catalogue" || (string?)root.Attribute("library") == "true" || (string?)root.Attribute("id") is not { } id)
+        if (root.Name.LocalName != "catalogue" || (string?)root.Attribute("library") == "true")
         {
-            return;
+            return true;
         }
 
+        var valid = true;
         // Only the root lists: sharedSelectionEntries hold the same element names but are no root offer.
         foreach (var container in root.Elements().Where(c => c.Name.LocalName is "selectionEntries" or "entryLinks"))
         {
             foreach (var child in container.Elements())
             {
-                Add(reading, id, child.Name.LocalName, Attr(child, "type"), Attr(child, "id"), Attr(child, "name"), Attr(child, "targetId"));
+                valid &= Add(reading, Attr(root, "id"), child.Name.LocalName, Attr(child, "type"), Attr(child, "id"), Attr(child, "name"), Attr(child, "targetId"));
             }
         }
+
+        return valid;
 
         static string? Attr(XElement element, string name) => (string?)element.Attribute(name);
     }
 
-    private void AddJson(string reading, byte[] content)
+    private bool AddJson(string reading, byte[] content)
     {
         JsonDocument document;
         try
@@ -193,7 +205,7 @@ public sealed class CatalogueIndex
         }
         catch (JsonException)
         {
-            return;
+            return false;
         }
 
         using (document)
@@ -201,12 +213,12 @@ public sealed class CatalogueIndex
             if (document.RootElement.ValueKind != JsonValueKind.Object
                 || !document.RootElement.TryGetProperty("catalogue", out var catalogue)
                 || catalogue.ValueKind != JsonValueKind.Object
-                || Scalar(catalogue, "library") == "true"
-                || Scalar(catalogue, "id") is not { } id)
+                || Scalar(catalogue, "library") == "true")
             {
-                return;
+                return true;
             }
 
+            var valid = true;
             foreach (var (container, element) in new[] { ("selectionEntries", "selectionEntry"), ("entryLinks", "entryLink") })
             {
                 if (!catalogue.TryGetProperty(container, out var children) || children.ValueKind != JsonValueKind.Array)
@@ -216,9 +228,11 @@ public sealed class CatalogueIndex
 
                 foreach (var child in children.EnumerateArray().Where(c => c.ValueKind == JsonValueKind.Object))
                 {
-                    Add(reading, id, element, Scalar(child, "type"), Scalar(child, "id"), Scalar(child, "name"), Scalar(child, "targetId"));
+                    valid &= Add(reading, Scalar(catalogue, "id"), element, Scalar(child, "type"), Scalar(child, "id"), Scalar(child, "name"), Scalar(child, "targetId"));
                 }
             }
+
+            return valid;
         }
 
         // BattleScribe JSON writes some attributes as strings and some as booleans; both read as text.
@@ -230,7 +244,9 @@ public sealed class CatalogueIndex
     }
 
     // A root selectionEntry of type unit or model, or a root entryLink to a selectionEntry (its own name, its target).
-    private void Add(string reading, string catalogueId, string element, string? type, string? id, string? name, string? targetId)
+    // An id outside the forms the sources use (BSData's hex groups with dashes, the Spearhead repository's
+    // "sph::box::01-name") makes the file unreadable: it would go into the table unchecked.
+    private bool Add(string reading, string? catalogueId, string element, string? type, string? id, string? name, string? targetId)
     {
         var entryId = element switch
         {
@@ -241,7 +257,14 @@ public sealed class CatalogueIndex
         var key = name is null ? "" : ContentLines.Normalize(name.Trim());
         if (entryId is null || key.Length == 0)
         {
-            return;
+            return true;
+        }
+
+        catalogueId = catalogueId?.Trim();
+        entryId = entryId.Trim();
+        if (catalogueId is null || !BattleScribeId().IsMatch(catalogueId) || !BattleScribeId().IsMatch(entryId))
+        {
+            return false;
         }
 
         if (!_byReading.TryGetValue(reading, out var names))
@@ -254,6 +277,10 @@ public sealed class CatalogueIndex
             names[key] = entries = [];
         }
 
-        entries.Add(new RootEntry(catalogueId.Trim(), entryId.Trim()));
+        entries.Add(new RootEntry(catalogueId, entryId));
+        return true;
     }
+
+    [GeneratedRegex(@"^[A-Za-z0-9_.:-]{1,128}\z", RegexOptions.None, Page.RegexTimeout)]
+    private static partial Regex BattleScribeId();
 }

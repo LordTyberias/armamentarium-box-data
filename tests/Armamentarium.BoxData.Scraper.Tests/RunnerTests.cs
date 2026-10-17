@@ -71,8 +71,9 @@ public sealed class RunnerTests
             return Task.FromResult(Proposals.Count);
         }
 
-        public Task MergeAsync(int number, string branch, CancellationToken cancellationToken)
+        public Task MergeAsync(int number, CancellationToken cancellationToken)
         {
+            var branch = Proposals[number - 1].Branch;
             if (FailMerge(branch) is { } error)
             {
                 throw error;
@@ -82,6 +83,11 @@ public sealed class RunnerTests
             Merged.Add(branch);
             return Task.CompletedTask;
         }
+
+        public Func<string, Exception?> FailDelete { get; init; } = _ => null;
+
+        public Task DeleteBranchAsync(string branch, CancellationToken cancellationToken) =>
+            FailDelete(branch) is { } error ? Task.FromException(error) : Task.CompletedTask;
     }
 
     private sealed class FixedSource(string host, Func<Product, Listing?> find, TimeSpan? interval = null) : ISource
@@ -173,6 +179,33 @@ public sealed class RunnerTests
         Assert.AreEqual(0, repo.Merged.Count);
         Assert.IsTrue(log.Any(l => l.Contains("405", StringComparison.Ordinal)));
         Assert.IsFalse(state.IsDue("60010199002", Now));
+    }
+
+    [TestMethod]
+    public async Task Run_FiveRefusedMerges_StopTheRun()
+    {
+        var repo = new FakeRepository { FailMerge = _ => new GitHubException("answered 405") };
+        var products = Enumerable.Range(10, 6).Select(i => P($"600101990{i}", $"50119210000{i}")).ToList();
+
+        await Run(products, TwoShops(new Line(5, "Blade Guards", false, false)), repo, autoMerge: true);
+
+        Assert.AreEqual(5, repo.Proposals.Count);
+    }
+
+    [TestMethod]
+    public async Task Run_MergedButBranchNotDeleted_CountsAsMergedAndReadsTheTable()
+    {
+        var repo = new FakeRepository { FailDelete = _ => new GitHubException("answered 422") };
+
+        var (_, _, log) = await Run(
+            [P("60010199002", "5011921000002"), P("60010199003", "5011921000003")],
+            TwoShops(new Line(5, "Blade Guards", false, false)),
+            repo,
+            autoMerge: true);
+
+        Assert.AreEqual(2, repo.Merged.Count);
+        StringAssert.Contains(repo.Proposals[1].Table, "\"60010199002\"");
+        Assert.IsTrue(log.Any(l => l.Contains("branch not deleted", StringComparison.Ordinal)));
     }
 
     [TestMethod]

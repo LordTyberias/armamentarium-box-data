@@ -96,7 +96,8 @@ free): the fixed entry counts its own models, the choice counts the remaining fr
 
 A kit counts as a unit of a reading only when the box holds exactly that unit's models. A box whose models differ from
 the unit (the Sanctifier kit holds a Confessor and a Cherub the 40k unit has no place for) is name and count only, even
-when an entry of the same name exists.
+when an entry of the same name exists. Rows the scraper merges with `--auto-merge` are not checked for this: a name that
+names exactly one entry gets its ids whatever the model count (ADR 0004, Consequences).
 
 ### What goes in
 

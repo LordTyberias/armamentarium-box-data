@@ -49,6 +49,9 @@ public interface IRepository
     /// <summary>Opens the pull request; returns its number.</summary>
     Task<int> ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken);
 
-    /// <summary>Merges the pull request and deletes its branch.</summary>
-    Task MergeAsync(int number, string branch, CancellationToken cancellationToken);
+    /// <summary>Merges the pull request.</summary>
+    Task MergeAsync(int number, CancellationToken cancellationToken);
+
+    /// <summary>Deletes a branch whose pull request is merged.</summary>
+    Task DeleteBranchAsync(string branch, CancellationToken cancellationToken);
 }

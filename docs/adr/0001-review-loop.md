@@ -1,6 +1,7 @@
 # ADR 0001 — Review loop before every pull request
 
-**Status:** Accepted (2026-10-17, Armamentarium ARMAM-588).
+**Status:** Accepted (2026-10-17, Armamentarium ARMAM-588). The service runs on the 1st and 15th since ADR 0004; its
+pull requests made with `--auto-merge` pass neither this loop nor a hand check (ADR 0004 §1).
 
 ## Context
 

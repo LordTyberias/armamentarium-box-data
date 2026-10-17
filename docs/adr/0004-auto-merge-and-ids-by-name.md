@@ -40,8 +40,11 @@ on Devlan. A name found in more than one catalogue (`Superior`) gets none.
 
    Archives come from `codeload.github.com` (release tags from `api.github.com`), with the run's client: no redirect, at
    most 64 MB, each catalogue file at most 32 MB, read in memory and never unpacked. BattleScribe JSON is read with
-   `System.Text.Json`, XML with `System.Xml.Linq`; no package. A source that cannot be read leaves its whole reading
-   without ids for this run (a missing source could hide a twin of a name), logged; the run goes on.
+   `System.Text.Json`, XML with `System.Xml.Linq` and no document type declaration; no package. A source that cannot be
+   read, or holds a catalogue file that is too large, not well-formed, or carries an id outside the forms the sources use
+   (letters, digits, `-`, `_`, `.`, `:`, at most 128 characters: BSData's hex groups, the Spearhead repository's
+   `sph::box::01-name`), leaves its whole reading without ids for this run (a missing file could hide a twin of a name),
+   logged; the run goes on.
 4. **Gaps are merged:** a box whose entries do not all get ids is merged anyway; an entry without ids is a name and a
    count, shown, not addable (README, Entry).
 5. **Roles and readings** stay as ADR 0003 §10 sets them (`team`; `npo` in `kt` and `extra` elsewhere where the line says

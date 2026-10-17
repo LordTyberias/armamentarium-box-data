@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 namespace Armamentarium.BoxData.Scraper;
 
 /// <summary>
-/// Entry point of the daily run (ADR 0003 §2). systemd hands the token in through <c>LoadCredential</c>
+/// Entry point of a run on the 1st and the 15th (ADR 0004 §6). systemd hands the token in through <c>LoadCredential</c>
 /// (<c>$CREDENTIALS_DIRECTORY/github-token</c>) and the state directory through <c>$STATE_DIRECTORY</c>.
 ///
 ///   --dry-run        reads GitHub without a token, writes nothing, prints each proposal instead of opening it
@@ -106,10 +106,12 @@ public static class Program
         }
 
         // Nothing was opened, so nothing is merged; the run reads the unchanged table again and goes on.
-        public Task MergeAsync(int number, string branch, CancellationToken cancellationToken)
+        public Task MergeAsync(int number, CancellationToken cancellationToken)
         {
-            log($"--- would merge {branch}");
+            log("--- would merge it");
             return Task.CompletedTask;
         }
+
+        public Task DeleteBranchAsync(string branch, CancellationToken cancellationToken) => Task.CompletedTask;
     }
 }

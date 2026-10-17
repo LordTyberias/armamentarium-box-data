@@ -108,7 +108,7 @@ public sealed class Runner(
 
             try
             {
-                await repository.MergeAsync(number, proposal.Branch, cancellationToken);
+                await repository.MergeAsync(number, cancellationToken);
             }
             catch (GitHubException ex)
             {
@@ -119,6 +119,16 @@ public sealed class Runner(
             }
 
             log($"merged {proposal.Branch}");
+            try
+            {
+                await repository.DeleteBranchAsync(proposal.Branch, cancellationToken);
+            }
+            catch (GitHubException ex)
+            {
+                // The merge stands; a branch left behind only blocks a later proposal of the same name.
+                log($"{proposal.Branch} merged, branch not deleted: {ex.Message}");
+            }
+
             (text, sha) = await repository.GetTableAsync(cancellationToken);
             known = Table.Codes(Table.Read(text));
         }

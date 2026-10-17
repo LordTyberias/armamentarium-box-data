@@ -91,16 +91,14 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
         }
     }
 
-    public async Task MergeAsync(int number, string branch, CancellationToken cancellationToken)
-    {
+    public async Task MergeAsync(int number, CancellationToken cancellationToken) =>
         (await SendAsync(HttpMethod.Put, $"repos/{Repository}/pulls/{number}/merge", new JsonObject
         {
             ["merge_method"] = "merge",
         }, cancellationToken)).Dispose();
 
-        // Merged: the branch has done its work, and leaving it would block the next proposal of the same name.
+    public async Task DeleteBranchAsync(string branch, CancellationToken cancellationToken) =>
         (await SendAsync(HttpMethod.Delete, $"repos/{Repository}/git/refs/heads/{branch}", null, cancellationToken)).Dispose();
-    }
 
     private async Task<JsonDocument> SendAsync(HttpMethod method, string path, JsonObject? body, CancellationToken cancellationToken)
     {
