@@ -1383,6 +1383,118 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Celestian Insidiants",
+      "productCodes": [
+        "99120108125"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/kill-team-celestian-insidiants",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/kill-team/kill-team-celestian-insidiants"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Superior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "entryId": "11a1-9f43-05de-b86c",
+              "name": "Denuncia",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "entryId": "622c-49e2-95c6-2676",
+              "name": "Censor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Reliquarius",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "entryId": "6f5c-e419-63ff-fb87",
+              "name": "Abjuror",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "entryId": "5c5b-2c1f-a9e4-090f",
+              "name": "Mortisanctus",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "entryId": "cd7f-9e66-82dc-57ce",
+              "name": "Cremators",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Warriors",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Superior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Denuncia",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Censor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Reliquarius",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Abjuror",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Mortisanctus",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cremators",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Warriors",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
