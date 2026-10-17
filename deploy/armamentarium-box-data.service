@@ -21,6 +21,11 @@ TimeoutStartSec=20h
 # passed in as $STATE_DIRECTORY.
 DynamicUser=yes
 StateDirectory=armamentarium-box-data
+# The dynamic account has no home directory, but .NET opens the per-user X509 store
+# under $HOME on every TLS handshake and fails without one ("The home directory of the
+# current user could not be determined", measured on the first run). The state
+# directory is the one place this service may write.
+Environment=HOME=%S/armamentarium-box-data
 
 # The GitHub token reaches the service from here and from nowhere else: systemd
 # reads the root-owned 0600 file and hands it over as $CREDENTIALS_DIRECTORY/github-token.
