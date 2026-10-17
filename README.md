@@ -86,6 +86,13 @@ An entry carries either `catalogueId` with `entryId`, or `catalogueId` with `cho
 is a name and a model count only: the box holds these models, but no catalogue entry of this reading matches them. It is
 shown, not addable. Ids are never guessed from a similar name.
 
+A `choice` option may share its `entryId` with a fixed entry of the same reading (two Aspirants fixed, a third model
+free): the fixed entry counts its own models, the choice counts the remaining freely built ones.
+
+A kit counts as a unit of a reading only when the box holds exactly that unit's models. A box whose models differ from
+the unit (the Sanctifier kit holds a Confessor and a Cherub the 40k unit has no place for) is name and count only, even
+when an entry of the same name exists.
+
 ### What goes in
 
 - **Models only.** Terrain, datacards, tokens and markers never.
