@@ -2767,6 +2767,54 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-thousand-sons"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Warhammer 40K Battleforce Chaos Space Marines Warband",
+      "productCodes": [
+        "99120102252"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-battleforce-chaos-space-marines-warband",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-40k/battleforce-chaos-space-marines-warband"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "46e1-2159-7c26-9105",
+              "name": "Lord Discordant on Helstalker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "2311-fa63-364-22a3",
+              "name": "Obliterators",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "3e98-7689-8bf0-96e0",
+              "name": "Venomcrawler",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Legionaries",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Chaos Cultists",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
