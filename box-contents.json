@@ -1737,6 +1737,86 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Starter Set (EN)",
+      "productCodes": [
+        "60010199082"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-starter-set-1",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-40k/warhammer-40000-starter-set-eng-",
+        "https://radaddel.de/products/warhammer-40-000-starter-set-englisch-1"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Captain with Relic Shield",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "78eb-9334-f5c0-6095",
+              "name": "Librarian",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Intercessors",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Vanguard Veterans with Jump Packs",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "2e1f-9342-f5e8-37ab",
+              "name": "Land Speeder",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "2efc-c4b3-2ecc-5a37",
+              "name": "Warboss",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "260d-9ce4-ea1f-a957",
+              "name": "Weirdboy",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ork Boyz",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "de8f-24f9-c543-92b7",
+              "name": "Gretchin",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "9e51-a749-18ba-2ea4",
+              "name": "Wartrakk",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
