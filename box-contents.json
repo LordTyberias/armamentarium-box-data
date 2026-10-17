@@ -1,5 +1,1290 @@
 {
   "$schema": "./box-contents.schema.json",
   "format": 1,
-  "boxes": []
+  "boxes": [
+    {
+      "name": "Kill Team: Starter Set",
+      "productCodes": [
+        "60010199071",
+        "01010199071",
+        "02010199071",
+        "03010199071",
+        "04010199071",
+        "15010199071"
+      ],
+      "sources": [
+        "https://start-warhammer.com/kill-team/",
+        "https://www.wellplayed.ch/products/warhammer-40k-kill-team-starter-set-en",
+        "https://www.irresistibleforce.com.au/products/kill-team-starter-set-english"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4f46-f795-734e-6076",
+              "entryId": "1e8f-a57f-d418-402d",
+              "name": "Space Marine Captain",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "4f46-f795-734e-6076",
+              "entryId": "cdfb-b861-3871-5e22",
+              "name": "Eliminator Sniper",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "4f46-f795-734e-6076",
+              "entryId": "7b15-0824-ac8d-8144",
+              "name": "Heavy Intercessor Gunner",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "4f46-f795-734e-6076",
+              "entryId": "3b04-997f-5370-c1f2",
+              "name": "Intercessor Sergeant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "4f46-f795-734e-6076",
+              "entryId": "c52b-22b8-1452-3b9f",
+              "name": "Intercessor Warrior",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "4f46-f795-734e-6076",
+              "entryId": "b38c-5705-740e-ecf1",
+              "name": "Assault Intercessor Warrior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5907-ff9e-cba1-354b",
+              "entryId": "ea9d-4f9c-d6c5-0c1a",
+              "name": "Plague Marine Champion",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5907-ff9e-cba1-354b",
+              "entryId": "c3fe-b40b-c529-cd2f",
+              "name": "Plague Marine Icon Bearer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5907-ff9e-cba1-354b",
+              "entryId": "6709-b9bf-2551-9582",
+              "name": "Malignant Plaguecaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5907-ff9e-cba1-354b",
+              "entryId": "0578-8e6d-6a33-7830",
+              "name": "Plague Marine Heavy Gunner",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5907-ff9e-cba1-354b",
+              "entryId": "58be-4f15-ca50-8870",
+              "name": "Plague Marine Fighter",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5907-ff9e-cba1-354b",
+              "entryId": "7103-7a28-0737-df37",
+              "name": "Plague Marine Warrior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5907-ff9e-cba1-354b",
+              "entryId": "e286-065f-d715-2461",
+              "name": "Plague Marine Bombardier",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Angels of Death",
+              "count": 7
+            },
+            {
+              "role": "team",
+              "name": "Plague Marines",
+              "count": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Hivestorm",
+      "productCodes": [
+        "60010199070",
+        "01010199070",
+        "02010199070",
+        "03010199070",
+        "04010199070"
+      ],
+      "sources": [
+        "https://start-warhammer.com/kill-team-hivestorm",
+        "https://www.warhammer-community.com/en-gb/articles/niWasyf6/saturday-pre-orders-a-new-edition-begins-in-kill-team-hivestorm/",
+        "https://www.warhammer-community.com/en-gb/articles/kTL8dWgw/sunday-preview-kill-team-hivestorm-drops-in/"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "2596-fb9e-2c71-720d",
+              "name": "Aquilon Tempestor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "b42b-2995-8d42-16ad",
+              "name": "Aquilon Trooper",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "890e-4bae-2ce9-825e",
+              "name": "Aquilon Grenadier",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "e0e0-3bd3-bb3a-a95a",
+              "name": "Aquilon Gunfighter",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "7299-5664-9d06-3ee9",
+              "name": "Aquilon Gunner",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "345f-8a78-9425-9d75",
+              "name": "Aquilon Marksman",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "34c4-49b4-0b99-e232",
+              "name": "Aquilon Precursor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "70dd-e7c9-fef1-aa50",
+              "entryId": "a667-7e48-d5e2-2475",
+              "name": "Aquilon Servo-sentry",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c31e-b272-42a3-51b7",
+              "entryId": "e426-f0b7-f79a-b95a",
+              "name": "Vespid Strain Leader",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c31e-b272-42a3-51b7",
+              "entryId": "2b4e-b02d-147b-d0d0",
+              "name": "Vespid Warrior",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "c31e-b272-42a3-51b7",
+              "entryId": "3c42-29f8-1057-1fc6",
+              "name": "Vespid Longsting",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c31e-b272-42a3-51b7",
+              "entryId": "0509-79c6-4dd2-1da4",
+              "name": "Vespid Shadestrain",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c31e-b272-42a3-51b7",
+              "entryId": "a792-0315-37d1-8efa",
+              "name": "Vespid Skyblast",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c31e-b272-42a3-51b7",
+              "entryId": "b238-56d2-2239-8e62",
+              "name": "Vespid Swarmguard",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c31e-b272-42a3-51b7",
+              "entryId": "f585-c8b3-624c-c4a1",
+              "name": "Oversight Drone",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "aa9f-f137-1638-0369",
+              "name": "Tempestus Aquilons",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Servo-sentry",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "b91-ba27-3842-76c",
+              "name": "Vespid Stingwings",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Oversight Drone",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Brutal and Cunning",
+      "productCodes": [
+        "60010199072",
+        "01010199072",
+        "02010199072",
+        "03010199072",
+        "04010199072"
+      ],
+      "sources": [
+        "https://taleofpainters.com/2024/12/review-kill-team-brutal-and-cunning/",
+        "https://www.chaosbunker.de/en/2024/12/08/review-warhammer-40-000-kill-team-brutal-and-cunning/",
+        "https://nobleknight.com/P/2148239667/Kill-Team---Brutal-and-Cunning"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f08d-6683-822f-0955",
+              "entryId": "56d5-4fd2-5c50-6dad",
+              "name": "Wrecka Boss Nob",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "f08d-6683-822f-0955",
+              "entryId": "9378-a4a7-99e8-f904",
+              "name": "Wrecka Bomb Squig",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "f08d-6683-822f-0955",
+              "choice": [
+                {
+                  "entryId": "4cbe-3568-ed51-f8f2",
+                  "name": "Tankbusta Gunner"
+                },
+                {
+                  "entryId": "3fb4-202b-64de-3f28",
+                  "name": "Tankbusta Rokkiteer"
+                },
+                {
+                  "entryId": "0e82-e122-6bbf-fa32",
+                  "name": "Breaka Boy Fighter"
+                },
+                {
+                  "entryId": "756f-71e2-1bcd-40e4",
+                  "name": "Breaka Boy Krusha"
+                },
+                {
+                  "entryId": "77c6-dc8d-cae7-5d0c",
+                  "name": "Breaka Boy Demolisha"
+                }
+              ],
+              "name": "Wrecka Krew",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "e482-b469-a757-5368",
+              "entryId": "9df5-1ab7-802b-66c9",
+              "name": "Ratling Battlemutt",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e482-b469-a757-5368",
+              "choice": [
+                {
+                  "entryId": "1d55-f75e-6051-be3c",
+                  "name": "Ratling Fixer"
+                },
+                {
+                  "entryId": "1360-c197-1c65-32db",
+                  "name": "Ratling Big Shot"
+                },
+                {
+                  "entryId": "793c-2594-ef3b-fee5",
+                  "name": "Ratling Bomber"
+                },
+                {
+                  "entryId": "61c4-3db8-d3ab-c281",
+                  "name": "Ratling Hardbit"
+                },
+                {
+                  "entryId": "f869-65aa-dfaf-ea12",
+                  "name": "Ratling Raider"
+                },
+                {
+                  "entryId": "2fb4-17af-1f91-0a56",
+                  "name": "Ratling Sneak"
+                },
+                {
+                  "entryId": "af07-231b-61e5-6865",
+                  "name": "Ratling Sniper"
+                },
+                {
+                  "entryId": "7548-0075-36b9-54d2",
+                  "name": "Ratling Spotter"
+                },
+                {
+                  "entryId": "0fe9-dcb1-ef41-4422",
+                  "name": "Ratling Stashmaster"
+                },
+                {
+                  "entryId": "e88e-747b-5bea-9577",
+                  "name": "Ratling Vox-thief"
+                }
+              ],
+              "name": "Ratling",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Wrecka Krew",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "8293-a070-2c87-de30",
+              "name": "Ratlings",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Ratling Battlemutt",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Blood & Zeal",
+      "productCodes": [
+        "60010199073",
+        "01010199073",
+        "02010199073",
+        "03010199073",
+        "04010199073"
+      ],
+      "sources": [
+        "https://taleofpainters.com/2025/03/review-kill-team-blood-and-zeal/",
+        "https://sp-siliconpower.com/products/kill-team-blood-zeal",
+        "https://www.warhammer-community.com/en-gb/articles/q7amnxzu/saturday-pre-orders-tyranids-stalk-the-adeptus-mechanicus-in-kill-team/"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "entryId": "251a-68ec-8877-8636",
+              "name": "Confessor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "entryId": "4991-fdeb-4149-0d28",
+              "name": "Cherub",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "entryId": "9b3c-6e1e-3d4b-a533",
+              "name": "Death Cult Assassin",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "entryId": "34d1-1d3b-07a2-8679",
+              "name": "Salvationist",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "entryId": "9db9-ef19-65ef-b8b7",
+              "name": "Miraculist",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "entryId": "de2e-4cef-c495-686f",
+              "name": "Missionary",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "entryId": "637d-4538-0883-5a55",
+              "name": "Missionary with flamer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "111c-537d-5e9f-0180",
+              "choice": [
+                {
+                  "entryId": "d597-4125-ae89-128f",
+                  "name": "Drill Abbot"
+                },
+                {
+                  "entryId": "98de-6be6-cad6-9203",
+                  "name": "Persecutor"
+                },
+                {
+                  "entryId": "7a2e-341c-c2f9-0f43",
+                  "name": "Conflagrator"
+                },
+                {
+                  "entryId": "78bc-e9b5-8dcb-0743",
+                  "name": "Reliquant"
+                },
+                {
+                  "entryId": "c588-1e5a-7514-8f0f",
+                  "name": "Preacher"
+                }
+              ],
+              "name": "Sanctifier",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "catalogueId": "7d0f-d6d2-15b2-1f2f",
+              "entryId": "8023-d4ba-7263-a7f7",
+              "name": "Blood Herald",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "7d0f-d6d2-15b2-1f2f",
+              "entryId": "3fc9-35bb-1f70-5f3d",
+              "name": "Aspirant",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "7d0f-d6d2-15b2-1f2f",
+              "choice": [
+                {
+                  "entryId": "4415-cdba-5575-9869",
+                  "name": "Bloodtaker"
+                },
+                {
+                  "entryId": "de86-30d1-f4a3-eb94",
+                  "name": "Impaler"
+                },
+                {
+                  "entryId": "0e77-d6e9-54c4-db22",
+                  "name": "Skullclaimer"
+                },
+                {
+                  "entryId": "b29d-d14b-a793-80a9",
+                  "name": "Stalker"
+                },
+                {
+                  "entryId": "43df-b265-0649-cfc1",
+                  "name": "Inciter"
+                },
+                {
+                  "entryId": "3fc9-35bb-1f70-5f3d",
+                  "name": "Aspirant"
+                }
+              ],
+              "name": "Goremonger",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sanctifiers",
+              "count": 11
+            },
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "b399-9b66-e550-8050",
+              "name": "Goremongers",
+              "count": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Tomb World",
+      "productCodes": [
+        "60010199075",
+        "01010199075",
+        "02010199075",
+        "03010199075",
+        "04010199075"
+      ],
+      "sources": [
+        "https://sp-siliconpower.com/products/kill-team-tomb-world",
+        "https://www.warhammer-community.com/en-gb/articles/g9yodfir/saturday-pre-orders-the-tomb-world-wakes/",
+        "https://spruesandbrews.com/2025/08/30/kill-team-tomb-world-unboxing-and-review-warhammer-40k/"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b3c0-fea0-7505-777b",
+              "choice": [
+                {
+                  "entryId": "328d-1091-2f82-20e7",
+                  "name": "Watch Sergeant"
+                },
+                {
+                  "entryId": "4587-da2b-be1e-bba4",
+                  "name": "Aegis Veteran"
+                },
+                {
+                  "entryId": "32c1-cd99-2a82-bc5f",
+                  "name": "Blademaster Veteran"
+                },
+                {
+                  "entryId": "b133-850c-5366-1ada",
+                  "name": "Bombard Veteran"
+                },
+                {
+                  "entryId": "7a98-a6c0-799c-3f6c",
+                  "name": "Breacher Veteran"
+                },
+                {
+                  "entryId": "7971-35fc-368a-5e18",
+                  "name": "Demolisher Veteran"
+                },
+                {
+                  "entryId": "2303-59e4-15a6-cb7f",
+                  "name": "Disruptor Veteran"
+                },
+                {
+                  "entryId": "c928-b594-094e-77a5",
+                  "name": "Gunner Veteran"
+                },
+                {
+                  "entryId": "2507-5116-f774-c74c",
+                  "name": "Headtaker Veteran"
+                },
+                {
+                  "entryId": "4f19-5ceb-b1dc-6d07",
+                  "name": "Horde-slayer Veteran"
+                },
+                {
+                  "entryId": "2575-8023-4c32-34c4",
+                  "name": "Marksman Veteran"
+                }
+              ],
+              "name": "Deathwatch",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "0e19-7ab2-c4a6-76e7",
+              "entryId": "2e62-6dac-0191-0b43",
+              "name": "Geomancer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "0e19-7ab2-c4a6-76e7",
+              "entryId": "3da9-f217-828a-edcc",
+              "name": "Tomb Crawler",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "0e19-7ab2-c4a6-76e7",
+              "entryId": "4680-d0c5-2b79-926c",
+              "name": "Macrocyte Warrior",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "0e19-7ab2-c4a6-76e7",
+              "choice": [
+                {
+                  "entryId": "8e68-38c3-6a58-3397",
+                  "name": "Macrocyte Accelerator"
+                },
+                {
+                  "entryId": "fc55-f008-0d1f-bf04",
+                  "name": "Macrocyte Reanimator"
+                },
+                {
+                  "entryId": "4680-d0c5-2b79-926c",
+                  "name": "Macrocyte Warrior"
+                }
+              ],
+              "name": "Canoptek Circle",
+              "count": 2
+            },
+            {
+              "role": "npo",
+              "catalogueId": "ffd6-f3ca-defa-f836",
+              "entryId": "29a5-7b48-dec7-4ddc",
+              "name": "Necron Warrior",
+              "count": 10
+            },
+            {
+              "role": "npo",
+              "catalogueId": "ffd6-f3ca-defa-f836",
+              "entryId": "8e39-f188-b121-1f36",
+              "name": "Canoptek Scarab Swarm",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f89b-84e0-6e3b-f1e2",
+              "entryId": "66ab-476a-134e-ec7b",
+              "name": "Deathwatch Veterans",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "92cc-9d54-5d0c-6663",
+              "name": "Geomancer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "b7ee-a0fa-5736-b58f",
+              "name": "Canoptek Tomb Crawlers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "97d7-4b22-46b7-dae0",
+              "name": "Canoptek Macrocytes",
+              "count": 5
+            },
+            {
+              "role": "extra",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "58e9-5212-f5a6-c12d",
+              "name": "Necron Warriors",
+              "count": 10
+            },
+            {
+              "role": "extra",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "259b-a8e3-928f-1d0c",
+              "name": "Canoptek Scarab Swarms",
+              "count": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Typhon",
+      "productCodes": [
+        "60010199074",
+        "01010199074",
+        "02010199074",
+        "03010199074",
+        "04010199074"
+      ],
+      "sources": [
+        "https://taleofpainters.com/2025/06/review-kill-team-typhon/",
+        "https://sp-siliconpower.com/products/kill-team-typhon",
+        "https://www.warhammer-community.com/en-gb/articles/q7amnxzu/saturday-pre-orders-tyranids-stalk-the-adeptus-mechanicus-in-kill-team/"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "67c0-a22d-585b-3425",
+              "entryId": "69ac-1517-32aa-c2de",
+              "name": "Technoarcheologist",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "67c0-a22d-585b-3425",
+              "entryId": "b1d5-78f6-1086-73f9",
+              "name": "Servitor Underseer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "67c0-a22d-585b-3425",
+              "entryId": "2d01-9040-9cad-eb83",
+              "name": "Gun Servitor",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "67c0-a22d-585b-3425",
+              "entryId": "1966-7fdb-bed6-4e01",
+              "name": "Combat Servitor",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "67c0-a22d-585b-3425",
+              "choice": [
+                {
+                  "entryId": "1966-7fdb-bed6-4e01",
+                  "name": "Combat Servitor"
+                },
+                {
+                  "entryId": "dce8-2df3-0d12-4aef",
+                  "name": "Technomedic Servitor"
+                },
+                {
+                  "entryId": "7d78-2982-be48-4fe2",
+                  "name": "Breacher Servitor"
+                },
+                {
+                  "entryId": "2b4f-43ad-52ff-3f2e",
+                  "name": "Auto-proxy Servitor"
+                }
+              ],
+              "name": "Battleclade",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "4b1c-f3e1-5479-b7e2",
+              "choice": [
+                {
+                  "entryId": "4b95-32b3-1b4a-708d",
+                  "name": "Ravener Prime"
+                },
+                {
+                  "entryId": "8ec1-33a5-62c4-fb56",
+                  "name": "Wrecker"
+                },
+                {
+                  "entryId": "f7a9-612b-8b0f-7daa",
+                  "name": "Tremorscythe"
+                },
+                {
+                  "entryId": "6a74-d96f-3b58-35c9",
+                  "name": "Felltalon"
+                },
+                {
+                  "entryId": "68d7-4f1e-840a-7bb5",
+                  "name": "Venomspitter"
+                },
+                {
+                  "entryId": "ca8a-7dd4-14bb-a072",
+                  "name": "Warrior"
+                }
+              ],
+              "name": "Raveners",
+              "count": 5
+            },
+            {
+              "role": "npo",
+              "catalogueId": "ffd6-f3ca-defa-f836",
+              "entryId": "9d83-1aaf-36c1-a6ec",
+              "name": "Ripper Swarm",
+              "count": 1
+            },
+            {
+              "role": "npo",
+              "reading": "40k",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "f15b-9f9c-9bf0-8160",
+              "name": "Hormagaunts",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "3f5-f7d6-1ce8-e6b9",
+              "name": "Raveners",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Battleclade",
+              "count": 10
+            },
+            {
+              "role": "extra",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "f15b-9f9c-9bf0-8160",
+              "name": "Hormagaunts",
+              "count": 10
+            },
+            {
+              "role": "extra",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "1de2-b57b-aa0a-1f0d",
+              "name": "Ripper Swarms",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Dead Silence",
+      "productCodes": [
+        "60010199076",
+        "01010199076",
+        "02010199076",
+        "03010199076",
+        "04010199076"
+      ],
+      "sources": [
+        "https://taleofpainters.com/2025/11/review-kill-team-dead-silence/",
+        "https://www.warhammer-community.com/en-gb/articles/8lkeojyq/saturday-pre-order-scouts-and-stealth-suits-sneak-into-kill-team/",
+        "https://www.wellplayed.ch/products/kill-team-dead-silence-en"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "7eee-ea5a-4273-265e",
+              "entryId": "176a-afac-9ea4-c1b8",
+              "name": "Fenrisian Wolf",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "7eee-ea5a-4273-265e",
+              "choice": [
+                {
+                  "entryId": "0e0e-f0b1-f491-270f",
+                  "name": "Pack Leader"
+                },
+                {
+                  "entryId": "08ae-f84e-6b38-de6c",
+                  "name": "Frosteye"
+                },
+                {
+                  "entryId": "6214-9880-03b2-8c2a",
+                  "name": "Hunter"
+                },
+                {
+                  "entryId": "5b0f-e151-5a15-396c",
+                  "name": "Fangbearer"
+                },
+                {
+                  "entryId": "3ee3-9983-aedc-3c50",
+                  "name": "Gunner"
+                },
+                {
+                  "entryId": "b2a5-608c-a53c-b13e",
+                  "name": "Rune Priest Skjald"
+                },
+                {
+                  "entryId": "f7e9-7c2d-f96e-1f1c",
+                  "name": "Trapmaster"
+                }
+              ],
+              "name": "Wolf Scouts",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "751c-3342-afdc-3814",
+              "entryId": "3ce8-5142-eb92-5e77",
+              "name": "XV26 Designator",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "751c-3342-afdc-3814",
+              "entryId": "d35c-6c55-ee8c-5061",
+              "name": "MV15 Gun Drone",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "751c-3342-afdc-3814",
+              "entryId": "e5f9-cfdc-f846-d5aa",
+              "name": "MV75 Marker Drone",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "751c-3342-afdc-3814",
+              "choice": [
+                {
+                  "entryId": "bdcf-0a0c-d0b6-5210",
+                  "name": "XV26 Infiltrator"
+                },
+                {
+                  "entryId": "5b68-d730-03e0-1070",
+                  "name": "XV26 Shas'vre"
+                },
+                {
+                  "entryId": "c51a-9e4c-dc9c-84f5",
+                  "name": "XV26 Neutraliser"
+                },
+                {
+                  "entryId": "9349-efc0-c42a-bf71",
+                  "name": "XV26 Liberator"
+                },
+                {
+                  "entryId": "4a38-481b-f2bc-8eff",
+                  "name": "XV26 Lodestar"
+                }
+              ],
+              "name": "XV26 Battlesuits",
+              "count": 4
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "ee6b-3815-3a1a-6458",
+              "name": "Wolf Scouts",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "5d3a-803e-7cbc-b2f1",
+              "name": "Stealth Battlesuits",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "MV15 Gun Drone",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "MV75 Marker Drone",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Shadowhunt",
+      "productCodes": [
+        "60010199077",
+        "01010199077",
+        "02010199077",
+        "03010199077",
+        "04010199077"
+      ],
+      "sources": [
+        "https://taleofpainters.com/2026/01/review-kill-team-shadowhunt/",
+        "https://www.warhammer-community.com/en-gb/articles/vekmdfs3/saturday-pre-orders-death-strikes-from-the-skies-in-kill-team-shadowhunt/",
+        "https://spruesandbrews.com/2026/01/24/kill-team-shadowhunt-review-and-unboxing-warhammer-40k",
+        "https://www.eventhorizonhobbies.com/products/40k-kill-team-shadowhunt-faith-versus-heresy-in-the-shadow-of-alien-terror"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "741a-e56f-b153-4161",
+              "entryId": "2e6e-6a37-7c74-4977",
+              "name": "Chaos Lord",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "741a-e56f-b153-4161",
+              "choice": [
+                {
+                  "entryId": "f3f1-7739-135c-d22b",
+                  "name": "Champion"
+                },
+                {
+                  "entryId": "47fc-d261-748e-3091",
+                  "name": "Raptor"
+                },
+                {
+                  "entryId": "ff91-e0b4-4c32-a7ce",
+                  "name": "Depredator"
+                },
+                {
+                  "entryId": "6db4-1e1a-cdd4-a682",
+                  "name": "Warp Talon"
+                },
+                {
+                  "entryId": "0e13-64ac-9f30-bfa0",
+                  "name": "Shrieker"
+                },
+                {
+                  "entryId": "0f20-7e51-c7cc-715d",
+                  "name": "Skysear"
+                },
+                {
+                  "entryId": "f1ca-abb5-7b70-4b7e",
+                  "name": "Curseclaw"
+                },
+                {
+                  "entryId": "6d03-f8ae-f0e0-1426",
+                  "name": "Huntmaster"
+                }
+              ],
+              "name": "Murderwing",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "entryId": "8ec9-f668-c45d-8953",
+              "name": "Superior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "entryId": "26df-d1fc-161a-8842",
+              "name": "Warrior",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "a549-68ef-5a97-7fb4",
+              "choice": [
+                {
+                  "entryId": "11a1-9f43-05de-b86c",
+                  "name": "Denuncia"
+                },
+                {
+                  "entryId": "622c-49e2-95c6-2676",
+                  "name": "Censor"
+                },
+                {
+                  "entryId": "2d8a-356e-dfc0-0ee6",
+                  "name": "Reliquarius"
+                },
+                {
+                  "entryId": "6f5c-e419-63ff-fb87",
+                  "name": "Abjuror"
+                },
+                {
+                  "entryId": "5c5b-2c1f-a9e4-090f",
+                  "name": "Mortisanctus"
+                },
+                {
+                  "entryId": "cd7f-9e66-82dc-57ce",
+                  "name": "Cremator"
+                },
+                {
+                  "entryId": "26df-d1fc-161a-8842",
+                  "name": "Warrior"
+                }
+              ],
+              "name": "Celestian Insidiants",
+              "count": 7
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "e286-849d-8f74-75e6",
+              "name": "Celestian Insidiants",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Murderwing",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kill Team: Exodite",
+      "productCodes": [
+        "60010199084",
+        "15010199084"
+      ],
+      "sources": [
+        "https://www.warhammer-community.com/en-gb/articles/cfauyhwi/sunday-preview-exodites-leap-from-the-jungle/",
+        "https://www.warhammer-community.com/en-gb/articles/mnh7tmla/saturday-pre-orders-aeldari-exodites-in-kill-team/",
+        "https://www.wellplayed.ch/products/kill-team-exodite-en",
+        "https://abyssgamestore.ca/products/kill-team-exodite"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "9d30-a8f5-4108-823f",
+              "entryId": "fdc8-b090-9387-9d6a",
+              "name": "Clanblade",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "9d30-a8f5-4108-823f",
+              "entryId": "5981-f7d4-f963-74e5",
+              "name": "Leystalker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "9d30-a8f5-4108-823f",
+              "entryId": "1956-bb6d-b212-823e",
+              "name": "Stonesinger",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "9d30-a8f5-4108-823f",
+              "entryId": "d7a5-b5b2-154c-fcb8",
+              "name": "Drakolithe",
+              "count": 2
+            },
+            {
+              "role": "npo",
+              "reading": "40k",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "b7c3-d00e-daf2-76fb",
+              "name": "Beast Snagga Boyz",
+              "count": 10
+            },
+            {
+              "role": "npo",
+              "reading": "40k",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "6a83-8e1f-63ef-50c3",
+              "name": "Squighog Boyz",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Exodite Dragon Masters",
+              "count": 5
+            },
+            {
+              "role": "extra",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "b7c3-d00e-daf2-76fb",
+              "name": "Beast Snagga Boyz",
+              "count": 10
+            },
+            {
+              "role": "extra",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "6a83-8e1f-63ef-50c3",
+              "name": "Squighog Boyz",
+              "count": 5
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
