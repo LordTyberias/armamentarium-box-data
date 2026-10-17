@@ -1892,6 +1892,77 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Spearhead Starter Set",
+      "productCodes": [
+        "01010299044",
+        "60010299044"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/age-of-sigmar-ultimate-starter-set",
+        "https://abyssgamestore.ca/products/age-of-sigmar-ultimate-starter-set-80-01",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-ultimate-starter-set",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/age-of-sigmar-ultimate-starter-set-",
+        "https://radaddel.de/products/age-of-sigmar-spearhead-starter-set-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Push-fit",
+              "count": 37
+            },
+            {
+              "role": "team",
+              "name": "Lord-Vigilant on Gryph-Stalker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lord-Veritant with 1x Gryph-crow",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Prosecutors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Stormcast Eternals Liberators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Clawlord on Gnaw-Beast",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Grey Seer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Warlock Engineer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Rat Ogors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Skaven Clanrats",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
