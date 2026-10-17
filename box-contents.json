@@ -1285,6 +1285,89 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Murderwing",
+      "productCodes": [
+        "99120102232"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/kill-team-murderwing",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/kill-team/kill-team-murderwing",
+        "https://miniset.net/sets/gw-99120102232"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Lord with Jump Pack",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Champion",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Shrieker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Curseclaw",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Skysear",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Huntmaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "heads",
+              "count": 12
+            },
+            {
+              "role": "team",
+              "name": "shoulder pads",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "sets of jump pack fins",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "jump pack exhaust designs",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "sets of grenades",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "pistol holsters",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "construction guide",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
