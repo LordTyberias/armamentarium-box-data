@@ -2943,6 +2943,59 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Imperial Agents Battleforce Ordo Malleus",
+      "productCodes": [
+        "99120108089"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-battleforce-ordo-malleus",
+        "https://elementgames.co.uk/clearance-sale/imperial-agents-battleforce-ordo-malleus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "264a-fc24-3a98-31dc",
+              "name": "Inquisitor Coteaz",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ministorum Priest with Vindictor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "5e5e-d6b2-6a1c-aa69",
+              "name": "Culexus Assassin",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Chimera",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Grey Knights Terminator",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "4469-7239-717e-9abd",
+              "name": "Inquisitorial Agents",
+              "count": 14
+            }
+          ]
+        }
+      ]
     }
   ]
 }
