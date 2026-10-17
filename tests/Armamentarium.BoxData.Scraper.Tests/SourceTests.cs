@@ -182,6 +182,46 @@ public sealed class SourceTests
         CollectionAssert.AreEqual(new[] { 1, 2 }, listing.Lines.Select(l => l.Count).ToArray());
     }
 
+    private const string MinisetPage = """
+        <html><head><link rel="canonical" href="https://miniset.net/sets/gw-60010199084" /></head><body>
+        <h1 class="title" id="page-title">Kill Team: Exo</h1>
+        <div class="text-inner-container expanded" data-lang="en"><p><strong>This set includes:</strong><br />
+        • 1x Rider Bladeleader<br />
+        • 2x Swamp Lizards<br /></p></div>
+        </body></html>
+        """;
+
+    [TestMethod]
+    public async Task Miniset_PageOfTheArticleNumber_GivesListing()
+    {
+        var fetcher = new FakeFetcher(new() { ["https://miniset.net/sets/gw-60010199084"] = MinisetPage });
+
+        var listing = await new MinisetSource().FindAsync(Exo, fetcher, default);
+
+        Assert.AreEqual("https://miniset.net/sets/gw-60010199084", listing!.Url);
+        Assert.AreEqual("Kill Team: Exo", listing.Title);
+        Assert.IsFalse(listing.German);
+        CollectionAssert.AreEqual(new[] { 1, 2 }, listing.Lines.Select(l => l.Count).ToArray());
+    }
+
+    [TestMethod]
+    public async Task Miniset_PageOfAnotherArticleNumber_IsNoFinding()
+    {
+        var fetcher = new FakeFetcher(new()
+        {
+            ["https://miniset.net/sets/gw-60010199084"] = MinisetPage.Replace("gw-60010199084", "gw-60010199071"),
+        });
+
+        Assert.IsNull(await new MinisetSource().FindAsync(Exo, fetcher, default));
+    }
+
+    [TestMethod]
+    public void Miniset_IsAskedOncePerMinute()
+    {
+        Assert.AreEqual(TimeSpan.FromSeconds(60), new MinisetSource().Interval);
+        Assert.AreEqual(TimeSpan.FromSeconds(5), new ShopifySource("shop.test", German: false).Interval);
+    }
+
     [TestMethod]
     public void Allowlist_HoldsTheMeasuredShopsOnly()
     {
@@ -189,7 +229,7 @@ public sealed class SourceTests
             new[]
             {
                 "www.wellplayed.ch", "www.irresistibleforce.com.au", "tistaminis.com", "abyssgamestore.ca", "radaddel.de",
-                "www.fantasywelt.de", "taschengelddieb.de", "elementgames.co.uk",
+                "www.retrofixgames.com", "www.fantasywelt.de", "taschengelddieb.de", "elementgames.co.uk", "miniset.net",
             },
             Sources.All.Select(s => s.Host).ToArray());
     }

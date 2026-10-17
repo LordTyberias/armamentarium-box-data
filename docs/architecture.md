@@ -43,7 +43,8 @@ Fixed by Armamentarium ADR 0118 §4 and its Addendum ARMAM-591, built under ARMA
 - Write access through a fine-grained token scoped to this repository only (contents and pull requests), at most 90 days,
   stored outside every repository, never logged.
 - Candidates from warhub-catalog `products.json`, one request per run to a compiled address (ADR 0003 §4).
-- Sources from a compiled allowlist, no open search; at most one request per five seconds and host; own user agent
+- Sources from a compiled allowlist, no open search; at most one request per five seconds and host (per minute where a
+  host restricts faster clients, ADR 0003 §6); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
 - Proposes **draft** pull requests, one per box, without catalogue ids; every entry confirmed by two sources.
 - Every further dependency of the service is decided with a reason (ADR in `docs/adr/`).

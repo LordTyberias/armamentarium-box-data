@@ -63,12 +63,19 @@ public sealed class RunnerTests
         }
     }
 
-    private sealed class FixedSource(string host, Func<Product, Listing?> find) : ISource
+    private sealed class FixedSource(string host, Func<Product, Listing?> find, TimeSpan? interval = null) : ISource
     {
+        public int Asked { get; private set; }
+
         public string Host => host;
 
-        public Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken) =>
-            Task.FromResult(find(product));
+        public TimeSpan Interval => interval ?? TimeSpan.Zero;
+
+        public Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
+        {
+            Asked++;
+            return Task.FromResult(find(product));
+        }
     }
 
     private sealed class NoFetcher : IFetcher
@@ -258,6 +265,35 @@ public sealed class RunnerTests
         var body = repo.Proposals.Single().Body;
         StringAssert.Contains(body, "`Guards @someone #1`");
         StringAssert.Contains(body, "`Box [x](https://evil.test) @someone`");
+    }
+
+    [TestMethod]
+    public async Task Run_SlowSource_IsAskedOnlyAfterAFastFinding()
+    {
+        var slow = new FixedSource("slow.test", p => new Listing(
+            "slow.test", $"https://slow.test/{p.Code}", false, "Kill Team: New", [new Line(5, "Blade Guards", false, false)], []),
+            TimeSpan.FromSeconds(60));
+        var nothing = new FixedSource("a.test", _ => null);
+
+        await Run([P("60010199002", "5011921000002")], [nothing, slow]);
+        Assert.AreEqual(0, slow.Asked);
+
+        var (repo, _, _) = await Run([P("60010199002", "5011921000002")], [Shop("b.test", new Line(5, "Blade Guards", false, false)), slow]);
+        Assert.AreEqual(1, slow.Asked);
+        Assert.AreEqual(1, repo.Proposals.Count);
+    }
+
+    [TestMethod]
+    public async Task Run_SlowSource_IsNotAskedWhenTheFastOnesSuffice()
+    {
+        var slow = new FixedSource("slow.test", _ => throw new AssertFailedException("asked"), TimeSpan.FromSeconds(60));
+
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002")],
+            [Shop("a.test", new Line(5, "Blade Guards", false, false)), Shop("b.test", new Line(5, "Blade Guards", false, false)), slow]);
+
+        Assert.AreEqual(0, slow.Asked);
+        Assert.AreEqual(1, repo.Proposals.Count);
     }
 
     [TestMethod]

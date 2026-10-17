@@ -49,7 +49,7 @@ public static class Program
             var products = ProductCatalogue.Parse(await github.GetStringAsync(ProductCatalogue.ProductsUrl, stop.Token));
             Log($"{products.Count} Games Workshop products in the catalogue");
 
-            using var fetcher = new Fetcher(Sources.All.Select(s => s.Host).ToHashSet(StringComparer.OrdinalIgnoreCase), Log);
+            using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
             await new Runner(repository, Sources.All, fetcher, state, Log, statePath is null ? null : () => state.Save(statePath))
                 .RunAsync(products, DateTimeOffset.UtcNow, stop.Token, onlyCode);
             return 0;

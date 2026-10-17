@@ -17,6 +17,11 @@ The table grows only by hand so far. Measured on 2026-10-17:
 - `warhammer.com` (AWS WAF captcha), `pk-pro.de` (Cloudflare challenge) and `games-island.eu` (captcha; its catalogue API
   carries no EAN, no article number and no model count, and the shop declares a text and data mining reservation) block or
   give nothing. `warhammer-community.com` has no product search and states counts only in prose.
+- Added on the maintainer's list (2026-10-17): `miniset.net` keeps one page per article number (`/sets/gw-<code>`, the
+  canonical address confirms it) with the box's list, and restricts a client after about a dozen requests at five
+  seconds ("temporarily restricted due to suspicious automated activity"). `www.retrofixgames.com` is a Shopify shop
+  whose terms forbid scraping ("spider, crawl, or scrape"). `wh40k.lexicanum.com` and `whfb.lexicanum.com` sit behind a
+  Cloudflare challenge; `www.fauxhammer.com` is a blog without box lists.
 - Single kits are described in prose by every shop measured ("six Wolf Scouts"); lists `N x Name` appear for boxes of
   several kits. `www.fantasywelt.de` answers the .NET client with 403 behind Cloudflare while curl gets 200; it stays
   listed, a 403 is no finding.
@@ -33,14 +38,20 @@ The table grows only by hand so far. Measured on 2026-10-17:
    shop: it sits outside the allowlist and the throttle, and no hash or manifest is checked, because a wrong catalogue entry
    only costs a search; nothing from it enters the table but article numbers, which every shop must confirm.
    Order: Kill Team first, then `current` before discontinued, then article number.
-5. **Sources** are a compiled allowlist with three adapters:
-   - Shopify: `www.wellplayed.ch`, `www.irresistibleforce.com.au`, `tistaminis.com`, `abyssgamestore.ca`, `radaddel.de`.
+5. **Sources** are a compiled allowlist with four adapters:
+   - Shopify: `www.wellplayed.ch`, `www.irresistibleforce.com.au`, `tistaminis.com`, `abyssgamestore.ca`, `radaddel.de`,
+     `www.retrofixgames.com` (its terms forbid scraping; the maintainer carries that risk, ADR 0118 Addendum ARMAM-591).
    - JTL shop: `www.fantasywelt.de`, `taschengelddieb.de`.
    - Element Games: `elementgames.co.uk`.
+   - miniset.net: `miniset.net`, by article number.
 
-   A listing counts only when the shop confirms the EAN (Element Games: the article number). Used goods are skipped. A
+   A listing counts only when the shop confirms the EAN (Element Games and miniset.net: the article number). Used goods are skipped. A
    captcha or challenge answer is no finding; it is never circumvented.
-6. **Throttle:** at most one request per five seconds and host; hosts run in parallel.
+6. **Throttle:** at most one request per five seconds and host, per minute for `miniset.net`; hosts run in parallel. A
+   page that says the host restricts this client, whatever its status, rests the host for the rest of the run. A slow
+   source (miniset.net) is asked only when a fast one found the product and the fast findings alone would not make a
+   proposal (one listing, or an entry with a single source), since alone it never makes two sources; so the five-second
+   hosts set the pace and the first pass over the backlog takes about five hours.
 7. **User agent:** the service's own name, `ABD/1.0`, without a contact address (maintainer decision; it
    overrides "with contact address" of ADR 0118 §4, see its Addendum ARMAM-591). A desktop browser string was tried and
    measured worse: three Shopify shops answered `/products/<handle>.js` with 429, which they answer with 200 to the own name
@@ -83,6 +94,9 @@ The table grows only by hand so far. Measured on 2026-10-17:
 - **Octokit, git CLI:** a dependency, or git plus a token in a remote URL on the server.
 - **Bulk shop lists:** carry no barcode.
 - **Prose sources, slug matching on warhammer-community.com:** assigning an article to a box by name is guessing.
-- **Circumventing captchas and challenges:** never.
+- **Circumventing captchas and challenges:** never. Lexicanum stays out. Its wikiteam dumps on archive.org (2026-06-04)
+  were measured as the legitimate way and do not help: box pages carry neither article number nor EAN, hardly any box has
+  a page, and the text is CC BY-NC.
+- **`www.fauxhammer.com`:** reviews and news, no box lists, no article numbers.
 - **A browser user agent:** drew 429 from Shopify shops (§7).
 - **Mail or an issue on failure:** a new channel or a wider token for a daily job whose missing pull requests show anyway.
