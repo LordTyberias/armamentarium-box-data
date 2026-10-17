@@ -2874,6 +2874,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Tyranid Assault Brood",
+      "productCodes": [
+        "99120106081"
+      ],
+      "sources": [
+        "https://radaddel.de/products/tyranids-combat-patrol-tyranid-assault-brood",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/combat-patrol-tyranid-assault-brood"
+      ],
+      "generation": "current"
     }
   ]
 }
