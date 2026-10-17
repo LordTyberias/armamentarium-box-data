@@ -2745,6 +2745,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Combat Patrol Chaos Space Marines",
+      "productCodes": [
+        "99120102190"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-chaos-space-marines-1",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/combat-patrol-chaos-space-marines-new-"
+      ],
+      "generation": "current"
     }
   ]
 }
