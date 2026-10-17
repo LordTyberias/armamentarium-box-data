@@ -20,4 +20,4 @@ Data repository of the Armamentarium army list builder: one table, `box-contents
 5. **Trademarks.** No foreign trademark in the repository name, file names, project or namespace names. Product, game and
    catalogue entry names appear only as data and prose identifying what they name.
 6. **`robots.txt` is deliberately ignored** for sources this project uses (rule of the Armamentarium project).
-7. **Files** UTF-8 without BOM, LF. **Commits** conventional-commit style, no AI or tool markers.
+7. **Files** UTF-8 without BOM, CRLF. **Commits** conventional-commit style, no AI or tool markers.

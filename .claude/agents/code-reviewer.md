@@ -16,7 +16,7 @@ rule source is not a finding.
   The schema itself is valid draft 2020-12 and expresses what the README says it does.
 - **Table hygiene**: two-space indentation, one box per object, `productCodes` and `sources` without duplicates, no
   entry listed twice in a reading, `name` fields free of stray whitespace, readings in the order `kt`, `40k`.
-- **Files**: UTF-8 without BOM, LF line endings, final newline (`.editorconfig`, `.gitattributes`); LICENSE excepted.
+- **Files**: UTF-8 without BOM, CRLF line endings, final newline (`.editorconfig`, `.gitattributes`); LICENSE excepted.
 - **Prose**: README and docs consistent with the files they describe; broken relative links.
 - **Later (service code)**: correctness, error handling without silent catches, async correctness and cancellation
   propagation, log messages in English without secrets, tests for new behaviour, migration impact on the table format.
