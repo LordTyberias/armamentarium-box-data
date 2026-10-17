@@ -2102,6 +2102,84 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer: The Old World Core Set",
+      "productCodes": [
+        "60012799001"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-the-old-world-core-set",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/warhammer-the-old-world-core-set-eng-",
+        "https://radaddel.de/products/the-old-world-core-set-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aspiring Champion on a Daemonic Mount",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Aspiring Champion with Battle Standard",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Chaos Warriors",
+              "count": 16
+            },
+            {
+              "role": "team",
+              "name": "Chaos Knights",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Gate Keeper on a Cathayan Warhorse",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Gate Keeper with Battle Standard",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Jade Warriors",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Jade Lancers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Cathayan Grand Cannon with Ogre Loader",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Crew",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "double-sided folding playmat",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "orange clear plastic templates",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
