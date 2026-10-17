@@ -2837,6 +2837,43 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/combat-patrol-aeldari"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Warhammer 40k: Astra Militarum - Battalion - Armageddon",
+      "productCodes": [
+        "99120105150"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-astra-militarum-battalion-armageddon",
+        "https://www.retrofixgames.com/products/warhammer-40k-armageddon-battalion-astra-militarum"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hippogriff AFVs",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Centaur RSV",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Rogal Dorn Battle Tank",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cadian Shock Troops",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
