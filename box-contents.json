@@ -3044,6 +3044,17 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/combat-patrol-drukhari"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Tau Empire (56-67)",
+      "productCodes": [
+        "99120113091"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-tau-empire-56-67",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/combat-patrol-tau-empire-new-"
+      ],
+      "generation": "current"
     }
   ]
 }
