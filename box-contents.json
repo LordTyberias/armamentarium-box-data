@@ -1285,6 +1285,83 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40,000 - Introductory Set ( 40-04 )",
+      "productCodes": [
+        "60010199059"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warhammer-40-000-introductory-set-40-04",
+        "https://www.retrofixgames.com/products/warhammer-40k-introductory-set"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marines",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Infernus Marines: Armoured troops who wield powerful flame weapons to keep swarming enemies at bay",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Tyranids",
+              "count": 11
+            },
+            {
+              "role": "team",
+              "name": "Termagants: Scuttling hordes of simple Tyranid creatures",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Ripper Swarm: Small beasts tasked with finishing off weakened enemies and picking their bones clean",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Citadel Colour Starter Brush – A great all-rounder paintbrush that will help you prepare your models for battle",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "12ml Citadel Colour paints – Ideal colours for getting your models ready to play in the colours of the Ultramarines and",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Abaddon Black",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Wraithbone",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Balthasar Gold",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Naggaroth Night",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Macragge Blue",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
