@@ -3033,6 +3033,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Drukhari",
+      "productCodes": [
+        "99120112057"
+      ],
+      "sources": [
+        "https://radaddel.de/products/drukhari-combat-patrol",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/combat-patrol-drukhari"
+      ],
+      "generation": "current"
     }
   ]
 }
