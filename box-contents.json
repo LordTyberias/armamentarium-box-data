@@ -1676,6 +1676,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40,000: Introductory Set (11th Edition)",
+      "productCodes": [
+        "60010199079"
+      ],
+      "sources": [
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-40k/warhammer-40000-introductory-set-eng-",
+        "https://radaddel.de/products/warhammer-40-000-introductory-set-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "ce15-e87e-7cff-b129",
+              "name": "Lieutenant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Intercessors",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Ork Nob",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ork Boyz",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
