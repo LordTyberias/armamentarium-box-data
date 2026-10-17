@@ -2654,6 +2654,18 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-raven-guard"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Iron Hands (73-555)",
+      "productCodes": [
+        "99120101431"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-iron-hands-73-555",
+        "https://radaddel.de/products/iron-hands-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-iron-hands"
+      ],
+      "generation": "current"
     }
   ]
 }
