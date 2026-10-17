@@ -2643,6 +2643,17 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-black-templars"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Raven Guard (73-554)",
+      "productCodes": [
+        "99120101429"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-imperial-fists-73-554",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-raven-guard"
+      ],
+      "generation": "current"
     }
   ]
 }
