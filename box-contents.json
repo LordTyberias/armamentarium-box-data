@@ -2418,6 +2418,53 @@
         "https://abyssgamestore.ca/products/combat-patrol-space-marines-48-80"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Space Marines Honoured of the Chapter",
+      "productCodes": [
+        "99120101353"
+      ],
+      "sources": [
+        "https://tistaminis.com/products/honoured-of-the-chapter-new",
+        "https://abyssgamestore.ca/products/space-marines-honoured-of-the-chapter",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-marines/space-marines-honoured-of-the-chapter"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Primaris Chaplain",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "8dcb-987c-1ab4-b976",
+              "name": "Judiciar",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "9ca5-e5f4-f85d-bcca",
+              "name": "Bladeguard Ancient",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Bladeguard Veterans",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Eradicators",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
