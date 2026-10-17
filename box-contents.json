@@ -1285,6 +1285,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Kill Team - Terror on Devlan (EN)",
+      "productCodes": [
+        "01010199078",
+        "60010199078"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-kill-team-terror-on-devlan-en",
+        "https://www.retrofixgames.com/products/kill-team-terror-on-devlan"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Spectre Squad",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "The Red Terror Nemesis",
+              "count": 1
+            },
+            {
+              "role": "npo",
+              "name": "Termagants",
+              "count": 10
+            },
+            {
+              "role": "npo",
+              "name": "Ripper Swarm",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
