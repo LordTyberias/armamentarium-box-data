@@ -2604,6 +2604,20 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/combat-patrol-blood-angels-new-"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Space Wolves",
+      "productCodes": [
+        "99120101426"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-space-wolves",
+        "https://abyssgamestore.ca/products/combat-patrol-space-wolves-73-532",
+        "https://radaddel.de/products/space-wolves-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-space-wolves-1",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/combat-patrol-space-wolves"
+      ],
+      "generation": "current"
     }
   ]
 }
