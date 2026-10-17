@@ -71,6 +71,38 @@ public sealed class SourceTests
     }
 
     [TestMethod]
+    public async Task Shopify_UsedHit_TriesTheNextHandle()
+    {
+        var fetcher = new FakeFetcher(new()
+        {
+            ["https://shop.test/search/suggest.json?q=5011921272372&resources[type]=product"] =
+                """{"resources":{"results":{"products":[{"handle":"used-exo"},{"handle":"kill-team-exo"}]}}}""",
+            ["https://shop.test/products/used-exo.js"] =
+                """{"title":"Kill Team - Exo (Used)","vendor":"Games Workshop Used","description":"","variants":[{"barcode":"5011921272372"}]}""",
+            ["https://shop.test/products/kill-team-exo.js"] = ShopifyProduct,
+        });
+
+        var listing = await new ShopifySource("shop.test", German: false).FindAsync(Exo, fetcher, default);
+
+        Assert.AreEqual("https://shop.test/products/kill-team-exo", listing!.Url);
+    }
+
+    [TestMethod]
+    public async Task Shopify_TitleWithControlCharacters_IsCleaned()
+    {
+        var fetcher = new FakeFetcher(new()
+        {
+            ["https://shop.test/search/suggest.json?q=5011921272372&resources[type]=product"] =
+                """{"resources":{"results":{"products":[{"handle":"kill-team-exo"}]}}}""",
+            ["https://shop.test/products/kill-team-exo.js"] = ShopifyProduct.Replace("Kill Team - Exo", "Kill Team -\\nExo\\u202e"),
+        });
+
+        var listing = await new ShopifySource("shop.test", German: false).FindAsync(Exo, fetcher, default);
+
+        Assert.AreEqual("Kill Team - Exo", listing!.Title);
+    }
+
+    [TestMethod]
     public async Task Shopify_ProductWithoutEan_IsNotSearched()
     {
         var fetcher = new FakeFetcher([]);

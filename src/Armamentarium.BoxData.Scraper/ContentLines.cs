@@ -12,7 +12,7 @@ public static partial class ContentLines
     public static IReadOnlyList<Line> Parse(string html)
     {
         var text = BlockTag().Replace(html, "\n");
-        text = WebUtility.HtmlDecode(AnyTag().Replace(text, string.Empty)).Replace(' ', ' ');
+        text = WebUtility.HtmlDecode(AnyTag().Replace(text, string.Empty)).Replace('\u00A0', ' ');
         text = InlineSeparator().Replace(text, "\n");
 
         var lines = new List<Line>();
@@ -43,7 +43,7 @@ public static partial class ContentLines
             }
 
             var alternative = AlternativeBuild().IsMatch(name);
-            var cut = Cut(name, alternative);
+            var cut = Text.Clean(Cut(name, alternative));
             if (cut.Length == 0 || Normalize(cut).Length == 0)
             {
                 continue;
@@ -93,20 +93,20 @@ public static partial class ContentLines
         return name[..end].Trim().TrimEnd('.', ':', ';', '-', '–').Trim();
     }
 
-    [GeneratedRegex(@"<\s*/?\s*(br|li|p|div|ul|ol|tr|td|h[1-6])\b[^>]*>", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"<\s*/?\s*(br|li|p|div|ul|ol|tr|td|h[1-6])\b[^>]*>", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex BlockTag();
 
-    [GeneratedRegex("<[^>]*>")]
+    [GeneratedRegex("<[^>]*>", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex AnyTag();
 
     // "Inhalt: 1x Seer - 5x Guards": the colon and every dash before a further count start a new line.
-    [GeneratedRegex(@"(?:\s[-–—•]\s|:\s)(?=\d{1,3}\s?[x×]\s)")]
+    [GeneratedRegex(@"(?:\s[-–—•]\s|:\s)(?=[0-9]{1,3}\s?[x×]\s)", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex InlineSeparator();
 
-    [GeneratedRegex(@"^\s*(?:(?<bullet>[-–—•*·])\s*)?(?<count>\d{1,3})\s*(?<x>[x×](?=\s))?\s+(?<name>\S.*?)\s*$")]
+    [GeneratedRegex(@"^\s*(?:(?<bullet>[-–—•*·])\s*)?(?<count>[0-9]{1,3})\s*(?<x>[x×](?=\s))?\s+(?<name>\S.*?)\s*$", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex LineShape();
 
-    [GeneratedRegex(@"^\s*\d{1,3}\s+\S")]
+    [GeneratedRegex(@"^\s*[0-9]{1,3}\s+\S", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Heading();
 
     [GeneratedRegex(
@@ -114,33 +114,33 @@ public static partial class ContentLines
         @"markers?|mats?|board|spielfeld|\w*books?|\w*buch|dossier|rules?|regel\w*|rulers?|transfers?|decals?|sheets?|" +
         @"bases?|frames?|sprues?|components?|parts|bauteile|reference|referenz\w*|poster|citadel miniatures|" +
         @"miniatures total|seiten|pages?)\b",
-        RegexOptions.IgnoreCase)]
+        RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex Excluded();
 
-    [GeneratedRegex(@"alternativ|can be built as|\bor\b|\boder\b", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"alternativ|can be built as|\bor\b|\boder\b", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex AlternativeBuild();
 
-    [GeneratedRegex(@"\s(or|oder)\s", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"\s(or|oder)\s", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex OrWord();
 
-    [GeneratedRegex(@"non-?player|nichtspieler|\bNPOs?\b", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"non-?player|nichtspieler|\bNPOs?\b", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex NonPlayer();
 
-    [GeneratedRegex(@"\([^)]*\)?")]
+    [GeneratedRegex(@"\([^)]*\)?", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Parenthesis();
 
     [GeneratedRegex(
-        @"\b(kill team|non player|nichtspieler|operatives?|miniatures?|miniatur(en)?|npos?|citadel)\b")]
+        @"\b(kill team|non player|nichtspieler|operatives?|miniatures?|miniatur(en)?|npos?|citadel)\b", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Filler();
 
     [GeneratedRegex(
         @"\b(kill team operatives?|non-?player operatives?|nichtspieler-operatives?|operatives?)\b",
-        RegexOptions.IgnoreCase)]
+        RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex DisplayFiller();
 
-    [GeneratedRegex(@"[^\p{L}\p{N} ]")]
+    [GeneratedRegex(@"[^\p{L}\p{N} ]", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex NonLetter();
 
-    [GeneratedRegex(@"\s+")]
+    [GeneratedRegex(@"\s+", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Spaces();
 }

@@ -22,6 +22,16 @@ public sealed class ScanStateTests
     }
 
     [TestMethod]
+    public void Retry_IsDueAgainAfterThreeDays()
+    {
+        var state = new ScanState();
+        state.Retry("60010199001", Now);
+
+        Assert.IsFalse(state.IsDue("60010199001", Now.AddDays(2)));
+        Assert.IsTrue(state.IsDue("60010199001", Now.AddDays(3)));
+    }
+
+    [TestMethod]
     public void SaveAndLoad_KeepTheMarks()
     {
         var path = Path.Combine(Path.GetTempPath(), $"scan-state-{Guid.NewGuid():N}.json");
@@ -46,12 +56,20 @@ public sealed class ScanStateTests
     }
 
     [TestMethod]
-    public void ThrottleDelay_WaitsForTheRestOfTheInterval()
+    public void Load_CorruptFile_NamesTheFile()
     {
-        var interval = TimeSpan.FromSeconds(5);
+        var path = Path.Combine(Path.GetTempPath(), $"scan-state-{Guid.NewGuid():N}.json");
+        try
+        {
+            File.WriteAllText(path, "{ not json");
 
-        Assert.AreEqual(TimeSpan.FromSeconds(3), Fetcher.DelayBefore(Now, Now.AddSeconds(2), interval));
-        Assert.AreEqual(TimeSpan.Zero, Fetcher.DelayBefore(Now, Now.AddSeconds(7), interval));
-        Assert.AreEqual(TimeSpan.Zero, Fetcher.DelayBefore(null, Now, interval));
+            var error = Assert.ThrowsExactly<InvalidDataException>(() => ScanState.Load(path));
+
+            StringAssert.Contains(error.Message, path);
+        }
+        finally
+        {
+            File.Delete(path);
+        }
     }
 }

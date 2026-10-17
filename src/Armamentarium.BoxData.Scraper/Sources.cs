@@ -25,10 +25,13 @@ internal static partial class Page
     // Search results tried per product and shop; the right product is among the first in every shop measured.
     public const int Tries = 3;
 
+    // Every pattern that runs over a shop page has a time limit; a page built to stall a pattern costs one source, not the run.
+    public const int RegexTimeout = 2_000;
+
     public static string Title(string html)
     {
         var match = Heading().Match(html);
-        return match.Success ? WebUtility.HtmlDecode(Tag().Replace(match.Groups[1].Value, string.Empty)).Trim() : string.Empty;
+        return match.Success ? Text.Clean(WebUtility.HtmlDecode(Tag().Replace(match.Groups[1].Value, string.Empty))) : string.Empty;
     }
 
     /// <summary>The description from its marker on, at most 30,000 characters; empty without the marker.</summary>
@@ -40,13 +43,13 @@ internal static partial class Page
 
     public static bool IsUsed(string text) => Used().IsMatch(text);
 
-    [GeneratedRegex("<h1[^>]*>(.*?)</h1>", RegexOptions.Singleline | RegexOptions.IgnoreCase)]
+    [GeneratedRegex("<h1[^>]*>(.*?)</h1>", RegexOptions.Singleline | RegexOptions.IgnoreCase, RegexTimeout)]
     private static partial Regex Heading();
 
-    [GeneratedRegex("<[^>]*>")]
+    [GeneratedRegex("<[^>]*>", RegexOptions.None, RegexTimeout)]
     private static partial Regex Tag();
 
-    [GeneratedRegex(@"\bused\b|gebraucht", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"\bused\b|gebraucht", RegexOptions.IgnoreCase, RegexTimeout)]
     private static partial Regex Used();
 }
 
@@ -95,28 +98,23 @@ public sealed partial record ShopifySource(string Host, bool German) : ISource
                 .Where(b => b.Length > 0)
                 .Distinct()
                 .ToList();
-            if (!barcodes.Contains(ean))
+            var title = Text.Clean(Field(root, "title"));
+            if (!barcodes.Contains(ean) || Page.IsUsed(title) || Page.IsUsed(Field(root, "vendor")))
             {
                 continue;
             }
 
-            var title = Text(root, "title");
-            if (Page.IsUsed(title) || Page.IsUsed(Text(root, "vendor")))
-            {
-                return null;
-            }
-
             return new Listing(
-                Host, $"https://{Host}/products/{handle}", German, title, ContentLines.Parse(Text(root, "description")), barcodes);
+                Host, $"https://{Host}/products/{handle}", German, title, ContentLines.Parse(Field(root, "description")), barcodes);
         }
 
         return null;
     }
 
-    private static string Text(JsonElement root, string name) =>
+    private static string Field(JsonElement root, string name) =>
         root.TryGetProperty(name, out var value) && value.ValueKind == JsonValueKind.String ? value.GetString() ?? "" : "";
 
-    [GeneratedRegex("^[a-z0-9][a-z0-9-]*$")]
+    [GeneratedRegex(@"^[a-z0-9][a-z0-9-]*\z", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Handle();
 }
 
@@ -143,20 +141,21 @@ public sealed partial record JtlShopSource(string Host, bool German) : ISource
             return ListingOf(searchUrl, search);
         }
 
+        var link = ProductLink(Host);
         var links = ProductBox().Matches(search)
-            .Select(m => ProductLink(Host).Match(search, m.Index, Math.Min(4_000, search.Length - m.Index)))
+            .Select(m => link.Match(search, m.Index, Math.Min(4_000, search.Length - m.Index)))
             .Where(m => m.Success)
             .Select(m => $"https://{Host}/{m.Groups[1].Value}")
             .Distinct()
             .Take(Page.Tries)
             .ToList();
 
-        foreach (var link in links)
+        foreach (var url in links)
         {
-            var page = await fetcher.GetAsync(link, cancellationToken);
-            if (page is not null && Confirms(page, ean))
+            var page = await fetcher.GetAsync(url, cancellationToken);
+            if (page is not null && Confirms(page, ean) && ListingOf(url, page) is { } listing)
             {
-                return ListingOf(link, page);
+                return listing;
             }
         }
 
@@ -175,12 +174,13 @@ public sealed partial record JtlShopSource(string Host, bool German) : ISource
         Gtin().Matches(page).Any(m => m.Groups[1].Value == ean);
 
     private static Regex ProductLink(string host) =>
-        new($@"(?:href|action)=""https://{Regex.Escape(host)}/([A-Za-z0-9][A-Za-z0-9_.\-/]*)""");
+        new($@"(?:href|action)=""https://{Regex.Escape(host)}/([A-Za-z0-9][A-Za-z0-9_.\-/]*)""",
+            RegexOptions.None, TimeSpan.FromMilliseconds(Page.RegexTimeout));
 
-    [GeneratedRegex(@"class=""[^""]*\bproductbox\b")]
+    [GeneratedRegex(@"class=""[^""]*\bproductbox\b", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex ProductBox();
 
-    [GeneratedRegex(@"itemprop=""gtin13""[^>]*>\s*(\d{8,14})\s*<")]
+    [GeneratedRegex(@"itemprop=""gtin13""[^>]*>\s*([0-9]{8,14})\s*<", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Gtin();
 }
 
@@ -218,17 +218,20 @@ public sealed partial class ElementGamesSource : ISource
             }
 
             var title = Page.Title(page);
-            return Page.IsUsed(title)
-                ? null
-                : new Listing(Host, url, false, title, ContentLines.Parse(Page.Section(page, "<div itemprop=\"description\">")), []);
+            if (Page.IsUsed(title))
+            {
+                continue;
+            }
+
+            return new Listing(Host, url, false, title, ContentLines.Parse(Page.Section(page, "<div itemprop=\"description\">")), []);
         }
 
         return null;
     }
 
-    [GeneratedRegex(@"^[a-z0-9][a-z0-9\-/]*$")]
+    [GeneratedRegex(@"^[a-z0-9][a-z0-9\-/]*\z", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex PathShape();
 
-    [GeneratedRegex(@"SKU / Product Code:</label>\s*<div class=""productOption"">\s*(\d+)\s*<")]
+    [GeneratedRegex(@"SKU / Product Code:</label>\s*<div class=""productOption"">\s*([0-9]+)\s*<", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Sku();
 }

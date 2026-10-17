@@ -39,6 +39,17 @@ public static class Agreement
             }
         }
 
+        // Two lines of one listing under one name ("2x Sergeant (bolt)", "1x Sergeant (plasma)") would leave a count neither
+        // source states; the box waits instead.
+        foreach (var listing in english)
+        {
+            if (listing.Lines.GroupBy(l => ContentLines.Normalize(l.Name)).FirstOrDefault(g => g.Count() > 1) is { } twice)
+            {
+                return new AgreementResult(
+                    null, sources, $"'{ContentLines.DisplayName(twice.First().Name)}' appears twice in {listing.Host}");
+            }
+        }
+
         foreach (var listing in english)
         {
             foreach (var line in listing.Lines)

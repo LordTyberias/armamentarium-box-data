@@ -43,8 +43,11 @@ $rsh = "'$($sshExe.Replace('\', '/'))' -F '$sshDir/config' -o 'UserKnownHostsFil
 
 Write-Output '1/2  dotnet publish -c Release'
 if (Test-Path -LiteralPath $staging) { Remove-Item -LiteralPath $staging -Recurse -Force }
-dotnet publish $project -c Release -o $staging | Out-Null
-if ($LASTEXITCODE -ne 0) { throw "publish failed with exit code $LASTEXITCODE" }
+$published = dotnet publish $project -c Release -o $staging 2>&1
+if ($LASTEXITCODE -ne 0) {
+    $published | Write-Output
+    throw "publish failed with exit code $LASTEXITCODE"
+}
 if (-not (Test-Path -LiteralPath (Join-Path $staging $assembly))) {
     throw "$assembly is missing from the publish ... the unit would find nothing to start"
 }

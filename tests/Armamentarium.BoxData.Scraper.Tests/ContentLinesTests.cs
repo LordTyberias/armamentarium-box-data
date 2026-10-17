@@ -74,6 +74,14 @@ public sealed class ContentLinesTests
     }
 
     [TestMethod]
+    public void Parse_NonAsciiDigits_AreNoCount()
+    {
+        var lines = ContentLines.Parse("<li>- " + char.ConvertFromUtf32(0x663) + "x Seer</li>");
+
+        Assert.AreEqual(0, lines.Count);
+    }
+
+    [TestMethod]
     public void Parse_Prose_IsIgnored()
     {
         var lines = ContentLines.Parse("<p>This box contains 10 Beast Lads and five Hog Riders for the missions.</p>");

@@ -39,7 +39,7 @@ public static class Table
             ["readings"] = new JsonArray(readings.Select(r => (JsonNode)new JsonObject
             {
                 ["reading"] = r,
-                ["entries"] = new JsonArray(entries.Select(Entry).ToArray()),
+                ["entries"] = new JsonArray(entries.Select(e => Entry(e, r)).ToArray()),
             }).ToArray()),
         };
 
@@ -96,11 +96,12 @@ public static class Table
 
     private static JsonArray Array(IEnumerable<string> values) => new(values.Select(v => (JsonNode)v).ToArray());
 
-    private static JsonNode Entry(ProposedEntry entry)
+    // A non-player model is an `npo` only in Kill Team; in any other reading it is an `extra` (README, Entry).
+    private static JsonNode Entry(ProposedEntry entry, string reading)
     {
         var node = new JsonObject
         {
-            ["role"] = entry.NonPlayer ? "npo" : "team",
+            ["role"] = !entry.NonPlayer ? "team" : reading == "kt" ? "npo" : "extra",
             ["name"] = entry.Name,
         };
         if (entry.Counts.Count == 1)

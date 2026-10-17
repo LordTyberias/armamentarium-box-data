@@ -28,7 +28,10 @@ The table grows only by hand so far. Measured on 2026-10-17:
 2. **Runs** once a day on the project's server: systemd timer, `oneshot` service, `DynamicUser`, state in its
    `StateDirectory`, the token through `LoadCredential`. Unit, timer and deploy script live in `deploy/`.
 3. **GitHub** through its REST API with `HttpClient` (git data API, pulls). No clone, no git on the server.
-4. **Candidates:** every Games Workshop product of category `miniatures` in the systems of ADR 0002 that no box holds yet.
+4. **Candidates:** every Games Workshop product of category `miniatures` in the systems of ADR 0002 that no box holds yet,
+   read once per run from the compiled address `https://warhub.github.io/warhub-catalog/products.json`. That request is not a
+   shop: it sits outside the allowlist and the throttle, and no hash or manifest is checked, because a wrong catalogue entry
+   only costs a search; nothing from it enters the table but article numbers, which every shop must confirm.
    Order: Kill Team first, then `current` before discontinued, then article number.
 5. **Sources** are a compiled allowlist with three adapters:
    - Shopify: `www.wellplayed.ch`, `www.irresistibleforce.com.au`, `tistaminis.com`, `abyssgamestore.ca`, `radaddel.de`.
@@ -49,16 +52,25 @@ The table grows only by hand so far. Measured on 2026-10-17:
 9. **Agreement:** names are compared normalised (lower case, without `operative`, `miniature`, `non-player`, plural `s`,
    punctuation). The same count in two sources gives `count`; different counts give `countCandidates`. A German source
    confirms lines only by position, when its number of lines and its sequence of counts equal an English source's. Every
-   entry needs two confirming sources; one entry short and the whole box waits.
-10. **Output:** one **draft** pull request per box, branch `scraper/<productCode>`. The entries carry name and count, no ids;
-    the maintainer adds ids, readings and catalogue names in the branch before merging. `role` is `npo` where the line says
-    non-player, else `team`. A Combat Patrol gets `generation` from the catalogue status (`current`, else `legacy`), marked
-    for checking. The body names every source of the box and every note.
+   entry needs two confirming sources; one entry short and the whole box waits. So does a box whose listing names one
+   model twice ("2x Sergeant (bolt)", "1x Sergeant (plasma)"): no count would be one a source states.
+10. **Output:** one **draft** pull request per box, branch `scraper/<lowest article number of the box>` (language variants:
+    the lowest added one). The entries carry name and count, no ids; the maintainer adds ids, readings and catalogue names
+    and checks the preset roles in the branch before merging. Where the line says non-player, `role` is `npo` in a `kt` reading and `extra` in any other
+    (README, Entry); else `team`. The box name comes from an English shop title, else from the catalogue name with a note;
+    a German title never. A Combat Patrol gets `generation` from the catalogue status (`current`, else `legacy`), marked for
+    checking. The body names every source of the box and every note. Shop text enters the table, the commit and the pull
+    request only as one cleaned line (no control or format characters, at most 120 characters), and the body shows it only
+    in code spans, so it cannot render links, images or mentions. A failed proposal (also a timeout or a stop) is logged, its
+    branch deleted again, the product comes back in three days, and the run goes on.
 11. **Changed box** means a new language variant: a variant of the same shop product whose barcode belongs to a box already
     in the table adds its article number. Counts of existing boxes are never touched.
 12. **Pace:** the run works through the backlog until five scraper pull requests are open; a box with an open pull request
     is skipped, so hand edits in its branch are never overwritten. A product without two confirming sources is checked
-    again after 30 days.
+    again after 30 days. A shop that does not answer (network, timeout, 429, server error) is not a "not listed": while
+    one failed and fewer than two confirm, the product comes back in three days. After 20 such failures in a row a shop
+    rests for the rest of the run. A shop that answers with something unreadable (a changed page) has answered: logged,
+    no finding, the product rests as usual, so a broken parser cannot bring the whole backlog back every day.
 13. **Failures** go to the journal only.
 
 ## Rejected

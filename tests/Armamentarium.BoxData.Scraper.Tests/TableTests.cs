@@ -89,6 +89,17 @@ public sealed class TableTests
     }
 
     [TestMethod]
+    public void Box_NonPlayerOutsideKillTeam_IsExtra()
+    {
+        var box = Table.Box(
+            "Kill Team: B", ["60010199002"], ["https://a.test/q", "https://b.test/q"], ["kt", "40k"],
+            [new ProposedEntry("Beast Lads", true, [10], ["a.test", "b.test"], false)]);
+
+        Assert.AreEqual("npo", (string?)box["readings"]![0]!["entries"]![0]!["role"]);
+        Assert.AreEqual("extra", (string?)box["readings"]![1]!["entries"]![0]!["role"]);
+    }
+
+    [TestMethod]
     public void CombatPatrolBox_CarriesGenerationInsteadOfReadings()
     {
         var box = Table.CombatPatrolBox("Combat Patrol: X", ["99120101001"], ["https://a.test/x", "https://b.test/x"], "legacy");

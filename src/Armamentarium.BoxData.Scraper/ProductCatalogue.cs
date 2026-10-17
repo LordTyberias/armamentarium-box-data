@@ -33,8 +33,10 @@ public static partial class ProductCatalogue
             var systems = item.TryGetProperty("gameSystems", out var s) && s.ValueKind == JsonValueKind.Array
                 ? s.EnumerateArray().Select(x => x.GetString()).OfType<string>().ToList()
                 : [];
+            // The EAN goes into shop URLs; only digits pass.
+            var ean = Text(item, "ean") is { } e && Ean().IsMatch(e) ? e : null;
             products.Add(new Product(
-                code, Text(item, "ean"), Text(item, "name") ?? code, systems, Text(item, "status") ?? "", Text(item, "category") ?? ""));
+                code, ean, Text(item, "name") ?? code, systems, Text(item, "status") ?? "", Text(item, "category") ?? ""));
         }
 
         return products;
@@ -60,6 +62,9 @@ public static partial class ProductCatalogue
         item.TryGetProperty(name, out var value) && value.ValueKind == JsonValueKind.String ? value.GetString() : null;
 
     // The table's key form (box-contents.schema.json): six to eleven digits.
-    [GeneratedRegex("^[0-9]{6,11}$")]
+    [GeneratedRegex(@"^[0-9]{6,11}\z")]
     internal static partial Regex ArticleNumber();
+
+    [GeneratedRegex(@"^[0-9]{8,14}\z")]
+    private static partial Regex Ean();
 }

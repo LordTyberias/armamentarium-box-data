@@ -89,6 +89,18 @@ public sealed class AgreementTests
     }
 
     [TestMethod]
+    public void Agree_SameNameTwiceInOneListing_Waits()
+    {
+        var result = Agreement.Agree([
+            English("a.test", L(2, "Sergeant"), L(1, "Sergeant")),
+            English("b.test", L(2, "Sergeant"), L(1, "Sergeant")),
+        ]);
+
+        Assert.IsNull(result.Entries);
+        StringAssert.Contains(result.Waiting, "twice");
+    }
+
+    [TestMethod]
     public void Agree_CarriesNonPlayerAndAlternativeBuild()
     {
         var result = Agreement.Agree([

@@ -27,6 +27,25 @@ public sealed class ProductCatalogueTests
     }
 
     [TestMethod]
+    public void Parse_MalformedEan_IsDropped()
+    {
+        var products = ProductCatalogue.Parse(
+            """{"products":[{"manufacturer":"games-workshop","productCode":"60010199001","ean":"501&x=1","name":"A","gameSystems":["Kill Team"],"category":"miniatures","status":"current"}]}""");
+
+        Assert.IsNull(products.Single().Ean);
+    }
+
+    [TestMethod]
+    public void Parse_TrailingLineBreak_IsNoArticleNumberOrEan()
+    {
+        var products = ProductCatalogue.Parse(
+            """{"products":[{"manufacturer":"games-workshop","productCode":"60010199001\n","ean":"5011921000001\n","name":"A","gameSystems":["Kill Team"],"category":"miniatures","status":"current"}]}""");
+
+        Assert.IsNull(products.Single().Ean);
+        Assert.AreEqual(0, ProductCatalogue.Candidates(products, new HashSet<string>()).Count);
+    }
+
+    [TestMethod]
     public void ReadingsOf_MapsGameSystems()
     {
         var products = ProductCatalogue.Parse(Json);

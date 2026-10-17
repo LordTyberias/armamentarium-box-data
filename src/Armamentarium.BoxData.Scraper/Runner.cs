@@ -1,4 +1,5 @@
 using System.Text;
+using System.Text.Json.Nodes;
 
 namespace Armamentarium.BoxData.Scraper;
 
@@ -45,9 +46,16 @@ public sealed class Runner(
                 continue;
             }
 
-            var listings = await FindAsync(product, cancellationToken);
-            Mark([product.Code], now);
-            log($"{product.Code} {product.Name}: {listings.Count} shop(s) confirm it");
+            var (listings, failed) = await FindAsync(product, cancellationToken);
+            log($"{product.Code} {Text.Clean(product.Name)}: {listings.Count} shop(s) confirm it, {failed} did not answer");
+
+            // A shop that did not answer may hold the missing evidence: the product comes back in three days instead of
+            // resting 30 (ADR 0003 §12).
+            if (failed > 0 && listings.Count < 2)
+            {
+                Retry(product.Code, now);
+                continue;
+            }
 
             var codes = listings.SelectMany(l => l.VariantEans)
                 .Select(e => codeByEan.GetValueOrDefault(e))
@@ -63,20 +71,38 @@ public sealed class Runner(
                 : LanguageVariants(knownCode, codes.Where(c => !known.Contains(c)).ToList(), listings, text);
             if (proposal is null)
             {
+                Mark([product.Code], now);
                 continue;
             }
 
             if (open.Contains(proposal.Branch))
             {
                 log($"{proposal.Branch} is already open; skipped");
+                Mark([product.Code], now);
                 continue;
             }
 
-            await repository.ProposeAsync(proposal, sha, cancellationToken);
+            try
+            {
+                await repository.ProposeAsync(proposal, sha, cancellationToken);
+            }
+            catch (GitHubException ex)
+            {
+                log($"{proposal.Branch} not proposed: {ex.Message}");
+                Retry(product.Code, now);
+                continue;
+            }
+
             open.Add(proposal.Branch);
             Mark(codes, now);
             log($"proposed {proposal.Branch}: {proposal.Title}");
         }
+    }
+
+    private void Retry(string code, DateTimeOffset now)
+    {
+        state.Retry(code, now);
+        persist?.Invoke();
     }
 
     private void Mark(IEnumerable<string> codes, DateTimeOffset now)
@@ -89,37 +115,51 @@ public sealed class Runner(
         persist?.Invoke();
     }
 
-    private async Task<List<Listing>> FindAsync(Product product, CancellationToken cancellationToken)
+    private async Task<(List<Listing> Listings, int Failed)> FindAsync(Product product, CancellationToken cancellationToken)
     {
         var found = await Task.WhenAll(sources.Select(async source =>
         {
             try
             {
-                return await source.FindAsync(product, fetcher, cancellationToken);
+                return (Listing: await source.FindAsync(product, fetcher, cancellationToken), Failed: false);
+            }
+            catch (FetchFailedException)
+            {
+                // The shop did not answer; the fetcher has logged it.
+                return (Listing: null, Failed: true);
             }
             catch (Exception ex) when (ex is not OperationCanceledException || !cancellationToken.IsCancellationRequested)
             {
-                log($"{source.Host}: {product.Code} failed: {ex.GetType().Name}: {ex.Message}");
-                return null;
+                // The shop answered with something unreadable (a changed page, a timed-out pattern): no finding, logged.
+                // Counting it as "did not answer" would bring every product back each run until the parser is fixed.
+                log($"{source.Host}: {product.Code} unreadable: {ex.GetType().Name}: {Text.Clean(ex.Message)}");
+                return (Listing: null, Failed: false);
             }
         }));
-        return found.OfType<Listing>().ToList();
+        return (found.Select(f => f.Listing).OfType<Listing>().ToList(), found.Count(f => f.Failed));
     }
 
     private Proposal? NewBox(Product product, IReadOnlyList<string> codes, IReadOnlyList<Listing> listings, string text)
     {
-        var name = listings.FirstOrDefault(l => !l.German && l.Title.Length > 0)?.Title
-            ?? listings.FirstOrDefault(l => l.Title.Length > 0)?.Title
-            ?? product.Name;
+        // The table names a box in English (README, Box); a German shop's title never becomes the name.
+        var englishTitle = listings.FirstOrDefault(l => !l.German && l.Title.Length > 0)?.Title;
+        var name = englishTitle ?? Text.Clean(product.Name);
+        var notes = new List<string>();
+        if (englishTitle is null)
+        {
+            notes.Add("The box name is the catalogue name; set the English product name.");
+        }
+
         var body = new StringBuilder()
             .AppendLine("Draft from the scraper service (ADR 0003). Before merging, complete by hand: catalogue ids")
             .AppendLine("(`catalogueId` with `entryId` or `choice`), readings, catalogue names and roles. The merge is the hand check.")
             .AppendLine()
+            .AppendLine($"**Box name:** {Text.Code(name)}  ")
             .AppendLine($"**Article numbers:** {string.Join(", ", codes)}  ")
-            .AppendLine($"**Catalogue name and status:** {product.Name}, {product.Status}")
+            .AppendLine($"**Catalogue name and status:** {Text.Code(product.Name)}, {Text.Code(product.Status)}")
             .AppendLine();
 
-        System.Text.Json.Nodes.JsonObject box;
+        JsonObject box;
         if (ProductCatalogue.IsCombatPatrol(product))
         {
             var urls = listings.Select(l => l.Url).Distinct().ToList();
@@ -132,15 +172,14 @@ public sealed class Runner(
             var generation = product.Status == "current" ? "current" : "legacy";
             box = Table.CombatPatrolBox(name, codes, urls, generation);
             Sources(body, urls);
-            body.AppendLine("**Notes**")
-                .AppendLine($"- The generation is set to `{generation}` from the catalogue status `{product.Status}`; check it.");
+            notes.Add($"The generation is set to `{generation}` from the catalogue status; check it.");
         }
         else
         {
             var agreement = Agreement.Agree(listings);
             if (agreement.Entries is null)
             {
-                log($"{product.Code} waits: {agreement.Waiting}");
+                log($"{product.Code} waits: {Text.Clean(agreement.Waiting ?? "")}");
                 return null;
             }
 
@@ -153,21 +192,23 @@ public sealed class Runner(
                 .AppendLine("|---|---|---|");
             foreach (var entry in agreement.Entries)
             {
-                body.AppendLine($"| {Cell(entry.Name)} | {string.Join(" or ", entry.Counts)} | {string.Join(", ", entry.Hosts)} |");
+                body.AppendLine($"| {Text.Code(entry.Name)} | {string.Join(" or ", entry.Counts)} | {string.Join(", ", entry.Hosts)} |");
             }
 
-            var notes = agreement.Entries.SelectMany(Notes).ToList();
-            if (notes.Count > 0)
-            {
-                body.AppendLine().AppendLine("**Notes**");
-                notes.ForEach(n => body.AppendLine($"- {n}"));
-            }
+            body.AppendLine();
+            notes.AddRange(agreement.Entries.SelectMany(Notes));
         }
 
         if (Table.Validate(box) is { } error)
         {
             log($"{product.Code} not proposed: {error}");
             return null;
+        }
+
+        if (notes.Count > 0)
+        {
+            body.AppendLine("**Notes**");
+            notes.ForEach(n => body.AppendLine($"- {n}"));
         }
 
         var table = Table.Read(text);
@@ -183,9 +224,9 @@ public sealed class Runner(
         }
 
         var table = Table.Read(text);
-        var name = Table.AddCodes(table, knownCode, added);
+        var name = Text.Clean(Table.AddCodes(table, knownCode, added));
         var body = new StringBuilder()
-            .AppendLine($"Language variants of **{Cell(name)}** (ADR 0003 §11): {string.Join(", ", added)}.")
+            .AppendLine($"Language variants of {Text.Code(name)} (ADR 0003 §11): {string.Join(", ", added)}.")
             .AppendLine()
             .AppendLine($"Found as variants of the same shop product as {knownCode}:")
             .AppendLine();
@@ -213,20 +254,17 @@ public sealed class Runner(
     {
         if (entry.Counts.Count > 1)
         {
-            yield return $"{Cell(entry.Name)}: the sources disagree ({string.Join(", ", entry.Counts)}); entered as `countCandidates`.";
+            yield return $"{Text.Code(entry.Name)}: the sources disagree ({string.Join(", ", entry.Counts)}); entered as `countCandidates`.";
         }
 
         if (entry.AlternativeBuild)
         {
-            yield return $"{Cell(entry.Name)}: a source names an alternative build; counted as the build the box is sold as.";
+            yield return $"{Text.Code(entry.Name)}: a source names an alternative build; counted as the build the box is sold as.";
         }
 
         if (entry.NonPlayer)
         {
-            yield return $"{Cell(entry.Name)}: named as non-player models; entered with role `npo`.";
+            yield return $"{Text.Code(entry.Name)}: named as non-player models; role `npo` in Kill Team, `extra` in any other reading.";
         }
     }
-
-    // Shop text never reaches the table's prose; in a Markdown cell it must not break the row either.
-    private static string Cell(string text) => text.Replace("|", "/").Replace("\n", " ");
 }

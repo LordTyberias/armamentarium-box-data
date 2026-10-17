@@ -114,4 +114,5 @@ merge by the maintainer is the hand check.
 
 A scraper service (`src/`, decision in `docs/adr/0003-scraper-service.md`) opens **draft** pull requests for boxes it
 finds in allowlisted shops, one per box: article numbers, sources, and each model line confirmed by two sources, without
-catalogue ids. The maintainer adds ids, readings and catalogue names in the branch before merging.
+catalogue ids. The maintainer adds ids, readings and catalogue names and checks the preset roles in the branch before
+merging.

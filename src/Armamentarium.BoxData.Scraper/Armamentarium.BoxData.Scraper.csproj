@@ -10,4 +10,8 @@
     <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="Armamentarium.BoxData.Scraper.Tests" />
+  </ItemGroup>
+
 </Project>

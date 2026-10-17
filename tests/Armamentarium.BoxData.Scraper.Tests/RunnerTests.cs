@@ -41,6 +41,8 @@ public sealed class RunnerTests
     {
         public List<string> Open { get; } = [.. open];
 
+        public Func<Proposal, Exception?> Fail { get; init; } = _ => null;
+
         public List<Proposal> Proposals { get; } = [];
 
         public Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken) =>
@@ -51,6 +53,11 @@ public sealed class RunnerTests
 
         public Task ProposeAsync(Proposal proposal, string tableSha, CancellationToken cancellationToken)
         {
+            if (Fail(proposal) is { } error)
+            {
+                throw error;
+            }
+
             Proposals.Add(proposal);
             return Task.CompletedTask;
         }
@@ -179,6 +186,78 @@ public sealed class RunnerTests
         var proposal = repo.Proposals.Single();
         StringAssert.Contains(proposal.Table, "\"generation\": \"legacy\"");
         StringAssert.Contains(proposal.Body, "generation");
+    }
+
+    [TestMethod]
+    public async Task Run_SourcesFailWithTooFewListings_ProductStaysDue()
+    {
+        var failing = new FixedSource("c.test", _ => throw new FetchFailedException("c.test answered 429"));
+
+        var (repo, state, _) = await Run(
+            [P("60010199002", "5011921000002")], [Shop("a.test", new Line(5, "Blade Guards", false, false)), failing]);
+
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsFalse(state.IsDue("60010199002", Now));
+        Assert.IsTrue(state.IsDue("60010199002", Now.AddDays(3)));
+    }
+
+    [TestMethod]
+    public async Task Run_UnreadableSource_CountsAsAnAnswer()
+    {
+        var unreadable = new FixedSource("c.test", _ => throw new System.Text.Json.JsonException("not json"));
+
+        var (_, state, log) = await Run(
+            [P("60010199002", "5011921000002")], [Shop("a.test", new Line(5, "Blade Guards", false, false)), unreadable]);
+
+        Assert.IsFalse(state.IsDue("60010199002", Now.AddDays(3)));
+        Assert.IsTrue(log.Any(l => l.Contains("c.test", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_FailedProposal_IsLoggedAndTheRunGoesOn()
+    {
+        var repo = new FakeRepository
+        {
+            Fail = p => p.Branch == "scraper/60010199002" ? new GitHubException("GitHub POST answered 422") : null,
+        };
+
+        var (_, state, log) = await Run(
+            [P("60010199002", "5011921000002"), P("60010199003", "5011921000003")],
+            [Shop("a.test", new Line(5, "Blade Guards", false, false)), Shop("b.test", new Line(5, "Blade Guards", false, false))],
+            repo);
+
+        Assert.AreEqual("scraper/60010199003", repo.Proposals.Single().Branch);
+        Assert.IsTrue(log.Any(l => l.Contains("422", StringComparison.Ordinal)));
+        Assert.IsTrue(state.IsDue("60010199002", Now.AddDays(3)));
+    }
+
+    [TestMethod]
+    public async Task Run_OnlyGermanTitles_UsesTheCatalogueNameAndSaysSo()
+    {
+        ISource German(string host) => new FixedSource(host, p =>
+            new Listing(host, $"https://{host}/{p.Code}", true, "Kill Team: Neues", [new Line(5, "Klingen", false, false)], [p.Ean!]));
+        var english = new FixedSource("a.test", p =>
+            new Listing("a.test", $"https://a.test/{p.Code}", false, "", [new Line(5, "Blade Guards", false, false)], [p.Ean!]));
+
+        var (repo, _, _) = await Run([P("60010199002", "5011921000002", "KILL TEAM: NEW (ENGLISH)")], [english, German("b.test")]);
+
+        var proposal = repo.Proposals.Single();
+        Assert.AreEqual("data: add KILL TEAM: NEW (ENGLISH)", proposal.Title);
+        StringAssert.Contains(proposal.Body, "catalogue name");
+    }
+
+    [TestMethod]
+    public async Task Run_ShopText_CannotFormatTheBody()
+    {
+        ISource Shop2(string host) => new FixedSource(host, p => new Listing(
+            host, $"https://{host}/{p.Code}", false, "Box [x](https://evil.test) @someone",
+            [new Line(5, "Guards @someone #1", false, false)], [p.Ean!]));
+
+        var (repo, _, _) = await Run([P("60010199002", "5011921000002")], [Shop2("a.test"), Shop2("b.test")]);
+
+        var body = repo.Proposals.Single().Body;
+        StringAssert.Contains(body, "`Guards @someone #1`");
+        StringAssert.Contains(body, "`Box [x](https://evil.test) @someone`");
     }
 
     [TestMethod]

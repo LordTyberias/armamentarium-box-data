@@ -51,22 +51,42 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
             ["sha"] = mainSha,
         }, cancellationToken)).Dispose();
 
-        (await SendAsync(HttpMethod.Put, $"repos/{Repository}/contents/{File}", new JsonObject
+        // From here on the branch exists. Should the commit or the pull request fail, the branch goes again: a branch
+        // without a pull request would only block the next proposal of the same box.
+        try
         {
-            ["message"] = proposal.Title,
-            ["content"] = Convert.ToBase64String(Encoding.UTF8.GetBytes(proposal.Table)),
-            ["sha"] = tableSha,
-            ["branch"] = proposal.Branch,
-        }, cancellationToken)).Dispose();
+            (await SendAsync(HttpMethod.Put, $"repos/{Repository}/contents/{File}", new JsonObject
+            {
+                ["message"] = proposal.Title,
+                ["content"] = Convert.ToBase64String(Encoding.UTF8.GetBytes(proposal.Table)),
+                ["sha"] = tableSha,
+                ["branch"] = proposal.Branch,
+            }, cancellationToken)).Dispose();
 
-        (await SendAsync(HttpMethod.Post, $"repos/{Repository}/pulls", new JsonObject
+            (await SendAsync(HttpMethod.Post, $"repos/{Repository}/pulls", new JsonObject
+            {
+                ["title"] = proposal.Title,
+                ["head"] = proposal.Branch,
+                ["base"] = "main",
+                ["body"] = proposal.Body,
+                ["draft"] = true,
+            }, cancellationToken)).Dispose();
+        }
+        catch (Exception failure)
         {
-            ["title"] = proposal.Title,
-            ["head"] = proposal.Branch,
-            ["base"] = "main",
-            ["body"] = proposal.Body,
-            ["draft"] = true,
-        }, cancellationToken)).Dispose();
+            // Also a stop (SIGTERM) between branch and pull request: the branch must not outlive its proposal.
+            try
+            {
+                (await SendAsync(HttpMethod.Delete, $"repos/{Repository}/git/refs/heads/{proposal.Branch}", null, CancellationToken.None))
+                    .Dispose();
+            }
+            catch (GitHubException cleanup)
+            {
+                throw new GitHubException($"{failure.Message}; deleting {proposal.Branch} failed as well: {cleanup.Message}");
+            }
+
+            throw;
+        }
     }
 
     private async Task<JsonDocument> SendAsync(HttpMethod method, string path, JsonObject? body, CancellationToken cancellationToken)
@@ -85,14 +105,30 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
             request.Content = new StringContent(body.ToJsonString(), Encoding.UTF8, "application/json");
         }
 
-        using var response = await http.SendAsync(request, cancellationToken);
-        var text = await response.Content.ReadAsStringAsync(cancellationToken);
-        if (!response.IsSuccessStatusCode)
+        HttpResponseMessage response;
+        try
         {
-            throw new GitHubException(
-                $"GitHub {method} {path} answered {(int)response.StatusCode}: {text[..Math.Min(text.Length, 300)]}");
+            response = await http.SendAsync(request, cancellationToken);
+        }
+        catch (HttpRequestException ex)
+        {
+            throw new GitHubException($"GitHub {method} {path} failed: {ex.Message}");
+        }
+        catch (TaskCanceledException) when (!cancellationToken.IsCancellationRequested)
+        {
+            throw new GitHubException($"GitHub {method} {path} timed out");
         }
 
-        return JsonDocument.Parse(text);
+        using (response)
+        {
+            var text = await response.Content.ReadAsStringAsync(cancellationToken);
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new GitHubException(
+                    $"GitHub {method} {path} answered {(int)response.StatusCode}: {Text.Clean(text[..Math.Min(text.Length, 300)])}");
+            }
+
+            return JsonDocument.Parse(text.Length == 0 ? "{}" : text);
+        }
     }
 }

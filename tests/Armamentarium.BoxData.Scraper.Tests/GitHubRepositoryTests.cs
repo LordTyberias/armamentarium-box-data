@@ -80,6 +80,49 @@ public sealed class GitHubRepositoryTests
     }
 
     [TestMethod]
+    public async Task Propose_FailureAfterTheBranch_DeletesTheBranch()
+    {
+        var handler = new Recorder(request =>
+            request.Method == HttpMethod.Get ? Json("""{"object":{"sha":"main-sha"}}""")
+            : request.Method == HttpMethod.Put ? Json("""{"message":"conflict"}""", HttpStatusCode.Conflict)
+            : Json("{}", request.Method == HttpMethod.Delete ? HttpStatusCode.NoContent : HttpStatusCode.Created));
+
+        await Assert.ThrowsExactlyAsync<GitHubException>(() => new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
+            new Proposal("scraper/60010199002", "data: add B", "body", "{}\n"), "file-sha", default));
+
+        var last = handler.Requests[^1];
+        Assert.AreEqual(HttpMethod.Delete, last.Method);
+        Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/git/refs/heads/scraper/60010199002", last.Path);
+    }
+
+    [TestMethod]
+    public async Task Propose_TimeoutAfterTheBranch_DeletesTheBranch()
+    {
+        var handler = new Recorder(request =>
+            request.Method == HttpMethod.Get ? Json("""{"object":{"sha":"main-sha"}}""")
+            : request.Method == HttpMethod.Put ? throw new TaskCanceledException("timeout")
+            : Json("{}", request.Method == HttpMethod.Delete ? HttpStatusCode.NoContent : HttpStatusCode.Created));
+
+        await Assert.ThrowsExactlyAsync<GitHubException>(() => new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
+            new Proposal("scraper/60010199002", "data: add B", "body", "{}"), "file-sha", default));
+
+        Assert.AreEqual(HttpMethod.Delete, handler.Requests[^1].Method);
+    }
+
+    [TestMethod]
+    public async Task Propose_ExistingBranch_FailsWithoutDeletingIt()
+    {
+        var handler = new Recorder(request => request.Method == HttpMethod.Get
+            ? Json("""{"object":{"sha":"main-sha"}}""")
+            : Json("""{"message":"Reference already exists"}""", HttpStatusCode.UnprocessableEntity));
+
+        await Assert.ThrowsExactlyAsync<GitHubException>(() => new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
+            new Proposal("scraper/60010199002", "data: add B", "body", "{}\n"), "file-sha", default));
+
+        Assert.IsFalse(handler.Requests.Any(r => r.Method == HttpMethod.Delete));
+    }
+
+    [TestMethod]
     public async Task Failure_NamesStatusButNeverTheToken()
     {
         var handler = new Recorder(_ => Json($$"""{"message":"Bad credentials"}""", HttpStatusCode.Unauthorized));
