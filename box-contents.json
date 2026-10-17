@@ -2303,6 +2303,56 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Getting Started with Orks (11th Edition)",
+      "productCodes": [
+        "60170103002"
+      ],
+      "sources": [
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/warhammer-40000-armageddon/warhammer-40000-getting-started-with-orks-eng-",
+        "https://radaddel.de/products/warhammer-40-000-getting-started-with-orks-englisch"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "2efc-c4b3-2ecc-5a37",
+              "name": "Warboss",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "260d-9ce4-ea1f-a957",
+              "name": "Weirdboy",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ork Boyz",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "de8f-24f9-c543-92b7",
+              "name": "Gretchin",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "9e51-a749-18ba-2ea4",
+              "name": "Wartrakk",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
