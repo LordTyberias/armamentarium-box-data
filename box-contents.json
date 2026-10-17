@@ -1715,6 +1715,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: 11th Edition - Base Set - Armageddon (EN)",
+      "productCodes": [
+        "60010199080"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-11th-edition-base-set-armageddon-en",
+        "https://abyssgamestore.ca/products/warhammer-40-000-armageddon-40-01"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "multipart plastic push-fit miniatures",
+              "count": 61
+            }
+          ]
+        }
+      ]
     }
   ]
 }
