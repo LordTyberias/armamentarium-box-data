@@ -2885,6 +2885,64 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/combat-patrol-tyranid-assault-brood"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Warhammer 40K Battleforce Tyranid Swarm",
+      "productCodes": [
+        "99120106086"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-battleforce-tyranid-swarm",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-40k/tyranids-battleforce-tyranid-swarm"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "3e96-8098-3401-77af",
+              "name": "Hive Tyrant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lictor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Tyranid Warriors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Von Ryan's Leapers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "f15b-9f9c-9bf0-8160",
+              "name": "Hormagaunts",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "359c-db2c-681a-8d62",
+              "name": "Termagants",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Ripper Swarms",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
