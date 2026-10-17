@@ -2677,6 +2677,18 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-white-scars"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Combat Patrol: Ultramarines (73-558)",
+      "productCodes": [
+        "99120101449"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-ultramarines-73-558",
+        "https://radaddel.de/products/ultramarines-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-ultramarines"
+      ],
+      "generation": "current"
     }
   ]
 }
