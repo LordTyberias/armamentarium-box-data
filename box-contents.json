@@ -1285,6 +1285,73 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40,000 - Starter Set ( 40-03 )",
+      "productCodes": [
+        "60010199058"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warhammer-40-000-starter-set-40-03",
+        "https://www.retrofixgames.com/products/warhammer-40k-starter-set"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marines",
+              "count": 11
+            },
+            {
+              "role": "team",
+              "name": "Captain in Terminator Armour: A veteran of a thousand wars",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Terminators: Veteran warriors clad in nigh-impenetrable armour and armed with heavy weapons",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Infernus Marines: Armoured troops who wield powerful flame weapons to keep swarming enemies at bay",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Tyranids",
+              "count": 27
+            },
+            {
+              "role": "team",
+              "name": "Winged Tyranid Prime: A swooping conduit for the Hive Mind's will",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Psychophage: A massive",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Von Ryan’s Leapers: Mantis-like hunters that lash out from the shadows to ensnare unwary prey",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Termagants: Scuttling hordes of simple Tyranid creatures",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Ripper Swarms: Small beasts tasked with finishing off weakened enemies and picking their bones clean",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
