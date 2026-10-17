@@ -3055,6 +3055,60 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/combat-patrol-tau-empire-new-"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Spearhead: Blades of Khrone: Fangs of the Blood God",
+      "productCodes": [
+        "99120201200"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-blades-of-khrone-fangs-of-the-blood-god",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-fangs-of-the-blood-god"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Karanak",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Claws of Karanak",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "b657-1743-6e3a-0838",
+              "name": "Flesh Hounds",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Karanak",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Claws of Karanak",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Flesh Hounds",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
