@@ -29083,6 +29083,55 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch: Lord of Change",
+      "productCodes": [
+        "99129915065"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/disciples-of-tzeentch-lord-of-change",
+        "https://abyssgamestore.ca/products/daemons-of-tzeentch-lord-of-change-kairos-fateweaver-97-26",
+        "https://shop.afk.games/products/daemons-of-tzeentch-lord-of-change",
+        "https://www.goblingaming.co.uk/products/lord-of-change",
+        "https://elementgames.co.uk/daemons-of-tzeentch-lord-of-change"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "c964-c75a-2a9d-e451",
+              "name": "Lord of Change",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lord of Change",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "9396-cc24-458d-d358",
+              "entryId": "5c49-08f6-052f-eb22",
+              "name": "Lord of Change",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
