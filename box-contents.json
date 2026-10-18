@@ -20747,6 +20747,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Flesh-Eater Courts The Scarlet Jury",
+      "productCodes": [
+        "99120207192"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-flesh-eater-courts-the-scarlet-jury",
+        "https://shop.afk.games/products/flesh-eater-courts-the-scarlet-jury",
+        "https://mrmuffinstrains.com/products/gw-91-89",
+        "https://radaddel.de/products/flesh-eater-courts-the-scarlet-jury"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Grand Justice Gormayne",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Royal Decapitator",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cryptguard",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
