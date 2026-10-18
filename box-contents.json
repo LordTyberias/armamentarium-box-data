@@ -14912,6 +14912,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Skyweavers",
+      "productCodes": [
+        "99120111005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-skyweavers",
+        "https://abyssgamestore.ca/products/harlequin-skyweavers-58-11",
+        "https://shop.afk.games/products/harlequin-skyweavers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/harlequin-skyweavers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Harlequin Skyweavers",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
