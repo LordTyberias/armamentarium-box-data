@@ -26056,6 +26056,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Tomb Kings of Khemri - Sepulchral Stalkers",
+      "productCodes": [
+        "99122717006"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-tomb-kings-of-khemri-sepulchral-stalkers",
+        "https://www.irresistibleforce.com.au/products/tomb-kings-of-khemri-sepuchral-stalkers",
+        "https://shop.afk.games/products/tomb-kings-of-khemri-sepuchral-stalkers",
+        "https://www.goblingaming.co.uk/products/warhammer-fantasy-the-old-world-tomb-kings-of-khemri-sepulchral-stalkers",
+        "https://mrmuffinstrains.com/products/gw-07-04",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/tomb-kings-of-khemri-sepulchral-stalkers",
+        "https://radaddel.de/products/khemri-sepulchral-stalkers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sepulchral Stalkers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
