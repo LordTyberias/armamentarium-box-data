@@ -8,7 +8,8 @@ namespace Armamentarium.BoxData.Scraper;
 /// shops confirm becomes a draft box, or new article numbers of a box already in the table. With <c>autoMerge</c> each
 /// pull request is merged at once and the next one is built on the merged table (ADR 0004); entries get the ids of the
 /// one root entry their name names in <c>catalogues</c>. A product a shop did not answer is asked once more at the end of
-/// the run (ADR 0003 Addendum ARMAM-595).
+/// the run (ADR 0003 Addendum ARMAM-595). Before all that, each run holds the ids the table already carries against
+/// <c>catalogues</c> and may open one draft <see cref="StaleIdsBranch"/> that it never merges (ADR 0004 Addendum ARMAM-597).
 /// </summary>
 public sealed class Runner(
     IRepository repository,
@@ -220,8 +221,9 @@ public sealed class Runner(
         IdCheck.RemoveOrphans(table, index);
         var body = new StringBuilder()
             .AppendLine("From the scraper service (ADR 0004 Addendum ARMAM-597): these ids name no root entry of their reading in")
-            .AppendLine("this run's catalogues any more. The entries keep name and count and become gaps. Never merged by the")
-            .AppendLine("service, also with `--auto-merge`: the merge is the hand check.")
+            .AppendLine("this run's catalogues any more. The entries keep name and count and become gaps; a choice left with fewer")
+            .AppendLine("than two options becomes a gap as a whole, its remaining ids go with it. Never merged by the service, also")
+            .AppendLine("with `--auto-merge`: the merge is the hand check.")
             .AppendLine()
             .AppendLine("| Box | Reading | Entry | Ids |")
             .AppendLine("|---|---|---|---|");
@@ -231,17 +233,26 @@ public sealed class Runner(
                 $"{Text.Code(finding.Ids.CatalogueId)} {Text.Code(finding.Ids.EntryId)} |");
         }
 
+        var proposal = new Proposal(StaleIdsBranch, "data: remove orphaned catalogue ids", body.ToString(), Table.Write(table), Draft: true);
         try
         {
-            await repository.ProposeAsync(
-                new Proposal(StaleIdsBranch, "data: remove orphaned catalogue ids", body.ToString(), Table.Write(table), Draft: true),
-                sha,
-                cancellationToken);
+            await repository.ProposeAsync(proposal, sha, cancellationToken);
         }
-        catch (GitHubException ex)
+        catch (GitHubException first)
         {
-            log($"{StaleIdsBranch} not proposed: {ex.Message}");
-            return;
+            // No pull request of this branch is open, so a branch of its name is left from a draft merged or closed without
+            // deleting it; the one fixed name would otherwise fail every later run. Deleted once, then asked again.
+            log($"{StaleIdsBranch} not proposed: {first.Message}; deleting a leftover branch and trying once more");
+            try
+            {
+                await repository.DeleteBranchAsync(StaleIdsBranch, cancellationToken);
+                await repository.ProposeAsync(proposal, sha, cancellationToken);
+            }
+            catch (GitHubException ex)
+            {
+                log($"{StaleIdsBranch} not proposed: {ex.Message}");
+                return;
+            }
         }
 
         open.Add(StaleIdsBranch);

@@ -25,7 +25,8 @@ no longer holds the box; Context's "single kits are described in prose" no longe
 keeps a shop out (Context, `games-island.eu` stays out for its captcha).
 
 **Changed by ADR 0004 Addendum ARMAM-597:** besides one pull request per box (§10), a run may open one draft
-`scraper/stale-ids` that removes orphaned ids; it is never merged by the service and counts among the five of §12.
+`scraper/stale-ids` that removes orphaned ids; it is never merged by the service and counts among the five of §12. Addendum
+ARMAM-599's "no catalogues are loaded" without `--auto-merge` no longer holds (still no hits).
 
 ## Context
 
@@ -236,8 +237,9 @@ The table grows only by hand so far. Measured on 2026-10-17:
   two lines of one name still make the box wait. An entry from a build sentence needs two sources like a line; an
   additional model with one source makes the box wait.
 - **No hit** (none or several): the entry goes in as name × count, visible, not addable (ADR 0004 §4).
-- **Without `--auto-merge`** there are no hits (no catalogues are loaded): names compare normalised and build sentences
-  only stand in for a source without lines.
+- **Without `--auto-merge`** there are no hits (ids are set only with the switch; the catalogues are loaded for the id check
+  of ADR 0004 Addendum ARMAM-597 alone): names compare normalised and build sentences only stand in for a source without
+  lines.
 - **Named exception widened:** the hit now also chooses a build sentence over lines and matches sources; Armamentarium's
   `CLAUDE.md` names it, Armamentarium ADR 0118 Addendum ARMAM-599 records it.
 - **Roll-out:** `state.json` on the server is emptied once (backup beside it), so the run on 2026-11-01 asks every

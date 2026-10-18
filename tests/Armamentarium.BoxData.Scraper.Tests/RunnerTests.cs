@@ -306,6 +306,49 @@ public sealed class RunnerTests
     }
 
     [TestMethod]
+    public async Task Run_LeftoverStaleIdsBranch_IsDeletedAndTheDraftProposedOnce()
+    {
+        var failed = false;
+        var repo = new FakeRepository
+        {
+            Text = OrphanTable,
+            Fail = p => p.Branch == Runner.StaleIdsBranch && !failed && (failed = true) ? new GitHubException("answered 422") : null,
+        };
+
+        var (_, _, log) = await Run([], [], repo, catalogues: Blades());
+
+        Assert.AreEqual(Runner.StaleIdsBranch, repo.Proposals.Single().Branch);
+        Assert.IsTrue(log.Any(l => l.Contains("deleting a leftover branch", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_StaleIdsDraftFailingTwice_IsLoggedAndTheRunGoesOn()
+    {
+        var repo = new FakeRepository
+        {
+            Text = OrphanTable,
+            Fail = p => p.Branch == Runner.StaleIdsBranch ? new GitHubException("answered 403") : null,
+        };
+
+        var (_, _, log) = await Run(
+            [P("60010199009", "5011921000009")], TwoShops(new Line(5, "Blade Guards", false, false)), repo, catalogues: Blades());
+
+        Assert.IsTrue(log.Any(l => l == $"{Runner.StaleIdsBranch} not proposed: answered 403"));
+        Assert.AreEqual("scraper/60010199009", repo.Proposals.Single().Branch);
+    }
+
+    [TestMethod]
+    public async Task Run_RenamedId_IsReportedAndProposesNothing()
+    {
+        var (repo, _, log) = await Run(
+            [], [], new FakeRepository { Text = OrphanTable.Replace("se-gone", "se-guard") }, catalogues: Blades());
+
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsTrue(log.Any(l => l.Contains("se-guard renamed", StringComparison.Ordinal)));
+        Assert.IsTrue(log.Any(l => l.StartsWith("id check: 1 pair(s), 0 valid, 0 orphaned, 1 renamed", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
     public async Task Run_NoOrphanedId_ProposesNothingForTheCheck()
     {
         var (repo, _, log) = await Run([], [], catalogues: Blades());

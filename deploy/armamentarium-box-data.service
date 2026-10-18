@@ -2,7 +2,8 @@
 #
 # The scraper service of ADR 0003: one run, started by armamentarium-box-data.timer.
 # It opens pull requests in LordTyberias/armamentarium-box-data. With --auto-merge it
-# merges each one itself (ADR 0004) until the table is filled; without it, it opens
+# merges each one itself (ADR 0004) until the table is filled, except the draft of
+# orphaned ids (ADR 0004 Addendum ARMAM-597); without it, it opens
 # drafts and never merges. No port, no restart, no sudoers line: the timer starts it.
 
 [Unit]

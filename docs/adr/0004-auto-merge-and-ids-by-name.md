@@ -100,7 +100,9 @@ looked at it again. Measured on 2026-10-18 against the online catalogues: 64 box
 - **Orphaned ids go into a draft:** branch `scraper/stale-ids`, the table without the orphaned pairs; such a fixed entry,
   or a choice left with fewer than two options (the schema asks for two), keeps role, name and count and becomes a gap. The
   draft is **never merged by the service**, also with `--auto-merge`; the maintainer's merge is the hand check. It counts
-  among the five open (ADR 0003 §12); while it is open, or when no slot is free, the run only reports.
+  among the five open (ADR 0003 §12); while it is open, or when no slot is free, the run only reports. The branch name is
+  fixed: when opening fails although no pull request of it is open, a branch is left from a draft merged or closed without
+  deleting it, so the service deletes that branch once and tries again; a second failure is logged and the run goes on.
 - **Renamed ids are only reported:** a rename in BSData is mostly cosmetic (a plural, `[Legends]`); removing would hit
   valid ids.
 - **No widening of the named exception** in Armamentarium's `CLAUDE.md`: the service sets no id here and merges nothing;
