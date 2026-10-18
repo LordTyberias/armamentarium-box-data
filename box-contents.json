@@ -4437,6 +4437,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Old world - Beastmen Brayherds: Centigor Lord",
+      "productCodes": [
+        "99062716013"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/old-world-beastmen-brayherds-centigor-lord",
+        "https://www.goblingaming.co.uk/products/beastmen-brayherds-centigor-lord"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Centigor Lord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
