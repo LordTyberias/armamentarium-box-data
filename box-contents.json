@@ -20818,6 +20818,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Osiarch Bonereapers Mortisan Elite",
+      "productCodes": [
+        "99120207195"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-osiarch-bonereapers-mortisan-elite",
+        "https://mrmuffinstrains.com/products/gw-70-942"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mortisan Ossifector",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Necropolis Stalkers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Immortis Guard",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Morghast Archai",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
