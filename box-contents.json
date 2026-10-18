@@ -18758,6 +18758,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Sylvaneth Outcast Spitegrove",
+      "productCodes": [
+        "99120204053"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-sylvaneth-outcast-spitegrove",
+        "https://shop.afk.games/products/sylvaneth-outcast-spitegrove",
+        "https://www.goblingaming.co.uk/products/sylvaneth-outcast-spitegrove-battleforce",
+        "https://mrmuffinstrains.com/products/gw-92-31",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/sylvaneth-outcast-spitegrove",
+        "https://radaddel.de/products/sylvaneth-outcast-spitegrove"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Drycha Hamadreth",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Spirit of Durthu",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Spite-Revenants",
+              "count": 15
+            },
+            {
+              "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "ccce-ab0c-7c1-bbc2",
+              "name": "Dryads",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
