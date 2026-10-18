@@ -12861,6 +12861,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranid Tyrannocyte",
+      "productCodes": [
+        "99120106034"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/tyranid-tyrannocyte",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranid-tyrannocyte"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tyrannocyte",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
