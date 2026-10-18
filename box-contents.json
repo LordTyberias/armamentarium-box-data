@@ -9949,6 +9949,35 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-iron-warriors"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Chaos Space Marines: Mutilator",
+      "productCodes": [
+        "99120102230"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-mutilator",
+        "https://abyssgamestore.ca/products/chaos-space-marines-mutilators-43-43",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-mutilators",
+        "https://obsidiangames.ca/products/mutilators",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-mutilators",
+        "https://mrmuffinstrains.com/products/gw-43-43",
+        "https://radaddel.de/products/chaos-space-marines-mutilators"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "7299-5b5-2b56-ef50",
+              "name": "Mutilators",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
