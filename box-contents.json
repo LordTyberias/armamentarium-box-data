@@ -18382,6 +18382,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Cities Of Sigmar Ven Denst's Hounds",
+      "productCodes": [
+        "99120202071"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-cities-of-sigmar-ven-densts-hounds",
+        "https://mrmuffinstrains.com/products/gw-86-90"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Galen ven Denst",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Doralia ven Denst",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Wildercorp Hunters",
+              "count": 11
+            }
+          ]
+        }
+      ]
     }
   ]
 }
