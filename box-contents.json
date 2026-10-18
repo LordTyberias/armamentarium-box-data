@@ -10370,6 +10370,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Orks Zodgrod Wortsnagga",
+      "productCodes": [
+        "99120103074"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-zodgrod-wortsnagga",
+        "https://shop.afk.games/products/orks-zodgrod-wortsnagga",
+        "https://www.goblingaming.co.uk/products/new-games-workshop-zodgrod-wortsnagga-orks",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-zodgrod-wortsnagga"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "ce45-db08-3795-18a9",
+              "name": "Zodgrod Wortsnagga",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
