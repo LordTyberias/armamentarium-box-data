@@ -1,4 +1,5 @@
 using System.Net;
+using System.Net.Http.Headers;
 
 namespace Armamentarium.BoxData.Scraper.Tests;
 
@@ -198,6 +199,132 @@ public sealed class FetcherTests
 
         await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/x", default));
         await Assert.ThrowsAsync<OperationCanceledException>(() => fetcher.GetAsync("https://shop.test/x", new CancellationToken(true)));
+    }
+
+    private static HttpResponseMessage Throttled(RetryConditionHeaderValue? retryAfter = null)
+    {
+        var response = Status(HttpStatusCode.TooManyRequests);
+        response.Headers.RetryAfter = retryAfter;
+        return response;
+    }
+
+    [TestMethod]
+    public async Task Get_TooManyRequestsWithRetryAfter_LeavesTheHostAloneUntilThen()
+    {
+        var handler = new Answers(_ => Throttled(new RetryConditionHeaderValue(TimeSpan.FromSeconds(120))));
+        using var fetcher = Make(handler);
+
+        var first = await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        var second = await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        Assert.AreEqual(1, handler.Requested.Count);
+        Assert.IsTrue(first.CanRetryInRun);
+        Assert.IsTrue(second.CanRetryInRun);
+    }
+
+    [TestMethod]
+    public async Task Get_RetryAfterOnTheHourOrLater_RestsTheHostForTheRun()
+    {
+        var log = new List<string>();
+        var handler = new Answers(_ => Throttled(new RetryConditionHeaderValue(TimeSpan.FromHours(1))));
+        using var fetcher = Make(handler, log);
+
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        var rested = await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        Assert.AreEqual(1, handler.Requested.Count);
+        Assert.IsFalse(rested.CanRetryInRun);
+        Assert.IsTrue(log.Any(l => l.Contains("rest of the run", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Get_RetryAfterInThePastOrMissing_AsksAgain()
+    {
+        var answers = new Queue<HttpResponseMessage>(
+        [
+            Throttled(new RetryConditionHeaderValue(DateTimeOffset.UtcNow.AddMinutes(-1))),
+            Throttled(),
+            Status(HttpStatusCode.OK),
+        ]);
+        var handler = new Answers(_ => answers.Dequeue());
+        using var fetcher = Make(handler);
+
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        Assert.AreEqual("body", await fetcher.GetAsync("https://shop.test/c", default));
+        Assert.AreEqual(3, handler.Requested.Count);
+    }
+
+    [TestMethod]
+    public async Task Get_RetryAfterAsADate_LeavesTheHostAloneUntilThen()
+    {
+        var handler = new Answers(_ => Throttled(new RetryConditionHeaderValue(DateTimeOffset.UtcNow.AddMinutes(2))));
+        using var fetcher = Make(handler);
+
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        Assert.AreEqual(1, handler.Requested.Count);
+    }
+
+    [TestMethod]
+    public async Task Get_ThirdTooManyRequests_StretchesThatHostOnly()
+    {
+        var log = new List<string>();
+        using var fetcher = new Fetcher(
+            new Dictionary<string, TimeSpan> { ["shop.test"] = TimeSpan.FromMilliseconds(1), ["other.test"] = TimeSpan.FromMilliseconds(1) },
+            log.Add,
+            new Answers(r => r.RequestUri!.Host == "shop.test" ? Throttled() : Status(HttpStatusCode.OK)));
+
+        for (var i = 0; i < Fetcher.StretchAfter; i++)
+        {
+            await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/x", default));
+        }
+
+        await fetcher.GetAsync("https://other.test/x", default);
+
+        Assert.AreEqual(TimeSpan.FromMilliseconds(2), fetcher.IntervalOf("shop.test"));
+        Assert.AreEqual(TimeSpan.FromMilliseconds(1), fetcher.IntervalOf("other.test"));
+        Assert.AreEqual(1, log.Count(l => l.Contains("stretched", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public void Stretch_DoublesUpToTenSecondsAndNeverShortens()
+    {
+        Assert.AreEqual(TimeSpan.FromSeconds(10), Fetcher.Stretch(TimeSpan.FromSeconds(5)));
+        Assert.AreEqual(TimeSpan.FromSeconds(10), Fetcher.Stretch(TimeSpan.FromSeconds(8)));
+        Assert.AreEqual(TimeSpan.FromSeconds(60), Fetcher.Stretch(TimeSpan.FromSeconds(60)));
+    }
+
+    [TestMethod]
+    public async Task Get_Refused_IsNotAskedAgainInTheRunNorStretched()
+    {
+        using var fetcher = Make(new Answers(_ => Status(HttpStatusCode.Forbidden)));
+
+        for (var i = 0; i < Fetcher.StretchAfter; i++)
+        {
+            var refused = await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/x", default));
+            Assert.IsFalse(refused.CanRetryInRun);
+        }
+
+        Assert.AreEqual(0, fetcher.Summary().Count());
+    }
+
+    [TestMethod]
+    public async Task Summary_NamesEachThrottledHostWithItsCountsAndInterval()
+    {
+        var answers = new Queue<HttpResponseMessage>([Throttled(new RetryConditionHeaderValue(TimeSpan.FromSeconds(1))), Throttled()]);
+        using var fetcher = Make(new Answers(_ => answers.Dequeue()));
+
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
+        await Task.Delay(TimeSpan.FromSeconds(1.2));
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+
+        var line = fetcher.Summary().Single();
+        StringAssert.Contains(line, "shop.test");
+        StringAssert.Contains(line, "2 answer(s) 429");
+        StringAssert.Contains(line, "1 with Retry-After");
     }
 
     [TestMethod]

@@ -14,9 +14,10 @@ Wants=network-online.target
 Type=oneshot
 # Remove --auto-merge (daemon-reload) when the maintainer merges by hand again.
 ExecStart=/usr/bin/dotnet /srv/armamentarium-box-data/current/Armamentarium.BoxData.Scraper.dll --auto-merge
-# A pass over the whole backlog takes hours (five seconds per request and shop;
-# miniset.net only after a finding elsewhere); the timeout leaves room, and a
-# stopped run resumes from its saved state.
+# A pass over the whole backlog takes hours (five seconds per request and shop,
+# up to ten for a shop that throttles, so about 19 hours at worst; miniset.net
+# only after a finding elsewhere); the timeout leaves room, and a stopped run
+# resumes from its saved state.
 TimeoutStartSec=20h
 
 # A throwaway account per run; the state survives in /var/lib/armamentarium-box-data,

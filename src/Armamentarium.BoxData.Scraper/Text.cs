@@ -55,5 +55,12 @@ public static class Text
     public static string Code(string text) => $"`{Clean(text).Replace('`', '\'').Replace('|', '/')}`";
 }
 
-/// <summary>A shop that did not answer: a network failure, a timeout, 429 or a server error. Not a "not listed".</summary>
-public sealed class FetchFailedException(string message) : Exception(message);
+/// <summary>
+/// A shop that did not answer: a network failure, a timeout, 403, 429 or a server error. Not a "not listed".
+/// <see cref="CanRetryInRun"/> is false where asking again in the same run cannot help: a 403, a host resting for the run
+/// (ADR 0003 Addendum ARMAM-595).
+/// </summary>
+public sealed class FetchFailedException(string message, bool canRetryInRun = true) : Exception(message)
+{
+    public bool CanRetryInRun { get; } = canRetryInRun;
+}

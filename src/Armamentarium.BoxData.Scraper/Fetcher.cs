@@ -9,6 +9,9 @@ namespace Armamentarium.BoxData.Scraper;
 /// around. A shop that does not answer (network, timeout, 403, 429, 5xx) throws <see cref="FetchFailedException"/>, so the run
 /// can tell "not listed" from "not asked"; after <see cref="MaxFailuresInARow"/> such failures the host rests for the run.
 /// A page that says the host has restricted this client rests the host at once.
+/// A 429 is a shop that throttles (ADR 0003 Addendum ARMAM-595): its <c>Retry-After</c> is honoured, the host failing at once
+/// until then (longer than <see cref="MaxRetryAfter"/> rests it for the run), and from the <see cref="StretchAfter"/>th 429
+/// on the host's interval is doubled up to <see cref="MaxStretchedInterval"/> for the rest of the run. A 403 throttles nothing.
 /// </summary>
 public sealed class Fetcher : IFetcher, IDisposable
 {
@@ -16,6 +19,14 @@ public sealed class Fetcher : IFetcher, IDisposable
     public const string UserAgent = "ABD/1.0";
 
     public const int MaxFailuresInARow = 20;
+
+    public const int StretchAfter = 3;
+
+    // Every product waits for its slowest fast host; at ten seconds a Shopify product (two requests) takes 20 s and a pass
+    // over the whole backlog about 19 hours, inside the unit's 20 (ADR 0003 Addendum ARMAM-595).
+    public static readonly TimeSpan MaxStretchedInterval = TimeSpan.FromSeconds(10);
+
+    public static readonly TimeSpan MaxRetryAfter = TimeSpan.FromMinutes(10);
 
     private const int MaxRedirects = 3;
 
@@ -66,6 +77,19 @@ public sealed class Fetcher : IFetcher, IDisposable
         return rest > TimeSpan.Zero ? rest : TimeSpan.Zero;
     }
 
+    /// <summary>The interval of a throttling host: doubled up to ten seconds, never shortened.</summary>
+    public static TimeSpan Stretch(TimeSpan interval) =>
+        interval >= MaxStretchedInterval ? interval : TimeSpan.FromTicks(Math.Min(interval.Ticks * 2, MaxStretchedInterval.Ticks));
+
+    internal TimeSpan IntervalOf(string host) => _gates[host].Interval;
+
+    /// <summary>One line per host that answered 429 in this run, for the journal at the end of the run.</summary>
+    public IEnumerable<string> Summary() =>
+        _gates.Where(g => g.Value.Throttles > 0)
+            .OrderBy(g => g.Key, StringComparer.Ordinal)
+            .Select(g => $"{g.Key}: {g.Value.Throttles} answer(s) 429, {g.Value.RetryAfterSeen} with Retry-After, " +
+                $"interval {g.Value.Interval.TotalSeconds:0.###} s");
+
     public async Task<string?> GetAsync(string url, CancellationToken cancellationToken)
     {
         var uri = new Uri(url);
@@ -77,7 +101,13 @@ public sealed class Fetcher : IFetcher, IDisposable
         var gate = _gates[uri.Host];
         if (gate.Failures >= MaxFailuresInARow)
         {
-            throw new FetchFailedException($"{uri.Host} is skipped for the rest of the run");
+            throw new FetchFailedException($"{uri.Host} is skipped for the rest of the run", canRetryInRun: false);
+        }
+
+        // The shop asked for the wait; the product is asked again at the end of the run instead of holding every other.
+        if (gate.NotBefore is { } notBefore && notBefore > DateTimeOffset.UtcNow)
+        {
+            throw new FetchFailedException($"{uri.Host} asked to wait until {notBefore:u}");
         }
 
         try
@@ -106,11 +136,22 @@ public sealed class Fetcher : IFetcher, IDisposable
                 {
                     gate.Failures = MaxFailuresInARow;
                     _log($"{uri} answered {status} with a block page: the host restricts this client; it rests for the rest of the run");
-                    throw new FetchFailedException($"{uri.Host} restricts this client");
+                    throw new FetchFailedException($"{uri.Host} restricts this client", canRetryInRun: false);
                 }
 
-                // A 403 is the shop's guard refusing this client, not "not listed" (ADR 0003 Addendum ARMAM-596).
-                if (status is 403 or 429 or >= 500)
+                if (status == 429)
+                {
+                    throw Throttled(gate, uri, response);
+                }
+
+                // A 403 is the shop's guard refusing this client, not "not listed" (ADR 0003 Addendum ARMAM-596); asking
+                // again in the same run would meet the same guard (Addendum ARMAM-595).
+                if (status == 403)
+                {
+                    throw Failed(gate, $"{uri} answered {status}", canRetryInRun: false);
+                }
+
+                if (status >= 500)
                 {
                     throw Failed(gate, $"{uri} answered {status}");
                 }
@@ -141,7 +182,36 @@ public sealed class Fetcher : IFetcher, IDisposable
 
     public void Dispose() => _http.Dispose();
 
-    private FetchFailedException Failed(HostGate gate, string message)
+    private FetchFailedException Throttled(HostGate gate, Uri uri, HttpResponseMessage response)
+    {
+        gate.Throttles++;
+        var now = DateTimeOffset.UtcNow;
+        var wait = response.Headers.RetryAfter is { } retryAfter ? retryAfter.Delta ?? retryAfter.Date - now : null;
+        var message = $"{uri} answered 429";
+        if (wait > TimeSpan.Zero)
+        {
+            gate.RetryAfterSeen++;
+            message += $", Retry-After {wait.Value.TotalSeconds:0} s";
+            if (wait > MaxRetryAfter)
+            {
+                gate.Failures = MaxFailuresInARow;
+                _log($"{message}: longer than {MaxRetryAfter.TotalMinutes:0} min; the host rests for the rest of the run");
+                return new FetchFailedException(message, canRetryInRun: false);
+            }
+
+            gate.NotBefore = now + wait.Value;
+        }
+
+        if (gate.Throttles >= StretchAfter && Stretch(gate.Interval) is var stretched && stretched != gate.Interval)
+        {
+            gate.Interval = stretched;
+            _log($"{uri.Host} answered 429 {gate.Throttles} times; its interval is stretched to {stretched.TotalSeconds:0.###} s for the rest of the run");
+        }
+
+        return Failed(gate, message);
+    }
+
+    private FetchFailedException Failed(HostGate gate, string message, bool canRetryInRun = true)
     {
         gate.Failures++;
         _log(message);
@@ -150,7 +220,7 @@ public sealed class Fetcher : IFetcher, IDisposable
             _log($"{MaxFailuresInARow} failures in a row; the host is skipped for the rest of the run");
         }
 
-        return new FetchFailedException(message);
+        return new FetchFailedException(message, canRetryInRun);
     }
 
     private async Task<HttpResponseMessage> SendAsync(HostGate gate, Uri uri, CancellationToken cancellationToken)
@@ -176,12 +246,18 @@ public sealed class Fetcher : IFetcher, IDisposable
 
     private sealed class HostGate(TimeSpan interval)
     {
-        public TimeSpan Interval { get; } = interval;
+        public TimeSpan Interval { get; set; } = interval;
 
         public SemaphoreSlim Lock { get; } = new(1, 1);
 
         public DateTimeOffset? Last { get; set; }
 
         public int Failures { get; set; }
+
+        public int Throttles { get; set; }
+
+        public int RetryAfterSeen { get; set; }
+
+        public DateTimeOffset? NotBefore { get; set; }
     }
 }
