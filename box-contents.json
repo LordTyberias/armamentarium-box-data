@@ -26291,6 +26291,53 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Defenders of the Great Bastion (EN)",
+      "productCodes": [
+        "99122720009"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-defenders-of-the-great-bastion-en",
+        "https://mrmuffinstrains.com/products/gw-06-213"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Astromancer on foot",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Astromancer mounted on Cathayan Warhorse",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Familiar",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Crane Gun Teams",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Iron Hail Gunners",
+              "count": 12
+            },
+            {
+              "role": "team",
+              "name": "Peasant Soldiers",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
