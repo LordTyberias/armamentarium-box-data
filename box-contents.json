@@ -23859,6 +23859,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Vindictors",
+      "productCodes": [
+        "99120218061"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/vindictors",
+        "https://shop.afk.games/products/stormcast-eternals-vindictors",
+        "https://obsidiangames.ca/products/stormcast-eternals-vindictors",
+        "https://mrmuffinstrains.com/products/gw-96-57",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/stormcast-eternals-vindictors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vindictors wearing Thunderstrike armour",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
