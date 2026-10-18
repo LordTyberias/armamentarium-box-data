@@ -5537,6 +5537,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Clamavus",
+      "productCodes": [
+        "99070117013"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/genestealer-cults-clamavus",
+        "https://shop.afk.games/products/genestealer-cults-clamavus",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-clamavus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "5543-973a-cd2e-c941",
+              "name": "Clamavus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
