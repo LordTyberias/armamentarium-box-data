@@ -12831,6 +12831,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids - Toxicrene / Maleceptor ( 51-20-W )",
+      "productCodes": [
+        "99120106033"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/tyranids-toxicrene-maleceptor-51-20-w",
+        "https://www.goblingaming.co.uk/products/tyranids-toxicrene",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranid-toxicrene"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "30d0-521c-1d45-f57b",
+              "name": "Toxicrene",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "huge",
+              "count": 12
+            }
+          ]
+        }
+      ]
     }
   ]
 }
