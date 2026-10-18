@@ -4672,6 +4672,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Space Marines Lieutenant",
+      "productCodes": [
+        "99070101079"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-lieutenant",
+        "https://shop.afk.games/products/space-marines-lieutenant",
+        "https://obsidiangames.ca/products/space-marines-lieutenant",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-lieutenant"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Lieutenant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
