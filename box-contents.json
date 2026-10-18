@@ -11635,6 +11635,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari - Howling Banshees ( 46-45 )",
+      "productCodes": [
+        "99120104086"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/craftworlds-howling-banshees-46-45",
+        "https://radaddel.de/products/aeldari-howling-banshees"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Howling Banshee Exarch",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Aeldari",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
