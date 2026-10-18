@@ -26360,6 +26360,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Grand Cathay Iron Hail & Crane Gunners",
+      "productCodes": [
+        "99122720011"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/grand-cathay-iron-hail-crane-gunners",
+        "https://mrmuffinstrains.com/products/gw-06-215",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-iron-hail-and-crane-gunners"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Iron Hail Gunners",
+              "count": 12
+            },
+            {
+              "role": "team",
+              "name": "Crane Gun Teams",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
