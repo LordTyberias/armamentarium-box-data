@@ -12451,6 +12451,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Gaunt's Ghosts",
+      "productCodes": [
+        "99120105118"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-gaunts-ghosts",
+        "https://shop.afk.games/products/gaunts-ghosts",
+        "https://obsidiangames.ca/products/astra-militarum-gaunts-ghosts",
+        "https://mrmuffinstrains.com/products/gw-47-30"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Colonel-Commissar Ibram Gaunt",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sergeant Scout Oan Mkoll",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
