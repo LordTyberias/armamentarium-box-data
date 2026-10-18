@@ -23430,6 +23430,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Ogor Mawtribes Scrapglutt",
+      "productCodes": [
+        "99120213034"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmarspearhead-ogor-mawtribes-scrapglutt",
+        "https://shop.afk.games/products/spearhead-ogor-mawtribes-scrapglutt",
+        "https://www.goblingaming.co.uk/products/spearhead-ogor-mawtribes-scrapglutt",
+        "https://mrmuffinstrains.com/products/gw-70-952",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-ogor-mawtribes-scrapglutt",
+        "https://radaddel.de/products/ogor-mawtribes-scrapglutt-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hrothgorn's Mantrappers",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Gnoblar Scraplauncher",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Gnoblars",
+              "count": 12
+            },
+            {
+              "role": "team",
+              "name": "Ironguts",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
