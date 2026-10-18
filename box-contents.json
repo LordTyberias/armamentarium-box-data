@@ -7930,6 +7930,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Blood Claws",
+      "productCodes": [
+        "99120101434"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-blood-claws",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-blood-claws-1",
+        "https://shop.afk.games/products/space-wolves-blood-claws",
+        "https://obsidiangames.ca/products/blood-claws",
+        "https://www.goblingaming.co.uk/products/space-wolves-blood-claws",
+        "https://radaddel.de/products/space-wolves-blood-claws"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "fa8f-f5a2-993-bdbb",
+              "name": "Blood Claws",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
