@@ -16547,6 +16547,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry: The Jade Obelisk ( 111-96 )",
+      "productCodes": [
+        "99120201114"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/copy-of-warcry-hunters-of-huanchi-111-95",
+        "https://www.retrofixgames.com/products/warcry-the-jade-obelisk"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Nephrite Priestess",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Obelisk Bearer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Idolarc",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Desecrators",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
