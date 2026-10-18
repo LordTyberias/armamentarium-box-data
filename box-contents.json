@@ -27278,6 +27278,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Saturnine Terminators",
+      "productCodes": [
+        "99123001059"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-saturnine-terminators",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-saturnine-terminator-squad",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-saturnine-terminators",
+        "https://mrmuffinstrains.com/products/gw-31-124",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-legiones-astartes-saturnine-terminators",
+        "https://radaddel.de/products/legiones-astartes-saturnine-terminator-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "ambidextrous plasma bombards",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "ambidextrous twin heavy disintegrator",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "left-handed Saturnine disruption fists",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "helmets",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
