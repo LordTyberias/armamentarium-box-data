@@ -5939,6 +5939,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Weirdnob Shaman",
+      "productCodes": [
+        "99070209008"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orruk-warclans-weirdnob-shaman",
+        "https://abyssgamestore.ca/products/orruk-warclans-weirdnob-shaman-89-27",
+        "https://shop.afk.games/products/orruk-warclans-orruk-weirdnob-shaman",
+        "https://www.goblingaming.co.uk/products/ironjawz-orruk-weirdnob-shaman",
+        "https://mrmuffinstrains.com/products/gw-89-27"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Weirdnob Shaman",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
