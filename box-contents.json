@@ -29474,6 +29474,58 @@
         "https://obsidiangames.ca/products/combat-patrol-death-korps-of-krieg"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Warhammer 40K: Tyranids - Battleforce",
+      "productCodes": [
+        "99120106085"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-tyranids-battleforce",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranids-crusher-stampede"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "1ae1-ed96-5100-eda5",
+              "name": "Neurotyrant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "8e53-d4a-a69f-e71d",
+              "name": "Screamer-Killer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "1705-379b-330d-36d4",
+              "name": "Tyrannofex",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "6249-358f-27d7-ef60",
+              "name": "Haruspex",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "2c2d-a2f9-61a8-a6c6",
+              "name": "Maleceptor",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
