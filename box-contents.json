@@ -20468,6 +20468,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Soulblight Gravelords - Deathrattle Tomb Host",
+      "productCodes": [
+        "99120207176"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-soulblight-gravelords-deathrattle-tomb-host",
+        "https://www.retrofixgames.com/products/spearhead-soulblight-gravelords-deathrattle-tomb-host",
+        "https://www.goblingaming.co.uk/products/spearhead-soulblight-gravelords-deathrattle-tomb-host",
+        "https://mrmuffinstrains.com/products/gw-70-916",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-soulblight-gravelords-deathrattle-tomb-host",
+        "https://radaddel.de/products/soulblight-gravelords-spearhead-deathrattle-tomb-host"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Wight King",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Barrow Knights",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Barrow Guard",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Deathrattle Skeletons with 4x Tombstones",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
