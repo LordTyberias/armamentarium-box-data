@@ -9270,6 +9270,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Dark Apostle",
+      "productCodes": [
+        "99120102173"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-dark-apostle",
+        "https://shop.afk.games/products/chaos-space-marines-dark-apostle",
+        "https://obsidiangames.ca/products/chaos-space-marines-dark-apostle",
+        "https://mrmuffinstrains.com/products/gw-43-37",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-dark-apostle-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dark Apostle",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Dark Disciples",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
