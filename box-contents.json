@@ -5204,6 +5204,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Death Jester",
+      "productCodes": [
+        "99070111004"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-death-jester",
+        "https://abyssgamestore.ca/products/harlequin-death-jester-58-15",
+        "https://www.retrofixgames.com/products/warhammer-40k-harlequin-death-jester",
+        "https://shop.afk.games/products/harlequin-death-jester",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/harlequin-death-jester-29127"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Harlequin Death Jester",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
