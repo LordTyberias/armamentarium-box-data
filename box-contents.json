@@ -23523,6 +23523,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes: Ironguts",
+      "productCodes": [
+        "99120213041"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ogor-mawtribes-ironguts",
+        "https://mrmuffinstrains.com/products/games-workshop-95-09-age-of-sigmar-ogor-mawtribes-ironguts-2026",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/beastclaw-raiders/ogor-mawtribes-ironguts"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "blade and cleaver for the Champion",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "set of trophy tusks for the Champion",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "double-handed hammer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "double-handed blades",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "optional shoulder fur trim",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
