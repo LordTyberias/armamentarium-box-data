@@ -22048,6 +22048,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Orruk Warclans Ironjawz Bigmob",
+      "productCodes": [
+        "99120209122"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-orruk-warclans-ironjawz-bigmob",
+        "https://shop.afk.games/products/spearhead-orruk-warclans-ironjawz-bigmob",
+        "https://obsidiangames.ca/products/spearhead-orruk-warclans-ironjawz-bigmob",
+        "https://www.goblingaming.co.uk/products/spearhead-orruk-warclans-ironjawz-bigmob",
+        "https://mrmuffinstrains.com/products/gw-70-893",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/bonesplitterz/spearhead-orruk-warclans-ironjawz-bigmob",
+        "https://radaddel.de/products/orruk-warclans-spearhead-ironjawz-bigmob"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Megaboss",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Brute Ragerz",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Brutes",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Ardboyz",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
