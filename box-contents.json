@@ -13935,6 +13935,20 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Adeptus Custodes ( 73-011 )",
+      "productCodes": [
+        "99120108094"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-adeptus-custodes-73-01",
+        "https://radaddel.de/products/adeptus-custodes-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-adeptus-custodes-1",
+        "https://obsidiangames.ca/products/combat-patrol-adeptus-custodes",
+        "https://mrmuffinstrains.com/products/gw-73-011"
+      ],
+      "generation": "current"
     }
   ]
 }
