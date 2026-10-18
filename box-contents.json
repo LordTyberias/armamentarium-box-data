@@ -20095,6 +20095,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Lauka Vai, Mother Of Nightmares",
+      "productCodes": [
+        "99120207138"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/lauka-vai-mother-of-nightmares",
+        "https://obsidiangames.ca/products/vampire-counts-lauka-vai-mother-of-nightmares"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lauka Vai",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
