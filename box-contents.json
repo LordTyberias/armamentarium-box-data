@@ -17728,6 +17728,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin Of Nurgle: Cankerborn",
+      "productCodes": [
+        "99120201237"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/maggotkin-of-nurgle-cankerborn",
+        "https://radaddel.de/products/maggotkin-of-nurgle-cankerborn"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cankerborn",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
