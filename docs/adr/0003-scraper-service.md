@@ -304,7 +304,7 @@ The table grows only by hand so far. Measured on 2026-10-17:
   Challenge or refusal on the first request, not measured further: `duo-shop.de`, `geek-haven.de`,
   `miniaturemarket.com`, `spiele-offensive.de`, `www.firestormgames.co.uk`, `gameslore.com`, `chaoscards.co.uk`,
   `mightyape.com.au` (Cloudflare), the comparison sites `idealo.de`, `geizhals.at`, `billiger.de` and `cardmarket.com`
-  (403 or a bot page); `pricerunner.com` lists prices only. No probed shop answered 429, 403 or a block page across its twelve
+  (403 or a bot page); `pricerunner.com` lists prices only. None of the shops in the table answered 429, 403 or a block page across its twelve
   requests at five seconds, nor did the hand-measured ones. The non-Shopify shops were measured by hand with `ABD/1.0` and
   the service's parser run over the saved pages, since a probe needs an adapter. No shop showed a text and data mining
   reservation or a non-commercial licence; the terms were searched for the words, not read as a lawyer would. For

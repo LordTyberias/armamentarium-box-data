@@ -20,9 +20,13 @@ public static class Program
         var autoMerge = args.Contains("--auto-merge");
         var codeAt = Array.IndexOf(args, "--code");
         var onlyCode = codeAt >= 0 && codeAt + 1 < args.Length ? args[codeAt + 1] : null;
-        var hostAt = Array.IndexOf(args, "--host");
-        var onlyHost = hostAt >= 0 && hostAt + 1 < args.Length ? args[hostAt + 1] : null;
         void Log(string line) => Console.WriteLine(line);
+        var (probe, probeError) = Probe.Resolve(args, Sources.All);
+        if (probeError is not null)
+        {
+            Log(probeError);
+            return 2;
+        }
 
         // systemd stops the unit with SIGTERM; the run ends between two requests, the state of every finished product is saved.
         using var stop = new CancellationTokenSource();
@@ -54,9 +58,10 @@ public static class Program
             var state = statePath is null ? new ScanState() : ScanState.Load(statePath);
             var products = ProductCatalogue.Parse(await github.GetStringAsync(ProductCatalogue.ProductsUrl, stop.Token));
             Log($"{products.Count} Games Workshop products in the catalogue");
-            if (onlyHost is not null)
+            if (probe is not null)
             {
-                return await ProbeAsync(onlyHost, onlyCode, dryRun, products, Log, stop.Token);
+                await ProbeAsync(probe, onlyCode!, products, Log, stop.Token);
+                return 0;
             }
 
             // Ids by name only while the service merges by itself (ADR 0004); drafts stay without ids for the maintainer.
@@ -99,16 +104,9 @@ public static class Program
         }
     }
 
-    private static async Task<int> ProbeAsync(
-        string host, string? code, bool dryRun, IReadOnlyList<Product> products, Action<string> log, CancellationToken cancellationToken)
+    private static async Task ProbeAsync(
+        ISource source, string code, IReadOnlyList<Product> products, Action<string> log, CancellationToken cancellationToken)
     {
-        if (!dryRun || code is null)
-        {
-            log("--host needs --dry-run and --code");
-            return 2;
-        }
-
-        var source = Probe.SourceFor(Sources.All, host);
         using var fetcher = new Fetcher(new Dictionary<string, TimeSpan> { [source.Host] = source.Interval }, log);
         foreach (var one in code.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
         {
@@ -131,9 +129,12 @@ public static class Program
             {
                 log($"{source.Host}: did not answer: {ex.Message}");
             }
+            catch (Exception ex) when (ex is not OperationCanceledException || !cancellationToken.IsCancellationRequested)
+            {
+                // An unreadable page costs this code, not the rest of the list, as in a run (Runner.AskAsync).
+                log($"{source.Host}: {one} unreadable: {ex.GetType().Name}: {Text.Clean(ex.Message)}");
+            }
         }
-
-        return 0;
     }
 
     private static string ReadToken()

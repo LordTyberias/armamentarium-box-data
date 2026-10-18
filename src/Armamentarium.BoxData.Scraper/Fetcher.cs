@@ -3,10 +3,9 @@ using System.Net;
 namespace Armamentarium.BoxData.Scraper;
 
 /// <summary>
-/// The only way to a shop: allowlisted hosts, https, at most one request per host interval (five seconds, a minute for
-/// miniset.net), redirects only within
-/// the host (ADR 0003 §5–§7). Any other answer that is not 200 is no finding (null); a captcha or challenge is never worked
-/// around. A shop that does not answer (network, timeout, 403, 429, 5xx) throws <see cref="FetchFailedException"/>, so the run
+/// The only way to a shop: allowlisted hosts, https, at most one request per host interval (five seconds, stretched for a
+/// shop that throttles), redirects only within the host (ADR 0003 §5–§7). Any other answer that is not 200 is no finding
+/// (null); a captcha or challenge is never worked around. A shop that does not answer (network, timeout, 403, 429, 5xx) throws <see cref="FetchFailedException"/>, so the run
 /// can tell "not listed" from "not asked"; after <see cref="MaxFailuresInARow"/> such failures the host rests for the run.
 /// A page that says the host has restricted this client rests the host at once.
 /// A 429 is a shop that throttles (ADR 0003 Addendum ARMAM-595): its <c>Retry-After</c> is honoured, the host failing at once
