@@ -12650,6 +12650,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Astra Militarum Centaur RSV",
+      "productCodes": [
+        "99120105141"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40kastra-militarum-centaur-rsv",
+        "https://obsidiangames.ca/products/astra-militarum-centaur-rsv",
+        "https://mrmuffinstrains.com/products/gw-47-45",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-centaur-rsv",
+        "https://radaddel.de/products/astra-militarum-centaur-rsv"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Centaur RSV",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
