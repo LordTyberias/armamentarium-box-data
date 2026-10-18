@@ -21361,6 +21361,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Terradon Riders",
+      "productCodes": [
+        "99120208021"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/seraphon-terradon-riders",
+        "https://www.goblingaming.co.uk/products/seraphon-terradon-riders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4e3-e1a7-a8d4-8719",
+              "entryId": "66ed-4817-f929-7c3e",
+              "name": "Terradon Riders",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
