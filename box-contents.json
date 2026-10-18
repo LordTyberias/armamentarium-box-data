@@ -22215,6 +22215,50 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Orruk Warclans",
+      "productCodes": [
+        "99120209134"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/vanguard-orruk-warclans",
+        "https://abyssgamestore.ca/products/spearhead-orruk-warclans-70-23",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-vanguard-orruk-warclans",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/vanguard-orruk-warclans"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Killaboss on Great Gnashtoof",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Murknob with Belcha-banna",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Beast-skewer Killbow",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Man-skewer Boltboyz",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Gutrippaz",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
