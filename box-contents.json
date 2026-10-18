@@ -16449,6 +16449,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Khorne Bloodbound - Bloodreavers ( 83-29-W )",
+      "productCodes": [
+        "99120201037"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/khorne-bloodbound-bloodreavers-83-29",
+        "https://shop.afk.games/products/khorne-bloodbound-bloodreavers",
+        "https://www.goblingaming.co.uk/products/khorne-bloodbound-bloodreavers",
+        "https://elementgames.co.uk/khorne-bloodbound-bloodreavers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Bloodreavers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
