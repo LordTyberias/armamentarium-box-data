@@ -12987,6 +12987,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Tyranids - Hive Tyrant",
+      "productCodes": [
+        "99120106060"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-tyranids-hive-tyrant",
+        "https://www.irresistibleforce.com.au/products/tyranids-hive-tyrant",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranid-hive-tyrant-new",
+        "https://shop.afk.games/products/tyranids-hive-tyrant",
+        "https://obsidiangames.ca/products/tyranids-hive-tyrant",
+        "https://www.goblingaming.co.uk/products/tyranid-hive-tyrant-the-swarmlord",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranids-hive-tyrant-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "3e96-8098-3401-77af",
+              "name": "Hive Tyrant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Tyranid Hive Tyrant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
