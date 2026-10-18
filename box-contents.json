@@ -13620,6 +13620,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Repentia Squad",
+      "productCodes": [
+        "99120108060"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-repentia-squad",
+        "https://shop.afk.games/products/adepta-sororitas-repentia-squad",
+        "https://obsidiangames.ca/products/adepta-sororitas-repentia-squad",
+        "https://mrmuffinstrains.com/products/gw-52-23",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-repentia-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Repentia",
+              "count": 9
+            }
+          ]
+        }
+      ]
     }
   ]
 }
