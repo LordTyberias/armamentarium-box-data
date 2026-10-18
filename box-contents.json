@@ -26111,6 +26111,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tomb Kings of Khemri: Liche Priests",
+      "productCodes": [
+        "99122717011"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tomb-kings-of-khemri-liche-priests",
+        "https://mrmuffinstrains.com/products/gw-07-14"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Liche Priests",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "mounted",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
