@@ -5093,6 +5093,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents - Culexus Assassin ( 52-11 )",
+      "productCodes": [
+        "99070108016"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/imperial-agents-culexus-assassin-52-11",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-culexus-assassin",
+        "https://obsidiangames.ca/products/culexus-assassin",
+        "https://www.goblingaming.co.uk/products/imperial-agents-culexus-assassin",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-culexus-assassin"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "5e5e-d6b2-6a1c-aa69",
+              "name": "Culexus Assassin",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
