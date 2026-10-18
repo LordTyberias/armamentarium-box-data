@@ -12425,6 +12425,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Bullgryns",
+      "productCodes": [
+        "99120105117"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-bullgryns",
+        "https://abyssgamestore.ca/products/militarum-tempestus-bullgryns-nork-deddog-ogryns-47-14",
+        "https://www.retrofixgames.com/products/warhammer-40k-militarum-auxilla-bullgryns",
+        "https://shop.afk.games/products/militarum-auxilla-bullgryns",
+        "https://obsidiangames.ca/products/astra-militarum-bullgryns",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/militarum-auxilla-bullgryns"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Bullgryns",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
