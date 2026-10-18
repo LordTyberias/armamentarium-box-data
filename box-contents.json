@@ -28173,6 +28173,50 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy: Solar Auxilia Combat Force",
+      "productCodes": [
+        "99123005021"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/horus-heresy-solar-auxilia-combat-force",
+        "https://www.retrofixgames.com/products/horus-heresy-solar-auxilia-combat-force",
+        "https://shop.afk.games/products/horus-heresy-solar-auxilia-combat-force",
+        "https://www.goblingaming.co.uk/products/solar-auxilia-combat-force",
+        "https://mrmuffinstrains.com/products/gw-31-137",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-combat-force",
+        "https://radaddel.de/products/solar-auxilia-combat-force"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "3d63-4299-d15f-b3ba",
+              "name": "Leman Russ Strike Tank",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Hermes Light Sentinels",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Tactical Command Section members",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Lasrifle Section Auxiliaries",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
