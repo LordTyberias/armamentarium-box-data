@@ -20400,6 +20400,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers Mortisan Soulmason",
+      "productCodes": [
+        "99120207165"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-mortisan-soulmason",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-mortisan-soulmason"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mortisan Soulmason",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
