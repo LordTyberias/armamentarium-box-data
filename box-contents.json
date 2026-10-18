@@ -18069,6 +18069,55 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Warband: Wildercorps Hunters ( 112-12 )",
+      "productCodes": [
+        "99120202051"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warcry-warband-wildercorps-hunters-112-12",
+        "https://www.retrofixgames.com/products/warcry-wildercorps-hunters",
+        "https://obsidiangames.ca/products/warcry-wildercorps-hunters",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-warcry-wildercorps-hunters"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Wildercorps Warden",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Arbalester",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Trailblazer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Wildercorps Leatherhides",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Wildercorps Scouts",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Trailhounds",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
