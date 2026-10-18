@@ -16473,6 +16473,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch - Kairic Acolytes ( 83-73 )",
+      "productCodes": [
+        "99120201063"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/disciples-of-tzeentch-kairic-acolytes-83-73",
+        "https://shop.afk.games/products/tzeentch-arcanites-kairic-acolytes",
+        "https://www.goblingaming.co.uk/products/tzeentch-arcanites-kairic-acolytes",
+        "https://elementgames.co.uk/tzeentch-arcanites-kairic-acolytes"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kairic Acolytes",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
