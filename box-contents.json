@@ -20375,6 +20375,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Mortek Guard",
+      "productCodes": [
+        "99120207164"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ossiarch-bonereapers-mortek-guard",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-ossiarch-bonereapers-mortek-guard",
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-mortek-guard",
+        "https://mrmuffinstrains.com/products/gw-94-25",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-mortek-guard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mortek Guard",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
