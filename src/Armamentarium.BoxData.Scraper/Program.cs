@@ -9,8 +9,8 @@ namespace Armamentarium.BoxData.Scraper;
 ///   --dry-run        reads GitHub without a token, writes nothing, prints each proposal instead of opening it
 ///   --code &lt;number&gt;  searches this one article number only, whatever the state says (with --dry-run for a check)
 ///   --auto-merge     opens each pull request ready and merges it at once (ADR 0004); with --dry-run it only says so
-///   --host &lt;host&gt;    with --dry-run and --code: asks this one allowlisted shop and prints what it reads (ADR 0003
-///                    addendum ARMAM-602)
+///   --host &lt;host&gt;    with --dry-run and --code: asks this one allowlisted shop and prints what it reads; --code
+///                    then takes a comma-separated list (ADR 0003 addendum ARMAM-602)
 /// </summary>
 public static class Program
 {
@@ -109,19 +109,28 @@ public static class Program
         }
 
         var source = Probe.SourceFor(Sources.All, host);
-        var product = products.FirstOrDefault(p => p.Code == code)
-            ?? throw new ArgumentException($"{code} is not in the product catalogue.", nameof(code));
         using var fetcher = new Fetcher(new Dictionary<string, TimeSpan> { [source.Host] = source.Interval }, log);
-        try
+        foreach (var one in code.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
         {
-            foreach (var line in Probe.Describe(source.Host, await source.FindAsync(product, fetcher, cancellationToken)))
+            var product = products.FirstOrDefault(p => p.Code == one);
+            if (product is null)
             {
-                log(line);
+                log($"{one} is not in the product catalogue");
+                continue;
             }
-        }
-        catch (FetchFailedException ex)
-        {
-            log($"{source.Host}: did not answer: {ex.Message}");
+
+            log($"{one} {Text.Clean(product.Name)}");
+            try
+            {
+                foreach (var line in Probe.Describe(source.Host, await source.FindAsync(product, fetcher, cancellationToken)))
+                {
+                    log(line);
+                }
+            }
+            catch (FetchFailedException ex)
+            {
+                log($"{source.Host}: did not answer: {ex.Message}");
+            }
         }
 
         return 0;
