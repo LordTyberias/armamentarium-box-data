@@ -19021,6 +19021,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kharadron Overlords: Grundstok Thunderers",
+      "productCodes": [
+        "99120205054"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kharadron-overlords-grundstok-thunderers",
+        "https://radaddel.de/products/kharadron-overlords-grundstok-thunderers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Grundstok Thunderers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
