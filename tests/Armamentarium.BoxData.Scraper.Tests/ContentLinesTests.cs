@@ -182,4 +182,17 @@ public sealed class ContentLinesTests
         Assert.AreEqual(
             ContentLines.Normalize("Beast Lads"), ContentLines.Normalize("Beast Lads non-player operatives"));
     }
+
+    [TestMethod]
+    public void Parse_KindOfKitOnly_IsNoModel()
+    {
+        Assert.AreEqual(0, ContentLines.Parse("<p>1x multi-option, plastic Citadel Miniature.</p>").Count);
+        Assert.AreEqual(1, ContentLines.Parse("<p>10x multipart plastic Iron Brothers</p>").Count);
+    }
+
+    [TestMethod]
+    public void Parse_PartsAndHeads_AreDropped()
+    {
+        Assert.AreEqual(0, ContentLines.Parse("<ul><li>24x Köpfe</li><li>16x shoulder pads</li><li>70 x Kunststoffteile</li></ul>").Count);
+    }
 }

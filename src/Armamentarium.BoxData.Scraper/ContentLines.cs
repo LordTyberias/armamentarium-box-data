@@ -11,9 +11,7 @@ public static partial class ContentLines
 {
     public static IReadOnlyList<Line> Parse(string html)
     {
-        var text = BlockTag().Replace(html, "\n");
-        text = WebUtility.HtmlDecode(AnyTag().Replace(text, string.Empty)).Replace('\u00A0', ' ');
-        text = InlineSeparator().Replace(text, "\n");
+        var text = InlineSeparator().Replace(PlainText(html), "\n");
 
         var lines = new List<(Line Line, bool Bullet)>();
         var underExcludedHeading = false;
@@ -63,7 +61,7 @@ public static partial class ContentLines
                 var part = and.Success ? name[..and.Index] : name;
                 var alternative = AlternativeBuild().IsMatch(part);
                 var cut = Text.Clean(Cut(part, alternative));
-                if (cut.Length > 0 && Normalize(cut).Length > 0)
+                if (IsModelName(cut))
                 {
                     lines.Add((new Line(count, cut, nonPlayer, alternative), bullet));
                 }
@@ -81,6 +79,17 @@ public static partial class ContentLines
 
         return lines.Where((l, i) => !IsGroupTotal(lines, i)).Select(l => l.Line).ToList();
     }
+
+    /// <summary>The description as text: block tags become line breaks, entities are decoded.</summary>
+    internal static string PlainText(string html) =>
+        WebUtility.HtmlDecode(AnyTag().Replace(BlockTag().Replace(html, "\n"), string.Empty)).Replace('\u00A0', ' ');
+
+    internal static bool IsExcluded(string name) => Excluded().IsMatch(name);
+
+    // "1x multi-option, plastic Citadel Miniature" cut at its comma names a kind of kit, not a model.
+    internal static bool IsModelName(string name) => Normalize(name).Length > 0 && !DescriptionOnly().IsMatch(name);
+
+    internal static bool IsNonPlayer(string name) => NonPlayer().IsMatch(name);
 
     // "11x Space Marines" over "- 1x Captain", "- 5x Terminators", "- 5x Infernus Marines" counts its members again.
     private static bool IsGroupTotal(List<(Line Line, bool Bullet)> lines, int index)
@@ -179,11 +188,15 @@ public static partial class ContentLines
     [GeneratedRegex(
         @"\b(terrain|scenery|gel(ä|ae|a)nde\w*|data ?cards?|\w*cards?|\w*karten|dice|d6|w(ü|ue)rfel|tokens?|\w*bogen|\w*bögen|" +
         @"markers?|mats?|board|spielfeld|\w*books?|\w*buch|dossier|rules?|regel\w*|rulers?|transfers?|decals?|sheets?|" +
-        @"bases?|frames?|sprues?|components?|parts|bauteile|reference|referenz\w*|poster|citadel miniatures|" +
+        @"bases?|frames?|sprues?|components?|parts|\w*teile|heads?|k(ö|oe)pfe|shoulder ?pads?|schulter\w*|reference|" +
+        @"referenz\w*|poster|citadel miniatures|" +
         @"miniatures total|seiten|pages?|paints?|farben|brush(es)?|pinsel|clippers?|tools?|werkzeug\w*|guides?|" +
         @"anleitung\w*|handbook|handbuch)\b",
         RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex Excluded();
+
+    [GeneratedRegex(@"^(?:\s|multi-?options?|multi-?part|push-?fit|plastic|kunststoff)*$", RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex DescriptionOnly();
 
     [GeneratedRegex(@"alternativ|can be built as|\bor\b|\boder\b", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex AlternativeBuild();
