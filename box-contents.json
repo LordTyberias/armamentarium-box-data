@@ -9300,6 +9300,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Knights: Chaos Knight Ruinator",
+      "productCodes": [
+        "99120102191"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-knights-chaos-knight-ruinator",
+        "https://www.retrofixgames.com/products/chaos-knights-chaos-knight-ruinator",
+        "https://shop.afk.games/products/chaos-knights-chaos-knight-ruinator",
+        "https://www.goblingaming.co.uk/products/chaos-knights-chaos-knight-ruinator",
+        "https://mrmuffinstrains.com/products/gw-43-102",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-knights/chaos-knights-chaos-knight-ruinator"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "of the following miniatures",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
