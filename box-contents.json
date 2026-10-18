@@ -23645,6 +23645,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals Vanguard-Palladors ( 96-29-W )",
+      "productCodes": [
+        "99120218022"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/stormcast-eternals-vanguard-palladors-96-29-w",
+        "https://shop.afk.games/products/stormcast-eternals-vanguard-palladors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vanguard-Palladors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
