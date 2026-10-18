@@ -3365,6 +3365,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Canoptek Circle",
+      "productCodes": [
+        "99120110086"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/kill-team-canoptek-circle",
+        "https://elementgames.co.uk/kill-team-canoptek-circle"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Canoptek Circle miniatures",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "catalogueId": "0e19-7ab2-c4a6-76e7",
+              "entryId": "2e62-6dac-0191-0b43",
+              "name": "Geomancer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "0e19-7ab2-c4a6-76e7",
+              "entryId": "4680-d0c5-2b79-926c",
+              "name": "Macrocyte Warriors",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
