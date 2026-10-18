@@ -3717,6 +3717,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Imperial Navy Breachers",
+      "productCodes": [
+        "99120108108"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-imperial-navy-breachers",
+        "https://abyssgamestore.ca/products/kill-team-imperial-navy-breachers-103-07",
+        "https://www.retrofixgames.com/products/kill-team-imperial-navy-breachers-1",
+        "https://obsidiangames.ca/products/kill-team-imperial-navy-breachers",
+        "https://radaddel.de/products/kill-team-imperial-navy-breachers"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Imperial Navy Breachers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
