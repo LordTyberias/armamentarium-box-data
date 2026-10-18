@@ -15059,6 +15059,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Drukhari: Talos",
+      "productCodes": [
+        "99120112048"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/drukhari-talos",
+        "https://abyssgamestore.ca/products/drukhari-talos-cronos-45-11",
+        "https://www.retrofixgames.com/products/warhammer-40k-drukhari-talos",
+        "https://shop.afk.games/products/drukhari-talos",
+        "https://mrmuffinstrains.com/products/gw-45-11",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/dark-eldar-talos-pain-enginecronos-parasite-engine"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Drukhari Talos Pain Engine",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
