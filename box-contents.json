@@ -8324,6 +8324,53 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Red Corsairs Battleforce Lords of the Maelstrom",
+      "productCodes": [
+        "99120102110"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-battleforce-lords-of-the-maelstrom",
+        "https://shop.afk.games/products/red-corsairs-lords-of-the-maelstrom",
+        "https://www.goblingaming.co.uk/products/red-corsairs-lords-of-the-maelstrom"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "beed-356b-2fec-2c2a",
+              "name": "Red Corsairs Reave-Captain",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "2078-97ce-8793-3382",
+              "name": "Red Corsairs Raiders",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Red Corsairs Chaos Terminators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Red Corsairs Legionaries",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Traitor Guardsmen",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
