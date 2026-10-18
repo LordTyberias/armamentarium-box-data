@@ -25888,6 +25888,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Beastmen Brayherds - Bestigor Herd",
+      "productCodes": [
+        "99122716004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-beastmen-brayherds-bestigor-herd",
+        "https://www.irresistibleforce.com.au/products/beastmen-brayherds-beastigor-herd",
+        "https://shop.afk.games/products/beastmen-breyherds-bestigor-herd",
+        "https://www.goblingaming.co.uk/products/beastmen-brayherds-bestigor-herd",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/beastmen-brayherds-bestigor-herd",
+        "https://radaddel.de/products/beastmen-brayherds-bestigor-herd"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Bestigors",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
