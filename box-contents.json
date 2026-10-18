@@ -19543,6 +19543,54 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Skaven Skryre Warpswarm",
+      "productCodes": [
+        "99120206060"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-skaven-skryre-warpswarm",
+        "https://shop.afk.games/products/skaven-skryre-warpswarm",
+        "https://mrmuffinstrains.com/products/gw-90-56"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Arch-Warlock",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ratling Warpblaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Warplock Jezzails",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Warpspark Weapon Battery teams",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Acolyte Globadiers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Stormvermin",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
