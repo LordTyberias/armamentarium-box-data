@@ -5254,6 +5254,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Drukhari - Haemonculus ( 45-21-W )",
+      "productCodes": [
+        "99070112005"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/drukhari-haemonculus-45-21-w",
+        "https://shop.afk.games/products/drukhari-haemonculus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Haemonculus equipped",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
