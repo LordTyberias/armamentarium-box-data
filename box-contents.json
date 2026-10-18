@@ -6702,6 +6702,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Raven Guard: Kayvaan Shrike",
+      "productCodes": [
+        "99120101292"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/raven-guard-kayvaan-shrike",
+        "https://www.retrofixgames.com/products/warhammer-40k-raven-guard-kayvaan-shrike",
+        "https://shop.afk.games/products/raven-guard-kayvaan-shrike",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/raven-guard/raven-guard-kayvaan-shrike"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "6e59-e1ee-47ad-6ce5",
+              "entryId": "339f-9776-243d-69a6",
+              "name": "Kayvaan Shrike",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
