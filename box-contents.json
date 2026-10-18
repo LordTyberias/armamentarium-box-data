@@ -21557,6 +21557,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon Skinks",
+      "productCodes": [
+        "99120208041"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/seraphon-skinks",
+        "https://radaddel.de/products/seraphon-skinks"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Seraphon",
+              "count": 24
+            }
+          ]
+        }
+      ]
     }
   ]
 }
