@@ -29561,6 +29561,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Harlequins (73-581)",
+      "productCodes": [
+        "99120111008"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-harlequins-73-581",
+        "https://radaddel.de/products/aeldari-harlequins-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-harlequins"
+      ],
+      "generation": "legacy"
     }
   ]
 }
