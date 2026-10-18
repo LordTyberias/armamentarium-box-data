@@ -13885,6 +13885,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Knights: Knight Dominus",
+      "productCodes": [
+        "99120108081"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/imperial-knights-knight-dominus",
+        "https://shop.afk.games/products/imperial-knights-knight-dominus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Knight Valiant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
