@@ -3902,6 +3902,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Battleclade",
+      "productCodes": [
+        "99120116048"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-battleclade",
+        "https://www.retrofixgames.com/products/kill-team-battleclade",
+        "https://obsidiangames.ca/products/kill-team-battleclade",
+        "https://www.goblingaming.co.uk/products/battleclade-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-97",
+        "https://elementgames.co.uk/kill-team-battleclade",
+        "https://radaddel.de/products/kill-team-battleclade"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Battleclade miniatures",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
