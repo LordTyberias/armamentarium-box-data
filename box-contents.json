@@ -5512,6 +5512,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults Acolyte Iconward ( 51-54-W )",
+      "productCodes": [
+        "99070117002"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/genestealer-cults-acolyte-iconward-51-54-w",
+        "https://shop.afk.games/products/acolyte-iconward",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-acolyte-iconward"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "e367-b2cb-d22a-b17c",
+              "name": "Acolyte Iconward",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
