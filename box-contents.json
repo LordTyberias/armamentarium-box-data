@@ -6285,6 +6285,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orc & Goblin Tribes: Snotling Pump Wagon",
+      "productCodes": [
+        "99112709016"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/orc-and-goblin-snotling-pup-wagon",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-orcs-goblins-snotling-pump-wagon"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Snotling Pump Wagon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
