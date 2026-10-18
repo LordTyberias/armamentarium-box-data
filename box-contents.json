@@ -3667,6 +3667,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Kasrkin",
+      "productCodes": [
+        "99120105133"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/kill-team-kasrkin",
+        "https://www.goblingaming.co.uk/products/kasrkin-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-18",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/kill-team-kasrkin"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kasrkin",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
