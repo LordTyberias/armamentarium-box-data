@@ -4349,6 +4349,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Prophetesses Of The Lady",
+      "productCodes": [
+        "99062703007"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/warhammer-old-world-bretonnia-prophetesses-of-the-lady",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/prophetesses-of-the-lady"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "metal Prophetess of the Lady miniatures",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
