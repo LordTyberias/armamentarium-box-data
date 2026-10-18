@@ -16842,6 +16842,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch: Tzaangors",
+      "productCodes": [
+        "99120201144"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/disciples-of-tzeentch-tzaangors",
+        "https://shop.afk.games/products/tzeentch-tzaangors",
+        "https://www.goblingaming.co.uk/products/tzeentch-arcanites-tzaangors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "f5b9-50c8-5c60-d8ea",
+              "name": "Tzaangors",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tzaangors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
