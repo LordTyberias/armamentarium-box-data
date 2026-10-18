@@ -22741,6 +22741,46 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Lumineth Realm-Lords",
+      "productCodes": [
+        "99120210062"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-lumineth-realm-lords",
+        "https://abyssgamestore.ca/products/vanguard-lumineth-realm-lords-70-11",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-lumineth-realm-lords",
+        "https://shop.afk.games/products/vanguard-lumineth-realm-lords",
+        "https://mrmuffinstrains.com/products/gw-70-11"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Scinari Cathallar",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Vanari Bladelords",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Vanari Auralan Wardens",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Vanari Auralan Sentinels",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
