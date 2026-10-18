@@ -16803,6 +16803,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch: Tzaangor Enlightened",
+      "productCodes": [
+        "99120201143"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/disciples-of-tzeentch-tzaangor-enlightened",
+        "https://abyssgamestore.ca/products/disciples-of-tzeentch-tzaangor-enlightened-skyfires-83-74",
+        "https://shop.afk.games/products/tzeentch-arcanites-tzaangor-enlightened",
+        "https://obsidiangames.ca/products/disciples-of-tzeentch-tzaangor-enlightened",
+        "https://www.goblingaming.co.uk/products/tzeentch-arcanites-tzaangor-enlightened",
+        "https://mrmuffinstrains.com/products/gw-83-74",
+        "https://elementgames.co.uk/tzeentch-arcanites-tzaangor-enlightened"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "1703-3edd-5eb3-fcef",
+              "name": "Tzaangor Enlightened",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tzaangor Enlightened",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
