@@ -22992,6 +22992,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Helsmiths of Hashut: Daemonsmith",
+      "productCodes": [
+        "99120211005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/helsmiths-of-hashut-daemonsmith",
+        "https://www.retrofixgames.com/products/age-of-sigmar-helsmiths-of-hashut-daemonsmith",
+        "https://mrmuffinstrains.com/products/gw-82-04",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/helsmiths-of-hashut-daemonsmith"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Daemonsmith",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
