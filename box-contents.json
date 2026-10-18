@@ -20247,6 +20247,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Warband: Pyregheists ( 112-19 )",
+      "productCodes": [
+        "99120207156"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warcry-warband-ydrilan-pyregheists-112-19",
+        "https://www.retrofixgames.com/products/warcry-nighthaunt-pyregheists",
+        "https://shop.afk.games/products/warcry-pyregheists"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deacon of Flames",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Balefire Guards",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Flamewraiths",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Torchwraiths",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
