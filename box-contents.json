@@ -28367,6 +28367,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum - Thallax Cohort ( 31-97 )",
+      "productCodes": [
+        "99123016002"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/horus-heresy-thallax-cohort-31-97",
+        "https://www.retrofixgames.com/products/mechanicum-thallax-cohort",
+        "https://shop.afk.games/products/mechanicum-thallax-cohort",
+        "https://www.goblingaming.co.uk/products/mechanicum-thallax-cohort"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Thallax",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
