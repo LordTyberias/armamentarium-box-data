@@ -6879,6 +6879,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines Razorback",
+      "productCodes": [
+        "99120101319"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/space-marines-razorback",
+        "https://obsidiangames.ca/products/space-marinues-razorback"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Razorback",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
