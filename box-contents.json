@@ -16607,6 +16607,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness Chaos Knights",
+      "productCodes": [
+        "99120201125"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/slaves-to-darkness-chaos-knights",
+        "https://obsidiangames.ca/products/slaves-to-darkness-chaos-knights",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-chaos-knights-2023-repack",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/slaves-to-darkness-chaos-knights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
