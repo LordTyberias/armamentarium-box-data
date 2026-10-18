@@ -18948,6 +18948,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Fyreslayers: Auric Runefather/Magmadroth",
+      "productCodes": [
+        "99120205047"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/fyreslayers-auric-runefather-magmadroth",
+        "https://www.goblingaming.co.uk/products/fyreslayer-s-magmadroth"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b3f9-6c96-b99a-1e71",
+              "entryId": "aa8-9db3-b817-6324",
+              "name": "Auric Runefather",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
