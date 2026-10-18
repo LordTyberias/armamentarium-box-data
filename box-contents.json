@@ -3929,6 +3929,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Brood Brothers",
+      "productCodes": [
+        "99120117029"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-brood-brothers",
+        "https://www.retrofixgames.com/products/kill-team-brood-brothers",
+        "https://shop.afk.games/products/kill-team-brood-brothers",
+        "https://obsidiangames.ca/products/kill-team-brood-brothers",
+        "https://www.goblingaming.co.uk/products/brood-brothers-kill-team",
+        "https://elementgames.co.uk/kill-team-brood-brothers-2024",
+        "https://radaddel.de/products/kill-team-brood-brothers"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Brood Brothers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
