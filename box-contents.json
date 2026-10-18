@@ -19390,6 +19390,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Stormvermin",
+      "productCodes": [
+        "99120206045"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-stormvermin",
+        "https://abyssgamestore.ca/products/skaven-stormvermin-90-07",
+        "https://shop.afk.games/products/skaven-stormvermin",
+        "https://obsidiangames.ca/products/stormvermin",
+        "https://www.goblingaming.co.uk/products/skaven-stormvermin",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-stormvermin"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormvermin",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
