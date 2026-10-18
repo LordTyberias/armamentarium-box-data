@@ -7603,6 +7603,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Captain in Terminator Armour",
+      "productCodes": [
+        "99120101400"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-captain-in-terminator-armour",
+        "https://abyssgamestore.ca/products/space-marines-primaris-captain-in-48-6192",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-captain-in-terminator-armour",
+        "https://shop.afk.games/products/space-marines-captain-in-terminator-armour",
+        "https://obsidiangames.ca/products/space-marines-captain-in-terminator-armour",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-captain-in-terminator-armour",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-captain-in-terminator-armour"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "dc24-dd64-5d97-df3c",
+              "name": "Captain in Terminator Armour",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
