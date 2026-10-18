@@ -17310,6 +17310,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Slaves to Darkness",
+      "productCodes": [
+        "99120201195"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-slaves-to-darkness",
+        "https://mrmuffinstrains.com/products/gw-70-831",
+        "https://elementgames.co.uk/card-games-board-games-and-more/seasonal/spearhead-slaves-to-darkness"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Lord",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Chaos Chariot",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Chaos Warriors",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Chaos Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
