@@ -21236,6 +21236,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords Blood Knights",
+      "productCodes": [
+        "99120207238"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/blood-knights-soulblight-gravelords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-blood-knights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
