@@ -20956,6 +20956,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Liege-Mortek",
+      "productCodes": [
+        "99120207199"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ossiarch-bonereapers-liege-mortek",
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-liege-mortek",
+        "https://mrmuffinstrains.com/products/gw-94-46",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-liege-mortek"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "bf96-2414-2772-b78a",
+              "name": "Liege-Mortek",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
