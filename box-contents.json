@@ -21162,6 +21162,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords Radukar, The Beast",
+      "productCodes": [
+        "99120207232"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/radukar-the-beast-soulblight-gravelords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-radukar-the-beast"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Radukar the Beast model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
