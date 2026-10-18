@@ -10427,6 +10427,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Beastboss",
+      "productCodes": [
+        "99120103078"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-beastboss",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-beastboss",
+        "https://shop.afk.games/products/orks-beastboss",
+        "https://obsidiangames.ca/products/orks-beastboss",
+        "https://mrmuffinstrains.com/products/gw-50-53",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-beastboss"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ork Beastboss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
