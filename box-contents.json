@@ -3262,6 +3262,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Shugengan Lord of Great Spirit Longma",
+      "productCodes": [
+        "99122720001"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-shugengan-lord-of-great-spirit-longma",
+        "https://www.irresistibleforce.com.au/products/grand-cathay-shugengan-lord-on-great-spirit-longmar",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-shugengan-lord-on-great-spirit-longma1"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Shugengan Lord heads",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Great Spirit Longma heads",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "iron talons",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Celestial blade",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
