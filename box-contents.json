@@ -4459,6 +4459,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Dark Angels - Interrogator-Chaplain ( 44-70-W )",
+      "productCodes": [
+        "99070101035"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/dark-angels-interrogator-chaplain-44-70-w",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/dark-angels-interrogator-chaplainrepack"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dark Angels Interrogator-Chaplain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
