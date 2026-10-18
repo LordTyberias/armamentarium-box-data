@@ -22131,6 +22131,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Snarlpack Cavalry",
+      "productCodes": [
+        "99120209127"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/gloomspite-gitz-snarlpack-cavalry",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-gloomspite-gitz-snarlpack-cavalry",
+        "https://shop.afk.games/products/gloosmpite-gitz-snarlpack-cavalry",
+        "https://obsidiangames.ca/products/snarlpack-cavalry",
+        "https://radaddel.de/products/gloomspite-gitz-snarlpack-cavalry"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Snarlpack Cavalry",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
