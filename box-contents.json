@@ -17936,6 +17936,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmar: Freeguild Cavaliers",
+      "productCodes": [
+        "99120202042"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-freeguild-cavaliers",
+        "https://abyssgamestore.ca/products/cities-of-sigmar-freeguild-cavaliers-86-07",
+        "https://shop.afk.games/products/freeguild-cavaliers",
+        "https://obsidiangames.ca/products/cities-of-sigmar-freeguild-cavaliers",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-cities-of-sigmar-freeguild-cavaliers",
+        "https://mrmuffinstrains.com/products/gw-86-07",
+        "https://radaddel.de/products/cities-of-sigmar-freeguild-cavaliers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Freeguild Cavaliers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
