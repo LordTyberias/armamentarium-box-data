@@ -10290,6 +10290,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks Stompa ( 50-15-W )",
+      "productCodes": [
+        "99120103021"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-stompa-50-15-w",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-stompa"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "6c08-9131-14a3-a3b4",
+              "name": "stompa",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
