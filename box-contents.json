@@ -21290,6 +21290,52 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Battleforce Null Myriad Phalanx",
+      "productCodes": [
+        "99120207261"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-battleforce-null-myriad-phalanx",
+        "https://shop.afk.games/products/ossiarch-bonereapers-null-myriad-phalanx",
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-null-myriad-phalanx",
+        "https://mrmuffinstrains.com/products/gw-94-15",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/ossiarch-bonereapers-null-myriad-phalanx",
+        "https://radaddel.de/products/ossiarch-bonereapers-null-myriad-phalanx"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Arkhan the Black",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Mortisan Soulmason",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Morghast Archai",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Morghast Harbingers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Mortek Guard",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
