@@ -111,6 +111,31 @@ public sealed class CatalogueIndexTests
     }
 
     [TestMethod]
+    public void Check_PairAndName_AreHeldAgainstTheRootEntries()
+    {
+        var index = new CatalogueIndex();
+        index.AddCatalogue("40k", "Iron Brothers.cat", Bytes(Xml));
+
+        Assert.AreEqual(IdState.Valid, index.Check("40k", new RootEntry("cat-iron", "se-captain"), "Captains"));
+        Assert.AreEqual(IdState.Valid, index.Check("40k", new RootEntry("cat-iron", "lib-troopers"), "Line Trooper"));
+        Assert.AreEqual(IdState.Renamed, index.Check("40k", new RootEntry("cat-iron", "se-captain"), "Lieutenant"));
+        Assert.AreEqual(IdState.Orphaned, index.Check("40k", new RootEntry("cat-iron", "se-inner"), "Bodyguard"));
+        Assert.AreEqual(IdState.Orphaned, index.Check("40k", new RootEntry("cat-iron", "se-shared"), "Shared Hero"));
+        Assert.AreEqual(IdState.Orphaned, index.Check("40k", new RootEntry("cat-other", "se-captain"), "Captain"));
+    }
+
+    [TestMethod]
+    public void Check_UnreadableOrUnreadReading_IsUnchecked()
+    {
+        var index = new CatalogueIndex();
+        index.AddCatalogue("40k", "Iron Brothers.cat", Bytes(Xml));
+        index.MarkUnavailable("40k");
+
+        Assert.AreEqual(IdState.Unchecked, index.Check("40k", new RootEntry("cat-iron", "se-captain"), "Captain"));
+        Assert.AreEqual(IdState.Unchecked, index.Check("aos", new RootEntry("cat-iron", "se-captain"), "Captain"));
+    }
+
+    [TestMethod]
     public void DocumentTypeDeclaration_IsUnreadable()
     {
         var index = new CatalogueIndex();

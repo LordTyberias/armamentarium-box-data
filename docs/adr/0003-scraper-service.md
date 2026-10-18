@@ -24,6 +24,9 @@ no longer holds the box; Context's "single kits are described in prose" no longe
 "per minute for `miniset.net`" and its slow-source rule have no host left. A text and data mining reservation no longer
 keeps a shop out (Context, `games-island.eu` stays out for its captcha).
 
+**Changed by ADR 0004 Addendum ARMAM-597:** besides one pull request per box (§10), a run may open one draft
+`scraper/stale-ids` that removes orphaned ids; it is never merged by the service and counts among the five of §12.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:

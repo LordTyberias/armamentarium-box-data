@@ -7,6 +7,10 @@ named exception to "Datenintegrität vor Bequemlichkeit" in Armamentarium's `CLA
 **Widened by ADR 0003 Addendum ARMAM-599:** the hit of §2 also chooses a build sentence over a source's lines and lets two
 names of one root entry confirm each other.
 
+**Changed by Addendum ARMAM-597:** §2 "at the start of a run … downloads the catalogues" holds for every run, with or
+without the switch, and the ids the table already holds are checked against them; §1 "each pull request is opened ready
+… merged at once" does not hold for the draft that removes orphaned ids, which the service never merges.
+
 ## Context
 
 The service runs on the server since 2026-10-17 (ARMAM-593). Its drafts wait for the maintainer to add catalogue ids,
@@ -77,3 +81,34 @@ on Devlan. A name found in more than one catalogue (`Superior`) gets none.
   server, nothing from his computer or the app.
 - **GraphQL `markPullRequestReadyForReview`:** a ready pull request from the start needs no second API.
 - **Ids for 40k from the 10th edition only:** units new in the 11th edition would get none.
+
+## Addendum ARMAM-597 — the ids the table holds are checked every run (2026-10-18)
+
+BSData changes its catalogues all the time; an id once merged can vanish, move or come to name another entry, and no run
+looked at it again. Measured on 2026-10-18 against the online catalogues: 64 boxes, 207 pairs of catalogue id and entry id
+(130 fixed entries, the rest options of a choice), all still root entries of their name.
+
+- **Every run, every id:** at the start of each run, with or without `--auto-merge`, the service loads the catalogues of
+  §3 and holds every pair the table carries against them: fixed entries and each option of a choice, hand-made rows as
+  well as merged ones, in the entry's own `reading` where it names one (a Kill Team NPO falling back to a 40k entry). Ids
+  by name (§2) are still set only with the switch.
+- **States:** *valid* (the pair is a root entry of the reading in the sense of §2 and the entry's name, normalised as in
+  ADR 0003 §9, is one of its names); *orphaned* (the pair is no such root entry); *renamed* (the pair is one, under another
+  name); *unchecked* (the reading could not be read whole this run, §3: a missing source could hold the pair).
+- **Journal:** one line per orphaned or renamed pair and one summary (`id check: N pair(s), V valid, O orphaned, R renamed;
+  unchecked: …`), also when five scraper pull requests are open and the run ends at once.
+- **Orphaned ids go into a draft:** branch `scraper/stale-ids`, the table without the orphaned pairs; such a fixed entry,
+  or a choice left with fewer than two options (the schema asks for two), keeps role, name and count and becomes a gap. The
+  draft is **never merged by the service**, also with `--auto-merge`; the maintainer's merge is the hand check. It counts
+  among the five open (ADR 0003 §12); while it is open, or when no slot is free, the run only reports.
+- **Renamed ids are only reported:** a rename in BSData is mostly cosmetic (a plural, `[Legends]`); removing would hit
+  valid ids.
+- **No widening of the named exception** in Armamentarium's `CLAUDE.md`: the service sets no id here and merges nothing;
+  removing goes through the hand check. Moved ids are not set again (that would be a rule beyond "exactly one hit",
+  Armamentarium ARMAM-598).
+
+Rejected: **reporting in the journal only** (nobody reads it; the table would keep ids the app cannot resolve);
+**merging the removal with `--auto-merge`** (would widen the named exception for an action the app does not need: an id
+that does not resolve is already a gap there); **treating a rename as orphaned** (cosmetic renames would cost valid ids);
+**checking only with the switch** (the ids stay after the switch is removed); **checking at the end of the run** (a run
+stopped by the timeout would lose it).

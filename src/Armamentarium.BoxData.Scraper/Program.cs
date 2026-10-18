@@ -64,8 +64,9 @@ public static class Program
                 return 0;
             }
 
-            // Ids by name only while the service merges by itself (ADR 0004); drafts stay without ids for the maintainer.
-            var catalogues = autoMerge ? await CatalogueIndex.LoadAsync(github, Log, stop.Token) : null;
+            // Every run checks the ids the table holds (ADR 0004 Addendum ARMAM-597); ids by name are set only while the
+            // service merges by itself (ADR 0004), drafts stay without ids for the maintainer (Runner.IdsOf).
+            var catalogues = await CatalogueIndex.LoadAsync(github, Log, stop.Token);
 
             using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
             try

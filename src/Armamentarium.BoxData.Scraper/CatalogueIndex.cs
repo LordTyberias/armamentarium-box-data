@@ -16,6 +16,18 @@ public sealed record RootEntry(string CatalogueId, string EntryId);
 public sealed record CatalogueSource(string Reading, string Owner, string Repository, string? Branch);
 
 /// <summary>
+/// What the catalogues of a run say about ids the table already holds (ADR 0004 Addendum ARMAM-597): still a root entry
+/// of that name, a root entry no longer, a root entry under another name, or not checked (the reading was not read).
+/// </summary>
+public enum IdState
+{
+    Valid,
+    Orphaned,
+    Renamed,
+    Unchecked,
+}
+
+/// <summary>
 /// The root entries of the catalogues of every reading, by normalised name (ADR 0004). A name gets ids only when it
 /// names exactly one root entry of its reading; one name in two catalogues, or none, gets none.
 /// </summary>
@@ -37,6 +49,7 @@ public sealed partial class CatalogueIndex
     public const int MaxEntryBytes = 32 * 1024 * 1024;
 
     private readonly Dictionary<string, Dictionary<string, HashSet<RootEntry>>> _byReading = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, Dictionary<RootEntry, HashSet<string>>> _namesByReading = new(StringComparer.Ordinal);
     private readonly HashSet<string> _unavailable = new(StringComparer.Ordinal);
 
     /// <summary>The ids for a model name, or null when the name names no root entry of the reading or more than one.</summary>
@@ -47,6 +60,16 @@ public sealed partial class CatalogueIndex
         && entries.Count == 1
             ? entries.First()
             : null;
+
+    /// <summary>
+    /// Holds ids the table carries against this run's root entries: the pair must still be a root entry of the reading and
+    /// the name one of its normalised names. A reading not read whole is not checked: a missing source could hold the pair.
+    /// </summary>
+    public IdState Check(string reading, RootEntry ids, string name) =>
+        _unavailable.Contains(reading) || !_namesByReading.TryGetValue(reading, out var entries) ? IdState.Unchecked
+        : !entries.TryGetValue(ids, out var names) ? IdState.Orphaned
+        : names.Contains(ContentLines.Normalize(name)) ? IdState.Valid
+        : IdState.Renamed;
 
     /// <summary>A reading whose sources could not all be read gets no ids in this run: a missing source could hide a twin.</summary>
     public void MarkUnavailable(string reading) => _unavailable.Add(reading);
@@ -277,7 +300,19 @@ public sealed partial class CatalogueIndex
             names[key] = entries = [];
         }
 
-        entries.Add(new RootEntry(catalogueId, entryId));
+        var root = new RootEntry(catalogueId, entryId);
+        entries.Add(root);
+        if (!_namesByReading.TryGetValue(reading, out var byEntry))
+        {
+            _namesByReading[reading] = byEntry = [];
+        }
+
+        if (!byEntry.TryGetValue(root, out var rootNames))
+        {
+            byEntry[root] = rootNames = new(StringComparer.Ordinal);
+        }
+
+        rootNames.Add(key);
         return true;
     }
 
