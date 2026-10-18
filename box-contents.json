@@ -7030,6 +7030,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Wulfen",
+      "productCodes": [
+        "99120101349"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-wulfen",
+        "https://abyssgamestore.ca/products/space-wolves-wulfen-53-16",
+        "https://shop.afk.games/products/space-wolves-wulfen",
+        "https://obsidiangames.ca/products/space-wolves-wulfen",
+        "https://www.goblingaming.co.uk/products/wulfen-space-wolves-warhammer-40k-99120101349",
+        "https://mrmuffinstrains.com/products/gw-53-16",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/space-wolves-wulfen",
+        "https://radaddel.de/products/space-wolves-wulfen"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "d937-bd7d-618d-4e2d",
+              "name": "Wulfen",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
