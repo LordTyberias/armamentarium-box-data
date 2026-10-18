@@ -27389,6 +27389,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Tarantula Missile Battery",
+      "productCodes": [
+        "99123001063"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-tantula-missile-battery",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-tarantula-missile-battery",
+        "https://shop.afk.games/products/l-astartes-tarantula-missile-battery",
+        "https://www.goblingaming.co.uk/products/horus-heresy-tarantula-missile-battery",
+        "https://elementgames.co.uk/clearance-sale/horus-heresy-legion-astartes-tarantula-missile-battery"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tarantula Missile Batteries",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
