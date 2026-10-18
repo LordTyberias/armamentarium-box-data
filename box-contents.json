@@ -23785,6 +23785,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Vanquishers",
+      "productCodes": [
+        "99120218055"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/vanquishers",
+        "https://shop.afk.games/products/stormcast-eternals-vanquishers",
+        "https://obsidiangames.ca/products/stormcast-eternals-vanquishers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/stormcast-eternals-vanquishers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vanquishers wearing sleek Thunderstrike armour",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
