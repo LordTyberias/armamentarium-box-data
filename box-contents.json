@@ -5843,6 +5843,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Soulblight Gravelords Vampire Lord",
+      "productCodes": [
+        "99070207014"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-soulblight-gravelords-vampire-lord",
+        "https://shop.afk.games/products/soulblight-gravelords-vampire-lord",
+        "https://obsidiangames.ca/products/soulblight-gravelords-vampire-lord"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vampire Lord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
