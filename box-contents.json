@@ -3300,6 +3300,78 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Breacher Squad Upgrade Set",
+      "productCodes": [
+        "99123001073"
+      ],
+      "sources": [
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/breacher-squad-upgrade-set",
+        "https://radaddel.de/products/legiones-astartes-breacher-squad-upgrade-set"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Boarding shields",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "MKIII helmeted heads",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "MKIII command helmet",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Bare head",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Breacher charge",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lascutter",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Graviton gun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Bolters",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Left arms",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Right arms",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Shield hands",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
