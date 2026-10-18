@@ -23068,6 +23068,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Helsmiths of Hashut: Hobgrot Vandalz",
+      "productCodes": [
+        "99120211009"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/helsmiths-of-hashut-hobgrot-vandalz",
+        "https://www.retrofixgames.com/products/age-of-sigmar-helsmiths-of-hashut-hobgrot-vandalz",
+        "https://mrmuffinstrains.com/products/gw-82-09",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/helsmiths-of-hashut-hobgrot-vandalz",
+        "https://radaddel.de/products/helsmiths-of-hashut-hobgrot-vandalz"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b7b7-cf58-4189-56ec",
+              "entryId": "e3f8-99f7-921e-137a",
+              "name": "Hobgrot Vandalz",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
