@@ -3691,6 +3691,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Raveners",
+      "productCodes": [
+        "99120106083"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-raveners",
+        "https://www.retrofixgames.com/products/kill-team-raveners",
+        "https://obsidiangames.ca/products/kill-team-raveners",
+        "https://www.goblingaming.co.uk/products/raveners-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-98",
+        "https://radaddel.de/products/kill-team-raveners"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Raveners",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
