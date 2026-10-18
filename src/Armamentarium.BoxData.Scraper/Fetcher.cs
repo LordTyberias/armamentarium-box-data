@@ -5,8 +5,8 @@ namespace Armamentarium.BoxData.Scraper;
 /// <summary>
 /// The only way to a shop: allowlisted hosts, https, at most one request per host interval (five seconds, a minute for
 /// miniset.net), redirects only within
-/// the host (ADR 0003 §5–§7). An answer that is not 200 is no finding (null) — a captcha or challenge is logged, never worked
-/// around. A shop that does not answer (network, timeout, 429, 5xx) throws <see cref="FetchFailedException"/>, so the run
+/// the host (ADR 0003 §5–§7). Any other answer that is not 200 is no finding (null); a captcha or challenge is never worked
+/// around. A shop that does not answer (network, timeout, 403, 429, 5xx) throws <see cref="FetchFailedException"/>, so the run
 /// can tell "not listed" from "not asked"; after <see cref="MaxFailuresInARow"/> such failures the host rests for the run.
 /// A page that says the host has restricted this client rests the host at once.
 /// </summary>
@@ -109,7 +109,8 @@ public sealed class Fetcher : IFetcher, IDisposable
                     throw new FetchFailedException($"{uri.Host} restricts this client");
                 }
 
-                if (status == 429 || status >= 500)
+                // A 403 is the shop's guard refusing this client, not "not listed" (ADR 0003 Addendum ARMAM-596).
+                if (status is 403 or 429 or >= 500)
                 {
                     throw Failed(gate, $"{uri} answered {status}");
                 }

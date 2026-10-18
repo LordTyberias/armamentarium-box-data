@@ -229,7 +229,7 @@ public sealed class SourceTests
             new[]
             {
                 "www.wellplayed.ch", "www.irresistibleforce.com.au", "tistaminis.com", "abyssgamestore.ca", "radaddel.de",
-                "www.retrofixgames.com", "www.fantasywelt.de", "taschengelddieb.de", "elementgames.co.uk", "miniset.net",
+                "www.retrofixgames.com", "taschengelddieb.de", "elementgames.co.uk", "miniset.net",
             },
             Sources.All.Select(s => s.Host).ToArray());
     }
