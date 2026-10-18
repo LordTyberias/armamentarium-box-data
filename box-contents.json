@@ -15240,6 +15240,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: T'Au Empire - Pathfinder Team",
+      "productCodes": [
+        "99120113080"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-tau-empire-pathfinder-team",
+        "https://www.irresistibleforce.com.au/products/tau-empire-pathfinder-team",
+        "https://abyssgamestore.ca/products/tau-empire-pathfinder-team-56-09",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-pathfinder-team",
+        "https://shop.afk.games/products/tau-empire-pathfinder-team",
+        "https://obsidiangames.ca/products/tau-empire-pathfinder-team",
+        "https://mrmuffinstrains.com/products/gw-56-09",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-pathfinder-team"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "T'au Pathfinders",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
