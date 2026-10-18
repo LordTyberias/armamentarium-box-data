@@ -8943,6 +8943,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "World Eaters: Jakhals",
+      "productCodes": [
+        "99120102156"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/world-eaters-jakhals",
+        "https://www.retrofixgames.com/products/warhammer-40k-world-eaters-jakhals",
+        "https://shop.afk.games/products/world-eaters-jakhals",
+        "https://obsidiangames.ca/products/world-eaters-jakhals",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-chaos-space-marines-world-eaters-jakhals",
+        "https://radaddel.de/products/world-eaters-jakhals"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "6f81-4538-a414-251e",
+              "name": "Jakhals",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
