@@ -14338,6 +14338,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Canoptek Doomstalker",
+      "productCodes": [
+        "99120110045"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-canoptek-doomstalker",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-canoptek-doomstalker",
+        "https://shop.afk.games/products/necrons-canoptek-doomstalker",
+        "https://www.goblingaming.co.uk/products/canoptek-doomstalker-necrons-warhammer-40k-99120110045",
+        "https://mrmuffinstrains.com/products/gw-49-29",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-canoptek-doomstalker"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "ff8f-2e43-8af1-3470",
+              "name": "Canoptek Doomstalker",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
