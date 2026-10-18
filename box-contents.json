@@ -14962,6 +14962,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Drukhari Wracks",
+      "productCodes": [
+        "99120112033"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/drukhari-wracks-99120112033",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/dark-eldar-wracks",
+        "https://radaddel.de/products/drukhari-wracks"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "38de-521f-1ce0-44a0",
+              "entryId": "2659-7a1b-3ce6-8e4b",
+              "name": "Wracks",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
