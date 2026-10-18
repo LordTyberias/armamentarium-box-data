@@ -24403,6 +24403,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warriors of Chaos: Chaos Marauder Horsemen",
+      "productCodes": [
+        "99122701015"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/warriors-of-chaos-chaos-marauder-horsemen",
+        "https://shop.afk.games/products/warriors-of-chaos-chaos-marauder-horsemen",
+        "https://www.goblingaming.co.uk/products/warriors-of-chaos-chaos-marauder-horsemen",
+        "https://mrmuffinstrains.com/products/gw-08-14",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/chaos-marauder-horsemen-new",
+        "https://radaddel.de/products/warriors-of-chaos-chaos-marauder-horsemen"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Marauder Horsemen",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
