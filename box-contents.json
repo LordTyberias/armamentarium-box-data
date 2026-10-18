@@ -19802,6 +19802,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords - Blood Knights ( 91-41 )",
+      "productCodes": [
+        "99120207095"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/soulblight-gravelords-blood-knights-91-41",
+        "https://shop.afk.games/products/soulblight-gravelords-blood-knights",
+        "https://radaddel.de/products/soulblight-gravelords-blood-knights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
