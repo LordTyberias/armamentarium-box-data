@@ -5013,6 +5013,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Ministroum Priest with Vindicator",
+      "productCodes": [
+        "99070108012"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-ministroum-priest-with-vindicator",
+        "https://abyssgamestore.ca/products/adepta-sororitas-ministorum-priest-with-vindictor-50-68",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-ministorum-priest-with-vindictor",
+        "https://shop.afk.games/products/adepta-sororitas-ministorum-priest-with-vindicator",
+        "https://obsidiangames.ca/products/adepta-sororitas-ministorum-priest"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ministorum Priest",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
