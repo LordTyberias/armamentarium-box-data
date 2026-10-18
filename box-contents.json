@@ -20890,6 +20890,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Ossiarch Bonereapers Kavalos Vanguard",
+      "productCodes": [
+        "99120207197"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-ossiarch-bonereapers-kavalos-vanguard",
+        "https://shop.afk.games/products/spearhead-ossiarch-bonereapers-kavalos-vanguard",
+        "https://www.goblingaming.co.uk/products/spearhead-kavalos-vanguard",
+        "https://mrmuffinstrains.com/products/gw-70-943",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-ossiarch-bonereapers-kavalos-vanguard",
+        "https://radaddel.de/products/ossiarch-bonereapers-spearhead-kavalos-vanguard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Liege-Kavalos",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Teratic Cohort miniatures",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Kavalos Deathriders",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
