@@ -18148,6 +18148,63 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities Of Sigmar: Founding Foray",
+      "productCodes": [
+        "99120202058"
+      ],
+      "sources": [
+        "https://elementgames.co.uk/card-games-board-games-and-more/seasonal/cities-of-sigmar-founding-foray",
+        "https://radaddel.de/products/cities-of-sigmar-founding-foray"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Freeguild Marshal",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Relic Envoy",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Fusil-Major on Ogor Warhulk",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ironweld Great Cannon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Cavaliers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Command Corps",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Fusiliers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Blackpowder Squire",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
