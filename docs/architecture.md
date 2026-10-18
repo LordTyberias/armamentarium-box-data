@@ -53,7 +53,7 @@ and ADR 0004:
   Addendum ARMAM-602); at most one request per five seconds and host (ADR 0003 §6; no host needs the per-minute interval
   since ARMAM-602), stretched up to ten seconds for a host that answers 429 three times and
   never before a 429's `Retry-After`; a product such a shop did not answer is asked once more at the end of the run (ADR
-  0003 Addendum ARMAM-595); own user agent
+  0003 Addendum ARMAM-595); asked over HTTP/2, HTTP/1.1 only for a host without it (ADR 0003 Addendum ARMAM-603); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
 - Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
   ARMAM-599), never from part counts.

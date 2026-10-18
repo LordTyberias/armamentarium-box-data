@@ -12,10 +12,18 @@ public sealed class FetcherTests
     {
         public List<string> Requested { get; } = [];
 
+        public List<(Version Version, HttpVersionPolicy Policy)> Versions { get; } = [];
+
+        // The protocol the shop answers with; by default the one asked for, as a shop that speaks it would.
+        public Version? AnswerVersion { get; init; }
+
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
             Requested.Add(request.RequestUri!.ToString());
-            return Task.FromResult(answer(request));
+            Versions.Add((request.Version, request.VersionPolicy));
+            var response = answer(request);
+            response.Version = AnswerVersion ?? request.Version;
+            return Task.FromResult(response);
         }
     }
 
@@ -48,6 +56,42 @@ public sealed class FetcherTests
         using var fetcher = Make(new Answers(_ => Status(HttpStatusCode.OK)));
 
         Assert.AreEqual("body", await fetcher.GetAsync("https://shop.test/x", default));
+    }
+
+    // Shopify answers /products/<handle>.js over HTTP/1.1 with 429 and over HTTP/2 with 200 (measured, ADR 0003 Addendum ARMAM-603).
+    [TestMethod]
+    public async Task Get_AsksOverHttp2_OrLowerForAShopWithout()
+    {
+        var handler = new Answers(_ => Status(HttpStatusCode.OK));
+        using var fetcher = Make(handler);
+
+        await fetcher.GetAsync("https://shop.test/x", default);
+
+        Assert.AreEqual((HttpVersion.Version20, HttpVersionPolicy.RequestVersionOrLower), handler.Versions.Single());
+    }
+
+    [TestMethod]
+    public async Task Get_AnswerOverHttp11_IsLoggedOncePerHost()
+    {
+        var log = new List<string>();
+        var handler = new Answers(_ => Status(HttpStatusCode.OK)) { AnswerVersion = HttpVersion.Version11 };
+        using var fetcher = Make(handler, log);
+
+        await fetcher.GetAsync("https://shop.test/x", default);
+        await fetcher.GetAsync("https://shop.test/y", default);
+
+        CollectionAssert.AreEqual(new[] { "shop.test answers over HTTP/1.1" }, log);
+    }
+
+    [TestMethod]
+    public async Task Get_AnswerOverHttp2_LogsNothing()
+    {
+        var log = new List<string>();
+        using var fetcher = Make(new Answers(_ => Status(HttpStatusCode.OK)), log);
+
+        await fetcher.GetAsync("https://shop.test/x", default);
+
+        Assert.AreEqual(0, log.Count);
     }
 
     [TestMethod]
