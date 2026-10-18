@@ -28518,6 +28518,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum: Myrmidon Destructor Host",
+      "productCodes": [
+        "99123016019"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/mechanicum-myrmidon-destructor-host",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-myrmidon-destructor-host",
+        "https://www.goblingaming.co.uk/products/mechanicum-myrmidon-destructor-host",
+        "https://mrmuffinstrains.com/products/gw-31-157",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/mechanicum-myrmidon-destructor-host",
+        "https://radaddel.de/products/mechanicum-myrmidon-destructor-host"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Myrmidon Destructors",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
