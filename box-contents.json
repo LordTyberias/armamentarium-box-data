@@ -29350,6 +29350,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites of Slaanesh: Dexcessa, The Talon of Slaanesh",
+      "productCodes": [
+        "99129915080"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/dexcessa-the-talon-of-slaanesh",
+        "https://mrmuffinstrains.com/products/gw-97-50",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/dexcessa-the-talon-of-slaanesh"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dexcessa",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
