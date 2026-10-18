@@ -10602,6 +10602,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Meganobz / Big Mek in Mega Armour ( 50-08 )",
+      "productCodes": [
+        "99120103089"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-meganobz-big-mek-in-mega-armour-50-08",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-meganobz"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "7067-34f4-5272-e05f",
+              "name": "Meganobz",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
