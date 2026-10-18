@@ -5819,6 +5819,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Master Moulder",
+      "productCodes": [
+        "99070206006"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/master-moulder",
+        "https://shop.afk.games/products/skaven-master-moulder",
+        "https://obsidiangames.ca/products/master-moulder",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-master-moulder"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Master Moulder",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
