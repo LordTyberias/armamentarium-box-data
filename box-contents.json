@@ -15979,6 +15979,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Leagues of Votann: Cthonian Berserks",
+      "productCodes": [
+        "99120118002"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-cthonian-berserks",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-cthonian-berserkers",
+        "https://shop.afk.games/products/leagues-of-votann-cthonian-berserks",
+        "https://obsidiangames.ca/products/leagues-of-votann-cthonian-berserks",
+        "https://www.goblingaming.co.uk/products/leagues-of-votann-cthonian-berserks",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/leagues-of-votann-cthonian-berserks"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "415a-e6f6-d17f-d700",
+              "name": "Cthonian Beserks",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
