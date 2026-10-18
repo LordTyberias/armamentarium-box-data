@@ -7902,6 +7902,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Grey Hunters",
+      "productCodes": [
+        "99120101433"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-grey-hunters",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-grey-hunters",
+        "https://shop.afk.games/products/space-wolves-grey-hunters",
+        "https://obsidiangames.ca/products/grey-hunters",
+        "https://www.goblingaming.co.uk/products/space-wolves-grey-hunters",
+        "https://radaddel.de/products/space-wolves-grey-hunters"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "60ce-47ea-50fa-53f2",
+              "name": "Grey Hunters",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
