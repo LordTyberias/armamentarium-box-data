@@ -10867,6 +10867,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Deffkoptas",
+      "productCodes": [
+        "99120103107"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/orks-deffkoptas",
+        "https://obsidiangames.ca/products/orks-deffkoptas",
+        "https://www.goblingaming.co.uk/products/ork-deffkoptas-2022",
+        "https://mrmuffinstrains.com/products/gw-50-58",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/deffkoptas21",
+        "https://radaddel.de/products/orks-deffkoptas"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "2d6e-aa3b-c28c-5ef0",
+              "name": "Deffkoptas",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
