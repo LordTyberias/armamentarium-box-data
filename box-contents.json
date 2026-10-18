@@ -19708,6 +19708,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Belladamma Volga First of the Vyrkos",
+      "productCodes": [
+        "99120207088"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/soulblight-gravelords-belladamma-volga-first-of-the-vyrkos",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-belldamma-volga-first-of-the-vyrkos",
+        "https://shop.afk.games/products/belladamma-volga-first-of-the-vyrkos"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Belladamma Volga model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
