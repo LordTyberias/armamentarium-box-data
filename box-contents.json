@@ -18518,6 +18518,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth Treelord",
+      "productCodes": [
+        "99120204036"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/sylvaneth-treelord",
+        "https://www.goblingaming.co.uk/products/sylvaneth-treelord"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Treelord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
