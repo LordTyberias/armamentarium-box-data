@@ -26761,6 +26761,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legiones Astartes Scorpius Missile Tank",
+      "productCodes": [
+        "99123001017"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-scorpius-missile-tank",
+        "https://shop.afk.games/products/hh-scorpius-missile-tank",
+        "https://www.goblingaming.co.uk/products/horus-heresy-scorpius-missile-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Legion Scorpius",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
