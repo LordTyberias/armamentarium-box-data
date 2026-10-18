@@ -23498,6 +23498,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes: Gluttons",
+      "productCodes": [
+        "99120213040"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ogor-mawtribes-gluttons",
+        "https://www.goblingaming.co.uk/products/ogor-mawtribes-gluttons",
+        "https://mrmuffinstrains.com/products/games-workshop-95-06-age-of-sigmar-ogor-mawtribes-gluttons-2026",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/beastclaw-raiders/ogor-mawtribes-gluttons",
+        "https://radaddel.de/products/ogor-mawtribes-gluttons"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gluttons",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
