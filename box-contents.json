@@ -5866,6 +5866,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Radukar The Wolf",
+      "productCodes": [
+        "99070207017"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/radukar-the-wolf",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-death/soulblight-gravelords/soulblight-gravelords-radukar-the-wolf"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Radukar the Wolf model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
