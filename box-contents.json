@@ -24049,6 +24049,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Ionus Cryptborn",
+      "productCodes": [
+        "99120218082"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ionus-cryptborn",
+        "https://shop.afk.games/products/stormcast-eternals-ionus-cryptborn",
+        "https://obsidiangames.ca/products/stormcast-eternals-ionus-cryptborn",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/stormcast-eternals-1655/stormcast-eternals-ionus-cryptborn"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ionus Cryptborn",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
