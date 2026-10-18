@@ -8971,6 +8971,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Chaos Space Marines - Raptors",
+      "productCodes": [
+        "99120102163"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-chaos-space-marines-raptors",
+        "https://abyssgamestore.ca/products/chaos-space-marines-raptors-warp-talons-43-13",
+        "https://obsidiangames.ca/products/chaos-space-marines-raptors",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marine-raptorsnew"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Space Marines Raptors",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
