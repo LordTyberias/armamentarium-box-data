@@ -20926,6 +20926,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers - Mortek Triaxes (94-45)",
+      "productCodes": [
+        "99120207198"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/ossiarch-bonereapers-mortek-triaxes-94-45",
+        "https://shop.afk.games/products/ossiarch-bonereapers-mortek-triaxes",
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-mortek-triaxes",
+        "https://mrmuffinstrains.com/products/gw-94-45",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-mortek-triaxes"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mortek Triaxes",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Balefire Braziers",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
