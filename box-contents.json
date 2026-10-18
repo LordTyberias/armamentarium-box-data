@@ -11707,6 +11707,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Guardians",
+      "productCodes": [
+        "99120104091"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-guardians",
+        "https://shop.afk.games/products/aeldari-guardians",
+        "https://obsidiangames.ca/products/aeldari-guardians-1",
+        "https://www.goblingaming.co.uk/products/aeldari-guardians-2022-repack-warhammer-40k-games-workshop",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-guardians"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "5452-c4a7-59fb-f05c",
+              "name": "Storm Guardians",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "e78a-4442-4ed2-66bf",
+              "name": "Guardian Defenders",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
