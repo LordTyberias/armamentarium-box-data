@@ -22369,6 +22369,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm-Lords Hurakan Windmage ( 87-45-W )",
+      "productCodes": [
+        "99120210028"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/hurakan-windmage-87-45",
+        "https://shop.afk.games/products/hurakan-windmage",
+        "https://obsidiangames.ca/products/lumineth-realm-lords-hurakan-windmage"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hurakan Windmage",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
