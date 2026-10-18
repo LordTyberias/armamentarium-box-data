@@ -19366,6 +19366,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Doom-Flayers",
+      "productCodes": [
+        "99120206044"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/skaven-doom-flayers",
+        "https://obsidiangames.ca/products/doom-flayers",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-doom-flayers",
+        "https://radaddel.de/products/skaven-doom-flayers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Doom-Flayers",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
