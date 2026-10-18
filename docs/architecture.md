@@ -48,8 +48,9 @@ and ADR 0004:
   (ADR 0004), stored outside every repository, never logged.
 - Catalogue ids from the catalogues of a compiled allowlist of repositories (ADR 0004 §3), downloaded per run.
 - Candidates from warhub-catalog `products.json`, one request per run to a compiled address (ADR 0003 §4).
-- Sources from a compiled allowlist, no open search; at most one request per five seconds and host (per minute where a
-  host restricts faster clients, ADR 0003 §6), stretched up to ten seconds for a host that answers 429 three times and
+- Sources from a compiled allowlist, no open search, measured with the `--host` probe before they enter (ADR 0003
+  Addendum ARMAM-602); at most one request per five seconds and host (ADR 0003 §6; no host needs the per-minute interval
+  since ARMAM-602), stretched up to ten seconds for a host that answers 429 three times and
   never before a 429's `Retry-After`; a product such a shop did not answer is asked once more at the end of the run (ADR
   0003 Addendum ARMAM-595); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
