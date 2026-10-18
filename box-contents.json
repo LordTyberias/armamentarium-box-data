@@ -6218,6 +6218,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Old World - Dwarven Mountain Holds: Dwarf Bolt Thrower",
+      "productCodes": [
+        "99112705002"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/old-world-dwarven-mountain-holds-dwarf-bolt-thrower",
+        "https://www.goblingaming.co.uk/products/dwarfen-mountain-holds-dwarf-bolt-thrower"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Bolt Thrower",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
