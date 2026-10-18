@@ -26833,6 +26833,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes - Legion Tartaros Terminator Squad ( 31-07 )",
+      "productCodes": [
+        "99123001022"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/the-horus-heresy-terminator-tartaros-squad-31-07",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-tartaros-terminator-squad",
+        "https://shop.afk.games/products/legiones-astartes-terminator-tartaros-squad",
+        "https://obsidiangames.ca/products/space-marines-tartaros-terminator-squad",
+        "https://www.goblingaming.co.uk/products/warhammer-30-000-horus-heresy-legiones-astartes-terminator-tartaros-squad",
+        "https://mrmuffinstrains.com/products/gw-31-07",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-atartes-terminator-tartaros-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tartaros Terminators",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
