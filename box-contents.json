@@ -14802,6 +14802,24 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Necrons",
+      "productCodes": [
+        "99120110077"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-necrons",
+        "https://abyssgamestore.ca/products/combat-patrol-necrons-49-49",
+        "https://radaddel.de/products/necrons-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-necrons",
+        "https://shop.afk.games/products/combat-patrol-necrons",
+        "https://obsidiangames.ca/products/combat-patrol-necrons",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-combat-patrol-necrons-2023",
+        "https://mrmuffinstrains.com/products/gw-73-491",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/mbat-patrol-necrons-2"
+      ],
+      "generation": "current"
     }
   ]
 }
