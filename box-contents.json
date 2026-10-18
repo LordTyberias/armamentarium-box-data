@@ -19342,6 +19342,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Rat Ogors",
+      "productCodes": [
+        "99120206043"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/skaven-rat-ogors",
+        "https://obsidiangames.ca/products/rat-ogors",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-rat-ogors",
+        "https://radaddel.de/products/skaven-rat-ogors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rat Ogors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
