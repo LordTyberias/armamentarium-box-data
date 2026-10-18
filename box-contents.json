@@ -3825,6 +3825,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team - Hierotek Circle ( 103-19 )",
+      "productCodes": [
+        "99120110084"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/kill-team-hierotek-circle-103-19",
+        "https://www.retrofixgames.com/products/kill-team-hierotek-circle",
+        "https://shop.afk.games/products/kill-team-hierotek-circle",
+        "https://mrmuffinstrains.com/products/gw-103-19",
+        "https://radaddel.de/products/kill-team-hierotek-circle"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necrons",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
