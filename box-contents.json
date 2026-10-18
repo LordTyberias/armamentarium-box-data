@@ -17909,6 +17909,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmar: Freeguild Steelhelms",
+      "productCodes": [
+        "99120202041"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-freeguild-steelhelms",
+        "https://abyssgamestore.ca/products/cities-of-sigmar-freeguild-steelhelms-86-06",
+        "https://shop.afk.games/products/freeguild-steelhelms",
+        "https://obsidiangames.ca/products/cities-of-sigmar-freeguild-steelhelms",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-cities-of-sigmar-freeguild-steelhelms",
+        "https://mrmuffinstrains.com/products/gw-86-06",
+        "https://radaddel.de/products/cities-of-sigmar-freeguild-steelhelms"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Freeguild Steelhelms",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
