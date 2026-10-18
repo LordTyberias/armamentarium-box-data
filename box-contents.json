@@ -8507,6 +8507,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard: Plagueburst Crawler",
+      "productCodes": [
+        "99120102125"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/death-guard-plagueburst-crawler",
+        "https://abyssgamestore.ca/products/death-guard-plagueburst-crawler-43-52",
+        "https://shop.afk.games/products/death-guard-plagueburst-crawler",
+        "https://obsidiangames.ca/products/death-guard-plagueburst-crawler",
+        "https://www.goblingaming.co.uk/products/death-guard-plagueburst-crawler",
+        "https://elementgames.co.uk/death-guard-plagueburst-crawler"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "e58b-507a-937f-7abf",
+              "name": "Plagueburst Crawler",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
