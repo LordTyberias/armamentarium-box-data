@@ -18972,6 +18972,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kharadron Overlords: Codewright",
+      "productCodes": [
+        "99120205048"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kharadron-overlords-codewright",
+        "https://abyssgamestore.ca/products/kharadron-overlords-codewright-84-61",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-kharadron-overlords-codewright",
+        "https://shop.afk.games/products/kharadron-overlords-codewright",
+        "https://obsidiangames.ca/products/kharadron-overlords-codewright",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-kharadron-overlords-codewright"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Codewright",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
