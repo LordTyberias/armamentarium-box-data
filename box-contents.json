@@ -11274,6 +11274,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Dark Reapers",
+      "productCodes": [
+        "99120104068"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-dark-reapers",
+        "https://abyssgamestore.ca/products/aeldari-dark-reapers-46-22",
+        "https://www.retrofixgames.com/products/warhammer-40k-aeldari-dark-reapers-1",
+        "https://shop.afk.games/products/aeldari-dark-reapers",
+        "https://obsidiangames.ca/products/aeldari-dark-reapers",
+        "https://www.goblingaming.co.uk/products/aeldari-dark-reapers-2022-repack-warhammer-40k-games-workshop",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-dark-reapers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "unit of Dark Reapers",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
