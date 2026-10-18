@@ -5914,6 +5914,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Megaboss",
+      "productCodes": [
+        "99070209007"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ortruk-warclans-megaboss",
+        "https://abyssgamestore.ca/products/orruk-warclans-megaboss-89-26",
+        "https://shop.afk.games/products/orruk-warclans-orruk-megaboss",
+        "https://www.goblingaming.co.uk/products/ironjawz-orruk-megaboss",
+        "https://elementgames.co.uk/ironjawz-orruk-megaboss"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "orruk Megaboss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
