@@ -11221,6 +11221,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari - Fire Prism",
+      "productCodes": [
+        "99120104029"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/aeldari-fire-prism",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/eldar-fire-prism-night-spinner-"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "9940-a69b-682e-ccf4",
+              "name": "Fire Prism",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
