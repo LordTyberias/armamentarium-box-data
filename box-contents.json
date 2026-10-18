@@ -10839,6 +10839,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Warboss In Mega Armour",
+      "productCodes": [
+        "99120103105"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-warboss-in-mega-armour",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-warboss-in-mega-armour",
+        "https://shop.afk.games/products/ork-warboss-in-mega-armour",
+        "https://www.goblingaming.co.uk/products/ork-warboss-in-mega-armour-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-50-56",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-warboss-in-mega-armour"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "494b-11ce-5af-5b50",
+              "name": "Warboss in Mega Armour",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
