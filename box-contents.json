@@ -16034,6 +16034,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Leagues of Votann: Brôkhyr Thunderkyn",
+      "productCodes": [
+        "99120118005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-brokhyr-thunderkyn",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-brokhyr-thunderkyn",
+        "https://shop.afk.games/products/leagues-of-votann-brokhyr-thunderkyn",
+        "https://obsidiangames.ca/products/leagues-of-votann-brokhyr-thunderkyn",
+        "https://www.goblingaming.co.uk/products/leagues-of-votann-brokhyr-thunderkyn",
+        "https://mrmuffinstrains.com/products/gw-69-08",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/leagues-of-votann-brokhyr-thunderkyn",
+        "https://radaddel.de/products/leagues-of-votann-brokhyr-thunderkyn"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "ea1b-99f6-c398-06b1",
+              "name": "Brôkhyr Thunderkyn",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
