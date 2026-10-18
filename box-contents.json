@@ -7848,6 +7848,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blood Angels: Sanguinary Priest",
+      "productCodes": [
+        "99120101415"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blood-angels-sanguinary-priest",
+        "https://www.retrofixgames.com/products/warhammer-40k-blood-angels-sanguinary-priest-1",
+        "https://shop.afk.games/products/blood-angels-sanguinary-priest",
+        "https://obsidiangames.ca/products/sanguinary-priest",
+        "https://www.goblingaming.co.uk/products/blood-angels-sanguinary-priest"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4ef9-15ce-e3e6-36de",
+              "entryId": "f80-be5-d17c-db23",
+              "name": "Sanguinary Priest",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
