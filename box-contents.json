@@ -21529,6 +21529,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Raptadon Hunters",
+      "productCodes": [
+        "99120208038"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/raptadon-hunters",
+        "https://abyssgamestore.ca/products/seraphon-raptadon-hunters-88-21",
+        "https://shop.afk.games/products/raptadon-hunters",
+        "https://obsidiangames.ca/products/seraphon-raptadon-hunters",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/seraphon-raptadon-hunters",
+        "https://radaddel.de/products/seraphon-raptadon-hunters"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4e3-e1a7-a8d4-8719",
+              "entryId": "dde-6a11-e8d6-ed5",
+              "name": "Raptadon Hunters",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
