@@ -26735,6 +26735,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Sky-Hunter Squadron",
+      "productCodes": [
+        "99123001015"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-sky-hunter-squadron",
+        "https://abyssgamestore.ca/products/copy-of-the-horus-heresy-deimos-pattern-rhino-31-02",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-sky-hunter-squadron",
+        "https://shop.afk.games/products/hh-sky-hunter-squadron",
+        "https://obsidiangames.ca/products/space-marines-sky-hunter-squadron-horus-heresy",
+        "https://www.goblingaming.co.uk/products/warhammer-30k-horus-heresy-sky-hunter-squadron"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sky-hunters",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
