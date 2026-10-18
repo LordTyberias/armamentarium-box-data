@@ -11465,6 +11465,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Dire Avengers",
+      "productCodes": [
+        "99120104079"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/99120104033",
+        "https://shop.afk.games/products/craftworlds-dire-avengers",
+        "https://obsidiangames.ca/products/aeldari-dire-avengers",
+        "https://radaddel.de/products/aeldari-dire-avengers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aeldari Dire Avengers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
