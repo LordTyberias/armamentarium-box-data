@@ -15425,6 +15425,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Kroot Lone-Spear",
+      "productCodes": [
+        "99120113092"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-kroot-lone-spear",
+        "https://abyssgamestore.ca/products/tau-empire-kroot-lone-spear-56-59",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-kroot-lone-spear",
+        "https://shop.afk.games/products/tau-empire-kroot-lone-spear",
+        "https://obsidiangames.ca/products/tau-empire-kroot-lone-spear",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-kroot-lone-spear",
+        "https://mrmuffinstrains.com/products/gw-56-59",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-kroot-lone-spear"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "4e8a-c3f4-e497-4901",
+              "name": "Kroot Lone-spear",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
