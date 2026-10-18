@@ -6615,6 +6615,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Primaris Eradicators",
+      "productCodes": [
+        "99120101286"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-eradicators",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-primaris-eradicators",
+        "https://shop.afk.games/products/space-marines-primaris-eradicators",
+        "https://obsidiangames.ca/products/primaris-eradicators",
+        "https://mrmuffinstrains.com/products/gw-48-43",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-eradicators",
+        "https://radaddel.de/products/space-marines-eradicator-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "of the squad into",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Eradicators",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
