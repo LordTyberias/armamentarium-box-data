@@ -19085,6 +19085,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Fyreslayers",
+      "productCodes": [
+        "99120205060"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/vanguard-fyreslayers",
+        "https://www.goblingaming.co.uk/products/spearhead-fyreslayers-age-of-sigmar-starter-set",
+        "https://mrmuffinstrains.com/products/gw-70-06",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/fyreslayers/spearhead-fyreslayers",
+        "https://radaddel.de/products/fyreslayer-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Battlesmith",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::fyreslayers",
+              "entryId": "sph::saga-axeband::02-hearthguard-berzerkers",
+              "name": "Hearthguard Berzerkers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Vulkite Berzerkers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
