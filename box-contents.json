@@ -24002,6 +24002,53 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Stormcast Eternals ( 70-21 )",
+      "productCodes": [
+        "99120218081"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/spearhead-stormcast-eternals-70-21",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-stormcast-eternals",
+        "https://shop.afk.games/products/spearhead-stormcast-eternals",
+        "https://obsidiangames.ca/products/spearhead-stormcast-eternals",
+        "https://mrmuffinstrains.com/products/gw-70-21",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/stormcast-eternals-1655/spearhead-stormcast-eternals",
+        "https://radaddel.de/products/stormcast-eternals-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Yndrasta",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Knight-Vexillor with Banner of Apotheosis",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Stormstrike Chariot",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Annihilators",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Vanquishers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
