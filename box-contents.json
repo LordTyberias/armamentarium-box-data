@@ -4077,6 +4077,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Darktide Miniatures Game",
+      "productCodes": [
+        "60010199063"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-darktide-miniatures-game",
+        "https://shop.afk.games/products/darktide-the-miniatures-game"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "player-controlled miniatures in blue plastic",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "enemy miniatures in grey plastic",
+              "count": 16
+            },
+            {
+              "role": "team",
+              "name": "Pox Walkers",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Traitor Guardsmen",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "double-sided Killzone tiles",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
