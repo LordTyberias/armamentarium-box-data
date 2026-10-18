@@ -28978,6 +28978,55 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Maggotkin of Nurgle - Nurglings",
+      "productCodes": [
+        "99129915060"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/age-of-sigmar-maggotkin-of-nurgle-nurglings",
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-nurglings",
+        "https://abyssgamestore.ca/products/daemons-of-nurgle-nurglings-97-18",
+        "https://www.retrofixgames.com/products/warhammer-daemons-of-nurgle-nurglings",
+        "https://shop.afk.games/products/daemons-of-nurgle-nurglings",
+        "https://obsidiangames.ca/products/maggotkin-of-nurgle-nurglings",
+        "https://mrmuffinstrains.com/products/gw-97-18",
+        "https://elementgames.co.uk/daemons-of-nurgle-nurglings",
+        "https://radaddel.de/products/maggotkin-of-nurgle-nurglings"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "tottering towers of them",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "varying towers of Nurglings",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "tottering towers of them",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "varying towers of Nurglings",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
