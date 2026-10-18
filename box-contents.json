@@ -17496,6 +17496,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Rotswords",
+      "productCodes": [
+        "99120201207"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-rotswords",
+        "https://www.retrofixgames.com/products/age-of-sigmar-maggotkin-of-nurgle-rotswords",
+        "https://www.goblingaming.co.uk/products/maggotkin-of-nurgle-rotswords",
+        "https://mrmuffinstrains.com/products/gw-83-113",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/maggotkin-of-nurgle-rotswords",
+        "https://radaddel.de/products/maggotkin-of-nurgle-rotswords"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rotswords",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
