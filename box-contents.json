@@ -10314,6 +10314,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Kill Rig",
+      "productCodes": [
+        "99120103072"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-kill-rig",
+        "https://shop.afk.games/products/orks-kill-rig",
+        "https://www.goblingaming.co.uk/products/orks-kill-rig-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-50-46",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-kill-rig"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "eb21-c97f-2d9a-b363",
+              "name": "Kill Rig",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
