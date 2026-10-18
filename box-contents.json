@@ -19778,6 +19778,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Fell Bats",
+      "productCodes": [
+        "99120207094"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/fell-bats",
+        "https://abyssgamestore.ca/products/soulblight-gravelords-fell-bats-91-59",
+        "https://shop.afk.games/products/soulblight-gravelords-fell-bats",
+        "https://radaddel.de/products/soulblight-gravelords-fell-bats"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Fell Bats",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
