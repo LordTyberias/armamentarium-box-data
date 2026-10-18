@@ -5066,6 +5066,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents - Eversor Assassin ( 52-13 )",
+      "productCodes": [
+        "99070108015"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/imperial-agents-eversor-assassin-52-13",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-eversor-assassin",
+        "https://obsidiangames.ca/products/eversor-assassin",
+        "https://www.goblingaming.co.uk/products/imperial-agents-eversor-assassin",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-eversor-assassin"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "f201-1f4a-b907-d9d1",
+              "name": "Eversor Assassin",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
