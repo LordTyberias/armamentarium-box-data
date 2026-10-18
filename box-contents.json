@@ -20139,6 +20139,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulbligth Gravelords: Dire Wolves",
+      "productCodes": [
+        "99120207142"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/dire-wolves",
+        "https://obsidiangames.ca/products/soulblight-gravelords-dire-wolves",
+        "https://mrmuffinstrains.com/products/gw-91-45"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dire Wolves",
+              "countCandidates": [
+                9,
+                10
+              ]
+            },
+            {
+              "role": "team",
+              "name": "Doom Wolf",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
