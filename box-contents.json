@@ -17420,6 +17420,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Maggotkin of Nurgle - Bubonic Cell",
+      "productCodes": [
+        "99120201203"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-maggotkin-of-nurgle-bubonic-cell",
+        "https://abyssgamestore.ca/products/spearhead-maggotkin-of-nurgle-bubonic-cell-83-106",
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-maggotkin-of-nurglebubonic-cell",
+        "https://www.goblingaming.co.uk/products/spearhead-maggotkin-of-nurgle-bubonic-cell",
+        "https://mrmuffinstrains.com/products/gw-70-838",
+        "https://radaddel.de/products/maggotkin-of-nurgle-bubonic-cell-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rotbringer Sorcerer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Beast of Nurgle",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Nurglings",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Rotmire Creed miniatures",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
