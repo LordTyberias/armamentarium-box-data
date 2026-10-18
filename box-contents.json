@@ -6174,6 +6174,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Bretonnian Questing Knights",
+      "productCodes": [
+        "99112703022"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/warhammer-old-world-bretonnia-questing-knights",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/bretonnian-questing-knights"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "metal Questing Knights",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
