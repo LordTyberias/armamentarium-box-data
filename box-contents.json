@@ -3188,6 +3188,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Seraphon (70-881)",
+      "productCodes": [
+        "99120208045"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/spearhead-seraphon-70-19",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/seraphon/spearhead-seraphon"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Saurus Oldblood on Carnosaur",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Kroxigor",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Saurus Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
