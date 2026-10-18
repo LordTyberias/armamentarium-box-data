@@ -10662,6 +10662,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Lootas / Burnas ( 50-22 )",
+      "productCodes": [
+        "99120103093"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-lootas-burnas-50-22",
+        "https://www.retrofixgames.com/products/warhammer-40k-ork-lootas",
+        "https://shop.afk.games/products/orks-lootas",
+        "https://obsidiangames.ca/products/orks-lootas"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "models",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
