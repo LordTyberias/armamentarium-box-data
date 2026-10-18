@@ -8702,6 +8702,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Knights: War Dogs",
+      "productCodes": [
+        "99120102139"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-knights-war-dogs",
+        "https://abyssgamestore.ca/products/chaos-knights-wardogs-43-64",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-knights-wardogs",
+        "https://shop.afk.games/products/chaos-knights-wardogs",
+        "https://www.goblingaming.co.uk/products/chaos-knights-wardogs-karnivore-stalker-brigand-warhammer-40k-games-workshop",
+        "https://mrmuffinstrains.com/products/gw-43-64",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-knights/chaos-knights-wardogs",
+        "https://radaddel.de/products/chaos-knights-war-dogs"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "War Dog-class Knights",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "War Dogs in any combination of the following options",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
