@@ -11850,6 +11850,22 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Aeldari Corsairs (73-463)",
+      "productCodes": [
+        "99120104110"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-night-lords-73-433",
+        "https://radaddel.de/products/aeldari-combat-patrol-aeldari-corsairs",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-aeldari-corsairs",
+        "https://shop.afk.games/products/combat-patrol-aeldari-corsairs",
+        "https://www.goblingaming.co.uk/products/combat-patrol-aeldari-corsairs",
+        "https://mrmuffinstrains.com/products/gw-73-463",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/combat-patrol-aeldari-corsairs"
+      ],
+      "generation": "current"
     }
   ]
 }
