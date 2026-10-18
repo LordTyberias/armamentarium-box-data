@@ -13563,6 +13563,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Adepta Sororitas - Battle Sisters Squad",
+      "productCodes": [
+        "99120108057"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-adepta-sororitas-battle-sisters-squad",
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-battle-sisters-squad",
+        "https://shop.afk.games/products/adepta-sororitas-battle-sisters-squad",
+        "https://obsidiangames.ca/products/adepta-sororitas-battle-sister-squad",
+        "https://elementgames.co.uk/warhammer-40k/imperial-agents/imperial-agents-other-datasheets/adepta-sororitas-battle-sisters-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Battle Sisters",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Incensor Cherub",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
