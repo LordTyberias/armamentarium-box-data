@@ -9630,6 +9630,24 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Emperor's Children",
+      "productCodes": [
+        "99120102207"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-emperors-children",
+        "https://abyssgamestore.ca/products/combat-patrol-emperors-children-73-371",
+        "https://radaddel.de/products/emperors-children-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-emperors-children",
+        "https://shop.afk.games/products/combat-patrol-emperors-children-1",
+        "https://obsidiangames.ca/products/combat-patrol-emperors-children",
+        "https://www.goblingaming.co.uk/products/combat-patrol-emperors-children",
+        "https://mrmuffinstrains.com/products/gw-73-371",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-emperors-children"
+      ],
+      "generation": "current"
     }
   ]
 }
