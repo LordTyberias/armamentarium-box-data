@@ -15951,6 +15951,34 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/combat-patrol-genestealer-cults-new-"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Leagues of Votann: Einhyr Hearthguard",
+      "productCodes": [
+        "99120118001"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-einhyr-hearthguard",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-einhyr-hearthguard",
+        "https://shop.afk.games/products/leagues-of-votann-einhyr-hearthguard",
+        "https://obsidiangames.ca/products/leagues-of-votann-einhyr-hearthguard",
+        "https://www.goblingaming.co.uk/products/leagues-of-votann-einhyr-hearthguard",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/leagues-of-votann-einhyr-hearthguard"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "09d3-6357-7888-00d9",
+              "name": "Einhyr Hearthguard",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
