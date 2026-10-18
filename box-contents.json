@@ -19224,6 +19224,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kharadron Overlords: Null-Khemist",
+      "productCodes": [
+        "99120205067"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kharadron-overlords-null-khemist",
+        "https://www.retrofixgames.com/products/age-of-sigmar-kharadron-overlords-null-khemist",
+        "https://shop.afk.games/products/null-khemist",
+        "https://www.goblingaming.co.uk/products/kharadron-overlords-null-khemist",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/kharadron-overlords-null-khemist"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Null-Khemist",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
