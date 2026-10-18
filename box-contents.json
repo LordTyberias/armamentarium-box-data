@@ -4746,6 +4746,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 43-45 - Warhammer 40,000 - Death Guard: Scribbus Wretch, the Tallyman",
+      "productCodes": [
+        "99070102018"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-43-45",
+        "https://elementgames.co.uk/death-guard-scribbus-wretch-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "506c-16a8-68f7-c08a",
+              "name": "Tallyman",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
