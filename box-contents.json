@@ -21688,6 +21688,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Breaka-Boss on Mirebrute Troggoth",
+      "productCodes": [
+        "99120209073"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/breaka-boss-on-mirebrute-troggoth",
+        "https://shop.afk.games/products/orruk-warclans-breaka-boss-on-mirebrute-troggoth",
+        "https://mrmuffinstrains.com/products/gw-89-68",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/orruk-warclans-breaka-boss-on-mirebrute-troggoth"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Breaka-boss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
