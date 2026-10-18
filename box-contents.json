@@ -18923,6 +18923,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Fyreslayers Hearthguard Berzerkers",
+      "productCodes": [
+        "99120205046"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/fyreslayers-hearthguard",
+        "https://www.goblingaming.co.uk/products/fyreslayer-s-hearthguard",
+        "https://mrmuffinstrains.com/products/gw-84-24"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::fyreslayers",
+              "entryId": "sph::saga-axeband::02-hearthguard-berzerkers",
+              "name": "Hearthguard Berzerkers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
