@@ -16179,6 +16179,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Leagues of Votann: Ironkin Steeljacks",
+      "productCodes": [
+        "99120118020"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-ironkin-steeljacks",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-ironkin-steeljacks",
+        "https://obsidiangames.ca/products/ironkin-steeljacks",
+        "https://radaddel.de/products/leagues-of-votann-ironkin-steeljacks"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ironkin Steeljacks",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
