@@ -16064,6 +16064,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Leagues of Votann: Hekaton Land Fortress",
+      "productCodes": [
+        "99120118006"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-hekaton-land-fortress",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-hekaton-land-fortress",
+        "https://shop.afk.games/products/leagues-of-votann-hekaton-land-fortress",
+        "https://obsidiangames.ca/products/leagues-of-votann-hekaton-land-fortress",
+        "https://www.goblingaming.co.uk/products/leagues-of-votann-hekaton-land-fortress",
+        "https://mrmuffinstrains.com/products/gw-69-09"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "a110-e538-4e85-159b",
+              "name": "Hekaton Land Fortress",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
