@@ -23979,6 +23979,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Dracothian Guard",
+      "productCodes": [
+        "99120218074"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/stormcast-eternals-dracothian-guard",
+        "https://abyssgamestore.ca/products/stormcast-eternals-dracothian-guard-fulminators-tempestors-concussors-desolators-lord-celestant-on-dracoth-96-24",
+        "https://shop.afk.games/products/stormcast-eternals-dracothian-guard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dracothian Guard Fulminators",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
