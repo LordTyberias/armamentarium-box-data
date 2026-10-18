@@ -21922,6 +21922,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Gordrakk, the Fist of Gork",
+      "productCodes": [
+        "99120209090"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ironjaws-orruk-maw-krusha",
+        "https://abyssgamestore.ca/products/orruk-warclans-megaboss-on-maw-krusha-gordrakk-fist-of-gork-89-25",
+        "https://www.goblingaming.co.uk/products/ironjawz-orruk-maw-krusha",
+        "https://elementgames.co.uk/ironjawz-orruk-maw-krusha"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Megaboss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
