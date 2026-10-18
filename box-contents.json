@@ -16941,6 +16941,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Everchosen Archaon Exalted Grand Marshal",
+      "productCodes": [
+        "99120201151"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-everchosen-archaon-exalted-grand-marshal",
+        "https://www.goblingaming.co.uk/products/everchosen-archaon-exalted-grand-marshal"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Archaon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
