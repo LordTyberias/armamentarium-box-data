@@ -15109,6 +15109,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 45-40 - Warhammer 40,000 - Drukhari: Incubi",
+      "productCodes": [
+        "99120112051"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-45-40",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/drukhari-incubi"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "38de-521f-1ce0-44a0",
+              "entryId": "1529-793d-481b-82bf",
+              "name": "Incubi",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
