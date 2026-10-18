@@ -27253,6 +27253,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legiones Astartes MKII Tactical Squad",
+      "productCodes": [
+        "99123001058"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-mkii-tactical-squad",
+        "https://shop.afk.games/products/legiones-astartes-mkii-tactical-squad",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-mkii-tactical-squad",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-astartes-mkii-tactical-squad",
+        "https://radaddel.de/products/legiones-astartes-mkii-tactical-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marines Legionaries",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
