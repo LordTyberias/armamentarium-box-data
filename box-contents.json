@@ -21500,6 +21500,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Saurus Warriors",
+      "productCodes": [
+        "99120208036"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/saurus-warriors",
+        "https://abyssgamestore.ca/products/seraphon-saurus-warriors-88-06-w",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-seraphon-saurus-warriors",
+        "https://shop.afk.games/products/saurus-warriors",
+        "https://obsidiangames.ca/products/seraphon-saurus-warriors",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-seraphon-saurus-warriors-2023",
+        "https://mrmuffinstrains.com/products/gw-88-06",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/seraphon-saurus-warriors-2",
+        "https://radaddel.de/products/seraphon-saurus-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Saurus Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
