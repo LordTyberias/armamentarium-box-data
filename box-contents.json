@@ -22285,6 +22285,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Snarlfang Riders",
+      "productCodes": [
+        "99120209147"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/snarlfang-riders",
+        "https://www.goblingaming.co.uk/products/snarlfang-riders",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/gloomspite-gitz-snarlfang-riders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Snarlfang Riders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
