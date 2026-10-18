@@ -9413,6 +9413,34 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-world-eaters"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Thousand Sons: Sekhetar Robots",
+      "productCodes": [
+        "99120102197"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/thousand-sons-sekhetar-robots",
+        "https://abyssgamestore.ca/products/thousand-sons-sekhetar-robots-36-03",
+        "https://www.retrofixgames.com/products/warhammer-40k-thousand-sons-sekhetar-robots",
+        "https://shop.afk.games/products/thousand-sons-sekhetar-robots",
+        "https://obsidiangames.ca/products/sekhetar-robots",
+        "https://mrmuffinstrains.com/products/gw-36-03"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "fe4b-b3a4-69b7-3088",
+              "name": "Sekhetar Robots",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
