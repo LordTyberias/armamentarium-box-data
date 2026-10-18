@@ -28650,6 +28650,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legio Custodes - Custodian Guard Sodality (31-161)",
+      "productCodes": [
+        "99123043005"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/legio-custodes-custodian-guard-sodality-31-161",
+        "https://shop.afk.games/products/legio-custodes-custodian-guard-sodality",
+        "https://mrmuffinstrains.com/products/gw-31-161",
+        "https://radaddel.de/products/legio-custodes-custodian-guard-sodality"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "91b3-2e1c-e642-d213",
+              "name": "Custodian Guard",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Custodian Guard",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
