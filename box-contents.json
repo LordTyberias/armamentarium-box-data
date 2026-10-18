@@ -28047,6 +28047,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Hermes Sentinel Squadron",
+      "productCodes": [
+        "99123005011"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-hermes-sentinel-squadron",
+        "https://abyssgamestore.ca/products/the-horus-heresy-solar-auxilia-hermes-sentinel-squadron-31-80",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-hermes-sentinel-squadron",
+        "https://shop.afk.games/products/solar-auxilia-hermes-sentinel-squadron",
+        "https://www.goblingaming.co.uk/products/warhammer-30k-the-horus-heresy-solar-auxilia-hermes-sentinel-squadron",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/solar-auxilia-hermes-sentinel-squadron"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hermes Light Sentinels",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
