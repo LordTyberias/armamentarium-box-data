@@ -9978,6 +9978,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Iron Warriors Upgrades",
+      "productCodes": [
+        "99120102231"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/iron-warriors-upgrades",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/iron-warriors-upgrades"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "thunder hammer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "power fist",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "plumed helmets",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
