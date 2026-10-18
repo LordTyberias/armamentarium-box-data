@@ -4845,6 +4845,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Sorcerer",
+      "productCodes": [
+        "99070102026"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-sorcerer",
+        "https://obsidiangames.ca/products/chaos-space-marines-sorcerer",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-sorcerer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Space Marines Sorcerer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
