@@ -15455,6 +15455,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire - Kroot War Shaper ( 56-55 )",
+      "productCodes": [
+        "99120113093"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/tau-empire-kroot-war-shaper-56-55",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-kroot-war-shaper",
+        "https://shop.afk.games/products/tau-empire-kroot-war-shaper",
+        "https://obsidiangames.ca/products/tau-empire-kroot-war-shaper",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-kroot-war-shaper",
+        "https://mrmuffinstrains.com/products/gw-56-55",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-kroot-war-shaper"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "e9bc-7a6e-322c-87fd",
+              "name": "Kroot War Shaper",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
