@@ -20982,6 +20982,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers Mortis Reapers",
+      "productCodes": [
+        "99120207201"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-mortis-reapers",
+        "https://mrmuffinstrains.com/products/gw-94-37",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-mortis-reapers",
+        "https://radaddel.de/products/ossiarch-bonereapers-mortis-reapers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mortis Reapers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
