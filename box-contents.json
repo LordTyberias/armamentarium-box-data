@@ -24303,6 +24303,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Sons of Behemat",
+      "productCodes": [
+        "99120299118"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/sons-of-behemat-mancrusher-mob",
+        "https://mrmuffinstrains.com/products/gw-70-931",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/spearhead-sons-of-behemat",
+        "https://radaddel.de/products/sons-of-behemat-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mancrusher Gargants",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
