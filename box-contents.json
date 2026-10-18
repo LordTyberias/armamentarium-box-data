@@ -11301,6 +11301,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Aeldari Maugan Ra",
+      "productCodes": [
+        "99120104069"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-aeldari-maugan-ra",
+        "https://www.goblingaming.co.uk/products/aeldari-maugan-ra-2022-repack-warhammer-40k-games-workshop"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "6f18-95b7-2662-8925",
+              "name": "Maugan Ra",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
