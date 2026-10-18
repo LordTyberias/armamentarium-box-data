@@ -21946,6 +21946,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Orruk Warclans",
+      "productCodes": [
+        "99120209109"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/vanguard-orruk-warclans",
+        "https://mrmuffinstrains.com/products/gw-70-892"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Killaboss on Great Gnashtoof",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Murknob with Belcha-banna",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Beast-skewer Killbow",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Man-skewer Boltboyz",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Gutrippaz",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
