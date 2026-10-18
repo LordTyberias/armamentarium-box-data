@@ -19941,6 +19941,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Grimghast Reapers",
+      "productCodes": [
+        "99120207124"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/nighthaunt-grimghast-reapers",
+        "https://shop.afk.games/products/nighthaunt-grimghast-reapers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Grimghast Reapers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
