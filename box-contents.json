@@ -28544,6 +28544,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Sentinel Guard Sodality",
+      "productCodes": [
+        "99123043002"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-sentinel-guard-sodality",
+        "https://shop.afk.games/products/legio-custodes-sentinel-guard-sodality",
+        "https://mrmuffinstrains.com/products/gw-31-164",
+        "https://elementgames.co.uk/warhammer-40k/totp/troops-2642/legio-custodes-sentinel-guard-sodality",
+        "https://radaddel.de/products/legio-custodes-sentinel-guard-sodality"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sentinel Guards",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sentinel Guards",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
