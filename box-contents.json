@@ -12905,6 +12905,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Tyrannofex",
+      "productCodes": [
+        "99120106054"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/99120106023",
+        "https://abyssgamestore.ca/products/tyranids-tyrannofex-tervigon-51-09",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranid-tyrannofex-tervigon",
+        "https://obsidiangames.ca/products/tyranids-tyrannofex",
+        "https://www.goblingaming.co.uk/products/tyranid-tyrannofex-tervigon",
+        "https://mrmuffinstrains.com/products/gw-51-09",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranid-tyrannofextervigon"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tyranid Tyrannofex",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
