@@ -7958,6 +7958,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Wolf Priest",
+      "productCodes": [
+        "99120101435"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-wolf-priest",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-wolf-priest",
+        "https://shop.afk.games/products/space-wolves-wolf-priest",
+        "https://obsidiangames.ca/products/wolf-priest",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/space-wolves-wolf-priest"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "b3b1-d1df-d9be-d48e",
+              "name": "Wolf Priest",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
