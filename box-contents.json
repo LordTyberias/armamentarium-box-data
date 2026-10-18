@@ -29132,6 +29132,51 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch: Blue Horrors",
+      "productCodes": [
+        "99129915066"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/disciples-of-tzeentch-blue-horrors",
+        "https://abyssgamestore.ca/products/daemons-of-tzeentch-blue-horrors-97-30",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-daemons-of-tzeentch-blue-brimstone-horrors",
+        "https://shop.afk.games/products/daemons-of-tzeentch-blue-horrors",
+        "https://obsidiangames.ca/products/disciples-of-tzeentch-blue-horrors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "pairs of Brimstone Horrors of Tzeentch",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "pairs of Brimstone Horrors of Tzeentch",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "pairs of Brimstone Horrors of Tzeentch",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
