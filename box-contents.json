@@ -18901,6 +18901,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Fyreslayers Vulkite Berzerkers",
+      "productCodes": [
+        "99120205045"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/fyreslayer-s-vulkite-berzerkers",
+        "https://radaddel.de/products/fyreslayers-vulkite-berzerkers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vulkite Berzerkers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
