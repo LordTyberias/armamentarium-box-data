@@ -8371,6 +8371,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard Poxwalkers",
+      "productCodes": [
+        "99120102115"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/death-guard-poxwalkers-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-43-76",
+        "https://elementgames.co.uk/death-guard-poxwalkers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "7c30-1e92-2faa-eb03",
+              "name": "Poxwalkers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
