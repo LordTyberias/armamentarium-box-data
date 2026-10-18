@@ -3537,6 +3537,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Killteam: Fellgor Ravagers",
+      "productCodes": [
+        "99120102214"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/killteam-fellgor-ravagers",
+        "https://abyssgamestore.ca/products/kill-team-fellgor-ravagers",
+        "https://www.retrofixgames.com/products/kill-team-fellgor-ravagers-1",
+        "https://shop.afk.games/products/kill-team-fellgor-ravagers",
+        "https://mrmuffinstrains.com/products/gw-103-34"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Beastmen",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
