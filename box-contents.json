@@ -24608,6 +24608,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - State Missile Troops",
+      "productCodes": [
+        "99122702009"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-state-missile-troops",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-state-missile-troops",
+        "https://abyssgamestore.ca/products/empire-of-man-state-missile-troops-06-110",
+        "https://shop.afk.games/products/empire-of-man-state-missile-troops",
+        "https://www.goblingaming.co.uk/products/empire-of-man-state-missile-troops",
+        "https://radaddel.de/products/empire-of-man-state-missile-troops"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "State Missile Troops",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
