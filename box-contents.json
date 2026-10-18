@@ -16151,6 +16151,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Leagues of Votann: Einhyr Champion",
+      "productCodes": [
+        "99120118012"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-einhyr-champion",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-einhyr-champion",
+        "https://shop.afk.games/products/leagues-of-votann-einhyr-champion",
+        "https://obsidiangames.ca/products/leagues-of-votann-einhyr-champion",
+        "https://www.goblingaming.co.uk/products/leagues-of-votann-einhyr-champion",
+        "https://mrmuffinstrains.com/products/gw-69-14"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "2cc6-e2bf-635f-1260",
+              "name": "Einhyr Champion",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
