@@ -28793,6 +28793,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Caladius Grav-Tank Annihilator",
+      "productCodes": [
+        "99123043009"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-caladius-grav-tank-annihilator",
+        "https://shop.afk.games/products/legio-custodes-caladius-grav-tank-annihilator"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "dbf0-5211-463c-40ec",
+              "name": "Caladius Annihilator Grav-tank",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Caladius Annihilator Grav-tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
