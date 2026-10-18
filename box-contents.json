@@ -24808,6 +24808,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Battalion",
+      "productCodes": [
+        "99122702018"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-battalion",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-battalion",
+        "https://shop.afk.games/products/empire-of-man-battalion",
+        "https://mrmuffinstrains.com/products/gw-06-120"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Steam Tank",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "State Troops",
+              "count": 30
+            },
+            {
+              "role": "team",
+              "name": "State Missile Troops",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
