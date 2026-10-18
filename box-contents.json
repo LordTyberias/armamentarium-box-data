@@ -21766,6 +21766,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Marshcrawla Sloggoth",
+      "productCodes": [
+        "99120209076"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/marshcrawla-sloggoth",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-marshcrawla-sloggoth",
+        "https://shop.afk.games/products/marshcrawla-sloggoth",
+        "https://obsidiangames.ca/products/orruk-warclans-marshcrawla-sloggoth",
+        "https://www.goblingaming.co.uk/products/orruk-warclans-marshcrawla-sloggoth-age-of-sigmar",
+        "https://mrmuffinstrains.com/products/gw-89-66",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/orruk-warclans-marshcrawla-sloggoth"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Marshcrawla Sloggoth",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
