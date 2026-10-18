@@ -19848,6 +19848,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Lady Annika The Thirsting Blade",
+      "productCodes": [
+        "99120207108"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/lady-annika-the-thirsting-blade",
+        "https://www.goblingaming.co.uk/products/lady-annika-the-thirsting-blade-soulblight-gravelords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lady-annika-the-thirsting-blade"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lady Annika model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
