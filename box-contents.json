@@ -22460,6 +22460,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth: Vanari Dawnriders",
+      "productCodes": [
+        "99120210043"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/lumineth-realm-lords-vanari-dawnriders",
+        "https://www.goblingaming.co.uk/products/vanari-dawnriders-lumineth-realm-lords-age-of-sigmar-99120210043",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-vanari-dawnriders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vanari Dawnriders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
