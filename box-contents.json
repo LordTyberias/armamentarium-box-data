@@ -28217,6 +28217,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Questoris Households - Knight Questoris",
+      "productCodes": [
+        "99123008001"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/questoris-households-knight-questoris",
+        "https://www.goblingaming.co.uk/products/horus-heresy-age-of-darkness-knight-questoris",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/questoris-households-knight-questoris"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "mighty Knight Questoris",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
