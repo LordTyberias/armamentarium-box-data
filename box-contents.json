@@ -13050,6 +13050,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Norn Emissary",
+      "productCodes": [
+        "99120106064"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tyranids-norn-emissary",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranids-norn-emissary",
+        "https://shop.afk.games/products/tyranids-norn-emissary",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-tyranids-norn-emissary"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "5720-2873-8c2c-edc3",
+              "name": "Norn Emissary",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
