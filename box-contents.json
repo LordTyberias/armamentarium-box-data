@@ -26267,6 +26267,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Sky Lantern",
+      "productCodes": [
+        "99122720007"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-sky-lantern",
+        "https://www.irresistibleforce.com.au/products/grand-cathay-sky-lantern",
+        "https://www.goblingaming.co.uk/products/grand-cathay-sky-lantern",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-sky-lantern"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "imposing Sky Lantern",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
