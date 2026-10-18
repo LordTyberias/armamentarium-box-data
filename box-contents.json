@@ -25113,6 +25113,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Dwarf Runesmith",
+      "productCodes": [
+        "99122705001"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-dwarf-runesmith",
+        "https://www.irresistibleforce.com.au/products/dwarf-runesmith",
+        "https://shop.afk.games/products/dwarfen-mountain-holds-dwarf-runesmith",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/dwarfen-mountain-holds-dwarf-runesmith"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Runesmith",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
