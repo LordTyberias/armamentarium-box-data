@@ -25318,6 +25318,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Orc Boyz Mob",
+      "productCodes": [
+        "99122709002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-orc-boyz-mob",
+        "https://www.irresistibleforce.com.au/products/orc-boyz-mob",
+        "https://abyssgamestore.ca/products/orc-and-goblin-tribes-orc-boyz-mob-09-13",
+        "https://shop.afk.games/products/orc-goblin-tribes-orc-boyz-mob",
+        "https://mrmuffinstrains.com/products/gw-09-02",
+        "https://elementgames.co.uk/orc-and-goblin-tribes-orc-boyz-mob",
+        "https://radaddel.de/products/orc-goblin-orc-boyz-mob"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Orc Boyz",
+              "count": 31
+            }
+          ]
+        }
+      ]
     }
   ]
 }
