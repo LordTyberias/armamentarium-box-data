@@ -6521,6 +6521,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Primaris Techmarine",
+      "productCodes": [
+        "99120101278"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-techarine",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-primaris-techmarine",
+        "https://shop.afk.games/products/space-marines-primaris-techmarine",
+        "https://obsidiangames.ca/products/space-marine-techmarine",
+        "https://www.goblingaming.co.uk/products/primaris-techmarine-space-marines-warhammer-40k-99120101278",
+        "https://mrmuffinstrains.com/products/gw-48-39",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/primaris-techmarine"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Primaris Techmarine",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "e671-cd3a-2b03-3954",
+              "name": "Techmarine",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
