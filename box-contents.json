@@ -17787,6 +17787,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Epicurean Revellers",
+      "productCodes": [
+        "99120201255"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-epicurean-revellers",
+        "https://www.goblingaming.co.uk/products/spearhead-epicurean-revellers",
+        "https://mrmuffinstrains.com/products/gw-70-834",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-epicurean-revellers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Thricefold Discord miniatures",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Fiends",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Daemonettes",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Seekers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
