@@ -26338,6 +26338,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Grand Cathay Astromancers of the Celestial Court",
+      "productCodes": [
+        "99122720010"
+      ],
+      "sources": [
+        "https://tistaminis.com/products/grand-cathay-astromancers-of-the-celestial-court",
+        "https://www.goblingaming.co.uk/products/grand-cathay-astromancers-of-the-celestial-court"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Astromancers",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
