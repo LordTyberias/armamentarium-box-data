@@ -6444,6 +6444,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Primaris Invader ATV",
+      "productCodes": [
+        "99120101271"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-invader-atv",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-primaris-invader-atv",
+        "https://shop.afk.games/products/space-marines-primaris-invader-atv",
+        "https://obsidiangames.ca/products/space-marines-primaris-invader-atv",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-invader-atv"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Invader ATV",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
