@@ -28341,6 +28341,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Arvus Lighter",
+      "productCodes": [
+        "99123008007"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-arvus-lighter",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-arvus-lighter",
+        "https://shop.afk.games/products/horus-heresy-arvus-lighter",
+        "https://www.goblingaming.co.uk/products/horus-heresy-arvus-lighter"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "b42c-4380-99ba-1a9e",
+              "name": "Arvus Lighter",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
