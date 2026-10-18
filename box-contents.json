@@ -15857,6 +15857,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Neophyte Hybrids",
+      "productCodes": [
+        "99120117020"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/genestealer-cults-neophyte-hybrids",
+        "https://abyssgamestore.ca/products/genestealer-cults-neophyte-hybrids-51-52",
+        "https://shop.afk.games/products/genestealer-cults-neophyte-hybrids",
+        "https://mrmuffinstrains.com/products/gw-51-52",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/genestealer-cults-neophyte-hybrids"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Genestealer Cult Neophyte Hybrids",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
