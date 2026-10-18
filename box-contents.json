@@ -20604,6 +20604,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Ossiarch Bonereapers",
+      "productCodes": [
+        "99120207185"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/vanguard-ossiarch-bonereapers",
+        "https://radaddel.de/products/ossiarch-bonereapers-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mortisan Soulreaper",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Gothizzar Harvester",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Kavalos Deathriders",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Mortek Guard",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
