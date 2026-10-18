@@ -13825,6 +13825,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Custodes: Vertus Praetors",
+      "productCodes": [
+        "99120108078"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-custodes-vertus-praetors",
+        "https://shop.afk.games/products/adeptus-custodes-vertus-praetors",
+        "https://obsidiangames.ca/products/adeptus-custodes-vertus-praetors",
+        "https://www.goblingaming.co.uk/products/vertus-praetors",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/adeptus-custodes-vertus-praetors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "918b-c9ed-7af7-74df",
+              "name": "Vertus Praetors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "b61c-b815-65c0-b1cc",
+              "name": "Shield-Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
