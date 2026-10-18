@@ -53,6 +53,11 @@ public sealed class RunnerTests
 
         private string _table = Table;
 
+        public string Text
+        {
+            init => _table = value;
+        }
+
         public Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken) =>
             Task.FromResult((_table, $"sha{Merged.Count}"));
 
@@ -247,6 +252,109 @@ public sealed class RunnerTests
         StringAssert.Contains(table, "\"entryId\": \"se-boarders\"");
         StringAssert.Contains(table, "\"count\": 10");
         Assert.IsFalse(table.Contains("Navy Sergeant", StringComparison.Ordinal));
+    }
+
+    // The known box with a Seer whose ids name an entry the catalogue no longer has at its root.
+    private static readonly string OrphanTable = Table.Replace(
+        "\"role\": \"team\",", "\"role\": \"team\",\n              \"catalogueId\": \"cat-blades\",\n              \"entryId\": \"se-gone\",");
+
+    private static CatalogueIndex Blades()
+    {
+        var catalogues = new CatalogueIndex();
+        catalogues.AddCatalogue("kt", "Blades.cat", System.Text.Encoding.UTF8.GetBytes(
+            """<catalogue id="cat-blades" name="Blades" library="false"><selectionEntries><selectionEntry type="model" id="se-guard" name="Blade Guard"/></selectionEntries></catalogue>"""));
+        return catalogues;
+    }
+
+    [TestMethod]
+    public async Task Run_OrphanedId_OpensADraftThatIsNeverMerged()
+    {
+        var (repo, _, log) = await Run(
+            [], [], new FakeRepository { Text = OrphanTable }, autoMerge: true, catalogues: Blades());
+
+        var proposal = repo.Proposals.Single();
+        Assert.AreEqual(Runner.StaleIdsBranch, proposal.Branch);
+        Assert.IsTrue(proposal.Draft);
+        Assert.AreEqual(0, repo.Merged.Count);
+        Assert.IsFalse(proposal.Table.Contains("se-gone", StringComparison.Ordinal));
+        StringAssert.Contains(proposal.Table, "\"name\": \"Seer\"");
+        Assert.IsTrue(log.Any(l => l.Contains("se-gone", StringComparison.Ordinal) && l.Contains("orphaned", StringComparison.Ordinal)));
+        Assert.IsTrue(log.Any(l => l.StartsWith("id check: 1 pair(s), 0 valid, 1 orphaned", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_OrphanedIdWithItsDraftOpen_ProposesNothingAgain()
+    {
+        var (repo, _, log) = await Run(
+            [], [], new FakeRepository(Runner.StaleIdsBranch) { Text = OrphanTable }, catalogues: Blades());
+
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsTrue(log.Any(l => l.Contains("already open", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_FiveOpen_StillChecksButOpensNoDraft()
+    {
+        var open = Enumerable.Range(1, Runner.MaxOpen).Select(i => $"scraper/6001019900{i}").ToArray();
+        var (repo, _, log) = await Run(
+            [P("60010199009", "5011921000009")], TwoShops(new Line(5, "Blade Guards", false, false)),
+            new FakeRepository(open) { Text = OrphanTable }, catalogues: Blades());
+
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsTrue(log.Any(l => l.Contains("no slot", StringComparison.Ordinal)));
+        Assert.IsTrue(log.Any(l => l.Contains("nothing to do", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_LeftoverStaleIdsBranch_IsDeletedAndTheDraftProposedOnce()
+    {
+        var failed = false;
+        var repo = new FakeRepository
+        {
+            Text = OrphanTable,
+            Fail = p => p.Branch == Runner.StaleIdsBranch && !failed && (failed = true) ? new GitHubException("answered 422") : null,
+        };
+
+        var (_, _, log) = await Run([], [], repo, catalogues: Blades());
+
+        Assert.AreEqual(Runner.StaleIdsBranch, repo.Proposals.Single().Branch);
+        Assert.IsTrue(log.Any(l => l.Contains("deleting a leftover branch", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_StaleIdsDraftFailingTwice_IsLoggedAndTheRunGoesOn()
+    {
+        var repo = new FakeRepository
+        {
+            Text = OrphanTable,
+            Fail = p => p.Branch == Runner.StaleIdsBranch ? new GitHubException("answered 403") : null,
+        };
+
+        var (_, _, log) = await Run(
+            [P("60010199009", "5011921000009")], TwoShops(new Line(5, "Blade Guards", false, false)), repo, catalogues: Blades());
+
+        Assert.IsTrue(log.Any(l => l == $"{Runner.StaleIdsBranch} not proposed: answered 403"));
+        Assert.AreEqual("scraper/60010199009", repo.Proposals.Single().Branch);
+    }
+
+    [TestMethod]
+    public async Task Run_RenamedId_IsReportedAndProposesNothing()
+    {
+        var (repo, _, log) = await Run(
+            [], [], new FakeRepository { Text = OrphanTable.Replace("se-gone", "se-guard") }, catalogues: Blades());
+
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsTrue(log.Any(l => l.Contains("se-guard renamed", StringComparison.Ordinal)));
+        Assert.IsTrue(log.Any(l => l.StartsWith("id check: 1 pair(s), 0 valid, 0 orphaned, 1 renamed", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_NoOrphanedId_ProposesNothingForTheCheck()
+    {
+        var (repo, _, log) = await Run([], [], catalogues: Blades());
+
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsTrue(log.Any(l => l.StartsWith("id check: 0 pair(s)", StringComparison.Ordinal)));
     }
 
     [TestMethod]

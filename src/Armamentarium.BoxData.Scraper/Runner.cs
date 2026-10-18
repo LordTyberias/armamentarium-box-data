@@ -8,7 +8,8 @@ namespace Armamentarium.BoxData.Scraper;
 /// shops confirm becomes a draft box, or new article numbers of a box already in the table. With <c>autoMerge</c> each
 /// pull request is merged at once and the next one is built on the merged table (ADR 0004); entries get the ids of the
 /// one root entry their name names in <c>catalogues</c>. A product a shop did not answer is asked once more at the end of
-/// the run (ADR 0003 Addendum ARMAM-595).
+/// the run (ADR 0003 Addendum ARMAM-595). Before all that, each run holds the ids the table already carries against
+/// <c>catalogues</c> and may open one draft <see cref="StaleIdsBranch"/> that it never merges (ADR 0004 Addendum ARMAM-597).
 /// </summary>
 public sealed class Runner(
     IRepository repository,
@@ -22,17 +23,27 @@ public sealed class Runner(
 {
     public const int MaxOpen = 5;
 
+    /// <summary>The one branch of the draft that removes orphaned ids (ADR 0004 Addendum ARMAM-597).</summary>
+    public const string StaleIdsBranch = GitHubRepository.BranchPrefix + "stale-ids";
+
     public async Task RunAsync(
         IReadOnlyList<Product> products, DateTimeOffset now, CancellationToken cancellationToken, string? onlyCode = null)
     {
         var open = new HashSet<string>(await repository.OpenScraperBranchesAsync(cancellationToken), StringComparer.Ordinal);
+        var (text, sha) = await repository.GetTableAsync(cancellationToken);
+
+        // First, so a run stopped later has still checked; with five open it only reports (ADR 0004 Addendum ARMAM-597).
+        if (catalogues is not null)
+        {
+            await CheckIdsAsync(catalogues, open, text, sha, cancellationToken);
+        }
+
         if (open.Count >= MaxOpen)
         {
             log($"{open.Count} scraper pull requests are open; nothing to do");
             return;
         }
 
-        var (text, sha) = await repository.GetTableAsync(cancellationToken);
         var run = new RunState(
             open,
             products.Where(p => p.Ean is not null)
@@ -170,6 +181,82 @@ public sealed class Runner(
 
         (run.Text, run.Sha) = await repository.GetTableAsync(cancellationToken);
         return Outcome.Answered;
+    }
+
+    // The ids the table holds against this run's catalogues: each orphaned or renamed pair in the journal, a summary, and for
+    // orphaned pairs a draft that leaves those entries as gaps. Never merged, with or without --auto-merge: the maintainer's
+    // merge is the hand check (ADR 0004 Addendum ARMAM-597). A renamed pair is only reported.
+    private async Task CheckIdsAsync(
+        CatalogueIndex index, HashSet<string> open, string text, string sha, CancellationToken cancellationToken)
+    {
+        var table = Table.Read(text);
+        var findings = IdCheck.Findings(table, index);
+        var orphaned = findings.Where(f => f.State == IdState.Orphaned).ToList();
+        foreach (var finding in findings.Where(f => f.State is IdState.Orphaned or IdState.Renamed))
+        {
+            log($"id check: {Text.Clean(finding.Box)}, {finding.Reading}, {Text.Clean(finding.Name)}: " +
+                $"{Text.Clean(finding.Ids.CatalogueId)} {Text.Clean(finding.Ids.EntryId)} {(finding.State == IdState.Orphaned ? "orphaned" : "renamed")}");
+        }
+
+        var notChecked = findings.Where(f => f.State == IdState.Unchecked).Select(f => f.Reading).Distinct().Order(StringComparer.Ordinal).ToList();
+        log($"id check: {findings.Count} pair(s), {findings.Count(f => f.State == IdState.Valid)} valid, {orphaned.Count} orphaned, " +
+            $"{findings.Count(f => f.State == IdState.Renamed)} renamed; unchecked: {(notChecked.Count > 0 ? string.Join(", ", notChecked) : "none")}");
+        if (orphaned.Count == 0)
+        {
+            return;
+        }
+
+        if (open.Contains(StaleIdsBranch))
+        {
+            log($"{StaleIdsBranch} is already open; skipped");
+            return;
+        }
+
+        if (open.Count >= MaxOpen)
+        {
+            log($"{open.Count} scraper pull requests are open; no slot for {StaleIdsBranch}");
+            return;
+        }
+
+        IdCheck.RemoveOrphans(table, index);
+        var body = new StringBuilder()
+            .AppendLine("From the scraper service (ADR 0004 Addendum ARMAM-597): these ids name no root entry of their reading in")
+            .AppendLine("this run's catalogues any more. The entries keep name and count and become gaps; a choice left with fewer")
+            .AppendLine("than two options becomes a gap as a whole, its remaining ids go with it. Never merged by the service, also")
+            .AppendLine("with `--auto-merge`: the merge is the hand check.")
+            .AppendLine()
+            .AppendLine("| Box | Reading | Entry | Ids |")
+            .AppendLine("|---|---|---|---|");
+        foreach (var finding in orphaned)
+        {
+            body.AppendLine($"| {Text.Code(finding.Box)} | {finding.Reading} | {Text.Code(finding.Name)} | " +
+                $"{Text.Code(finding.Ids.CatalogueId)} {Text.Code(finding.Ids.EntryId)} |");
+        }
+
+        var proposal = new Proposal(StaleIdsBranch, "data: remove orphaned catalogue ids", body.ToString(), Table.Write(table), Draft: true);
+        try
+        {
+            await repository.ProposeAsync(proposal, sha, cancellationToken);
+        }
+        catch (GitHubException first)
+        {
+            // No pull request of this branch is open, so a branch of its name is left from a draft merged or closed without
+            // deleting it; the one fixed name would otherwise fail every later run. Deleted once, then asked again.
+            log($"{StaleIdsBranch} not proposed: {first.Message}; deleting a leftover branch and trying once more");
+            try
+            {
+                await repository.DeleteBranchAsync(StaleIdsBranch, cancellationToken);
+                await repository.ProposeAsync(proposal, sha, cancellationToken);
+            }
+            catch (GitHubException ex)
+            {
+                log($"{StaleIdsBranch} not proposed: {ex.Message}");
+                return;
+            }
+        }
+
+        open.Add(StaleIdsBranch);
+        log($"proposed {StaleIdsBranch}: {orphaned.Count} orphaned pair(s)");
     }
 
     private void Retry(string code, DateTimeOffset now)

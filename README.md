@@ -121,3 +121,7 @@ opens pull requests for boxes it finds in allowlisted shops, one per box: articl
 confirmed by two sources. Until the table is filled it runs with `--auto-merge`: it sets the ids of exactly one name hit
 in the catalogues of the reading and merges each pull request itself, unchecked. Without the switch it opens drafts
 without ids, and the maintainer adds ids, readings and catalogue names and checks the preset roles before merging.
+Every run, with or without the switch, it also checks the ids the table holds against the current catalogues: an id that
+names no root entry of its reading any more goes into one draft (`scraper/stale-ids`) that leaves the entry a name and a
+count; the service never merges that draft. An id under a changed name is only reported
+(`docs/adr/0004-auto-merge-and-ids-by-name.md`, Addendum ARMAM-597).
