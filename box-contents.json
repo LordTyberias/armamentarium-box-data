@@ -15268,6 +15268,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: T'Au Empire - Broadside Battlesuit",
+      "productCodes": [
+        "99120113082"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-tau-empire-broadside-battlesuit",
+        "https://www.irresistibleforce.com.au/products/tau-empire-xv88-broadside-battlesuit",
+        "https://abyssgamestore.ca/products/tau-empire-xv88-broadside-battlesuit-56-15",
+        "https://www.retrofixgames.com/products/warhammer-40k-xv88-broadside-battlesuit",
+        "https://shop.afk.games/products/tau-empire-xv88-broadside-battlesuit",
+        "https://www.goblingaming.co.uk/products/tau-empire-xv88-broadside-battlesuit",
+        "https://mrmuffinstrains.com/products/gw-56-15",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/xv88-broadside-battlesuit"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "a594-317-b90a-a226",
+              "name": "Broadside Battlesuit",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Drones",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
