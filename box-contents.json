@@ -12522,6 +12522,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Death Riders",
+      "productCodes": [
+        "99120105128"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-death-riders",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-death-riders",
+        "https://shop.afk.games/products/astra-militarum-death-riders",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-death-riders",
+        "https://radaddel.de/products/astra-militarum-death-riders"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Death Riders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
