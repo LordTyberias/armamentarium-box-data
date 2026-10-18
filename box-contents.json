@@ -6009,6 +6009,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm-Lords: Scinari Enlightener",
+      "productCodes": [
+        "99070210007"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/lumineth-realm-lords-scinari-enlightener",
+        "https://shop.afk.games/products/lumineth-scinari-enlightener",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-lumineth-scinari-enlightener-games-workshop"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "c36-bd13-c06d-5fe",
+              "name": "Scinari Enlightener",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
