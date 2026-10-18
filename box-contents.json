@@ -22588,6 +22588,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth: Lyrior Uthralle",
+      "productCodes": [
+        "99120210053"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/lyrior-uthralle",
+        "https://www.goblingaming.co.uk/products/lyrior-uthralle-lumineth-realm-lords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-lyrior-uthralle"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lyrior Uthralle",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
