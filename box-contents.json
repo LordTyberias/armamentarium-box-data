@@ -15213,6 +15213,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: T'Au Empire - Commander",
+      "productCodes": [
+        "99120113079"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-tau-empire-commander",
+        "https://www.irresistibleforce.com.au/products/tau-empire-commander",
+        "https://abyssgamestore.ca/products/tau-empire-commander-56-22",
+        "https://shop.afk.games/products/tau-empire-commander",
+        "https://obsidiangames.ca/products/tau-empire-commander",
+        "https://mrmuffinstrains.com/products/gw-56-22",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-commander"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "T'au Commander",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
