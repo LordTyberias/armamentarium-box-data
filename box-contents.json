@@ -15484,6 +15484,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Kroot (73-562)",
+      "productCodes": [
+        "99120113100"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-kroot-73-562",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-kroot",
+        "https://mrmuffinstrains.com/products/gw-73-562"
+      ],
+      "generation": "current"
     }
   ]
 }
