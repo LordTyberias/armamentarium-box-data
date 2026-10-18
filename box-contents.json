@@ -9171,6 +9171,83 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Chaos Space Marines - Terminators",
+      "productCodes": [
+        "99120102171"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-chaos-space-marines-terminators",
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chaos-terminator-squad",
+        "https://abyssgamestore.ca/products/chaos-space-marines-terminators-43-19",
+        "https://shop.afk.games/products/chaos-space-marine-terminators",
+        "https://obsidiangames.ca/products/chaos-space-marines-terminators",
+        "https://mrmuffinstrains.com/products/gw-43-19",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marine-terminators-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Terminators",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "chain axe",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "chainfist",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "power sword",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "power axe",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "power maul",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "power fists",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "lightning claws",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "heavy flamer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "reaper autocannon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "combi-weapons",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
