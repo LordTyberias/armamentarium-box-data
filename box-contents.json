@@ -8098,6 +8098,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Execrator",
+      "productCodes": [
+        "99120101443"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-execrator",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-execrator",
+        "https://shop.afk.games/products/black-templars-execrator",
+        "https://obsidiangames.ca/products/execrator",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/black-templars-5069/black-templars-execrator"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "36d3-36bc-68dd-40ac",
+              "entryId": "ea3d-f2b8-cce7-0762",
+              "name": "Execrator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
