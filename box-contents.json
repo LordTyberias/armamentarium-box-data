@@ -4055,6 +4055,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Death Korps",
+      "productCodes": [
+        "99120105134"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-death-korps",
+        "https://www.retrofixgames.com/products/kill-team-death-korps"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Death Korps of Krieg",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
