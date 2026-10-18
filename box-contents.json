@@ -25162,6 +25162,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Dwarf Quarrellers",
+      "productCodes": [
+        "99122705003"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-dwarf-quarrellers",
+        "https://www.irresistibleforce.com.au/products/dwarf-quarrellers",
+        "https://shop.afk.games/products/dwarfen-mountain-holds-dwarf-quarrellers",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/dwarfen-mountain-holds-dwarf-quarrellers",
+        "https://radaddel.de/products/mountain-holds-dwarf-quarrellers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Quarrellers",
+              "count": 36
+            }
+          ]
+        }
+      ]
     }
   ]
 }
