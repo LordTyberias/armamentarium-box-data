@@ -22437,6 +22437,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth: The Light Of Eltharion",
+      "productCodes": [
+        "99120210040"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/lumineth-r-lords-the-light-of-eltharion",
+        "https://www.goblingaming.co.uk/products/the-light-of-eltharion-lumineth-realm-lords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-the-light-of-eltharion"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Light of Eltharion miniature",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
