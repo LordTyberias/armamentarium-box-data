@@ -9551,6 +9551,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Emperors Children: Noise Marines",
+      "productCodes": [
+        "99120102204"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/emperors-children-noise-marines",
+        "https://abyssgamestore.ca/products/emperor-s-children-noise-marines-37-10",
+        "https://www.retrofixgames.com/products/warhammer-40k-emperors-children-noise-marines",
+        "https://obsidiangames.ca/products/noise-marines",
+        "https://www.goblingaming.co.uk/products/emperors-children-noise-marines",
+        "https://radaddel.de/products/emperors-children-noise-marines"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Noise Marines",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
