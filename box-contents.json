@@ -7361,6 +7361,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Desolation Squad",
+      "productCodes": [
+        "99120101377"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-desolation-squad",
+        "https://abyssgamestore.ca/products/space-marines-desolation-squad-48-74",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-desolation-squad",
+        "https://shop.afk.games/products/space-marines-desolation-squad",
+        "https://obsidiangames.ca/products/space-marines-desolation-squad",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-desolation-squad",
+        "https://radaddel.de/products/space-marines-desolation-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Desolation Marines",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
