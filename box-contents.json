@@ -9844,6 +9844,63 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Chaos Space Marines Huron Blackheart",
+      "productCodes": [
+        "99120102225"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-huron-blackheart",
+        "https://shop.afk.games/products/chaos-space-marines-huron-blackheart",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-huron-blackheart",
+        "https://mrmuffinstrains.com/products/gw-43-110",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-huron-blackheart"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "d9e3-8baf-128f-6389",
+              "name": "Huron Blackheart",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Garreon the Corpsemaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Katar Garrix",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Garlon Souleater",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Captain Sargotta",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "The Enforcer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Plunder",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
