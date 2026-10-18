@@ -8396,6 +8396,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard: Lord of Virulence",
+      "productCodes": [
+        "99120102117"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/death-guard-lord-of-virulence",
+        "https://shop.afk.games/products/lord-of-virulence",
+        "https://obsidiangames.ca/products/death-guard-lord-of-virulence",
+        "https://www.goblingaming.co.uk/products/death-guard-lord-of-virulence-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-43-77",
+        "https://elementgames.co.uk/death-guard-lord-of-virulence"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "c15c-2b5a-dcab-7627",
+              "name": "Lord of Virulence",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
