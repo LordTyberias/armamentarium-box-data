@@ -10962,6 +10962,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Orks Kommandos",
+      "productCodes": [
+        "99120103127"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-kommandos",
+        "https://obsidiangames.ca/products/kill-team-kommandos-1",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-kommandos-new"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "303-267f-e45c-6aa9",
+              "name": "Kommandos",
+              "countCandidates": [
+                9,
+                10,
+                12
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
