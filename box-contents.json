@@ -4010,6 +4010,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team Blooded",
+      "productCodes": [
+        "99120102213"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/kill-team-blooded-1",
+        "https://obsidiangames.ca/products/kill-team-blooded"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Traitor Guard",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
