@@ -25059,6 +25059,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Wood Elf Realms - Glade Guard",
+      "productCodes": [
+        "99122704003"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-wood-elf-realms-glade-guard",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-glade-guard",
+        "https://abyssgamestore.ca/products/wood-elf-realms-glade-guard-13-12",
+        "https://shop.afk.games/products/wood-elf-realms-glade-guard",
+        "https://www.goblingaming.co.uk/products/wood-elf-realms-glade-guard",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/wood-elf-realms-glade-guard",
+        "https://radaddel.de/products/wood-elf-realms-glade-guard"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Glade Guard",
+              "count": 32
+            }
+          ]
+        }
+      ]
     }
   ]
 }
