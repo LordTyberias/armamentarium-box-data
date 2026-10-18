@@ -23932,6 +23932,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Vanguard-Raptors",
+      "productCodes": [
+        "99120218067"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/vanguard-raptors-with-hurricane-crossbows-aetherwings",
+        "https://abyssgamestore.ca/products/stormcast-eternals-vanguard-raptors-with-longstrike-hurricane-96-30",
+        "https://shop.afk.games/products/stormcast-eternals-vanguard-raptors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vanguard-Raptors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
