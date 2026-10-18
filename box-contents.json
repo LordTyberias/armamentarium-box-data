@@ -8646,6 +8646,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Thousand Sons: Exalted Sorcerers",
+      "productCodes": [
+        "99120102134"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/thousand-sons-exalted-sorcerers",
+        "https://abyssgamestore.ca/products/thousand-sons-exalted-sorcerers-43-39",
+        "https://www.retrofixgames.com/products/warhammer-40k-thousand-sons-exalted-sorcerers",
+        "https://shop.afk.games/products/thousand-sons-exalted-sorcerers",
+        "https://obsidiangames.ca/products/thousand-sons-exalted-sorcerors",
+        "https://www.goblingaming.co.uk/products/thousand-sons-exalted-sorcerers-43027229",
+        "https://mrmuffinstrains.com/products/gw-43-39",
+        "https://elementgames.co.uk/thousand-sons-exalted-sorcerers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "c3a6-8fab-45f0-2d45",
+              "name": "Exalted Sorcerers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
