@@ -14731,6 +14731,51 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons Royal Court",
+      "productCodes": [
+        "99120110072"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/necrons-royal-court",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-royal-court"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "c401-d95f-c5ce-7738",
+              "name": "Skorpekh Lord",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "7c45-2aab-7526-febe",
+              "name": "Canoptek Reanimator",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "84bc-87b1-1eec-f574",
+              "name": "Plasmancer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "ef7a-c413-c779-2d18",
+              "name": "Cryptothralls",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
