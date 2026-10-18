@@ -29537,6 +29537,30 @@
         "https://obsidiangames.ca/products/combat-patrol-grey-knights"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Warhammer 40K Nemesis Dreadknight",
+      "productCodes": [
+        "99120107017"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-nemesis-dreadknight",
+        "https://shop.afk.games/products/grey-knights-nemesis-dreadknight"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "50c4-3e83-fe54-97c4",
+              "entryId": "5458-a458-c51d-c4e9",
+              "name": "Nemesis Dreadknight",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
