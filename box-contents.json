@@ -7110,6 +7110,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Sword Brethren",
+      "productCodes": [
+        "99120101357"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-sword-brethren",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-sword-brethren",
+        "https://shop.afk.games/products/black-templars-sword-brethren",
+        "https://obsidiangames.ca/products/black-templars-sword-brethren",
+        "https://www.goblingaming.co.uk/products/sword-brethren-black-templars-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-55-43",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/black-templars-sword-brethren",
+        "https://radaddel.de/products/black-templars-sword-brethren-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sword Brethren",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
