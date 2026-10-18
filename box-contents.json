@@ -7668,6 +7668,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Space Marines - Dark Angels - Deathwing Knights",
+      "productCodes": [
+        "99120101405"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-dark-angels-deathwing-knights",
+        "https://www.irresistibleforce.com.au/products/dark-angels-deathwing-knights",
+        "https://abyssgamestore.ca/products/dark-angels-deathwing-knights-44-22",
+        "https://www.retrofixgames.com/products/warhammer-40k-dark-angels-deathwing-knights",
+        "https://shop.afk.games/products/dark-angels-deathwing-knights",
+        "https://mrmuffinstrains.com/products/gw-44-22",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/grey-knights/dark-angels-deathwing-knights",
+        "https://radaddel.de/products/dark-angels-deathwing-knights"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "470a-6daa-9014-12df",
+              "entryId": "a6cc-9a65-dbf1-71b0",
+              "name": "Deathwing Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
