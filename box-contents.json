@@ -7087,6 +7087,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Fenrisian Wolf Pack",
+      "productCodes": [
+        "99120101352"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-fenrisian-wolf-pack",
+        "https://abyssgamestore.ca/products/space-wolves-fenrisian-wolves-53-10",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-fenrisian-wolves"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "plastic Fenrisian Wolves",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
