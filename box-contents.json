@@ -22707,6 +22707,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm-Lords: Vanari Auralan Wardens",
+      "productCodes": [
+        "99120210060"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/lumineth-realm-lords-vanari-auralan-wardens",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-lumineth-realm-lords-vanari-auralan-wardens",
+        "https://obsidiangames.ca/products/lumineth-realm-lords-vanari-auralan-wardens",
+        "https://www.goblingaming.co.uk/products/vanari-auralan-wardens-lumineth-realm-lords",
+        "https://mrmuffinstrains.com/products/gw-87-59",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-vanari-auralan-wardens"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Auralan Wardens in",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Auralan Wardens",
+              "countCandidates": [
+                1,
+                10
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
