@@ -18801,6 +18801,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Strongroot Grove",
+      "productCodes": [
+        "99120204056"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-strongroot-grove",
+        "https://www.retrofixgames.com/products/age-of-sigmar-sylvaneth-strongroot-grove",
+        "https://www.goblingaming.co.uk/products/sylvaneth-strongroot-grove",
+        "https://mrmuffinstrains.com/products/gw-92-32",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/sylvaneth-strongroot-grove",
+        "https://radaddel.de/products/sylvaneth-strongroot-grove-battleforce"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Spirit of Durthu",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Treelord",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Treelord Ancient",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::03-kurnoth-hunters",
+              "name": "Kurnoth Hunters",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
