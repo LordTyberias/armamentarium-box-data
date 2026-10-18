@@ -24171,6 +24171,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Idoneth Deepkin Akhelian Tide Guard",
+      "productCodes": [
+        "99120219024"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-idoneth-deepkin-akhelian-tide-guard",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-idoneth-deepkin-akhelain-tide-guard",
+        "https://shop.afk.games/products/spearhead-idoneth-deepkin-akhelian-tide-guard",
+        "https://obsidiangames.ca/products/spearhead-idoneth-deepkin-akhelian-tide-guard",
+        "https://www.goblingaming.co.uk/products/spearhead-idoneth-deepkin-akhelian-tide-guard",
+        "https://mrmuffinstrains.com/products/gw-70-873",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/idoneth-deepkin/spearhead-idoneth-deepkin-akhelian-tide-guard",
+        "https://radaddel.de/products/idoneth-deepkin-spearhead-akhelian-tide-guard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Akhelian King",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Akhelian Ishlaen Guard",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Akhelian Morrsarr Guard",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Namarti Reavers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
