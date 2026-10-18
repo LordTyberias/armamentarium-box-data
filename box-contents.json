@@ -10895,6 +10895,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Big Mek",
+      "productCodes": [
+        "99120103120"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-big-mek",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-big-mek",
+        "https://shop.afk.games/products/orks-big-mek",
+        "https://obsidiangames.ca/products/orks-big-mek",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-orks-big-mek-2024"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "fbee-427a-1c46-f621",
+              "name": "Big Mek",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
