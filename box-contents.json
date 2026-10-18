@@ -23907,6 +23907,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Gryph-hounds",
+      "productCodes": [
+        "99120218066"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/gryph-hounds",
+        "https://abyssgamestore.ca/products/stormcast-eternals-gryph-hounds-96-31",
+        "https://shop.afk.games/products/stormcast-eternals-gryph-hounds",
+        "https://www.goblingaming.co.uk/products/stormcast-eternals-gryph-hounds",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/stormcast-eternals-gryph-hounds"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gryph-hounds",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
