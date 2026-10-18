@@ -7138,6 +7138,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blood Angels: Mephiston Lord Of Death",
+      "productCodes": [
+        "99120101358"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blood-angels-mephiston-lord-of-death",
+        "https://shop.afk.games/products/blood-angels-mephiston",
+        "https://mrmuffinstrains.com/products/gw-41-39",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/blood-angels-mephiston-lord-of-death"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mephiston",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
