@@ -13859,6 +13859,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Imperial Knights - Knight Armigers",
+      "productCodes": [
+        "99120108080"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-imperial-knights-knight-armigers",
+        "https://www.irresistibleforce.com.au/products/imperial-knights-knight-armigers",
+        "https://abyssgamestore.ca/products/imperial-knights-knight-armigers-54-20",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-knights-knight-armigers",
+        "https://shop.afk.games/products/imperial-knights-knight-armigers",
+        "https://radaddel.de/products/imperial-knights-knight-armigers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Armiger-class Knights",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
