@@ -14536,6 +14536,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Tomb Blades",
+      "productCodes": [
+        "99120110059"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-tomb-blades",
+        "https://abyssgamestore.ca/products/necron-tomb-blades-49-13",
+        "https://www.retrofixgames.com/products/warhammer-40k-necron-tomb-blades",
+        "https://shop.afk.games/products/necrons-tomb-blades",
+        "https://www.goblingaming.co.uk/products/necron-tomb-blades",
+        "https://mrmuffinstrains.com/products/gw-49-13",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-tomb-blades"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Tomb Blades",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
