@@ -225,7 +225,7 @@ public sealed class Runner(
             }
             catch (FetchFailedException ex)
             {
-                // The shop did not answer; the fetcher has logged it.
+                // The shop did not answer; the fetcher has logged it (a wait for Retry-After once per wait).
                 return (Listing: null, Failed: true, Retryable: ex.CanRetryInRun);
             }
             catch (Exception ex) when (ex is not OperationCanceledException || !cancellationToken.IsCancellationRequested)

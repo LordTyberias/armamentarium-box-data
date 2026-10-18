@@ -23,7 +23,8 @@ public sealed class Fetcher : IFetcher, IDisposable
     public const int StretchAfter = 3;
 
     // Every product waits for its slowest fast host; at ten seconds a Shopify product (two requests) takes 20 s and a pass
-    // over the whole backlog about 19 hours, inside the unit's 20 (ADR 0003 Addendum ARMAM-595).
+    // over the whole backlog about 19 hours; the catch-up can add about five, past the unit's 20, where the run stops and
+    // the next one goes on from the saved state (ADR 0003 Addendum ARMAM-595).
     public static readonly TimeSpan MaxStretchedInterval = TimeSpan.FromSeconds(10);
 
     public static readonly TimeSpan MaxRetryAfter = TimeSpan.FromMinutes(10);
@@ -107,7 +108,14 @@ public sealed class Fetcher : IFetcher, IDisposable
         // The shop asked for the wait; the product is asked again at the end of the run instead of holding every other.
         if (gate.NotBefore is { } notBefore && notBefore > DateTimeOffset.UtcNow)
         {
-            throw new FetchFailedException($"{uri.Host} asked to wait until {notBefore:u}");
+            var waiting = $"{uri.Host} asked to wait until {notBefore:u}; requests fail at once until then";
+            if (!gate.WaitLogged)
+            {
+                gate.WaitLogged = true;
+                _log(waiting);
+            }
+
+            throw new FetchFailedException(waiting);
         }
 
         try
@@ -200,6 +208,7 @@ public sealed class Fetcher : IFetcher, IDisposable
             }
 
             gate.NotBefore = now + wait.Value;
+            gate.WaitLogged = false;
         }
 
         if (gate.Throttles >= StretchAfter && Stretch(gate.Interval) is var stretched && stretched != gate.Interval)
@@ -259,5 +268,8 @@ public sealed class Fetcher : IFetcher, IDisposable
         public int RetryAfterSeen { get; set; }
 
         public DateTimeOffset? NotBefore { get; set; }
+
+        // The first request refused inside a wait says so in the journal, the others of the same wait do not.
+        public bool WaitLogged { get; set; }
     }
 }

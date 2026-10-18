@@ -211,15 +211,18 @@ public sealed class FetcherTests
     [TestMethod]
     public async Task Get_TooManyRequestsWithRetryAfter_LeavesTheHostAloneUntilThen()
     {
+        var log = new List<string>();
         var handler = new Answers(_ => Throttled(new RetryConditionHeaderValue(TimeSpan.FromSeconds(120))));
-        using var fetcher = Make(handler);
+        using var fetcher = Make(handler, log);
 
         var first = await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
         var second = await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
+        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/c", default));
 
         Assert.AreEqual(1, handler.Requested.Count);
         Assert.IsTrue(first.CanRetryInRun);
         Assert.IsTrue(second.CanRetryInRun);
+        Assert.AreEqual(1, log.Count(l => l.Contains("asked to wait until", StringComparison.Ordinal)));
     }
 
     [TestMethod]
@@ -314,11 +317,10 @@ public sealed class FetcherTests
     [TestMethod]
     public async Task Summary_NamesEachThrottledHostWithItsCountsAndInterval()
     {
-        var answers = new Queue<HttpResponseMessage>([Throttled(new RetryConditionHeaderValue(TimeSpan.FromSeconds(1))), Throttled()]);
+        var answers = new Queue<HttpResponseMessage>([Throttled(), Throttled(new RetryConditionHeaderValue(TimeSpan.FromSeconds(60)))]);
         using var fetcher = Make(new Answers(_ => answers.Dequeue()));
 
         await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
-        await Task.Delay(TimeSpan.FromSeconds(1.2));
         await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
 
         var line = fetcher.Summary().Single();

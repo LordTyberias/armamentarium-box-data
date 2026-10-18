@@ -164,9 +164,11 @@ The table grows only by hand so far. Measured on 2026-10-17:
 - **Stretched interval** (§6): from a host's third 429 in a run on, its interval is doubled up to ten seconds and stays so
   for the run; a longer interval (miniset.net) is never shortened, other hosts are untouched. Every product waits for its
   slowest fast host, so ten seconds is the cap: a Shopify product (two requests) takes 20 s and a pass over the whole
-  backlog about 19 hours, inside the unit's 20.
+  backlog about 19 hours, inside the unit's 20. The catch-up below can add up to about five hours (886 products at 20 s), so
+  at worst the unit's timeout stops a run in its catch-up; the marks are saved per product, the next run goes on from them.
 - **One catch-up pass** (§12): a product that a shop did not answer and that fewer than two sources confirm keeps its
-  three-day mark and is asked once more, whole, after the pass over the backlog; not when the run stopped at five open
+  three-day mark and is asked once more, whole, after the pass over the backlog, whatever kept the shop from answering (a
+  429, its `Retry-After`, a timeout, a network failure, a server error); not when the run stopped at five open
   pull requests. A failure that the same run cannot get past does not bring it back: a 403 (the guard, Addendum ARMAM-596),
   a host resting for the run, a block page. The run ends with `catch-up: N asked again, M still without an answer`.
 - **Measure** at the end of every run, also a stopped one: one line per host that answered 429, with the number of 429,
