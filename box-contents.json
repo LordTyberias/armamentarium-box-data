@@ -13675,6 +13675,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Seraphim Squad",
+      "productCodes": [
+        "99120108064"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-seraphim-squad",
+        "https://obsidiangames.ca/products/adepta-sororitas-seraphim-squad",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-seraphim-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Seraphim",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
