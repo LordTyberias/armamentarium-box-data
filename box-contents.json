@@ -21184,6 +21184,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Soulblight Gravelords - Deadwalker Zombies",
+      "productCodes": [
+        "99120207234"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/age-of-sigmar-soulblight-gravelords-deadwalker-zombies",
+        "https://www.irresistibleforce.com.au/products/soulblight-gravelords-deadwalker-zombies",
+        "https://obsidiangames.ca/products/deadwalker-zombies",
+        "https://www.goblingaming.co.uk/products/deadwalker-zombies-soulblight-gravelords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-deadwalker-zombies"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deadwalker Zombies",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
