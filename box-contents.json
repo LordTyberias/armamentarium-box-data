@@ -25619,6 +25619,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - White Lions of Chrace",
+      "productCodes": [
+        "99122710007"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-white-lions-of-chrace",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-white-lions-of-chrace",
+        "https://abyssgamestore.ca/products/high-elf-realms-white-lions-of-grace-13-14",
+        "https://shop.afk.games/products/high-elf-realms-white-lions-of-chrace",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-white-lions-of-chrace",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realms-white-lions-of-chrace",
+        "https://radaddel.de/products/high-elf-realms-white-lions-of-chrace"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "White Lions of Chrace",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
