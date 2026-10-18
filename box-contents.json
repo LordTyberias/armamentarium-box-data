@@ -22944,6 +22944,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Helsmiths of Hashut: Infernal Cohort",
+      "productCodes": [
+        "99120211003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/helsmiths-of-hashut-infernal-cohort",
+        "https://www.retrofixgames.com/products/age-of-sigmar-helsmiths-of-hashut-infernal-cohort",
+        "https://mrmuffinstrains.com/products/gw-82-12",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/helsmiths-of-hashut-infernal-cohort",
+        "https://radaddel.de/products/helsmiths-of-hashut-infernal-cohort"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Infernal Cohort warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
