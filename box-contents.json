@@ -19896,6 +19896,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Chainrasps",
+      "productCodes": [
+        "99120207120"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/nighthaunt-chainrasps",
+        "https://shop.afk.games/products/etb-nighthaunt-chainrasp-hordes",
+        "https://obsidiangames.ca/products/nighthaunt-chainrasps"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Easy",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
