@@ -12400,6 +12400,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Militarum Tempestus Scions",
+      "productCodes": [
+        "99120105116"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/militarum-tempestus-scions",
+        "https://obsidiangames.ca/products/militarum-tempestus-scions",
+        "https://mrmuffinstrains.com/products/gw-47-15"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "679b-f37f-2388-748",
+              "name": "Tempestus Scions",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
