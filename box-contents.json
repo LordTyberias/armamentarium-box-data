@@ -29708,6 +29708,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Flesh-Eater Courts ( 70-24 )",
+      "productCodes": [
+        "99120207128"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/spearhead-flesh-eater-courts-70-24",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-flesh-eater-courts",
+        "https://shop.afk.games/products/spearhead-flesh-eater-courts",
+        "https://obsidiangames.ca/products/spearhead-flesh-eater-court"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Abhorrant Archregent",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Varghulf Courtier",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Morbheg Knights",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Cryptguard",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
