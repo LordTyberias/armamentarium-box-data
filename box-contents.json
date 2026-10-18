@@ -7256,6 +7256,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Emperor's Champion",
+      "productCodes": [
+        "99120101366"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-emperors-champion",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-emperors-champion",
+        "https://shop.afk.games/products/black-templars-emperors-champion",
+        "https://obsidiangames.ca/products/black-templars-emperors-champion",
+        "https://www.goblingaming.co.uk/products/emperors-champion-black-templars-warhammer-40k"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Emperor's Champion",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
