@@ -28944,6 +28944,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daemons of Slaanesh - Infernal Enrapturess ( 97-46-W )",
+      "productCodes": [
+        "99129915053"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/daemons-of-slaanesh-infernal-enrapturess-97-46",
+        "https://shop.afk.games/products/daemons-of-slaanesh-infernal-enrapturess",
+        "https://www.goblingaming.co.uk/products/infernal-enrapturess",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/daemons-of-slaanesh-infernal-enrapturess"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Infernal Enrapturess",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Infernal Enrapturess",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
