@@ -4032,6 +4032,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Corsair Voidscarred",
+      "productCodes": [
+        "99120104104"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-corsair-voidscarred",
+        "https://www.retrofixgames.com/products/kill-team-corsair-voidscarred-1",
+        "https://obsidiangames.ca/products/kill-team-corsair-voidscarred"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Corsairs",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
