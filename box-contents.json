@@ -3769,6 +3769,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Sanctifiers",
+      "productCodes": [
+        "99120108116"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-sanctifiers",
+        "https://www.retrofixgames.com/products/kill-team-sanctifiers",
+        "https://shop.afk.games/products/kill-team-sanctifiers",
+        "https://obsidiangames.ca/products/kill-team-sanctifiers",
+        "https://www.goblingaming.co.uk/products/sanctifiers-kill-team",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/kill-team/kill-team-sanctifiers",
+        "https://radaddel.de/products/kill-team-sanctifiers"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sanctifiers",
+              "count": 11
+            }
+          ]
+        }
+      ]
     }
   ]
 }
