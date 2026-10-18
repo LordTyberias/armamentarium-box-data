@@ -20308,6 +20308,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers Gothizzar Harvester",
+      "productCodes": [
+        "99120207160"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-gothizzar-harvester",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-gothizzar-harvester"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gothizzar Harvester",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
