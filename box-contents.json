@@ -28240,6 +28240,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Knight Houses Cerastus Knight Lancer",
+      "productCodes": [
+        "99123008004"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-knight-houses-cerastus-knight-lancer",
+        "https://shop.afk.games/products/hh-cerastus-knight-lancer",
+        "https://obsidiangames.ca/products/cerastus-knight-lancer",
+        "https://www.goblingaming.co.uk/products/horus-heresy-cerastus-knight-lancer",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-knights/horus-heresy-cerastus-knight-lancer"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "fd9b-d04e-362d-8e5d",
+              "entryId": "19d2-0535-6f68-7642",
+              "name": "Cerastus Knight Lancer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
