@@ -16915,6 +16915,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch: Curseling Eye Of Tzeentch",
+      "productCodes": [
+        "99120201150"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/disciples-of-tzeentch-curseling-eye-of-tzeentch",
+        "https://abyssgamestore.ca/products/curseling-eye-of-tzeentch-83-68",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-disciples-of-tzeentch-curseling-eye-of-tzeentch",
+        "https://shop.afk.games/products/tzeentch-curseling-eye-of-tzeentch",
+        "https://obsidiangames.ca/products/disciples-of-tzeentch-curseling-eye-of-tzeentch",
+        "https://mrmuffinstrains.com/products/gw-83-68"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Curseling",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
