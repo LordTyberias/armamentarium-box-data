@@ -13448,6 +13448,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Paragon Warsuit",
+      "productCodes": [
+        "99120108046"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-paragon-warsuit",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-paragon-warsuits",
+        "https://shop.afk.games/products/adepta-sororitas-paragon-warsuit",
+        "https://obsidiangames.ca/products/adepta-sororitas-paragon-warsuits",
+        "https://www.goblingaming.co.uk/products/paragon-warsuit-adepta-sororitas",
+        "https://mrmuffinstrains.com/products/gw-52-34",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-paragon-warsuit",
+        "https://radaddel.de/products/adepta-sororitas-paragon-warsuits"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "e75d-a7ac-7fcc-d302",
+              "name": "Paragon Warsuits",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
