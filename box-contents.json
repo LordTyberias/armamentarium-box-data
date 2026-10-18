@@ -8616,6 +8616,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Thousand Sons: Scarab Occult Terminators",
+      "productCodes": [
+        "99120102133"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/thousand-sons-scarab-occult-terminators",
+        "https://abyssgamestore.ca/products/thousand-sons-scarab-occult-terminators-43-36",
+        "https://www.retrofixgames.com/products/warhammer-40k-thousand-suns-scarab-occult-terminators",
+        "https://shop.afk.games/products/thousand-sons-scarab-occult-terminators",
+        "https://obsidiangames.ca/products/thousand-sons-scarab-occult-terminators",
+        "https://www.goblingaming.co.uk/products/thousand-sons-scarab-occult-terminators-43027223",
+        "https://mrmuffinstrains.com/products/gw-43-36",
+        "https://elementgames.co.uk/thousand-sons-scarab-occult-terminators"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "b1cf-c5-5121-92a4",
+              "name": "Scarab Occult Terminators",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
