@@ -11,6 +11,8 @@ namespace Armamentarium.BoxData.Scraper;
 /// A 429 is a shop that throttles (ADR 0003 Addendum ARMAM-595): its <c>Retry-After</c> is honoured, the host failing at once
 /// until then (longer than <see cref="MaxRetryAfter"/> rests it for the run), and from the <see cref="StretchAfter"/>th 429
 /// on the host's interval is doubled up to <see cref="MaxStretchedInterval"/> for the rest of the run. A 403 throttles nothing.
+/// Every request goes over HTTP/2, over HTTP/1.1 only to a host without it, which the journal names once per host (ADR 0003
+/// Addendum ARMAM-603).
 /// </summary>
 public sealed class Fetcher : IFetcher, IDisposable
 {
@@ -60,6 +62,10 @@ public sealed class Fetcher : IFetcher, IDisposable
             Timeout = TimeSpan.FromSeconds(20),
             // The largest shop page measured is 1.4 MB.
             MaxResponseContentBufferSize = 16 * 1024 * 1024,
+            // Shopify answers /products/<handle>.js over HTTP/1.1 with 429 from the first request, over HTTP/2 with 200 up to
+            // two requests a second across ten shops (measured from the server, ADR 0003 Addendum ARMAM-603).
+            DefaultRequestVersion = HttpVersion.Version20,
+            DefaultVersionPolicy = HttpVersionPolicy.RequestVersionOrLower,
         };
         _http.DefaultRequestHeaders.UserAgent.ParseAdd(UserAgent);
         _http.DefaultRequestHeaders.Accept.ParseAdd("text/html,application/xhtml+xml,application/json;q=0.9,*/*;q=0.8");
@@ -122,6 +128,12 @@ public sealed class Fetcher : IFetcher, IDisposable
             for (var hop = 0; hop <= MaxRedirects; hop++)
             {
                 using var response = await SendAsync(gate, uri, cancellationToken);
+                if (response.Version < HttpVersion.Version20 && !gate.OldProtocolLogged)
+                {
+                    gate.OldProtocolLogged = true;
+                    _log($"{uri.Host} answers over HTTP/{response.Version}");
+                }
+
                 var status = (int)response.StatusCode;
                 if (status is >= 300 and < 400 && response.Headers.Location is { } location)
                 {
@@ -270,5 +282,8 @@ public sealed class Fetcher : IFetcher, IDisposable
 
         // The first request refused inside a wait says so in the journal, the others of the same wait do not.
         public bool WaitLogged { get; set; }
+
+        // A host that answers below HTTP/2 says so once; Shopify throttles it (ADR 0003 Addendum ARMAM-603).
+        public bool OldProtocolLogged { get; set; }
     }
 }
