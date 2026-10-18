@@ -10486,6 +10486,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Battlewagon",
+      "productCodes": [
+        "99120103084"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-battlewagon",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-battlewagon",
+        "https://shop.afk.games/products/orks-battlewagon",
+        "https://obsidiangames.ca/products/orks-battlewagon",
+        "https://www.goblingaming.co.uk/products/new-games-workshop-battlewagon-orks",
+        "https://mrmuffinstrains.com/products/gw-50-20",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-battlewagon"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "306a-b2ac-aaf1-9a7c",
+              "name": "Battlewagon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
