@@ -10626,6 +10626,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Dakkajet",
+      "productCodes": [
+        "99120103090"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-dakkajet",
+        "https://abyssgamestore.ca/products/orks-wazbom-blastajet-blitza-bommer-dakkajet-burna-bommer-50-32",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-wazbom-blastajet",
+        "https://shop.afk.games/products/orks-dakkajet",
+        "https://www.goblingaming.co.uk/products/ork-wazbom-blastajet",
+        "https://mrmuffinstrains.com/products/gw-50-32",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-wazbom-blastajet"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "3b42-b41f-d11e-bdca",
+              "name": "Dakkajet",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "3832-ad97-2b3b-8775",
+              "name": "Wazbom Blastajet",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
