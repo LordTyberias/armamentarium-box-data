@@ -12932,6 +12932,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Warriors",
+      "productCodes": [
+        "99120106058"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tyranids-warriors",
+        "https://abyssgamestore.ca/products/tyranids-warrior-brood-51-18",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranid-warriors",
+        "https://shop.afk.games/products/tyranid-warriors",
+        "https://obsidiangames.ca/products/tyranid-warriors",
+        "https://www.goblingaming.co.uk/products/tyranid-warriors",
+        "https://mrmuffinstrains.com/products/gw-51-18",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranid-warriors-2014"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tyranid Warriors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
