@@ -11193,6 +11193,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Warboss (50-84)",
+      "productCodes": [
+        "99120103141"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-warboss-50-84",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-warboss",
+        "https://shop.afk.games/products/orks-warboss",
+        "https://obsidiangames.ca/products/orks-warboss",
+        "https://www.goblingaming.co.uk/products/orks-warboss",
+        "https://mrmuffinstrains.com/products/gw-50-84"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "2efc-c4b3-2ecc-5a37",
+              "name": "Warboss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
