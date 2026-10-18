@@ -5587,6 +5587,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Locus",
+      "productCodes": [
+        "99070117016"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/genestealer-cults-locus",
+        "https://mrmuffinstrains.com/products/gw-51-46",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-locus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "51e8-dac1-561a-aaa9",
+              "name": "Locus",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "unhooded",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
