@@ -9524,6 +9524,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Emperors Children: Tormentors",
+      "productCodes": [
+        "99120102203"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/emperors-children-tormentors",
+        "https://abyssgamestore.ca/products/emperor-s-children-tormentors-37-11",
+        "https://obsidiangames.ca/products/tormentors",
+        "https://www.goblingaming.co.uk/products/emperors-children-tormentors",
+        "https://radaddel.de/products/emperors-children-tormentors-and-infractors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "4494-dd7d-69f7-306c",
+              "name": "Tormentors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
