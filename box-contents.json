@@ -19494,6 +19494,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Krittok Foulblade",
+      "productCodes": [
+        "99120206052"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-krittok-foulblade",
+        "https://abyssgamestore.ca/products/skaven-krittok-foulblade-90-49",
+        "https://shop.afk.games/products/skaven-krittok-foulblade",
+        "https://obsidiangames.ca/products/krittok-foulblade",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-krittok-foulblade"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Krittok Foulblade",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
