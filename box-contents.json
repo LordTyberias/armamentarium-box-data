@@ -20170,6 +20170,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Souldblight Gravelords: Blood Knights",
+      "productCodes": [
+        "99120207143"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blood-knights",
+        "https://mrmuffinstrains.com/products/gw-91-41"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
