@@ -7417,6 +7417,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Sternguard Veteran Squad",
+      "productCodes": [
+        "99120101390"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-sternguard-veteran-squad",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-sternguard-veteran-squad",
+        "https://shop.afk.games/products/space-marines-sternguard-veterans",
+        "https://obsidiangames.ca/products/space-marines-sternguard-veteran-squad",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-sternguard-veteran-squad",
+        "https://radaddel.de/products/space-marines-sternguard-veteran-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sternguard Veterans",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
