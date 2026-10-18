@@ -5175,6 +5175,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Chronomancer",
+      "productCodes": [
+        "99070110003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-chronomancer",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-chronomancer",
+        "https://shop.afk.games/products/necrons-chronomancer",
+        "https://obsidiangames.ca/products/necrons-chronomancer",
+        "https://www.goblingaming.co.uk/products/chronomancer-necrons",
+        "https://mrmuffinstrains.com/products/gw-49-45",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-chronomancer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "5b7d-54ea-f7a8-9688",
+              "name": "Chronomancer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
