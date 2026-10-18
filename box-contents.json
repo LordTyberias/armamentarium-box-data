@@ -23324,6 +23324,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughters of Khaine Melusai Ironscale",
+      "productCodes": [
+        "99120212046"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/daughters-of-khaine-melusai-ironscale",
+        "https://elementgames.co.uk/daughters-of-khaine-melusai-ironscale"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Melusai Ironscale",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
