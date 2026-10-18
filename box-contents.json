@@ -21665,6 +21665,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz - Fanatics ( 89-24-W )",
+      "productCodes": [
+        "99120209055"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/gloomspite-gitz-fanatics-89-24-w",
+        "https://shop.afk.games/products/gloomspite-gitz-fanatics",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/gloomspite-gitz-fanatics"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Loonsmasha Fanatics",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
