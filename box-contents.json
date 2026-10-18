@@ -28491,6 +28491,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum: Battle-Pilgrym Marshal",
+      "productCodes": [
+        "99123016011"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/mechanicum-battle-pilgrym-marshal",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-skitarii-battle-pilgrym-marshal",
+        "https://www.goblingaming.co.uk/products/skitarii-battle-pilgrym-marshal",
+        "https://mrmuffinstrains.com/products/gw-31-150",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/skitarii-battle-pilgrym-marshal"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "079a-11b5-abfa-96da",
+              "entryId": "b9df-ff4a-dec5-2fb5",
+              "name": "Skitarii Battle-Pilgrym Marshal",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
