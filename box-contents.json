@@ -25948,6 +25948,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Tomb Kings of Khemri - Skeleton Warriors",
+      "productCodes": [
+        "99122717002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-tomb-kings-of-khemri-skeleton-warriors",
+        "https://www.irresistibleforce.com.au/products/skeleton-warriors",
+        "https://www.retrofixgames.com/products/warhammer-the-old-world-tomb-kings-of-khemri-skeleton-warriors",
+        "https://shop.afk.games/products/tomb-kings-of-khemri-skeleton-warriors",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-tomb-kings-of-khemri-skeleton-warriors",
+        "https://radaddel.de/products/khemri-skeleton-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Skeleton Warriors",
+              "count": 36
+            }
+          ]
+        }
+      ]
     }
   ]
 }
