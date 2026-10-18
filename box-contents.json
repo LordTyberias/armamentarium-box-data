@@ -11020,6 +11020,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Big Mek Dakkarig (50-81)",
+      "productCodes": [
+        "99120103134"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-big-mek-dakkarig-50-81",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-big-mek-dakkarig",
+        "https://shop.afk.games/products/orks-big-mek-dakkarig",
+        "https://obsidiangames.ca/products/orks-big-mek-dakkarig",
+        "https://www.goblingaming.co.uk/products/orks-big-mek-dakkarig",
+        "https://mrmuffinstrains.com/products/gw-50-81",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-big-mek-dakkarig"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "78a7-cf35-aa8d-c420",
+              "name": "Big Mek Dakkarig",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
