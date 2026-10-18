@@ -21473,6 +21473,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Saurus Astrolith Bearer",
+      "productCodes": [
+        "99120208035"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/saurus-astrolith-bearer",
+        "https://abyssgamestore.ca/products/seraphon-saurus-astrolith-bearer-88-20",
+        "https://shop.afk.games/products/saurus-astrolith-bearer",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-seraphon-saurus-astrolith-bearer",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/seraphon-saurus-astrolith-bearer"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4e3-e1a7-a8d4-8719",
+              "entryId": "4b2-de6c-326c-97b6",
+              "name": "Saurus Astrolith Bearer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
