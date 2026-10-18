@@ -5,17 +5,23 @@ using System.Text.Json.Nodes;
 namespace Armamentarium.BoxData.Scraper;
 
 /// <summary>A GitHub answer that is not a success. Names the request and the status, never the token.</summary>
-public sealed class GitHubException(string message) : Exception(message);
+public sealed class GitHubException(string message, int? status = null) : Exception(message)
+{
+    /// <summary>The HTTP status GitHub answered with; null when no answer came.</summary>
+    public int? Status { get; } = status;
+}
 
 /// <summary>
 /// This repository through the GitHub REST API (ADR 0003 §3): reads the table, lists the open scraper pull requests,
 /// opens a pull request and, with <c>--auto-merge</c>, merges it (ADR 0004). The token, when present, goes only into the
-/// Authorization header.
+/// Authorization header. A merge GitHub refuses with 405 is tried again after <paramref name="mergeRetry"/> (five seconds by
+/// default), <see cref="MergeAttempts"/> times in all (ADR 0004 Addendum ARMAM-603).
 /// </summary>
-public sealed class GitHubRepository(HttpClient http, string? token) : IRepository
+public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? mergeRetry = null) : IRepository
 {
     public const string Repository = "LordTyberias/armamentarium-box-data";
     public const string BranchPrefix = "scraper/";
+    public const int MergeAttempts = 3;
 
     private const string File = "box-contents.json";
     private static readonly Uri Api = new("https://api.github.com/");
@@ -91,11 +97,26 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
         }
     }
 
-    public async Task MergeAsync(int number, CancellationToken cancellationToken) =>
-        (await SendAsync(HttpMethod.Put, $"repos/{Repository}/pulls/{number}/merge", new JsonObject
+    // GitHub answered 405 "Base branch was modified" to a merge seconds after the previous one, on a branch of the newest
+    // main, while it still worked out the pull request; tried again before the next merge changes main, it goes through.
+    public async Task MergeAsync(int number, CancellationToken cancellationToken)
+    {
+        for (var attempt = 1; ; attempt++)
         {
-            ["merge_method"] = "merge",
-        }, cancellationToken)).Dispose();
+            try
+            {
+                (await SendAsync(HttpMethod.Put, $"repos/{Repository}/pulls/{number}/merge", new JsonObject
+                {
+                    ["merge_method"] = "merge",
+                }, cancellationToken)).Dispose();
+                return;
+            }
+            catch (GitHubException ex) when (ex.Status == 405 && attempt < MergeAttempts)
+            {
+                await Task.Delay(mergeRetry ?? TimeSpan.FromSeconds(5), cancellationToken);
+            }
+        }
+    }
 
     public async Task DeleteBranchAsync(string branch, CancellationToken cancellationToken) =>
         (await SendAsync(HttpMethod.Delete, $"repos/{Repository}/git/refs/heads/{branch}", null, cancellationToken)).Dispose();
@@ -136,7 +157,8 @@ public sealed class GitHubRepository(HttpClient http, string? token) : IReposito
             if (!response.IsSuccessStatusCode)
             {
                 throw new GitHubException(
-                    $"GitHub {method} {path} answered {(int)response.StatusCode}: {Text.Clean(text[..Math.Min(text.Length, 300)])}");
+                    $"GitHub {method} {path} answered {(int)response.StatusCode}: {Text.Clean(text[..Math.Min(text.Length, 300)])}",
+                    (int)response.StatusCode);
             }
 
             return JsonDocument.Parse(text.Length == 0 ? "{}" : text);

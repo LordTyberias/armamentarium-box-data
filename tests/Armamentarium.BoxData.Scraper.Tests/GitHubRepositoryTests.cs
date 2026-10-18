@@ -124,10 +124,38 @@ public sealed class GitHubRepositoryTests
         var handler = new Recorder(_ => Json("""{"message":"Pull Request is not mergeable"}""", HttpStatusCode.MethodNotAllowed));
 
         var error = await Assert.ThrowsExactlyAsync<GitHubException>(
-            () => new GitHubRepository(new HttpClient(handler), Token).MergeAsync(12, default));
+            () => new GitHubRepository(new HttpClient(handler), Token, TimeSpan.Zero).MergeAsync(12, default));
 
         StringAssert.Contains(error.Message, "405");
+        Assert.AreEqual(GitHubRepository.MergeAttempts, handler.Requests.Count);
         Assert.IsFalse(handler.Requests.Any(r => r.Method == HttpMethod.Delete));
+    }
+
+    // GitHub answered 405 "Base branch was modified" to a merge two seconds after the previous one, on a branch of the newest
+    // main; a later try merges (measured, ADR 0004 Addendum ARMAM-603).
+    [TestMethod]
+    public async Task Merge_BaseBranchWasModified_IsTriedAgain()
+    {
+        var answers = new Queue<HttpResponseMessage>([
+            Json("""{"message":"Base branch was modified. Review and try the merge again."}""", HttpStatusCode.MethodNotAllowed),
+            Json("""{"merged":true}"""),
+        ]);
+        var handler = new Recorder(_ => answers.Dequeue());
+
+        await new GitHubRepository(new HttpClient(handler), Token, TimeSpan.Zero).MergeAsync(12, default);
+
+        Assert.AreEqual(2, handler.Requests.Count);
+    }
+
+    [TestMethod]
+    public async Task Merge_OtherFailure_IsNotTriedAgain()
+    {
+        var handler = new Recorder(_ => Json("""{"message":"Bad credentials"}""", HttpStatusCode.Unauthorized));
+
+        await Assert.ThrowsExactlyAsync<GitHubException>(
+            () => new GitHubRepository(new HttpClient(handler), Token, TimeSpan.Zero).MergeAsync(12, default));
+
+        Assert.AreEqual(1, handler.Requests.Count);
     }
 
     [TestMethod]
