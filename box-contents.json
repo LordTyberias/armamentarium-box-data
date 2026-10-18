@@ -26915,6 +26915,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer the Horus Heresy Legiones Astartes Praetor with Power Axe",
+      "productCodes": [
+        "99123001028"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-the-horus-heresy-legiones-astartes-praetor-with-power-axe",
+        "https://shop.afk.games/products/legiones-astartes-praetor-with-power-axe",
+        "https://www.goblingaming.co.uk/products/warhammer-30-000-horus-heresy-legiones-astartes-praetor-with-power-axe",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-astartes-praetor-with-power-axe"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Legion Praetor",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
