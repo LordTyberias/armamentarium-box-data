@@ -3587,6 +3587,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Blades of Khaine",
+      "productCodes": [
+        "99120104105"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-blades-of-khaine",
+        "https://abyssgamestore.ca/products/kill-team-blades-of-khaine-103-41",
+        "https://www.retrofixgames.com/products/kill-team-blades-of-khaine",
+        "https://shop.afk.games/products/kill-team-blades-of-khaine-1",
+        "https://obsidiangames.ca/products/kill-team-blades-of-khaine-1",
+        "https://www.goblingaming.co.uk/products/blades-of-khaine-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-41",
+        "https://elementgames.co.uk/kill-team-blades-of-khaine",
+        "https://radaddel.de/products/kill-team-blades-of-khaine"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Striking Scorpion Aspect Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
