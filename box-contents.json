@@ -13254,6 +13254,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Grey Knights: Castellan Crowe",
+      "productCodes": [
+        "99120107015"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/grey-knights-castellan-crowe",
+        "https://www.retrofixgames.com/products/warhammer-40k-grey-knights-castellan-crowe-1",
+        "https://shop.afk.games/products/castellan-crowe",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/grey-knights/grey-knights-castellan-crowe-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "50c4-3e83-fe54-97c4",
+              "entryId": "9ddb-760d-8cf7-1c8a",
+              "name": "Castellan Crowe",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
