@@ -10515,6 +10515,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Mek Gun",
+      "productCodes": [
+        "99120103086"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-mek-gun",
+        "https://abyssgamestore.ca/products/orks-mek-gunz-smasha-gun-bubblechukka-traktor-kannon-kustom-mega-kannon-50-26",
+        "https://www.retrofixgames.com/products/warhammer-40k-ork-mek-gun",
+        "https://shop.afk.games/products/ork-mek-gun",
+        "https://obsidiangames.ca/products/orks-mek-gun",
+        "https://mrmuffinstrains.com/products/gw-50-26",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-mek-gun"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "of",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
