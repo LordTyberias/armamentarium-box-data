@@ -4505,6 +4505,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Iron Hands Primaris Upgrades and Transfers",
+      "productCodes": [
+        "99070101049"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/iron-hands-primaris-upgrades-and-transfers",
+        "https://www.goblingaming.co.uk/products/iron-hands-primaris-upgrades-transfers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "left arm with bionics",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "right arm with bionic hand",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "purity seals",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "pauldron",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Iron Hands decorations",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
