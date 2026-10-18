@@ -17271,6 +17271,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Maggotkin of Nurgle",
+      "productCodes": [
+        "99120201194"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-maggotkin-of-nurgle",
+        "https://mrmuffinstrains.com/products/gw-70-01"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bleak-host::01-spoilpox-scrivener",
+              "name": "Spoilpox Scrivener",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Plaguebearers of Nurgle",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Putrid Blightkings",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Pusgoyle Blightlords",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
