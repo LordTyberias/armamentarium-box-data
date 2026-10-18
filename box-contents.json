@@ -22259,6 +22259,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Orruk Warclans Hobgrot Slittaboss",
+      "productCodes": [
+        "99120209136"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-hobgrot-slittaboss",
+        "https://shop.afk.games/products/orruk-warclans-hobgrot-slittaboss",
+        "https://www.goblingaming.co.uk/products/orruk-warclans-hobgrot-slittaboss",
+        "https://elementgames.co.uk/clearance-sale/orruk-warclans-hobgrot-slittaboss"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "8aef-b85d-b63a-ef05",
+              "entryId": "3bd7-2a9f-9356-b454",
+              "name": "Hobgrot Slittaboss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
