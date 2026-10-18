@@ -25478,6 +25478,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Night Goblin Mob",
+      "productCodes": [
+        "99122709009"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-night-goblin-mob",
+        "https://www.irresistibleforce.com.au/products/night-goblin-mob",
+        "https://abyssgamestore.ca/products/orc-and-goblin-tribes-night-goblin-mob-09-10",
+        "https://shop.afk.games/products/orc-goblin-tribes-night-goblin-mob",
+        "https://mrmuffinstrains.com/products/gw-09-10",
+        "https://elementgames.co.uk/card-games-board-games-and-more/seasonal/orc-and-goblin-tribes-night-goblin-mob",
+        "https://radaddel.de/products/orc-goblin-night-goblin-mob"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Night Goblins",
+              "count": 40
+            }
+          ]
+        }
+      ]
     }
   ]
 }
