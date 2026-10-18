@@ -27652,6 +27652,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legiones Astartes Whirlwind Missile Tank",
+      "productCodes": [
+        "99123001082"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/horus-heresy-legiones-astartes-whirlwind-missile-tank",
+        "https://mrmuffinstrains.com/products/gw-31-156",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-astarteswhirlwind-missile-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Whirlwind Missile Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
