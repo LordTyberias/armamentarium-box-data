@@ -22660,6 +22660,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm Lords Alarith Stonemage",
+      "productCodes": [
+        "99120210056"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/alarith-stonemage-lumineth-realm-lords-age-of-sigmar-99120210037",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-alarith-stonemage"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Alarith Stonemage",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
