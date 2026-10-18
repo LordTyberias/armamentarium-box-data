@@ -9069,6 +9069,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Chaos Rhino",
+      "productCodes": [
+        "99120102168"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chaos-rhino",
+        "https://abyssgamestore.ca/products/chaos-space-marines-rhino-43-11",
+        "https://obsidiangames.ca/products/chaos-space-marines-rhino",
+        "https://mrmuffinstrains.com/products/gw-43-11",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-rhino-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Rhino",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Rhino",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
