@@ -19684,6 +19684,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Kritza the Rat Prince",
+      "productCodes": [
+        "99120207087"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-kritza-the-rat-prince",
+        "https://shop.afk.games/products/kritza-the-rat-prince",
+        "https://www.goblingaming.co.uk/products/kritza-the-rat-prince-soulblight-gravelords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/kritza-the-rat-prince"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kritza model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
