@@ -19275,6 +19275,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Verminlord Corruptor",
+      "productCodes": [
+        "99120206038"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-verminlord-corruptor",
+        "https://shop.afk.games/products/skaven-pestilens-verminlord-corruptor",
+        "https://www.goblingaming.co.uk/products/skaven-pestilens-verminlord-corruptor",
+        "https://elementgames.co.uk/skaven-pestilens-verminlord-corruptor"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "of",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
