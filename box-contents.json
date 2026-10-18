@@ -6980,6 +6980,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Fists: Tor Garadon",
+      "productCodes": [
+        "99120101342"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/imperial-fists-tor-garadon",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-fists-tor-garadon",
+        "https://shop.afk.games/products/imperial-fists-tor-garadon",
+        "https://mrmuffinstrains.com/products/gw-55-25",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-fists-5670/imperial-fists-tor-garadon"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Captain Tor Garadon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
