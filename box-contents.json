@@ -25033,6 +25033,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Wood Elf Realms - Glade Riders",
+      "productCodes": [
+        "99122704002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-wood-elf-realms-glade-riders",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-glade-riders",
+        "https://abyssgamestore.ca/products/wood-elf-realms-glade-guard-13-104",
+        "https://www.goblingaming.co.uk/products/wood-elf-realms-glade-riders",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/wood-elf-realms-glade-riders",
+        "https://radaddel.de/products/wood-elf-realms-glade-riders"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Glade Riders",
+              "count": 12
+            }
+          ]
+        }
+      ]
     }
   ]
 }
