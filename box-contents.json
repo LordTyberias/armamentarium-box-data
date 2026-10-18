@@ -15364,6 +15364,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Kroot Carnivores",
+      "productCodes": [
+        "99120113089"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-kroot-carnivore-squad",
+        "https://abyssgamestore.ca/products/tau-empire-kroot-carnivore-squad-56-48",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-kroot-carnivores",
+        "https://shop.afk.games/products/tau-empire-kroot-carnivore-squad",
+        "https://obsidiangames.ca/products/tau-empire-kroot-carnivores",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-kroot-carnivore-squad-2024",
+        "https://mrmuffinstrains.com/products/gw-56-48",
+        "https://radaddel.de/products/tau-empire-kroot-carnivores"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "d631-3ca5-e206-4e6a",
+              "name": "Kroot Carnivores",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
