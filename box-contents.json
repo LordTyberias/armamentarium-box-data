@@ -28614,6 +28614,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Shield Captain",
+      "productCodes": [
+        "99123043004"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-shield-captain",
+        "https://shop.afk.games/products/legio-custodes-shield-captain"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "b61c-b815-65c0-b1cc",
+              "name": "Shield Captain",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "acc1-f897-a117-9b4a",
+              "entryId": "ead9-2ff9-9301-8c60",
+              "name": "Shield Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
