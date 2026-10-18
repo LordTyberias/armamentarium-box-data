@@ -20117,6 +20117,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Deadwalker Zombies",
+      "productCodes": [
+        "99120207141"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/soulblight-gravelords-deadwalker-zombies",
+        "https://mrmuffinstrains.com/products/gw-91-07"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deadwalker Zombies",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
