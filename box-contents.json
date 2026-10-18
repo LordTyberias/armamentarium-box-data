@@ -8879,6 +8879,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: World Eaters - Khorne Berzerkers",
+      "productCodes": [
+        "99120102153"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-world-eaters-khorne-berserkers",
+        "https://www.irresistibleforce.com.au/products/world-eaters-khorne-berzerkers",
+        "https://www.retrofixgames.com/products/warhammer-40k-world-eaters-khorne-berzerkers",
+        "https://shop.afk.games/products/world-eaters-khorne-berserkers",
+        "https://obsidiangames.ca/products/world-eaters-khorne-berserkers",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-chaos-space-marines-world-eaters-khorne-berserkers-2023-repack",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/world-eaters/world-eaters-khorne-berserkers",
+        "https://radaddel.de/products/world-eaters-khorne-berzerkers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Khorne Berzerkers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
