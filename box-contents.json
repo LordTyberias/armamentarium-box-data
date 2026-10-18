@@ -24429,6 +24429,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warriors of Chaos: Battle March Army",
+      "productCodes": [
+        "99122701017"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/warriors-of-chaos-battle-march-army",
+        "https://mrmuffinstrains.com/products/gw-08-23",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/warriors-of-chaos-battle-march-army"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Warriors",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Chaos Knights",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Sorcerer of Chaos",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Marauder Horsemen",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Chaos Marauders",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
