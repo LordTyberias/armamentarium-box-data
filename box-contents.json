@@ -16203,6 +16203,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Leagues of Votann: Cthonian Earthshakers",
+      "productCodes": [
+        "99120118021"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-cthonian-earthshakers",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-cthonian-earthshakers",
+        "https://obsidiangames.ca/products/cthonian-earthshakers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/leagues-of-votann-cthonian-earthshakers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cthonian Earthshaker siege weapons",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
