@@ -32,7 +32,8 @@ The table, the schema and the README form **one contract**. A change to one that
   a reading it does not know. A Kill Team product gets `kt` only from the service (ADR 0002, Addendum ARMAM-601).
 - **No guessed data.** Catalogue ids come from the catalogues, never from a similar name; counts come from at least two
   sources, disagreement is recorded as `countCandidates`. One named exception (ADR 0004): while the service runs with
-  `--auto-merge`, it sets ids where an entry's name names exactly one root entry of its reading.
+  `--auto-merge`, it sets ids where an entry's name names exactly one root entry of its reading; the same hit picks a
+  build sentence over a source's lines and lets two names of one entry confirm each other (ADR 0003 Addendum ARMAM-599).
 
 ## 4 — Scraper service
 
@@ -52,6 +53,8 @@ and ADR 0004:
   never before a 429's `Retry-After`; a product such a shop did not answer is asked once more at the end of the run (ADR
   0003 Addendum ARMAM-595); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
+- Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
+  ARMAM-599), never from part counts.
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
   a ready one with the ids of exactly one name hit, merged at once.
 - Every further dependency of the service is decided with a reason (ADR in `docs/adr/`).

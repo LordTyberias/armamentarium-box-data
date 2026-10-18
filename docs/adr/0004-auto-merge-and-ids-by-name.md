@@ -4,6 +4,9 @@
 named exception to "Datenintegrität vor Bequemlichkeit" in Armamentarium's `CLAUDE.md`. Overrides parts of ADR 0003
 (§2 daily, §10 drafts without ids, §12 five open while `--auto-merge` runs, Rejected "Ids by exact name match").
 
+**Widened by ADR 0003 Addendum ARMAM-599:** the hit of §2 also chooses a build sentence over a source's lines and lets two
+names of one root entry confirm each other.
+
 ## Context
 
 The service runs on the server since 2026-10-17 (ARMAM-593). Its drafts wait for the maintainer to add catalogue ids,
