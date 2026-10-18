@@ -10570,6 +10570,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Morkanaut",
+      "productCodes": [
+        "99120103088"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-morkanaut",
+        "https://abyssgamestore.ca/products/orks-gorkanaut-morkanaut-50-19",
+        "https://www.retrofixgames.com/products/warhammer-40k-ork-gorkanaut",
+        "https://shop.afk.games/products/ork-morkanaut",
+        "https://obsidiangames.ca/products/orks-morkanaut",
+        "https://mrmuffinstrains.com/products/gw-50-19",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-gorkanaut"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ork Gorkanaut",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ork Mornanaut",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
