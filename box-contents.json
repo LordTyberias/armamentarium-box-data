@@ -10766,6 +10766,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Megatrakk Scrapjet",
+      "productCodes": [
+        "99120103101"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/orks-megatrakk-scrapjet",
+        "https://mrmuffinstrains.com/products/gw-50-36"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "8dd-f235-ef18-d36",
+              "name": "Megatrakk Scrapjet",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
