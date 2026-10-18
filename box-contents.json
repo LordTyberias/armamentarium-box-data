@@ -26443,6 +26443,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 06-217 - Warhammer: The Old World - Grand Cathay: Battle March Army",
+      "productCodes": [
+        "99122720014"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-06-217",
+        "https://elementgames.co.uk/blood-and-gold-cycle/grand-cathay-battle-march-army"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Shugengan Lord on Great Spirit Longma",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Jade Warriors",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Jade Lancers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Iron Hail Gunners",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Crane Gunners",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
