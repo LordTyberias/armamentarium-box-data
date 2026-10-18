@@ -24919,6 +24919,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Kingdom of Bretonnia - Pegasus Knights",
+      "productCodes": [
+        "99122703006"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-kingdom-of-bretonnia-pegasus-knights",
+        "https://www.irresistibleforce.com.au/products/pegasus-knights",
+        "https://www.retrofixgames.com/products/warhammer-the-old-world-bretonnia-pegasus-knights",
+        "https://shop.afk.games/products/kingdom-of-bretonnia-pegasus-knights",
+        "https://radaddel.de/products/bretonnia-pegasus-knights"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Pegasus Knights",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
