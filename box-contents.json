@@ -25397,6 +25397,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Orc Boar Chariots",
+      "productCodes": [
+        "99122709005"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-orc-boar-chariots",
+        "https://www.irresistibleforce.com.au/products/orc-boar-chariots",
+        "https://shop.afk.games/products/orc-goblin-tribes-orc-boar-chariots",
+        "https://www.goblingaming.co.uk/products/wawrhammer-old-world-orc-goblin-tribes-orc-boar-chariots",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/orc-and-goblin-tribes-orc-boar-chariots",
+        "https://radaddel.de/products/orc-goblin-orc-boar-chariots"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Orc Boar Chariots",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
