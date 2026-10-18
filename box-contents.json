@@ -10396,6 +10396,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Squighog Boyz",
+      "productCodes": [
+        "99120103076"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-squighog-boyz",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-squighog-boyz",
+        "https://shop.afk.games/products/orks-squighog-boyz",
+        "https://obsidiangames.ca/products/orks-squighog-boyz",
+        "https://mrmuffinstrains.com/products/gw-50-54",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-squighog-boyz"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Nob",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Bomb Squig",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
