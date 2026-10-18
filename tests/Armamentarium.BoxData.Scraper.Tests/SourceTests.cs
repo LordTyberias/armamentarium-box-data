@@ -111,53 +111,6 @@ public sealed class SourceTests
         Assert.AreEqual(0, fetcher.Requested.Count);
     }
 
-    private const string JtlProduct = """
-        <html><head><title>Exo</title><meta itemprop="description" content="2x Fake Lines"></head><body>
-        <h1 class="product-title">Kill Team: Exo (EN)</h1>
-        <span itemprop="gtin13">5011921272372</span>
-        <div id="tab-description"><p>Inhalt:</p><ul><li>1x Rider Bladeleader Operative (Miniatur)</li><li>2x Swamp Lizards (Miniaturen)</li></ul></div>
-        </body></html>
-        """;
-
-    [TestMethod]
-    public async Task Jtl_SearchResultLink_LeadsToConfirmedProduct()
-    {
-        var fetcher = new FakeFetcher(new()
-        {
-            ["https://jtl.test/?qs=5011921272372"] =
-                """<div class="productbox"><a href="https://jtl.test/Kill-Team-Exo-EN">Exo</a><a href="https://jtl.test/?suche=1&amp;kf=2">f</a></div>""",
-            ["https://jtl.test/Kill-Team-Exo-EN"] = JtlProduct,
-        });
-
-        var listing = await new JtlShopSource("jtl.test", German: true).FindAsync(Exo, fetcher, default);
-
-        Assert.IsNotNull(listing);
-        Assert.IsTrue(listing.German);
-        Assert.AreEqual("https://jtl.test/Kill-Team-Exo-EN", listing.Url);
-        CollectionAssert.AreEqual(new[] { 1, 2 }, listing.Lines.Select(l => l.Count).ToArray());
-    }
-
-    [TestMethod]
-    public async Task Jtl_SearchAnsweredWithProductPage_IsUsedDirectly()
-    {
-        var fetcher = new FakeFetcher(new() { ["https://jtl.test/?qs=5011921272372"] = JtlProduct });
-
-        var listing = await new JtlShopSource("jtl.test", German: true).FindAsync(Exo, fetcher, default);
-
-        Assert.AreEqual("https://jtl.test/?qs=5011921272372", listing!.Url);
-    }
-
-    [TestMethod]
-    public async Task Jtl_ProductWithOtherGtin_IsNoFinding()
-    {
-        var fetcher = new FakeFetcher(new()
-        {
-            ["https://jtl.test/?qs=5011921272372"] = JtlProduct.Replace("5011921272372", "5011921000000"),
-        });
-
-        Assert.IsNull(await new JtlShopSource("jtl.test", German: true).FindAsync(Exo, fetcher, default));
-    }
-
     private const string ElementProduct = """
         <div class="productOptionWrap sku"><label>SKU / Product Code:</label>
         <div class="productOption">60010199084 </div></div>
@@ -182,44 +135,10 @@ public sealed class SourceTests
         CollectionAssert.AreEqual(new[] { 1, 2 }, listing.Lines.Select(l => l.Count).ToArray());
     }
 
-    private const string MinisetPage = """
-        <html><head><link rel="canonical" href="https://miniset.net/sets/gw-60010199084" /></head><body>
-        <h1 class="title" id="page-title">Kill Team: Exo</h1>
-        <div class="text-inner-container expanded" data-lang="en"><p><strong>This set includes:</strong><br />
-        • 1x Rider Bladeleader<br />
-        • 2x Swamp Lizards<br /></p></div>
-        </body></html>
-        """;
-
     [TestMethod]
-    public async Task Miniset_PageOfTheArticleNumber_GivesListing()
+    public void EveryAllowlistedShop_IsAskedEveryFiveSeconds()
     {
-        var fetcher = new FakeFetcher(new() { ["https://miniset.net/sets/gw-60010199084"] = MinisetPage });
-
-        var listing = await new MinisetSource().FindAsync(Exo, fetcher, default);
-
-        Assert.AreEqual("https://miniset.net/sets/gw-60010199084", listing!.Url);
-        Assert.AreEqual("Kill Team: Exo", listing.Title);
-        Assert.IsFalse(listing.German);
-        CollectionAssert.AreEqual(new[] { 1, 2 }, listing.Lines.Select(l => l.Count).ToArray());
-    }
-
-    [TestMethod]
-    public async Task Miniset_PageOfAnotherArticleNumber_IsNoFinding()
-    {
-        var fetcher = new FakeFetcher(new()
-        {
-            ["https://miniset.net/sets/gw-60010199084"] = MinisetPage.Replace("gw-60010199084", "gw-60010199071"),
-        });
-
-        Assert.IsNull(await new MinisetSource().FindAsync(Exo, fetcher, default));
-    }
-
-    [TestMethod]
-    public void Miniset_IsAskedOncePerMinute()
-    {
-        Assert.AreEqual(TimeSpan.FromSeconds(60), new MinisetSource().Interval);
-        Assert.AreEqual(TimeSpan.FromSeconds(5), new ShopifySource("shop.test", German: false).Interval);
+        Assert.IsTrue(Sources.All.All(s => s.Interval == TimeSpan.FromSeconds(5)));
     }
 
     [TestMethod]
@@ -229,7 +148,8 @@ public sealed class SourceTests
             new[]
             {
                 "www.wellplayed.ch", "www.irresistibleforce.com.au", "tistaminis.com", "abyssgamestore.ca", "radaddel.de",
-                "www.retrofixgames.com", "taschengelddieb.de", "elementgames.co.uk", "miniset.net",
+                "www.retrofixgames.com", "shop.afk.games", "obsidiangames.ca", "www.goblingaming.co.uk", "mrmuffinstrains.com",
+                "elementgames.co.uk",
             },
             Sources.All.Select(s => s.Host).ToArray());
     }

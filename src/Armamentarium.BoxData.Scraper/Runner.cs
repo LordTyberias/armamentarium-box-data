@@ -188,9 +188,9 @@ public sealed class Runner(
         persist?.Invoke();
     }
 
-    // A slow source (miniset.net, one request a minute) never confirms a box alone, so it is asked only when a fast one has
-    // found the product and the fast findings alone would not make a proposal; otherwise its interval would set the pace of
-    // the whole run (ADR 0003 §6).
+    // A slow source (one request a minute, as miniset.net was until ARMAM-602) never confirms a box alone, so it is asked
+    // only when a fast one has found the product and the fast findings alone would not make a proposal; otherwise its
+    // interval would set the pace of the whole run (ADR 0003 §6).
     private async Task<(List<Listing> Listings, int Failed, bool Retryable)> FindAsync(
         Product product, CancellationToken cancellationToken)
     {

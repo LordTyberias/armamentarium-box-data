@@ -16,9 +16,13 @@ public static class Sources
         new ShopifySource("radaddel.de", German: true),
         // Its terms forbid scraping; the maintainer carries that risk (Armamentarium ADR 0118 Addendum ARMAM-591).
         new ShopifySource("www.retrofixgames.com", German: false),
-        new JtlShopSource("taschengelddieb.de", German: true),
+        // Measured in ARMAM-602 (ADR 0003 addendum ARMAM-602); obsidiangames.ca and mrmuffinstrains.com keep Shopify's
+        // standard ban on scraping in their terms, a risk the maintainer carries like the one above.
+        new ShopifySource("shop.afk.games", German: false),
+        new ShopifySource("obsidiangames.ca", German: false),
+        new ShopifySource("www.goblingaming.co.uk", German: false),
+        new ShopifySource("mrmuffinstrains.com", German: false),
         new ElementGamesSource(),
-        new MinisetSource(),
     ];
 }
 
@@ -123,74 +127,6 @@ public sealed partial record ShopifySource(string Host, bool German) : ISource
     private static partial Regex Handle();
 }
 
-/// <summary>JTL shop: search by EAN, confirmed by <c>itemprop="gtin13"</c>; the description sits in the description tab.</summary>
-public sealed partial record JtlShopSource(string Host, bool German) : ISource
-{
-    public TimeSpan Interval => Page.DefaultInterval;
-
-    public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
-    {
-        if (product.Ean is not { } ean)
-        {
-            return null;
-        }
-
-        var searchUrl = $"https://{Host}/?qs={ean}";
-        var search = await fetcher.GetAsync(searchUrl, cancellationToken);
-        if (search is null)
-        {
-            return null;
-        }
-
-        // A single hit can come back as the product page itself.
-        if (Confirms(search, ean))
-        {
-            return ListingOf(searchUrl, search);
-        }
-
-        var link = ProductLink(Host);
-        var links = ProductBox().Matches(search)
-            .Select(m => link.Match(search, m.Index, Math.Min(4_000, search.Length - m.Index)))
-            .Where(m => m.Success)
-            .Select(m => $"https://{Host}/{m.Groups[1].Value}")
-            .Distinct()
-            .Take(Page.Tries)
-            .ToList();
-
-        foreach (var url in links)
-        {
-            var page = await fetcher.GetAsync(url, cancellationToken);
-            if (page is not null && Confirms(page, ean) && ListingOf(url, page) is { } listing)
-            {
-                return listing;
-            }
-        }
-
-        return null;
-    }
-
-    private Listing? ListingOf(string url, string page)
-    {
-        var title = Page.Title(page);
-        return Page.IsUsed(title)
-            ? null
-            : Listings.Read(Host, url, German, title, Page.Section(page, "id=\"tab-description\""), []);
-    }
-
-    private static bool Confirms(string page, string ean) =>
-        Gtin().Matches(page).Any(m => m.Groups[1].Value == ean);
-
-    private static Regex ProductLink(string host) =>
-        new($@"(?:href|action)=""https://{Regex.Escape(host)}/([A-Za-z0-9][A-Za-z0-9_.\-/]*)""",
-            RegexOptions.None, TimeSpan.FromMilliseconds(Page.RegexTimeout));
-
-    [GeneratedRegex(@"class=""[^""]*\bproductbox\b", RegexOptions.None, Page.RegexTimeout)]
-    private static partial Regex ProductBox();
-
-    [GeneratedRegex(@"itemprop=""gtin13""[^>]*>\s*([0-9]{8,14})\s*<", RegexOptions.None, Page.RegexTimeout)]
-    private static partial Regex Gtin();
-}
-
 /// <summary>Element Games: search by article number, confirmed by the page's "SKU / Product Code". No EAN on the page.</summary>
 public sealed partial class ElementGamesSource : ISource
 {
@@ -243,29 +179,6 @@ public sealed partial class ElementGamesSource : ISource
 
     [GeneratedRegex(@"SKU / Product Code:</label>\s*<div class=""productOption"">\s*([0-9]+)\s*<", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Sku();
-}
-
-/// <summary>
-/// miniset.net: one page per article number (<c>/sets/gw-&lt;code&gt;</c>), confirmed by its canonical address. The host
-/// restricts clients after about a dozen requests at five seconds, so it is asked once a minute.
-/// </summary>
-public sealed class MinisetSource : ISource
-{
-    public string Host => "miniset.net";
-
-    public TimeSpan Interval => TimeSpan.FromSeconds(60);
-
-    public async Task<Listing?> FindAsync(Product product, IFetcher fetcher, CancellationToken cancellationToken)
-    {
-        var url = $"https://{Host}/sets/gw-{product.Code}";
-        var page = await fetcher.GetAsync(url, cancellationToken);
-        if (page is null || !page.Contains($"<link rel=\"canonical\" href=\"{url}\"", StringComparison.Ordinal))
-        {
-            return null;
-        }
-
-        return Listings.Read(Host, url, false, Page.Title(page), Page.Section(page, "data-lang=\"en\""), []);
-    }
 }
 
 /// <summary>A listing read from a shop's description: its "N x Name" lines and its build sentences.</summary>

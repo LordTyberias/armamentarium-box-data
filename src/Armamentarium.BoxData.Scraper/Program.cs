@@ -9,6 +9,8 @@ namespace Armamentarium.BoxData.Scraper;
 ///   --dry-run        reads GitHub without a token, writes nothing, prints each proposal instead of opening it
 ///   --code &lt;number&gt;  searches this one article number only, whatever the state says (with --dry-run for a check)
 ///   --auto-merge     opens each pull request ready and merges it at once (ADR 0004); with --dry-run it only says so
+///   --host &lt;host&gt;    with --dry-run and --code: asks this one allowlisted shop and prints what it reads; --code
+///                    then takes a comma-separated list (ADR 0003 addendum ARMAM-602)
 /// </summary>
 public static class Program
 {
@@ -19,6 +21,12 @@ public static class Program
         var codeAt = Array.IndexOf(args, "--code");
         var onlyCode = codeAt >= 0 && codeAt + 1 < args.Length ? args[codeAt + 1] : null;
         void Log(string line) => Console.WriteLine(line);
+        var (probe, probeError) = Probe.Resolve(args, Sources.All);
+        if (probeError is not null)
+        {
+            Log(probeError);
+            return 2;
+        }
 
         // systemd stops the unit with SIGTERM; the run ends between two requests, the state of every finished product is saved.
         using var stop = new CancellationTokenSource();
@@ -50,6 +58,12 @@ public static class Program
             var state = statePath is null ? new ScanState() : ScanState.Load(statePath);
             var products = ProductCatalogue.Parse(await github.GetStringAsync(ProductCatalogue.ProductsUrl, stop.Token));
             Log($"{products.Count} Games Workshop products in the catalogue");
+            if (probe is not null)
+            {
+                await ProbeAsync(probe, onlyCode!, products, Log, stop.Token);
+                return 0;
+            }
+
             // Ids by name only while the service merges by itself (ADR 0004); drafts stay without ids for the maintainer.
             var catalogues = autoMerge ? await CatalogueIndex.LoadAsync(github, Log, stop.Token) : null;
 
@@ -87,6 +101,39 @@ public static class Program
         {
             Log($"Run failed: {ex}");
             return 1;
+        }
+    }
+
+    private static async Task ProbeAsync(
+        ISource source, string code, IReadOnlyList<Product> products, Action<string> log, CancellationToken cancellationToken)
+    {
+        using var fetcher = new Fetcher(new Dictionary<string, TimeSpan> { [source.Host] = source.Interval }, log);
+        foreach (var one in code.Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        {
+            var product = products.FirstOrDefault(p => p.Code == one);
+            if (product is null)
+            {
+                log($"{one} is not in the product catalogue");
+                continue;
+            }
+
+            log($"{one} {Text.Clean(product.Name)}");
+            try
+            {
+                foreach (var line in Probe.Describe(source.Host, await source.FindAsync(product, fetcher, cancellationToken)))
+                {
+                    log(line);
+                }
+            }
+            catch (FetchFailedException ex)
+            {
+                log($"{source.Host}: did not answer: {ex.Message}");
+            }
+            catch (Exception ex) when (ex is not OperationCanceledException || !cancellationToken.IsCancellationRequested)
+            {
+                // An unreadable page costs this code, not the rest of the list, as in a run (Runner.AskAsync).
+                log($"{source.Host}: {one} unreadable: {ex.GetType().Name}: {Text.Clean(ex.Message)}");
+            }
         }
     }
 
