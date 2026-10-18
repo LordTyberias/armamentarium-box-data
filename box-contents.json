@@ -7821,6 +7821,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blood Angels: Sanguinary Guard",
+      "productCodes": [
+        "99120101413"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blood-angels-sanguinary-guard",
+        "https://abyssgamestore.ca/products/blood-angels-sanguinary-guard-41-31",
+        "https://www.retrofixgames.com/products/warhammer-40k-blood-angels-sanguinary-guard-1",
+        "https://shop.afk.games/products/blood-angels-sanguinary-guard-1",
+        "https://obsidiangames.ca/products/sanguinary-guard",
+        "https://www.goblingaming.co.uk/products/blood-angels-sanguinary-guard",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/blood-angels-sanguinary-guard-99120101413"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "elite Sanguinary Guard",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
