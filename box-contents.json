@@ -9441,6 +9441,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Deathguard: Lord of Poxes",
+      "productCodes": [
+        "99120102198"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/deathguard-lord-of-poxes",
+        "https://www.retrofixgames.com/products/warhammer-40k-death-guard-lord-of-poxes",
+        "https://obsidiangames.ca/products/lord-of-poxes",
+        "https://elementgames.co.uk/death-guard-lord-of-poxes"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "c5a7-5f07-2b1a-8f98",
+              "name": "Lord of Poxes",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
