@@ -10740,6 +10740,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Orks Kustom BoostaBlasta",
+      "productCodes": [
+        "99120103100"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-kustom-boosta-blasta",
+        "https://shop.afk.games/products/orks-kustom-boosta-blasta",
+        "https://obsidiangames.ca/products/orks-kustom-boosta-blasta",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-kustom-boosta-blasta"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "b803-bafc-2b52-160d",
+              "name": "Kustom Boosta-blasta",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
