@@ -9467,6 +9467,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "World Eaters: Slaughterbound",
+      "productCodes": [
+        "99120102199"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/world-eaters-slaughterbound",
+        "https://abyssgamestore.ca/products/world-eaters-slaughter-bound-67-05",
+        "https://www.retrofixgames.com/products/warhammer-40k-world-eaters-slaughter-bound",
+        "https://obsidiangames.ca/products/slaughterbound",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/world-eaters/world-eaters-slaughter-bound"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "71c9-b10b-b55f-483e",
+              "name": "Slaughterbound",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
