@@ -6104,6 +6104,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Goblin Shaman",
+      "productCodes": [
+        "99072709001"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-goblin-shaman",
+        "https://www.irresistibleforce.com.au/products/orc-goblin-tribes-goblin-shaman",
+        "https://abyssgamestore.ca/products/orc-and-goblin-tribes-goblin-shaman-09-12",
+        "https://shop.afk.games/products/orc-goblin-tribes-goblin-shaman",
+        "https://www.goblingaming.co.uk/products/wawrhammer-old-world-orc-goblin-tribes-goblin-shaman",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/orc-and-goblin-tribes-goblin-shaman"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Goblin Shaman",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
