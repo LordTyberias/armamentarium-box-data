@@ -14987,6 +14987,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Drukhari Lelith Hesperax",
+      "productCodes": [
+        "99120112042"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/lelith-hesperax-drukhari",
+        "https://radaddel.de/products/drukhari-lelith-hesperax"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "38de-521f-1ce0-44a0",
+              "entryId": "ae1b-1a96-5b4c-cecc",
+              "name": "Lelith Hesperax",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
