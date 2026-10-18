@@ -25239,6 +25239,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Dwarf Miners",
+      "productCodes": [
+        "99122705006"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-dwarf-miners",
+        "https://www.irresistibleforce.com.au/products/dwarf-miners",
+        "https://shop.afk.games/products/dwarfen-mountain-holds-dwarf-miners",
+        "https://www.goblingaming.co.uk/products/dwarfen-mountain-holds-dwarf-miners"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Miners",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Miner's Carts",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
