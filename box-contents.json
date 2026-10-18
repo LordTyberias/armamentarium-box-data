@@ -21579,6 +21579,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Seraphon Sunblooded Prowlers",
+      "productCodes": [
+        "99120208046"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-seraphon-sunblooded-prowlers",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-seraphon-sunblooded-prowlers",
+        "https://shop.afk.games/products/spearhead-seraphon-sunblooded-prowlers",
+        "https://www.goblingaming.co.uk/products/spearhead-seraphon-sunblooded-prowlers",
+        "https://mrmuffinstrains.com/products/gw-70-882",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-seraphon-sunblooded-prowlers",
+        "https://radaddel.de/products/seraphon-sunblooded-prowlers-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Jaws of Itzl",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Spawn of Chotec",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Hunters of Huanchi",
+              "count": 13
+            },
+            {
+              "role": "team",
+              "name": "Saurus Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
