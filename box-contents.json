@@ -22682,6 +22682,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Lumineth Realm Lords Vanari Auralan Sentinels",
+      "productCodes": [
+        "99120210059"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-lumineth-realm-lords-vanari-auralan-sentinels",
+        "https://www.goblingaming.co.uk/products/vanari-auralan-sentinels-lumineth-realm-lords"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Auralan Sentinels",
+              "countCandidates": [
+                1,
+                10
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
