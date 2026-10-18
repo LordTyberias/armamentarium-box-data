@@ -28267,6 +28267,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Knight Houses: Cerastus Knight Castigator",
+      "productCodes": [
+        "99123008005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cerastus-knight-castigator",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-cerastus-knight-castigator",
+        "https://shop.afk.games/products/horus-heresy-cerastus-knight-castigator",
+        "https://obsidiangames.ca/products/knight-houses-cerastus-knight-castigator",
+        "https://www.goblingaming.co.uk/products/horus-heresy-cerastus-knight-castigator"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cerastus Knight Castigator",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "fd9b-d04e-362d-8e5d",
+              "entryId": "cd36-bd87-e5b5-007c",
+              "name": "Cerastus Knight Castigator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
