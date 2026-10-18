@@ -16357,6 +16357,54 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Leagues of Votann - Battleforce",
+      "productCodes": [
+        "99120118029"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-leagues-of-votann-battleforce",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-cthonian-prospect",
+        "https://shop.afk.games/products/leagues-of-votann-cthonian-prospect",
+        "https://www.goblingaming.co.uk/products/leagues-of-votann-cthonian-prospect-battleforce",
+        "https://mrmuffinstrains.com/products/gw-71-69",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/leagues-of-votann-cthonian-prospect",
+        "https://radaddel.de/products/leagues-of-votann-cthonian-prospect"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "8f33-5601-3707-78f4",
+              "name": "Brôkhyr Iron-master",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "E-COGs",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "f788-ecf2-9b2e-bc23",
+              "name": "Kapricus Defender",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "ea1b-99f6-c398-06b1",
+              "name": "Brôkhyr Thunderkyn",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
