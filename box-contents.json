@@ -4415,6 +4415,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orc & Goblin Tribes: Goblin Shamans",
+      "productCodes": [
+        "99062709010"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/orc-and-goblin-tribes-goblin-shamans",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-orcs-goblins-shamans"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Goblin Shamans",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
