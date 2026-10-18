@@ -19519,6 +19519,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Ratling Warpblaster",
+      "productCodes": [
+        "99120206054"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-ratling-warpblaster",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-skaven-ratling-warpblaster",
+        "https://obsidiangames.ca/products/ratling-warpblaster",
+        "https://www.goblingaming.co.uk/products/skaven-ratling-warpblaster"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ratling Warpblaster",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
