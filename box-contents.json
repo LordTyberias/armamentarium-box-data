@@ -13978,6 +13978,25 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Adepta Sororitas - Combat Patrol",
+      "productCodes": [
+        "99120108100"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-adepta-sororitas-combat-patrol-1",
+        "https://www.irresistibleforce.com.au/products/combat-patrol-adepta-sororitas",
+        "https://abyssgamestore.ca/products/combat-patrol-adepta-sororitas-73-52",
+        "https://radaddel.de/products/adepta-sororitas-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-adepta-sororitas-1",
+        "https://shop.afk.games/products/combat-patrol-adepta-sororitas-10th-ed",
+        "https://obsidiangames.ca/products/combat-patrol-adepta-sororitas",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-combat-patrol-adepta-sororitas",
+        "https://mrmuffinstrains.com/products/gw-73-521",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-adepta-sororitas-new-"
+      ],
+      "generation": "current"
     }
   ]
 }
