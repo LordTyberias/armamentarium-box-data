@@ -28686,6 +28686,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Custodian Dreadnought",
+      "productCodes": [
+        "99123043006"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-custodian-dreadnought",
+        "https://shop.afk.games/products/legio-custodes-custodian-dreadnought"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Custodian Dreadnought",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Custodian Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
