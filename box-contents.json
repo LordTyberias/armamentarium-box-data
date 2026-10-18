@@ -15496,6 +15496,45 @@
         "https://mrmuffinstrains.com/products/gw-73-562"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Warhammer 40K: T'Au Empire - Battleforce",
+      "productCodes": [
+        "99120113111"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-tau-empire-battleforce",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-farsight-cadre"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "a67c-e2aa-41d7-e91e",
+              "name": "Commander Farsight",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Riptide Battlesuit with 2x drones",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Broadside Battlesuit with 2x drones",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Crisis Battlesuits with 6x drones",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
