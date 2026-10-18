@@ -19963,6 +19963,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Bladegheist Revenants",
+      "productCodes": [
+        "99120207125"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/nighthaunt-bladegheist-revenants",
+        "https://shop.afk.games/products/nighthaunt-bladegheist-revenants",
+        "https://obsidiangames.ca/products/nighthaunt-bladegheist-revenants",
+        "https://radaddel.de/products/nighthaunt-bladegheist-revenants"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Bladegheist Revenants",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
