@@ -10148,6 +10148,51 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Emperor's Children Lords Of Excess",
+      "productCodes": [
+        "99120102261"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-emperors-children-lords-of-excess",
+        "https://mrmuffinstrains.com/products/gw-37-12",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/emperors-children-lords-of-excess",
+        "https://radaddel.de/products/emperors-children-lords-of-excess-battleforce"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "e452-08be-33e6-3864",
+              "name": "Daemon Prince of Slaanesh with Wings",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Noise Marines",
+              "count": 12
+            },
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "e456-0afc-9b42-226c",
+              "name": "Infractors",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "4494-dd7d-69f7-306c",
+              "name": "Tormentors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
