@@ -3404,6 +3404,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Mechanicum Skitarii Battle Group",
+      "productCodes": [
+        "99123016016"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-mechanicum-skitarii-battle-group",
+        "https://elementgames.co.uk/horus-heresy-mechanicum-skitarii-battle-group"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "079a-11b5-abfa-96da",
+              "entryId": "b9df-ff4a-dec5-2fb5",
+              "name": "Skitarii Battle-Pilgrym Marshal",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Vultarax Stratos-Automata",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "079a-11b5-abfa-96da",
+              "entryId": "699d-12fb-f6eb-3822",
+              "name": "Skitarii Battle-Pilgrym Corpus miniatures",
+              "count": 16
+            }
+          ]
+        }
+      ]
     }
   ]
 }
