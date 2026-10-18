@@ -15646,6 +15646,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus: Serberys Raiders",
+      "productCodes": [
+        "99120116041"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-mechanicus-serberys-raiders",
+        "https://www.retrofixgames.com/products/warhammer-40k-adeptus-mechanicus-serberys-raiders",
+        "https://shop.afk.games/products/adeptus-mechanicus-serberys-raiders",
+        "https://obsidiangames.ca/products/serberys-raiders",
+        "https://www.goblingaming.co.uk/products/adeptus-mechanicus-serberys-raiders",
+        "https://mrmuffinstrains.com/products/gw-59-24",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-serberys-raiders"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "models",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "77b9-2f66-3f9b-5cf3",
+              "entryId": "5797-adb8-930-e832",
+              "name": "Serberys Raiders",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
