@@ -18648,6 +18648,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Sylvaneth (70-921)",
+      "productCodes": [
+        "99120204048"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/spearhead-sylvaneth-70-05",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-sylvaneth"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Branchwych",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Treelord",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::03-kurnoth-hunters",
+              "name": "Kurnoth Hunters",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Tree-Revenants",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
