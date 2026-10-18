@@ -23809,6 +23809,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Stormcast Eternals Stormdrake Guard",
+      "productCodes": [
+        "99120218056"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-stormcast-eternals-stormdrake-guard",
+        "https://shop.afk.games/products/stormcast-eternals-stormdrake-guard",
+        "https://www.goblingaming.co.uk/products/stormdrake-guard-age-of-sigmar",
+        "https://mrmuffinstrains.com/products/gw-96-54",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/stormcast-eternals-stormdrake-guard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormdrake Guard in several different poses",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
