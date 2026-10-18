@@ -23884,6 +23884,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Stormcast Eternals Praetors",
+      "productCodes": [
+        "99120218062"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-stormcast-eternals-praetors",
+        "https://shop.afk.games/products/stormcast-eternals-praetors",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/stormcast-eternals-praetors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Praetors wearing Thunderstrike armour",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
