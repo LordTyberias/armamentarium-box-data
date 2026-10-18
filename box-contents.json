@@ -28465,6 +28465,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum: Skitarii Battle-Pilgrym Corpus",
+      "productCodes": [
+        "99123016010"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/mechanicum-skitarii-battle-pilgrym-corpus",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-skitarii-battle-pilgrym-corpus",
+        "https://www.goblingaming.co.uk/products/mechanicum-skitarii-battle-pilgrym-corpus",
+        "https://mrmuffinstrains.com/products/gw-31-134",
+        "https://elementgames.co.uk/clearance-sale/mechanicum-skitarii-battle-pilgrym-corpus",
+        "https://radaddel.de/products/mechanicum-skitarii-battle-pilgrym-corpus"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Skitarii Battle-Pilgryms",
+              "count": 16
+            }
+          ]
+        }
+      ]
     }
   ]
 }
