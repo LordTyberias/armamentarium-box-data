@@ -27010,6 +27010,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes - MKIII Tactical Squad ( 31-68 )",
+      "productCodes": [
+        "99123001037"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/the-horus-heresy-mkiii-tactical-squad-31-68",
+        "https://shop.afk.games/products/horus-heresy-mkiii-tactical-squad",
+        "https://www.goblingaming.co.uk/products/horus-heresy-mk3-tactical-squad-2023",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/horus-heresy-mkiii-tactical-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Legionaries",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
