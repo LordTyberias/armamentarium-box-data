@@ -26807,6 +26807,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Geigor Fell-Hand",
+      "productCodes": [
+        "99123001021"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-geigor-fell-hand",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-space-wolves-geigor-fell-hand",
+        "https://shop.afk.games/products/hh-space-wolves-geigor-fell-hand",
+        "https://www.goblingaming.co.uk/products/geigor-fell-hand-space-wolves-horus-heresy-warhammer-30-000-games-workshop"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d995-cb33-be41-ecf8",
+              "entryId": "8280-b241-c837-f3ca",
+              "name": "Geigor Fell-Hand",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
