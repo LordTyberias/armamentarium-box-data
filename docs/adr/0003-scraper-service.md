@@ -11,6 +11,10 @@
 **Changed by Addendum ARMAM-596:** `www.fantasywelt.de` leaves §5; a 403 counts as "does not answer" (§12), no longer
 as no finding (Context, last point).
 
+**Changed by Addendum ARMAM-595:** §6 "at most one request per five seconds and host" is stretched up to ten seconds for a
+host that throttles, and a 429's `Retry-After` is honoured; §12 "the product comes back in three days" holds, and it is
+asked once more at the end of the same run first.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -145,3 +149,35 @@ The table grows only by hand so far. Measured on 2026-10-17:
   it** (fantasywelt would cost 20 requests per run without a prospect); **a separate 403 counter** that keeps "no
   finding" (more code for the same rest, and the product would wait 30 days for an answer it never got); **working around
   the guard** (browser fingerprint, challenge answers): never.
+
+## Addendum ARMAM-595 — a throttling shop is asked again in the same run (2026-10-18)
+
+- **Measured** on the first auto-merge run (2026-10-17 20:20 to 2026-10-18 03:48, 3372 products): 3598 answers 429, all
+  of them to `/products/<handle>.js` of six Shopify shops (abyssgamestore.ca 1130, radaddel.de 910,
+  www.irresistibleforce.com.au 771, www.retrofixgames.com 702, www.wellplayed.ch 71, tistaminis.com 14), never to
+  `search/suggest.json`; about 200 to 280 an hour per shop, steadily, no burst. Never 20 in a row, so no shop rested: a 200
+  or 404 in between reset the count. Whether the shops send `Retry-After` was not measured, the journal logged no headers.
+  Up to 886 products came back in three days because a shop that throttled may have held the second source.
+- **`Retry-After` of a 429 is honoured** (seconds or HTTP date): until then a request to the host fails at once, without
+  a request and without counting towards the 20 in a row. A wait longer than ten minutes rests the host for the run. No,
+  zero, negative or unreadable value is no header.
+- **Stretched interval** (§6): from a host's third 429 in a run on, its interval is doubled up to ten seconds and stays so
+  for the run; a longer interval (miniset.net) is never shortened, other hosts are untouched. Every product waits for its
+  slowest fast host, so ten seconds is the cap: a Shopify product (two requests) takes 20 s and a pass over the whole
+  backlog about 19 hours, inside the unit's 20. The catch-up below can add up to about five hours (886 products at 20 s), so
+  at worst the unit's timeout stops a run in its catch-up; the marks are saved per product, the next run goes on from them.
+- **One catch-up pass** (§12): a product that a shop did not answer and that fewer than two sources confirm keeps its
+  three-day mark and is asked once more, whole, after the pass over the backlog, whatever kept the shop from answering (a
+  429, its `Retry-After`, a timeout, a network failure, a server error); not when the run stopped at five open
+  pull requests. A failure that the same run cannot get past does not bring it back: a 403 (the guard, Addendum ARMAM-596),
+  a host resting for the run, a block page. The run ends with `catch-up: N asked again, M still without an answer`.
+- **Measure** at the end of every run, also a stopped one: one line per host that answered 429, with the number of 429,
+  how many carried `Retry-After`, and the interval reached. The baseline is the first run above.
+- `Retry-After` only for 429; a 5xx stays as it was (§12).
+- Rejected: **a fixed longer interval for Shopify** (slows every run, throttled or not, and asks nothing again);
+  **stretching without `Retry-After`** (wastes the wait a shop names); **waiting until `Retry-After`** (every product waits
+  for every shop, the whole run would stand); **halving the interval again after successes** (more state, no gain measured
+  on a steady 429 pattern); **asking only the failed shops again** (keeps listings across the run for little; the good
+  shops answer again at their own pace); **several catch-up passes** (run length beyond estimate); **a 403 throttles like a
+  429** (more requests to a guard that refuses this client); **`Retry-After` for 503 too** (no 5xx pattern measured);
+  **an own time budget for the catch-up** (the state is saved per product, the unit's timeout already bounds the run).

@@ -462,4 +462,72 @@ public sealed class RunnerTests
         Assert.AreEqual(1, repo.Proposals.Count);
         Assert.IsTrue(log.Any(l => l.Contains("c.test", StringComparison.Ordinal)));
     }
+
+    private static FixedSource FailsOnceThenFinds(string host, Exception failure, params Line[] lines)
+    {
+        var failed = new HashSet<string>(StringComparer.Ordinal);
+        return new FixedSource(host, p => failed.Add(p.Code)
+            ? throw failure
+            : new Listing(host, $"https://{host}/{p.Code}", false, "Kill Team: New", lines, [p.Ean!]));
+    }
+
+    [TestMethod]
+    public async Task Run_ThrottledShop_IsAskedAgainAtTheEndOfTheRun()
+    {
+        var line = new Line(5, "Blade Guards", false, false);
+        var throttled = FailsOnceThenFinds("c.test", new FetchFailedException("c.test answered 429"), line);
+
+        var (repo, _, log) = await Run([P("60010199002", "5011921000002")], [Shop("a.test", line), throttled]);
+
+        Assert.AreEqual(2, throttled.Asked);
+        Assert.AreEqual(1, repo.Proposals.Count);
+        Assert.IsTrue(log.Any(l => l.Contains("asking 1 product(s) again", StringComparison.Ordinal)));
+        Assert.IsTrue(log.Any(l => l.Contains("catch-up: 1 asked again, 0 still without an answer", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_RefusingShop_IsNotAskedAgainInTheRun()
+    {
+        var line = new Line(5, "Blade Guards", false, false);
+        var refusing = FailsOnceThenFinds("c.test", new FetchFailedException("c.test answered 403", canRetryInRun: false), line);
+
+        var (repo, state, _) = await Run([P("60010199002", "5011921000002")], [Shop("a.test", line), refusing]);
+
+        Assert.AreEqual(1, refusing.Asked);
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsTrue(state.IsDue("60010199002", Now.AddDays(3)));
+    }
+
+    [TestMethod]
+    public async Task Run_ThrottledShopThatStaysThrottled_WaitsThreeDays()
+    {
+        var throttled = new FixedSource("c.test", _ => throw new FetchFailedException("c.test answered 429"));
+
+        var (repo, state, log) = await Run(
+            [P("60010199002", "5011921000002")], [Shop("a.test", new Line(5, "Blade Guards", false, false)), throttled]);
+
+        Assert.AreEqual(2, throttled.Asked);
+        Assert.AreEqual(0, repo.Proposals.Count);
+        Assert.IsFalse(state.IsDue("60010199002", Now));
+        Assert.IsTrue(state.IsDue("60010199002", Now.AddDays(3)));
+        Assert.IsTrue(log.Any(l => l.Contains("catch-up: 1 asked again, 1 still without an answer", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_StoppedAtFiveOpen_DoesNotCatchUp()
+    {
+        var line = new Line(5, "Blade Guards", false, false);
+        var throttled = new FixedSource("c.test", p => p.Code == "60010199002"
+            ? throw new FetchFailedException("c.test answered 429")
+            : new Listing("c.test", $"https://c.test/{p.Code}", false, "Kill Team: New", [line], [p.Ean!]));
+
+        var (repo, _, log) = await Run(
+            [P("60010199002", "5011921000002"), P("60010199003", "5011921000003")],
+            [Shop("a.test", line), throttled],
+            new FakeRepository("scraper/1", "scraper/2", "scraper/3", "scraper/4"));
+
+        Assert.AreEqual(1, repo.Proposals.Count);
+        Assert.AreEqual("scraper/60010199003", repo.Proposals[0].Branch);
+        Assert.IsFalse(log.Any(l => l.Contains("catch-up", StringComparison.Ordinal)));
+    }
 }

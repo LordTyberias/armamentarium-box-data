@@ -48,7 +48,9 @@ and ADR 0004:
 - Catalogue ids from the catalogues of a compiled allowlist of repositories (ADR 0004 §3), downloaded per run.
 - Candidates from warhub-catalog `products.json`, one request per run to a compiled address (ADR 0003 §4).
 - Sources from a compiled allowlist, no open search; at most one request per five seconds and host (per minute where a
-  host restricts faster clients, ADR 0003 §6); own user agent
+  host restricts faster clients, ADR 0003 §6), stretched up to ten seconds for a host that answers 429 three times and
+  never before a 429's `Retry-After`; a product such a shop did not answer is asked once more at the end of the run (ADR
+  0003 Addendum ARMAM-595); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
   a ready one with the ids of exactly one name hit, merged at once.

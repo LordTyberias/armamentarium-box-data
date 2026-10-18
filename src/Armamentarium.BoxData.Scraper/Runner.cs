@@ -7,7 +7,8 @@ namespace Armamentarium.BoxData.Scraper;
 /// One run (ADR 0003 §10–§12): works through the candidates until five scraper pull requests are open; a product the
 /// shops confirm becomes a draft box, or new article numbers of a box already in the table. With <c>autoMerge</c> each
 /// pull request is merged at once and the next one is built on the merged table (ADR 0004); entries get the ids of the
-/// one root entry their name names in <c>catalogues</c>.
+/// one root entry their name names in <c>catalogues</c>. A product a shop did not answer is asked once more at the end of
+/// the run (ADR 0003 Addendum ARMAM-595).
 /// </summary>
 public sealed class Runner(
     IRepository repository,
@@ -32,17 +33,23 @@ public sealed class Runner(
         }
 
         var (text, sha) = await repository.GetTableAsync(cancellationToken);
-        var known = Table.Codes(Table.Read(text));
-        var codeByEan = products.Where(p => p.Ean is not null)
-            .GroupBy(p => p.Ean!)
-            .ToDictionary(g => g.Key, g => g.First().Code, StringComparer.Ordinal);
+        var run = new RunState(
+            open,
+            products.Where(p => p.Ean is not null)
+                .GroupBy(p => p.Ean!)
+                .ToDictionary(g => g.Key, g => g.First().Code, StringComparer.Ordinal),
+            text,
+            sha);
 
-        foreach (var product in ProductCatalogue.Candidates(products, known))
+        // A product whose shop throttled or did not answer is asked once more at the end of the run, when the shop may
+        // answer again, instead of waiting three days (ADR 0003 Addendum ARMAM-595).
+        var later = new List<Product>();
+        foreach (var product in ProductCatalogue.Candidates(products, run.Known))
         {
             if (open.Count >= MaxOpen)
             {
                 log($"{MaxOpen} scraper pull requests are open; stopping");
-                break;
+                return;
             }
 
             if ((onlyCode is not null && product.Code != onlyCode) || (onlyCode is null && !state.IsDue(product.Code, now)))
@@ -50,88 +57,119 @@ public sealed class Runner(
                 continue;
             }
 
-            var (listings, failed) = await FindAsync(product, cancellationToken);
-            log($"{product.Code} {Text.Clean(product.Name)}: {listings.Count} shop(s) confirm it, {failed} did not answer");
-
-            // A shop that did not answer may hold the missing evidence: the product comes back in three days instead of
-            // resting 30 (ADR 0003 §12).
-            if (failed > 0 && listings.Count < 2)
+            if (await ProcessAsync(product, run, now, cancellationToken) == Outcome.AskAgain)
             {
-                Retry(product.Code, now);
-                continue;
+                later.Add(product);
             }
-
-            var codes = listings.SelectMany(l => l.VariantEans)
-                .Select(e => codeByEan.GetValueOrDefault(e))
-                .OfType<string>()
-                .Append(product.Code)
-                .Where(c => ProductCatalogue.ArticleNumber().IsMatch(c))
-                .Distinct()
-                .Order(StringComparer.Ordinal)
-                .ToList();
-            var knownCode = codes.FirstOrDefault(known.Contains);
-            var proposal = knownCode is null
-                ? NewBox(product, codes, listings, text)
-                : LanguageVariants(knownCode, codes.Where(c => !known.Contains(c)).ToList(), listings, text);
-            if (proposal is null)
-            {
-                Mark([product.Code], now);
-                continue;
-            }
-
-            if (open.Contains(proposal.Branch))
-            {
-                log($"{proposal.Branch} is already open; skipped");
-                Mark([product.Code], now);
-                continue;
-            }
-
-            int number;
-            try
-            {
-                number = await repository.ProposeAsync(proposal, sha, cancellationToken);
-            }
-            catch (GitHubException ex)
-            {
-                log($"{proposal.Branch} not proposed: {ex.Message}");
-                Retry(product.Code, now);
-                continue;
-            }
-
-            Mark(codes, now);
-            log($"proposed {proposal.Branch}: {proposal.Title}");
-            if (!autoMerge)
-            {
-                open.Add(proposal.Branch);
-                continue;
-            }
-
-            try
-            {
-                await repository.MergeAsync(number, cancellationToken);
-            }
-            catch (GitHubException ex)
-            {
-                // The pull request stays open and counts like a draft; the maintainer sees why in the journal.
-                log($"{proposal.Branch} not merged: {ex.Message}");
-                open.Add(proposal.Branch);
-                continue;
-            }
-
-            log($"merged {proposal.Branch}");
-            try
-            {
-                await repository.DeleteBranchAsync(proposal.Branch, cancellationToken);
-            }
-            catch (GitHubException ex)
-            {
-                // The merge stands; a branch left behind only blocks a later proposal of the same name.
-                log($"{proposal.Branch} merged, branch not deleted: {ex.Message}");
-            }
-
-            (text, sha) = await repository.GetTableAsync(cancellationToken);
-            known = Table.Codes(Table.Read(text));
         }
+
+        if (later.Count == 0 || open.Count >= MaxOpen)
+        {
+            return;
+        }
+
+        log($"asking {later.Count} product(s) again that a shop did not answer");
+        var unanswered = 0;
+        foreach (var product in later)
+        {
+            if (open.Count >= MaxOpen)
+            {
+                log($"{MaxOpen} scraper pull requests are open; stopping");
+                return;
+            }
+
+            if (await ProcessAsync(product, run, now, cancellationToken) != Outcome.Answered)
+            {
+                unanswered++;
+            }
+        }
+
+        log($"catch-up: {later.Count} asked again, {unanswered} still without an answer");
+    }
+
+    private async Task<Outcome> ProcessAsync(Product product, RunState run, DateTimeOffset now, CancellationToken cancellationToken)
+    {
+        var (listings, failed, retryable) = await FindAsync(product, cancellationToken);
+        log($"{product.Code} {Text.Clean(product.Name)}: {listings.Count} shop(s) confirm it, {failed} did not answer");
+
+        // A shop that did not answer may hold the missing evidence: the product comes back in three days instead of
+        // resting 30 (ADR 0003 §12). The mark stands before the catch-up, so a run stopped in between loses nothing.
+        if (failed > 0 && listings.Count < 2)
+        {
+            Retry(product.Code, now);
+            return retryable ? Outcome.AskAgain : Outcome.NotAnswered;
+        }
+
+        var codes = listings.SelectMany(l => l.VariantEans)
+            .Select(e => run.CodeByEan.GetValueOrDefault(e))
+            .OfType<string>()
+            .Append(product.Code)
+            .Where(c => ProductCatalogue.ArticleNumber().IsMatch(c))
+            .Distinct()
+            .Order(StringComparer.Ordinal)
+            .ToList();
+        var knownCode = codes.FirstOrDefault(run.Known.Contains);
+        var proposal = knownCode is null
+            ? NewBox(product, codes, listings, run.Text)
+            : LanguageVariants(knownCode, codes.Where(c => !run.Known.Contains(c)).ToList(), listings, run.Text);
+        if (proposal is null)
+        {
+            Mark([product.Code], now);
+            return Outcome.Answered;
+        }
+
+        if (run.Open.Contains(proposal.Branch))
+        {
+            log($"{proposal.Branch} is already open; skipped");
+            Mark([product.Code], now);
+            return Outcome.Answered;
+        }
+
+        int number;
+        try
+        {
+            number = await repository.ProposeAsync(proposal, run.Sha, cancellationToken);
+        }
+        catch (GitHubException ex)
+        {
+            log($"{proposal.Branch} not proposed: {ex.Message}");
+            Retry(product.Code, now);
+            return Outcome.Answered;
+        }
+
+        Mark(codes, now);
+        log($"proposed {proposal.Branch}: {proposal.Title}");
+        if (!autoMerge)
+        {
+            run.Open.Add(proposal.Branch);
+            return Outcome.Answered;
+        }
+
+        try
+        {
+            await repository.MergeAsync(number, cancellationToken);
+        }
+        catch (GitHubException ex)
+        {
+            // The pull request stays open and counts like a draft; the maintainer sees why in the journal.
+            log($"{proposal.Branch} not merged: {ex.Message}");
+            run.Open.Add(proposal.Branch);
+            return Outcome.Answered;
+        }
+
+        log($"merged {proposal.Branch}");
+        try
+        {
+            await repository.DeleteBranchAsync(proposal.Branch, cancellationToken);
+        }
+        catch (GitHubException ex)
+        {
+            // The merge stands; a branch left behind only blocks a later proposal of the same name.
+            log($"{proposal.Branch} merged, branch not deleted: {ex.Message}");
+        }
+
+        (run.Text, run.Sha) = await repository.GetTableAsync(cancellationToken);
+        return Outcome.Answered;
     }
 
     private void Retry(string code, DateTimeOffset now)
@@ -153,19 +191,21 @@ public sealed class Runner(
     // A slow source (miniset.net, one request a minute) never confirms a box alone, so it is asked only when a fast one has
     // found the product and the fast findings alone would not make a proposal; otherwise its interval would set the pace of
     // the whole run (ADR 0003 §6).
-    private async Task<(List<Listing> Listings, int Failed)> FindAsync(Product product, CancellationToken cancellationToken)
+    private async Task<(List<Listing> Listings, int Failed, bool Retryable)> FindAsync(
+        Product product, CancellationToken cancellationToken)
     {
         var fast = sources.Where(s => s.Interval <= Page.DefaultInterval).ToList();
-        var (listings, failed) = await AskAsync(fast, product, cancellationToken);
+        var (listings, failed, retryable) = await AskAsync(fast, product, cancellationToken);
         var slow = sources.Except(fast).ToList();
         if (listings.Count > 0 && slow.Count > 0 && !Suffices(product, listings))
         {
-            var (more, moreFailed) = await AskAsync(slow, product, cancellationToken);
+            var (more, moreFailed, moreRetryable) = await AskAsync(slow, product, cancellationToken);
             listings.AddRange(more);
             failed += moreFailed;
+            retryable |= moreRetryable;
         }
 
-        return (listings, failed);
+        return (listings, failed, retryable);
     }
 
     private static bool Suffices(Product product, IReadOnlyList<Listing> listings) =>
@@ -173,29 +213,30 @@ public sealed class Runner(
             ? listings.Select(l => l.Url).Distinct().Count() >= 2
             : Agreement.Agree(listings).Entries is not null;
 
-    private async Task<(List<Listing> Listings, int Failed)> AskAsync(
+    // Retryable: at least one shop failed in a way the same run can still get past (a throttle, not a refusal).
+    private async Task<(List<Listing> Listings, int Failed, bool Retryable)> AskAsync(
         IEnumerable<ISource> asked, Product product, CancellationToken cancellationToken)
     {
         var found = await Task.WhenAll(asked.Select(async source =>
         {
             try
             {
-                return (Listing: await source.FindAsync(product, fetcher, cancellationToken), Failed: false);
+                return (Listing: await source.FindAsync(product, fetcher, cancellationToken), Failed: false, Retryable: false);
             }
-            catch (FetchFailedException)
+            catch (FetchFailedException ex)
             {
-                // The shop did not answer; the fetcher has logged it.
-                return (Listing: null, Failed: true);
+                // The shop did not answer; the fetcher has logged it (a wait for Retry-After once per wait).
+                return (Listing: null, Failed: true, Retryable: ex.CanRetryInRun);
             }
             catch (Exception ex) when (ex is not OperationCanceledException || !cancellationToken.IsCancellationRequested)
             {
                 // The shop answered with something unreadable (a changed page, a timed-out pattern): no finding, logged.
                 // Counting it as "did not answer" would bring every product back each run until the parser is fixed.
                 log($"{source.Host}: {product.Code} unreadable: {ex.GetType().Name}: {Text.Clean(ex.Message)}");
-                return (Listing: null, Failed: false);
+                return (Listing: null, Failed: false, Retryable: false);
             }
         }));
-        return (found.Select(f => f.Listing).OfType<Listing>().ToList(), found.Count(f => f.Failed));
+        return (found.Select(f => f.Listing).OfType<Listing>().ToList(), found.Count(f => f.Failed), found.Any(f => f.Retryable));
     }
 
     private Proposal? NewBox(Product product, IReadOnlyList<string> codes, IReadOnlyList<Listing> listings, string text)
@@ -341,6 +382,37 @@ public sealed class Runner(
         if (entry.NonPlayer)
         {
             yield return $"{Text.Code(entry.Name)}: named as non-player models; role `npo` in Kill Team, `extra` in any other reading.";
+        }
+    }
+
+    private enum Outcome
+    {
+        Answered,
+        NotAnswered,
+        AskAgain,
+    }
+
+    // What a run carries from one product to the next: the open branches and the table as last merged.
+    private sealed class RunState(HashSet<string> open, Dictionary<string, string> codeByEan, string text, string sha)
+    {
+        private string _text = text;
+
+        public HashSet<string> Open { get; } = open;
+
+        public Dictionary<string, string> CodeByEan { get; } = codeByEan;
+
+        public IReadOnlySet<string> Known { get; private set; } = Table.Codes(Table.Read(text));
+
+        public string Sha { get; set; } = sha;
+
+        public string Text
+        {
+            get => _text;
+            set
+            {
+                _text = value;
+                Known = Table.Codes(Table.Read(value));
+            }
         }
     }
 }

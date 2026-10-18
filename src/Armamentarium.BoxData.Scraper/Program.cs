@@ -54,16 +54,28 @@ public static class Program
             var catalogues = autoMerge ? await CatalogueIndex.LoadAsync(github, Log, stop.Token) : null;
 
             using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
-            await new Runner(
-                    repository,
-                    Sources.All,
-                    fetcher,
-                    state,
-                    Log,
-                    statePath is null ? null : () => state.Save(statePath),
-                    autoMerge,
-                    catalogues)
-                .RunAsync(products, DateTimeOffset.UtcNow, stop.Token, onlyCode);
+            try
+            {
+                await new Runner(
+                        repository,
+                        Sources.All,
+                        fetcher,
+                        state,
+                        Log,
+                        statePath is null ? null : () => state.Save(statePath),
+                        autoMerge,
+                        catalogues)
+                    .RunAsync(products, DateTimeOffset.UtcNow, stop.Token, onlyCode);
+            }
+            finally
+            {
+                // What the throttling shops did this run, the measure of ADR 0003 Addendum ARMAM-595; also on a stop.
+                foreach (var line in fetcher.Summary())
+                {
+                    Log(line);
+                }
+            }
+
             return 0;
         }
         catch (OperationCanceledException) when (stop.IsCancellationRequested)
