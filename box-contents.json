@@ -10097,6 +10097,57 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K World Eaters Battleforce Khorne Daemonkin",
+      "productCodes": [
+        "99120102260"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-world-eaters-battleforce-khorne-daemonkin",
+        "https://www.goblingaming.co.uk/products/world-eaters-khorne-daemonkin-battleforce",
+        "https://mrmuffinstrains.com/products/gw-67-07",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/world-eaters-khorne-daemonkin",
+        "https://radaddel.de/products/world-eaters-khorne-daemonkin-battleforce"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "ec72-f024-4283-0558",
+              "name": "Lord on Juggernaut",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Master of Executions",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "e65f-c7c7-1d18-1a60",
+              "name": "Bloodcrushers",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Khorne Berzerkers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "9188-4709-00ba-e5e0",
+              "name": "Bloodletters",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
