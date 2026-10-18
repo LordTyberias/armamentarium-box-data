@@ -24251,6 +24251,58 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Callis & Toll: Saviours of Cinderfall",
+      "productCodes": [
+        "99120299096"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/callis-toll-saviours-of-cinderfall",
+        "https://abyssgamestore.ca/products/callis-toll-saviors-of-cinderfall-86-36",
+        "https://shop.afk.games/products/callis-toll-saviours-of-cinderfall",
+        "https://obsidiangames.ca/products/age-of-sigmar-saviours-of-cinderfall",
+        "https://mrmuffinstrains.com/products/gw-86-36",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/cities-of-sigmar/callis-and-toll-saviours-of-cinderfall",
+        "https://radaddel.de/products/callis-toll-saviours-of-cinderfall"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hanniver Toll",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Armand Callis",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lyssa Revenya",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Mistress Verentia",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Valius",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Balthas the gryph-hound",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
