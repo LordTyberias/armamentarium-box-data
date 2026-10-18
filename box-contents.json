@@ -20705,6 +20705,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Charnel Watch",
+      "productCodes": [
+        "99120207191"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-charnel-watch",
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-charnel-watch",
+        "https://shop.afk.games/products/spearhead-charnel-watch",
+        "https://www.goblingaming.co.uk/products/spearhead-flesh-eater-courts-charnel-watch",
+        "https://mrmuffinstrains.com/products/gw-70-915",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-death/spearhead-f-e-courts-charnel-watch",
+        "https://radaddel.de/products/flesh-eater-courts-spearhead-charnel-watch"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Abhorrant Gorewarden",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Crypt Flayers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Crypt Horrors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Royal Beastflayers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
