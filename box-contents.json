@@ -17623,6 +17623,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: The Pustules",
+      "productCodes": [
+        "99120201217"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-the-pustules",
+        "https://www.retrofixgames.com/products/age-of-sigmar-maggotkin-of-nurgle-the-pustules",
+        "https://www.goblingaming.co.uk/products/maggotkin-of-nurgle-the-pustules",
+        "https://mrmuffinstrains.com/products/gw-83-106",
+        "https://radaddel.de/products/maggotkin-of-nurgle-the-pustules-regiment-of-renown"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bleak-host::01-spoilpox-scrivener",
+              "name": "Spoilpox Scrivener",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Feculent Gnarlmaw",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Plaguebearers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
