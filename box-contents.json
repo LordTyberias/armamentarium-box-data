@@ -19731,6 +19731,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Krulghast Cruciator",
+      "productCodes": [
+        "99120207090"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/nighthaunt-krulghast-cruciator",
+        "https://shop.afk.games/products/nighthaunt-krulghast-cruciator",
+        "https://www.goblingaming.co.uk/products/krulghast-cruciator-nighthaunt",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/nighthaunt-krulghast-cruciator"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Krulghast Cruciator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
