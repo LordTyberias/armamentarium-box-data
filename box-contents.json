@@ -6130,6 +6130,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mounted Yeomen Command",
+      "productCodes": [
+        "99112703003"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/games-workshop-warhammer-the-old-world-bretonnia-mounted-yeomen-command",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/mounted-yeomen-command"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "metal Mounted Yeomen Command miniatures mounted",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
