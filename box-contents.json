@@ -4798,6 +4798,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard Plague Marine Icon Bearer",
+      "productCodes": [
+        "99070102021"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/death-guard-plague-marine-icon-bearer",
+        "https://mrmuffinstrains.com/products/gw-43-47",
+        "https://elementgames.co.uk/death-guard-plague-marine-icon-bearer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "3e5b-23db-4ccd-ea97",
+              "name": "Icon Bearer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
