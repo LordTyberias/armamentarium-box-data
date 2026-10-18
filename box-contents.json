@@ -5964,6 +5964,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth: Scinari Calligrave",
+      "productCodes": [
+        "99070210002"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/lumineth-realm-lords-scinari-calligrave",
+        "https://www.goblingaming.co.uk/products/scinari-calligrave-lumineth-realm-lords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-scinari-calligrave"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Scinari Calligrave",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
