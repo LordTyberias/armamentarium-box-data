@@ -10790,6 +10790,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks Rukkatrukk Squigbuggy",
+      "productCodes": [
+        "99120103102"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/orks-rukkatrukk-squigbuggy",
+        "https://obsidiangames.ca/products/orks-rukkatrukk-squigbuggy",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-rukkatrukk-squigbuggy"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "a856-30b7-e56d-57db",
+              "name": "Rukkatrukk Squigbuggy",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
