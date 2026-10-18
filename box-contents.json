@@ -19661,6 +19661,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Endless Spells: Ossiarch Bonereapers",
+      "productCodes": [
+        "99120207082"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/endless-spells-ossiarch-bonereapers",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/endless-spells-ossiarch-bonereapers",
+        "https://radaddel.de/products/ossiarch-bonereapers-endless-spells"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "endless spells",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
