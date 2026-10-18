@@ -12148,6 +12148,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Sentinel",
+      "productCodes": [
+        "99120105103"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/armoured-sentinel",
+        "https://obsidiangames.ca/products/astra-militarum-sentinel",
+        "https://www.goblingaming.co.uk/products/sentinel",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-sentinel"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Armoured Sentinel",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
