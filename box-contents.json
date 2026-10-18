@@ -27588,6 +27588,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy Cataphractii Terminators with Volkite Chargers and Power Mauls",
+      "productCodes": [
+        "99123001075"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/horus-heresy-cataphractii-terminators-power-mauls",
+        "https://shop.afk.games/products/h-h-legiones-astartes-cataphractii-terminator-squad-with-power-mauls",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-cataphractii-terminators-power-mauls",
+        "https://mrmuffinstrains.com/products/gw-31-144",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/cataphractii-terminators-power-mauls",
+        "https://radaddel.de/products/legiones-astartes-cataphractii-terminators-power-mauls"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cataphractii Terminators",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
