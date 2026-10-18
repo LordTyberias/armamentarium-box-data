@@ -9815,6 +9815,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Red Corsairs Raiders",
+      "productCodes": [
+        "99120102224"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-red-corsairs-raiders",
+        "https://www.retrofixgames.com/products/warhammer-40kchaos-space-marinesred-corsairs-raiders",
+        "https://shop.afk.games/products/chaos-space-marines-red-corsairs-raiders",
+        "https://obsidiangames.ca/products/chaos-space-marines-red-corsairs-raiders",
+        "https://mrmuffinstrains.com/products/gw-43-113",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/red-corsairs-raiders",
+        "https://radaddel.de/products/chaos-space-marines-red-corsairs-raiders"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "2078-97ce-8793-3382",
+              "name": "Red Corsairs Raiders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
