@@ -26410,6 +26410,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Battalion",
+      "productCodes": [
+        "99122720013"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-battalion",
+        "https://www.irresistibleforce.com.au/products/battalion-grand-cathay",
+        "https://shop.afk.games/products/grand-cathay-battalion"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cathayan Grand Cannons",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Jade Lancers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Jade Warriors",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
