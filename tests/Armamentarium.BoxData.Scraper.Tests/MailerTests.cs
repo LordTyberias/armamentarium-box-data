@@ -33,6 +33,18 @@ public sealed class MailerTests
     }
 
     [TestMethod]
+    public void FailureMessage_AfterASuccessfulRun_SaysItWasStartedByHand()
+    {
+        // Measured on 2026-10-18: started by hand, the unit still gets MONITOR_* with the last result of the scraper unit.
+        var env = new Dictionary<string, string> { ["MONITOR_SERVICE_RESULT"] = "success", ["MONITOR_INVOCATION_ID"] = "0123abcd" };
+
+        var (subject, body) = Mailer.FailureMessage(env.GetValueOrDefault);
+
+        Assert.AreEqual("Armamentarium box data: notification started by hand", subject);
+        StringAssert.Contains(body, "Last result of the scraper unit: success");
+    }
+
+    [TestMethod]
     public void FailureMessage_CleansWhatItQuotes()
     {
         var (subject, _) = Mailer.FailureMessage(name => name == "MONITOR_SERVICE_RESULT" ? "exit-code\r\nBcc: x@y.test" : null);

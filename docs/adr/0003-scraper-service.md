@@ -347,7 +347,8 @@ The table grows only by hand so far. Measured on 2026-10-17:
   that never ran). That unit runs the service's DLL with `--notify-failure`, which mails what systemd hands it
   (`MONITOR_UNIT`, `MONITOR_SERVICE_RESULT`, `MONITOR_EXIT_CODE`, `MONITOR_EXIT_STATUS`, `MONITOR_INVOCATION_ID`) and the
   `journalctl` command for that invocation, **nothing from the journal**. Started by hand it says so: the check of the
-  mail way. It has no `OnFailure=` of its own; a mail that does not go out ends in its journal.
+  mail way. systemd sets `MONITOR_*` on a start by hand too, with the scraper unit's last result (measured on the first
+  check, which mailed "run failed (success)"); a result of `success` therefore counts as by hand, a failure never ends in it. It has no `OnFailure=` of its own; a mail that does not go out ends in its journal.
 - **Notices of a run:** one mail at the end of the run, also when it stops or fails, and only when there is something:
   a refused proposal or merge (`not proposed`, `not merged`), the `id check` summary when it counts orphaned ids or names
   an unchecked reading, the draft `scraper/stale-ids` (proposed, not proposed, no slot), a reading whose catalogue source

@@ -22,18 +22,21 @@ public static class Mailer
     private static readonly TimeSpan SendTimeout = TimeSpan.FromSeconds(60);
 
     /// <summary>
-    /// The failure mail from what systemd hands an OnFailure= unit (MONITOR_*); without it the unit was started by hand,
-    /// the check of ADR 0003 Addendum ARMAM-600.
+    /// The failure mail from what systemd hands an OnFailure= unit (MONITOR_*). systemd sets those on every start, also by
+    /// hand, from the last state of the scraper unit (measured 2026-10-18): a result of <c>success</c> or none means the
+    /// unit was started by hand, the check of ADR 0003 Addendum ARMAM-600; a failure never ends in <c>success</c>.
     /// </summary>
     public static (string Subject, string Body) FailureMessage(Func<string, string?> environment)
     {
         string? Value(string name) => environment(name) is { Length: > 0 } value ? Text.Clean(value) : null;
         var result = Value("MONITOR_SERVICE_RESULT");
         var invocation = Value("MONITOR_INVOCATION_ID");
+        var byHand = result is null or "success";
         var body = new StringBuilder();
-        if (result is null)
+        if (byHand)
         {
-            body.AppendLine("This notification was started by hand, not by a failed run: the mail way works.");
+            body.AppendLine("This notification was started by hand, not by a failed run: the mail way works.")
+                .AppendLine($"Last result of the scraper unit: {result ?? "unknown"}");
         }
         else
         {
@@ -52,7 +55,7 @@ public static class Mailer
         }
 
         body.AppendLine("  journalctl -u armamentarium-box-data -n 100 --no-pager");
-        return (result is null ? Prefix + "notification started by hand" : $"{Prefix}run failed ({result})", body.ToString());
+        return (byHand ? Prefix + "notification started by hand" : $"{Prefix}run failed ({result})", body.ToString());
     }
 
     /// <summary>One mail per run for its notices (Runner, CatalogueIndex.Unavailable).</summary>
