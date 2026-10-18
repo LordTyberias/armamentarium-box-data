@@ -9787,6 +9787,34 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/combat-patrol-red-corsairs"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Warhammer 40K Chaos Space Marines Red Corsairs Reave-Captain",
+      "productCodes": [
+        "99120102222"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-red-corsairs-reave-captain",
+        "https://shop.afk.games/products/red-corsairs-reave-captain",
+        "https://obsidiangames.ca/products/chaos-space-marines-red-corsairs-reave-captain",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-red-corsairs-reave-captain",
+        "https://mrmuffinstrains.com/products/gw-43-111",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/red-corsairs-reave-captain"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "beed-356b-2fec-2c2a",
+              "name": "Red Corsairs Reave-Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
