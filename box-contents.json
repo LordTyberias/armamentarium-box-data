@@ -17598,6 +17598,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blades of Khorne: Deathbringer",
+      "productCodes": [
+        "99120201211"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blades-of-khorne-deathbringer",
+        "https://www.retrofixgames.com/products/age-of-sigmar-blades-of-khorne-deathbringer",
+        "https://shop.afk.games/products/deathbringer",
+        "https://www.goblingaming.co.uk/products/blades-of-khorne-deathbringer",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/blades-of-khorne-deathbringer"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deathbringer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
