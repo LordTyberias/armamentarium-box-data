@@ -13506,6 +13506,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Castigator",
+      "productCodes": [
+        "99120108048"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-castigator",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-castigator",
+        "https://obsidiangames.ca/products/adepta-sororitas-castigator",
+        "https://www.goblingaming.co.uk/products/castigator-adepta-sororitas-warhammer-40k",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-castigator"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Castigator tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
