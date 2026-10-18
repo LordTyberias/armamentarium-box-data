@@ -21336,6 +21336,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon Stegadon / Engine of Gods ( 8020-W )",
+      "productCodes": [
+        "99120208020"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/seraphon-stegadon-engine-of-gods-8020-w",
+        "https://obsidiangames.ca/products/seraphon-stegadon",
+        "https://www.goblingaming.co.uk/products/lizardmen-stegadon"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4e3-e1a7-a8d4-8719",
+              "entryId": "967b-8047-ea59-d6ea",
+              "name": "Stegadon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
