@@ -10238,6 +10238,58 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Death Guard Vile Vectorium",
+      "productCodes": [
+        "99120102263"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-death-guard-vile-vectorium",
+        "https://radaddel.de/products/death-guard-vile-vectorium-battleforce"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "8700-3d3-efbb-ef8d",
+              "name": "Lord of Contagion",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "5b4e-dcf1-5c6f-4d35",
+              "name": "Blightlord Terminators",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "83e8-ebb7-785a-2115",
+              "name": "Deathshroud Terminators",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "26d5-ec73-3517-f3f",
+              "name": "Foetid Bloat-drones",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "7c30-1e92-2faa-eb03",
+              "name": "Poxwalkers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
