@@ -26533,6 +26533,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: MkVI Tactical Squad",
+      "productCodes": [
+        "99123001003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-mkvi-tactical-squad",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-mkvi-tactical-squad",
+        "https://shop.afk.games/products/legiones-astartes-mkvi-tactical-squad",
+        "https://www.goblingaming.co.uk/products/mk-6-tactical-squad-legiones-astartes-horus-heresy-warhammer-30-000-games-workshop",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/legiones-astartes-mkvi-tactical-squad",
+        "https://radaddel.de/products/legiones-astartes-mkvi-tactical-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Legionaries",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
