@@ -228,6 +228,28 @@ public sealed class RunnerTests
     }
 
     [TestMethod]
+    public async Task Run_BuildSentenceNamingARootEntry_WinsOverTheSplitLines()
+    {
+        var catalogues = new CatalogueIndex();
+        catalogues.AddCatalogue("kt", "Blades.cat", System.Text.Encoding.UTF8.GetBytes(
+            """<catalogue id="cat-blades" name="Blades" library="false"><selectionEntries><selectionEntry type="unit" id="se-boarders" name="Navy Boarders"/></selectionEntries></catalogue>"""));
+        ISource SplitShop(string host) => new FixedSource(host, p => new Listing(
+            host, $"https://{host}/{p.Code}", false, "Navy Boarders",
+            [new Line(1, "Navy Sergeant", false, false), new Line(9, "Navy Armsmen", false, false)], [p.Ean!])
+        {
+            Sentences = BuildSentences.Parse("<p>This kit builds a squad of 10 Navy Boarders.</p>"),
+        });
+
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002")], [SplitShop("a.test"), SplitShop("b.test")], autoMerge: true, catalogues: catalogues);
+
+        var table = repo.Proposals.Single().Table;
+        StringAssert.Contains(table, "\"entryId\": \"se-boarders\"");
+        StringAssert.Contains(table, "\"count\": 10");
+        Assert.IsFalse(table.Contains("Navy Sergeant", StringComparison.Ordinal));
+    }
+
+    [TestMethod]
     public async Task Run_DraftWithoutAutoMerge_CarriesNoIds()
     {
         var catalogues = new CatalogueIndex();

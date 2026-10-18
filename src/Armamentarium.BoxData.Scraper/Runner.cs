@@ -208,10 +208,10 @@ public sealed class Runner(
         return (listings, failed, retryable);
     }
 
-    private static bool Suffices(Product product, IReadOnlyList<Listing> listings) =>
+    private bool Suffices(Product product, IReadOnlyList<Listing> listings) =>
         ProductCatalogue.IsCombatPatrol(product)
             ? listings.Select(l => l.Url).Distinct().Count() >= 2
-            : Agreement.Agree(listings).Entries is not null;
+            : Agreement.Agree(listings, RootOf(product)).Entries is not null;
 
     // Retryable: at least one shop failed in a way the same run can still get past (a throttle, not a refusal).
     private async Task<(List<Listing> Listings, int Failed, bool Retryable)> AskAsync(
@@ -243,7 +243,7 @@ public sealed class Runner(
     {
         // The table names a box in English (README, Box); a German shop's title never becomes the name, nor the title of a
         // listing that is no source of the box (ADR 0003 addendum ARMAM-601).
-        var agreement = ProductCatalogue.IsCombatPatrol(product) ? null : Agreement.Agree(listings);
+        var agreement = ProductCatalogue.IsCombatPatrol(product) ? null : Agreement.Agree(listings, RootOf(product));
         var sourceUrls = agreement?.Sources ?? listings.Select(l => l.Url).Distinct().ToList();
         var englishTitle = listings.FirstOrDefault(l => !l.German && l.Title.Length > 0 && sourceUrls.Contains(l.Url))?.Title;
         var name = englishTitle ?? Text.Clean(product.Name);
@@ -328,6 +328,18 @@ public sealed class Runner(
 
     // Ids by name only while the service merges by itself (ADR 0004); a draft leaves them to the maintainer.
     private RootEntry? IdsOf(string reading, string name) => autoMerge ? catalogues?.Find(reading, name) : null;
+
+    // The root entries a name names in the product's readings, as one key, or null: the same hit that sets ids decides
+    // between a build sentence and lines and lets two names of one entry confirm each other (ADR 0003 addendum ARMAM-599).
+    private Func<string, string?> RootOf(Product product)
+    {
+        var readings = ProductCatalogue.ReadingsOf(product);
+        return name =>
+        {
+            var hits = readings.Select(r => IdsOf(r, name) is { } e ? $"{r}:{e.CatalogueId}:{e.EntryId}" : null).OfType<string>().ToList();
+            return hits.Count > 0 ? string.Join('|', hits) : null;
+        };
+    }
 
     private Proposal? LanguageVariants(string knownCode, IReadOnlyList<string> added, IReadOnlyList<Listing> listings, string text)
     {

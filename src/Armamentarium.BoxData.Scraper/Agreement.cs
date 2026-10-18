@@ -6,9 +6,48 @@ namespace Armamentarium.BoxData.Scraper;
 /// </summary>
 public static class Agreement
 {
-    public static AgreementResult Agree(IReadOnlyList<Listing> listings)
+    /// <param name="listings">The shops' listings of the product.</param>
+    /// <param name="rootOf">
+    /// The root entry a name names in the product's readings, or null (ADR 0003 addendum ARMAM-599): a build sentence whose
+    /// name names one wins over the source's lines, and two names of one root entry confirm each other.
+    /// </param>
+    public static AgreementResult Agree(IReadOnlyList<Listing> listings, Func<string, string?>? rootOf = null)
     {
-        var english = listings.Where(l => !l.German && l.Lines.Count > 0).ToList();
+        string Key(string name) => rootOf?.Invoke(name) ?? ContentLines.Normalize(name);
+
+        var effective = new Dictionary<Listing, IReadOnlyList<Line>>(ReferenceEqualityComparer.Instance);
+        foreach (var listing in listings)
+        {
+            effective.TryAdd(listing, Effective(listing, rootOf, Key));
+        }
+
+        var described = listings.Where(l => !l.German && effective[l].Count > 0).ToList();
+
+        // A translated listing names the models differently but keeps the publisher's order: it confirms an English
+        // listing line by line only when both hold the same sequence of counts, its lines or its build sentences.
+        var confirmations = new List<(Listing German, Listing English, IReadOnlyList<Line> Lines)>();
+        foreach (var german in listings.Where(l => l.German))
+        {
+            var own = new[] { german.Lines, Effective(german with { Lines = [] }, null, Key) }.Where(l => l.Count > 0).ToList();
+            var match = described
+                .Select(e => (English: e, German: own.FirstOrDefault(g =>
+                    effective[e].Select(l => l.Count).SequenceEqual(g.Select(l => l.Count)))))
+                .FirstOrDefault(m => m.German is not null);
+            if (match.German is not null)
+            {
+                confirmations.Add((german, match.English, match.German));
+            }
+        }
+
+        // A source that shares no entry with any other describes another thing, or the same one in its own way (a split
+        // by equipment, "10 Kasrkin elite infantry"): it does not count for the box, rather than hold it (ADR 0003
+        // addendum ARMAM-599).
+        var keys = described.ToDictionary(l => l, l => effective[l].Select(x => Key(x.Name)).ToHashSet(), ReferenceEqualityComparer.Instance);
+        var english = described
+            .Where(l => described.Any(o => !ReferenceEquals(o, l) && keys[o].Overlaps(keys[l]))
+                || confirmations.Any(c => ReferenceEquals(c.English, l)))
+            .ToList();
+
         var order = new List<string>();
         var display = new Dictionary<string, Line>();
         var counts = new Dictionary<string, Dictionary<string, int>>();
@@ -43,7 +82,7 @@ public static class Agreement
         // source states; the box waits instead.
         foreach (var listing in english)
         {
-            if (listing.Lines.GroupBy(l => ContentLines.Normalize(l.Name)).FirstOrDefault(g => g.Count() > 1) is { } twice)
+            if (effective[listing].GroupBy(l => Key(l.Name)).FirstOrDefault(g => g.Count() > 1) is { } twice)
             {
                 return new AgreementResult(
                     null, sources, $"'{ContentLines.DisplayName(twice.First().Name)}' appears twice in {listing.Host}");
@@ -52,26 +91,18 @@ public static class Agreement
 
         foreach (var listing in english)
         {
-            foreach (var line in listing.Lines)
+            foreach (var line in effective[listing])
             {
-                Count(ContentLines.Normalize(line.Name), listing, line);
+                Count(Key(line.Name), listing, line);
             }
         }
 
-        // A translated listing names the models differently but keeps the publisher's order: it confirms an English
-        // listing line by line only when both hold the same sequence of counts.
-        foreach (var german in listings.Where(l => l.German && l.Lines.Count > 0))
+        foreach (var (german, match, lines) in confirmations.Where(c => english.Contains(c.English)))
         {
-            var match = english.FirstOrDefault(e =>
-                e.Lines.Select(l => l.Count).SequenceEqual(german.Lines.Select(l => l.Count)));
-            if (match is null)
+            var englishLines = effective[match];
+            for (var i = 0; i < englishLines.Count; i++)
             {
-                continue;
-            }
-
-            for (var i = 0; i < match.Lines.Count; i++)
-            {
-                Count(ContentLines.Normalize(match.Lines[i].Name), german, german.Lines[i] with
+                Count(Key(englishLines[i].Name), german, lines[i] with
                 {
                     NonPlayer = false,
                     AlternativeBuild = false,
@@ -81,7 +112,7 @@ public static class Agreement
 
         if (order.Count == 0)
         {
-            return new AgreementResult(null, sources, "no source lists models line by line");
+            return new AgreementResult(null, sources, "no source states a model count");
         }
 
         var entries = new List<ProposedEntry>();
@@ -102,5 +133,39 @@ public static class Agreement
         }
 
         return new AgreementResult(entries, sources, null);
+    }
+
+    // What a source counts: its build sentences when their main build names a root entry ("builds a squad of 10 Imperial
+    // Navy Breachers" over the shop's split by equipment) or when it lists no lines; else its lines (ADR 0003 addendum
+    // ARMAM-599).
+    private static IReadOnlyList<Line> Effective(Listing listing, Func<string, string?>? rootOf, Func<string, string> key)
+    {
+        string? Root(Line line) => rootOf?.Invoke(line.Name);
+
+        // A count by article only with a hit: prose builds "a unique boarding party" as readily as "a Leman Russ".
+        var usable = listing.Sentences.Where(s => !s.Article || Root(s.Build) is not null).ToList();
+        if (usable.Count == 0)
+        {
+            return listing.Lines;
+        }
+
+        // The first build is the source's; a later one counts only when it names another root entry ("builds 10
+        // customizable …" repeats the kit in other words).
+        var main = usable[0];
+        var mainRoot = Root(main.Build);
+        if (listing.Lines.Count > 0 && mainRoot is null)
+        {
+            return listing.Lines;
+        }
+
+        var chosen = usable.Where(s => ReferenceEquals(s, main) || (Root(s.Build) is { } r && r != mainRoot))
+            .SelectMany(s => new[] { s.Build }.Concat(s.Additions))
+            .ToList();
+
+        // Two counts for one entry in one source ("a set of 10 …", "a squad of 9 …"): the source states neither, it drops
+        // out for that entry; other sources still count.
+        var stated = usable.SelectMany(s => new[] { s.Build }.Concat(s.Additions)).GroupBy(l => key(l.Name))
+            .ToDictionary(g => g.Key, g => g.Select(l => l.Count).Distinct().Count());
+        return chosen.Where(l => stated[key(l.Name)] == 1).DistinctBy(l => key(l.Name)).ToList();
     }
 }

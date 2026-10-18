@@ -110,8 +110,7 @@ public sealed partial record ShopifySource(string Host, bool German) : ISource
                 continue;
             }
 
-            return new Listing(
-                Host, $"https://{Host}/products/{handle}", German, title, ContentLines.Parse(Field(root, "description")), barcodes);
+            return Listings.Read(Host, $"https://{Host}/products/{handle}", German, title, Field(root, "description"), barcodes);
         }
 
         return null;
@@ -175,7 +174,7 @@ public sealed partial record JtlShopSource(string Host, bool German) : ISource
         var title = Page.Title(page);
         return Page.IsUsed(title)
             ? null
-            : new Listing(Host, url, German, title, ContentLines.Parse(Page.Section(page, "id=\"tab-description\"")), []);
+            : Listings.Read(Host, url, German, title, Page.Section(page, "id=\"tab-description\""), []);
     }
 
     private static bool Confirms(string page, string ean) =>
@@ -233,7 +232,7 @@ public sealed partial class ElementGamesSource : ISource
                 continue;
             }
 
-            return new Listing(Host, url, false, title, ContentLines.Parse(Page.Section(page, "<div itemprop=\"description\">")), []);
+            return Listings.Read(Host, url, false, title, Page.Section(page, "<div itemprop=\"description\">"), []);
         }
 
         return null;
@@ -265,6 +264,17 @@ public sealed class MinisetSource : ISource
             return null;
         }
 
-        return new Listing(Host, url, false, Page.Title(page), ContentLines.Parse(Page.Section(page, "data-lang=\"en\"")), []);
+        return Listings.Read(Host, url, false, Page.Title(page), Page.Section(page, "data-lang=\"en\""), []);
     }
+}
+
+/// <summary>A listing read from a shop's description: its "N x Name" lines and its build sentences.</summary>
+internal static class Listings
+{
+    public static Listing Read(
+        string host, string url, bool german, string title, string description, IReadOnlyList<string> variantEans) =>
+        new(host, url, german, title, ContentLines.Parse(description), variantEans)
+        {
+            Sentences = BuildSentences.Parse(description),
+        };
 }

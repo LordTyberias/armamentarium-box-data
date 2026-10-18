@@ -6,9 +6,21 @@ public sealed record Product(string Code, string? Ean, string Name, IReadOnlyLis
 /// <summary>One "N x Name" line of a shop's description. Only the number and the name are kept.</summary>
 public sealed record Line(int Count, string Name, bool NonPlayer, bool AlternativeBuild);
 
-/// <summary>A shop page that confirmed the product. <see cref="German"/> marks translated model names.</summary>
+/// <summary>
+/// What one build sentence counts ("builds a squad of 10 …", ADR 0003 addendum ARMAM-599): the build, whether its count
+/// was only an article ("builds a …"), and the models added after it ("as well as three …").
+/// </summary>
+public sealed record BuildSentence(Line Build, bool Article, IReadOnlyList<Line> Additions);
+
+/// <summary>
+/// A shop page that confirmed the product. <see cref="German"/> marks translated model names; <see cref="Sentences"/> holds
+/// its build sentences in the order of the text.
+/// </summary>
 public sealed record Listing(
-    string Host, string Url, bool German, string Title, IReadOnlyList<Line> Lines, IReadOnlyList<string> VariantEans);
+    string Host, string Url, bool German, string Title, IReadOnlyList<Line> Lines, IReadOnlyList<string> VariantEans)
+{
+    public IReadOnlyList<BuildSentence> Sentences { get; init; } = [];
+}
 
 /// <summary>An entry two sources confirm: one count, or the counts they disagree on.</summary>
 public sealed record ProposedEntry(
