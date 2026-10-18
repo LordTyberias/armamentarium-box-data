@@ -9042,6 +9042,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Chaos Bikers",
+      "productCodes": [
+        "99120102167"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chaos-bikers",
+        "https://shop.afk.games/products/chaos-space-marines-bikers",
+        "https://mrmuffinstrains.com/products/gw-43-08",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-bikers-2",
+        "https://radaddel.de/products/chaos-space-marines-chaos-bikers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "7373-47b7-11a3-2b48",
+              "name": "Chaos Bikers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
