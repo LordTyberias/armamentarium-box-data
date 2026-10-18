@@ -25532,6 +25532,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Mages",
+      "productCodes": [
+        "99122710003"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-mages",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-mages",
+        "https://abyssgamestore.ca/products/high-elf-realms-mages-13-04",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-mages",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realms-mages"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "High Elf Mages",
+              "countCandidates": [
+                1,
+                2
+              ]
+            },
+            {
+              "role": "team",
+              "name": "atop",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "mounted",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
