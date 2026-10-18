@@ -26243,6 +26243,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Cathayan Sentinel",
+      "productCodes": [
+        "99122720006"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-cathayan-sentinel",
+        "https://www.irresistibleforce.com.au/products/grand-cathay-cathayan-sentinel",
+        "https://www.goblingaming.co.uk/products/grand-cathay-cathayan-sentinel",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-cathayan-sentinel"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cathayan Sentinel",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
