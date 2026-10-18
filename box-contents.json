@@ -20220,6 +20220,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Flesh-Eater Courts: Morbheg Knights",
+      "productCodes": [
+        "99120207152"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/flesh-eater-courts-morbheg-knights",
+        "https://abyssgamestore.ca/products/flesh-eater-courts-morbheg-knights-91-77",
+        "https://shop.afk.games/products/flesh-eater-courts-morbheg-knights",
+        "https://obsidiangames.ca/products/flesh-eater-courts-morbheg-knights",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-flesh-eater-courts-morbheg-knights",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-death/flesh-eater-courts-morbheg-knights",
+        "https://radaddel.de/products/flesh-eater-courts-morbheg-knights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Morbheg Knights",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
