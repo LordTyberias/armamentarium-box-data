@@ -10686,6 +10686,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Boomdakka Snazzwagon",
+      "productCodes": [
+        "99120103098"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-boomdakka-snazzwagon",
+        "https://shop.afk.games/products/orks-boomdakka-snazzwagon",
+        "https://obsidiangames.ca/products/orks-boomdakka-snazzwagon",
+        "https://mrmuffinstrains.com/products/gw-50-39",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-boomdakka-snazzwagon"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "c7c8-6b5b-6bfc-52d1",
+              "name": "Boomdakka Snazzwagon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
