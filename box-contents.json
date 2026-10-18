@@ -24376,6 +24376,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Warriors of Chaos - Chaos Marauders (EN)",
+      "productCodes": [
+        "99122701014"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-warriors-of-chaos-chaos-marauders-en",
+        "https://www.irresistibleforce.com.au/products/warriors-of-chaos-chaos-marauders",
+        "https://shop.afk.games/products/warriors-of-chaos-chaos-marauders",
+        "https://www.goblingaming.co.uk/products/warriors-of-chaos-chaos-marauders",
+        "https://mrmuffinstrains.com/products/gw-08-08",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/chaos-marauders-new",
+        "https://radaddel.de/products/warriors-of-chaos-chaos-marauders"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Marauders",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
