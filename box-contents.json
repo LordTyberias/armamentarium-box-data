@@ -23615,6 +23615,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes - Hunters With Sabrefangs (95-23)",
+      "productCodes": [
+        "99120213045"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/ogor-mawtribes-hunters-with-sabrefangs-95-23",
+        "https://shop.afk.games/products/ogor-mawtribes-hunters-with-sabrefangs",
+        "https://www.goblingaming.co.uk/products/ogor-mawtribes-hunters-with-sabrefangs",
+        "https://mrmuffinstrains.com/products/gw-95-23",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/beastclaw-raiders/ogor-mawtribes-hunters-with-sabrefangs"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hunters",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Sabrefangs",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
