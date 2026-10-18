@@ -4393,6 +4393,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orc & Goblin Tribes Goblin Bosses",
+      "productCodes": [
+        "99062709008"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/orc-and-goblin-tribes-goblin-bosses",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-orcs-goblins-bosses"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Goblin Bosses",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
