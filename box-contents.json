@@ -4696,6 +4696,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines - Master of Possession",
+      "productCodes": [
+        "99070102016"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/chaos-space-marines-master-of-possession",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-master-of-possession"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Master of Possession",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
