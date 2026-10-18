@@ -3616,6 +3616,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Tempestus Aquilons",
+      "productCodes": [
+        "99120105123"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-tempestus-aquilons",
+        "https://abyssgamestore.ca/products/kill-team-tempestus-aquilons-103-52",
+        "https://www.retrofixgames.com/products/kill-team-tempestus-aquilons",
+        "https://shop.afk.games/products/kill-team-tempestus-aquilons",
+        "https://www.goblingaming.co.uk/products/tempestus-aquilons-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-52",
+        "https://elementgames.co.uk/kill-team-tempestus-aquilons"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tempestus Aquilons",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
