@@ -13949,6 +13949,35 @@
         "https://mrmuffinstrains.com/products/gw-73-011"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Adeptus Custodes: Shield-Captain",
+      "productCodes": [
+        "99120108099"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-custodes-shield-captain",
+        "https://abyssgamestore.ca/products/adeptus-custodes-shield-captain-01-21",
+        "https://www.retrofixgames.com/products/warhammer-40k-adeptus-custodes-shield-captain",
+        "https://shop.afk.games/products/adeptus-custodes-shield-captain",
+        "https://obsidiangames.ca/products/adeptus-custodes-shield-captain",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-adeptus-custodes-shield-captain",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/adeptus-custodes-shield-captain"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "b61c-b815-65c0-b1cc",
+              "name": "Shield-Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
