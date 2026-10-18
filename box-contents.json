@@ -28391,6 +28391,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum - Castellax Battle-Automata Maniple ( 31-89 )",
+      "productCodes": [
+        "99123016003"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/horus-heresy-castellax-battle-automata-maniple-31-89",
+        "https://www.retrofixgames.com/products/mech-castellax-battle-automata-maniple",
+        "https://shop.afk.games/products/mechanicum-tech-thralls-covenant",
+        "https://www.goblingaming.co.uk/products/mechanicum-castellax-battle-automata-maniple"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Castellax Battle-automata",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
