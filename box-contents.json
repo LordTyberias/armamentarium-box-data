@@ -24759,6 +24759,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Cannons & Mortars",
+      "productCodes": [
+        "99122702016"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-cannons-mortars",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-cannons-mortars",
+        "https://shop.afk.games/products/empire-of-man-cannons-mortars",
+        "https://www.goblingaming.co.uk/products/empire-of-man-cannons-mortars",
+        "https://elementgames.co.uk/card-games-board-games-and-more/seasonal/the-old-world-empire-of-man-cannons-and-mortars"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "powerful artillery pieces",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
