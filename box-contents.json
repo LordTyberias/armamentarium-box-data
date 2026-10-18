@@ -18540,6 +18540,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Tree-Revenants",
+      "productCodes": [
+        "99120204038"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-tree-revenants",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-sylvaneth-tree-revenants",
+        "https://shop.afk.games/products/sylvaneth-tree-revenants",
+        "https://obsidiangames.ca/products/sylvaneth-tree-revenants",
+        "https://www.goblingaming.co.uk/products/sylvaneth-tree-revenants",
+        "https://mrmuffinstrains.com/products/gw-92-14",
+        "https://elementgames.co.uk/sylvaneth-tree-revenants",
+        "https://radaddel.de/products/sylvaneth-tree-revenants"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tree-Revenants",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "can be assembled",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
