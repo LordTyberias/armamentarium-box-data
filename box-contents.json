@@ -18573,6 +18573,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Kurnoth Hunters",
+      "productCodes": [
+        "99120204040"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-kurnoth-hunters",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-sylvaneth-kurnoth-hunters",
+        "https://www.goblingaming.co.uk/products/sylvaneth-kurnoth-hunters",
+        "https://mrmuffinstrains.com/products/gw-92-13",
+        "https://elementgames.co.uk/sylvaneth-kurnoth-hunters",
+        "https://radaddel.de/products/sylvaneth-kurnoth-hunters"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::03-kurnoth-hunters",
+              "name": "Kurnoth Hunters",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
