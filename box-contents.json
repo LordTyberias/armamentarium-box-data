@@ -3956,6 +3956,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Hernkyn Yaegirs",
+      "productCodes": [
+        "99120118018"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-hernkyn-yaegirs",
+        "https://www.retrofixgames.com/products/kill-team-hernkyn-yaegirs",
+        "https://shop.afk.games/products/kill-team-hernkyn-yaegirs",
+        "https://obsidiangames.ca/products/kill-team-hernkyn-yaegirs",
+        "https://www.goblingaming.co.uk/products/hernkyn-yaegirs-kill-team",
+        "https://elementgames.co.uk/kill-team-hernkyn-yaegirs-2024",
+        "https://radaddel.de/products/kill-team-hernkyn-yaegirs"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hernkyn Yaegirs",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
