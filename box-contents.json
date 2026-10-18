@@ -17522,6 +17522,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Pestigors",
+      "productCodes": [
+        "99120201208"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-pestigors",
+        "https://www.retrofixgames.com/products/age-of-sigmar-maggotkin-of-nurgle-pestigors",
+        "https://www.goblingaming.co.uk/products/maggotkin-of-nurgle-pestigors",
+        "https://mrmuffinstrains.com/products/gw-83-116",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/maggotkin-of-nurgle-pestigors",
+        "https://radaddel.de/products/maggotkin-of-nurgle-pestigors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Pestigors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
