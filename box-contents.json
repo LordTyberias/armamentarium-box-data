@@ -19156,6 +19156,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Kharadron Overlords: Grundstok Trailblazers",
+      "productCodes": [
+        "99120205063"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-kharadron-overlords-grundstok-trailblazers",
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-kharadron-overlords-grundstok-trailblazers",
+        "https://shop.afk.games/products/spearhead-kharadron-overlords-grundstok-trailblazers",
+        "https://www.goblingaming.co.uk/products/spearhead-grundstok-trailblazers",
+        "https://mrmuffinstrains.com/products/gw-70-843",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-grundstok-trailblazers",
+        "https://radaddel.de/products/kharadron-overlords-spearhead-grundstok-trailblazers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Endrinmaster with Dirigible Suit",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Grundstok Thunderers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Grundtsok Gunhauler",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Endrinriggers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
