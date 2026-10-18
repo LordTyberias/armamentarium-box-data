@@ -25735,6 +25735,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Elven Spearmen",
+      "productCodes": [
+        "99122710013"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-elven-spearmen",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-elven-spearmen",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-elven-spearmen",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realms-elven-spearmen",
+        "https://radaddel.de/products/high-elf-realms-elven-spearmen"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Elven Spearmen",
+              "count": 32
+            }
+          ]
+        }
+      ]
     }
   ]
 }
