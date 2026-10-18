@@ -6469,6 +6469,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Primaris Firestrike Servo-Turret",
+      "productCodes": [
+        "99120101272"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-firestrike-servo-turret",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-firestrike-servo-turret",
+        "https://shop.afk.games/products/space-marines-firestrike-servo-turret",
+        "https://www.goblingaming.co.uk/products/firestrike-servo-turret-space-marines-warhammer-40k-99120101272",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-firestrike-servo-turret"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "edf8-643b-cd1-3c11",
+              "name": "Firestrike Servo-turret",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
