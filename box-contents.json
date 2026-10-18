@@ -9603,6 +9603,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Emperors Children: Lord Exultant",
+      "productCodes": [
+        "99120102206"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/emperors-children-lord-exultant",
+        "https://www.retrofixgames.com/products/warhammer-40k-emperors-children-lord-exultant",
+        "https://shop.afk.games/products/emperors-children-lord-exultant",
+        "https://obsidiangames.ca/products/lord-exultant",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/emperors-children/emperors-children-lord-exultant"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "7b4c-dfe0-6a0a-304a",
+              "name": "Lord Exultant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
