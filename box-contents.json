@@ -29661,6 +29661,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth Kurnoth Hunters ( 92-13 )",
+      "productCodes": [
+        "99120204018"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/sylvaneth-kurnoth-hunters-92-13",
+        "https://shop.afk.games/products/sylvaneth-kurnoth-hunters",
+        "https://obsidiangames.ca/products/sylvaneth-kurnoth-hunters"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::03-kurnoth-hunters",
+              "name": "Kurnoth Hunters",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
