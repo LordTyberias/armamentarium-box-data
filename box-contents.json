@@ -12066,6 +12066,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Cadian Heavy Weapons Squad",
+      "productCodes": [
+        "99120105097"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-cadian-heavy-weapons-squad",
+        "https://abyssgamestore.ca/products/astra-militarum-cadian-heavy-weapon-squad-47-20",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-cadian-heavy-weapons-squad",
+        "https://obsidiangames.ca/products/astra-militarum-heavy-weapons-squad",
+        "https://www.goblingaming.co.uk/products/cadian-heavy-weapons-squad",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-cadian-heavy-weapons-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Heavy Weapons Teams",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
