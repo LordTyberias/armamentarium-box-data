@@ -20509,6 +20509,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Barrow Guard",
+      "productCodes": [
+        "99120207178"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/soulblight-gravelords-barrow-guard",
+        "https://www.retrofixgames.com/products/age-of-sigmar-soulblight-gravelords-barrow-guard",
+        "https://shop.afk.games/products/soulblight-gravelords-barrow-guard",
+        "https://obsidiangames.ca/products/barrow-guard",
+        "https://www.goblingaming.co.uk/products/soulblight-gravelords-barrow-guard",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-barrow-guard",
+        "https://radaddel.de/products/soulblight-gravelords-barrow-guard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Barrow Guard",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
