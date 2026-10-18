@@ -24733,6 +24733,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Demigryph Knights",
+      "productCodes": [
+        "99122702015"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-demigryph-knights",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-demigryph-knights",
+        "https://abyssgamestore.ca/products/empire-of-man-demigryph-knights-06-107",
+        "https://shop.afk.games/products/empire-of-man-demigryph-knights",
+        "https://www.goblingaming.co.uk/products/empire-of-man-demigryph-knights",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/the-old-world-empire-of-man-demigryph-knights"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Demigryph Knights",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
