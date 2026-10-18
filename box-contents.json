@@ -11078,6 +11078,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Boyz",
+      "productCodes": [
+        "99120103136"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-boyz",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-boyz-1",
+        "https://shop.afk.games/products/orks-boyz-new",
+        "https://obsidiangames.ca/products/orks-boyz",
+        "https://www.goblingaming.co.uk/products/orks-boyz",
+        "https://mrmuffinstrains.com/products/gw-50-80"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Nob",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ammo Runt",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
