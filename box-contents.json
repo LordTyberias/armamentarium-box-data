@@ -17750,6 +17750,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry: The Jade Obelisk",
+      "productCodes": [
+        "99120201253"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-warcry-the-jade-obelisk-warband",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/warcry-the-jade-obelisk"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Nephrite Priestess",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Obelisk Bearer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Idolarc",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Desecrators",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
