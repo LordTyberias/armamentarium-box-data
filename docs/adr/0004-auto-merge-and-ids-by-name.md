@@ -11,6 +11,9 @@ names of one root entry confirm each other.
 without the switch, and the ids the table already holds are checked against them; §1 "each pull request is opened ready
 … merged at once" does not hold for the draft that removes orphaned ids, which the service never merges.
 
+**Changed by Addendum ARMAM-603:** §1 "merged at once": a merge GitHub refuses with 405 is tried again, three times in
+all, five seconds apart.
+
 ## Context
 
 The service runs on the server since 2026-10-17 (ARMAM-593). Its drafts wait for the maintainer to add catalogue ids,
@@ -114,3 +117,19 @@ Rejected: **reporting in the journal only** (nobody reads it; the table would ke
 that does not resolve is already a gap there); **treating a rename as orphaned** (cosmetic renames would cost valid ids);
 **checking only with the switch** (the ids stay after the switch is removed); **checking at the end of the run** (a run
 stopped by the timeout would lose it).
+
+## Addendum ARMAM-603 — a refused merge is tried again (2026-10-18)
+
+- **Measured** in the first full run over HTTP/2 (ADR 0003 Addendum ARMAM-603, 2026-10-18 from 15:48): GitHub refused 2 of
+  24 merges in the first ten minutes with 405 "Base branch was modified. Review and try the merge again.", two seconds
+  after the pull request was opened. Both branches stood on the newest main (`1c45847`, `13e8b43`); GitHub was still working
+  out the pull request after the merge before. The next merge changed main, the two pull requests then conflicted and
+  stayed open, counting among the five of ADR 0003 §12. Since the shops answer again, merges come every ten to twenty
+  seconds, and five such refusals would end a run.
+- **A merge answered 405 is tried again** after five seconds, three tries in all, before the run goes on to the next
+  product. Any 405, not only that message: GitHub also answers "not mergeable" while it still works a pull request out, and
+  a real conflict costs ten seconds and ends as before (`not merged`, a notice, the pull request stays open). Other
+  answers are not tried again.
+- Rejected: **waiting before every merge** (costs every merge for two in 24); **asking GitHub for `mergeable` first** (one
+  more request per box and the same wait when it is not yet known); **matching the message text** (GitHub's wording is not
+  a contract).
