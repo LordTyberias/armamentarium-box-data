@@ -23667,6 +23667,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Endless Spells: Stormcast Eternals",
+      "productCodes": [
+        "99120218032"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/endless-spells-stormcast-eternals",
+        "https://www.goblingaming.co.uk/products/endless-spells-stormcast",
+        "https://radaddel.de/products/stormcast-eternals-endless-spells"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Endless Spells usable by Stormcast Eternals wizards in games of Warhammer Age of Sigmar",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
