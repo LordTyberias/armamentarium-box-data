@@ -18334,6 +18334,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Cities Of Sigmar Amethyst Knellmage",
+      "productCodes": [
+        "99120202066"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-cities-of-sigmar-amethyst-knellmage",
+        "https://www.goblingaming.co.uk/products/cities-of-sigmar-amethyst-knellmage",
+        "https://mrmuffinstrains.com/products/gw-86-13",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/cities-of-sigmar-amethyst-knellmage"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Amethyst Knellmage",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
