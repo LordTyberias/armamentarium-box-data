@@ -11109,6 +11109,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Warbikers",
+      "productCodes": [
+        "99120103138"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-warbikers",
+        "https://abyssgamestore.ca/products/orks-warbikers-50-79",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-warbikers",
+        "https://obsidiangames.ca/products/orks-warbikers",
+        "https://www.goblingaming.co.uk/products/orks-warbikers",
+        "https://mrmuffinstrains.com/products/gw-50-79",
+        "https://radaddel.de/products/orks-warbikers-1"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "83a7-ea20-ed9-d14a",
+              "name": "Warbikers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
