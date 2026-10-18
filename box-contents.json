@@ -16781,6 +16781,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Nurgle Rotbringers Putrid Blightkings",
+      "productCodes": [
+        "99120201135"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-nurgle-rotbringers-putrid-blightkings",
+        "https://obsidiangames.ca/products/maggotkind-of-nurgle-putrid-blightkings"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Putrid Blightkings",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
