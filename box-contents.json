@@ -27463,6 +27463,55 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes - Disintegrator Weapons Upgrade Set (31-130-W)",
+      "productCodes": [
+        "99123001069"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/legiones-astartes-disintegrator-weapons-upgrade-set-31-130-w",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-disintegrator-weapons-upgrade-set",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/disintegrator-weapons-upgrade-set",
+        "https://radaddel.de/products/legiones-astartes-disintegrator-weapons-upgrade-set"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "disintegrator rifles",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "combi-disintegrators",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "disintegrator pistols",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "disintegrator blasters",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "heavy disintegrators",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "battery packs",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
