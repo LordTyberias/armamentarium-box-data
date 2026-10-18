@@ -26939,6 +26939,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Vindicator Siege Tank",
+      "productCodes": [
+        "99123001030"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legion-vindicator-siege-tank",
+        "https://abyssgamestore.ca/products/the-horus-heresy-vindicator-siege-tank-31-33",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-vindicator-siege-tank",
+        "https://shop.afk.games/products/vindicator-siege-tank",
+        "https://www.goblingaming.co.uk/products/horus-heresy-vindicator-siege-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Legion Vindicator Siege Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
