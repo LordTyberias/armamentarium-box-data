@@ -14936,6 +14936,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Starweaver",
+      "productCodes": [
+        "99120111006"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-starweaver",
+        "https://abyssgamestore.ca/products/harlequin-starweaver-58-12",
+        "https://www.retrofixgames.com/products/warhammer-40k-harlequin-starweaver",
+        "https://shop.afk.games/products/harlequin-starweaver",
+        "https://www.goblingaming.co.uk/products/harlequin-starweaver",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/harlequin-starweaver-voidweaver"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Harlequin Starweaver",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
