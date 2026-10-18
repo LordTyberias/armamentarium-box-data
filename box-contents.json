@@ -3983,6 +3983,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Hearthkyn Salvagers",
+      "productCodes": [
+        "99120118023"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-hearthkyn-salvagers",
+        "https://abyssgamestore.ca/products/kill-team-hearthkyn-salvagers-103-34",
+        "https://www.retrofixgames.com/products/kill-team-hearthkyn-salvagers-1",
+        "https://shop.afk.games/products/kill-team-hearthkyn-salvagers",
+        "https://www.goblingaming.co.uk/products/hearthkyn-salvagers-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-33",
+        "https://radaddel.de/products/kill-team-hearthkyn-salvagers"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hearthkyn Salvagers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
