@@ -3401,6 +3401,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Genestealer Cults Reductus Saboteur",
+      "productCodes": [
+        "99070117011"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-genestealer-cults-reductus-saboteur",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-reductus-saboteur"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "4565-bd65-9e8b-284d",
+              "name": "Reductus Saboteur",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
