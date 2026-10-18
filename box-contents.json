@@ -28439,6 +28439,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum: Ursarax Cohort",
+      "productCodes": [
+        "99123016008"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/mechanicum-ursarax-cohort",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-mechanicum-ursarax-cohort",
+        "https://shop.afk.games/products/mechanicum-ursarax-cohort",
+        "https://www.goblingaming.co.uk/products/mechanicum-ursarax-cohort",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/mechanicum-ursarax-cohort",
+        "https://radaddel.de/products/mechanicum-ursarax-cohort"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ursarax",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
