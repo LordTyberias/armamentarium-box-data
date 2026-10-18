@@ -27319,6 +27319,76 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Saturnine Praetor",
+      "productCodes": [
+        "99123001061"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-saturnine-praetor",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-saturnine-praetor",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-saturnine-praetor",
+        "https://mrmuffinstrains.com/products/gw-31-126",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-legiones-astartes-saturnine-praetor"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "pauldron designs",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "tabards",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "aiguillettes",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "belt buckles",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "set of pauldron medallions",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "set of pauldron pteruges",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "right-handed plasma blaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "left-handed plasma blaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Saturnine war axe",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Saturnine concussion hammer with a choice of two face plates",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
