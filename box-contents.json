@@ -15560,6 +15560,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus: Sicarians",
+      "productCodes": [
+        "99120116035"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-mechanicus-sicarians",
+        "https://abyssgamestore.ca/products/adeptus-mechanicus-sicarian-infiltrators-59-11",
+        "https://shop.afk.games/products/adeptus-mechanicus-sicarians",
+        "https://obsidiangames.ca/products/adeptus-mechanicus-sicarians",
+        "https://mrmuffinstrains.com/products/gw-59-11",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-sicarians"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Adeptus Mechanicus Sicarians",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
