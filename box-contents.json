@@ -17027,6 +17027,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blades of Khorne: Blood Warriors",
+      "productCodes": [
+        "99120201155"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blades-of-khorne-blood-warriors",
+        "https://abyssgamestore.ca/products/khorne-bloodbound-blood-warriors-83-24",
+        "https://obsidiangames.ca/products/blades-of-khorne-blood-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
