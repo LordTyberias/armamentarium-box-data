@@ -7005,6 +7005,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Venerable Dreadnought",
+      "productCodes": [
+        "99120101348"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-venerable-dreadnought",
+        "https://abyssgamestore.ca/products/space-wolves-venerable-dreadnought-bjorn-the-fell-handed-murderfang-53-12",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-venerable-dreadnought-bjorn-the-fell-handed-murderfang",
+        "https://shop.afk.games/products/space-wolves-venerable-dreadnought",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/space-wolves-venerable-dreadnought"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Wolves Venerable Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
