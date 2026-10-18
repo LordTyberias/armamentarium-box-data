@@ -10453,6 +10453,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Ghazghkull Thraka",
+      "productCodes": [
+        "99120103079"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-ghazghkull-thraka",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-ghazghkull-thraka",
+        "https://shop.afk.games/products/orks-ghazghkull-thraka",
+        "https://obsidiangames.ca/products/orks-ghazghkull-thraka",
+        "https://mrmuffinstrains.com/products/gw-50-29",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-ghazghkull-thraka"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "4ea0-6b70-c17c-bc00",
+              "name": "Ghazghkull Thraka",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Makari",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
