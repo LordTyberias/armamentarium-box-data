@@ -29177,6 +29177,51 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch: Flamers of Tzeentch",
+      "productCodes": [
+        "99129915067"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/99129915010",
+        "https://abyssgamestore.ca/products/daemons-of-tzeentch-flamers-of-tzeentch-97-13",
+        "https://shop.afk.games/products/daemons-of-tzeentch-flamers-of-tzeentch",
+        "https://obsidiangames.ca/products/disciples-of-tzeentch-flamers-of-tzeentch",
+        "https://elementgames.co.uk/daemons-of-tzeentch-flamers-of-tzeentch"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Flamers of Tzeentch",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Flamers of Tzeentch",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Flamers of Tzeentch",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
