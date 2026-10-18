@@ -3643,6 +3643,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Ratlings",
+      "productCodes": [
+        "99120105132"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-ratlings",
+        "https://shop.afk.games/products/kill-team-ratlings",
+        "https://obsidiangames.ca/products/kill-team-ratlings",
+        "https://www.goblingaming.co.uk/products/kill-team-ratlings"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ratlings",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
