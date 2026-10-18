@@ -4913,6 +4913,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spiritseer",
+      "productCodes": [
+        "99070104013"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/spiritseer",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/craftworlds-spiritseer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "e53b-7d09-eb7c-c6c7",
+              "name": "Spiritseer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
