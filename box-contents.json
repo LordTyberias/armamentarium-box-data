@@ -3742,6 +3742,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Exaction Squad",
+      "productCodes": [
+        "99120108109"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-exaction-squad",
+        "https://abyssgamestore.ca/products/kill-team-exaction-squad-103-28",
+        "https://www.retrofixgames.com/products/kill-team-exaction-squad-1",
+        "https://www.goblingaming.co.uk/products/exaction-squad-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-27",
+        "https://elementgames.co.uk/kill-team-exaction-squad2",
+        "https://radaddel.de/products/kill-team-exaction-squad"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Adeptus Arbites",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
