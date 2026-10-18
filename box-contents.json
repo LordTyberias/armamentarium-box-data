@@ -3850,6 +3850,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Hand of the Archon",
+      "productCodes": [
+        "99120112058"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-hand-of-the-archon",
+        "https://www.retrofixgames.com/products/kill-team-hand-of-the-archon-1",
+        "https://shop.afk.games/products/kill-team-hand-of-the-archon",
+        "https://radaddel.de/products/kill-team-hand-of-the-archon"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kabalites",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
