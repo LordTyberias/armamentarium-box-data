@@ -19919,6 +19919,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Dreadblade Harrows",
+      "productCodes": [
+        "99120207122"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/nighthaunt-dreadblade-harrows",
+        "https://shop.afk.games/products/etb-nighthaunt-dreadblade-harrows"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Easy",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
