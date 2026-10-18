@@ -14069,6 +14069,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents: Rogue Trader Entourage and Voidsmen-At-Arms",
+      "productCodes": [
+        "99120108113"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/kill-team-elucidian-starstriders",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/rogue-trader-entourage-and-voidsmen-at-arms"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "9360-d8b2-cd92-9e7f",
+              "name": "Rogue Trader Entourage",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
