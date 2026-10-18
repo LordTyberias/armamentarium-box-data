@@ -14308,6 +14308,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Necrons - Lokhust Heavy Destroyer",
+      "productCodes": [
+        "99120110044"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-necrons-lokhusts-heavy-destroyer",
+        "https://www.irresistibleforce.com.au/products/necrons-lokhusts-heavy-destroyer",
+        "https://abyssgamestore.ca/products/necrons-lokhust-heavy-destroyer-49-28",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-lokhusts-heavy-destroyer",
+        "https://shop.afk.games/products/necrons-lokhusts-heavy-destroyer",
+        "https://obsidiangames.ca/products/necrons-lokhust-heavy-destroyer",
+        "https://mrmuffinstrains.com/products/gw-49-28",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-lokhusts-heavy-destroyer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "d9ea-2965-24-d3a3",
+              "name": "Lokhust Heavy Destroyer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
