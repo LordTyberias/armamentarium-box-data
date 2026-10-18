@@ -26860,6 +26860,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Praetor & Chaplain Consul",
+      "productCodes": [
+        "99123001023"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-praetor-chaplain-consul",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-praetor-and-chaplain-consul",
+        "https://shop.afk.games/products/legion-astartes-praetor-chaplain-consul",
+        "https://www.goblingaming.co.uk/products/praetor-chaplain-consul-legiones-astartes-horus-heresy-warhammer-30-000-games-workshop",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/legiones-astartes-praetor-and-chaplain-consul"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Legion Cataphractii Praetor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Legion Chaplain Consul",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
