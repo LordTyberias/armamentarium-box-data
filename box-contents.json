@@ -13163,6 +13163,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids - Psychophage ( 51-75 )",
+      "productCodes": [
+        "99120106074"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/tyranids-psychophage-51-75",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranids-psychophage",
+        "https://shop.afk.games/products/tyranids-psychophage",
+        "https://obsidiangames.ca/products/tyranids-psychophage",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tyranids-psychophage",
+        "https://mrmuffinstrains.com/products/gw-51-75"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "b6ac-f091-a018-dab2",
+              "name": "Psychophage",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
