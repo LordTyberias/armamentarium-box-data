@@ -15934,6 +15934,23 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Genestealer Cults",
+      "productCodes": [
+        "99120117028"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-genestealer-cults",
+        "https://abyssgamestore.ca/products/combat-patrol-genestealer-cults-73-38",
+        "https://radaddel.de/products/genestealer-cults-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-genestealer-cults-1",
+        "https://shop.afk.games/products/combat-patrol-genestealer-cults-10th-ed",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-combat-patrol-genestealer-cults-2024",
+        "https://mrmuffinstrains.com/products/gw-73-381",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/combat-patrol-genestealer-cults-new-"
+      ],
+      "generation": "current"
     }
   ]
 }
