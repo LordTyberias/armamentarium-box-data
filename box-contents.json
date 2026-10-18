@@ -25863,6 +25863,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Beastmen Brayherds - Gor Herd",
+      "productCodes": [
+        "99122716002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-beastmen-brayherds-gor-herd",
+        "https://www.irresistibleforce.com.au/products/beastmen-brayherds-gor-herd",
+        "https://shop.afk.games/products/beastmen-breyherds-gor-herd",
+        "https://www.goblingaming.co.uk/products/beastmen-brayherds-gor-herd",
+        "https://radaddel.de/products/beastmen-brayherds-gor-herd"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gors",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
