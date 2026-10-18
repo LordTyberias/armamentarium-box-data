@@ -332,6 +332,16 @@ public sealed class RunnerTests
     }
 
     [TestMethod]
+    public async Task Run_UncheckedReading_IsANotice()
+    {
+        var notices = new List<string>();
+
+        await Run([], [], new FakeRepository { Text = OrphanTable }, catalogues: new CatalogueIndex(), notices: notices);
+
+        StringAssert.EndsWith(notices.Single(), "unchecked: kt");
+    }
+
+    [TestMethod]
     public async Task Run_OrphanedIdWithoutASlot_IsANotice()
     {
         var open = Enumerable.Range(1, Runner.MaxOpen).Select(i => $"scraper/6001019900{i}").ToArray();

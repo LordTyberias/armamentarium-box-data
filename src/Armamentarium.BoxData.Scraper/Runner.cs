@@ -11,7 +11,8 @@ namespace Armamentarium.BoxData.Scraper;
 /// the run (ADR 0003 Addendum ARMAM-595). Before all that, each run holds the ids the table already carries against
 /// <c>catalogues</c> and may open one draft <see cref="StaleIdsBranch"/> that it never merges (ADR 0004 Addendum ARMAM-597).
 /// What the maintainer should hear of goes to <c>notice</c> as well as to the log: a refused proposal or merge, orphaned
-/// ids and their draft; the run mails them at its end (ADR 0003 Addendum ARMAM-600).
+/// ids and their draft, ids of a reading that could not be checked; the run mails them at its end (ADR 0003 Addendum
+/// ARMAM-600).
 /// </summary>
 public sealed class Runner(
     IRepository repository,
@@ -202,7 +203,7 @@ public sealed class Runner(
         }
 
         var notChecked = findings.Where(f => f.State == IdState.Unchecked).Select(f => f.Reading).Distinct().Order(StringComparer.Ordinal).ToList();
-        (orphaned.Count > 0 ? Notice : log)(
+        (orphaned.Count > 0 || notChecked.Count > 0 ? Notice : log)(
             $"id check: {findings.Count} pair(s), {findings.Count(f => f.State == IdState.Valid)} valid, {orphaned.Count} orphaned, " +
             $"{findings.Count(f => f.State == IdState.Renamed)} renamed; unchecked: {(notChecked.Count > 0 ? string.Join(", ", notChecked) : "none")}");
         if (orphaned.Count == 0)

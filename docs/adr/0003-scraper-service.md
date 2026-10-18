@@ -341,15 +341,17 @@ The table grows only by hand so far. Measured on 2026-10-17:
   `support@armamentarium.app`), sender `boxdata@armamentarium.app`, recipient `info@strecker-it.net`, all fixed in
   `Mailer`. The password is the same systemd credential the web services read (`/etc/armamentarium/mail-password`, via
   `LoadCredential`): no new secret, no sudoers line, the hardening of the unit unchanged. `System.Net.Mail` from the
-  shared framework, no package.
+  shared framework, no package. Accepted (maintainer's decision): the run, which reads shop pages, now holds the mailbox
+  password beside the token; one mailbox, one rotation outweighs a second path that only the failure unit would hold.
 - **A failed run:** `OnFailure=armamentarium-box-data-failure.service` (exit code other than 0, the 20 h timeout, a start
   that never ran). That unit runs the service's DLL with `--notify-failure`, which mails what systemd hands it
   (`MONITOR_UNIT`, `MONITOR_SERVICE_RESULT`, `MONITOR_EXIT_CODE`, `MONITOR_EXIT_STATUS`, `MONITOR_INVOCATION_ID`) and the
   `journalctl` command for that invocation, **nothing from the journal**. Started by hand it says so: the check of the
   mail way. It has no `OnFailure=` of its own; a mail that does not go out ends in its journal.
 - **Notices of a run:** one mail at the end of the run, also when it stops or fails, and only when there is something:
-  a refused proposal or merge (`not proposed`, `not merged`), orphaned ids (the `id check` summary when it counts any)
-  and their draft `scraper/stale-ids` (proposed, not proposed, no slot), a reading whose catalogue source is unreadable.
+  a refused proposal or merge (`not proposed`, `not merged`), the `id check` summary when it counts orphaned ids or names
+  an unchecked reading, the draft `scraper/stale-ids` (proposed, not proposed, no slot), a reading whose catalogue source
+  is unreadable.
   A mail that does not go out is logged (`notice mail not sent`) and changes nothing about the run. `--dry-run` mails
   nothing.
 - **Rejected:** an issue in this repository (the token would need issue rights and fails exactly when it is revoked);
