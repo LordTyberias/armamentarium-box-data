@@ -15620,6 +15620,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus: Kataphron Battle Servitors",
+      "productCodes": [
+        "99120116037"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-mechanicus-kataphron-battle-servitors",
+        "https://abyssgamestore.ca/products/adeptus-mechanicus-kataphron-battle-servitors-breachers-destroyers-59-14",
+        "https://shop.afk.games/products/adeptus-mechanicus-kataphron-battle-servitors",
+        "https://obsidiangames.ca/products/kataphron-battle-servitors",
+        "https://mrmuffinstrains.com/products/gw-59-14",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-kataphron-battle-servitors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Battle Servitors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
