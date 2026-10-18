@@ -6806,6 +6806,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Primaris Inceptors",
+      "productCodes": [
+        "99120101312"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-inceptors",
+        "https://shop.afk.games/products/space-marines-primaris-inceptors",
+        "https://obsidiangames.ca/products/space-marines-inceptors",
+        "https://www.goblingaming.co.uk/products/space-marines-primaris-inceptors",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-inceptors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Primaris Inceptors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
