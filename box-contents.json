@@ -13021,6 +13021,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids - Barbgaunts ( 51-28 )",
+      "productCodes": [
+        "99120106062"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/tyranids-barbgaunts-51-28",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranids-barbgaunts",
+        "https://shop.afk.games/products/tyranids-barbgaunts",
+        "https://obsidiangames.ca/products/tyranids-barbgaunts",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-tyranids-barbgaunts",
+        "https://mrmuffinstrains.com/products/gw-51-28",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranids-barbgaunts"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "6de-ccee-11b4-be3e",
+              "name": "Barbgaunts",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
