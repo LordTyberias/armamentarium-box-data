@@ -18624,6 +18624,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Sylvaneth Belthanos First Thorn of Kurnoth",
+      "productCodes": [
+        "99120204044"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-sylvaneth-belthanos-first-thorn-of-kurnoth",
+        "https://shop.afk.games/products/sylvanteth-belthaos-first-thorn-of-kurnoth",
+        "https://obsidiangames.ca/products/sylvaneth-belthanos-first-thorn-of-kurnoth",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/sylvaneth-belthanos-first-thorn-of-kurnoth"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Belthanos",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
