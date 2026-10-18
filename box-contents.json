@@ -5760,6 +5760,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch: Tzaangor Shaman",
+      "productCodes": [
+        "99070201030"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/disciples-of-tzeentch-tzaangor-shaman",
+        "https://www.goblingaming.co.uk/products/tzeentch-arcanites-tzaangor-shaman",
+        "https://mrmuffinstrains.com/products/gw-83-76"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "c251-bd54-441-4799",
+              "name": "Tzaangor Shaman",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tzaangor Shaman",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
