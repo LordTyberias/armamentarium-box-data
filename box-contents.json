@@ -13698,6 +13698,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Custodes: Custodian Guard",
+      "productCodes": [
+        "99120108073"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-custodes-custodian-guard",
+        "https://abyssgamestore.ca/products/adeptus-custodes-custodian-guard-01-07",
+        "https://www.retrofixgames.com/products/warhammer-40k-adeptus-custodes-custodian-guard-squad",
+        "https://shop.afk.games/products/adeptus-custodes-custodian-guard",
+        "https://obsidiangames.ca/products/adeptus-custodes-custodian-guard",
+        "https://mrmuffinstrains.com/products/gw-01-07"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Adeptus Custodes Custodian Guard",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Adeptus Custodes Custodian Guard",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
