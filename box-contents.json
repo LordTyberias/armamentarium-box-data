@@ -23736,6 +23736,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Vigilors",
+      "productCodes": [
+        "99120218053"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/stormcast-eternals-vigilors",
+        "https://obsidiangames.ca/products/stormcast-eternals-vigilors",
+        "https://mrmuffinstrains.com/products/gw-96-53",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/stormcast-eternals-vigilors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vigilors wearing sleek Thunderstrike armour",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
