@@ -7162,6 +7162,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Dark Angels: Ravenwing Command Squad",
+      "productCodes": [
+        "99120101361"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/dark-angels-ravenwing-command-squad",
+        "https://abyssgamestore.ca/products/dark-angels-ravenwing-command-squad-44-11",
+        "https://shop.afk.games/products/dark-angels-ravenwing-command-squad",
+        "https://www.goblingaming.co.uk/products/ravenwing-command-squad",
+        "https://mrmuffinstrains.com/products/gw-44-11",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/ravenwing-command-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "470a-6daa-9014-12df",
+              "entryId": "212d-f302-aaaf-5c12",
+              "name": "Ravenwing Black Knights",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "470a-6daa-9014-12df",
+              "entryId": "e87d-f173-88b9-aa84",
+              "name": "Ravenwing Command Squad",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
