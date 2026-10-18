@@ -19755,6 +19755,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Soulblight Gravelords Deadwalker Zombies",
+      "productCodes": [
+        "99120207092"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-soulblight-gravelords-deadwalker-zombies",
+        "https://shop.afk.games/products/deadwalkers-zombies",
+        "https://radaddel.de/products/soulblight-gravelords-deadwalker-zombies"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deadwalker Zombies",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
