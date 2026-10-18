@@ -13593,6 +13593,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Engines of Redemption",
+      "productCodes": [
+        "99120108059"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-engines-of-redemption",
+        "https://shop.afk.games/products/adepta-sororitas-engines-of-redemption",
+        "https://obsidiangames.ca/products/adepta-sororitas-engines-of-redemption",
+        "https://www.goblingaming.co.uk/products/adepta-sororitas-penitent-engines",
+        "https://mrmuffinstrains.com/products/gw-52-22"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "327d-a6df-26b-bb9b",
+              "name": "Penitent Engines",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
