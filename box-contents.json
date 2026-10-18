@@ -8821,6 +8821,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Chaos Cultists",
+      "productCodes": [
+        "99120102144"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chaos-cultists",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-chaos-cultists",
+        "https://shop.afk.games/products/chaos-space-marines-chaos-cultists",
+        "https://obsidiangames.ca/products/chaos-space-marines-chaos-cultists",
+        "https://www.goblingaming.co.uk/products/games-workshop-warhammer-40k-chaos-space-marines-chaos-cultists",
+        "https://radaddel.de/products/chaos-space-marines-chaos-cultists"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Cultists",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
