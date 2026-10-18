@@ -13191,6 +13191,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids Horrors of the Hive",
+      "productCodes": [
+        "99120106076"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/tyranids-horrors-of-the-hive",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranid-horrors-of-the-hive"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "8e53-d4a-a69f-e71d",
+              "name": "Screamer-Killer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "1ae1-ed96-5100-eda5",
+              "name": "Neurotyrant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "accompanying Neuroloids",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
