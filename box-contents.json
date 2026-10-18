@@ -21258,6 +21258,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Soulblight Gravelords Bloodcrave Hunt",
+      "productCodes": [
+        "99120207240"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-soulblight-gravelords-bloodcrave-hunt",
+        "https://obsidiangames.ca/products/spearhead-soulblight-gravelords-bloodcrave-hunt"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vampire Lord",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Vargheists",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Blood Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
