@@ -25371,6 +25371,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Orc Boar Boyz Mob",
+      "productCodes": [
+        "99122709004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-orc-boar-boyz-mob",
+        "https://www.irresistibleforce.com.au/products/orc-boar-boyz-mob",
+        "https://shop.afk.games/products/orc-goblin-tribes-orc-boar-boyz-mob",
+        "https://mrmuffinstrains.com/products/gw-09-06",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/orc-and-goblin-tribes-orc-boar-boyz-mob",
+        "https://radaddel.de/products/orc-goblin-orc-boar-boyz-mob"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Orc Boar Boyz",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
