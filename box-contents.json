@@ -7333,6 +7333,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marine: Brutalis Dreadnought",
+      "productCodes": [
+        "99120101371"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marine-brutalis-dreadnought",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-brutalis-dreadnought",
+        "https://shop.afk.games/products/space-marines-brutalis-dreadnought",
+        "https://obsidiangames.ca/products/space-marines-brutalis-dreadnought",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-brutalis-dreadnought",
+        "https://mrmuffinstrains.com/products/gw-48-28"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "1c00-9398-b9e7-446a",
+              "name": "Brutalis Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
