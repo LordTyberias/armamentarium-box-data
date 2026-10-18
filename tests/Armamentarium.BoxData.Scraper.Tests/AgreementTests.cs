@@ -278,4 +278,25 @@ public sealed class AgreementTests
 
         StringAssert.Contains(result.Waiting, "model count");
     }
+
+    [TestMethod]
+    public void Agree_GermanConfirmation_DoesNotKeepASourceSharingNoEntry()
+    {
+        var result = Agreement.Agree([
+            WithSentences(English("a.test"), S(10, "Iron Brothers")),
+            WithSentences(English("b.test"), S(10, "Iron Brothers")),
+            English("c.test", L(5, "Seer Guards"), L(5, "Blade Guards")),
+            German("d.test", L(5, "Seherwachen"), L(5, "Klingenwächter")),
+        ], Root);
+
+        CollectionAssert.AreEqual(new[] { "Iron Brothers" }, result.Entries!.Select(e => e.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Agree_SourcesSharingNoEntry_SaySo()
+    {
+        var result = Agreement.Agree([English("a.test", L(10, "Iron Brothers")), English("b.test", L(5, "Seer Guards"))]);
+
+        Assert.AreEqual("no two sources share an entry", result.Waiting);
+    }
 }

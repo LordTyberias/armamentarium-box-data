@@ -120,4 +120,22 @@ public sealed class BuildSentencesTests
             new[] { (10, "Iron Brothers") },
             Read("<p>This kit builds 10 Iron Brothers and 24 heads, plus 2 transfer sheets.</p>"));
     }
+
+    [TestMethod]
+    public void Parse_ElfInAName_EndsNothing()
+    {
+        CollectionAssert.AreEqual(new[] { (10, "High Elf Spearmen") }, Read("<p>This kit builds 10 High Elf Spearmen.</p>"));
+    }
+
+    [TestMethod]
+    public void Parse_ZeroCount_GivesNothing()
+    {
+        Assert.AreEqual(0, Read("<p>This kit builds 0 Iron Brothers.</p>").Length);
+    }
+
+    [TestMethod]
+    public void Parse_Constructs_IsABuildVerb()
+    {
+        CollectionAssert.AreEqual(new[] { (10, "Iron Brothers") }, Read("<p>This kit constructs 10 Iron Brothers.</p>"));
+    }
 }

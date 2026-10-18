@@ -22,6 +22,20 @@ public static class Agreement
         }
 
         var described = listings.Where(l => !l.German && effective[l].Count > 0).ToList();
+        var keys = new Dictionary<Listing, HashSet<string>>(ReferenceEqualityComparer.Instance);
+        foreach (var listing in described)
+        {
+            keys[listing] = effective[listing].Select(x => Key(x.Name)).ToHashSet();
+        }
+
+        // A source that shares no entry with another describes another thing, or the same one in its own way (a split
+        // by equipment, "10 Kasrkin elite infantry"): it does not count for the box, rather than hold it (ADR 0003
+        // addendum ARMAM-599). Only where no two English sources share an entry may a German one vouch for a single
+        // English source; else it would join an unrelated description to the agreeing ones.
+        var overlapping = described
+            .Where(l => described.Any(o => !ReferenceEquals(o, l) && keys[o].Overlaps(keys[l])))
+            .ToList();
+        var candidates = overlapping.Count > 0 ? overlapping : described;
 
         // A translated listing names the models differently but keeps the publisher's order: it confirms an English
         // listing line by line only when both hold the same sequence of counts, its lines or its build sentences.
@@ -29,7 +43,7 @@ public static class Agreement
         foreach (var german in listings.Where(l => l.German))
         {
             var own = new[] { german.Lines, Effective(german with { Lines = [] }, null, Key) }.Where(l => l.Count > 0).ToList();
-            var match = described
+            var match = candidates
                 .Select(e => (English: e, German: own.FirstOrDefault(g =>
                     effective[e].Select(l => l.Count).SequenceEqual(g.Select(l => l.Count)))))
                 .FirstOrDefault(m => m.German is not null);
@@ -39,14 +53,9 @@ public static class Agreement
             }
         }
 
-        // A source that shares no entry with any other describes another thing, or the same one in its own way (a split
-        // by equipment, "10 Kasrkin elite infantry"): it does not count for the box, rather than hold it (ADR 0003
-        // addendum ARMAM-599).
-        var keys = described.ToDictionary(l => l, l => effective[l].Select(x => Key(x.Name)).ToHashSet(), ReferenceEqualityComparer.Instance);
-        var english = described
-            .Where(l => described.Any(o => !ReferenceEquals(o, l) && keys[o].Overlaps(keys[l]))
-                || confirmations.Any(c => ReferenceEquals(c.English, l)))
-            .ToList();
+        var english = overlapping.Count > 0
+            ? overlapping
+            : described.Where(l => confirmations.Any(c => ReferenceEquals(c.English, l))).ToList();
 
         var order = new List<string>();
         var display = new Dictionary<string, Line>();
@@ -112,7 +121,8 @@ public static class Agreement
 
         if (order.Count == 0)
         {
-            return new AgreementResult(null, sources, "no source states a model count");
+            return new AgreementResult(
+                null, sources, described.Count > 0 ? "no two sources share an entry" : "no source states a model count");
         }
 
         var entries = new List<ProposedEntry>();

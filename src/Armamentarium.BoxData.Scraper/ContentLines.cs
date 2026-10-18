@@ -82,7 +82,7 @@ public static partial class ContentLines
 
     /// <summary>The description as text: block tags become line breaks, entities are decoded.</summary>
     internal static string PlainText(string html) =>
-        WebUtility.HtmlDecode(AnyTag().Replace(BlockTag().Replace(html, "\n"), string.Empty)).Replace(' ', ' ');
+        WebUtility.HtmlDecode(AnyTag().Replace(BlockTag().Replace(html, "\n"), string.Empty)).Replace('\u00A0', ' ');
 
     internal static bool IsExcluded(string name) => Excluded().IsMatch(name);
 

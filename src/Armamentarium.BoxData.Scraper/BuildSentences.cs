@@ -17,7 +17,7 @@ public static partial class BuildSentences
         ["seven"] = 7, ["eight"] = 8, ["nine"] = 9, ["ten"] = 10, ["eleven"] = 11, ["twelve"] = 12, ["thirteen"] = 13,
         ["fourteen"] = 14, ["fifteen"] = 15, ["sixteen"] = 16, ["seventeen"] = 17, ["eighteen"] = 18, ["nineteen"] = 19,
         ["twenty"] = 20, ["ein"] = 1, ["eine"] = 1, ["einen"] = 1, ["eins"] = 1, ["zwei"] = 2, ["drei"] = 3, ["vier"] = 4,
-        ["fünf"] = 5, ["sechs"] = 6, ["sieben"] = 7, ["acht"] = 8, ["neun"] = 9, ["zehn"] = 10, ["elf"] = 11,
+        ["fünf"] = 5, ["sechs"] = 6, ["sieben"] = 7, ["acht"] = 8, ["neun"] = 9, ["zehn"] = 10,
         ["zwölf"] = 12, ["dreizehn"] = 13, ["vierzehn"] = 14, ["fünfzehn"] = 15, ["sechzehn"] = 16, ["siebzehn"] = 17,
         ["achtzehn"] = 18, ["neunzehn"] = 19, ["zwanzig"] = 20,
     };
@@ -69,14 +69,15 @@ public static partial class BuildSentences
         var name = Text.Clean(match.Groups["name"].Value);
         var raw = match.Groups["count"].Value;
         var count = Words.TryGetValue(raw, out var word) ? word : int.Parse(raw);
-        return !ContentLines.IsModelName(name) || ContentLines.IsExcluded(name)
+        return count < 1 || !ContentLines.IsModelName(name) || ContentLines.IsExcluded(name)
             ? null
             : new Line(count, name, ContentLines.IsNonPlayer(name), false);
     }
 
+    // German "elf" (eleven) is left out: it is the "Elf" of "High Elf Spearmen", and German shops write 11 in digits.
     private const string NumberWords =
         "one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|thirteen|fourteen|fifteen|sixteen|seventeen|" +
-        "eighteen|nineteen|twenty|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|elf|zwölf|dreizehn|vierzehn|" +
+        "eighteen|nineteen|twenty|eins|zwei|drei|vier|fünf|sechs|sieben|acht|neun|zehn|zwölf|dreizehn|vierzehn|" +
         "fünfzehn|sechzehn|siebzehn|achtzehn|neunzehn|zwanzig";
 
     private const string ArticleWords = "a|an|ein|eine|einen";
@@ -94,7 +95,7 @@ public static partial class BuildSentences
         @"(?<name>(?>(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*(?:\s+(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*)*))(?!\s*[0-9])";
 
     [GeneratedRegex(
-        @"\b(?:builds?|assembles?|makes?|construct)\s+(?:(?:a|an)\s+(?:squad|set|unit|team|kit|group)\s+of\s+)?" + Number + @"\s+" + Name +
+        @"\b(?:builds?|assembles?|makes?|constructs?)\s+(?:(?:a|an)\s+(?:squad|set|unit|team|kit|group)\s+of\s+)?" + Number + @"\s+" + Name +
         @"|\bBau\s+von\s+" + Number + @"\s+" + Name +
         @"|(?:(?:einen|eine|ein)\s+(?:Trupp|Einheit|Satz)\s+(?:aus|von)\s+)?" + Number + @"\s+" + Name + @"\s+bauen\b",
         RegexOptions.IgnoreCase, Page.RegexTimeout)]

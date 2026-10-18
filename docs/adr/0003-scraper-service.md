@@ -207,14 +207,20 @@ The table grows only by hand so far. Measured on 2026-10-17:
 - **One build per source** (measured on the real texts: shops copy the publisher's prose, and that prose also "builds a
   unique boarding party", "a unit of exceptional soldiers", "10 customizable …"): a count by article counts only when its
   name names a root entry; the first remaining build sentence is the source's, a later one counts only when it names
-  another root entry, and the additions belong to the build they follow.
+  another root entry, and the additions belong to the build they follow. An addition by article follows the same rule
+  ("… armed with a lasgun and a laspistol" adds no model); an addition by digit or number word counts without a hit. A
+  German build sentence by article never counts, its German name has no hit. German "elf" (eleven) is no number word: it
+  is the "Elf" of "High Elf Spearmen". A count of 0 is none.
 - **A build sentence wins over the lines of its source** when its name names a root entry of the product's readings, the
   hit that sets ids (ADR 0004); without such a hit the source's lines stand, and a source without lines gives its build
   sentences. Imperial Navy Breachers (99120108152), which shops split by equipment into lines no 40k entry has, becomes
   "Imperial Navy Breachers × 10" again from "builds a squad of 10 Imperial Navy Breachers".
 - **A source that shares no entry with another** (Element Games splitting the Breachers by equipment, a shop's "10 Kasrkin
   elite infantry") does not count for the box instead of making it wait; a German source shares through its confirmation
-  by position. A source that shares one entry counts whole, so an addition only it names still makes the box wait.
+  by position, but only where no two English sources share an entry; else a German source would join an unrelated
+  description to the agreeing ones. A source that shares one entry counts whole, so an addition only it names still
+  makes the box wait. Sources that state counts but share no entry make the box wait with "no two sources share an
+  entry".
 - **Agreement** (§9 widened): two names that hit the same root entry confirm each other ("Primaris Intercessors",
   "Intercessors"); without a hit the normalised name decides as before. A German source confirms by position against its
   lines or its build sentences, whichever holds the English source's sequence of counts. Two counts for one entry in one
