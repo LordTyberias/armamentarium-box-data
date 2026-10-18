@@ -20564,6 +20564,46 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Teratic Cohort",
+      "productCodes": [
+        "99120207184"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warcry-teratic-cohort",
+        "https://shop.afk.games/products/warcry-teratic-cohort",
+        "https://www.goblingaming.co.uk/products/warcry-teratic-cohort",
+        "https://mrmuffinstrains.com/products/gw-112-22",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/warcry-teratic-cohort"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kavalos Centari",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Teratic Prowlers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Aviarch Harpies",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Mortek Cykloptians",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
