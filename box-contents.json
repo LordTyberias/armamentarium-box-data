@@ -4305,6 +4305,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Empire of Man - Warrior Priests of Ulric on Foot & Mounted",
+      "productCodes": [
+        "99062702012"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/the-empire-of-man-warrior-priest-of-ulric-on-foot-mounted",
+        "https://www.goblingaming.co.uk/products/warrior-priests-of-ulric-on-foot-mounted"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Warrior Priests of Ulric",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
