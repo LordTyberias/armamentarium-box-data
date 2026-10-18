@@ -5430,6 +5430,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus: Tech-Priest Enginseer",
+      "productCodes": [
+        "99070116004"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-mechanicus-tech-priest-enginseer",
+        "https://abyssgamestore.ca/products/astra-militarum-tech-priest-enginseer-47-27",
+        "https://shop.afk.games/products/adeptus-mechanicus-tech-priest-enginseer",
+        "https://obsidiangames.ca/products/adeptus-mechanicus-tech-priest-enginseer",
+        "https://www.goblingaming.co.uk/products/techpriest-enginseer-warhammer-40k-games-workshop",
+        "https://mrmuffinstrains.com/products/gw-59-27",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-tech-priest-enginseer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tech-Priest Enginseer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
