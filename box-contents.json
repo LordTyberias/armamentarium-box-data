@@ -14284,6 +14284,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Monolith",
+      "productCodes": [
+        "99120110043"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-monolith",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-monolith",
+        "https://shop.afk.games/products/necrons-monolith",
+        "https://mrmuffinstrains.com/products/gw-49-09"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Monolith",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
