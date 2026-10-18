@@ -29303,6 +29303,53 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites of Slaanesh: Keeper of Secrets",
+      "productCodes": [
+        "99129915079"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hedonites-of-slaanesh-keeper-of-secrets",
+        "https://shop.afk.games/products/daemons-of-slaanesh-keeper-of-secrets",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/daemons-of-slaanesh-keeper-of-secrets"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "7b2b-4508-263d-f20f",
+              "name": "Keeper of Secrets",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Keeper of Secrets",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "9396-cc24-458d-d358",
+              "entryId": "ed79-0be2-d662-ef65",
+              "name": "Keeper of Secrets",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
