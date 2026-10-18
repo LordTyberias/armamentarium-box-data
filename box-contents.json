@@ -29596,6 +29596,33 @@
         "https://obsidiangames.ca/products/combat-patrol-leagues-of-votann"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Age of Sigmar Dawnbringers Slaves to Darkness Abraxia's Varanspear",
+      "productCodes": [
+        "99120201188"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-dawnbringers-slaves-to-darkness-abraxias-varanspear",
+        "https://obsidiangames.ca/products/slaves-to-darkness-abraxias-varanspear"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Abraxia",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Varanguard",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
