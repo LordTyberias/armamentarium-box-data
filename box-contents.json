@@ -15726,6 +15726,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Eye of Terror Battalion Adeptus Mechanicus",
+      "productCodes": [
+        "99120116049"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-eye-of-terror-battalion-adeptus-mechanicus",
+        "https://mrmuffinstrains.com/products/gw-59-32"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "77b9-2f66-3f9b-5cf3",
+              "entryId": "ea05-4db7-9ee6-7a87",
+              "name": "Onager Dunecrawler",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "77b9-2f66-3f9b-5cf3",
+              "entryId": "3fcc-b6a1-399b-1a29",
+              "name": "Skorpius Disintegrator",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ironstrider Ballistarius",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
