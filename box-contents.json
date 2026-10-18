@@ -21894,6 +21894,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Orruk Brutes",
+      "productCodes": [
+        "99120209089"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orruk-brutes",
+        "https://abyssgamestore.ca/products/orruk-warclans-brutes-89-29",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-ironjawz-orruk-brutes",
+        "https://shop.afk.games/products/orruk-warclans-orruk-brutes",
+        "https://obsidiangames.ca/products/orruk-warclans-brutes",
+        "https://www.goblingaming.co.uk/products/ironjawz-orruk-brutes",
+        "https://mrmuffinstrains.com/products/gw-89-29",
+        "https://elementgames.co.uk/ironjawz-orruk-brutes"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "orruk Brutes",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
