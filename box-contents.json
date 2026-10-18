@@ -4937,6 +4937,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Palatine",
+      "productCodes": [
+        "99070108007"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-palatine",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-palatine",
+        "https://shop.afk.games/products/adepta-sororitas-palatine",
+        "https://obsidiangames.ca/products/adepta-sororitas-palatine",
+        "https://www.goblingaming.co.uk/products/palatine-adepta-sororitas",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-palatine"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "fbeb-1caf-8f5c-ff8e",
+              "name": "Palatine",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
