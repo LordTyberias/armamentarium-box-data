@@ -14042,6 +14042,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents - Inquisitorial Agents ( 68-13 )",
+      "productCodes": [
+        "99120108112"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/imperial-agents-inquisitorial-agents-68-13",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-inquisitorial-agents",
+        "https://shop.afk.games/products/imperial-agents-inquisitorial-agents",
+        "https://obsidiangames.ca/products/inquisitorial-agents",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-inquisitorial-agents"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "4469-7239-717e-9abd",
+              "name": "Inquisitorial Agents",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
