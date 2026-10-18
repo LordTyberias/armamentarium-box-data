@@ -27224,6 +27224,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Rapier Quad Heavy Bolters and Graviton Cannon Battery",
+      "productCodes": [
+        "99123001057"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-rapier-quad-heavy-bolters-and-graviton-cannon-battery",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-rapier-quad-heavy-bolters",
+        "https://shop.afk.games/products/l-astartes-rapier-quad-heavy-bolters",
+        "https://elementgames.co.uk/games-workshop/horus-heresy-miniatures/horus-heresy-adeptus-astartes/horus-heresy-legion-astartes-rapier-quad-heavy-bolters-and-gravition-cannons"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rapier Carrier weapons platforms",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "crew",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
