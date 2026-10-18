@@ -23267,6 +23267,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughters of Khaine: The Crimson Lash",
+      "productCodes": [
+        "99120212044"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/daughters-of-khaine-the-crimson-lash",
+        "https://www.retrofixgames.com/products/age-of-sigmar-daughters-of-khaine-the-crimson-lash",
+        "https://www.goblingaming.co.uk/products/daughters-of-khaine-the-crimson-lash",
+        "https://mrmuffinstrains.com/products/gw-85-25",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/regiment-of-renown-daughters-of-khaine-the-crimson-lash",
+        "https://radaddel.de/products/daughters-of-khaine-the-crimson-lash-regiment-of-renown"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "High Gladiatrix",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sisters of Slaughter",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
