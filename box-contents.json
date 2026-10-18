@@ -19469,6 +19469,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Warplock Jezzails",
+      "productCodes": [
+        "99120206051"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-warplock-jezzails",
+        "https://shop.afk.games/products/skaven-warplock-jezzails",
+        "https://obsidiangames.ca/products/warplock-jezzails",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-warplock-jezzails-99120206051",
+        "https://radaddel.de/products/skaven-warplock-jezzails"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Warplock Jezzail teams",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
