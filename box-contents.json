@@ -7579,6 +7579,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Chaplain in Terminator Armour",
+      "productCodes": [
+        "99120101399"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-chaplain-in-terminator-armour",
+        "https://shop.afk.games/products/space-marines-chaplain-in-terminator-army",
+        "https://obsidiangames.ca/products/space-marines-chaplain-terminator",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-chaplain-in-terminator-armour"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Chaplain clad in durable Terminator armour",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
