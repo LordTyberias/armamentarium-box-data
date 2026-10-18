@@ -9326,6 +9326,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Chaos Lord",
+      "productCodes": [
+        "99120102192"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chaos-lord",
+        "https://abyssgamestore.ca/products/chaos-space-marines-chaos-lord-in-power-armour-43-100",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-chaos-lord-2",
+        "https://shop.afk.games/products/chaos-space-marines-chaos-lord-1",
+        "https://obsidiangames.ca/products/chaos-space-marines-chaos-lord",
+        "https://www.goblingaming.co.uk/products/chaos-lord-chaos-space-marines",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-chaos-lord-99120102192"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Lord miniature",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
