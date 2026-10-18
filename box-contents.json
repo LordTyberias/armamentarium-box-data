@@ -24892,6 +24892,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Kingdom of Bretonnia - Men-at-Arms",
+      "productCodes": [
+        "99122703005"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-kingdom-of-bretonnia-men-at-arms",
+        "https://www.irresistibleforce.com.au/products/men-at-arms",
+        "https://abyssgamestore.ca/products/bretonnia-men-at-arms-06-12",
+        "https://shop.afk.games/products/kingdom-of-bretonnia-men-at-arms",
+        "https://mrmuffinstrains.com/products/gw-06-12",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/kingdom-of-bretonnia-men-at-arms",
+        "https://radaddel.de/products/bretonnia-men-at-arms"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Men-at-Arms",
+              "count": 36
+            }
+          ]
+        }
+      ]
     }
   ]
 }
