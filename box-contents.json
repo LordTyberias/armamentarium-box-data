@@ -21385,6 +21385,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Skink Starseer",
+      "productCodes": [
+        "99120208030"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skink-starseer",
+        "https://abyssgamestore.ca/products/seraphon-skink-starseer-88-25",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-seraphon-skink-starseer",
+        "https://shop.afk.games/products/skink-starseer",
+        "https://obsidiangames.ca/products/seraphon-skink-starseer",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-seraphon-skink-starseer",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/seraphon-skink-starseer"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4e3-e1a7-a8d4-8719",
+              "entryId": "cde3-25dc-fe17-858c",
+              "name": "Skink Starseer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
