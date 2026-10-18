@@ -17348,6 +17348,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 83-102 - Age of Sigmar - Maggotkin of Nurgle: Shudderblight Cyst",
+      "productCodes": [
+        "99120201199"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-83-102",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/maggotkin-of-nurgle-shudderblight-cyst"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Harbinger of Decay",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Pusgoyle Blightlords",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Putrid Blightkings",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Rotmire Creed",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
