@@ -9099,6 +9099,78 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Havocs",
+      "productCodes": [
+        "99120102170"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-havocs",
+        "https://shop.afk.games/products/chaos-space-marines-havocs",
+        "https://obsidiangames.ca/products/chaos-space-marines-havocs",
+        "https://mrmuffinstrains.com/products/gw-43-61",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-havocs"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "autocannons",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "heavy bolters",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "lascannons",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "missile launchers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "reaper chaincannon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "plasma gun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "meltagun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "694f-a205-b260-783c",
+              "name": "flamer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "power maul",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "chainsword",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
