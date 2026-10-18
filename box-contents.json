@@ -3425,6 +3425,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Scout Squad",
+      "productCodes": [
+        "99120101422"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-scout-squad",
+        "https://abyssgamestore.ca/products/space-marines-scouts-squad-103-44",
+        "https://www.retrofixgames.com/products/kill-team-scout-squad",
+        "https://shop.afk.games/products/kill-team-space-marine-scout-squad",
+        "https://obsidiangames.ca/products/kill-team-scout-squad",
+        "https://www.goblingaming.co.uk/products/scout-squad-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-44",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-marines/kill-team-scout-squad",
+        "https://radaddel.de/products/kill-team-scout-squad"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marines Scouts",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
