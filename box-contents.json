@@ -23140,6 +23140,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughters of Khaine: Blood Sisters",
+      "productCodes": [
+        "99120212033"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/daughters-of-khaine-blood-sisters",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/daughters-of-khaine-melusai"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Sisters",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
