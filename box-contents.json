@@ -6831,6 +6831,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Stormhawk Interceptor",
+      "productCodes": [
+        "99120101315"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-stormhawk-interceptor",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marine-stormhawk-interceptor",
+        "https://shop.afk.games/products/space-marines-stormhawk-interceptor",
+        "https://mrmuffinstrains.com/products/gw-48-42"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormhawk Interceptor",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
