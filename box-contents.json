@@ -15303,6 +15303,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Krootox Rider",
+      "productCodes": [
+        "99120113087"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-krootox-rider",
+        "https://abyssgamestore.ca/products/tau-empire-krootox-rider-56-54",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-krootox-rider",
+        "https://shop.afk.games/products/tau-empire-krootox-rider",
+        "https://obsidiangames.ca/products/tau-empire-krootox-rider",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-krootox-rider-2024",
+        "https://mrmuffinstrains.com/products/gw-56-54",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-krootox-rider"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "c523-a2e2-a398-ea00",
+              "name": "Krootox Rider",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
