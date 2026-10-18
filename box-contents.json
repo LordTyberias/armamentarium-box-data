@@ -18728,6 +18728,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: The Twisted Branch",
+      "productCodes": [
+        "99120204050"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-the-twisted-branch",
+        "https://www.retrofixgames.com/products/age-of-sigmar-sylvaneth-the-twisted-branch",
+        "https://www.goblingaming.co.uk/products/sylvaneth-the-twisted-branch",
+        "https://mrmuffinstrains.com/products/gw-92-53",
+        "https://radaddel.de/products/sylvaneth-the-twisted-branch-regiment-of-renown"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Branchwych",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "The Twistweald miniatures",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
