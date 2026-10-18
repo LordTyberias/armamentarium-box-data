@@ -22564,6 +22564,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm-Lords: Hurakan Windchargers",
+      "productCodes": [
+        "99120210052"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hurakan-windchargers",
+        "https://shop.afk.games/products/lumineth-r-lords-hurakan-windchargers",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-r-lords-hurakan-windchargers",
+        "https://radaddel.de/products/lumineth-realm-lords-hurakan-windchargers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hurakan Windchargers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
