@@ -28142,6 +28142,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Rapier Fire Support Battery",
+      "productCodes": [
+        "99123005019"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-rapier-fire-support-battery",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-rapier-fire-support-battery",
+        "https://shop.afk.games/products/h-h-solar-auxilia-rapier-fire-support-battery",
+        "https://www.goblingaming.co.uk/products/solar-auxilia-rapier-fire-support-battery",
+        "https://mrmuffinstrains.com/products/gw-31-171",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/solar-auxilia-rapier-fire-support-battery"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rapier Carriers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "additional crew",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
