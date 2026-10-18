@@ -23162,6 +23162,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughters of Khaine: Witch Aelves",
+      "productCodes": [
+        "99120212034"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/daughters-of-khaine-witch-aelves",
+        "https://abyssgamestore.ca/products/daughters-of-khaine-witch-aelves-sisters-of-slaughter-85-10",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-daughters-of-khaine-witch-aelves",
+        "https://shop.afk.games/products/daughters-of-khaine-witch-aelves",
+        "https://obsidiangames.ca/products/daughters-of-khaine-witch-aelves",
+        "https://mrmuffinstrains.com/products/gw-85-10"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Witch Aelves",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Sisters of Slaughter",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
