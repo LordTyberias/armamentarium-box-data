@@ -27829,6 +27829,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy: Legiones Astartes Combat Force",
+      "productCodes": [
+        "99123001092"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/horus-heresy-legiones-astartes-combat-force",
+        "https://www.retrofixgames.com/products/horus-heresy-legiones-astartes-combat-force",
+        "https://shop.afk.games/products/horus-heresy-l-astartes-combat-force",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-combat-force",
+        "https://mrmuffinstrains.com/products/gw-31-140",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-legiones-astartes-combat-force",
+        "https://radaddel.de/products/legiones-astartes-combat-force"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Leviathan Dreadnought with Ranged Weapons",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Deimos pattern Rhino",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "MkVI Tactical Squad Legionaries",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "MkVI Heavy Support Squad Legionaries",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
