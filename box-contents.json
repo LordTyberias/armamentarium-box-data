@@ -11662,6 +11662,51 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Battleforce Eldritch Raiders",
+      "productCodes": [
+        "99120104088"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-battleforce-eldritch-raiders",
+        "https://shop.afk.games/products/aeldari-eldritch-raiders",
+        "https://www.goblingaming.co.uk/products/aeldari-eldritch-raiders",
+        "https://mrmuffinstrains.com/products/gw-46-78",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/aeldari-eldritch-raiders"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Prince Yriel",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Kharseth",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Starfang",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Corsair Skyreavers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Corsair Voidreavers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
