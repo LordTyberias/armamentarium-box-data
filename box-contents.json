@@ -25423,6 +25423,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Goblin Mob",
+      "productCodes": [
+        "99122709006"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-goblin-mob",
+        "https://www.irresistibleforce.com.au/products/goblin-mob",
+        "https://abyssgamestore.ca/products/orc-and-goblin-tribes-goblin-mob-09-08",
+        "https://www.retrofixgames.com/products/warhammer-the-old-world-orcs-goblin-tribes-goblin-mob",
+        "https://shop.afk.games/products/orc-goblin-tribes-goblin-mob",
+        "https://www.goblingaming.co.uk/products/wawrhammer-old-world-orc-goblin-tribes-goblin-mob",
+        "https://elementgames.co.uk/orc-and-goblin-tribes-goblin-mob",
+        "https://radaddel.de/products/orc-goblin-goblin-mob"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Goblins",
+              "count": 40
+            }
+          ]
+        }
+      ]
     }
   ]
 }
