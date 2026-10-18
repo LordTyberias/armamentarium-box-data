@@ -6753,6 +6753,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Space Marines - Primaris Hellblaster Squad",
+      "productCodes": [
+        "99120101308"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-primaris-hellblaster-squad",
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-hellblasters",
+        "https://shop.afk.games/products/space-marines-primaris-hellblasters",
+        "https://obsidiangames.ca/products/primaris-hellblasters",
+        "https://www.goblingaming.co.uk/products/space-marines-primaris-hellblasters",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-hellblasters"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Primaris Hellblasters",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
