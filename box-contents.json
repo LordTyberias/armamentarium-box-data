@@ -13478,6 +13478,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Morvenn Vahl Abbess Sanctorum",
+      "productCodes": [
+        "99120108047"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-morvenn-vahl-abbess-sanctorum",
+        "https://shop.afk.games/products/adepta-sororitas-morvenn-vahl-abbess-sanctorum",
+        "https://obsidiangames.ca/products/adepta-sororitas-morvenn-vahl",
+        "https://www.goblingaming.co.uk/products/morvenn-vahl-abbess-sanctorum-adepta-sororitas",
+        "https://mrmuffinstrains.com/products/gw-52-37",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-morvenn-vahl-abbess-sanctorum"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "7188-4d20-8216-c68a",
+              "name": "Morvenn Vahl",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
