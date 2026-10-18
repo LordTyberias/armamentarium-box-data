@@ -13645,6 +13645,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Adepta Sororitas - Retributor Squad",
+      "productCodes": [
+        "99120108062"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-adepta-sororitas-retributor-squad",
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-retributor-squad",
+        "https://shop.afk.games/products/adepta-sororitas-retributor-squad",
+        "https://obsidiangames.ca/products/adepta-sororitas-retributor-squad",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-retributor-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Retributors",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Armorium Cherubs",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
