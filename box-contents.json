@@ -6957,6 +6957,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K White Scars Kor'Sarro Khan",
+      "productCodes": [
+        "99120101330"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-white-scars-korsarro-khan-want",
+        "https://shop.afk.games/products/white-scars-korsarro-khan",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/white-scars/white-scars-korsarro-khan"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Captain Kor'sarro Khan",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
