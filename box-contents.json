@@ -17826,6 +17826,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Hedonites of Slaanesh: Accursed Reflection",
+      "productCodes": [
+        "99120201256"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-hedonites-of-slaanesh-accursed-reflection",
+        "https://www.goblingaming.co.uk/products/hedonites-of-slaanesh-accursed-reflection",
+        "https://mrmuffinstrains.com/products/gw-83-112",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/hedonites-of-slaanesh-accursed-reflection"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Contorted Epitome",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Wheels of Excruciation",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Mesmerising Mirror",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Dreadful Visage",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
