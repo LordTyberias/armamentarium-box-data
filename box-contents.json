@@ -4148,6 +4148,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Vespid Stingwings",
+      "productCodes": [
+        "99120113096"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-vespid-stingwings",
+        "https://abyssgamestore.ca/products/kill-team-tau-empire-vespid-stingwings-103-51",
+        "https://www.retrofixgames.com/products/kill-team-tau-empire-vespid-stingwings",
+        "https://shop.afk.games/products/kill-team-tau-empire-vespid-stingwings",
+        "https://obsidiangames.ca/products/kill-team-vespid-stingwings",
+        "https://www.goblingaming.co.uk/products/vespid-stingwings-kill-team",
+        "https://elementgames.co.uk/kill-team-tau-empire-vespid-stingwings",
+        "https://radaddel.de/products/kill-team-vespid-stingwings"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vespid Stingwings accompanied by",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
