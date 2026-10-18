@@ -16631,6 +16631,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness Chaos Chosen ( 83-93 )",
+      "productCodes": [
+        "99120201128"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/slaves-to-darkness-chaos-chosen",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-chaos-chosen",
+        "https://shop.afk.games/products/slaves-to-darkness-chaos-chosen",
+        "https://obsidiangames.ca/products/slaves-to-darkness-chaos-chosen",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-chaos-chosen-2023-repack",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/slaves-to-darkness-chaos-chosen",
+        "https://radaddel.de/products/slaves-to-darkness-chaos-chosen"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "3aa3-1abd-dbb-4a18",
+              "name": "Chaos Chosen",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
