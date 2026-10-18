@@ -16269,6 +16269,32 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-leagues-of-votann"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Leagues of Votann: Arkanist Evaluator",
+      "productCodes": [
+        "99120118025"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leagues-of-votann-arkanist-evaluator",
+        "https://www.retrofixgames.com/products/warhammer-40k-leagues-of-votann-arkanyst-evaluator",
+        "https://obsidiangames.ca/products/arkanyst-evaluator",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/leagues-of-votann-arkanyst-evaluator"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "e5c2-d1a0-b54d-65df",
+              "name": "Arkanyst Evaluator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
