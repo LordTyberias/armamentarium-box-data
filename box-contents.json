@@ -12572,6 +12572,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Death Korps of Krieg",
+      "productCodes": [
+        "99120105135"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-death-korps-of-krieg",
+        "https://shop.afk.games/products/astra-militarum-death-korps-of-krieg",
+        "https://obsidiangames.ca/products/death-korps-of-krieg",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-death-korps-of-krieg"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "stalwart Death Korps of Krieg troopers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
