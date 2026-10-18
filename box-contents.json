@@ -3343,6 +3343,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Inquisitorial Agents - Kill Team",
+      "productCodes": [
+        "99120108110"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/inquisitorial-agents-kill-team",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/kill-team-inquisitorial-agents"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Inquisitorial Agents",
+              "count": 7
+            }
+          ]
+        }
+      ]
     }
   ]
 }
