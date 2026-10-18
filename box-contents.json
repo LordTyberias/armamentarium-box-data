@@ -20641,6 +20641,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Deathrattle Skeletons",
+      "productCodes": [
+        "99120207188"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/soulblight-gravelords-deathrattle-skeletons",
+        "https://www.retrofixgames.com/products/age-of-sigmar-soulblight-gravelords-deathrattle-skeletons",
+        "https://shop.afk.games/products/soulblight-gravelords-deathrattle-skeletons",
+        "https://www.goblingaming.co.uk/products/soulblight-gravelords-deathrattle-skeletons",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-deathrattle-skeletons",
+        "https://radaddel.de/products/soulblight-gravelords-deathrattle-skeletons"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deathrattle Skeletons",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
