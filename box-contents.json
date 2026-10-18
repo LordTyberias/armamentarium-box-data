@@ -13106,6 +13106,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Von Ryan's Leapers",
+      "productCodes": [
+        "99120106070"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tyranids-von-ryans-leapers",
+        "https://abyssgamestore.ca/products/tyranids-von-ryans-leapers-51-37",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranids-von-ryans-leapers",
+        "https://shop.afk.games/products/tyranids-von-ryans-leapers",
+        "https://obsidiangames.ca/products/von-ryans-leapers",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tyranids-von-ryans-leapers",
+        "https://mrmuffinstrains.com/products/gw-51-37",
+        "https://radaddel.de/products/tyranids-von-ryan-s-leapers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Von Ryan’s Leapers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
