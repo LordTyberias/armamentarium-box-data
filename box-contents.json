@@ -15133,6 +15133,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Drukhari: Archon",
+      "productCodes": [
+        "99120112060"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/drukhari-archon",
+        "https://www.retrofixgames.com/products/warhammer-40k-drukhari-archon-1",
+        "https://obsidiangames.ca/products/archon",
+        "https://www.goblingaming.co.uk/products/drukhari-archon",
+        "https://mrmuffinstrains.com/products/gw-45-26",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/drukhari-archon"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "38de-521f-1ce0-44a0",
+              "entryId": "5c1c-fa4a-3234-c711",
+              "name": "Archon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
