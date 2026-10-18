@@ -12121,6 +12121,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Astra Militarum - Cadian Shock Troops",
+      "productCodes": [
+        "99120105101"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-astra-militarum-cadian-shock-troops",
+        "https://www.irresistibleforce.com.au/products/astra-militarum-cadian-shock-troops",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-cadian-shock-troops-1",
+        "https://shop.afk.games/products/cadian-shock-troops",
+        "https://obsidiangames.ca/products/astra-militarum-cadian-shock-troops",
+        "https://www.goblingaming.co.uk/products/cadian-shock-troops",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-cadian-shock-troops-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cadian Shock Troops",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
