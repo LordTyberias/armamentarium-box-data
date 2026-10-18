@@ -22392,6 +22392,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth: Ellania & Ellathor",
+      "productCodes": [
+        "99120210029"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ellania-ellathor",
+        "https://www.goblingaming.co.uk/products/ellania-ellathor-lumineth-realm-lords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-ellania-and-ellathor"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ellania",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
