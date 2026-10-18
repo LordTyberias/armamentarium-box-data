@@ -4547,6 +4547,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines - Primaris Lieutenant with Power Sword ( 48-84 )",
+      "productCodes": [
+        "99070101053"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/space-marines-primaris-lieutenant-with-power-sword-48-84",
+        "https://www.goblingaming.co.uk/products/space-marine-primaris-lieutenant-with-power-sword"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Primaris Lieutenant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
