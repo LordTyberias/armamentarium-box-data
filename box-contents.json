@@ -3796,6 +3796,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Deathwatch",
+      "productCodes": [
+        "99120108119"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/kill-team-deathwatch",
+        "https://www.irresistibleforce.com.au/products/kill-team-deathwatch",
+        "https://www.retrofixgames.com/products/kill-team-deathwatch",
+        "https://shop.afk.games/products/kill-team-deathwatch",
+        "https://obsidiangames.ca/products/kill-team-deathwatch",
+        "https://www.goblingaming.co.uk/products/deathwatch-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-93",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/deathwatch/kill-team-deathwatch",
+        "https://radaddel.de/products/kill-team-deathwatch"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deathwatch miniatures",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
