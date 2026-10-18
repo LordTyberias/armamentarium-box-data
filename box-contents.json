@@ -28073,6 +28073,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Solar Auxilia Charonite Ogryn Section",
+      "productCodes": [
+        "99123005017"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-charonite-ogryn-section",
+        "https://shop.afk.games/products/h-h-solar-auxilia-charonite-ogryn-section",
+        "https://mrmuffinstrains.com/products/gw-31-169",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/solar-auxilia-charonite-ogryn-section"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Charonite claws",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Charonite blades",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Charonite crushers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Charonite shredders",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
