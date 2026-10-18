@@ -26485,6 +26485,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes Deimos Pattern Rhino",
+      "productCodes": [
+        "99123001001"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-deimos-pattern-rhino",
+        "https://shop.afk.games/products/deimos-pattern-rhino",
+        "https://obsidiangames.ca/products/space-marines-deimos-pattern-rhino",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/legiones-astartes-deimos-pattern-rhino"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Legion Rhino Transport",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
