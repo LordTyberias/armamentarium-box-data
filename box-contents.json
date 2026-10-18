@@ -6196,6 +6196,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Wood Elf Realms - Treekin",
+      "productCodes": [
+        "99112704010"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/wood-elf-realms-treekin",
+        "https://www.goblingaming.co.uk/products/wood-elf-realms-tree-kin"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tree Kin",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
