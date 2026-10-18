@@ -17104,6 +17104,54 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Darkoath Brand's Oathbound",
+      "productCodes": [
+        "99120201178"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-darkoath-brands-oathbound",
+        "https://abyssgamestore.ca/products/slaves-to-darkness-darkoath-brands-oathbound-83-56",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-darkoath-brands-oathbound",
+        "https://shop.afk.games/products/darkoath-brands-oathbound",
+        "https://obsidiangames.ca/products/slaves-to-darkness-brands-oathbound",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-slaves-to-darkness-darkoath-brands-oathbound",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/slaves-to-darkness-darkoath-brands-oathbound",
+        "https://radaddel.de/products/slaves-to-darkness-brands-oathbound"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gunnar Brand",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Singri Brand",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Warqueen Tanari",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Dendrel Direbrand",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Broken Nadja",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
