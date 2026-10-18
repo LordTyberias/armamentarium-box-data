@@ -7281,6 +7281,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Castellan",
+      "productCodes": [
+        "99120101367"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-castellan",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-castellan",
+        "https://shop.afk.games/products/black-templars-castellan",
+        "https://www.goblingaming.co.uk/products/castellan-black-templars-warhammer-40k",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/black-templars-5069/black-templars-castellan"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "36d3-36bc-68dd-40ac",
+              "entryId": "f151-e676-d3b8-200c",
+              "name": "Castellan",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
