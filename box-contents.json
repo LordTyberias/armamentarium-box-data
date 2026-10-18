@@ -4569,6 +4569,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Iron Priest",
+      "productCodes": [
+        "99070101065"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-iron-priest",
+        "https://abyssgamestore.ca/products/space-wolves-iron-priest-53-19",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-iron-priest",
+        "https://shop.afk.games/products/space-wolves-iron-priest",
+        "https://www.goblingaming.co.uk/products/iron-priest-space-wolves-warhammer-40k-99070101065",
+        "https://mrmuffinstrains.com/products/gw-53-19",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/space-wolves-iron-priest"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "3212-bec7-a50e-3363",
+              "name": "Iron Priest",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
