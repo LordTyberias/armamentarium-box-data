@@ -15882,6 +15882,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Aberrants",
+      "productCodes": [
+        "99120117022"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/genestealer-cults-aberrants",
+        "https://shop.afk.games/products/genestealer-cults-aberrants",
+        "https://mrmuffinstrains.com/products/gw-51-60",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-aberrants"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "f51d-bc51-f301-9dee",
+              "name": "Aberrants",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
