@@ -16520,6 +16520,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Hedonites Of Slaanesh Blissbarb Archers",
+      "productCodes": [
+        "99120201104"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-hedonites-of-slaanesh-blissbarb-archers",
+        "https://shop.afk.games/products/blissbarb-archers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blissbarb Archers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Blissbrew Homonculus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
