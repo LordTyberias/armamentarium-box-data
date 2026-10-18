@@ -3220,6 +3220,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: The Blacktalons",
+      "productCodes": [
+        "99120218080"
+      ],
+      "sources": [
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/stormcast-eternals-the-blacktalons",
+        "https://radaddel.de/products/stormcast-eternals-the-blacktalons"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Neave Blacktalon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Hendrick",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Rostus Oxenhammer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Shakana Goldenblade",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lorai",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
