@@ -5038,6 +5038,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents: Navigator",
+      "productCodes": [
+        "99070108014"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/imperial-agents-navigator",
+        "https://abyssgamestore.ca/products/imperial-agents-navigator-57-52",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-navigator",
+        "https://shop.afk.games/products/imperial-agents-navigator",
+        "https://www.goblingaming.co.uk/products/imperial-agents-navigator",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-navigator"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "55cf-8d86-affd-bc9b",
+              "name": "Navigator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
