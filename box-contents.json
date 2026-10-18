@@ -18687,6 +18687,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Spitewing Flight",
+      "productCodes": [
+        "99120204049"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-spitewing-flight",
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-spitewing-flight",
+        "https://www.goblingaming.co.uk/products/spearhead-spitewing-flight",
+        "https://mrmuffinstrains.com/products/gw-70-922",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/spearhead-spitewing-flight",
+        "https://radaddel.de/products/sylvaneth-spitewing-flight-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Arch-Revenant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Revenant Seekers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Spiterider Lancers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Gossamid Archers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
