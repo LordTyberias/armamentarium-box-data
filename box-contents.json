@@ -16427,6 +16427,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Khorne Bloodbound Blood Warriors",
+      "productCodes": [
+        "99120201036"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-khorne-bloodbound-blood-warriors",
+        "https://shop.afk.games/products/khorne-bloodbound-blood-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
