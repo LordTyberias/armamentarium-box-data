@@ -18601,6 +18601,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Warsong Revenant",
+      "productCodes": [
+        "99120204042"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-warsong-revenant",
+        "https://www.goblingaming.co.uk/products/warsong-revenant-sylvaneth-age-of-sigmar",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/sylvaneth-warsong-revenant"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Warsong Revenant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
