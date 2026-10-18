@@ -26509,6 +26509,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes Kratos Heavy Assault Tank",
+      "productCodes": [
+        "99123001002"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-kratos-heavy-assault-tank",
+        "https://www.retrofixgames.com/products/warhammer-the-horus-heresy-legiones-astartes-kratos-heavy-assault-tank",
+        "https://shop.afk.games/products/hh-kratos-heavy-assault-tank",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-astartes-kratos-heavy-assault-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kratos Heavy Assault Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
