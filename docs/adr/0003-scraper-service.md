@@ -19,6 +19,11 @@ asked once more at the end of the same run first.
 two names of one root entry and drops a source with two counts for one entry, and a source sharing no entry with another
 no longer holds the box; Context's "single kits are described in prose" no longer makes them wait.
 
+**Changed by Addendum ARMAM-602:** §5 gains `shop.afk.games`, `obsidiangames.ca`, `www.goblingaming.co.uk` and
+`mrmuffinstrains.com` (Shopify) and loses `taschengelddieb.de` and `miniset.net` with the JTL and miniset adapters; §6
+"per minute for `miniset.net`" and its slow-source rule have no host left. A text and data mining reservation no longer
+keeps a shop out (Context, `games-island.eu` stays out for its captcha).
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -250,3 +255,70 @@ The table grows only by hand so far. Measured on 2026-10-17:
   defined in Imperium - Astra Militarum (`b0ae-12a5-c84-ea45`) and linked at the root of Xenos - Genestealer Cults
   (`3bdf-a114-5035-c6ac`), in the 10th and the 11th edition alike. So they get no hit, no ids and no count by article;
   whether the defining catalogue wins over a linking one, Armamentarium ARMAM-598 decides.
+
+## Addendum ARMAM-602 — four more shops, two gone (2026-10-18)
+
+- **Probe:** `--dry-run --host <host> --code <a,b,…>` asks one allowlisted shop for each article number and prints the
+  lines and build sentences it reads, nothing else; it needs `--dry-run` and `--code` (a run over part of the sources would
+  weaken the two-source rule). The candidates were measured with it, so through the service's own client (`ABD/1.0`, its
+  TLS): `www.fantasywelt.de` had answered curl and refused .NET (Addendum ARMAM-596).
+- **Sample:** the same twelve products for every shop: single kits Intercessors `99120101309`, Necron Warriors
+  `99120110052`, Vindictors `99120218061`, MKVI Tactical Squad `99123001003`, Empire State Troops `99122702008`; boxes
+  Warhammer 40,000 Starter Set `60010199058`, Dark Angels Army Set `60010101006`, Spearhead: Stormcast Eternals
+  `99120218081`, Spearhead: Skaven `99120206041`; Kill Team Hivestorm `60010199070`, Exodite `60010199084`, Kasrkin
+  `99120105133`.
+- **A shop qualifies** when it confirms at least five of the twelve and the service reads a model count (lines or a build
+  sentence) for at least five, with no captcha, WAF or challenge; a non-commercial licence on the content keeps it out. A
+  ban on scraping in the terms and a text and data mining reservation are carried by the maintainer (Armamentarium
+  ARMAM-559 weighs them before release); a reservation no longer keeps a shop out. Maintainer's decision.
+- **Candidates** (web search over Germany, Austria, Switzerland, the UK, the USA, Canada and Australia; confirmed / count
+  read, of 12):
+
+  | Host | System | Lang. | Confirmed | Count | Terms | Result |
+  |---|---|---|---|---|---|---|
+  | `shop.afk.games` | Shopify | en | 9 | 9 | no ban | **in** |
+  | `obsidiangames.ca` | Shopify | en | 7 | 7 | Shopify's standard ban | **in**, ban carried |
+  | `www.goblingaming.co.uk` | Shopify | en | 8 | 6 | no ban | **in** |
+  | `mrmuffinstrains.com` | Shopify | en | 8 | 5 | Shopify's standard ban | **in**, ban carried |
+  | `www.mightylancergames.co.uk` | Shopify | en | 8 | 4 | ban | out, count |
+  | `topshelfco.ca` | Shopify | en | 4 | 3 | no ban | out |
+  | `www.gapgames.com.au` | Shopify | en | 5 | 3 | ban | out, count |
+  | `store.401games.ca` | Shopify | en | 6 | 0 | ban | out, count |
+  | `mtechcave.com` | Shopify | en | 5 | 0 | ban | out, count |
+  | `leisuregames.com` | Shopify | en | 3 | 3 | ban | out |
+  | `contrariangaming.com` | Shopify | en | 2 | 1 | ban | out |
+  | `cardsdice.ch` | Shopify | de | 2 | 1 | no ban | out |
+  | `cardcosmos.de` | Shopify | de | 2 | 0 | no ban | out |
+  | `www.battle-bear-sb.de` | Shopify | de | 3 | 0 | no ban | out |
+  | `gamekastle.com` | Shopify | en | 0 | 0 | ban | out |
+  | `gamesclub.at` | Shopify | de | 0 | 0 | no ban | out, no barcodes |
+  | `www.nippon4u.com` | Shopify | de | 0 | 0 | no ban | out, barcode field holds other numbers |
+  | `www.zwergenschmiede.ch` | Lightspeed | de | 7 | 2 | no ban | out, "Du erhältst 10 …" is no build verb |
+  | `www.dungeon-wars.de` | PrestaShop | de | 5 | 3 | no ban | out, "… zusammenzubauen" is not read |
+  | `fmb-tabletop.de` | Shopware 6 | de | 4 | 0 | no ban | out |
+  | `www.spielwaren-kontor24.de` | Shopware 6 | de | 1 | 1 | no ban | out |
+  | `www.wog.ch` | own | de/en | 0 | 0 | not found | out, search finds nothing |
+  | `tabletopshop.ch` | WooCommerce | de | 0 | 0 | no ban | out, no EAN search |
+  | `www.xzone.de` | own | de | 0 | 0 | no ban | out, no Games Workshop range |
+
+  Challenge or refusal on the first request, not measured further: `duo-shop.de`, `geek-haven.de`,
+  `miniaturemarket.com`, `spiele-offensive.de`, `www.firestormgames.co.uk`, `gameslore.com`, `chaoscards.co.uk`,
+  `mightyape.com.au` (Cloudflare), the comparison sites `idealo.de`, `geizhals.at`, `billiger.de` and `cardmarket.com`
+  (403 or a bot page); `pricerunner.com` lists prices only. The non-Shopify shops were measured by hand with `ABD/1.0` and
+  the service's parser run over the saved pages, since a probe needs an adapter. No shop showed a text and data mining
+  reservation or a non-commercial licence; the terms were searched for the words, not read as a lawyer would. For
+  comparison, two shops already listed: `www.wellplayed.ch` 3 / 3, `abyssgamestore.ca` 10 / 4 — the existing sources are
+  not judged anew.
+- **Gone:** `taschengelddieb.de` answers its search with a JavaScript challenge (200, 18.8 kB, "Please enable JavaScript
+  to continue"), 0 of 12 in two probes on 2026-10-18, the second at 11:35, and in ARMAM-599's probe the same morning; the page is larger
+  than the block-page limit (§12), so the service saw no finding rather than a refusal. `miniset.net` restricted the
+  client from its first request, asked once a minute, in two probes on 2026-10-18, the second at 11:35, as in ARMAM-599. Both leave, and with them the JTL
+  and miniset adapters, which no other shop uses. Neither challenge was circumvented.
+- **Run time:** the shops are asked side by side and each waits five seconds per request, so a further fast shop adds
+  no time to a product; the unit's 20 hours (Addendum ARMAM-595) stand. The slow-source rule of §6 stays in the runner
+  without a host.
+- **German shops** give prose or nothing; only English Shopify shops copy the publisher's "1x … 22x …" lists. Widening the
+  build verbs for `www.zwergenschmiede.ch` ("Du erhältst") or `www.dungeon-wars.de` ("… zusammenzubauen") was weighed
+  and declined (maintainer's decision): Addendum ARMAM-599's rules stand.
+- Rejected: a JavaScript challenge marker for `taschengelddieb.de` (the shop leaves); keeping the JTL adapter for later
+  (no shop uses it); measuring by curl (a shop may answer curl and refuse the service's client).
