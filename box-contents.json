@@ -29373,6 +29373,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Space Wolves ( 53-37 )",
+      "productCodes": [
+        "99120101332"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-space-wolves-53-37",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-space-wolves"
+      ],
+      "generation": "legacy"
     }
   ]
 }
