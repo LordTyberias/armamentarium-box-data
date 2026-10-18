@@ -12330,6 +12330,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Valkyrie",
+      "productCodes": [
+        "99120105113"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-valkyrie",
+        "https://shop.afk.games/products/astra-militarum-valkyrie",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/imperial-guard-valkyrie"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Valkyrie",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
