@@ -11994,6 +11994,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum Basilisk",
+      "productCodes": [
+        "99120105047"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/astra-militarum-basilisk",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/imperial-guard-basilisk"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Basilisk",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
