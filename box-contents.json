@@ -22483,6 +22483,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Vanguard Lumineth Realm Lords",
+      "productCodes": [
+        "99120210048"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-vanguard-lumineth-realm-lords",
+        "https://obsidiangames.ca/products/vanguard-lumineth-realm-lords"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Scinari Cathallar",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Vanari Bladelords",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Vanari Auralan Wardens",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Vanari Auralan Sentinels",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
