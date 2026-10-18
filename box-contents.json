@@ -14093,6 +14093,58 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Adepta Sororitas - Penitent Crusader Host - Battleforce",
+      "productCodes": [
+        "99120108118"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-adepta-sororitas-penitent-crusader-host-battleforce",
+        "https://shop.afk.games/products/adepta-sororitas-penitent-crusader-host",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/adepta-sororitas-penitent-crusader-host"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ministorum Priest",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Adepta Sororitas Rhino",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "327d-a6df-26b-bb9b",
+              "name": "Penitent Engines",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Repentia",
+              "count": 9
+            },
+            {
+              "role": "team",
+              "name": "Repentia Superior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "ca59-3760-5efc-9846",
+              "name": "Arco-Flagellants",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
