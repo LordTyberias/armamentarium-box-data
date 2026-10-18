@@ -25187,6 +25187,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Dwarf Ironbreakers",
+      "productCodes": [
+        "99122705004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-dwarf-ironbreakers",
+        "https://www.irresistibleforce.com.au/products/dwarf-iron-breakers",
+        "https://shop.afk.games/products/dwarfen-mountain-holds-dwarf-ironbreakers",
+        "https://www.goblingaming.co.uk/products/dwarfen-mountain-holds-dwarf-ironbreakers",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/dwarf-mountain-holds-dwarf-ironbreakers",
+        "https://radaddel.de/products/mountain-holds-dwarf-ironbreakers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Ironbreakers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
