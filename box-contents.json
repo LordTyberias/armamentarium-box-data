@@ -25137,6 +25137,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Dwarf Warriors",
+      "productCodes": [
+        "99122705002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-dwarf-warriors",
+        "https://www.irresistibleforce.com.au/products/dwarf-warriors",
+        "https://shop.afk.games/products/dwarfen-mountain-holds-dwarf-warrior",
+        "https://www.goblingaming.co.uk/products/dwarfen-mountain-holds-dwarf-warriors",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/dwarfen-mountain-holds-dwarf-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Warriors",
+              "count": 36
+            }
+          ]
+        }
+      ]
     }
   ]
 }
