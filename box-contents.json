@@ -27537,6 +27537,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy MKIII Breacher Squad",
+      "productCodes": [
+        "99123001072"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/horus-heresy-mkiii-breacher-squad",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-mkiii-breacher-squad",
+        "https://mrmuffinstrains.com/products/gw-31-141",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/mkiii-breacher-squad",
+        "https://radaddel.de/products/legiones-astartes-mkiii-breacher-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Breacher Squad Legionaries",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
