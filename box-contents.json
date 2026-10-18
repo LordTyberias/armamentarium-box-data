@@ -20352,6 +20352,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Kavalos Deathriders",
+      "productCodes": [
+        "99120207162"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ossiarch-bonereapers-kavalos-deathriders",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-kavalos-deathriders",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-kavalos-deathriders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kavalos Deathriders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
