@@ -19591,6 +19591,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Skaven Gutter Runners",
+      "productCodes": [
+        "99120206067"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-skaven-gutter-runners",
+        "https://www.goblingaming.co.uk/products/skaven-gutter-runners",
+        "https://mrmuffinstrains.com/products/gw-90-34",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/skaven-gutter-runners-new"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gutter Runners",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
