@@ -22903,6 +22903,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Helsmiths of Hashut - Helforge Host",
+      "productCodes": [
+        "99120211002"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-helsmiths-of-hashut-helforge-host",
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-hashut-helforge-host",
+        "https://www.goblingaming.co.uk/products/spearhead-helsmiths-helforge-host",
+        "https://mrmuffinstrains.com/products/gw-70-821",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/spearhead-helsmiths-of-hashut-helforge-host",
+        "https://radaddel.de/products/helsmiths-of-hashut-helforge-host-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "War Despot",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Dominator Engine",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Tormentor Bombard",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Infernal Cohort miniatures",
+              "count": 11
+            }
+          ]
+        }
+      ]
     }
   ]
 }
