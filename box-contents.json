@@ -19416,6 +19416,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Acolyte Globadiers",
+      "productCodes": [
+        "99120206046"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-acolyte-globadiers",
+        "https://shop.afk.games/products/skaven-acolyte-globadiers",
+        "https://obsidiangames.ca/products/acolyte-globadiers",
+        "https://www.goblingaming.co.uk/products/skaven-acolyte-globadiers",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-acolyte-globadiers",
+        "https://radaddel.de/products/skaven-acolyte-globadiers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Acolyte Globadiers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
