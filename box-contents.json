@@ -18040,6 +18040,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Cities of Sigmar - Freeguild Fusiliers",
+      "productCodes": [
+        "99120202049"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-age-of-sigmar-cities-of-sigmar-freeguild-fusiliers",
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-freeguild-fusiliers",
+        "https://abyssgamestore.ca/products/cities-of-sigmar-freeguild-fusilers-86-19",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-freeguild-fusilliers",
+        "https://shop.afk.games/products/freeguild-fusilliers",
+        "https://obsidiangames.ca/products/cities-of-sigmar-freeguild-fusiliers",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-cities-of-sigmar-freeguild-fusilliers",
+        "https://mrmuffinstrains.com/products/gw-86-19",
+        "https://radaddel.de/products/cities-of-sigmar-freeguild-fusiliers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Freeguild Fusiliers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
