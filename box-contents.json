@@ -23346,6 +23346,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Battleforce Daughters Of Khaine Scathborn Coven",
+      "productCodes": [
+        "99120212051"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-daughters-of-khaine-scathborn-coven",
+        "https://www.goblingaming.co.uk/products/daughters-of-khaine-scathborn-coven",
+        "https://mrmuffinstrains.com/products/gw-85-67",
+        "https://radaddel.de/products/daughters-of-khaine-scathborn-coven-battleforce"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Morathi-Khaine",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "The Shadow Queen",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Khinerai Heartrenders",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Blood Sisters",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
