@@ -27896,6 +27896,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia Lasrifle Section",
+      "productCodes": [
+        "99123005002"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-lasrifle-section",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-lasrifle-section",
+        "https://shop.afk.games/products/horus-heresy-solar-auxilia-lasrifle-section",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-lasrifle-section"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Solar Auxiliaries",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
