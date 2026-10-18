@@ -13407,6 +13407,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Adepta Sororitas - Combat Patrol",
+      "productCodes": [
+        "99120108044"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-adepta-sororitas-combat-patrol",
+        "https://abyssgamestore.ca/products/combat-patrol-adepta-sororitas-52-30"
+      ],
+      "generation": "current"
     }
   ]
 }
