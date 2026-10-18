@@ -17076,6 +17076,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites of Slaanesh: Blissbarb Archers",
+      "productCodes": [
+        "99120201160"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hoednites-of-slaanesh-blissbarb-archers",
+        "https://mrmuffinstrains.com/products/gw-83-83",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/hedonites-of-slaanesh-blissbarb-archers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blissbarb Archers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Blissbrew Homonculus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
