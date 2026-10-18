@@ -23385,6 +23385,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes: Ironguts",
+      "productCodes": [
+        "99120213027"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/ogor-mawtribes-ironguts",
+        "https://radaddel.de/products/ogor-mawtribes-ironguts-1"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ironguts",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
