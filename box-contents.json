@@ -6675,6 +6675,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Iron Hands: Iron Father Feirros",
+      "productCodes": [
+        "99120101291"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/iron-hands-iron-father-feirros",
+        "https://www.retrofixgames.com/products/warhammer-40k-iron-hands-feirros",
+        "https://shop.afk.games/products/iron-hands-iron-father-feirros",
+        "https://mrmuffinstrains.com/products/gw-55-10",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/iron-hands/iron-hands-feirros"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f27e-18c0-b73e-748e",
+              "entryId": "6c9d-4ec3-69dd-90b2",
+              "name": "Iron Father Feirros",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
