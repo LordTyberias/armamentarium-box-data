@@ -18205,6 +18205,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Cities Of Sigmar Fusil-Platoon",
+      "productCodes": [
+        "99120202059"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-cities-of-sigmar-fusil-platoon",
+        "https://shop.afk.games/products/spearhead-cities-of-sigmar-fusil-platoon",
+        "https://mrmuffinstrains.com/products/gw-70-862",
+        "https://radaddel.de/products/cities-of-sigmar-fusil-platoon-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Fusil-Major on Ogor Warhulk",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Alchemite Warforger",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Wildercorps Hunters",
+              "count": 11
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Fusiliers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
