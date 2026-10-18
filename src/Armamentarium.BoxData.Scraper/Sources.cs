@@ -16,7 +16,6 @@ public static class Sources
         new ShopifySource("radaddel.de", German: true),
         // Its terms forbid scraping; the maintainer carries that risk (Armamentarium ADR 0118 Addendum ARMAM-591).
         new ShopifySource("www.retrofixgames.com", German: false),
-        new JtlShopSource("www.fantasywelt.de", German: true),
         new JtlShopSource("taschengelddieb.de", German: true),
         new ElementGamesSource(),
         new MinisetSource(),

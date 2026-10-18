@@ -8,6 +8,9 @@
 
 **Narrowed by Addendum ARMAM-601:** §10 box name only from a listing that is a source of the box.
 
+**Changed by Addendum ARMAM-596:** `www.fantasywelt.de` leaves §5; a 403 counts as "does not answer" (§12), no longer
+as no finding (Context, last point).
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -126,3 +129,19 @@ The table grows only by hand so far. Measured on 2026-10-17:
 - Readings of a Kill Team product: ADR 0002 Addendum ARMAM-601.
 - Rejected: **always the catalogue name** (warhub lists a language variant first, often in French and in capitals; the
   README asks for the English product name).
+
+## Addendum ARMAM-596 — a refusing shop has not answered (2026-10-18)
+
+- **Measured:** `www.fantasywelt.de` answered every request of the first auto-merge run with 403 (2785 of 2785; before
+  that 183 of 183 and 366 of 366). Cloudflare refuses the .NET client; curl gets 200. As "no finding" the 403 reset the
+  host's failure count, so the shop was asked for every product of the run and gave nothing.
+- **`www.fantasywelt.de` leaves the allowlist** (§5). The JTL adapter stays for `taschengelddieb.de`.
+- **A 403 is a shop that does not answer** (§12), like 429 and a server error: the shop's guard refuses this client, which
+  says nothing about the product. It counts towards the 20 failures in a row after which the host rests for the run, and
+  a product with fewer than two confirming sources comes back in three days instead of 30. §5 "a captcha or challenge
+  answer is no finding" holds for what it says, a challenge confirms nothing; it is never circumvented. Other answers that
+  are not 200 (404) stay no finding.
+- Rejected: **only removing the shop** (the next shop that refuses this client costs the whole run again); **only resting
+  it** (fantasywelt would cost 20 requests per run without a prospect); **a separate 403 counter** that keeps "no
+  finding" (more code for the same rest, and the product would wait 30 days for an answer it never got); **working around
+  the guard** (browser fingerprint, challenge answers): never.

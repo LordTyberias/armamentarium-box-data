@@ -78,27 +78,30 @@ public sealed class FetcherTests
     }
 
     [TestMethod]
-    public async Task Get_NotFoundOrRefused_IsNoFinding()
+    public async Task Get_NotFound_IsNoFinding()
     {
-        using var fetcher = Make(new Answers(r => Status(r.RequestUri!.AbsolutePath == "/a" ? HttpStatusCode.NotFound : HttpStatusCode.Forbidden)));
+        using var fetcher = Make(new Answers(_ => Status(HttpStatusCode.NotFound)));
 
         Assert.IsNull(await fetcher.GetAsync("https://shop.test/a", default));
-        Assert.IsNull(await fetcher.GetAsync("https://shop.test/b", default));
     }
 
     [TestMethod]
-    public async Task Get_TooManyRequestsOrServerError_Fails()
+    [DataRow(HttpStatusCode.Forbidden)]
+    [DataRow(HttpStatusCode.TooManyRequests)]
+    [DataRow(HttpStatusCode.BadGateway)]
+    public async Task Get_RefusedTooManyRequestsOrServerError_Fails(HttpStatusCode status)
     {
-        using var fetcher = Make(new Answers(r => Status(r.RequestUri!.AbsolutePath == "/a" ? HttpStatusCode.TooManyRequests : HttpStatusCode.BadGateway)));
+        using var fetcher = Make(new Answers(_ => Status(status)));
 
         await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/a", default));
-        await Assert.ThrowsExactlyAsync<FetchFailedException>(() => fetcher.GetAsync("https://shop.test/b", default));
     }
 
     [TestMethod]
-    public async Task Get_HostThatKeepsFailing_IsSkippedForTheRestOfTheRun()
+    [DataRow(HttpStatusCode.ServiceUnavailable)]
+    [DataRow(HttpStatusCode.Forbidden)]
+    public async Task Get_HostThatKeepsFailing_IsSkippedForTheRestOfTheRun(HttpStatusCode status)
     {
-        var handler = new Answers(_ => Status(HttpStatusCode.ServiceUnavailable));
+        var handler = new Answers(_ => Status(status));
         var log = new List<string>();
         using var fetcher = Make(handler, log);
 
