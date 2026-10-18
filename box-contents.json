@@ -5987,6 +5987,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm Lords Scinari Loreseeker",
+      "productCodes": [
+        "99070210005"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/scinari-loreseeker-lumineth-realm-lords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-scinari-loreseeker"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Scinari Loreseeker",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
