@@ -8478,6 +8478,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard: Blightlord Terminators",
+      "productCodes": [
+        "99120102124"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/death-guard-blightlord-terminators",
+        "https://abyssgamestore.ca/products/death-guard-blightlord-terminators-43-51",
+        "https://shop.afk.games/products/death-guard-blightlord-terminators",
+        "https://obsidiangames.ca/products/death-guard-blightlord-terminators",
+        "https://www.goblingaming.co.uk/products/death-guard-blightlord-terminators",
+        "https://mrmuffinstrains.com/products/gw-43-51",
+        "https://elementgames.co.uk/death-guard-blightlord-terminators"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "5b4e-dcf1-5c6f-4d35",
+              "name": "Blightlord Terminators",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
