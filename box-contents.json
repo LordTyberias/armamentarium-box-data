@@ -20052,6 +20052,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Warband: Royal Beastflayers ( 111-98 )",
+      "productCodes": [
+        "99120207136"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warcry-warband-royal-beastflayers-111-98",
+        "https://www.retrofixgames.com/products/warcry-royal-beastflayers-warband",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-warcry-flesh-eater-courts-royal-beastflayers-warband"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Royal Flaymaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Beastflayer Baron",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Offal Hounds",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Ghoul Gore-squires",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Ghoul Trackers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
