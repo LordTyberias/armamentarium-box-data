@@ -29222,6 +29222,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Slaves to Darkness - Be'Lakor the dark Master",
+      "productCodes": [
+        "99129915070"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/age-of-sigmar-slaves-to-darkness-belakor-the-dark-master",
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-belakor-the-dark-master",
+        "https://shop.afk.games/products/belakor-the-dark-master",
+        "https://obsidiangames.ca/products/belakor-the-dark-master",
+        "https://www.goblingaming.co.uk/products/belakor-the-dark-master-chaos-daemons",
+        "https://mrmuffinstrains.com/products/gw-97-19",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/chaos-daemons-belakor-the-dark-master"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Be'lakor",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Be'lakor",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
