@@ -24214,6 +24214,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Age of Sigmar: Forbidden Power",
+      "productCodes": [
+        "99120299071"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/forbidden-power-en",
+        "https://elementgames.co.uk/warhammer-age-of-sigmar-forbidden-power"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Horrorghasts",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lauchon the Soulseeker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Shards of Valagharr",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "The Soulscream Bridge",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
