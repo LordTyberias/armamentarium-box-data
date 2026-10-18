@@ -7308,6 +7308,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Marshal",
+      "productCodes": [
+        "99120101368"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/marshal",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-marshal",
+        "https://shop.afk.games/products/black-templars-marshal",
+        "https://www.goblingaming.co.uk/products/marshal-black-templars-warhammer-40k",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/black-templars-5069/black-templars-marshal"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Black Templar Marshal",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
