@@ -24784,6 +24784,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Helblaster Volleygun/Helstorm Battery",
+      "productCodes": [
+        "99122702017"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-helblaster-volleygun-helstorm-battery",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-helblaster-volley-gun-helstorm-battery",
+        "https://shop.afk.games/products/empire-of-man-helblaster-volleygun-helstorm-battery",
+        "https://www.goblingaming.co.uk/products/empire-of-man-helblaster-volleygun-helstorm-battery"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Helblaster Volley Guns",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
