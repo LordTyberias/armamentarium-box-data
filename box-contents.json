@@ -24583,6 +24583,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Empire State Troops",
+      "productCodes": [
+        "99122702008"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-empire-state-troops",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-empire-state-troops",
+        "https://shop.afk.games/products/empire-of-man-empire-state-troops",
+        "https://www.goblingaming.co.uk/products/empire-of-man-empire-state-troops",
+        "https://radaddel.de/products/empire-of-man-empire-state-troops"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Empire State Troops",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
