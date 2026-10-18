@@ -3146,6 +3146,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Nighthaunt Cursed Shacklehorde",
+      "productCodes": [
+        "99120207182"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-cursed-shacklehorde",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-death/spearhead-cursed-shacklehorde"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Spirit Torment",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Chainghasts",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Dreadblade Harrows",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Dreadscythe Harridans",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Bladegheist Revenants",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
