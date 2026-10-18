@@ -25213,6 +25213,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Dwarf Hammerers",
+      "productCodes": [
+        "99122705005"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-dwarf-hammerers",
+        "https://www.irresistibleforce.com.au/products/dwarf-hammerers",
+        "https://shop.afk.games/products/dwarfen-mountain-holds-dwarf-hammerers",
+        "https://www.goblingaming.co.uk/products/dwarfen-mountain-holds-dwarf-hammerers",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/dwarfen-mountain-holds-dwarf-hammerers",
+        "https://radaddel.de/products/mountain-holds-dwarf-hammerers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Hammerers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
