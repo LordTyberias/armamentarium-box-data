@@ -11825,6 +11825,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Wave Serpent/Falcon",
+      "productCodes": [
+        "99120104106"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/wave-serpent-falcon",
+        "https://www.goblingaming.co.uk/products/aeldari-wave-serpent",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-wave-serpent"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "ad88-f706-318c-e70e",
+              "name": "Wave Serpent",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
