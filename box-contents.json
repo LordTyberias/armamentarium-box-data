@@ -15762,6 +15762,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus: Hastarii",
+      "productCodes": [
+        "99120116051"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-mechanicus-hastarii",
+        "https://www.retrofixgames.com/products/warhammer-40k-adeptus-mechanicus-hastarii",
+        "https://obsidiangames.ca/products/hastarii",
+        "https://www.goblingaming.co.uk/products/adeptus-mechanicus-hastarii",
+        "https://mrmuffinstrains.com/products/gw-59-34",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-hastarii",
+        "https://radaddel.de/products/adeptus-mechanicus-hastarii"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hastarii",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
