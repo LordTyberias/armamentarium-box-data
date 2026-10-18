@@ -5562,6 +5562,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Magus",
+      "productCodes": [
+        "99070117014"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/genestealer-cults-magus",
+        "https://mrmuffinstrains.com/products/gw-51-47",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-magus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "4f4-2157-2cb5-8bb",
+              "name": "Magus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
