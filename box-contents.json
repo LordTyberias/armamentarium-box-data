@@ -18465,6 +18465,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Gossamid Archers",
+      "productCodes": [
+        "99120204032"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-gossamid-archers",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-sylvaneth-gossamid-archers",
+        "https://shop.afk.games/products/gossamid-archers",
+        "https://obsidiangames.ca/products/sylvaneth-gossamid-archers",
+        "https://www.goblingaming.co.uk/products/sylvaneth-gossamid-archers-age-of-sigmar-games-workshop",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/sylvaneth-gossamid-archers",
+        "https://radaddel.de/products/sylvaneth-gossamid-archers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gossamid Archers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
