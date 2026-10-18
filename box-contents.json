@@ -19249,6 +19249,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Stormfiends",
+      "productCodes": [
+        "99120206036"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-stormfiends",
+        "https://abyssgamestore.ca/products/skaven-stormfiends-90-17",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-skaven-stormfiends",
+        "https://shop.afk.games/products/skaven-stormfiends",
+        "https://obsidiangames.ca/products/skaven-stormfiends",
+        "https://www.goblingaming.co.uk/products/skaven-stormfiends"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormfiends",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
