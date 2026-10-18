@@ -14643,6 +14643,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Ghost Ark",
+      "productCodes": [
+        "99120110063"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-ghost-ark",
+        "https://abyssgamestore.ca/products/necrons-ghost-ark-doomsday-ark-49-11",
+        "https://shop.afk.games/products/necrons-ghost-ark",
+        "https://obsidiangames.ca/products/necrons-ghost-ark",
+        "https://mrmuffinstrains.com/products/gw-49-11",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-ghost-ark-doomsday-ark"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Ghost Ark",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
