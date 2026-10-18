@@ -21643,6 +21643,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz - Fellwater Troggoths ( 9042-W )",
+      "productCodes": [
+        "99120209042"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/gloomspite-gitz-fellwater-troggoths-9042-w",
+        "https://obsidiangames.ca/products/gloomspite-gitz-fellwater-troggoths"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Fellwater Troggoths",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
