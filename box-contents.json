@@ -12596,6 +12596,60 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40KAstra Militarum Hippogriff AFV",
+      "productCodes": [
+        "99120105139"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40kastra-militarum-hippogriff-afv",
+        "https://obsidiangames.ca/products/astra-militarum-hippogriff-afv",
+        "https://mrmuffinstrains.com/products/gw-47-57",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-hippogriff-afv"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "rope",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "stowage hooks",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "fuel cans",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "storage pack",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "crate",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "set of wire cutters",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "shovel",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
