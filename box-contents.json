@@ -12759,6 +12759,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Astra Militarum - Baneblade",
+      "productCodes": [
+        "99120105157"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-astra-militarum-baneblade",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-baneblade-2",
+        "https://shop.afk.games/products/baneblade",
+        "https://obsidiangames.ca/products/astra-militarum-baneblade",
+        "https://mrmuffinstrains.com/products/gw-47-94",
+        "https://radaddel.de/products/astra-militarum-baneblade-1"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "super-heavy Baneblade",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
