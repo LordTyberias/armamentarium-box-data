@@ -11489,6 +11489,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hemlock Wraithfighter/Hunter",
+      "productCodes": [
+        "99120104080"
+      ],
+      "sources": [
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/eldar-hemlock-wraithfighter",
+        "https://radaddel.de/products/aeldari-hemlock-wraithfighter"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "551b-900c-3681-8f11",
+              "name": "Hemlock Wraithfighter",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
