@@ -12960,6 +12960,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Broodlord",
+      "productCodes": [
+        "99120106059"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tyranids-broodlord",
+        "https://abyssgamestore.ca/products/tyranids-broodlord-51-23",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranid-bloodlord",
+        "https://shop.afk.games/products/tyranid-broodlord",
+        "https://www.goblingaming.co.uk/products/tyranid-broodlord",
+        "https://mrmuffinstrains.com/products/gw-51-23",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tyranids/tyranid-broodlord-repack"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tyranid Broodlord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
