@@ -6728,6 +6728,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Salamanders: Adrax Agatone",
+      "productCodes": [
+        "99120101293"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/salamanders-adrax-agatone",
+        "https://www.retrofixgames.com/products/warhammer-40k-salamanders-adrax-agatone",
+        "https://shop.afk.games/products/salamanders-adrax-agatone",
+        "https://mrmuffinstrains.com/products/gw-55-17",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/salamanders-/salamanders-adrax-agatone"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Captain Adrax Agatone",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
