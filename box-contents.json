@@ -6901,6 +6901,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Space Marines - Primaris Eliminators",
+      "productCodes": [
+        "99120101323"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-primaris-eliminators",
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-eliminators",
+        "https://abyssgamestore.ca/products/space-marines-primaris-eliminators-48-93",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-primaris-eliminators",
+        "https://shop.afk.games/products/space-marines-primaris-eliminators",
+        "https://obsidiangames.ca/products/space-marines-primaris-eliminators",
+        "https://mrmuffinstrains.com/products/gw-48-93",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-eliminators"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Eliminators",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
