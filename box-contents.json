@@ -9770,6 +9770,23 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Red Corsairs (73-433)",
+      "productCodes": [
+        "99120102221"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-red-corsairs-73-433",
+        "https://radaddel.de/products/chaos-space-marines-combat-patrol-red-corsairs",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-red-corsairs",
+        "https://shop.afk.games/products/combat-patrol-red-corsairs",
+        "https://obsidiangames.ca/products/combat-patrol-red-corsairs",
+        "https://www.goblingaming.co.uk/products/combat-patrol-red-corsairs",
+        "https://mrmuffinstrains.com/products/gw-73-433",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/combat-patrol-red-corsairs"
+      ],
+      "generation": "current"
     }
   ]
 }
