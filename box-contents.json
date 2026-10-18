@@ -25592,6 +25592,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Phoenix Guard",
+      "productCodes": [
+        "99122710006"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-phoenix-guard",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-phoenix-guard",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-phoenix-guard",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realms-phoenix-guard",
+        "https://radaddel.de/products/high-elf-realms-phoenix-guard"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "13c7-a5e6-3b4d-23b6",
+              "name": "Phoenix Guard",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
