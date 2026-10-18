@@ -5351,6 +5351,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire - Kroot Trail Shaper ( 56-57 )",
+      "productCodes": [
+        "99070113007"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/tau-empire-kroot-trail-shaper-56-57",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-kroot-trail-shaper",
+        "https://shop.afk.games/products/tau-empire-kroot-trail-shaper",
+        "https://obsidiangames.ca/products/tau-empire-kroot-trail-shaper",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-kroot-trail-shaper",
+        "https://mrmuffinstrains.com/products/gw-56-57"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "2ebe-a524-656d-7f0e",
+              "name": "Kroot Trail Shaper",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
