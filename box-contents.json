@@ -7197,6 +7197,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: High Marshal Helbrecht",
+      "productCodes": [
+        "99120101363"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-high-marshal-helbrecht",
+        "https://abyssgamestore.ca/products/black-templars-high-marshal-helbrecht-55-41",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-high-marshal-helbrecht-1",
+        "https://shop.afk.games/products/black-templars-high-marshal-helbrecht",
+        "https://obsidiangames.ca/products/high-marshal-helbrecht",
+        "https://www.goblingaming.co.uk/products/high-marshal-helbrecht-black-templars-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-55-41",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/black-templars-5069/black-templars-high-marshal-helbrecht"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "36d3-36bc-68dd-40ac",
+              "entryId": "da8a-de9f-1fe7-2513",
+              "name": "High Marshal Helbrecht",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
