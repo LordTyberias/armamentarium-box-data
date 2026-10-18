@@ -14591,6 +14591,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Canoptek Spyder",
+      "productCodes": [
+        "99120110061"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-canoptek-spyder",
+        "https://abyssgamestore.ca/products/necrons-canoptek-spyder-49-16",
+        "https://www.retrofixgames.com/products/warhammer-40k-necron-canoptek-spyder",
+        "https://shop.afk.games/products/necrons-canoptek-spyder",
+        "https://obsidiangames.ca/products/canoptek-spyder",
+        "https://www.goblingaming.co.uk/products/necron-canoptek-spyder",
+        "https://mrmuffinstrains.com/products/gw-49-16",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-canoptek-spyder"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Canoptek Spyder",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
