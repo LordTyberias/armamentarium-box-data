@@ -20010,6 +20010,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Warband: Askurgan Trueblades ( 112-02 )",
+      "productCodes": [
+        "99120207131"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warcry-warband-askurgan-trueblades-111-87",
+        "https://www.retrofixgames.com/products/warcry-askurgan-trueblades"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Askurgan Exemplar",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Curseblood",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Askurgan Pariah",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Askurgan Ascetics",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Askurgan Acolytes",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
