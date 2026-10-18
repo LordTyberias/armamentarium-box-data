@@ -24683,6 +24683,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Archers",
+      "productCodes": [
+        "99122702012"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-archers",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-archers",
+        "https://shop.afk.games/products/empire-of-man-archers",
+        "https://www.goblingaming.co.uk/products/empire-of-man-archers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Empire Archers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
