@@ -7698,6 +7698,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Dark Angels: Inner Circle Companions",
+      "productCodes": [
+        "99120101407"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/dark-angels-inner-circle-companions",
+        "https://abyssgamestore.ca/products/dark-angels-inner-circle-companions-44-19",
+        "https://www.retrofixgames.com/products/warhammer-40k-dark-angels-inner-circle-companions",
+        "https://shop.afk.games/products/dark-angles-inner-circle-companions",
+        "https://obsidiangames.ca/products/dark-angels-inner-circle-companions",
+        "https://mrmuffinstrains.com/products/gw-44-19",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/dark-angels-inner-circle-companions",
+        "https://radaddel.de/products/dark-angels-inner-circle-companions"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "470a-6daa-9014-12df",
+              "entryId": "f34-e2f9-c98e-1916",
+              "name": "Inner Circle Companions",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
