@@ -5408,6 +5408,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus Skitarii Marshall",
+      "productCodes": [
+        "99070116003"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/skitarii-marshall-adeptus-mechanicus",
+        "https://radaddel.de/products/adeptus-mechanicus-skitarii-marschall"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Skitarii Marshall",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
