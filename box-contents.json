@@ -26138,6 +26138,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Jade Warriors",
+      "productCodes": [
+        "99122720002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-jade-warriors",
+        "https://www.irresistibleforce.com.au/products/grand-cathay-jade-warriors",
+        "https://abyssgamestore.ca/products/grand-cathay-jade-warriors-06-209",
+        "https://www.goblingaming.co.uk/products/grand-cathay-jade-warriors",
+        "https://mrmuffinstrains.com/products/gw-06-209",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-jade-warriors",
+        "https://radaddel.de/products/grand-cathay-jade-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Jade Warriors",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
