@@ -24148,6 +24148,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Idoneth Deepkin: Namarti Reavers",
+      "productCodes": [
+        "99120219021"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/namarti-reavers",
+        "https://shop.afk.games/products/idoneth-deepkin-namarti-reavers",
+        "https://obsidiangames.ca/products/idoneth-deepkin-namarti-reavers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Namarti Reavers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
