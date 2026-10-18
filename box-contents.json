@@ -28023,6 +28023,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Aethon Heavy Sentinel",
+      "productCodes": [
+        "99123005009"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-aethon-heavy-sentinel",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-aethon-heavy-sentinel",
+        "https://shop.afk.games/products/horus-heresy-solar-auxilia-aethon-heavy-sentinel",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-aethon-heavy-sentinel"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aethon Heavy Sentinel",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
