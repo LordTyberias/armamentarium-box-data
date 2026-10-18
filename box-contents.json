@@ -11513,6 +11513,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Windriders",
+      "productCodes": [
+        "99120104082"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-windriders",
+        "https://abyssgamestore.ca/products/craftworlds-windriders-46-06",
+        "https://shop.afk.games/products/aeldari-windriders",
+        "https://obsidiangames.ca/products/aeldari-windriders",
+        "https://mrmuffinstrains.com/products/gw-46-06",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/eldar-windriders",
+        "https://radaddel.de/products/aeldari-windriders"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aeldari Windriders",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "592a-b255-6c58-19ec",
+              "name": "Windriders",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
