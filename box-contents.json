@@ -6331,6 +6331,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Old World: Orc & Goblin Tribes - Goblin Wolf Rider Bosses",
+      "productCodes": [
+        "99112709018"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/old-world-orc-goblin-tribes-goblin-wolf-rider-bosses",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-orcs-goblins-wolf-rider-bosses"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Goblin Wolf Rider Bosses",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
