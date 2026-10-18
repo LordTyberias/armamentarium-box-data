@@ -28415,6 +28415,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum - Tech-Thralls Covenant ( 31-90 )",
+      "productCodes": [
+        "99123016005"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/horus-heresy-tech-thralls-covenant-31-90",
+        "https://www.retrofixgames.com/products/mechanicum-tech-thralls-covenant",
+        "https://shop.afk.games/products/mechanicum-tech-thralls-covenant-1",
+        "https://www.goblingaming.co.uk/products/mechanicum-tech-thralls-covenant"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Adsecularis Tech-thralls",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
