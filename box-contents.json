@@ -25293,6 +25293,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Dwarf Cannon & Organ Gun",
+      "productCodes": [
+        "99122705008"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-dwarf-cannon-organ-gun",
+        "https://www.irresistibleforce.com.au/products/dwarf-cannon-organ-gun",
+        "https://abyssgamestore.ca/products/dwarf-canon-and-organ-gun-10-14",
+        "https://shop.afk.games/products/dwarfed-mountain-holds-dwarcannon-organ-gun",
+        "https://radaddel.de/products/mountain-holds-dwarf-cannon-organ-gun"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "war machines",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
