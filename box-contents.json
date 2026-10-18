@@ -15187,6 +15187,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Fire Warriors",
+      "productCodes": [
+        "99120113076"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-fire-warriors",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-fire-warriors-strike-team-breacher-team",
+        "https://shop.afk.games/products/tau-empire-fire-warriors",
+        "https://obsidiangames.ca/products/tau-empire-fire-warriors",
+        "https://mrmuffinstrains.com/products/gw-56-06",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-fire-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "T'au Empire Fire Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
