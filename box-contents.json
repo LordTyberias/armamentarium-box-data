@@ -11245,6 +11245,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Warlocks",
+      "productCodes": [
+        "99120104066"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-warlocks",
+        "https://www.retrofixgames.com/products/warhammer-40k-aeldari-warlocks",
+        "https://shop.afk.games/products/aeldari-warlocks",
+        "https://obsidiangames.ca/products/warlocks",
+        "https://www.goblingaming.co.uk/products/aeldari-warlocks-2022-repack-warhammer-40k-games-workshop",
+        "https://mrmuffinstrains.com/products/gw-46-16",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-warlocks"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "291f-2885-4512-f0cd",
+              "name": "Warlock",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
