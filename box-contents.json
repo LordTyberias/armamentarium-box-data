@@ -21118,6 +21118,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Lauka Vai Mother Of Nightmares",
+      "productCodes": [
+        "99120207229"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/lauka-vai-mother-of-nightmares",
+        "https://www.goblingaming.co.uk/products/lauka-vai-mother-of-nightmares-soulblight-gravelords"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lauka Vai",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
