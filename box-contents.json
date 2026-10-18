@@ -14511,6 +14511,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Necron Triarch Praetorians Lychguard",
+      "productCodes": [
+        "99120110058"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-necron-triarch-praetorians-lychguard",
+        "https://shop.afk.games/products/necrons-triarch-praetorians",
+        "https://obsidiangames.ca/products/necrons-triarch-praetorians",
+        "https://mrmuffinstrains.com/products/gw-49-07",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-lychguard-triarch-praetorians"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Triarch Praetorians",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
