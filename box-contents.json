@@ -11325,6 +11325,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Shining Spears",
+      "productCodes": [
+        "99120104071"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-shining-spears",
+        "https://www.retrofixgames.com/products/warhammer-40k-aeldari-shining-spears",
+        "https://shop.afk.games/products/aeldari-shining-spears",
+        "https://www.goblingaming.co.uk/products/craftworld-aeldari-shining-spears-2022-repack-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-46-28",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-shining-spears",
+        "https://radaddel.de/products/aeldari-shining-spears"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "unit of Shining Spears",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "433-faed-ea62-c531",
+              "name": "Shining Spears",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
