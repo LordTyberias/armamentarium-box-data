@@ -8071,6 +8071,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Crusade Ancient",
+      "productCodes": [
+        "99120101442"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-crusade-ancient",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-crusade-ancient",
+        "https://shop.afk.games/products/black-templars-crusade-ancient",
+        "https://obsidiangames.ca/products/crusade-ancient",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/black-templars-crusade-ancient"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "36d3-36bc-68dd-40ac",
+              "entryId": "dca2-b12f-d1a9-5822",
+              "name": "Crusade Ancient",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
