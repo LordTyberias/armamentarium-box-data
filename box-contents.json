@@ -21988,6 +21988,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Orruk Warclans - Orruk Ardboyz",
+      "productCodes": [
+        "99120209110"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-age-of-sigmar-orruk-warclans-orruk-ardboyz",
+        "https://www.irresistibleforce.com.au/products/orruk-warclans-orruk-ardboys",
+        "https://abyssgamestore.ca/products/orruk-warclans-orruk-ardboyz-89-61",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-orruk-ardboys",
+        "https://shop.afk.games/products/orruk-warclans-orruk-ardboyz",
+        "https://obsidiangames.ca/products/orruk-warclans-orruk-ardboys",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-orruk-warclans-orruk-ardboyz",
+        "https://mrmuffinstrains.com/products/gw-89-61",
+        "https://radaddel.de/products/orruk-warclans-orruk-ardboys"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Orruk Ardboyz",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Orruk Ardboys",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
