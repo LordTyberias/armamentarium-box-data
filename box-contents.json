@@ -8847,6 +8847,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Chaos Space Marines Accursed Cultists",
+      "productCodes": [
+        "99120102147"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-accursed-cultists",
+        "https://shop.afk.games/products/chaos-space-marine-accursed-cultists",
+        "https://obsidiangames.ca/products/chaos-space-marines-accursed-cultists",
+        "https://www.goblingaming.co.uk/products/accursed-cultists-warhammer-40000-games-workshop",
+        "https://mrmuffinstrains.com/products/gw-43-83",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marine-accursed-cultists",
+        "https://radaddel.de/products/chaos-space-marines-accursed-cultists"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Accursed Cultists",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "horrifying Torments",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
