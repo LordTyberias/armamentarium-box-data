@@ -28902,6 +28902,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daemons Of Slaanesh: Fiends",
+      "productCodes": [
+        "99129915052"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/daemons-of-slaanesh-fiends",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/daemons-of-slaanesh-fiends"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Fiends of Slaanesh",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Fiends of Slaanesh",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Fiends of Slaanesh",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
