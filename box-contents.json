@@ -17180,6 +17180,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Darkoath Fellriders",
+      "productCodes": [
+        "99120201183"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-darkoath-fellriders",
+        "https://abyssgamestore.ca/products/slaves-to-darkness-darkoath-fellriders-83-54",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-darkoath-fellriders",
+        "https://shop.afk.games/products/darkoath-fellriders",
+        "https://obsidiangames.ca/products/slaves-to-darkness-darkoath-fellriders",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-slaves-to-darkness-darkoath-fellriders",
+        "https://mrmuffinstrains.com/products/gw-83-54",
+        "https://radaddel.de/products/slaves-to-darkness-fellriders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Darkoath Fellriders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
