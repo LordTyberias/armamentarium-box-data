@@ -29747,6 +29747,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Nighthaunt ( 70-10 )",
+      "productCodes": [
+        "99120207186"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/vanguard-nighthaunt-70-10",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-nighthaunt",
+        "https://shop.afk.games/products/vanguard-nighthaunt"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Knight of Shrouds",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Spirit Hosts",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Grimghast Reapers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Chainrasps",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
