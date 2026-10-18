@@ -12016,6 +12016,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum Manticore / Deathstrike",
+      "productCodes": [
+        "99120105049"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/imperial-guard-manticore-deathstrike",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/imperial-guard-manticore-deathstrike"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Manticore",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
