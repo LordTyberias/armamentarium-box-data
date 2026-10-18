@@ -6307,6 +6307,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orc & Goblin Tribes: Bolt Throwa",
+      "productCodes": [
+        "99112709017"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/orc-and-goblin-bolt-throwa",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-orcs-goblins-bolt-throwa"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "56d8-674d-6520-68eb",
+              "name": "Goblin Bolt Throwa",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
