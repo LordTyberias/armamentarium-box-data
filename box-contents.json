@@ -25786,6 +25786,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Silver Helms",
+      "productCodes": [
+        "99122710016"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-silver-helms",
+        "https://shop.afk.games/products/high-eld-realms-silver-helms",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-silver-helms",
+        "https://radaddel.de/products/high-elf-realms-silver-helms"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "e9b1-22cd-7328-5fde",
+              "name": "Silver Helms",
+              "count": 12
+            }
+          ]
+        }
+      ]
     }
   ]
 }
