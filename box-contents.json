@@ -4598,6 +4598,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Blood Angels Chaplain With Jump Pack",
+      "productCodes": [
+        "99070101070"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-blood-angels-chaplain-with-jump-pack",
+        "https://www.goblingaming.co.uk/products/blood-angels-chaplain-with-jump-pack"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Angels Chaplain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
