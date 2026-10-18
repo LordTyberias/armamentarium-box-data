@@ -13134,6 +13134,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Neurogaunts",
+      "productCodes": [
+        "99120106071"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tyranids-neurogaunts",
+        "https://abyssgamestore.ca/products/tyranids-neurogaunts-51-33",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranids-nerogaunts",
+        "https://shop.afk.games/products/tyranids-neurogaunts",
+        "https://obsidiangames.ca/products/tyranids-neurogaunts",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tyranids-neurogaunts",
+        "https://radaddel.de/products/tyranids-neurogaunts"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "8ccc-3f27-7e4e-da81",
+              "name": "Neurogaunts",
+              "count": 11
+            }
+          ]
+        }
+      ]
     }
   ]
 }
