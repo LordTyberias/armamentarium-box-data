@@ -23690,6 +23690,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Knight-Judicator With Gryph-Hounds",
+      "productCodes": [
+        "99120218050"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/stormcast-eternals-knight-judicator-with-gryph-hounds",
+        "https://www.goblingaming.co.uk/products/knight-judicator-with-gryph-hounds-stormcast-eternals-age-of-sigmar",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/stormcast-eternals-knight-judicator-with-gryph-hounds"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Knight-Judicator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
