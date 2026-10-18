@@ -5379,6 +5379,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Kroot Flesh Shaper",
+      "productCodes": [
+        "99070113008"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-kroot-flesh-shaper",
+        "https://abyssgamestore.ca/products/tau-empire-kroot-flesh-shaper-56-56",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-kroot-flesh-shaper",
+        "https://shop.afk.games/products/tau-empire-kroot-flesh-shaper",
+        "https://obsidiangames.ca/products/tau-empire-kroot-flesh-shaper",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-kroot-flesh-shaper",
+        "https://mrmuffinstrains.com/products/gw-56-56"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "bb34-e371-33ee-397",
+              "name": "Kroot Flesh Shaper",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
