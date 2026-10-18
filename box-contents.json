@@ -21140,6 +21140,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Myrmourn Banshees",
+      "productCodes": [
+        "99120207230"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/easy-to-build-myrmourn-banshees",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/easy-to-build-nighthaunt-myrmourn-banshees"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Easy",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
