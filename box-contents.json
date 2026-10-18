@@ -5666,6 +5666,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites of Slaanesh: Shardspeaker of Slaanesh",
+      "productCodes": [
+        "99070201025"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hedonites-of-slaanesh-shardspeaker-of-slaanesh",
+        "https://shop.afk.games/products/hedonites-shardspeaker-of-slaanesh",
+        "https://www.goblingaming.co.uk/products/hedonites-shardspeaker-of-slaanesh",
+        "https://mrmuffinstrains.com/products/gw-83-88",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/hedonites-shardspeaker-of-slaanesh"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "single-pose Shardspeaker of Slaanesh",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
