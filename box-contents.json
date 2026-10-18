@@ -26029,6 +26029,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Tomb Kings of Khemri - Tomb Guard",
+      "productCodes": [
+        "99122717005"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-tomb-kings-of-khemri-tomb-guard",
+        "https://www.irresistibleforce.com.au/products/tomb-kings-of-khemri-tomb-guard",
+        "https://shop.afk.games/products/tomb-kings-of-khemri-tomb-guard",
+        "https://www.goblingaming.co.uk/products/warhammer-fantasy-the-old-world-tomb-kings-of-khemri-tomb-guard",
+        "https://mrmuffinstrains.com/products/gw-07-03",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/tomb-kings-of-khemri-tomb-guard",
+        "https://radaddel.de/products/khemri-tomb-guard"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tomb Guard",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
