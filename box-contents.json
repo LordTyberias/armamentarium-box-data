@@ -8559,6 +8559,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard: Foetid Bloat-drone",
+      "productCodes": [
+        "99120102127"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/death-guard-foetid-bloat-drone",
+        "https://abyssgamestore.ca/products/death-guard-foetid-bloat-drone-43-54",
+        "https://shop.afk.games/products/death-guard-foetid-bloat-drone",
+        "https://obsidiangames.ca/products/death-guard-foetid-bloat-drone",
+        "https://www.goblingaming.co.uk/products/death-guard-foetid-bloat-drone",
+        "https://elementgames.co.uk/death-guard-foetid-bloat-drone"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "26d5-ec73-3517-f3f",
+              "name": "Foetid Bloat-drone",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
