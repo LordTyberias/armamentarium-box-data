@@ -31,6 +31,10 @@ ARMAM-599's "no catalogues are loaded" without `--auto-merge` no longer holds (s
 **Changed by Addendum ARMAM-600:** §13 "Failures go to the journal only" and Rejected "Mail or an issue on failure" no
 longer hold for mail: a failed run and the notices of a run are mailed to the maintainer; an issue stays rejected.
 
+**Changed by Addendum ARMAM-603:** §6 shops are asked over HTTP/2 (HTTP/1.1 only for a host without it). §7 and Rejected
+"A browser user agent" keep their decision; their "measured worse" is now only a guess, since the trigger measured is
+HTTP/1.1, not the user agent.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -361,3 +365,40 @@ The table grows only by hand so far. Measured on 2026-10-17:
   anyway); MailKit as in the web services (the first package here); the tail of the journal in the mail (the failure unit
   would need to read the journal, more than its dynamic user may); a notice for "a run without a merge although there were
   candidates" (no measure of a candidate that would not also fire for a quiet run; a refused merge is a notice already).
+
+## Addendum ARMAM-603 — the shops are asked over HTTP/2 (2026-10-18)
+
+- **Why:** a full run started with an emptied state on 2026-10-18 at 13:06 was stopped after about an hour: every one of the
+  ten Shopify shops answered 429 (`Retry-After 60 s`), the stretched interval of Addendum ARMAM-595 did not help, and after
+  315 products two had merged. 261 answers 429, all to `/products/<handle>.js`, none to `search/suggest.json`. The guess was
+  a limit per client address across all Shopify storefronts.
+- **Measured** from the server with curl and the user agent `ABD/1.0`, then with the service itself (`--dry-run`):
+
+  | Probe | Requests | 429 |
+  |---|---|---|
+  | `.js`, one shop, one a second, IPv4 and IPv6 | 159 / 158 | 0 |
+  | `.js`, ten shops in turn, one a second together | 273 | 0 |
+  | `.js`, ten at once every five seconds (two a second), IPv4 and IPv6 | 580 / 580 | 0 |
+  | the service before this addendum, eight minutes | 34 products | 38 |
+  | the same `.js` address that answered the service 429, curl as is / with the service's headers | | 200 / 429 |
+  | one header at a time: `Accept`, `Accept-Language`, compression / `--http1.1` | | 200 / 429 |
+  | `.js` over HTTP/1.1, one per shop three seconds apart | 8 | 8 |
+  | `search/suggest.json` over HTTP/1.1 | 1 | 0 |
+  | the service with this addendum, eight minutes (`--auto-merge`); every shop answered every product, 24 would merge | 60 products | 0 |
+
+  The trigger is HTTP/1.1 on `.js`, not the rate: `HttpClient` asks over HTTP/1.1 unless told otherwise, curl negotiates
+  HTTP/2. No limit per address across shops was found up to two requests a second. All eleven sources speak HTTP/2. This is
+  the case Addendum ARMAM-602 rejected curl for ("a shop may answer curl and refuse the service's client"); the service's
+  own run above is the measure.
+- **Every request goes over HTTP/2** (`RequestVersionOrLower`): a host without it is asked over HTTP/1.1, and the journal
+  names it once per run (`<host> answers over HTTP/1.1`), since Shopify throttles that. §6's five seconds per host,
+  `Retry-After`, the stretched interval and the catch-up of Addendum ARMAM-595 stay as they are, now a net.
+- Guess, not measured: the 429 of the first auto-merge run (Addendum ARMAM-595) and the browser string of §7 met the same
+  HTTP/1.1 guard. `www.fantasywelt.de` stays out (Addendum ARMAM-596): it answered 403 over HTTP/2 as over HTTP/1.1 (2026-10-18).
+- **Run length:** the 19 hours of Addendum ARMAM-595 stay the documented ceiling; a run without 429 should be shorter, the
+  next full run measures by how much. ARMAM-603 closes after the first half hour of that run (maintainer's decision); the
+  whole pass, two sources for most products, is checked under ARMAM-598.
+- **Rejected:** **a common interval for all Shopify hosts**, **one Shopify shop after the other** and **asking no other shop
+  after a shop's first 429** (each answers a limit per address that was not found, and each lengthens the run);
+  **HTTP/2 only** (`RequestVersionExact`: a host without it would never answer, one source lost silently); **a notice mail
+  when a host answers over HTTP/1.1** (it breaks nothing, the 429 count at the end of the run shows its effect).
