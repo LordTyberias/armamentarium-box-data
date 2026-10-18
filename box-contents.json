@@ -12807,6 +12807,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids - Carnifex Brood ( 51-15-W )",
+      "productCodes": [
+        "99120106031"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/tyranids-carnifex-brood-51-15-w",
+        "https://shop.afk.games/products/carnifex-brood"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "9efd-5564-f0f5-21ea",
+              "name": "Carnifexes",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
