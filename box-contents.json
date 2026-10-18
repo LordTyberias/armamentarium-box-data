@@ -15680,6 +15680,24 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Adeptus Mechanicus",
+      "productCodes": [
+        "99120116044"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-adeptus-mechanicus",
+        "https://abyssgamestore.ca/products/combat-patrol-adeptus-mechanicus-59-05",
+        "https://radaddel.de/products/adeptus-mechanicus-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-adeptus-mechanicus-1",
+        "https://shop.afk.games/products/combat-patrol-adeptus-mechanicus",
+        "https://obsidiangames.ca/products/combat-patrol-adeptus-mechanicus",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-combat-patrol-adeptus-mechanicus",
+        "https://mrmuffinstrains.com/products/gw-73-591",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/combat-patrol-adeptus-mechanicus-2"
+      ],
+      "generation": "current"
     }
   ]
 }
