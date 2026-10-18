@@ -14776,6 +14776,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Psychomancer",
+      "productCodes": [
+        "99120110073"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-psychomancer",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-psychomancer",
+        "https://shop.afk.games/products/necrons-psychomancer",
+        "https://www.goblingaming.co.uk/products/necrons-psychomancer",
+        "https://mrmuffinstrains.com/products/gw-49-33",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-psychomancer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Psychomancer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
