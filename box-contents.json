@@ -17963,6 +17963,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmar: Fusil-Major on Ogor Warhulk",
+      "productCodes": [
+        "99120202047"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-fusil-major-on-ogor-warhulk",
+        "https://abyssgamestore.ca/products/cities-of-sigmar-fusil-major-on-ogor-warhulk-86-20",
+        "https://shop.afk.games/products/fusil-major-on-ogor-warhulk",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-cities-of-sigmar-fusil-major-on-ogor-warhulk",
+        "https://mrmuffinstrains.com/products/gw-86-20"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Fusil-Major",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
