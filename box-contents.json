@@ -11611,6 +11611,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 46-17 - Warhammer 40,000 - Aeldari: Wraithlord",
+      "productCodes": [
+        "99120104085"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-46-17",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/craftworlds-wraithlord"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "b9e9-397e-d83a-f77a",
+              "name": "Wraithlord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
