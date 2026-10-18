@@ -7553,6 +7553,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Terminator Squad",
+      "productCodes": [
+        "99120101398"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-terminator-squad",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-terminator-squad",
+        "https://shop.afk.games/products/space-marines-terminator-squad",
+        "https://obsidiangames.ca/products/space-marines-terminator-squad",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-terminator-squad",
+        "https://radaddel.de/products/space-marines-terminator-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Terminators",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
