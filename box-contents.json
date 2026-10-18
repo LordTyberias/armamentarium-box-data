@@ -19442,6 +19442,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Skaven - Warspark Weapon Battery",
+      "productCodes": [
+        "99120206048"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/age-of-sigmar-skaven-warspark-weapon-battery",
+        "https://www.irresistibleforce.com.au/products/skaven-warpspark-weapon-battery",
+        "https://abyssgamestore.ca/products/skaven-warpspark-weapon-battery-90-45",
+        "https://shop.afk.games/products/skaven-warpspark-weapon-battery",
+        "https://obsidiangames.ca/products/warpspark-weapon-battery",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-warpspark-weapon-battery",
+        "https://radaddel.de/products/skaven-warpspark-weapon-battery"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "weapons teams wielding",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
