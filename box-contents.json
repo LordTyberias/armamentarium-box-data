@@ -22415,6 +22415,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Vanari Bannerblade",
+      "productCodes": [
+        "99120210032"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/vanari-bannerblade",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-vanari-bannerblade"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vanari Bannerblade",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
