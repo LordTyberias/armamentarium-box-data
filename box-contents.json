@@ -20536,6 +20536,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Barrow knights",
+      "productCodes": [
+        "99120207179"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/soulblight-gravelords-barrow-knights",
+        "https://abyssgamestore.ca/products/soulblight-gravelords-barrow-knights-91-85",
+        "https://www.retrofixgames.com/products/age-of-sigmar-soulblight-gravelords-barrow-knights",
+        "https://shop.afk.games/products/soulblight-gravelords-barrow-knights",
+        "https://obsidiangames.ca/products/barrow-knights",
+        "https://www.goblingaming.co.uk/products/soulblight-gravelords-barrow-knights",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-barrow-knights",
+        "https://radaddel.de/products/soulblight-gravelords-barrow-knights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Barrow Knights",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
