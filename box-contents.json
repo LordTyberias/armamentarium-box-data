@@ -19825,6 +19825,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt - Craventhrone Guard ( 91-66 )",
+      "productCodes": [
+        "99120207097"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/nighthaunt-craventhrone-guard-91-66",
+        "https://shop.afk.games/products/nighthaunt-craventhrone-guard",
+        "https://radaddel.de/products/nighthaunt-craventhrone-guard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Craventhrone Guard",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
