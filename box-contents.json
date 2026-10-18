@@ -11359,6 +11359,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Avatar of Khaine",
+      "productCodes": [
+        "99120104072"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-avatar-of-khaine",
+        "https://shop.afk.games/products/aeldari-avatar-of-khaine",
+        "https://www.goblingaming.co.uk/products/aeldari-avatar-of-khaine-2022-repack-warhammer-40k",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-avatar-of-khaine"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "554c-8b4f-1059-28a7",
+              "name": "Avatar of Khaine",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
