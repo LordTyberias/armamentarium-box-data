@@ -15011,6 +15011,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 45-08 - Warhammer 40,000 - Drukhari: Wyches",
+      "productCodes": [
+        "99120112044"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-45-08",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/dark-eldar-wyches"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "38de-521f-1ce0-44a0",
+              "entryId": "edca-1a1b-902d-421a",
+              "name": "Wyches",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
