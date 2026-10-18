@@ -26194,6 +26194,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Jade Lancers",
+      "productCodes": [
+        "99122720004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-jade-lancers",
+        "https://www.irresistibleforce.com.au/products/grand-cathay-jade-lancers",
+        "https://abyssgamestore.ca/products/grand-cathay-jade-lancers-06-208",
+        "https://www.goblingaming.co.uk/products/grand-cathay-jade-lancers",
+        "https://mrmuffinstrains.com/products/gw-06-208",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-jade-lancers",
+        "https://radaddel.de/products/grand-cathay-jade-lancers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Jade Lancers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
