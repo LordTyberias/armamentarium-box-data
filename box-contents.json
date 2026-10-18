@@ -26606,6 +26606,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legiones Astartes Spartan Assault Tank",
+      "productCodes": [
+        "99123001006"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-spartan-assault-tank",
+        "https://shop.afk.games/products/hh-spartan-assault-tank",
+        "https://www.goblingaming.co.uk/products/warhammer-30-000-horus-heresy-legiones-astartes-spartan-assault-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Spartan Assault Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
