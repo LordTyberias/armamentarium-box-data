@@ -3510,6 +3510,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Goremongers",
+      "productCodes": [
+        "99120102208"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-goremongers",
+        "https://www.retrofixgames.com/products/kill-team-goremongers",
+        "https://shop.afk.games/products/kill-team-goremongers",
+        "https://obsidiangames.ca/products/kill-team-goremongers",
+        "https://www.goblingaming.co.uk/products/goremongers-kill-team",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/world-eaters/kill-team-goremongers",
+        "https://radaddel.de/products/kill-team-goremongers"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Goremongers",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
