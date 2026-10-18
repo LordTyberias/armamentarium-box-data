@@ -20855,6 +20855,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Regiment of Renown: Heralds of the Bone-tithe",
+      "productCodes": [
+        "99120207196"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ossiarch-bonereapers-regiment-of-renown-heralds-of-the-bone-tithe",
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-heralds-bone-tithe",
+        "https://mrmuffinstrains.com/products/gw-94-43",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-heralds-of-the-bone-tithe",
+        "https://radaddel.de/products/ossiarch-bonereapers-heralds-of-the-bone-tithe-regiment-of-renown"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vokmortian",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Immortis Guard",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Mortek Guard",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
