@@ -6929,6 +6929,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ultramarines: Chief Librarian Tigurius",
+      "productCodes": [
+        "99120101329"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ultramarines-chief-librarian-tigurius",
+        "https://www.retrofixgames.com/products/warhammer-40k-ultramaries-chief-librarian-tigurius",
+        "https://shop.afk.games/products/ultramarines-chief-librarian-tigurius",
+        "https://obsidiangames.ca/products/ultramarines-chief-librarian-tigurius",
+        "https://mrmuffinstrains.com/products/gw-55-22",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/ultramarines/ultramarines-chief-librarian-tigurius"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "3ef1-1647-cd7b-a40b",
+              "name": "Chief Librarian Tigurius",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
