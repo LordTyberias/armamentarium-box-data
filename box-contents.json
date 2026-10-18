@@ -24866,6 +24866,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Kingdom of Bretonnia - Knights of The Realm",
+      "productCodes": [
+        "99122703004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-kingdom-of-bretonnia-knights-of-the-realm",
+        "https://www.irresistibleforce.com.au/products/knights-of-the-realm",
+        "https://abyssgamestore.ca/products/bretonnia-knights-of-the-realm-06-11",
+        "https://shop.afk.games/products/kingdoms-of-bretonnia-knights-of-the-realm",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-kingdom-of-bretonnia-knights-of-the-realm",
+        "https://mrmuffinstrains.com/products/gw-06-11"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "mounted Knights of the Realm",
+              "count": 12
+            }
+          ]
+        }
+      ]
     }
   ]
 }
