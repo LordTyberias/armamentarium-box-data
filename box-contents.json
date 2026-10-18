@@ -16726,6 +16726,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Slaves to Darkness - Chaos Warriors",
+      "productCodes": [
+        "99120201131"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-age-of-sigmar-slaves-to-darkness-chaos-warriors",
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-chaos-warriors",
+        "https://abyssgamestore.ca/products/slaves-to-darkness-chaos-warriors-83-06",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-chaos-warriors-1",
+        "https://shop.afk.games/products/chaos-warriors",
+        "https://obsidiangames.ca/products/slaves-to-darkness-chaos-warriors",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-chaos-warriors-2023-repack",
+        "https://mrmuffinstrains.com/products/gw-83-06",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/slaves-to-darkness-chaos-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Warriors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
