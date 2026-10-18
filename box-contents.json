@@ -16963,6 +16963,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Varanguard",
+      "productCodes": [
+        "99120201152"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-varanguard",
+        "https://abyssgamestore.ca/products/everchosen-varanguard-knight-of-ruin-83-51",
+        "https://obsidiangames.ca/products/slaves-to-darkness-varanguard",
+        "https://www.goblingaming.co.uk/products/everchosen-varanguard-knights-of-ruin"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Varanguard Knights",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Varanguard",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
