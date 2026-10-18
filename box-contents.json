@@ -9662,6 +9662,114 @@
         "https://www.goblingaming.co.uk/products/combat-patrol-night-lords"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Chaos Space Marines - Legionaries (43-105)",
+      "productCodes": [
+        "99120102218"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/chaos-space-marines-legionaries-43-105",
+        "https://shop.afk.games/products/chaos-space-marines-legionaries-new",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-legionaries",
+        "https://mrmuffinstrains.com/products/gw-43-105",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-legionaries",
+        "https://radaddel.de/products/chaos-space-marines-legionaries"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Backpacks",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Backpacks with a choice of three Chaos icons",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Backpack with a choice of two Chaos icons",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Boltguns",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Bolt pistols",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Chainswords",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Right-handed knife",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Left-handed knife",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Tainted hand",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Double-handed chainaxe",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Balefire tome",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Meltagun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Plasma gun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "694f-a205-b260-783c",
+              "name": "Flamer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Missile launcher",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Heavy bolter",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Reaper chaincannon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
