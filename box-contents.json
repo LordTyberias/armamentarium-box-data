@@ -21209,6 +21209,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords Dire Wolves",
+      "productCodes": [
+        "99120207235"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/dire-wolves-soulblight-gravelords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-dire-wolves"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dire Wolves",
+              "count": 9
+            },
+            {
+              "role": "team",
+              "name": "Doom Wolf",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
