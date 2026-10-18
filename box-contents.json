@@ -7471,6 +7471,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Jump Pack Intercessors",
+      "productCodes": [
+        "99120101392"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-jump-pack-intercessors",
+        "https://abyssgamestore.ca/products/space-marines-jump-pack-intercessors-48-13",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-jump-pack-intercessors",
+        "https://shop.afk.games/products/space-marines-jump-pack-intercessors",
+        "https://obsidiangames.ca/products/space-marines-jump-pack-intercessors",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-jump-pack-intercessors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Jump Pack Intercessors",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
