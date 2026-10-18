@@ -12353,6 +12353,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Chimera",
+      "productCodes": [
+        "99120105114"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chimera-1",
+        "https://shop.afk.games/products/astra-militarum-chimera",
+        "https://obsidiangames.ca/products/astra-militarum-chimera",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/imperial-guard-chimera"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chimera",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
