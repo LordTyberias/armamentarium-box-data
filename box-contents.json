@@ -20285,6 +20285,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Arch-Kavalos Zandtos Dark Lance Of Ossia",
+      "productCodes": [
+        "99120207159"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ossiarch-bonereapers-arch-kavalos-zandtos-dark-lance-of-ossia",
+        "https://www.goblingaming.co.uk/products/arch-kavalos-zandtos-dark-lance-of-ossia",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/arch-kavalos-zandtos-dark-lance-of-ossia"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Arch-Kavalos Zandtos",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
