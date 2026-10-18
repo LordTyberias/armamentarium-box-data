@@ -21006,6 +21006,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Vampire Lord",
+      "productCodes": [
+        "99120207204"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/vampire-lord",
+        "https://www.goblingaming.co.uk/products/vampire-lord-soulblight-gravelords"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vampire Lord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
