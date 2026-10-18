@@ -7388,6 +7388,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Librarian in Terminator Armour",
+      "productCodes": [
+        "99120101387"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-librarian-in-terminator-armour",
+        "https://abyssgamestore.ca/products/space-marines-librarian-in-terminator-armour-48-06",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marine-librarian-in-terminator-armor",
+        "https://shop.afk.games/products/librarian-in-terminator-armour",
+        "https://obsidiangames.ca/products/space-marines-librarian-in-terminator-armour",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marine-librarian-in-terminator-armour-2023",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marine-librarian-in-terminator-armour-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "2468-24f5-ad9b-8388",
+              "name": "Librarian in Terminator Armour",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
