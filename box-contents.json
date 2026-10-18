@@ -20330,6 +20330,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers Katakros Mortarch of The Necropolis",
+      "productCodes": [
+        "99120207161"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/katakros-mortarch-of-the-necropolis-ossiarch-bonereapers-age-of-sigmar",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/katakros-mortarch-of-the-necropolis"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Katakros",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
