@@ -11581,6 +11581,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Wraithknight",
+      "productCodes": [
+        "99120104084"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-wraithknight",
+        "https://abyssgamestore.ca/products/craftworlds-wraithknight-46-26",
+        "https://shop.afk.games/products/craftworlds-wraithknight",
+        "https://mrmuffinstrains.com/products/gw-46-26",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/craftworlds-wraithknight"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aeldari Wraithknight",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "towering Wraithknight",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
