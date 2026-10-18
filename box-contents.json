@@ -22022,6 +22022,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Weirdbrute Wrekkaz",
+      "productCodes": [
+        "99120209114"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/weirdbrute-wrekkaz",
+        "https://abyssgamestore.ca/products/orruk-warclans-weirdbrute-wrekkaz-89-82",
+        "https://shop.afk.games/products/orruk-warclans-weirdbrute-wrekkaz",
+        "https://obsidiangames.ca/products/orruk-warclans-weirdbrute-wrekkaz",
+        "https://mrmuffinstrains.com/products/gw-89-82",
+        "https://radaddel.de/products/orruk-warclans-weirdbrute-wrekkaz"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Weirdbrute Wrekkaz",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
