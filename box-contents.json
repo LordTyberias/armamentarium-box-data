@@ -25505,6 +25505,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Black Orc Mob",
+      "productCodes": [
+        "99122709010"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-black-orc-mob",
+        "https://www.irresistibleforce.com.au/products/black-orc-mob",
+        "https://abyssgamestore.ca/products/orc-and-goblin-tribes-orc-boar-chariots-09-07-copy",
+        "https://shop.afk.games/products/orc-goblin-tribes-black-orc-mob",
+        "https://mrmuffinstrains.com/products/gw-09-13",
+        "https://elementgames.co.uk/card-games-board-games-and-more/seasonal/orc-and-goblin-tribes-black-orc-mob",
+        "https://radaddel.de/products/orc-goblin-black-orc-mob"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Black Orcs",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
