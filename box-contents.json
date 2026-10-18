@@ -26890,6 +26890,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Typhon Heavy Siege Tank",
+      "productCodes": [
+        "99123001026"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-typhon-heavy-siege-tank",
+        "https://abyssgamestore.ca/products/horus-heresy-legiones-astartes-typhon-heavy-siege-tank-31-15",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-typhon-heavy-siege-tank",
+        "https://shop.afk.games/products/typhon-heavy-siege-tank",
+        "https://www.goblingaming.co.uk/products/the-horus-heresy-legiones-astartes-typhon-heavy-siege-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Typhon Heavy Siege Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
