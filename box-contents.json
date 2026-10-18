@@ -3562,6 +3562,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Wrecka Krew",
+      "productCodes": [
+        "99120103123"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-wrecka-krew",
+        "https://shop.afk.games/products/kill-team-wrecka-krew",
+        "https://obsidiangames.ca/products/kill-team-wrecka-krew",
+        "https://www.goblingaming.co.uk/products/kill-team-wrecka-krew",
+        "https://radaddel.de/products/kill-team-wrecka-krew"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Wrecka Krew miniatures",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
