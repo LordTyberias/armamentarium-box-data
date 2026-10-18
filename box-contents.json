@@ -6353,6 +6353,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Old World: Orc & Goblin Tribes - Orc Big 'Uns",
+      "productCodes": [
+        "99112709026"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/old-world-orc-goblin-tribes-orc-big-uns",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-orcs-goblins-big-uns"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "metal Orc Big",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
