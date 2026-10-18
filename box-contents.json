@@ -14619,6 +14619,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons - Triarch Stalker ( 49-18 )",
+      "productCodes": [
+        "99120110062"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/necron-triarch-stalker-49-18",
+        "https://shop.afk.games/products/necrons-triarch-stalker",
+        "https://mrmuffinstrains.com/products/gw-49-18",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-triarch-stalker"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Triarch Stalker",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
