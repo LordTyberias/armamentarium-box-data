@@ -27414,6 +27414,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Tarantula Sentry Guns",
+      "productCodes": [
+        "99123001064"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-tantula-sentry-guns",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-tarantula-sentry-guns",
+        "https://shop.afk.games/products/legiones-astartes-tarantula-sentry-guns",
+        "https://www.goblingaming.co.uk/products/horus-heresy-tarantula-sentry-guns",
+        "https://elementgames.co.uk/games-workshop/horus-heresy-miniatures/horus-heresy-adeptus-astartes/horus-heresy-legion-astartes-tarantula-sentry-guns"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tarantula Sentry Guns",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
