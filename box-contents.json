@@ -13227,6 +13227,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Tyranids - Tyranid Prime with Lash Whip",
+      "productCodes": [
+        "99120106084"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-tyranids-tyranid-prime-with-lash-whip",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranid-prime-with-lash-whip",
+        "https://shop.afk.games/products/tyranids-tyranid-prime-with-lash-whip",
+        "https://obsidiangames.ca/products/tyranids-tyranid-prime",
+        "https://www.goblingaming.co.uk/products/tyranids-tyranid-prime-with-lash-whip",
+        "https://mrmuffinstrains.com/products/gw-51-35",
+        "https://elementgames.co.uk/tyranid-prime-with-lash-whip"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tyranid Prime",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
