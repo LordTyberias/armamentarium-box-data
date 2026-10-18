@@ -5276,6 +5276,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Drukhari Archon",
+      "productCodes": [
+        "99070112007"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-drukhari-archon",
+        "https://shop.afk.games/products/drukhari-archon"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Archon clad in Kabalite armour inscribed",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
