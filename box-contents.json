@@ -16660,6 +16660,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Ogroid Theridons",
+      "productCodes": [
+        "99120201129"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-ogroid-theridons",
+        "https://shop.afk.games/products/slaves-to-darkness-ogroid-theridons",
+        "https://www.goblingaming.co.uk/products/ogroid-theridons",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/slaves-to-darkness-ogroid-theridons"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ogroid Theridons",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
