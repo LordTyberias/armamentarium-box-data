@@ -26784,6 +26784,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Deimos Pattern Predator Support Tank",
+      "productCodes": [
+        "99123001018"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-deimos-pattern-predator-support-tank",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-predator-support-tank",
+        "https://shop.afk.games/products/hh-predator-support-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Legion Support Predator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
