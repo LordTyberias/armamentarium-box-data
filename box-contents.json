@@ -16684,6 +16684,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness - Daemon Prince ( 83-64 )",
+      "productCodes": [
+        "99120201130"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/slaves-to-darkness-daemon-prince-83-23",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/slaves-to-darkness-daemon-prince"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Daemon Prince",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Daemon Prince",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Daemon Prince",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
