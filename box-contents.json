@@ -21870,6 +21870,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Grand Alliance of Destruction: Kragnos, The End of Empires",
+      "productCodes": [
+        "99120209087"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kragnos-the-end-of-empires",
+        "https://shop.afk.games/products/kragnos-the-end-of-empires",
+        "https://mrmuffinstrains.com/products/gw-89-65",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/kragnos-the-end-of-empires"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kragnos",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
