@@ -18244,6 +18244,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Zenestra's Zealots",
+      "productCodes": [
+        "99120202061"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-zenestras-zealots",
+        "https://mrmuffinstrains.com/products/gw-70-863",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/cities-of-sigmar/spearhead-zenestras-zealots"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Pontifex Zenestra",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Marshal",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Relic Envoy",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Command Corps miniatures",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Steelhelms",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
