@@ -27732,6 +27732,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy Legiones Astartes MKIV Assault Squad",
+      "productCodes": [
+        "99123001086"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/horus-heresy-legiones-astartes-mkiv-assault-squad",
+        "https://shop.afk.games/products/legiones-astartes-mkiv-assault-squad",
+        "https://mrmuffinstrains.com/products/gw-31-174"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Assault Legionaries",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
