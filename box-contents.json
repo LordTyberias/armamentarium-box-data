@@ -22090,6 +22090,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Snarlpack Huntaz",
+      "productCodes": [
+        "99120209125"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-snarlpack-huntaz",
+        "https://www.retrofixgames.com/products/spearhead-snarlpack-huntaz",
+        "https://www.goblingaming.co.uk/products/spearhead-snarlpack-huntaz",
+        "https://mrmuffinstrains.com/products/gw-70-894",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-snarlpack-huntaz",
+        "https://radaddel.de/products/gloomspite-gitz-spearhead-snarlpack-huntaz"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Snarlboss",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Wolfgit Retinue",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Sunsteala Wheelas",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Snarlpack Cavalry",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
