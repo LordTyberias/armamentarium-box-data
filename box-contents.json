@@ -24526,6 +24526,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warriors of Chaos: Champions of Chaos",
+      "productCodes": [
+        "99122701020"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/warriors-of-chaos-champions-of-chaos",
+        "https://shop.afk.games/products/warriors-of-chaos-champions-of-chaos",
+        "https://www.goblingaming.co.uk/products/warriors-of-chaos-champions-of-chaos",
+        "https://mrmuffinstrains.com/products/gw-08-22",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/warriors-of-chaos-champions-of-chaos",
+        "https://radaddel.de/products/warriors-of-chaos-champions-of-chaos"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Champions of Chaos",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "riding",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
