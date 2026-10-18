@@ -4646,6 +4646,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Space Marines Captain in Gravis Armour",
+      "productCodes": [
+        "99070101077"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-captain-in-gravis-armour",
+        "https://shop.afk.games/products/space-marines-captain-in-gravis-armour",
+        "https://obsidiangames.ca/products/captain-in-gravis-armour",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-space-marines-captain-in-gravis-armour",
+        "https://mrmuffinstrains.com/products/gw-48-70",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-captain-in-gravis-armour"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Captain in Gravis Armour equipped",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
