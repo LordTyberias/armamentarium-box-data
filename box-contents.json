@@ -25570,6 +25570,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "High Elf Realms: Lothern Sea Guard",
+      "productCodes": [
+        "99122710005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-lothern-sea-guard",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-lothern-sea-guard"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lothern Sea Guard",
+              "count": 35
+            }
+          ]
+        }
+      ]
     }
   ]
 }
