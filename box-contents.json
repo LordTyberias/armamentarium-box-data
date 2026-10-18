@@ -24998,6 +24998,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Wood Elf Realms - Battalion",
+      "productCodes": [
+        "99122704001"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-wood-elf-realms-battalion",
+        "https://www.irresistibleforce.com.au/products/battalion-wood-elf-realms",
+        "https://shop.afk.games/products/battalion-wood-elf-realms",
+        "https://www.goblingaming.co.uk/products/battalion-wood-elf-realms",
+        "https://radaddel.de/products/wood-elf-realms-battalion"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Wild Riders",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Wildwood Rangers",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Glade Guard",
+              "count": 32
+            }
+          ]
+        }
+      ]
     }
   ]
 }
