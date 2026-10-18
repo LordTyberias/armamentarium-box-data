@@ -11866,6 +11866,34 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/combat-patrol-aeldari-corsairs"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Aeldari - Corsairs Skyreavers (46-80)",
+      "productCodes": [
+        "99120104111"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/aeldari-corsairs-skyreavers-46-80",
+        "https://www.retrofixgames.com/products/warhammer-40-kaeldari-corsair-skyreavers",
+        "https://shop.afk.games/products/aeldari-corsair-skyreavers",
+        "https://obsidiangames.ca/products/aeldari-corsair-skyreavers",
+        "https://www.goblingaming.co.uk/products/aeldari-corsair-skyreavers",
+        "https://mrmuffinstrains.com/products/gw-46-80",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-corsair-skyreavers",
+        "https://radaddel.de/products/aeldari-corsair-skyreavers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Corsair Skyreavers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
