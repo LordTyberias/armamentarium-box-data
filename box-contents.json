@@ -14563,6 +14563,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Canoptek Wraiths",
+      "productCodes": [
+        "99120110060"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-canoptek-wraiths",
+        "https://abyssgamestore.ca/products/necrons-canoptek-wraiths-49-14",
+        "https://www.retrofixgames.com/products/warhammer-40k-necron-canoptek-wraiths",
+        "https://shop.afk.games/products/necrons-canoptek-wraiths",
+        "https://obsidiangames.ca/products/necrons-canoptek-wraiths",
+        "https://www.goblingaming.co.uk/products/necron-canoptek-wraiths",
+        "https://mrmuffinstrains.com/products/gw-49-14",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-canoptek-wraiths"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Canoptek Wraiths",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
