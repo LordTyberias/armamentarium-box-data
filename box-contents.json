@@ -27034,6 +27034,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Legion MKVI Assault Squad",
+      "productCodes": [
+        "99123001041"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/mkvi-assult-marines",
+        "https://abyssgamestore.ca/products/horus-heresy-mkvi-assault-marines-31-70",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-mkvi-assault-squad",
+        "https://shop.afk.games/products/horus-heresy-mkvi-assault-marines",
+        "https://obsidiangames.ca/products/legiones-astartes-mkvi-assault-marinues",
+        "https://www.goblingaming.co.uk/products/horus-heresy-mkvi-assault-marines",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/horus-heresy-mkvi-assault-marines",
+        "https://radaddel.de/products/legiones-astartes-mkvi-assault-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Assault Legionaries",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
