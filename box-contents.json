@@ -16321,6 +16321,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Maelstrom Battalion Leagues of Votann",
+      "productCodes": [
+        "99120118027"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-maelstrom-battalion-leagues-of-votann",
+        "https://shop.afk.games/products/maelstrom-battalion-leagues-of-votann"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "7932-6aac-cd01-3181",
+              "name": "Memnyr Strategist",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "f616-3f08-ee8e-3349",
+              "entryId": "9086-5272-398b-bbce",
+              "name": "Hernkyn Pioneers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Ironkin Steeljacks",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
