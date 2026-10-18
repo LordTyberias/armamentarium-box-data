@@ -14014,6 +14014,34 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-imperial-agents"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Imperial Knights: Knight Questoris",
+      "productCodes": [
+        "99120108105"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/imperial-knights-knight-questoris",
+        "https://abyssgamestore.ca/products/imperial-knights-preceptor-canis-rex-crusader-warden-errant-paladin-54-15",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-knights-knight-questoris-1",
+        "https://shop.afk.games/products/imperial-knightsl-knight-questoris",
+        "https://obsidiangames.ca/products/knight-questoris",
+        "https://www.goblingaming.co.uk/products/imperial-knights-knight-questoris",
+        "https://mrmuffinstrains.com/products/gw-54-22",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-knights/imperial-knights-knight-questoris"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "of the following miniatures",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
