@@ -23471,6 +23471,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes Okar's Torrbad",
+      "productCodes": [
+        "99120213038"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/ogor-mawtribes-okars-torrbad",
+        "https://mrmuffinstrains.com/products/gw-95-19"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Huskard on Stonehorn",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Thundertusk Beastriders",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
