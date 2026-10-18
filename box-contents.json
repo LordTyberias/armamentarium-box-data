@@ -26711,6 +26711,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legions Astartes Land Raider Proteus",
+      "productCodes": [
+        "99123001014"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legions-astartes-land-raider-proteus",
+        "https://shop.afk.games/products/hh-land-raider-proteus",
+        "https://obsidiangames.ca/products/legiones-astartes-land-raider-proteus",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-land-raider-proteus"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Land Raider Proteus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
