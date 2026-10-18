@@ -8735,6 +8735,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Chaos Possessed",
+      "productCodes": [
+        "99120102140"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chaos-possessed",
+        "https://abyssgamestore.ca/products/chaos-space-marines-possessed-43-86",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-possessed",
+        "https://shop.afk.games/products/chaos-space-marines-possessed",
+        "https://obsidiangames.ca/products/chaos-space-marines-possessed",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-possessed",
+        "https://radaddel.de/products/chaos-space-marines-possessed"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Possessed",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
