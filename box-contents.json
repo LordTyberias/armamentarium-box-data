@@ -14366,6 +14366,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Skorpekh Destroyers",
+      "productCodes": [
+        "99120110051"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-skorpekh-destroyers",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-skorpekh-destroyers",
+        "https://shop.afk.games/products/necrons-skorpekh-destroyers",
+        "https://obsidiangames.ca/products/necrons-skorpekh-destroyers",
+        "https://mrmuffinstrains.com/products/gw-49-31",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-skorpekh-destroyers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "66e-26f2-7c38-e4d8",
+              "name": "Skorpekh Destroyers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
