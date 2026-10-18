@@ -12547,6 +12547,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Krieg Combat Engineers",
+      "productCodes": [
+        "99120105129"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-krieg-combat-engineers",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-krieg-combat-engineers",
+        "https://shop.afk.games/products/astra-militarum-krieg-combat-engineers",
+        "https://obsidiangames.ca/products/krieg-combat-engineers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-krieg-combat-engineers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Krieg Combat Engineers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
