@@ -15535,6 +15535,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus - Electro-Priests Fulgurite / Corpuscarii ( 59-15 )",
+      "productCodes": [
+        "99120116031"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/adeptus-mechanicus-fulgurite-electro-priests-59-15",
+        "https://shop.afk.games/products/adeptus-mechanicus-electro-priests",
+        "https://obsidiangames.ca/products/electro-priests",
+        "https://www.goblingaming.co.uk/products/adeptus-mechanicus-electro-priests",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-electro-priests"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Corpuscarii",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
