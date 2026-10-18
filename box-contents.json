@@ -25451,6 +25451,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Goblin Wolf Rider Mob",
+      "productCodes": [
+        "99122709007"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-goblin-wolf-rider-mob",
+        "https://www.irresistibleforce.com.au/products/goblin-wolf-rider-mob",
+        "https://abyssgamestore.ca/products/orc-and-goblin-tribes-goblin-wolf-rider-mob-09-09",
+        "https://shop.afk.games/products/orc-goblin-tribes-goblin-wolf-rider-mob",
+        "https://mrmuffinstrains.com/products/gw-09-09",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/orc-and-goblin-tribes-goblin-wolf-rider-mob",
+        "https://radaddel.de/products/orc-goblin-goblin-wolf-rider-mob"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Goblin Wolf Riders",
+              "count": 15
+            }
+          ]
+        }
+      ]
     }
   ]
 }
