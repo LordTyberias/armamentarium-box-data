@@ -29584,6 +29584,18 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-chaos-daemons"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Combat Patrol - Leagues Of Votann ( 73-961 )",
+      "productCodes": [
+        "99120118009"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-leagues-of-votann-69-15",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-leagues-of-votann",
+        "https://obsidiangames.ca/products/combat-patrol-leagues-of-votann"
+      ],
+      "generation": "legacy"
     }
   ]
 }
