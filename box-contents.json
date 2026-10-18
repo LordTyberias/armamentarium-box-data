@@ -3372,6 +3372,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy: Mechanicum Combat Force",
+      "productCodes": [
+        "99123016015"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/horus-heresy-mechanicum-combat-force",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-mechanicum-combat-force"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Thanatar Cavas Siege-automata",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Castellax Battle-automata",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Thallax",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
