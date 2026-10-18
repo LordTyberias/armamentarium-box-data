@@ -6421,6 +6421,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tomb Kings of Khemri: Ushabti with Ritual Blades",
+      "productCodes": [
+        "99112717009"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/tomb-kings-ushabti-with-ritual-blades",
+        "https://www.goblingaming.co.uk/products/games-workshop-warhammer-the-old-world-tomb-kings-ushabti-with-ritual-blades",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/ushabti-with-ritual-blades"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ushabti",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
