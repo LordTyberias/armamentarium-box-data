@@ -22542,6 +22542,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm Lords Hurakan Windmage",
+      "productCodes": [
+        "99120210051"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/hurakan-windmage-lumineth-realm-lords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-hurakan-windmage"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hurakan Windmage",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
