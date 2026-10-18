@@ -9018,6 +9018,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Heldrake",
+      "productCodes": [
+        "99120102166"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-heldrake",
+        "https://abyssgamestore.ca/products/chaos-space-marines-heldrake-43-15",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-heldrake",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/hel-drake"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Space Marine Heldrake",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
