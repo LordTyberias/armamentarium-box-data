@@ -21820,6 +21820,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Hobgrot Slittas",
+      "productCodes": [
+        "99120209079"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hobgrot-slittas",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-hobgrot-slittaz",
+        "https://shop.afk.games/products/orruk-warclans-hobgrot-slittas",
+        "https://www.goblingaming.co.uk/products/hobgrot-slittas-orruk-warclans-age-of-sigmar",
+        "https://mrmuffinstrains.com/products/gw-89-74",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/orruk-warclans-hobgrot-slittas"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hobgrots",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
