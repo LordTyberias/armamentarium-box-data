@@ -8125,6 +8125,97 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ultramarines: Upgrades and Transfers",
+      "productCodes": [
+        "99120101451"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ultramarines-upgrades-and-transfers",
+        "https://www.retrofixgames.com/products/ultramarines-upgrades-and-transfers",
+        "https://shop.afk.games/products/ultramarines-upgrades-and-transfers",
+        "https://www.goblingaming.co.uk/products/ultramarines-upgrades-and-transfers",
+        "https://mrmuffinstrains.com/products/gw-55-72",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/ultramarines/ultramarines-upgrades-and-transfers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tacticus helmets",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Helmet",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Terminator armour hood and torso",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Storm bolter barrel",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Tilting plate",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Power sword arm",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Combat blade arm",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sheathed combat blade",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Empty sheath",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Pistol holster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Set of pouches",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ultima symbols",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Ultima symbols with wings",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Large Ultima symbols",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
