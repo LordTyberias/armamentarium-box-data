@@ -4823,6 +4823,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Master of Executions",
+      "productCodes": [
+        "99070102024"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-master-of-executions",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-master-of-executions"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Master of Executions",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
