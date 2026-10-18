@@ -21621,6 +21621,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans - Gore-Gruntas ( 89-30-W )",
+      "productCodes": [
+        "99120209031"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orruk-warclans-gore-gruntas-89-30",
+        "https://elementgames.co.uk/ironjawz-orruk-gore-gruntas"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "orruk Gore-gruntas",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
