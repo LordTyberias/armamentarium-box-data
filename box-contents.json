@@ -25086,6 +25086,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Wood Elf Realms - Eternal Guard",
+      "productCodes": [
+        "99122704004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-wood-elf-realms-eternal-guard",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-eternal-guard",
+        "https://abyssgamestore.ca/products/wood-elf-realms-eternal-guard-13-106",
+        "https://shop.afk.games/products/wood-elf-realm-eternal-guard",
+        "https://www.goblingaming.co.uk/products/wood-elf-realms-eternal-guard",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/wood-elf-realms-eternal-guard",
+        "https://radaddel.de/products/wood-elf-realms-eternal-guard"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Eternal Guard",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
