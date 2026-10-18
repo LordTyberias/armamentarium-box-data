@@ -10046,6 +10046,57 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Chaos Space Marines - Battleforce",
+      "productCodes": [
+        "99120102250"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-chaos-space-marines-battleforce",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-hellforged-warband"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lord Discordant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Chaos Rhino",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "3e98-7689-8bf0-96e0",
+              "name": "Venomcrawler",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "2311-fa63-364-22a3",
+              "name": "Obliterators",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Havocs",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Legionaries",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
