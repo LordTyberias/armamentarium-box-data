@@ -4868,6 +4868,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Autarch Wayleaper",
+      "productCodes": [
+        "99070104003"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/aeldari-autarch-wayleaper",
+        "https://www.goblingaming.co.uk/products/eldar-autarch"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Autarch equipped",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
