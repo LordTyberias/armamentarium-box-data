@@ -12199,6 +12199,137 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Cadian Upgrades",
+      "productCodes": [
+        "99120105106"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cadian-upgrades",
+        "https://abyssgamestore.ca/products/astra-militarum-cadian-upgrades-47-40",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-cadian-upgrades",
+        "https://shop.afk.games/products/astra-militarum-cadian-upgrades",
+        "https://www.goblingaming.co.uk/products/cadian-upgrades",
+        "https://mrmuffinstrains.com/products/gw-47-40"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Right arm with belt-fed autogun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Left arms",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Left arm with ammo tin",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Right arms",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Bedroll pack with stowed helmet",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Left arm in cast and sling",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Right arm with lasgun and sling",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Bundle of rope",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Left arm with lasgun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Right arm with map",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Bedroll",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Left arm holding lasgun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Right arm supporting lasgun",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cadian Accessories",
+              "count": 14
+            },
+            {
+              "role": "team",
+              "name": "Bayonets",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Sandbags",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Spare helmet",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Canister",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Holstered pistol",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Fuel can",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Backpack",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Right arm wielding an axe",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
