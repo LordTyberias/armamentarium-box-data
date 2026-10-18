@@ -11438,6 +11438,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Autarch",
+      "productCodes": [
+        "99120104077"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-autarch",
+        "https://shop.afk.games/products/aeldari-autarch",
+        "https://obsidiangames.ca/products/aeldari-autarch",
+        "https://www.goblingaming.co.uk/products/craftworld-aeldari-autarch-2022-repack-warhammer-40k",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-autarch"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "df57-7a59-75eb-ce63",
+              "name": "Autarch",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
