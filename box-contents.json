@@ -8907,6 +8907,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "World Eaters: Exalted Eightbound",
+      "productCodes": [
+        "99120102154"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/world-eaters-exalted-eightbound",
+        "https://www.retrofixgames.com/products/warhammer-40k-world-eaters-exalted-eightbound",
+        "https://shop.afk.games/products/world-eaters-exalted-eightbound",
+        "https://obsidiangames.ca/products/world-eaters-exalted-eightbound",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-chaos-space-marines-world-eaters-exalted-eightbound",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/world-eaters/world-eaters-exalted-eightbound",
+        "https://radaddel.de/products/world-eaters-exalted-eightbound"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "9932-3d2b-1e47-d53b",
+              "name": "Exalted Eightbound",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "df9a-59b2-f464-59ad",
+              "entryId": "9435-1f44-7e5b-d510",
+              "name": "Eightbound",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
