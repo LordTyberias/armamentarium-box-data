@@ -14697,6 +14697,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons - Doom Scythe / Night Scythe ( 49-15 )",
+      "productCodes": [
+        "99120110065"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/necrons-night-scythe-doom-scyth-49-15",
+        "https://shop.afk.games/products/necrons-doom-scythe",
+        "https://obsidiangames.ca/products/necrons-doom-scythe",
+        "https://mrmuffinstrains.com/products/gw-49-15",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-night-scythe-doom-scythe"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "52fb-edb1-c747-415a",
+              "name": "Doom Scythe",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "2a86-2d6-6446-7f1",
+              "name": "Night Scythe",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
