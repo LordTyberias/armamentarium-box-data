@@ -26629,6 +26629,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legiones Astartes Contemptor Dreadnought",
+      "productCodes": [
+        "99123001007"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-contemptor-dreadnought",
+        "https://shop.afk.games/products/legiones-astartes-contemptor-dreadnought",
+        "https://www.goblingaming.co.uk/products/warhammer-30-000-horus-heresy-legiones-astartes-contemptor-dreadnought",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/legiones-astartes-contemptor-dreadnought"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Contemptor Dreadnought",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Contemptor Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
