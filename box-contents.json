@@ -10991,6 +10991,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Weirdboy (50-62)",
+      "productCodes": [
+        "99120103133"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-weirdboy-50-62",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-weirdboy",
+        "https://shop.afk.games/products/orks-weirdboy",
+        "https://obsidiangames.ca/products/orks-weirdboy",
+        "https://www.goblingaming.co.uk/products/orks-weirdboy",
+        "https://mrmuffinstrains.com/products/gw-50-62",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-weirdboy"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "260d-9ce4-ea1f-a957",
+              "name": "Weirdboy",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
