@@ -14481,6 +14481,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Necrons - Immortals",
+      "productCodes": [
+        "99120110057"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-necrons-immortals",
+        "https://www.irresistibleforce.com.au/products/necrons-immortals",
+        "https://abyssgamestore.ca/products/necrons-immortals-deathmarks-49-10",
+        "https://www.retrofixgames.com/products/warhammer-40k-necron-immortals-deathmarks",
+        "https://shop.afk.games/products/necrons-immortals",
+        "https://obsidiangames.ca/products/necrons-immortals",
+        "https://www.goblingaming.co.uk/products/necron-immortals-deathmarks",
+        "https://mrmuffinstrains.com/products/gw-49-10",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-immortals-deathmarks",
+        "https://radaddel.de/products/necrons-immortals-deathmarks"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Immortals",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
