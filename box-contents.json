@@ -27920,6 +27920,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Leman Russ Strike Tank",
+      "productCodes": [
+        "99123005004"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-leman-russ-strike-tank",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-leman-russ-strike-tank",
+        "https://shop.afk.games/products/solar-auxilia-leman-russ-strike-tank",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-leman-russ-strike-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Solar Auxilia Leman Russ Strike Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
