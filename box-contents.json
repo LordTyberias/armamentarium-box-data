@@ -25674,6 +25674,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Eagle Claw Bolt Throwers",
+      "productCodes": [
+        "99122710010"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-eagle-claw-bolt-throwers",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-eagle-claw-bolt-throwers",
+        "https://shop.afk.games/products/high-elf-realms-eagle-claw-bolt-throwers",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-eagle-claw-bolt-throwers",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realmseagle-claw-bolt-throwers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Eagle-claw Bolt Throwers",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
