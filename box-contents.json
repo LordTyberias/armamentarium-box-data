@@ -12883,6 +12883,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Parasite of Mortrex",
+      "productCodes": [
+        "99120106050"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/parasite-of-mortrex",
+        "https://mrmuffinstrains.com/products/gw-51-27"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Parasite of Mortrex",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
