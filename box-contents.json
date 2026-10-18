@@ -13418,6 +13418,36 @@
         "https://abyssgamestore.ca/products/combat-patrol-adepta-sororitas-52-30"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Adepta Sororitas: Celestian Sacresants",
+      "productCodes": [
+        "99120108045"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-celestian-sacresants",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-celestian-sacresants",
+        "https://shop.afk.games/products/adepta-sororitas-celestian-sacresants",
+        "https://obsidiangames.ca/products/adepa-sororitas-celestian-sacresants",
+        "https://www.goblingaming.co.uk/products/celestian-sacresants-adepta-sororitas",
+        "https://mrmuffinstrains.com/products/gw-52-35",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/adepta-sororitas-celestian-sacresants",
+        "https://radaddel.de/products/adepta-sororitas-celestian-sacresants"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "f1af-4984-1a52-c5",
+              "name": "Celestian Sacresants",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
