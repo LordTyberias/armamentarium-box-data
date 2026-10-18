@@ -15908,6 +15908,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Jackal Alphus",
+      "productCodes": [
+        "99120117023"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/genestealer-cults-jackal-alphus",
+        "https://shop.afk.games/products/genestealer-cults-jackal-alphus",
+        "https://mrmuffinstrains.com/products/gw-51-63",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-jackal-alphus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "6426-ca59-402a-d399",
+              "name": "Jackal Alphus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
