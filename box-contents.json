@@ -5888,6 +5888,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Skink Starpriest",
+      "productCodes": [
+        "99070208003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/seraphon-skink-starpriest",
+        "https://abyssgamestore.ca/products/seraphon-skink-starpriest-88-16",
+        "https://shop.afk.games/products/skink-starpriest",
+        "https://www.goblingaming.co.uk/products/skink-starpriest"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4e3-e1a7-a8d4-8719",
+              "entryId": "abb5-c657-a20e-6e47",
+              "name": "Skink Starpriest",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
