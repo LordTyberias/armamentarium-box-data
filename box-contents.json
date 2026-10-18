@@ -29462,6 +29462,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Death Korps of Krieg (73-472)",
+      "productCodes": [
+        "99120105136"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-death-korps-of-krieg-73-472",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-death-korps-of-krieg",
+        "https://obsidiangames.ca/products/combat-patrol-death-korps-of-krieg"
+      ],
+      "generation": "legacy"
     }
   ]
 }
