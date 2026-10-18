@@ -20667,6 +20667,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Flesh-Eater Courts: Charnelgrand Jury",
+      "productCodes": [
+        "99120207189"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/flesh-eater-courts-charnelgrand-jury",
+        "https://mrmuffinstrains.com/products/gw-91-68",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/flesh-eater-courts-charnelgrand-jury"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Grand Justice Gormayne",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Crypt Horrors",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Morbheg Knights",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Cryptguard",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
