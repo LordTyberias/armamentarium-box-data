@@ -25345,6 +25345,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Orc Boyz & Arrer Boyz Mobs",
+      "productCodes": [
+        "99122709003"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-arrer-boyz-mobs",
+        "https://www.irresistibleforce.com.au/products/orc-boyz-orc-arrer-boyz-mobs",
+        "https://abyssgamestore.ca/products/orc-and-goblin-tribes-orc-boyz-orc-arrer-boyz-mob-09-03",
+        "https://shop.afk.games/products/orc-goblin-tribes-orc-arrer-boyz-mobs",
+        "https://mrmuffinstrains.com/products/gw-09-03",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/orc-and-goblin-tribes-orc-boyz-and-orc-arrer-boyz-mobs"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Orc Boyz",
+              "count": 38
+            }
+          ]
+        }
+      ]
     }
   ]
 }
