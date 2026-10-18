@@ -6855,6 +6855,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Devastator Squad",
+      "productCodes": [
+        "99120101317"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-devastator-squad",
+        "https://abyssgamestore.ca/products/space-marines-devastator-squad-48-15",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-devastator-squad",
+        "https://obsidiangames.ca/products/space-marines-devastator-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Devastators",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
