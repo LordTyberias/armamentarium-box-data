@@ -26388,6 +26388,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 06-214 - Warhammer: The Old World - Grand Cathay: Peasant Levy",
+      "productCodes": [
+        "99122720012"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-06-214",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-peasant-levy"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Peasant Levy infantry soldiers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
