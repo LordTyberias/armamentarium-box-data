@@ -15394,6 +15394,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Kroot Hounds",
+      "productCodes": [
+        "99120113090"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-kroot-hounds",
+        "https://abyssgamestore.ca/products/tau-empire-kroot-hounds-56-58",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-kroot-hounds",
+        "https://shop.afk.games/products/tau-empire-kroot-hounds",
+        "https://obsidiangames.ca/products/tau-empire-kroot-hounds",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-kroot-hounds-2024",
+        "https://mrmuffinstrains.com/products/gw-56-58",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-kroot-hounds-107514",
+        "https://radaddel.de/products/tau-empire-kroot-hounds"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "6883-85aa-b338-b88",
+              "name": "Kroot Hounds",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
