@@ -7985,6 +7985,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Wolf Guard Battle Leader",
+      "productCodes": [
+        "99120101436"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-wolf-guard-battle-leader",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-wolf-guard-battle-leader",
+        "https://shop.afk.games/products/space-wolves-wolf-guard-battle-leader",
+        "https://obsidiangames.ca/products/wolf-guard-battle-leader",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/space-wolves-wolf-guard-battle-leader"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "bbdb-49fd-da4d-3d7a",
+              "name": "Wolf Guard Battle Leader",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
