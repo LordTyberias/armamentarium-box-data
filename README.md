@@ -58,7 +58,8 @@ One object per box.
 ### Reading
 
 A kit can be read differently per game: as Kill Team operatives or as a Warhammer 40,000 unit. Each reading lists the
-box's contents as that game's catalogues name them.
+box's contents as that game's catalogues name them. The service reads a Kill Team product as Kill Team only; a `40k`
+reading beside `kt` is made by hand and names 40k entries (ADR 0002, Addendum ARMAM-601).
 
 | `reading` | Catalogues | Editions of the app that use it |
 |---|---|---|

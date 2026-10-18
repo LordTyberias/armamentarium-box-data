@@ -1,6 +1,6 @@
 # ADR 0002 — Readings for every game system of the app
 
-**Status:** Accepted (2026-10-17, Armamentarium ARMAM-591).
+**Status:** Accepted (2026-10-17, Armamentarium ARMAM-591). Addendum ARMAM-601: a Kill Team product reads `kt` only.
 
 ## Context
 
@@ -28,3 +28,19 @@ an edition, so the box falls back to name-based candidates (Armamentarium ADR 01
 - **Edition ids as readings (`aos4`, `hh3`):** would put the edition into the key, the mistake `kt`/`40k` were named to
   avoid.
 - **Only `kt` and `40k`, other systems later:** the service would watch boxes it could not propose.
+
+## Addendum ARMAM-601 — a Kill Team product reads Kill Team only (2026-10-18)
+
+- **The service gives a product whose catalogue systems include Kill Team the reading `kt` only**, even when the catalogue
+  lists Warhammer 40,000 beside it. Its entries are the operatives the shops list ("Superior", "Denuncia"); one entry list
+  stood in every reading, so under `40k` they were names no 40k unit carries (Kill Team: Celestian Insidiants, PR #19).
+  Under the 10th and 11th edition such a box falls back to the app's name-based candidates (Armamentarium ADR 0118 §8).
+- **Hand-made boxes keep their `40k` reading** where it names 40k entries with ids (Hivestorm, Tomb World, Exodite …). A
+  `40k` reading without a single entry with an id or a `choice` is removed: Kill Team: Starter Set ("Angels of Death" × 7,
+  "Plague Marines" × 7) and Kill Team: Celestian Insidiants.
+- **Imperial Navy Breachers (99120108152)** is removed: the catalogue lists it under 40k only, but its rows are operatives.
+  The service proposes it again in its next run with the same rows; that is accepted (maintainer's decision) and left to
+  the follow-up on kits the shops describe per operative.
+- Rejected: **`40k` only with entries that name exactly one root entry there** (a unique name can still mean another kit,
+  README "a kit counts as a unit only when it holds exactly that unit's models", unchecked under `--auto-merge`);
+  **unchanged** (every further Kill Team product would carry operatives under `40k`).

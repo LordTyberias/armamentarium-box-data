@@ -29,7 +29,7 @@ The table, the schema and the README form **one contract**. A change to one that
 - **Keys** are full article numbers (`productCodes`), never the nine-digit remainder.
 - **Readings** are `kt`, `40k`, `aos`, `tow`, `hh` (ADR 0002), a reading family, not an app id. A new reading is a format
   decision; ADR 0002 decided that an added reading value does not raise the number, because a reader of format 1 ignores
-  a reading it does not know.
+  a reading it does not know. A Kill Team product gets `kt` only from the service (ADR 0002, Addendum ARMAM-601).
 - **No guessed data.** Catalogue ids come from the catalogues, never from a similar name; counts come from at least two
   sources, disagreement is recorded as `countCandidates`. One named exception (ADR 0004): while the service runs with
   `--auto-merge`, it sets ids where an entry's name names exactly one root entry of its reading.

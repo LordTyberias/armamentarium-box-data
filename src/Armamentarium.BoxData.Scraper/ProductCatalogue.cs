@@ -52,8 +52,12 @@ public static partial class ProductCatalogue
             .ThenBy(p => p.Code, StringComparer.Ordinal)
             .ToList();
 
+    // A Kill Team product lists operatives; under 40k they would stand as names no unit carries, so it reads Kill Team
+    // only (ADR 0002 addendum ARMAM-601).
     public static IReadOnlyList<string> ReadingsOf(Product product) =>
-        Readings.Where(r => product.Systems.Contains(r.System)).Select(r => r.Reading).ToList();
+        product.Systems.Contains("Kill Team")
+            ? ["kt"]
+            : Readings.Where(r => product.Systems.Contains(r.System)).Select(r => r.Reading).ToList();
 
     public static bool IsCombatPatrol(Product product) =>
         product.Name.Contains("combat patrol", StringComparison.OrdinalIgnoreCase);
