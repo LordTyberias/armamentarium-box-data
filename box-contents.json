@@ -18287,6 +18287,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Cities Of Sigmar Freeguild Gallants",
+      "productCodes": [
+        "99120202063"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-cities-of-sigmar-freeguild-gallants",
+        "https://www.goblingaming.co.uk/products/cities-of-sigmar-freeguild-gallants",
+        "https://mrmuffinstrains.com/products/gw-86-08"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Freeguild Gallants",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
