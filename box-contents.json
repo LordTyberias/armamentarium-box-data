@@ -8789,6 +8789,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Warpforged",
+      "productCodes": [
+        "99120102143"
+      ],
+      "sources": [
+        "https://obsidiangames.ca/products/chaos-space-marinues-warpforged",
+        "https://www.goblingaming.co.uk/products/warpforged-venomcrawler-and-obliterators",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/warpforged-venomcrawler-and-obliterators"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "3e98-7689-8bf0-96e0",
+              "name": "Venomcrawler",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "2311-fa63-364-22a3",
+              "name": "Obliterators",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
