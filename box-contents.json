@@ -5325,6 +5325,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Tau Empire Darkstrider",
+      "productCodes": [
+        "99070113005"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-darkstrider",
+        "https://shop.afk.games/products/tau-empire-darkstrider",
+        "https://obsidiangames.ca/products/tau-empire-darkstrider",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-darkstrider"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "a0f5-5934-1570-5a21",
+              "name": "Darkstrider",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
