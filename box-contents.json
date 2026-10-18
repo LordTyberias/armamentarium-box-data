@@ -22781,6 +22781,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Lumineth Realm-Lords Sigil Convocation",
+      "productCodes": [
+        "99120210063"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-lumineth-realm-lords-sigil-convocation",
+        "https://shop.afk.games/products/lumineth-realm-lords-sigil-convocation",
+        "https://mrmuffinstrains.com/products/gw-87-67"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Scinari Calligrave",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Hyshian Twinstones",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Rune of Petrification",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
