@@ -5298,6 +5298,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Ethereal",
+      "productCodes": [
+        "99070113003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-ethereal",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-ethereal",
+        "https://shop.afk.games/products/tau-empire-ethereal",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-ethereal",
+        "https://mrmuffinstrains.com/products/gw-56-24"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "5e66-6f0-a181-cc4d",
+              "name": "Ethereal",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
