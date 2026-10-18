@@ -29623,6 +29623,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Spearhead Cities of Sigmar",
+      "productCodes": [
+        "99120202050"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-cities-of-sigmar",
+        "https://shop.afk.games/products/spearhead-cities-of-sigmar",
+        "https://obsidiangames.ca/products/spearhead-cities-of-sigmar"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Freeguild Cavalier-Marshal",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ironweld Great Cannon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Cavaliers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Freeguild Steelhelms",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
