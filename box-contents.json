@@ -10713,6 +10713,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Defkilla Wartrike",
+      "productCodes": [
+        "99120103099"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-defkilla-wartrike",
+        "https://shop.afk.games/products/orks-deffkilla-wartrike",
+        "https://obsidiangames.ca/products/orks-deffkilla-wartrike",
+        "https://mrmuffinstrains.com/products/gw-50-38",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-deffkilla-wartrike"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "ca85-1d18-dc30-d64e",
+              "name": "Deffkilla Wartrike",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
