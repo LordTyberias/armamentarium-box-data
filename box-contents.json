@@ -27996,6 +27996,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Basilisk & Medusa",
+      "productCodes": [
+        "99123005007"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-basilisk-medusa",
+        "https://abyssgamestore.ca/products/the-horus-heresy-solar-auxilia-basilisk-medusa-31-79",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-basilisk-medusa",
+        "https://shop.afk.games/products/solar-auxilia-basilisk-medusa",
+        "https://obsidiangames.ca/products/solar-auxilia-basilisk-medusa",
+        "https://www.goblingaming.co.uk/products/warhammer-30k-the-horus-heresy-solar-auxilia-basilisk-medusa",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/solar-auxilia-basiliskmedusa"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Solar Auxilia Basilisk",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
