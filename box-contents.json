@@ -8043,6 +8043,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Wolf Guard Terminators",
+      "productCodes": [
+        "99120101441"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-wolf-guard-terminators",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-wolf-guard-terminators-1",
+        "https://shop.afk.games/products/space-wolves-wolf-guard-terminators",
+        "https://obsidiangames.ca/products/wolf-guard-terminators",
+        "https://www.goblingaming.co.uk/products/space-wolves-wolf-guard-terminators",
+        "https://radaddel.de/products/space-wolves-wolf-guard-terminators"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "ca30-caf3-d7a8-1d32",
+              "name": "Wolf Guard Terminators",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
