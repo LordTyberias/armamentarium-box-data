@@ -6779,6 +6779,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Space Marines - Primaris Intercessors",
+      "productCodes": [
+        "99120101309"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-primaris-intercessors",
+        "https://www.irresistibleforce.com.au/products/space-marines-primaris-intercessors",
+        "https://www.retrofixgames.com/products/warhammer-40-space-marines-primaris-intercessors",
+        "https://shop.afk.games/products/space-marines-primaris-intercessors",
+        "https://obsidiangames.ca/products/space-marines-primaris-intercessors",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-intercessors",
+        "https://radaddel.de/products/space-marines-intercessor-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Primaris Intercessors",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
