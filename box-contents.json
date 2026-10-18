@@ -23095,6 +23095,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughers of Khaine: Khinerai Heartrenders",
+      "productCodes": [
+        "99120212016"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/khinerai-heartrenders-khinerai-lifetakers",
+        "https://abyssgamestore.ca/products/daughters-of-khaine-khinerai-heartrenders-lifetakers-85-19",
+        "https://shop.afk.games/products/daughters-of-khaine-khinerai"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Khinerai Lifetakers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
