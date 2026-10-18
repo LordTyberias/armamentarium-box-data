@@ -23407,6 +23407,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes - Frostlord on Stonehorn / Beastriders / Huskard ( 95-12 )",
+      "productCodes": [
+        "99120213028"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/ogor-mawtribes-stonehorn-beastriders-frostlord-huskard-95-12-w",
+        "https://shop.afk.games/products/ogor-mawtribes-frostlord-on-stonehorn",
+        "https://mrmuffinstrains.com/products/gw-95-12"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Frostlord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
