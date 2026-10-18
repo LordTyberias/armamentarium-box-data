@@ -16755,6 +16755,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Slaves to Darkness Exalted Hero of Chaos",
+      "productCodes": [
+        "99120201132"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-exalted-hero-of-chaos",
+        "https://shop.afk.games/products/slaves-to-darkness-exalted-hero-of-chaos",
+        "https://obsidiangames.ca/products/slaves-to-darkness-exalted-hero-of-chaos",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-exalted-hero-of-chaos-2023-repack"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "ce02-e726-b9c0-28f8",
+              "name": "Exalted Hero of Chaos",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
