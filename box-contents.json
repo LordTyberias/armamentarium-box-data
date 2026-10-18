@@ -20192,6 +20192,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Flesh-Eater Courts: Cryptguard",
+      "productCodes": [
+        "99120207151"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/flesh-eater-courts-cryptguard",
+        "https://abyssgamestore.ca/products/flesh-eater-courts-cryptguards-91-76",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-flesh-eater-courts-cryptguard",
+        "https://shop.afk.games/products/flesh-eater-courts-cryptguard",
+        "https://obsidiangames.ca/products/flesh-eater-courts-cryptguard",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-flesh-eater-courts-cryptguard",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-death/flesh-eater-courts-cryptguard",
+        "https://radaddel.de/products/flesh-eater-courts-cryptguard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cryptguard",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
