@@ -14428,6 +14428,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: C’Tan Shard of the Void Dragon",
+      "productCodes": [
+        "99120110054"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-c-tan-shard-of-the-void-dragon",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-ctan-shard-of-the-void-dragon",
+        "https://shop.afk.games/products/necrons-ctan-shard-of-the-void-dragon",
+        "https://obsidiangames.ca/products/necrons-ctan-shard-of-the-void-dragon",
+        "https://www.goblingaming.co.uk/products/ctan-shard-of-the-void-dragon-necrons-warhammer-40k-99120110054",
+        "https://mrmuffinstrains.com/products/gw-49-30"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "8065-e9c0-dcb5-be1d",
+              "name": "C'tan Shard of the Void Dragon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
