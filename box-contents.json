@@ -8270,6 +8270,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Ancient in Terminator Armour",
+      "productCodes": [
+        "99120101455"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-ancient-in-terminator-armour",
+        "https://www.retrofixgames.com/products/space-marines-ancient-in-terminator-armour",
+        "https://www.goblingaming.co.uk/products/space-marines-ancient-in-terminator-armour"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "fc7f-8176-c10c-ca8",
+              "name": "Ancient in Terminator Armour",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
