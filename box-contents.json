@@ -15789,6 +15789,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Goliath",
+      "productCodes": [
+        "99120117018"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/genestealer-cults-goliath",
+        "https://abyssgamestore.ca/products/genestealer-cults-goliath-rockgrinder-51-53",
+        "https://www.retrofixgames.com/products/warhammer-40k-genestealer-cults-goliath-1",
+        "https://shop.afk.games/products/genestealer-cults-goliath",
+        "https://www.goblingaming.co.uk/products/genestealer-cults-goliath",
+        "https://mrmuffinstrains.com/products/gw-51-53",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-goliath"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "1d1-f0d2-b810-12fe",
+              "name": "Goliath Truck",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "5ac1-3adb-212a-5e02",
+              "name": "Goliath Rockgrinder",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
