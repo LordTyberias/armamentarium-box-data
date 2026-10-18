@@ -25268,6 +25268,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Dwarfen Mountain Holds - Gyrocopters & Gyrobombers",
+      "productCodes": [
+        "99122705007"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-dwarfen-mountain-holds-gyrocopters-gyrobombers",
+        "https://www.irresistibleforce.com.au/products/gyrocopters-gyrobombers",
+        "https://abyssgamestore.ca/products/dwarf-gyrocopters-and-gyrobombers-10-13",
+        "https://shop.afk.games/products/dwarfen-mountain-holds-dwarf-gyrocopters",
+        "https://radaddel.de/products/mountain-holds-gyrocopters-gyrobombers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Gyrocopters",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
