@@ -28827,6 +28827,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daemons Of Tzeentch - Screamers ( 97-11-W )",
+      "productCodes": [
+        "99129915033"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/daemons-of-tzeentch-screamers-97-11-w",
+        "https://elementgames.co.uk/daemons-of-tzeentch-screamers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Screamers of Tzeentch",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Screamers of Tzeentch",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Screamers of Tzeentch",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
