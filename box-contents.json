@@ -15161,6 +15161,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Hammerhead Gunship",
+      "productCodes": [
+        "99120113070"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-hammerhead-gunship",
+        "https://abyssgamestore.ca/products/tau-empire-hammerhead-sky-ray-gunship-56-11",
+        "https://www.goblingaming.co.uk/products/hammerhead-gunship",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/hammerhead-gunship"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "ca9-49ab-17c1-8556",
+              "name": "Hammerhead Gunship",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
