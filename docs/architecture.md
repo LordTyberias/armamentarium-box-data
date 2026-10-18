@@ -58,7 +58,8 @@ and ADR 0004:
 - Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
   ARMAM-599), never from part counts.
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
-  a ready one with the ids of exactly one name hit, merged at once.
+  a ready one with the ids of exactly one name hit, merged at once (a merge refused with 405 is tried again, ADR 0004
+  Addendum ARMAM-603).
 - Besides, at most one draft `scraper/stale-ids` that removes orphaned ids (an id naming no root entry of its reading any
   more); never merged by the service, also with `--auto-merge`, and counted among the five open (ADR 0004 Addendum ARMAM-597).
 - Mails the maintainer (ADR 0003 Addendum ARMAM-600): a failed run through `OnFailure=` and the failure unit
