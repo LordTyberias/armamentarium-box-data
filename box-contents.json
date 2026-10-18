@@ -17461,6 +17461,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Disciples Of Tzeentch Seekers Of Silver",
+      "productCodes": [
+        "99120201205"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-disciples-of-tzeentch-seekers-of-silver",
+        "https://shop.afk.games/products/disciples-of-tzeentch-seekers-of-silver",
+        "https://mrmuffinstrains.com/products/gw-83-108",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/disciples-of-tzeentch-seekers-of-silver",
+        "https://radaddel.de/products/disciples-of-tzeentch-seekers-of-silver"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gaunt Summoner on Disc of Tzeentch",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Magister on Disc of Tzeentch",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Screamers of Tzeentch",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
