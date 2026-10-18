@@ -9577,6 +9577,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Emperors Children: Lord Kakophonist",
+      "productCodes": [
+        "99120102205"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/emperors-children-lord-kakophonist",
+        "https://www.retrofixgames.com/products/warhammer-40k-emperors-children-lord-kakophonist",
+        "https://obsidiangames.ca/products/lord-kakophonist",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/emperors-children/emperors-children-lord-kakophonist"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "ee50-955a-0a81-41f1",
+              "name": "Lord Kakophonist",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
