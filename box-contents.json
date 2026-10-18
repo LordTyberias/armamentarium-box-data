@@ -18118,6 +18118,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmar: Galen & Doralia Ven Denst",
+      "productCodes": [
+        "99120202054"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-galen-doralia-ven-denst",
+        "https://obsidiangames.ca/products/cities-of-sigmar-galen-and-doralia-ven-denst",
+        "https://www.goblingaming.co.uk/products/galen-doralia-ven-denst-cities-of-sigmar",
+        "https://mrmuffinstrains.com/products/gw-86-45",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/cities-of-sigmar-galen-and-doralia-ven-denst-2"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Galen ven Denst",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Doralia ven Denst",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
