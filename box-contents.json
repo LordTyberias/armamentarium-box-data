@@ -24099,6 +24099,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Reclusians",
+      "productCodes": [
+        "99120218088"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/stormcast-eternals-reclusians",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-stormcast-eternals-reclusians",
+        "https://shop.afk.games/products/stormcast-eternals-reclusians",
+        "https://obsidiangames.ca/products/reclusians",
+        "https://www.goblingaming.co.uk/products/stormcast-eternals-reclusians"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Reclusians",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
