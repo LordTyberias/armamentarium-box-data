@@ -7632,6 +7632,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines Heroes of the Chapter",
+      "productCodes": [
+        "99120101401"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/space-marines-heroes-of-the-chapter",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/heroes-of-the-chapter"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "109f-f71d-56-d9eb",
+              "name": "Lieutenant with Combi-Weapon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "c6e9-c0c8-5f13-5771",
+              "name": "Apothecary Biologis",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sternguard Veterans",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
