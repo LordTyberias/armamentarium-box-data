@@ -19615,6 +19615,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Endless Spells: Nighthaunt",
+      "productCodes": [
+        "99120207053"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/endless-spells-nighthaunt",
+        "https://www.goblingaming.co.uk/products/endless-spells-nighthaunt",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/endless-spells-nighthaunt",
+        "https://radaddel.de/products/nighthaunt-endless-spells"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Endless Spells usable by Nighthaunt wizards in games of Warhammer Age of Sigmar",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
