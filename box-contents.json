@@ -9248,6 +9248,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines Legionaries(Old)",
+      "productCodes": [
+        "99120102172"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/chaos-space-marines-legionaries",
+        "https://obsidiangames.ca/products/chaos-space-marines-legionaries"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Space Marines",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
