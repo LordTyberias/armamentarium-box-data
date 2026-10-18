@@ -21712,6 +21712,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Swampboss Skumdrekk",
+      "productCodes": [
+        "99120209074"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orruk-warclans-swampboss-skumdrekk",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-swampboss-skumdrekk",
+        "https://shop.afk.games/products/swampboss-skumdrekk",
+        "https://obsidiangames.ca/products/orruk-warclans-swampboss-skumdrekk",
+        "https://www.goblingaming.co.uk/products/orruk-warclans-swampboss-skumdrekk-age-of-sigmar",
+        "https://mrmuffinstrains.com/products/gw-89-69",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/orruk-warclans-swampboss-skumdrekk"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Swampboss Skumdrekk",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
