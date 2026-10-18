@@ -7875,6 +7875,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Drop Pods",
+      "productCodes": [
+        "99120101423"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-drop-pods",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-drop-pods",
+        "https://shop.afk.games/products/space-marines-drop-pods",
+        "https://www.goblingaming.co.uk/products/space-marines-drop-pods",
+        "https://radaddel.de/products/space-marines-drop-pod"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "4d57-c5c8-c1a1-e8a6",
+              "name": "Drop Pods",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
