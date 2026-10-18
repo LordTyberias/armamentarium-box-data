@@ -4481,6 +4481,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Space Marine Captain with Master-Crafted Bolt Rifle",
+      "productCodes": [
+        "99070101048"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marine-captain-with-master-crafted-bolt-rifle",
+        "https://www.goblingaming.co.uk/products/primaris-captain-with-master-crafted-bolt-rifle-space-marines"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "6c10-5b51-5bc0-8d2c",
+              "name": "Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
