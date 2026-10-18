@@ -11949,6 +11949,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum - Catachan Command Squad ( 5037-W )",
+      "productCodes": [
+        "99120105037"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/astra-militarum-catachan-command-squad-5037-w",
+        "https://www.goblingaming.co.uk/products/imperial-guard-catachan-command-squad",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/imperial-guard-catachan-command-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "specialist troopers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
