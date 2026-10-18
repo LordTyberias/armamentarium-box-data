@@ -25812,6 +25812,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Dragond Princes of Caledor",
+      "productCodes": [
+        "99122710017"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-dragond-princes-of-caledor",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-dragon-princes-of-caledor",
+        "https://abyssgamestore.ca/products/high-elf-realms-dragon-princes-of-caledor-13-17",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-dragon-princes-of-caledor",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realmsdragon-princes-of-caledor",
+        "https://radaddel.de/products/high-elf-realms-dragon-princes-of-caledor"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dragon Princes of Caledor",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
