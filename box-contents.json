@@ -12498,6 +12498,30 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/combat-patrol-astra-militarum"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Astra Militarum: Artillery Team",
+      "productCodes": [
+        "99120105126"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-artillery-team",
+        "https://shop.afk.games/products/astra-militarum-krieg-artillery-team",
+        "https://obsidiangames.ca/products/artillery-team",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-krieg-artillery-team"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "artillery piece",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
