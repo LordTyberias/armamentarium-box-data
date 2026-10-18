@@ -13531,6 +13531,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Aestred Thurga Relinquant At Arms",
+      "productCodes": [
+        "99120108050"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-aestred-thurga-relinquant-at-arms",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-aestred-thurga-reliquant-at-arms",
+        "https://shop.afk.games/products/adepta-sororitas-aestred-thurga-relinquant-at-arms",
+        "https://obsidiangames.ca/products/adepta-sororitas-aestred-thurga",
+        "https://www.goblingaming.co.uk/products/aestred-thurga-relinquant-at-arms-adepta-sororitas-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-52-36",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/sisters-of-battle/aestred-thurga-relinquant-at-arms"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aestred Thurga",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Agathae Dolan",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
