@@ -28112,6 +28112,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Solar Auxilia Rapier Direct Fire Battery",
+      "productCodes": [
+        "99123005018"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-rapier-direct-fire-battery",
+        "https://shop.afk.games/products/h-h-solar-auxilia-rapier-direct-fire-battery",
+        "https://www.goblingaming.co.uk/products/solar-auxilia-rapier-direct-fire-battery",
+        "https://mrmuffinstrains.com/products/gw-31-170",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/solar-auxilia-rapier-direct-fire-battery"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rapier Carriers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "additional crew",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
