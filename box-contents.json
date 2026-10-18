@@ -7728,6 +7728,99 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Upgrades and Transfers: Dark Angels",
+      "productCodes": [
+        "99120101411"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/upgrades-and-transfers-dark-angels",
+        "https://abyssgamestore.ca/products/dark-angels-upgrades-and-transfers-44-24",
+        "https://www.retrofixgames.com/products/warhammer-40k-dark-angels-upgrades-and-transfers",
+        "https://shop.afk.games/products/dark-angels-upgrades",
+        "https://obsidiangames.ca/products/dark-angels-upgrades-and-transfers",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-space-marines-dark-angels-upgrades-and-transfers",
+        "https://mrmuffinstrains.com/products/gw-44-24",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/dark-angels-upgrades-and-transfers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "relics and honours",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "backpack-mounted Chapter icon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "tilting shield for models in Tacticus armour",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sergeant's power sword for models in Tacticus armour",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "decorated tassets",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Sergeant's power sword",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sergeant's breastplate",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "tilting plate",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "ornamental dagger",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "storm bolter decoration",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "plasma cannon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ravenwing icons",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Dark Angels icons",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Ravenwing biker rear wing-fitting",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
