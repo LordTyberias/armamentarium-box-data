@@ -10193,6 +10193,51 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Thousand Sons Sekhmet Coven",
+      "productCodes": [
+        "99120102262"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-thousand-sons-sekhmet-coven",
+        "https://elementgames.co.uk/thousand-sons-sekhmet-coven"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "1693-5e00-da69-57bb",
+              "name": "Infernal Master",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "c3a6-8fab-45f0-2d45",
+              "name": "Exalted Sorcerers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "b1cf-c5-5121-92a4",
+              "name": "Scarab Occult Terminators",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "094c-c618-92c1-b394",
+              "name": "Mutalith Vortex Beast",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
