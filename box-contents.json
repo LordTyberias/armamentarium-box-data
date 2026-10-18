@@ -16497,6 +16497,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slickblade Seekers",
+      "productCodes": [
+        "99120201102"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/slickblade-seekers",
+        "https://www.goblingaming.co.uk/products/hedonites-of-slaanesh-slickblade-seekers",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/hedonites-of-slaanesh-slickblade-seekers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Slickblade Seeker miniatures",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
