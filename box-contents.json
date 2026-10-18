@@ -8246,6 +8246,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Terminator Assault Squad",
+      "productCodes": [
+        "99120101454"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-terminator-assault-squad",
+        "https://www.retrofixgames.com/products/space-marines-terminator-assault-squad",
+        "https://obsidiangames.ca/products/terminator-assault-squad",
+        "https://www.goblingaming.co.uk/products/space-marines-terminator-assault-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Assault Terminators",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
