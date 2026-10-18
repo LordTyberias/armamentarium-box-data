@@ -24073,6 +24073,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Stormstrike Pallador",
+      "productCodes": [
+        "99120218086"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/stormcast-eternals-stormstrike-pallador",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-stormcast-eternalsstormstrike-palladors",
+        "https://shop.afk.games/products/stormcast-eternals-stormstrike-palladors",
+        "https://obsidiangames.ca/products/stormstrike-palladors",
+        "https://www.goblingaming.co.uk/products/stormcast-eternals-stormstrike-palladors",
+        "https://radaddel.de/products/stormcast-eternals-stormstrike-palladors"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormstrike Palladors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
