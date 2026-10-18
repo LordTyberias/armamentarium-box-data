@@ -10815,6 +10815,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Orks Shokkjump Dragsta",
+      "productCodes": [
+        "99120103103"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-shokkjump-dragsta",
+        "https://obsidiangames.ca/products/orks-shokkjump-dragsta"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "1d12-e2ae-33bb-4558",
+              "name": "Shokkjump Dragsta",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
