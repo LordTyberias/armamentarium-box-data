@@ -27675,6 +27675,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Drop Pod",
+      "productCodes": [
+        "99123001083"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-drop-pod",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-drop-pod",
+        "https://shop.afk.games/products/legion-drop-pod",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-drop-pod",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-legiones-astartes-drop-pod"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Drop Pod",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
