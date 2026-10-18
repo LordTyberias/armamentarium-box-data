@@ -29259,6 +29259,50 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites Of Slaanesh - Daemonettes ( 97-09 )",
+      "productCodes": [
+        "99129915076"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/daemons-of-slaanesh-daemonettes-97-09",
+        "https://shop.afk.games/products/daemons-of-slaanesh-daemonettes",
+        "https://obsidiangames.ca/products/hedonites-of-slaanesh-daemonettes-1",
+        "https://elementgames.co.uk/daemons-of-slaanesh-daemonettes"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Daemonettes of Slaanesh",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Daemonettes of Slaanesh",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Daemonettes of Slaanesh",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
