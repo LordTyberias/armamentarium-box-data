@@ -24634,6 +24634,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Flagellants",
+      "productCodes": [
+        "99122702010"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-flagellants",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-flagellants",
+        "https://shop.afk.games/products/empire-of-man-flagellants",
+        "https://www.goblingaming.co.uk/products/empire-of-man-flagellants",
+        "https://radaddel.de/products/empire-of-man-flagellants"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Flagellants",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
