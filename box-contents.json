@@ -23193,6 +23193,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughter of Khaine- Krethusa's Cronehost",
+      "productCodes": [
+        "99120212039"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/daughter-of-khaine-krethusas-cronehost",
+        "https://obsidiangames.ca/products/daughters-of-khaine-krethusas-cronehost",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/daughters-of-khaine-krethusas-cronehost"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Krethusa the Croneseer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sisters of Slaughter",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Doomfire Warlocks",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
