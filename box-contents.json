@@ -15035,6 +15035,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 45-10 - Warhammer 40,000 - Drukhari: Raider",
+      "productCodes": [
+        "99120112046"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-45-10",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/drukhari-raider"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "38de-521f-1ce0-44a0",
+              "entryId": "635b-21f4-f801-453",
+              "name": "Raider",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
