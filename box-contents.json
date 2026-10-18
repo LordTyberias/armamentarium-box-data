@@ -4718,6 +4718,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard: Foul Blightspawn",
+      "productCodes": [
+        "99070102017"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/death-guard-foul-blightspawn",
+        "https://abyssgamestore.ca/products/death-guard-foul-blightspawn-43-46",
+        "https://shop.afk.games/products/death-guard-foul-blightspawn",
+        "https://www.goblingaming.co.uk/products/death-guard-foul-blightspawn",
+        "https://mrmuffinstrains.com/products/gw-43-46",
+        "https://elementgames.co.uk/death-guard-foul-blightspawn"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "c88f-d4dc-84b3-1b31",
+              "name": "Foul Blightspawn",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
