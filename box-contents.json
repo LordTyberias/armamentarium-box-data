@@ -18998,6 +18998,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kharadron Overlords Skyriggers Skywardens / Endrinriggers ( 84-36 )",
+      "productCodes": [
+        "99120205053"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/kharadron-overlords-skyriggers-skywardens-endrinriggers-84-36",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-kharadron-skyriggers",
+        "https://radaddel.de/products/kharadron-overlords-skywardens"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Endrinriggers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
