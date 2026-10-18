@@ -10010,6 +10010,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Emperors Children - Battleforce",
+      "productCodes": [
+        "99120102249"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-emperors-children-battleforce",
+        "https://www.retrofixgames.com/products/warhammer-40k-emperors-children-blissbound-warband"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "1e0a-cf2b-6602-2a34",
+              "name": "Fulgrim",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "03fe-a162-4c02-f07b",
+              "entryId": "183e-f3bb-3ce6-7b55",
+              "name": "Flawless Blades",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Noise Marines",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
