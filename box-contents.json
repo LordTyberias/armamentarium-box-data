@@ -28304,6 +28304,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Knight Houses: Cerastus Knight Acheron",
+      "productCodes": [
+        "99123008006"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cerastus-knight-acheron",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-cerastus-knight-acheron",
+        "https://shop.afk.games/products/horus-heresy-cerastus-knight-acheron",
+        "https://obsidiangames.ca/products/knight-houses-cerastus-knight-acheron",
+        "https://www.goblingaming.co.uk/products/horus-heresy-cerastus-knight-acheron"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cerastus Knight Acheron",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "fd9b-d04e-362d-8e5d",
+              "entryId": "8113-3648-d54e-5e6c",
+              "name": "Cerastus Knight Acheron",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
