@@ -21793,6 +21793,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Gutrippaz",
+      "productCodes": [
+        "99120209077"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/gutrippaz",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-gutrippaz",
+        "https://shop.afk.games/products/orruk-warclans-gutrippaz",
+        "https://obsidiangames.ca/products/orruk-warclans-gutrippaz",
+        "https://mrmuffinstrains.com/products/gw-89-70",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/orruk-warclans-gutrippaz",
+        "https://radaddel.de/products/orruk-warclans-gutrippaz"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gutrippaz",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
