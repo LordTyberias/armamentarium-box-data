@@ -28718,6 +28718,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Caladius Grav-Tank",
+      "productCodes": [
+        "99123043007"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-caladius-grav-tank",
+        "https://shop.afk.games/products/legio-custodes-caladius-grav-tank",
+        "https://www.goblingaming.co.uk/products/legio-custodes-caladius-grav-tank",
+        "https://mrmuffinstrains.com/products/gw-31-138"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "3ee2-62a9-af84-1a90",
+              "name": "Caladius Grav-tank",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "acc1-f897-a117-9b4a",
+              "entryId": "3cc2-9a68-9bc0-b695",
+              "name": "Caladius Grav-tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
