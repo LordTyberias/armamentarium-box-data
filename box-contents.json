@@ -11049,6 +11049,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Wartrakk (50-74)",
+      "productCodes": [
+        "99120103135"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-wartrakk-50-74",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-wartrakk",
+        "https://shop.afk.games/products/orks-wartrakk",
+        "https://obsidiangames.ca/products/orks-wartrakk",
+        "https://www.goblingaming.co.uk/products/orks-wartrakk",
+        "https://mrmuffinstrains.com/products/gw-50-74",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-wartrakk"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "9e51-a749-18ba-2ea4",
+              "name": "Wartrakk",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
