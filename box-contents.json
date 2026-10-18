@@ -28756,6 +28756,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Coronus Grav-Carrier",
+      "productCodes": [
+        "99123043008"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-coronus-grav-carrier",
+        "https://shop.afk.games/products/legio-custodes-coronus-grav-carrier",
+        "https://mrmuffinstrains.com/products/gw-31-166"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "f35e-ef9c-9ef4-77e1",
+              "name": "Coronus Grav-carrier",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "acc1-f897-a117-9b4a",
+              "entryId": "40df-cbd0-f144-ccdb",
+              "name": "Coronus Grav-carrier",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
