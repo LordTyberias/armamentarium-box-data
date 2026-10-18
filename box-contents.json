@@ -27062,6 +27062,139 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy: Legiones Astartes Melee Weapons Upgrade",
+      "productCodes": [
+        "99123001042"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/horus-heresy-legiones-astartes-melee-weapons-upgrade",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-melee-weapons-upgrade-set",
+        "https://shop.afk.games/products/horus-heresy-legion-astartes-melee-weapons-upgrade",
+        "https://obsidiangames.ca/products/melee-weapons-upgrade-set",
+        "https://www.goblingaming.co.uk/products/legion-astartes-melee-weapons-upgrade",
+        "https://mrmuffinstrains.com/products/gw-31-99",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/horus-heresy-legion-astartes-melee-weapons-upgrade",
+        "https://radaddel.de/products/legiones-astartes-melee-weapons-upgrade"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sheathed chainswords",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Heavy chainswords",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Charnabal sabres",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Thunder hammers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Power swords being drawn",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Power swords",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Power lances",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Hand flamers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Plasma pistols",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Augury scanners",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Melta bombs",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Slung boltguns",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Power axes",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Power mauls",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Power fists",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Volkite serpenta",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Phobos bolt pistols",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Umbra bolt pistols",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Tigrus bolt pistols",
+              "count": 4
+            },
+            {
+              "role": "team",
+              "name": "Chainswords",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Hands",
+              "count": 8
+            },
+            {
+              "role": "team",
+              "name": "Arms",
+              "count": 42
+            }
+          ]
+        }
+      ]
     }
   ]
 }
