@@ -23713,6 +23713,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Stormstrike Chariot",
+      "productCodes": [
+        "99120218051"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/stormstrike-chariot",
+        "https://shop.afk.games/products/stormcast-eternals-stormstrike-chariot",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/stormcast-eternals-stormstrike-chariot"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Stormstrike Chariot",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
