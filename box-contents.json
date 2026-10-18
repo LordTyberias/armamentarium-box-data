@@ -23226,6 +23226,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Khainite Shadow Coven",
+      "productCodes": [
+        "99120212043"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-khainite-shadow-coven",
+        "https://www.retrofixgames.com/products/age-of-sigmar-spearhead-khainite-shadow-coven",
+        "https://www.goblingaming.co.uk/products/spearhead-khainite-shadow-coven",
+        "https://mrmuffinstrains.com/products/gw-70-852",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/spearhead-khainite-shadow-coven",
+        "https://radaddel.de/products/daughters-of-khaine-khainite-shadow-coven-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Slaughter Queen on Cauldron of Blood",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Bloodwrack Medusa",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Khainite Shadowstalkers",
+              "count": 9
+            },
+            {
+              "role": "team",
+              "name": "Sisters of Slaughter",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
