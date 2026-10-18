@@ -24659,6 +24659,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Greatswords",
+      "productCodes": [
+        "99122702011"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-greatswords",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-greatswords",
+        "https://shop.afk.games/products/empire-of-man-greatswords",
+        "https://www.goblingaming.co.uk/products/empire-of-man-greatswords"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Empire Greatswords",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
