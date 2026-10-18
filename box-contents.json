@@ -6647,6 +6647,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Space Marines - Heavy Intercessor Squad",
+      "productCodes": [
+        "99120101288"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-heavy-intercessor-squad",
+        "https://www.irresistibleforce.com.au/products/space-marines-heavy-intercessors",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-heavy-intercessors",
+        "https://shop.afk.games/products/space-marines-heavy-intercessors",
+        "https://obsidiangames.ca/products/heavy-intercessors",
+        "https://www.goblingaming.co.uk/products/primaris-heavy-intercessors-space-marines",
+        "https://mrmuffinstrains.com/products/gw-48-95",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-heavy-intercessors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Heavy Intercessors",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
