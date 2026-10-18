@@ -26988,6 +26988,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "H/H: Legiones Astartes: Contemptor Dreadnought Weapons Frame 1",
+      "productCodes": [
+        "99123001032"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/contemptor-dreadnought-weapons-frame-1",
+        "https://www.goblingaming.co.uk/products/contemptor-dreadnought-weapons-frame-1-horus-heresy-games-workshop"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "different heavy weapons",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
