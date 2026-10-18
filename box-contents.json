@@ -4770,6 +4770,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard: Biologus Putrifier",
+      "productCodes": [
+        "99070102020"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/death-guard-biologus-putrifier",
+        "https://shop.afk.games/products/death-guard-biologus-putrifier",
+        "https://obsidiangames.ca/products/death-guard-biologus-putrifier",
+        "https://www.goblingaming.co.uk/products/death-guard-biologus-putrifier",
+        "https://mrmuffinstrains.com/products/gw-43-24",
+        "https://elementgames.co.uk/death-guard-biologus-putrifier"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "690b-a189-5935-f32e",
+              "name": "Biologus Putrifier",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
