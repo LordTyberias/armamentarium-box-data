@@ -12092,6 +12092,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Commissar",
+      "productCodes": [
+        "99120105099"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-commissar",
+        "https://abyssgamestore.ca/products/astra-militarum-commissar-47-50",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-commissar",
+        "https://shop.afk.games/products/astra-militarum-commissar",
+        "https://obsidiangames.ca/products/astra-millitarum-commissar",
+        "https://www.goblingaming.co.uk/products/commissar",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-commissar"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "a979-5b21-dc69-b949",
+              "name": "Commissar",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
