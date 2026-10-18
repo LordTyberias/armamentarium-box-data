@@ -19122,6 +19122,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Kharadron Overlords Drekki's Privateers",
+      "productCodes": [
+        "99120205062"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-kharadron-overlords-drekkis-privateers",
+        "https://shop.afk.games/products/regiment-of-renown-drekkis-privateers",
+        "https://mrmuffinstrains.com/products/gw-84-65",
+        "https://radaddel.de/products/kharadron-overlords-regiments-of-renown-drekkis-privateers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Drekki Flynt",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Arkanaut Frigate",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Arkanaut Company miniatures",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
