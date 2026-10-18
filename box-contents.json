@@ -9379,6 +9379,23 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Death Guard",
+      "productCodes": [
+        "99120102194"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-death-guard",
+        "https://abyssgamestore.ca/products/combat-patrol-death-guard-73-422",
+        "https://radaddel.de/products/death-guard-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-death-guard-1",
+        "https://shop.afk.games/products/combat-patrol-death-guard-1",
+        "https://www.goblingaming.co.uk/products/combat-patrol-death-guard",
+        "https://mrmuffinstrains.com/products/gw-73-422",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-death-guard"
+      ],
+      "generation": "current"
     }
   ]
 }
