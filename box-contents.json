@@ -17050,6 +17050,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites of Slaanesh: Myrmidesh Painbringers",
+      "productCodes": [
+        "99120201157"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hedonites-of-slaanesh-myrmidesh-painbringers",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-hedonites-myrmidesh-painbringers",
+        "https://obsidiangames.ca/products/hedonites-of-slaanesh-myrmidesh-painbringers",
+        "https://www.goblingaming.co.uk/products/hedonites-myrmidesh-painbringers",
+        "https://mrmuffinstrains.com/products/gw-83-90",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/hedonites-myrmidesh-painbringers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mymidesh Painbringers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
