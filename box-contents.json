@@ -18844,6 +18844,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Fyreslayers: Vulkite Berzerkers",
+      "productCodes": [
+        "99120205015"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/fyreslayers-vulkite-berzerkers",
+        "https://shop.afk.games/products/fyreslayers-vulkite-berzerkers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vulkite Berzerkers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
