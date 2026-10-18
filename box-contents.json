@@ -27971,6 +27971,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Leman Russ Assault Tank",
+      "productCodes": [
+        "99123005006"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-leman-russ-assault-tank",
+        "https://abyssgamestore.ca/products/the-horus-heresy-solar-auxilia-leman-russ-assault-tank-31-72",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-leman-russ-assault-tank",
+        "https://shop.afk.games/products/horus-heresy-solar-auxilia-leman-russ-assault-tank",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-leman-russ-assault-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Solar Auxilia Leman Russ Assault Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
