@@ -8012,6 +8012,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Wolf Guard Headtakers",
+      "productCodes": [
+        "99120101437"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-wolf-guard-headtakers",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-wolf-guard-headtakers",
+        "https://shop.afk.games/products/space-wolves-wolf-guard-headtakers",
+        "https://obsidiangames.ca/products/wolf-guard-headtakers",
+        "https://www.goblingaming.co.uk/products/space-wolves-wolf-guard-headtakers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/space-wolves-wolf-guard-headtakers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Wolf Guard Headtakers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Hunting Wolves",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
