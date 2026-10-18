@@ -8216,6 +8216,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ultramarines: Victrix Honour Guard",
+      "productCodes": [
+        "99120101453"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ultramarines-victrix-honour-guard",
+        "https://www.retrofixgames.com/products/warhammer-40k-ultramarines-victrix-honour-guard",
+        "https://shop.afk.games/products/ultramarines-victrix-honour-guard",
+        "https://obsidiangames.ca/products/victrix-honour-guard",
+        "https://www.goblingaming.co.uk/products/ultramarines-victrix-honour-guard",
+        "https://mrmuffinstrains.com/products/gw-55-75",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-marines/ultramarines-victrix-honour-guard",
+        "https://radaddel.de/products/ultramarines-victrix-honour-guard"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "9b89-f132-4fef-8e51",
+              "name": "Victrix Honour Guard",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
