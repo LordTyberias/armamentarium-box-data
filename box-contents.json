@@ -5617,6 +5617,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Benefictus",
+      "productCodes": [
+        "99070117020"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/genestealer-cults-benefictus",
+        "https://www.retrofixgames.com/products/warhammer-40k-genestealer-cults-benefictus",
+        "https://shop.afk.games/products/genestealer-cults-benefictus",
+        "https://obsidiangames.ca/products/benefictus",
+        "https://www.goblingaming.co.uk/products/genestealer-cults-benefictus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "908a-9fd8-2270-8dbd",
+              "name": "Benefictus miniature",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
