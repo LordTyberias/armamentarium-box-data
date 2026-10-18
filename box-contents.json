@@ -17706,6 +17706,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle Lord of Blights",
+      "productCodes": [
+        "99120201222"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/lord-of-blight",
+        "https://radaddel.de/products/nurgle-rotbringers-lord-of-blights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Nurgle Rotbringers Lord Of Blight character",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
