@@ -21441,6 +21441,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Seraphon - Aggradon Lancers",
+      "productCodes": [
+        "99120208034"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-age-of-sigmar-seraphon-aggradon-lancers",
+        "https://www.irresistibleforce.com.au/products/seraphon-aggradon-lancers",
+        "https://abyssgamestore.ca/products/seraphon-aggradon-lancers-88-18",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-seraphon-aggradon-lancers",
+        "https://shop.afk.games/products/seraphon-aggradon-lancers",
+        "https://obsidiangames.ca/products/seraphon-aggradon-lancers",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-seraphon-aggradon-lancers",
+        "https://mrmuffinstrains.com/products/gw-88-18",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/seraphon-aggradon-lancers",
+        "https://radaddel.de/products/seraphon-aggradon-lancers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "4e3-e1a7-a8d4-8719",
+              "entryId": "e485-3d5d-84ae-6f08",
+              "name": "Aggradon Lancers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
