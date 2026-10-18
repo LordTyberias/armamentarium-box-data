@@ -24972,6 +24972,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Kingdom of Bretonnia - Knights of the Realm on Foot",
+      "productCodes": [
+        "99122703009"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-kingdom-of-bretonnia-knights-of-the-realm-on-foot",
+        "https://www.irresistibleforce.com.au/products/knights-of-the-realm-on-foot",
+        "https://abyssgamestore.ca/products/bretonnia-knights-of-the-realm-on-foot-06-08",
+        "https://www.retrofixgames.com/products/warhammer-the-old-world-kingdom-of-bretonnia-knights-of-the-realm-on-foot",
+        "https://shop.afk.games/products/knights-of-bretonnia-knights-of-the-realm-on-foot",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-kingdom-of-bretonnia-knights-of-the-realm-on-foot"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "elite Knights of the Realm",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
