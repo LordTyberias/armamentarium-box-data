@@ -14145,6 +14145,60 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Adepta Sororitas - Battalion - Armageddon",
+      "productCodes": [
+        "99120108120"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-adepta-sororitas-battalion-armageddon",
+        "https://www.retrofixgames.com/products/warhammer-40k-armageddon-battalion-adepta-sororitas",
+        "https://www.goblingaming.co.uk/products/armageddon-battalion-adepta-sororitas",
+        "https://mrmuffinstrains.com/products/gw-52-65",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/armageddon-battalion-adepta-sororitas"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "fbeb-1caf-8f5c-ff8e",
+              "name": "Palatine",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "e75d-a7ac-7fcc-d302",
+              "name": "Paragon Warsuits",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Sisters Repentia",
+              "count": 9
+            },
+            {
+              "role": "team",
+              "name": "Repentia Superior",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sisters Novitiate",
+              "count": 9
+            },
+            {
+              "role": "team",
+              "name": "Novitiate Superior",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
