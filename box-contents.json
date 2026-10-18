@@ -25646,6 +25646,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Swordmasters of Hoeth",
+      "productCodes": [
+        "99122710008"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-swordmasters-of-hoeth",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-swordmasters-of-hoeth",
+        "https://shop.afk.games/products/high-elf-realms-swordmasters-of-hoeth",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-swordmasters-of-hoeth",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realms-swordmasters-of-hoeth",
+        "https://radaddel.de/products/high-elf-realms-swordmasters-of-hoeth"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "242d-b760-d547-df4c",
+              "name": "Swordmasters of Hoeth",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
