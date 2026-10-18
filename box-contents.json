@@ -17208,6 +17208,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Harbinger of Decay",
+      "productCodes": [
+        "99120201187"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/maggotkin-of-nurgle-harbinger-of-decay",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/harbinger-of-decay-dawnbringers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "sinister",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
