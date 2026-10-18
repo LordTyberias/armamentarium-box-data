@@ -19987,6 +19987,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Scriptor Mortis",
+      "productCodes": [
+        "99120207127"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/nighthaunt-scriptor-mortis",
+        "https://obsidiangames.ca/products/nighthaunt-scriptor-mortis",
+        "https://www.goblingaming.co.uk/products/nighthaunt-scriptor-mortis-age-of-sigmar"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Scriptor Mortis",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
