@@ -8295,6 +8295,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Captain with Jump Pack & Relic Shield",
+      "productCodes": [
+        "99120101492"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-captain-with-jump-pack-relic-shield",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-captain-with-jump-pack-and-relic-shield",
+        "https://shop.afk.games/products/s-m-captain-w-jump-pack-relic-shield",
+        "https://obsidiangames.ca/products/captain-with-jump-pack-and-relic-shield",
+        "https://www.goblingaming.co.uk/products/space-marines-captain-with-jump-pack-relic-shield",
+        "https://mrmuffinstrains.com/products/gw-48-102",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-marines/space-marine-captain-with-jump-pack-and-relic-shield"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "6c10-5b51-5bc0-8d2c",
+              "name": "Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
