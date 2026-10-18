@@ -12172,6 +12172,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Field Ordnance Battery",
+      "productCodes": [
+        "99120105104"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/field-ordnance-battery",
+        "https://abyssgamestore.ca/products/astra-militarum-field-ordonance-battery-47-41",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-field-ordnance-battery",
+        "https://shop.afk.games/products/field-ordnance-battery",
+        "https://obsidiangames.ca/products/astra-militarum-field-ordinance-battery",
+        "https://www.goblingaming.co.uk/products/field-ordnance-battery",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-field-ordnance-battery"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ordnance Teams",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
