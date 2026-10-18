@@ -17385,6 +17385,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Blades Of Khorne The Red Revelation",
+      "productCodes": [
+        "99120201201"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-blades-of-khorne-the-red-revelation",
+        "https://shop.afk.games/products/regiment-of-renown-the-red-revelation",
+        "https://mrmuffinstrains.com/products/gw-83-103",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/blades-of-khorne-the-red-revelation",
+        "https://radaddel.de/products/blades-of-khorne-regiments-of-renown-the-red-revelation"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Slaughterpriest",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Skullreapers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Bloodreavers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
