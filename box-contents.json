@@ -23590,6 +23590,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes: Cleavers",
+      "productCodes": [
+        "99120213044"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ogor-mawtribes-cleavers",
+        "https://www.goblingaming.co.uk/products/ogor-mawtribes-cleavers",
+        "https://mrmuffinstrains.com/products/gw-95-24",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/beastclaw-raiders/ogor-mawtribes-cleavers",
+        "https://radaddel.de/products/ogor-mawtribes-cleavers-gutseers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cleavers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
