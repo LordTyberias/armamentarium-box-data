@@ -14456,6 +14456,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons Flayed Ones",
+      "productCodes": [
+        "99120110056"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/flayed-ones-necrons",
+        "https://mrmuffinstrains.com/products/gw-49-42",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-flayed-ones"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "c219-a708-f5b0-f0e7",
+              "name": "Flayed Ones",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
