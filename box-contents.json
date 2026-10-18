@@ -27614,6 +27614,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legiones Astartes Maximus Battle Group",
+      "productCodes": [
+        "99123001078"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/horus-heresy-legiones-astartes-maximus-battle-group",
+        "https://mrmuffinstrains.com/products/gw-31-176",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/legiones-astartes-maximus-battle-group"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "MkIV Tactical Legionaries",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "MkIV Assault Legionaries",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Sicaran Battle Tank",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Contemptor Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
