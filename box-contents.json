@@ -22853,6 +22853,56 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Lumineth Realmlords Iliathan Warhost",
+      "productCodes": [
+        "99120210071"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-lumineth-realmlords-iliathan-warhost",
+        "https://shop.afk.games/products/battleforce-lumineth-realm-lords-iliathan-warhost",
+        "https://mrmuffinstrains.com/products/gw-87-42",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/lumineth-realmlords-iliathan-warhost",
+        "https://radaddel.de/products/lumineth-realm-lords-iliathan-warhost"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Ellania and Ellathor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Vanari Starshard Ballista",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Vanari Bladelords",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Ydrilan Riverblades",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Vanari Auralan Sentinels",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Vanari Auralan Wardens",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
