@@ -27562,6 +27562,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy Cataphractii Terminators with Combi-Bolters and Power Fists",
+      "productCodes": [
+        "99123001074"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/horus-heresy-cataphractii-terminators-power-fists",
+        "https://shop.afk.games/products/h-h-legiones-astartes-cataphractii-terminator-squad-with-power-fists",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-cataphractii-terminators-power-fists",
+        "https://mrmuffinstrains.com/products/gw-31-143",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/cataphractii-terminators-power-fists",
+        "https://radaddel.de/products/legiones-astartes-cataphractii-terminators-power-fists"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cataphractii Terminators",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
