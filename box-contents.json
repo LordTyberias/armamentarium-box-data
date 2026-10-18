@@ -13320,6 +13320,93 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/grey-knights/combat-patrol-grey-knights"
       ],
       "generation": "current"
+    },
+    {
+      "name": "Grey Knights: Grand Master in Nemesis Dreadknight",
+      "productCodes": [
+        "99120107023"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/grey-knights-grand-master-in-nemesis-dreadknight",
+        "https://abyssgamestore.ca/products/grey-knights-grandmaster-in-nemesis-dreadknight-57-05",
+        "https://shop.afk.games/products/grey-knights-grandmaster-in-nemesis-dreadknight",
+        "https://obsidiangames.ca/products/grand-master-in-nemesis-dreadknight",
+        "https://www.goblingaming.co.uk/products/grey-knights-grand-master-in-nemesis-dreadknight",
+        "https://mrmuffinstrains.com/products/gw-57-05",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/grey-knights/grey-knights-grand-master-in-nemesis-dreadknight",
+        "https://radaddel.de/products/grey-knights-grand-master-in-nemesis-dreadknight"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "50c4-3e83-fe54-97c4",
+              "entryId": "3625-f9f1-122b-bf9d",
+              "name": "Grand Master in Nemesis Dreadknight",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "50c4-3e83-fe54-97c4",
+              "entryId": "5458-a458-c51d-c4e9",
+              "name": "Nemesis Dreadknight",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Dreadfists",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Nemesis Daemon Greathammer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Nemesis Flail",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Nemesis Greatsword",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Nemesis Mace",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Gatling Psilencer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Heavy Incinerator",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Heavy Psycannon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sublimator",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Fragstorm Grenade Launcher",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
