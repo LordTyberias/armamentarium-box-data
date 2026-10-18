@@ -22182,6 +22182,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans: Manifestations",
+      "productCodes": [
+        "99120209132"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orruk-warclans-manifestations",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-manifestations-orruk-warclans",
+        "https://shop.afk.games/products/manifestations-orruk-warclans",
+        "https://obsidiangames.ca/products/orruk-warclans-manifestations",
+        "https://www.goblingaming.co.uk/products/orruk-warclans-manifestations",
+        "https://mrmuffinstrains.com/products/gw-89-96",
+        "https://elementgames.co.uk/clearance-sale/orruk-warclans-manifestations",
+        "https://radaddel.de/products/orruk-warclans-manifestations"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gork-Roara",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Morkspit Marsh",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
