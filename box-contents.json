@@ -23016,6 +23016,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Helsmiths of Hashut: Bull Centaurs",
+      "productCodes": [
+        "99120211007"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/helsmiths-of-hashut-bull-centaurs",
+        "https://abyssgamestore.ca/products/helsmiths-of-hashut-bull-centaurs-82-03",
+        "https://www.retrofixgames.com/products/age-of-sigmar-helsmiths-of-hashut-bull-centaurs",
+        "https://mrmuffinstrains.com/products/gw-82-03",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/leagues-of-votann/helsmiths-of-hashut-bull-centaurs",
+        "https://radaddel.de/products/helsmiths-of-hashut-bull-centaurs"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Bull Centaurs",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
