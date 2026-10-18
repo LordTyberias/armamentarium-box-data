@@ -4371,6 +4371,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Old World - Dwarfen Mountain Holds: Dwarf Engineers",
+      "productCodes": [
+        "99062705006"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/old-world-dwarfen-mountain-holds-dwarf-engineers",
+        "https://www.goblingaming.co.uk/products/dwarfen-mountain-holds-dwarf-engineers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dwarf Engineers",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
