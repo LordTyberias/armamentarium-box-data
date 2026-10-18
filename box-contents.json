@@ -4965,6 +4965,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Adepta Sororitas Sister Dogmata",
+      "productCodes": [
+        "99070108008"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-sister-dogmata",
+        "https://shop.afk.games/products/adepta-sororitas-sister-dogmata",
+        "https://obsidiangames.ca/products/adepta-sororitas-sister-dogmata",
+        "https://www.goblingaming.co.uk/products/sister-dogmata-adepta-sororitas"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sister Dogmata",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
