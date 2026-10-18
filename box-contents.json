@@ -3454,6 +3454,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Wolf Scouts",
+      "productCodes": [
+        "99120101457"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-wolf-scouts",
+        "https://www.retrofixgames.com/products/kill-team-wolf-scouts",
+        "https://shop.afk.games/products/kill-team-wolf-scouts",
+        "https://obsidiangames.ca/products/kill-team-wolf-scouts",
+        "https://www.goblingaming.co.uk/products/kill-team-wolf-scouts",
+        "https://mrmuffinstrains.com/products/gw-102-11",
+        "https://elementgames.co.uk/kill-team-wolf-scouts",
+        "https://radaddel.de/products/kill-team-wolf-scouts"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Wolf Scouts",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
