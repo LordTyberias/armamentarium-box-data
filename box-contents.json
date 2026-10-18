@@ -23955,6 +23955,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Lord-Cellestant on Stardrake",
+      "productCodes": [
+        "99120218073"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/lord-celestant-on-stardrake",
+        "https://abyssgamestore.ca/products/stormcast-eternals-lord-celestant-on-stardrake-drakesworn-templar-96-23",
+        "https://shop.afk.games/products/stormcast-eternals-stardrake",
+        "https://www.goblingaming.co.uk/products/stormcast-eternals-stardrake"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "of the",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
