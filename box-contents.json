@@ -23834,6 +23834,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Annihilators",
+      "productCodes": [
+        "99120218058"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/annihilators",
+        "https://shop.afk.games/products/stormcast-eternals-annihilators",
+        "https://obsidiangames.ca/products/stormcast-eternals-annihilators",
+        "https://mrmuffinstrains.com/products/gw-96-55",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/stormcast-eternals-annihilators"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Annihilators wielding meteoric hammers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
