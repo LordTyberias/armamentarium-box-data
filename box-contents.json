@@ -25838,6 +25838,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Beastmen Brayherds - Shaman",
+      "productCodes": [
+        "99122716001"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-beastmen-brayherds-shaman",
+        "https://www.irresistibleforce.com.au/products/beastmen-brayherds-beastman-shaman",
+        "https://shop.afk.games/products/beastmen-breyherds-beastman-shaman",
+        "https://www.goblingaming.co.uk/products/beastmen-brayherds-beastman-shaman",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/beastmen-brayherds-beastman-shaman"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Beastman Shaman",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
