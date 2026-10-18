@@ -12708,6 +12708,57 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Battleforce: Astra Militarum Platoon",
+      "productCodes": [
+        "99120105151"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/battleforce-astra-militarum-platoon",
+        "https://www.retrofixgames.com/products/warhammer-40k-battleforce-astra-militarum-platoon",
+        "https://mrmuffinstrains.com/products/gw-47-48",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/battleforce-astra-militarum-platoon"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "a979-5b21-dc69-b949",
+              "name": "Commissar",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cadian Command Squad miniatures",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Field Ordnance Teams",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Rogal Dorn Battle Tank",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Basilisk",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Cadian Shock Troops",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
