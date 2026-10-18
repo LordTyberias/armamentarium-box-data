@@ -29785,6 +29785,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz Squig Hoppers",
+      "productCodes": [
+        "99120209100"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/gloomspite-gitz-squig-hoppers",
+        "https://obsidiangames.ca/products/gloomspite-gitz-squig-hoppers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Squig Hoppers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
