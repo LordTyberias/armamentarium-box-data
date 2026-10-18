@@ -25914,6 +25914,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Beastmen Brayherds - Battalion",
+      "productCodes": [
+        "99122716007"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-beastmen-brayherds-battalion",
+        "https://www.irresistibleforce.com.au/products/battalion-beastmen-brayherds",
+        "https://shop.afk.games/products/battalion-beastmen-breyherds",
+        "https://mrmuffinstrains.com/products/gw-08-110"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Cygor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Gor",
+              "count": 30
+            },
+            {
+              "role": "team",
+              "name": "Ungor",
+              "count": 30
+            }
+          ]
+        }
+      ]
     }
   ]
 }
