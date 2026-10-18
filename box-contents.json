@@ -13907,6 +13907,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents: Inquisitor Coteaz",
+      "productCodes": [
+        "99120108087"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/inquisitor-coteaz-and-the-glodovan-eagle",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-inquisitor-coteaz-and-the-glodovan-eagle",
+        "https://shop.afk.games/products/imperial-agents-inquisitor-coteaz",
+        "https://obsidiangames.ca/products/inquisitor-coteaz",
+        "https://www.goblingaming.co.uk/products/inquisitor-coteaz-imperial-agents",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-inquisitor-coteaz"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "264a-fc24-3a98-31dc",
+              "name": "Inquisitor Coteaz miniature",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
