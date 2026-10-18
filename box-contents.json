@@ -22969,6 +22969,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Helsmiths of Hashut Dominator Engine",
+      "productCodes": [
+        "99120211004"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmarhelsmiths-f-hashut-dominator-engine",
+        "https://mrmuffinstrains.com/products/gw-82-06",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/helsmiths-of-hashut-dominator-engine"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dominator Engine",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
