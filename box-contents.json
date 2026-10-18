@@ -5738,6 +5738,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin Of Nurgle: Lord Of Plagues",
+      "productCodes": [
+        "99070201028"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/maggotkin-of-nurgle-lord-of-plagues",
+        "https://obsidiangames.ca/products/maggotkin-of-nurgle-lord-of-plagues"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lord of Plagues",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
