@@ -19871,6 +19871,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt - Spirit Hosts ( 93-08 )",
+      "productCodes": [
+        "99120207116"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/nighthaunt-spirit-hosts-93-08",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-nighthaunt-spirit-hosts",
+        "https://shop.afk.games/products/nighthaunt-spirit-hosts",
+        "https://obsidiangames.ca/products/nighthaunt-spirit-hosts",
+        "https://mrmuffinstrains.com/products/gw-93-08"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Spirit Hosts",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
