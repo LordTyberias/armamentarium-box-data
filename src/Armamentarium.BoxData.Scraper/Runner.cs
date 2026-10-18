@@ -10,6 +10,8 @@ namespace Armamentarium.BoxData.Scraper;
 /// one root entry their name names in <c>catalogues</c>. A product a shop did not answer is asked once more at the end of
 /// the run (ADR 0003 Addendum ARMAM-595). Before all that, each run holds the ids the table already carries against
 /// <c>catalogues</c> and may open one draft <see cref="StaleIdsBranch"/> that it never merges (ADR 0004 Addendum ARMAM-597).
+/// What the maintainer should hear of goes to <c>notice</c> as well as to the log: a refused proposal or merge, orphaned
+/// ids and their draft; the run mails them at its end (ADR 0003 Addendum ARMAM-600).
 /// </summary>
 public sealed class Runner(
     IRepository repository,
@@ -19,7 +21,8 @@ public sealed class Runner(
     Action<string> log,
     Action? persist = null,
     bool autoMerge = false,
-    CatalogueIndex? catalogues = null)
+    CatalogueIndex? catalogues = null,
+    Action<string>? notice = null)
 {
     public const int MaxOpen = 5;
 
@@ -143,7 +146,7 @@ public sealed class Runner(
         }
         catch (GitHubException ex)
         {
-            log($"{proposal.Branch} not proposed: {ex.Message}");
+            Notice($"{proposal.Branch} not proposed: {ex.Message}");
             Retry(product.Code, now);
             return Outcome.Answered;
         }
@@ -163,7 +166,7 @@ public sealed class Runner(
         catch (GitHubException ex)
         {
             // The pull request stays open and counts like a draft; the maintainer sees why in the journal.
-            log($"{proposal.Branch} not merged: {ex.Message}");
+            Notice($"{proposal.Branch} not merged: {ex.Message}");
             run.Open.Add(proposal.Branch);
             return Outcome.Answered;
         }
@@ -199,7 +202,8 @@ public sealed class Runner(
         }
 
         var notChecked = findings.Where(f => f.State == IdState.Unchecked).Select(f => f.Reading).Distinct().Order(StringComparer.Ordinal).ToList();
-        log($"id check: {findings.Count} pair(s), {findings.Count(f => f.State == IdState.Valid)} valid, {orphaned.Count} orphaned, " +
+        (orphaned.Count > 0 ? Notice : log)(
+            $"id check: {findings.Count} pair(s), {findings.Count(f => f.State == IdState.Valid)} valid, {orphaned.Count} orphaned, " +
             $"{findings.Count(f => f.State == IdState.Renamed)} renamed; unchecked: {(notChecked.Count > 0 ? string.Join(", ", notChecked) : "none")}");
         if (orphaned.Count == 0)
         {
@@ -214,7 +218,7 @@ public sealed class Runner(
 
         if (open.Count >= MaxOpen)
         {
-            log($"{open.Count} scraper pull requests are open; no slot for {StaleIdsBranch}");
+            Notice($"{open.Count} scraper pull requests are open; no slot for {StaleIdsBranch}");
             return;
         }
 
@@ -250,13 +254,19 @@ public sealed class Runner(
             }
             catch (GitHubException ex)
             {
-                log($"{StaleIdsBranch} not proposed: {ex.Message}");
+                Notice($"{StaleIdsBranch} not proposed: {ex.Message}");
                 return;
             }
         }
 
         open.Add(StaleIdsBranch);
-        log($"proposed {StaleIdsBranch}: {orphaned.Count} orphaned pair(s)");
+        Notice($"proposed {StaleIdsBranch}: {orphaned.Count} orphaned pair(s)");
+    }
+
+    private void Notice(string line)
+    {
+        log(line);
+        notice?.Invoke(line);
     }
 
     private void Retry(string code, DateTimeOffset now)

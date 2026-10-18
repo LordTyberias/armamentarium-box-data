@@ -127,12 +127,13 @@ public sealed class RunnerTests
         FakeRepository? repo = null,
         ScanState? state = null,
         bool autoMerge = false,
-        CatalogueIndex? catalogues = null)
+        CatalogueIndex? catalogues = null,
+        List<string>? notices = null)
     {
         repo ??= new FakeRepository();
         state ??= new ScanState();
         var log = new List<string>();
-        await new Runner(repo, sources, new NoFetcher(), state, log.Add, autoMerge: autoMerge, catalogues: catalogues)
+        await new Runner(repo, sources, new NoFetcher(), state, log.Add, autoMerge: autoMerge, catalogues: catalogues, notice: notices is null ? null : notices.Add)
             .RunAsync(products, Now, default);
         return (repo, state, log);
     }
@@ -184,6 +185,42 @@ public sealed class RunnerTests
         Assert.AreEqual(0, repo.Merged.Count);
         Assert.IsTrue(log.Any(l => l.Contains("405", StringComparison.Ordinal)));
         Assert.IsFalse(state.IsDue("60010199002", Now));
+    }
+
+    [TestMethod]
+    public async Task Run_MergeRefused_IsANotice()
+    {
+        var repo = new FakeRepository { FailMerge = _ => new GitHubException("answered 405") };
+        var notices = new List<string>();
+
+        await Run(
+            [P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)), repo, autoMerge: true,
+            notices: notices);
+
+        Assert.AreEqual("scraper/60010199002 not merged: answered 405", notices.Single());
+    }
+
+    [TestMethod]
+    public async Task Run_ProposalRefused_IsANotice()
+    {
+        var repo = new FakeRepository { Fail = _ => new GitHubException("answered 403") };
+        var notices = new List<string>();
+
+        await Run([P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)), repo, notices: notices);
+
+        Assert.AreEqual("scraper/60010199002 not proposed: answered 403", notices.Single());
+    }
+
+    [TestMethod]
+    public async Task Run_MergedBox_IsNoNotice()
+    {
+        var notices = new List<string>();
+
+        await Run(
+            [P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)), autoMerge: true,
+            catalogues: Blades(), notices: notices);
+
+        Assert.AreEqual(0, notices.Count);
     }
 
     [TestMethod]
@@ -280,6 +317,29 @@ public sealed class RunnerTests
         StringAssert.Contains(proposal.Table, "\"name\": \"Seer\"");
         Assert.IsTrue(log.Any(l => l.Contains("se-gone", StringComparison.Ordinal) && l.Contains("orphaned", StringComparison.Ordinal)));
         Assert.IsTrue(log.Any(l => l.StartsWith("id check: 1 pair(s), 0 valid, 1 orphaned", StringComparison.Ordinal)));
+    }
+
+    [TestMethod]
+    public async Task Run_OrphanedId_IsANoticeWithItsDraft()
+    {
+        var notices = new List<string>();
+
+        await Run([], [], new FakeRepository { Text = OrphanTable }, autoMerge: true, catalogues: Blades(), notices: notices);
+
+        Assert.AreEqual(2, notices.Count);
+        StringAssert.StartsWith(notices[0], "id check: 1 pair(s), 0 valid, 1 orphaned");
+        Assert.AreEqual($"proposed {Runner.StaleIdsBranch}: 1 orphaned pair(s)", notices[1]);
+    }
+
+    [TestMethod]
+    public async Task Run_OrphanedIdWithoutASlot_IsANotice()
+    {
+        var open = Enumerable.Range(1, Runner.MaxOpen).Select(i => $"scraper/6001019900{i}").ToArray();
+        var notices = new List<string>();
+
+        await Run([], [], new FakeRepository(open) { Text = OrphanTable }, catalogues: Blades(), notices: notices);
+
+        Assert.IsTrue(notices.Any(n => n.Contains("no slot", StringComparison.Ordinal)));
     }
 
     [TestMethod]

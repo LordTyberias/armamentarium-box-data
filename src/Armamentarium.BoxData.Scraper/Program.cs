@@ -1,16 +1,22 @@
+using System.Net.Mail;
 using System.Runtime.InteropServices;
+using System.Security.Authentication;
 
 namespace Armamentarium.BoxData.Scraper;
 
 /// <summary>
 /// Entry point of a run on the 1st and the 15th (ADR 0004 §6). systemd hands the token in through <c>LoadCredential</c>
-/// (<c>$CREDENTIALS_DIRECTORY/github-token</c>) and the state directory through <c>$STATE_DIRECTORY</c>.
+/// (<c>$CREDENTIALS_DIRECTORY/github-token</c>), the mail password (<c>mail-password</c>) and the state directory through
+/// <c>$STATE_DIRECTORY</c>. A run mails its notices at its end; a failed run is mailed by armamentarium-box-data-failure.service
+/// (ADR 0003 Addendum ARMAM-600).
 ///
 ///   --dry-run        reads GitHub without a token, writes nothing, prints each proposal instead of opening it
 ///   --code &lt;number&gt;  searches this one article number only, whatever the state says (with --dry-run for a check)
 ///   --auto-merge     opens each pull request ready and merges it at once (ADR 0004); with --dry-run it only says so
 ///   --host &lt;host&gt;    with --dry-run and --code: asks this one allowlisted shop and prints what it reads; --code
 ///                    then takes a comma-separated list (ADR 0003 addendum ARMAM-602)
+///   --notify-failure mails that a run failed, from what systemd hands an OnFailure= unit; nothing else (ADR 0003 Addendum
+///                    ARMAM-600)
 /// </summary>
 public static class Program
 {
@@ -21,6 +27,11 @@ public static class Program
         var codeAt = Array.IndexOf(args, "--code");
         var onlyCode = codeAt >= 0 && codeAt + 1 < args.Length ? args[codeAt + 1] : null;
         void Log(string line) => Console.WriteLine(line);
+        if (args.Contains("--notify-failure"))
+        {
+            return await NotifyFailureAsync(Log);
+        }
+
         var (probe, probeError) = Probe.Resolve(args, Sources.All);
         if (probeError is not null)
         {
@@ -48,7 +59,7 @@ public static class Program
                 Timeout = TimeSpan.FromSeconds(100),
                 MaxResponseContentBufferSize = 64 * 1024 * 1024,
             };
-            IRepository repository = new GitHubRepository(github, dryRun ? null : ReadToken());
+            IRepository repository = new GitHubRepository(github, dryRun ? null : ReadCredential("github-token"));
             if (dryRun)
             {
                 repository = new DryRunRepository(repository, Log);
@@ -67,6 +78,9 @@ public static class Program
             // Every run checks the ids the table holds (ADR 0004 Addendum ARMAM-597); ids by name are set only while the
             // service merges by itself (ADR 0004), drafts stay without ids for the maintainer (Runner.IdsOf).
             var catalogues = await CatalogueIndex.LoadAsync(github, Log, stop.Token);
+            var notices = catalogues.Unavailable.Order(StringComparer.Ordinal)
+                .Select(reading => $"{reading}: a catalogue source is unreadable, no ids and no id check for this reading this run")
+                .ToList();
 
             using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
             try
@@ -79,7 +93,8 @@ public static class Program
                         Log,
                         statePath is null ? null : () => state.Save(statePath),
                         autoMerge,
-                        catalogues)
+                        catalogues,
+                        notices.Add)
                     .RunAsync(products, DateTimeOffset.UtcNow, stop.Token, onlyCode);
             }
             finally
@@ -89,6 +104,9 @@ public static class Program
                 {
                     Log(line);
                 }
+
+                // Also on a stop or a failure: what the run found so far still reaches the maintainer.
+                await MailNoticesAsync(notices, dryRun, Log);
             }
 
             return 0;
@@ -138,10 +156,56 @@ public static class Program
         }
     }
 
-    private static string ReadToken()
+    private static async Task<int> NotifyFailureAsync(Action<string> log)
     {
-        var token = File.ReadAllText(Path.Combine(Required("CREDENTIALS_DIRECTORY"), "github-token")).Trim();
-        return token.Length > 0 ? token : throw new InvalidOperationException("The github-token credential is empty.");
+        var message = Mailer.FailureMessage(Environment.GetEnvironmentVariable);
+        try
+        {
+            await Mailer.SendAsync(message, ReadCredential("mail-password"), CancellationToken.None);
+            log($"notification sent: {message.Subject}");
+            return 0;
+        }
+        catch (Exception ex) when (IsMailFailure(ex))
+        {
+            // The failure unit fails in turn and shows in the journal; it has no OnFailure= of its own.
+            log($"notification not sent: {ex.GetType().Name}: {Text.Clean(ex.Message)}");
+            return 1;
+        }
+    }
+
+    // A mail that does not go out is logged and changes nothing about the run (ADR 0003 Addendum ARMAM-600).
+    private static async Task MailNoticesAsync(IReadOnlyList<string> notices, bool dryRun, Action<string> log)
+    {
+        if (notices.Count == 0)
+        {
+            return;
+        }
+
+        if (dryRun)
+        {
+            log($"--- would mail {notices.Count} notice(s)");
+            return;
+        }
+
+        try
+        {
+            await Mailer.SendAsync(Mailer.FindingsMessage(notices), ReadCredential("mail-password"), CancellationToken.None);
+            log($"notice mail sent: {notices.Count} notice(s)");
+        }
+        catch (Exception ex) when (IsMailFailure(ex))
+        {
+            log($"notice mail not sent: {ex.GetType().Name}: {Text.Clean(ex.Message)}");
+        }
+    }
+
+    private static bool IsMailFailure(Exception ex) =>
+        ex is SmtpException or IOException or UnauthorizedAccessException or InvalidOperationException or AuthenticationException
+            or OperationCanceledException;
+
+    private static string ReadCredential(string name)
+    {
+        var value = File.ReadAllText(Path.Combine(Required("CREDENTIALS_DIRECTORY"), name)).Trim();
+        return value.Length > 0 ? value : throw new InvalidOperationException($"The {name} credential is empty.");
     }
 
     private static string Required(string variable) =>

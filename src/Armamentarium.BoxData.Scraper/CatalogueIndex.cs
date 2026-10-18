@@ -74,6 +74,9 @@ public sealed partial class CatalogueIndex
     /// <summary>A reading whose sources could not all be read gets no ids in this run: a missing source could hide a twin.</summary>
     public void MarkUnavailable(string reading) => _unavailable.Add(reading);
 
+    /// <summary>The readings without ids this run, one notice each in the run's mail (ADR 0003 Addendum ARMAM-600).</summary>
+    public IReadOnlySet<string> Unavailable => _unavailable;
+
     /// <summary>
     /// Reads one catalogue file, BattleScribe XML (.cat) or JSON; a library or anything else adds nothing. False when the
     /// file cannot be read whole: not well-formed, a document type declaration, or an id outside the BattleScribe form.

@@ -207,6 +207,7 @@ public sealed class CatalogueIndexTests
         Assert.AreEqual(new RootEntry("cat-iron", "se-captain"), index.Find("40k", "Captain"));
         Assert.IsNull(index.Find("aos", "Captain"));
         Assert.IsTrue(log.Any(l => l.StartsWith("kt:", StringComparison.Ordinal) && l.Contains("unreadable", StringComparison.Ordinal)));
+        CollectionAssert.AreEquivalent(new[] { "kt", "aos" }, index.Unavailable.ToArray());
     }
 
     private static MemoryStream Zip(params (string Name, string Text)[] files)
