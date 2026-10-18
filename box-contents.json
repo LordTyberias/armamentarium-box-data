@@ -8995,6 +8995,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Forgefiend",
+      "productCodes": [
+        "99120102165"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-forgefiend",
+        "https://abyssgamestore.ca/products/chaos-space-marines-forgefiend-maulerfiend-43-14",
+        "https://www.goblingaming.co.uk/products/chaos-space-marine-forgefiend"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Space Marine Forgefiend",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
