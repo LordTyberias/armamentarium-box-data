@@ -24944,6 +24944,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Kingdom of Bretonnia - Peasant Bowmen",
+      "productCodes": [
+        "99122703007"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-kingdom-of-bretonnia-peasant-bowmen",
+        "https://www.irresistibleforce.com.au/products/peasant-bowmen",
+        "https://abyssgamestore.ca/products/bretonnia-peasant-bowmen-06-13",
+        "https://shop.afk.games/products/kingdom-of-bretonnia-peasant-bowmen",
+        "https://www.goblingaming.co.uk/products/wawrhammer-old-world-kingdom-of-bretonnia-peasant-bowmen",
+        "https://mrmuffinstrains.com/products/gw-06-13",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/kingdom-of-bretonnia-peasant-bowmen",
+        "https://radaddel.de/products/bretonnia-peasant-bowmen"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Peasant Bowmen",
+              "count": 36
+            }
+          ]
+        }
+      ]
     }
   ]
 }
