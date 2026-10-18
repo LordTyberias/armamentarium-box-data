@@ -24707,6 +24707,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Empire Pistoliers",
+      "productCodes": [
+        "99122702014"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-empire-pistoliers",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-empire-pistoliers",
+        "https://shop.afk.games/products/empire-of-man-empire-pistoliers",
+        "https://www.goblingaming.co.uk/products/empire-of-man-empire-pistoliers",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/the-old-world-empire-of-man-empire-pistoliers",
+        "https://radaddel.de/products/empire-of-man-empire-pistoliers"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Empire Pistoliers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
