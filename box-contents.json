@@ -24499,6 +24499,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warriors of Chaos: Chaos Knights",
+      "productCodes": [
+        "99122701019"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/warriors-of-chaos-chaos-knights",
+        "https://abyssgamestore.ca/products/warriors-of-chaos-chaos-knights-08-20",
+        "https://shop.afk.games/products/warriors-of-chaos-chaos-knights-1",
+        "https://www.goblingaming.co.uk/products/warriors-of-chaos-chaos-knights-2026",
+        "https://mrmuffinstrains.com/products/gw-08-20",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/warriors-of-chaos-chaos-knights2",
+        "https://radaddel.de/products/warriors-of-chaos-chaos-knights-1"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Knights",
+              "count": 8
+            }
+          ]
+        }
+      ]
     }
   ]
 }
