@@ -19043,6 +19043,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Fyreslayers Vulkyn Flameseekers",
+      "productCodes": [
+        "99120205057"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warcry-fyreslayers-vulkyn-flameseekers",
+        "https://obsidiangames.ca/products/warcry-fyre-slayers-vulkyn-flameseekers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vulkyn Runefather",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Drothmaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Kyndledroth",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Drothblood Thane",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Scalebreakers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
