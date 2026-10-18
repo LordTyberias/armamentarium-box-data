@@ -19639,6 +19639,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers Mortek Crawler",
+      "productCodes": [
+        "99120207078"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ossiarch-bonereapers-mortek-crawler",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-mortek-crawler"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Mortek Crawler",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
