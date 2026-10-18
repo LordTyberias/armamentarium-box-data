@@ -11165,6 +11165,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Mek (50-75)",
+      "productCodes": [
+        "99120103140"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-mek-50-75",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-mek",
+        "https://shop.afk.games/products/orks-mek",
+        "https://www.goblingaming.co.uk/products/orks-mek",
+        "https://mrmuffinstrains.com/products/gw-50-75",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-mek"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "3b2-8c11-616a-1005",
+              "name": "Mek",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
