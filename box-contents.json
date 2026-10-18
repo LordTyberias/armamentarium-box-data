@@ -26964,6 +26964,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Leviathan Siege Dreadnought with Claw & Drill Weapons",
+      "productCodes": [
+        "99123001031"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/leviathan-siege-dreadnought-with-claw-drill-weapons",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-leviathan-siege-dreandought-with-claw-and-drill-weapons",
+        "https://shop.afk.games/products/leviathan-dreadnought-with-claws-drills",
+        "https://www.goblingaming.co.uk/products/horus-heresy-legiones-astartes-leviathan-dreadnought-with-claws-drills"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Leviathan Siege Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
