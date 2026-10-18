@@ -26663,6 +26663,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Leviathan Seige Dreadnought with Ranged Weapons",
+      "productCodes": [
+        "99123001008"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-leviathan-seige-dreadnought-with-ranged-weapons",
+        "https://www.retrofixgames.com/products/leviathan-dreadnought-ranged-weapons",
+        "https://shop.afk.games/products/leviathan-dreadnought-ranged-weapons",
+        "https://www.goblingaming.co.uk/products/warhammer-30-000-horus-heresy-legiones-astartes-leviathan-dreadnought-ranged-weapons"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Leviathan Siege Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
