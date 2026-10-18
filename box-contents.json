@@ -29407,6 +29407,61 @@
         "https://obsidiangames.ca/products/combat-patrol-imperial-fists"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Warhammer 40K: Space Marines - Battleforce",
+      "productCodes": [
+        "99120101458"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-battleforce",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-iron-halo-strike-force"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "2f2e-d99b-b235-163a",
+              "name": "Company Heroes",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "ce15-e87e-7cff-b129",
+              "name": "Lieutenant",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "1d94-b3c8-9205-827e",
+              "name": "Redemptor Dreadnought",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "5dc7-aa6c-7053-cede",
+              "name": "Ballistus Dreadnought",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sternguard Veterans",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Hellblasters",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
