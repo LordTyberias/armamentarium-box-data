@@ -17,7 +17,7 @@ app bundles a fixed commit of it; it never fetches it at runtime). Everything el
 | Contract prose | `README.md` | The rules the schema cannot express (key uniqueness across boxes, what goes in, NPO fallback, sources). |
 | Decisions | `docs/adr/` | This repository's decisions, index `docs/adr/INDEX.md`. |
 | Scraper service | `src/Armamentarium.BoxData.Scraper/`, tests `tests/`, solution `armamentarium-box-data.slnx` | Opens pull requests with new boxes (ADR 0003); with `--auto-merge` sets ids by name and merges them itself (ADR 0004). See §4. |
-| Operation | `deploy/` | systemd service and timer, deploy script. Runbook: Armamentarium `docs/server/betrieb.md`. `*.service` and `*.timer` are LF (`.gitattributes`, `.editorconfig`): systemd reads a trailing CR as part of a value. Every other file stays CRLF. |
+| Operation | `deploy/` | systemd service, its failure unit (ADR 0003 Addendum ARMAM-600) and timer, deploy script. Runbook: Armamentarium `docs/server/betrieb.md`. `*.service` and `*.timer` are LF (`.gitattributes`, `.editorconfig`): systemd reads a trailing CR as part of a value. Every other file stays CRLF. |
 
 The table, the schema and the README form **one contract**. A change to one that the other two do not follow is a defect.
 
@@ -61,6 +61,9 @@ and ADR 0004:
   a ready one with the ids of exactly one name hit, merged at once.
 - Besides, at most one draft `scraper/stale-ids` that removes orphaned ids (an id naming no root entry of its reading any
   more); never merged by the service, also with `--auto-merge`, and counted among the five open (ADR 0004 Addendum ARMAM-597).
+- Mails the maintainer (ADR 0003 Addendum ARMAM-600): a failed run through `OnFailure=` and the failure unit
+  (`--notify-failure`), a run's notices at its end; through the mailbox and the password credential of the Armamentarium
+  web services, nothing from the journal.
 - Every further dependency of the service is decided with a reason (ADR in `docs/adr/`).
 
 ## 5 — Not in this repository
