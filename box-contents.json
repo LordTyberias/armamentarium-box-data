@@ -7227,6 +7227,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Black Templars: Grimaldus & Retinue",
+      "productCodes": [
+        "99120101364"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/black-templars-grimaldus-retinue",
+        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-chaplain-grimaldus-retinue-1",
+        "https://shop.afk.games/products/black-templars-grimaldus-retinue",
+        "https://obsidiangames.ca/products/chaplain-grimaldus-retinue",
+        "https://www.goblingaming.co.uk/products/grimaldus-retinue-black-templars-warhammer-40k",
+        "https://mrmuffinstrains.com/products/gw-55-44",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/black-templars-5069/black-templars-grimaldus-and-retinue"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "36d3-36bc-68dd-40ac",
+              "entryId": "8165-e372-4fd6-3274",
+              "name": "Chaplain Grimaldus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
