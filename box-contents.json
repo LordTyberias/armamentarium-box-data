@@ -29807,6 +29807,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Idoneth Deepkin (70-08)",
+      "productCodes": [
+        "99120219026"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/spearhead-idoneth-deepkin-70-08",
+        "https://mrmuffinstrains.com/products/gw-70-08"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Isharann Soulscryer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Akhelian Allopex",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Akhelian Morrsarr Guard",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Namarti Thralls",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
