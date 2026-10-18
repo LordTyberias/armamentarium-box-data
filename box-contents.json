@@ -9353,6 +9353,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Chaos Lord with Jump Pack",
+      "productCodes": [
+        "99120102193"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chaos-lord-with-jump-pack",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-lord-with-jump-pack",
+        "https://shop.afk.games/products/chaos-space-marines-lord-with-jump-pack",
+        "https://obsidiangames.ca/products/chaos-lord-with-jump-pack",
+        "https://www.goblingaming.co.uk/products/lord-with-jump-pack-chaos-space-marines",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-lord-with-jump-pack"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Lord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
