@@ -25699,6 +25699,42 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Battalion",
+      "productCodes": [
+        "99122710012"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-battalion",
+        "https://www.irresistibleforce.com.au/products/battalion-high-elf-realms",
+        "https://mrmuffinstrains.com/products/gw-13-13",
+        "https://radaddel.de/products/high-elf-realms-battalion"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "5df5-4e92-bff2-2cf2",
+              "name": "Tiranoc Chariots",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Elven Spearmen",
+              "count": 32
+            },
+            {
+              "role": "team",
+              "name": "Elven Archers",
+              "count": 32
+            }
+          ]
+        }
+      ]
     }
   ]
 }
