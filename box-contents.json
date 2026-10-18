@@ -29526,6 +29526,17 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Combat Patrol Grey Knights",
+      "productCodes": [
+        "99120107016"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-grey-knights",
+        "https://obsidiangames.ca/products/combat-patrol-grey-knights"
+      ],
+      "generation": "legacy"
     }
   ]
 }
