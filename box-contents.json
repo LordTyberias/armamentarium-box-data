@@ -29573,6 +29573,17 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-harlequins"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Combat Patrol: Chaos Daemons ( 97-51 )",
+      "productCodes": [
+        "99120115002"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-chaos-daemons-97-51",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-chaos-daemons"
+      ],
+      "generation": "legacy"
     }
   ]
 }
