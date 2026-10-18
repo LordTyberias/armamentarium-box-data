@@ -20422,6 +20422,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Necropolis Stalkers",
+      "productCodes": [
+        "99120207166"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ossiarch-bonereapers-necropolis-stalkers",
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-necropolis-stalkers",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-necropolis-stalkers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necropolis Stalkers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
