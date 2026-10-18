@@ -6081,6 +6081,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Idoneth Deepkin Akhelian Thrallmaster",
+      "productCodes": [
+        "99070219007"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-idoneth-deepkin-akhelian-thrallmaster",
+        "https://shop.afk.games/products/idoneth-deepkin-akhelian-thrallmaster",
+        "https://www.goblingaming.co.uk/products/idoneth-deepkin-akhelian-thrallmaster-age-of-sigmar"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Akhelian Thrallmaster",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
