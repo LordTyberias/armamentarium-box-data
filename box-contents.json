@@ -28579,6 +28579,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Venatari Sodality",
+      "productCodes": [
+        "99123043003"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-venatari-sodality",
+        "https://shop.afk.games/products/legio-custodes-venatari-sodality",
+        "https://www.goblingaming.co.uk/products/legio-custodes-venatari-sodality",
+        "https://mrmuffinstrains.com/products/gw-31-162",
+        "https://radaddel.de/products/legio-custodes-venatari-sodality"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Venatari",
+              "count": 6
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Venatari",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
