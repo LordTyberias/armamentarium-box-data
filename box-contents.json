@@ -11894,6 +11894,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari - Vyper/Starfang (46-83)",
+      "productCodes": [
+        "99120104112"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/aeldari-vyper-46-83",
+        "https://www.retrofixgames.com/products/warhammer-40k-aeldari-vyper",
+        "https://shop.afk.games/products/aeldari-vyper-2026",
+        "https://obsidiangames.ca/products/aeldari-vyper",
+        "https://mrmuffinstrains.com/products/gw-46-83",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-vyper"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "814d-56c9-78fe-2123",
+              "name": "Vyper",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
