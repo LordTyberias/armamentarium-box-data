@@ -23298,6 +23298,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughters of Khaine: Blood Hags",
+      "productCodes": [
+        "99120212045"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/daughters-of-khaine-blood-hags",
+        "https://www.retrofixgames.com/products/age-of-sigmar-daughters-of-khaine-blood-hags",
+        "https://www.goblingaming.co.uk/products/daughters-of-khaine-blood-hags",
+        "https://mrmuffinstrains.com/products/gw-85-66",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/daughters-of-khaine-blood-hags",
+        "https://radaddel.de/products/daughters-of-khaine-blood-hags"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blood Hags",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
