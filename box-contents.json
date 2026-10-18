@@ -3850,6 +3850,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Mandrakes",
+      "productCodes": [
+        "99120112055"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-mandrakes",
+        "https://www.retrofixgames.com/products/kill-team-mandrakes",
+        "https://shop.afk.games/products/kill-team-mandrakes",
+        "https://obsidiangames.ca/products/kill-team-mandrakes",
+        "https://www.goblingaming.co.uk/products/mandrakes-kill-team",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/kill-team-mandrakes",
+        "https://radaddel.de/products/kill-team-mandrakes"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "3591-2aa0-250c-ddeb",
+              "entryId": "9637-cbfa-7041-5185",
+              "name": "Mandrakes",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
