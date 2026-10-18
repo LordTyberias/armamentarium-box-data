@@ -195,7 +195,7 @@ The table grows only by hand so far. Measured on 2026-10-17:
   most frequent number in the prose is the part count ("150 plastic components"), then bases, heads and transfers. The
   first auto-merge run left 1883 products waiting with "no source lists models line by line" (Armamentarium ARMAM-593).
 - **Build sentences** (§8 widened): beside its lines, a listing reads the counts its prose ties to a build verb — English
-  `build(s)`, `assemble(s)`, `make(s)`, `construct`, with "a squad/set/unit/team/kit/group of N"; German "… bauen" and "Bau
+  `build(s)`, `assemble(s)`, `make(s)`, `construct(s)`, with "a squad/set/unit/team/kit/group of N"; German "… bauen" and "Bau
   von …", with "einen Trupp/eine Einheit aus N". The count is a digit (1 to 999), an English or German number word up to
   twenty, or an article right before the name, which is one. The name ends at punctuation, at the next clause ("with",
   "which", "und", "mit" …) or a further number; a name followed by a number was an adjective and is no model. An excluded
