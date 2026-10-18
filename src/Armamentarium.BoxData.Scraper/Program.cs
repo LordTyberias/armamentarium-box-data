@@ -9,6 +9,8 @@ namespace Armamentarium.BoxData.Scraper;
 ///   --dry-run        reads GitHub without a token, writes nothing, prints each proposal instead of opening it
 ///   --code &lt;number&gt;  searches this one article number only, whatever the state says (with --dry-run for a check)
 ///   --auto-merge     opens each pull request ready and merges it at once (ADR 0004); with --dry-run it only says so
+///   --host &lt;host&gt;    with --dry-run and --code: asks this one allowlisted shop and prints what it reads (ADR 0003
+///                    addendum ARMAM-602)
 /// </summary>
 public static class Program
 {
@@ -18,6 +20,8 @@ public static class Program
         var autoMerge = args.Contains("--auto-merge");
         var codeAt = Array.IndexOf(args, "--code");
         var onlyCode = codeAt >= 0 && codeAt + 1 < args.Length ? args[codeAt + 1] : null;
+        var hostAt = Array.IndexOf(args, "--host");
+        var onlyHost = hostAt >= 0 && hostAt + 1 < args.Length ? args[hostAt + 1] : null;
         void Log(string line) => Console.WriteLine(line);
 
         // systemd stops the unit with SIGTERM; the run ends between two requests, the state of every finished product is saved.
@@ -50,6 +54,11 @@ public static class Program
             var state = statePath is null ? new ScanState() : ScanState.Load(statePath);
             var products = ProductCatalogue.Parse(await github.GetStringAsync(ProductCatalogue.ProductsUrl, stop.Token));
             Log($"{products.Count} Games Workshop products in the catalogue");
+            if (onlyHost is not null)
+            {
+                return await ProbeAsync(onlyHost, onlyCode, dryRun, products, Log, stop.Token);
+            }
+
             // Ids by name only while the service merges by itself (ADR 0004); drafts stay without ids for the maintainer.
             var catalogues = autoMerge ? await CatalogueIndex.LoadAsync(github, Log, stop.Token) : null;
 
@@ -88,6 +97,34 @@ public static class Program
             Log($"Run failed: {ex}");
             return 1;
         }
+    }
+
+    private static async Task<int> ProbeAsync(
+        string host, string? code, bool dryRun, IReadOnlyList<Product> products, Action<string> log, CancellationToken cancellationToken)
+    {
+        if (!dryRun || code is null)
+        {
+            log("--host needs --dry-run and --code");
+            return 2;
+        }
+
+        var source = Probe.SourceFor(Sources.All, host);
+        var product = products.FirstOrDefault(p => p.Code == code)
+            ?? throw new ArgumentException($"{code} is not in the product catalogue.", nameof(code));
+        using var fetcher = new Fetcher(new Dictionary<string, TimeSpan> { [source.Host] = source.Interval }, log);
+        try
+        {
+            foreach (var line in Probe.Describe(source.Host, await source.FindAsync(product, fetcher, cancellationToken)))
+            {
+                log(line);
+            }
+        }
+        catch (FetchFailedException ex)
+        {
+            log($"{source.Host}: did not answer: {ex.Message}");
+        }
+
+        return 0;
     }
 
     private static string ReadToken()
