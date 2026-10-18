@@ -20781,6 +20781,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Soulblight Gravelords: Manifestations",
+      "productCodes": [
+        "99120207194"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/soulblight-gravelords-manifestations",
+        "https://www.retrofixgames.com/products/age-of-sigmar-soulblight-gravelords-manifestations",
+        "https://obsidiangames.ca/products/soulblight-gravelords-manifestations",
+        "https://www.goblingaming.co.uk/products/soulblight-gravelords-manifestations",
+        "https://mrmuffinstrains.com/products/gw-91-86",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/soulblight-gravelords-manifestations",
+        "https://radaddel.de/products/soulblight-gravelords-manifestations"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hand of Nagash",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Unholy Reliquary",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Sanguine Swarm",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
