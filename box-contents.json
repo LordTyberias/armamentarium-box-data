@@ -5795,6 +5795,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Fyreslayers: Auric Flamekeeper",
+      "productCodes": [
+        "99070205014"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/fyreslayers-auric-flamekeeper",
+        "https://www.goblingaming.co.uk/products/fyreslayers-auric-flamekeeper-age-of-sigmar"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b3f9-6c96-b99a-1e71",
+              "entryId": "4a5c-a6be-cecb-a47a",
+              "name": "Auric Flamekeeper",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
