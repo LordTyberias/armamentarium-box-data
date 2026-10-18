@@ -14199,6 +14199,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Imperial Knights Knight Destrier",
+      "productCodes": [
+        "99120108123"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-knights-knight-destrier",
+        "https://shop.afk.games/products/imperial-knights-knight-destrier",
+        "https://www.goblingaming.co.uk/products/imperial-knights-knight-destrier",
+        "https://mrmuffinstrains.com/products/gw-54-24"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Knight Destrier",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
