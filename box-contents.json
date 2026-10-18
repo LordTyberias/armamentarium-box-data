@@ -8676,6 +8676,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Chaos Space Marines Warpsmith",
+      "productCodes": [
+        "99120102138"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-warpsmith-1",
+        "https://shop.afk.games/products/chaos-space-marines-warpsmith",
+        "https://www.goblingaming.co.uk/products/games-workshop-warhammer-40k-chaos-space-marines-warpsmith",
+        "https://mrmuffinstrains.com/products/gw-43-85"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "440-a22a-eac1-b107",
+              "name": "Warpsmith",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
