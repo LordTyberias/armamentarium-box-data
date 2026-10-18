@@ -7497,6 +7497,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Space Marines - Ballistus Dreadnought",
+      "productCodes": [
+        "99120101393"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-space-marines-generic-ballistus-dreadnought",
+        "https://www.irresistibleforce.com.au/products/space-marines-ballistus-dreadnought",
+        "https://abyssgamestore.ca/products/space-marines-ballistus-dreadnought-48-11",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-ballistus-dreadnought",
+        "https://shop.afk.games/products/space-marines-ballistus-dreadnought",
+        "https://obsidiangames.ca/products/space-marines-ballistus-dreadnought",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-ballistus-dreadnought",
+        "https://mrmuffinstrains.com/products/gw-48-11",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-ballistus-dreadnought"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "5dc7-aa6c-7053-cede",
+              "name": "Ballistus Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
