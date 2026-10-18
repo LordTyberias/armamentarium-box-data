@@ -12785,6 +12785,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum Baneblade Sponsons & Accessories",
+      "productCodes": [
+        "99120105158"
+      ],
+      "sources": [
+        "https://tistaminis.com/products/astra-militarum-baneblade-sponsons-accessories",
+        "https://www.goblingaming.co.uk/products/astra-militarum-baneblade-sponsons-and-accessories"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "additional sponson mounts",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
