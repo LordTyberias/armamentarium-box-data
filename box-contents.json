@@ -5457,6 +5457,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus: Tech-Priest Dominus",
+      "productCodes": [
+        "99070116005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-mechanicus-tech-priest-dominus",
+        "https://abyssgamestore.ca/products/adeptus-mechanicus-tech-priest-dominus-59-18",
+        "https://www.retrofixgames.com/products/warhammer-40k-adeptus-mechanicus-tech-priest-dominus",
+        "https://shop.afk.games/products/adeptus-mechanicus-tech-priest-dominus",
+        "https://obsidiangames.ca/products/tech-priest-dominus",
+        "https://www.goblingaming.co.uk/products/adeptus-mechanicus-tech-priest-dominus",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-tech-priest-dominus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Tech-Priest Dominus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
