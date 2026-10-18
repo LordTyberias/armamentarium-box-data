@@ -28,6 +28,9 @@ keeps a shop out (Context, `games-island.eu` stays out for its captcha).
 `scraper/stale-ids` that removes orphaned ids; it is never merged by the service and counts among the five of §12. Addendum
 ARMAM-599's "no catalogues are loaded" without `--auto-merge` no longer holds (still no hits).
 
+**Changed by Addendum ARMAM-600:** §13 "Failures go to the journal only" and Rejected "Mail or an issue on failure" no
+longer hold for mail: a failed run and the notices of a run are mailed to the maintainer; an issue stays rejected.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -328,3 +331,31 @@ The table grows only by hand so far. Measured on 2026-10-17:
   and declined (maintainer's decision): Addendum ARMAM-599's rules stand.
 - Rejected: a JavaScript challenge marker for `taschengelddieb.de` (the shop leaves); keeping the JTL adapter for later
   (no shop uses it); measuring by curl (a shop may answer curl and refuse the service's client).
+
+## Addendum ARMAM-600 — the service mails the maintainer (2026-10-18)
+
+- **Why:** since ADR 0004 the service runs twice a month and merges by itself; a missing pull request no longer shows that a
+  run failed, and nobody reads the journal between runs. §13 "Failures go to the journal only" and Rejected "Mail or an
+  issue on failure" no longer hold for mail.
+- **Way:** mail through the mailbox of the Armamentarium web services (`smtp.ionos.de:587`, STARTTLS, login
+  `support@armamentarium.app`), sender `boxdata@armamentarium.app`, recipient `info@strecker-it.net`, all fixed in
+  `Mailer`. The password is the same systemd credential the web services read (`/etc/armamentarium/mail-password`, via
+  `LoadCredential`): no new secret, no sudoers line, the hardening of the unit unchanged. `System.Net.Mail` from the
+  shared framework, no package. Accepted (maintainer's decision): the run, which reads shop pages, now holds the mailbox
+  password beside the token; one mailbox, one rotation outweighs a second path that only the failure unit would hold.
+- **A failed run:** `OnFailure=armamentarium-box-data-failure.service` (exit code other than 0, the 20 h timeout, a start
+  that never ran). That unit runs the service's DLL with `--notify-failure`, which mails what systemd hands it
+  (`MONITOR_UNIT`, `MONITOR_SERVICE_RESULT`, `MONITOR_EXIT_CODE`, `MONITOR_EXIT_STATUS`, `MONITOR_INVOCATION_ID`) and the
+  `journalctl` command for that invocation, **nothing from the journal**. Started by hand it says so: the check of the
+  mail way. It has no `OnFailure=` of its own; a mail that does not go out ends in its journal.
+- **Notices of a run:** one mail at the end of the run, also when it stops or fails, and only when there is something:
+  a refused proposal or merge (`not proposed`, `not merged`), the `id check` summary when it counts orphaned ids or names
+  an unchecked reading, the draft `scraper/stale-ids` (proposed, not proposed, no slot), a reading whose catalogue source
+  is unreadable.
+  A mail that does not go out is logged (`notice mail not sent`) and changes nothing about the run. `--dry-run` mails
+  nothing.
+- **Rejected:** an issue in this repository (the token would need issue rights and fails exactly when it is revoked);
+  `curl smtp://` in the failure unit (the password would reach curl through a shell, and the notices need code in the run
+  anyway); MailKit as in the web services (the first package here); the tail of the journal in the mail (the failure unit
+  would need to read the journal, more than its dynamic user may); a notice for "a run without a merge although there were
+  candidates" (no measure of a candidate that would not also fire for a quiet run; a refused merge is a notice already).

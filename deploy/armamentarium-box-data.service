@@ -10,6 +10,9 @@
 Description=Armamentarium box contents scraper
 After=network-online.target
 Wants=network-online.target
+# A failed run (exit code, the 20 h timeout, a start that never ran) mails the maintainer through this unit; the run itself
+# mails its notices at its end (ADR 0003 Addendum ARMAM-600).
+OnFailure=armamentarium-box-data-failure.service
 
 [Service]
 Type=oneshot
@@ -36,6 +39,9 @@ Environment=HOME=%S/armamentarium-box-data
 # reads the root-owned 0600 file and hands it over as $CREDENTIALS_DIRECTORY/github-token.
 # Never Environment=, which would show the value in systemctl show.
 LoadCredential=github-token:/etc/armamentarium-box-data/github-token
+# The mail password of the Armamentarium web services, the same file and the same way in: one mailbox, one password,
+# one rotation (docs/server/betrieb.md in the main repository).
+LoadCredential=mail-password:/etc/armamentarium/mail-password
 
 Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
 Environment=DOTNET_NOLOGO=1
