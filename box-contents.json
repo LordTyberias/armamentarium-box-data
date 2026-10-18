@@ -13280,6 +13280,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Grey Knights Paladin / Terminator Squad",
+      "productCodes": [
+        "99120107019"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/grey-knights-paladin-brotherhood-terminator-squad",
+        "https://radaddel.de/products/grey-knights-brotherhood-terminator-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Grey Knight Paladins",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
