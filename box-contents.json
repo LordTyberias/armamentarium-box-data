@@ -5484,6 +5484,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus - Technoarchaeologist (59-30)",
+      "productCodes": [
+        "99070116007"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/adeptus-mechanicus-technoarchaeologist-59-30",
+        "https://www.retrofixgames.com/products/warhammer-40k-adeptus-mechanicus-technoarcheologist",
+        "https://shop.afk.games/products/adeptus-mechanicus-technoarchaeologist",
+        "https://obsidiangames.ca/products/technoarcheologist",
+        "https://www.goblingaming.co.uk/products/adeptus-mechanicus-technoarchaeologist",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-technoarchaeologist"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "77b9-2f66-3f9b-5cf3",
+              "entryId": "fa82-61cc-aa85-e94c",
+              "name": "Technoarcheologist",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
