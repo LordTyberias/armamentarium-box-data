@@ -24124,6 +24124,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Idoneth Deepkin: Akhelian Morrsarr Guard",
+      "productCodes": [
+        "99120219020"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/akhelian-morrsarr-guard",
+        "https://shop.afk.games/products/idoneth-deepkin-akhelian-guard",
+        "https://obsidiangames.ca/products/idoneth-deepkin-akhelian-morrsarr-guard",
+        "https://radaddel.de/products/idoneth-deepkin-akhelian-morrsarr-guard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Morsarr Guard",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
