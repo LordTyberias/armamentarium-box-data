@@ -28869,6 +28869,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle - Plague Drones ( 97-21-W )",
+      "productCodes": [
+        "99129915038"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/daemons-of-nurlge-plague-drones-97-21-w",
+        "https://www.goblingaming.co.uk/products/chaos-daemons-plague-drones-of-nurgle",
+        "https://elementgames.co.uk/chaos-daemons-plague-drones-of-nurgle"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Plague Drones of Nurgle",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Plague Drones of Nurgle",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
