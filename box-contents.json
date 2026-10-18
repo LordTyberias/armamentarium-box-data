@@ -24557,6 +24557,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Empire of Man - Commanders of the Empire",
+      "productCodes": [
+        "99122702004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-commanders-of-the-empire",
+        "https://www.irresistibleforce.com.au/products/empire-of-man-commanders-of-the-empire",
+        "https://shop.afk.games/products/empire-of-man-commanders-of-the-empire",
+        "https://www.goblingaming.co.uk/products/empire-of-man-commanders-of-the-empire",
+        "https://elementgames.co.uk/card-games-board-games-and-more/seasonal/empire-of-man-commanders-of-the-empire",
+        "https://radaddel.de/products/empire-of-man-commanders-of-the-empire"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "commanders",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
