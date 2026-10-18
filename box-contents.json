@@ -13302,6 +13302,24 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Grey Knights",
+      "productCodes": [
+        "99120107021"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-grey-knights",
+        "https://abyssgamestore.ca/products/combat-patrol-grey-knights-73-572",
+        "https://radaddel.de/products/grey-knights-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-grey-knights-1",
+        "https://shop.afk.games/products/combat-patrol-grey-knights-new",
+        "https://obsidiangames.ca/products/combat-patrol-grey-knights-1",
+        "https://www.goblingaming.co.uk/products/combat-patrol-grey-knights",
+        "https://mrmuffinstrains.com/products/gw-73-572",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/grey-knights/combat-patrol-grey-knights"
+      ],
+      "generation": "current"
     }
   ]
 }
