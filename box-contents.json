@@ -5716,6 +5716,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotking of Nurgle: Rotbringer Sorcerer",
+      "productCodes": [
+        "99070201027"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotking-of-nurgle-rotbringer-sorcerer",
+        "https://shop.afk.games/products/maggotkin-of-nurgle-rotbringer-sorcerer"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rotbringer Sorcerer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
