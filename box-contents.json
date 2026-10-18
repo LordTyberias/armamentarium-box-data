@@ -27195,6 +27195,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Rapier Laser Destroyer and Quad Launcher Battery",
+      "productCodes": [
+        "99123001044"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-rapier-laser-destroyer-and-quad-launcher-battery",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-rapier-laser-destroyer",
+        "https://shop.afk.games/products/legiones-astartes-rapier-laser-destroyer",
+        "https://elementgames.co.uk/games-workshop/horus-heresy-miniatures/horus-heresy-adeptus-astartes/horus-heresy-legion-astartes-rapier-laser-destroyer-and-quad-launchers"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rapier Carrier weapons platforms",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "crew",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
