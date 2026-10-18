@@ -16992,6 +16992,41 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Chaos Spawn",
+      "productCodes": [
+        "99120201153"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-chaos-spawn",
+        "https://shop.afk.games/products/chaos-spawn",
+        "https://mrmuffinstrains.com/products/gw-83-10"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chaos Spawn",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "ead3-8dd9-3ace-8198",
+              "name": "Chaos Spawn",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
