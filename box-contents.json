@@ -6263,6 +6263,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orc & Goblin Tribes: Badlands Ogre Bulls",
+      "productCodes": [
+        "99112709007"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/orc-and-goblin-tribes-badlands-ogre-bulls",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-orcs-goblins-badlands-ogre-bulls"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Badlands Ogres",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
