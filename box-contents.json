@@ -10542,6 +10542,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks - Flash Gitz ( 50-24 )",
+      "productCodes": [
+        "99120103087"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orks-flash-gitz-50-24",
+        "https://www.retrofixgames.com/products/warhammer-40k-ork-flash-gitz",
+        "https://shop.afk.games/products/ork-flash-gitz",
+        "https://obsidiangames.ca/products/orks-flash-gitz",
+        "https://mrmuffinstrains.com/products/gw-50-24",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-flash-gitz"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "1de9-b138-28a1-9c4b",
+              "name": "Flash Gitz",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
