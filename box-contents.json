@@ -27871,6 +27871,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Dracosan",
+      "productCodes": [
+        "99123005001"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-dracosan",
+        "https://abyssgamestore.ca/products/the-horus-heresy-solar-auxilia-dracosan-armoured-transport-31-71",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-dracosan-armoured-transport",
+        "https://shop.afk.games/products/horus-heresy-solar-auxilia-dracosan",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-dracosan"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Dracosan Armoured Transport",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
