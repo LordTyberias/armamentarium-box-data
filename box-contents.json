@@ -27512,6 +27512,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: MKII Assault Squad",
+      "productCodes": [
+        "99123001070"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-mkii-assault-squad",
+        "https://www.retrofixgames.com/products/horus-heresy-mkii-assault-squad",
+        "https://shop.afk.games/products/legiones-astartes-mkii-assault-squad",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-mkii-assault-squad",
+        "https://mrmuffinstrains.com/products/gw-31-135"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Assault Space Marines",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
