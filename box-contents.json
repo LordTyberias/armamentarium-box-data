@@ -11972,6 +11972,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum Hellhound",
+      "productCodes": [
+        "99120105044"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/astra-militarum-hellhound",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/imperial-guard-hellhound"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hellhound",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
