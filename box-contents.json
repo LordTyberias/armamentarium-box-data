@@ -29027,6 +29027,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle - Plaguebearers ( 97-10 )",
+      "productCodes": [
+        "99129915061"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/daemons-of-nurgle-plaguebearers-97-10",
+        "https://shop.afk.games/products/daemons-of-nurgle-plaguebearers",
+        "https://obsidiangames.ca/products/maggotkind-of-nurgle-plaguebearers",
+        "https://elementgames.co.uk/daemons-of-nurgle-plaguebearers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Plaguebearers of Nurgle",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Plaguebearers of Nurgle",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
