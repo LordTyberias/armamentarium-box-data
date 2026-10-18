@@ -16252,6 +16252,23 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Leagues of Votann",
+      "productCodes": [
+        "99120118024"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-leagues-of-votann",
+        "https://abyssgamestore.ca/products/combat-patrol-leagues-of-votann-73-692",
+        "https://radaddel.de/products/leagues-of-votann-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-leagues-of-votann-1",
+        "https://obsidiangames.ca/products/combat-patrol-leagues-of-votann-1",
+        "https://www.goblingaming.co.uk/products/combat-patrol-leagues-of-votann-10th-edition",
+        "https://mrmuffinstrains.com/products/gw-73-692",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-leagues-of-votann"
+      ],
+      "generation": "current"
     }
   ]
 }
