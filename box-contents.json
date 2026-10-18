@@ -25760,6 +25760,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Sisters of Avelorn",
+      "productCodes": [
+        "99122710015"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-sisters-of-avelorn",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-sisters-of-avelorn",
+        "https://abyssgamestore.ca/products/high-elf-realms-sisters-of-avelorn-13-16",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-sisters-of-avelorn",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realms-sisters-of-avelorn",
+        "https://radaddel.de/products/high-elf-realms-sisters-of-avelorn"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sisters of Avelorn",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
