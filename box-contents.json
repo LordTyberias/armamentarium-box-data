@@ -4176,6 +4176,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Gloomspite Gitz Gitmob Army Set",
+      "productCodes": [
+        "60010209002"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-gloomspite-gitz-gitmob-army-set",
+        "https://mrmuffinstrains.com/products/gw-89-93"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Droggz da Sunchompa",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Snarlpack Cavalry",
+              "count": 6
+            },
+            {
+              "role": "team",
+              "name": "Sunsteala Wheelas",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
