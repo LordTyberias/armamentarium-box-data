@@ -16405,6 +16405,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Custodes: Blade Champion",
+      "productCodes": [
+        "99120143001"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-custodes-blade-champion",
+        "https://obsidiangames.ca/products/adeptus-custodes-blade-champion"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blade Champion model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
