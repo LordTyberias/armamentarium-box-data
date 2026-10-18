@@ -8424,6 +8424,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Thousand Sons: Infernal Master",
+      "productCodes": [
+        "99120102122"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/thousand-sons-infernal-master",
+        "https://www.retrofixgames.com/products/warhammer-40k-thousand-sons-infernal-master",
+        "https://shop.afk.games/products/infernal-master",
+        "https://obsidiangames.ca/products/infernal-master",
+        "https://mrmuffinstrains.com/products/gw-43-79",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/thousand-sons/thousand-sons-infernal-master"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1069-10ff-3ba9-873b",
+              "entryId": "1693-5e00-da69-57bb",
+              "name": "Infernal Master",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
