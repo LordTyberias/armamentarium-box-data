@@ -27700,6 +27700,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes - MKIV Tactical Squad (31-172)",
+      "productCodes": [
+        "99123001085"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/legiones-astartes-mkiv-tactical-squad-31-172",
+        "https://www.retrofixgames.com/products/horus-heresy-legiones-astartes-mkiv-tactical-squad",
+        "https://shop.afk.games/products/legiones-astartes-mkiv-tactical-squad",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-mkiv-tactical-squad",
+        "https://mrmuffinstrains.com/products/gw-31-172",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-astartes-mkiv-tactical-squad",
+        "https://radaddel.de/products/legiones-astartes-mkiv-tactical-squad"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sergeants",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Space Marines Legionaries",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
