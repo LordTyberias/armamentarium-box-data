@@ -29395,6 +29395,18 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-black-templars"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Combat Patrol: Imperial Fists (73-557)",
+      "productCodes": [
+        "99120101430"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/combat-patrol-imperial-fists-73-557",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-imperial-fists",
+        "https://obsidiangames.ca/products/combat-patrol-imperial-fists"
+      ],
+      "generation": "legacy"
     }
   ]
 }
