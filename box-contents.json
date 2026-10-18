@@ -5229,6 +5229,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Shadowseer",
+      "productCodes": [
+        "99070111005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-shadowseer",
+        "https://abyssgamestore.ca/products/harlequin-shadowseer-58-14",
+        "https://www.retrofixgames.com/products/warhammer-40k-harlequin-shadowseer",
+        "https://shop.afk.games/products/harlequin-shadowseer",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/harlequin-shadowseer-"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Harlequin Shadowseer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
