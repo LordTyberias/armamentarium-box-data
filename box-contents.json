@@ -13765,6 +13765,66 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Adeptus Custodes - Custodian Wardens",
+      "productCodes": [
+        "99120108077"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-adeptus-custodes-custodian-wardens",
+        "https://www.irresistibleforce.com.au/products/adeptus-custodes-custodian-wardens",
+        "https://abyssgamestore.ca/products/adeptus-custodes-custodian-wardens-01-11",
+        "https://shop.afk.games/products/adeptus-custodes-custodian-wardens",
+        "https://obsidiangames.ca/products/adeptus-custodes-custodian-wardens",
+        "https://www.goblingaming.co.uk/products/custodian-wardens",
+        "https://mrmuffinstrains.com/products/gw-01-11",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/adeptus-custodes-custodian-wardens"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "9610-b148-8433-93b8",
+              "name": "Custodian Wardens",
+              "countCandidates": [
+                4,
+                5
+              ]
+            },
+            {
+              "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "b61c-b815-65c0-b1cc",
+              "name": "Shield-Captain",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Custodian Wardens",
+              "countCandidates": [
+                4,
+                5
+              ]
+            },
+            {
+              "role": "team",
+              "catalogueId": "acc1-f897-a117-9b4a",
+              "entryId": "ead9-2ff9-9301-8c60",
+              "name": "Shield-Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
