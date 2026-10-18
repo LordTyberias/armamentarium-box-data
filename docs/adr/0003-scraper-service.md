@@ -6,6 +6,8 @@
 (now without expiry); while `--auto-merge` runs also §10 "draft … no ids; the maintainer adds ids … before merging" and
 §12 "until five scraper pull requests are open"; and Rejected "Ids by exact name match against the catalogues".
 
+**Narrowed by Addendum ARMAM-601:** §10 box name only from a listing that is a source of the box.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -113,3 +115,14 @@ The table grows only by hand so far. Measured on 2026-10-17:
 - **`www.fauxhammer.com`:** reviews and news, no box lists, no article numbers.
 - **A browser user agent:** drew 429 from Shopify shops (§7).
 - **Mail or an issue on failure:** a new channel or a wider token for a daily job whose missing pull requests show anyway.
+
+## Addendum ARMAM-601 — the box name comes from a source (2026-10-18)
+
+- §10 "the box name comes from an English shop title" is narrowed: **only the title of a listing that is a source of the
+  box** (a confirming listing of the agreement; for a Combat Patrol, a confirming shop). A shop that matched the barcode
+  but listed no contents confirms nothing, and its title named box 60010213001 "Horus Heresy: False Gods (PB)" while its
+  sources, the catalogue and the contents are the Ogor Mawtribes Army Set. Without such a title the catalogue name stands,
+  with a note, as before. The box is renamed "Age of Sigmar: Ogor Mawtribes Army Set".
+- Readings of a Kill Team product: ADR 0002 Addendum ARMAM-601.
+- Rejected: **always the catalogue name** (warhub lists a language variant first, often in French and in capitals; the
+  README asks for the English product name).

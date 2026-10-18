@@ -113,21 +113,6 @@
               "count": 1
             }
           ]
-        },
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Angels of Death",
-              "count": 7
-            },
-            {
-              "role": "team",
-              "name": "Plague Marines",
-              "count": 7
-            }
-          ]
         }
       ]
     },
@@ -1448,51 +1433,6 @@
               "count": 2
             }
           ]
-        },
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Superior",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Denuncia",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Censor",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Reliquarius",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Abjuror",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Mortisanctus",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Cremators",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Warriors",
-              "count": 2
-            }
-          ]
         }
       ]
     },
@@ -1857,7 +1797,7 @@
       ]
     },
     {
-      "name": "Horus Heresy: False Gods (PB)",
+      "name": "Age of Sigmar: Ogor Mawtribes Army Set",
       "productCodes": [
         "60010213001"
       ],
@@ -2992,43 +2932,6 @@
               "entryId": "4469-7239-717e-9abd",
               "name": "Inquisitorial Agents",
               "count": 14
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Warhammer 40k: Imperial Agents - Imperial Navy Breachers",
-      "productCodes": [
-        "99120108152"
-      ],
-      "sources": [
-        "https://www.wellplayed.ch/products/warhammer-40k-imperial-agents-imperial-navy-breachers",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-imperial-navy-breachers"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Navis Sergeant-at-Arms",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Navis Armsmen armed with a Navis shotgun and a close combat weapon",
-              "count": 7
-            },
-            {
-              "role": "team",
-              "name": "Navis Armsman armed with a Navis las-volley",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Navis Armsman armed with a Navis heavy shotgun",
-              "count": 1
             }
           ]
         }
