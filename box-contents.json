@@ -4890,6 +4890,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Farseer Skyrunner",
+      "productCodes": [
+        "99070104012"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-farseer-skyrunner",
+        "https://abyssgamestore.ca/products/craftworlds-skyrunner-farseer-warlock-46-19",
+        "https://shop.afk.games/products/craftworlds-farseer-skyrunner"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aeldari Farseer Skyrunner",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
