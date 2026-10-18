@@ -11385,6 +11385,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari: Rangers",
+      "productCodes": [
+        "99120104073"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/aeldari-rangers",
+        "https://shop.afk.games/products/aeldari-rangers",
+        "https://obsidiangames.ca/products/aeldari-rangers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-rangers",
+        "https://radaddel.de/products/aeldari-rangers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aeldari Rangers",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
