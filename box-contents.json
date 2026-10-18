@@ -16877,6 +16877,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Vanguard: Hedonites of Slaanesh",
+      "productCodes": [
+        "99120201146"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/vanguard-hedonites-of-slaanesh",
+        "https://obsidiangames.ca/products/vanguard-hedonites-of-slaanesh",
+        "https://mrmuffinstrains.com/products/gw-70-18"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Shardspeaker of Slaanesh",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Slaangor Fiendbloods",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Slickblade Seekers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Blissbarb Archers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
