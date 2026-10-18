@@ -3874,6 +3874,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Farstalker Kinband",
+      "productCodes": [
+        "99120114003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-farstalker-kinband",
+        "https://abyssgamestore.ca/products/kill-team-farstalker-kinband-103-08",
+        "https://www.retrofixgames.com/products/kill-team-farstalker-kinband-1",
+        "https://shop.afk.games/products/kill-team-farstalker-kinband",
+        "https://www.goblingaming.co.uk/products/farstalker-kinband-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-08",
+        "https://elementgames.co.uk/kill-team-farstalker-kinband2",
+        "https://radaddel.de/products/kill-team-farstalker-kinband"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "veteran Kroot mercenaries",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
