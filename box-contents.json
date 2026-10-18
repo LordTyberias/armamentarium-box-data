@@ -11922,6 +11922,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari - Corsairs Voidreavers (46-84)",
+      "productCodes": [
+        "99120104115"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/aeldari-corsairs-voidreavers-46-84",
+        "https://www.retrofixgames.com/products/warhammer-40k-aeldari-corsair-voidreavers",
+        "https://shop.afk.games/products/aeldari-corsair-voidreavers",
+        "https://obsidiangames.ca/products/aeldari-corsair-voidreavers",
+        "https://www.goblingaming.co.uk/products/aeldari-corsair-voidreavers",
+        "https://mrmuffinstrains.com/products/gw-46-84",
+        "https://radaddel.de/products/aeldari-corsair-voidreavers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Corsair Voidreavers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
