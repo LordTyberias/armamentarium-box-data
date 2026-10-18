@@ -29384,6 +29384,17 @@
         "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-space-wolves"
       ],
       "generation": "legacy"
+    },
+    {
+      "name": "Combat Patrol: Black Templars ( 73-551 )",
+      "productCodes": [
+        "99120101365"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/black-templars-combat-patrol-55-50",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-black-templars"
+      ],
+      "generation": "legacy"
     }
   ]
 }
