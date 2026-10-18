@@ -5147,6 +5147,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents - Callidus Assassin ( 52-12 )",
+      "productCodes": [
+        "99070108018"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/imperial-agents-callidus-assassin-52-12",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-callidus-assassin",
+        "https://shop.afk.games/products/imperial-agents-callidus-assassin",
+        "https://obsidiangames.ca/products/callidus-assassin",
+        "https://www.goblingaming.co.uk/products/imperial-agents-callidus-assassin",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-callidus-assassin"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "1cfe-be05-5603-133",
+              "name": "Callidus Assassin",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
