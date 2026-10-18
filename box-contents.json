@@ -22308,6 +22308,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Squig Hoppers",
+      "productCodes": [
+        "99120209152"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/squig-hoppers",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/gloomspite-gitz-squig-hoppers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Squig Hoppers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
