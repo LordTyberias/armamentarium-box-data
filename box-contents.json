@@ -22156,6 +22156,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Sunsteal Wheelas",
+      "productCodes": [
+        "99120209128"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/gloomspite-gitz-sunsteal-wheelas",
+        "https://abyssgamestore.ca/products/gloomspite-gitz-sunsteala-wheelas-89-89",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-gloomspite-gitz-sunsteala-wheelas",
+        "https://shop.afk.games/products/gloomspite-gitz-sunsteala-wheelas",
+        "https://obsidiangames.ca/products/sunsteala-wheelas",
+        "https://radaddel.de/products/gloomspite-gitz-sunsteala-wheelas"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sunsteala Wheelas",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
