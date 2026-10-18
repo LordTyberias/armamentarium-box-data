@@ -23118,6 +23118,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughters of Khaine Khinerai Heartrenders / Lifetakers",
+      "productCodes": [
+        "99120212032"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/khinerai",
+        "https://radaddel.de/products/daughters-of-khaine-khinerai-heartrenders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Witch Aelves Khinerai",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
