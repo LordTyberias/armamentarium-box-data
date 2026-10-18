@@ -15085,6 +15085,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Games Workshop 45-18 - Warhammer 40,000 - Drukhari: Venom",
+      "productCodes": [
+        "99120112049"
+      ],
+      "sources": [
+        "https://mrmuffinstrains.com/products/gw-45-18",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-eldar/drukhari-venom"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "38de-521f-1ce0-44a0",
+              "entryId": "ee2c-6ca0-5e29-37a6",
+              "name": "Venom",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
