@@ -15825,6 +15825,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Genestealer Cults: Acolyte Hybrids",
+      "productCodes": [
+        "99120117019"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/genestealer-cults-acolyte-hybrids",
+        "https://abyssgamestore.ca/products/genestealer-cults-acolyte-hybrids-metamorphs-51-51",
+        "https://shop.afk.games/products/genestealer-cults-acolyte-hybrids",
+        "https://mrmuffinstrains.com/products/gw-51-51",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/genestealer-cults/genestealer-cults-acolyte-hybrids"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Acolyte Hybrids",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "8a84-a8fd-977e-9118",
+              "name": "Hybrid Metamorphs",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
