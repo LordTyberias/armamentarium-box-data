@@ -26002,6 +26002,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Tomb Kings of Khemri - Skeleton Chariots",
+      "productCodes": [
+        "99122717004"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-tomb-kings-of-khemri-skeleton-chariots",
+        "https://www.irresistibleforce.com.au/products/skeleton-chariots",
+        "https://abyssgamestore.ca/products/tomb-kings-skeleton-chariots-07-11",
+        "https://www.retrofixgames.com/products/warhammer-the-old-world-tomb-kings-of-khemri-skeleton-chariots",
+        "https://shop.afk.games/products/tomb-kings-of-khemri-skeleton-chariots",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-tomb-kings-of-khemri-skeleton-chariots",
+        "https://radaddel.de/products/khemri-skeleton-chariots"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Skeleton Chariots",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
