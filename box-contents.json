@@ -22330,6 +22330,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Gloomspite Gitz Dankhold Rampage (In-Store Only)",
+      "productCodes": [
+        "99120209157"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmargloomspite-gitz-dankhold-rampage",
+        "https://shop.afk.games/products/gloomspite-gitz-dankhold-rampage",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/gloomspite-gitz-dankhold-rampage",
+        "https://radaddel.de/products/gloomspite-gitz-dankhold-rampage"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Trugg",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Dankhold Troggoth",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Fellwater Troggoths",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Rockgut Troggoths",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
