@@ -27755,6 +27755,80 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Horus Heresy Legiones Astartes Combi-Weapons & Shotgun Upgrades",
+      "productCodes": [
+        "99123001087"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/horus-heresy-legiones-astartes-combi-weapons-shotgun-upgrades",
+        "https://shop.afk.games/products/l-a-combi-weapons-shotgun-upgrades",
+        "https://mrmuffinstrains.com/products/gw-31-173",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-astartes-combi-weapons-and-shotgun-upgrades"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Breacher combi-meltas",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Breacher combi-plasmas",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Breacher combi-volkites",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Breacher combi-flamers",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Breacher Astartes shotguns",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "combi-meltas",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "combi-plasmas",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "combi-volkites",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "combi-flamers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Astartes shotguns",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "belt-mounted accessories",
+              "count": 60
+            }
+          ]
+        }
+      ]
     }
   ]
 }
