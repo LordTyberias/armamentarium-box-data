@@ -6034,6 +6034,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daughters Of Khaine: High Gladiatrix",
+      "productCodes": [
+        "99070212004"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/daughters-of-khaine-high-gladiatrix",
+        "https://obsidiangames.ca/products/daughters-of-khaine-high-gladiatrix"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "High Gladiatrix",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
