@@ -21846,6 +21846,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Gloomspite Gitz Snarlfang Riders",
+      "productCodes": [
+        "99120209085"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-gloomspite-gitz-snarlfang-riders",
+        "https://shop.afk.games/products/gloomspite-gitz-snarlfang-riders",
+        "https://obsidiangames.ca/products/gloomspite-gitz-snarlfang-riders",
+        "https://radaddel.de/products/gloomspite-gitz-snarlfang-riders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Snarlfang Riders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
