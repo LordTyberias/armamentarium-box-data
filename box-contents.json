@@ -4989,6 +4989,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Adeptus Custodes Blade Champion",
+      "productCodes": [
+        "99070108010"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-adeptus-custodes-blade-champion",
+        "https://shop.afk.games/products/adeptus-custodes-blade-champion",
+        "https://mrmuffinstrains.com/products/gw-01-17",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/adeptus-custodes-blade-champion"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Blade Champion model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
