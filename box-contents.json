@@ -14669,6 +14669,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Catacomb Command Barge",
+      "productCodes": [
+        "99120110064"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-catacomb-command-barge",
+        "https://abyssgamestore.ca/products/necrons-catacomb-command-barge-annihilation-barge-49-12",
+        "https://www.retrofixgames.com/products/warhammer-40k-necron-catacomb-command-barge",
+        "https://shop.afk.games/products/necrons-catacomb-command-barge",
+        "https://obsidiangames.ca/products/necron-catacomb-command-barge",
+        "https://www.goblingaming.co.uk/products/necron-catacomb-cmd-barge-annihil-barge",
+        "https://mrmuffinstrains.com/products/gw-49-12",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necron-catacomb-cmd-barge-annihil-barge"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Necron Catacomb Command Barge",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
