@@ -13734,6 +13734,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Custodes: Allarus Custodians",
+      "productCodes": [
+        "99120108075"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-custodes-allarus-custodians",
+        "https://abyssgamestore.ca/products/adeptus-custodes-allarus-custodians-01-13",
+        "https://shop.afk.games/products/adeptus-custodes-allarus-custodians",
+        "https://obsidiangames.ca/products/adeptus-custodes-allarus-custodians",
+        "https://www.goblingaming.co.uk/products/allarus-custodians",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/adeptus-custodes-allarus-custodians"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "model",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "model can be assembled",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
