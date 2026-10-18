@@ -17988,6 +17988,58 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmars: Freeguild Command Corps",
+      "productCodes": [
+        "99120202048"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmars-freeguild-command-corps",
+        "https://abyssgamestore.ca/products/cities-of-sigmar-freeguild-command-corps-86-12",
+        "https://shop.afk.games/products/freeguild-command-corps",
+        "https://obsidiangames.ca/products/cities-of-sigmar-freeguild-command-corps",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-cities-of-sigmar-freeguild-command-corps",
+        "https://mrmuffinstrains.com/products/gw-86-12",
+        "https://radaddel.de/products/cities-of-sigmar-freeguild-command-corps"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Arch-Knight",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Whisperblade",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Great Herald",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "War Surgeon",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Soul Shepherd",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Mascot Gargoylian",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
