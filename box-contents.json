@@ -27439,6 +27439,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes: Saturnine Dreadnought Ophion",
+      "productCodes": [
+        "99123001066"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/legiones-astartes-saturnine-dreadnought-ophion",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-saturnine-siege-dreadnought-ophion-configuration",
+        "https://www.goblingaming.co.uk/products/legiones-astartes-saturnine-dreadnought-ophion",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-legiones-astartes-saturnine-dreadnought-ophion"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Saturnine Siege Dreadnought",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
