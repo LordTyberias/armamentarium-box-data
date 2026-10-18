@@ -395,6 +395,19 @@ public sealed class RunnerTests
     }
 
     [TestMethod]
+    public async Task Run_TitleOfAListingOutsideTheSources_NeverNamesTheBox()
+    {
+        // A shop that matched the EAN without a content list confirms nothing; its title must not name the box (ARMAM-601).
+        var stray = new FixedSource("stray.test", p =>
+            new Listing("stray.test", $"https://stray.test/{p.Code}", false, "Horus Heresy: False Gods (PB)", [], [p.Ean!]));
+
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002")], [stray, .. TwoShops(new Line(5, "Blade Guards", false, false))]);
+
+        Assert.AreEqual("data: add Kill Team: New", repo.Proposals.Single().Title);
+    }
+
+    [TestMethod]
     public async Task Run_ShopText_CannotFormatTheBody()
     {
         ISource Shop2(string host) => new FixedSource(host, p => new Listing(

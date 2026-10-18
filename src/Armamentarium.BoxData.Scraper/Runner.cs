@@ -200,8 +200,11 @@ public sealed class Runner(
 
     private Proposal? NewBox(Product product, IReadOnlyList<string> codes, IReadOnlyList<Listing> listings, string text)
     {
-        // The table names a box in English (README, Box); a German shop's title never becomes the name.
-        var englishTitle = listings.FirstOrDefault(l => !l.German && l.Title.Length > 0)?.Title;
+        // The table names a box in English (README, Box); a German shop's title never becomes the name, nor the title of a
+        // listing that is no source of the box (ADR 0003 addendum ARMAM-601).
+        var agreement = ProductCatalogue.IsCombatPatrol(product) ? null : Agreement.Agree(listings);
+        var sourceUrls = agreement?.Sources ?? listings.Select(l => l.Url).Distinct().ToList();
+        var englishTitle = listings.FirstOrDefault(l => !l.German && l.Title.Length > 0 && sourceUrls.Contains(l.Url))?.Title;
         var name = englishTitle ?? Text.Clean(product.Name);
         var notes = new List<string>();
         if (englishTitle is null)
@@ -223,23 +226,21 @@ public sealed class Runner(
             .AppendLine();
 
         JsonObject box;
-        if (ProductCatalogue.IsCombatPatrol(product))
+        if (agreement is null)
         {
-            var urls = listings.Select(l => l.Url).Distinct().ToList();
-            if (urls.Count < 2)
+            if (sourceUrls.Count < 2)
             {
-                log($"{product.Code} waits: {urls.Count} shop(s) confirm the Combat Patrol");
+                log($"{product.Code} waits: {sourceUrls.Count} shop(s) confirm the Combat Patrol");
                 return null;
             }
 
             var generation = product.Status == "current" ? "current" : "legacy";
-            box = Table.CombatPatrolBox(name, codes, urls, generation);
-            Sources(body, urls);
+            box = Table.CombatPatrolBox(name, codes, sourceUrls, generation);
+            Sources(body, sourceUrls);
             notes.Add($"The generation is set to `{generation}` from the catalogue status; check it.");
         }
         else
         {
-            var agreement = Agreement.Agree(listings);
             if (agreement.Entries is null)
             {
                 log($"{product.Code} waits: {Text.Clean(agreement.Waiting ?? "")}");

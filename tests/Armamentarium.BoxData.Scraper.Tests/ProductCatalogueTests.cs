@@ -55,6 +55,23 @@ public sealed class ProductCatalogueTests
     }
 
     [TestMethod]
+    public void ReadingsOf_KillTeamProduct_IsKillTeamOnly()
+    {
+        // A Kill Team kit sold also for 40k carries operatives, not 40k units; one entry list cannot serve both (ARMAM-601).
+        var products = ProductCatalogue.Parse("""
+            {"products":[
+              {"manufacturer":"games-workshop","productCode":"99120108125","name":"KT","gameSystems":["Kill Team","Warhammer 40,000"],"category":"miniatures"},
+              {"manufacturer":"games-workshop","productCode":"99120108152","name":"40K","gameSystems":["Warhammer 40,000"],"category":"miniatures"},
+              {"manufacturer":"games-workshop","productCode":"99120201200","name":"AOS","gameSystems":["Age of Sigmar","Warhammer 40,000"],"category":"miniatures"}
+            ]}
+            """);
+
+        CollectionAssert.AreEqual(new[] { "kt" }, ProductCatalogue.ReadingsOf(products[0]).ToArray());
+        CollectionAssert.AreEqual(new[] { "40k" }, ProductCatalogue.ReadingsOf(products[1]).ToArray());
+        CollectionAssert.AreEqual(new[] { "40k", "aos" }, ProductCatalogue.ReadingsOf(products[2]).ToArray());
+    }
+
+    [TestMethod]
     public void IsCombatPatrol_ByName()
     {
         var products = ProductCatalogue.Parse(Json);
