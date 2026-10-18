@@ -13076,6 +13076,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Genestealers",
+      "productCodes": [
+        "99120106068"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tyranids-genestealers",
+        "https://abyssgamestore.ca/products/tyranids-genestealers-51-06",
+        "https://www.retrofixgames.com/products/warhammer-40k-tyranids-genestealers-1",
+        "https://shop.afk.games/products/tyranids-genestealers",
+        "https://obsidiangames.ca/products/tyranids-genestealers",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-tyranids-genestealers-2023",
+        "https://mrmuffinstrains.com/products/gw-51-06",
+        "https://radaddel.de/products/tyranids-genestealer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "853e-48b8-4cc5-3704",
+              "name": "Genestealers",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
