@@ -23760,6 +23760,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Krondys Son of Dracothian",
+      "productCodes": [
+        "99120218054"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/stormcast-eternals-krondys-son-of-dracothian",
+        "https://shop.afk.games/products/stormcast-eternals-krondys-son-of-dracothian",
+        "https://obsidiangames.ca/products/stormcast-eternals-krondys-son-of-dracothian",
+        "https://www.goblingaming.co.uk/products/krondys-son-of-dracothian-age-of-sigmar",
+        "https://mrmuffinstrains.com/products/gw-96-50"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Krondys",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
