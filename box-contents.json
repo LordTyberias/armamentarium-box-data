@@ -7060,6 +7060,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Wolves: Thunderwolf Cavalry",
+      "productCodes": [
+        "99120101350"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-wolves-thunderwolf-cavalry",
+        "https://abyssgamestore.ca/products/space-wolves-thunderwolf-cavalry-53-09",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-wolves-thunderwolf-cavalry",
+        "https://shop.afk.games/products/space-wolves-thunderwolf-cavalry",
+        "https://obsidiangames.ca/products/space-wolves-thunderwolf-cavalry",
+        "https://www.goblingaming.co.uk/products/space-wolves-thunderwolf-cavalry",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/space-wolves/space-wolves-thunderwolf-cavalry"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Thunderwolf Cavalry models",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
