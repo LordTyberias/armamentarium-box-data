@@ -12480,6 +12480,24 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Combat Patrol: Astra Militarum",
+      "productCodes": [
+        "99120105124"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/combat-patrol-astra-militarum",
+        "https://abyssgamestore.ca/products/combat-patrol-astra-militarum-73-473",
+        "https://radaddel.de/products/astra-militarum-combat-patrol",
+        "https://www.retrofixgames.com/products/warhammer-40k-combat-patrol-astra-militarum-1",
+        "https://shop.afk.games/products/combat-patrol-astra-militarum-1",
+        "https://obsidiangames.ca/products/combat-patrol-astra-militarum",
+        "https://www.goblingaming.co.uk/products/combat-patrol-astra-militarum",
+        "https://mrmuffinstrains.com/products/gw-73-473",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/combat-patrol-astra-militarum"
+      ],
+      "generation": "current"
     }
   ]
 }
