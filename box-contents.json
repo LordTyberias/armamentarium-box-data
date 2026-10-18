@@ -17682,6 +17682,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Lord of Plagues",
+      "productCodes": [
+        "99120201221"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-lord-of-plagues",
+        "https://abyssgamestore.ca/products/nurgle-rotbringers-lord-of-plagues-83-32",
+        "https://www.goblingaming.co.uk/products/nurgle-rotbringers-lord-of-plagues",
+        "https://elementgames.co.uk/nurgle-rotbringers-lord-of-plagues"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Lord of Plagues",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
