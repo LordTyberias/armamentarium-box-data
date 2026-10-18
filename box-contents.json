@@ -4208,6 +4208,103 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar 4th Ed Skaventide Box Set",
+      "productCodes": [
+        "60010299043"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-4th-ed-skaventide-box-set",
+        "https://shop.afk.games/products/age-of-sigmar-skaventide"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "plastic push-fit miniatures",
+              "count": 74
+            },
+            {
+              "role": "team",
+              "name": "Stormcast Eternals",
+              "count": 24
+            },
+            {
+              "role": "team",
+              "name": "Lord-Vigilant on Gryph-stalker",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lord-Terminos with 1x Memorian",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Lord-Veritant with 1x Gryph-crow",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Knight-Questor",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Reclusians with 2x Memorians",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Prosecutors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Liberators",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Clawlord on Gnaw-Beast",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Grey Seer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Warlock Engineer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Ratling Warpblaster",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Rat Ogors",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Warplock Jezzails",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Clanrats",
+              "count": 40
+            }
+          ]
+        }
+      ]
     }
   ]
 }
