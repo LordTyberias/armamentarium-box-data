@@ -4327,6 +4327,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Empire of Man - Teutogen Guard Command (Metal) (2025-W)",
+      "productCodes": [
+        "99062702025"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/empire-of-man-teutogen-guard-command-2025-w",
+        "https://www.goblingaming.co.uk/products/empire-of-man-teutogen-guard-command"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Teutogen Guard Command Warriors",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
