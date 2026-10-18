@@ -26083,6 +26083,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tomb Kings of Khemri: Royal Heralds",
+      "productCodes": [
+        "99122717010"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tomb-kings-of-khemri-royal-heralds",
+        "https://mrmuffinstrains.com/products/gw-07-13",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/tomb-kings-of-khemri-royal-heralds"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Royal Heralds",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "mounted",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
