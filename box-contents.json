@@ -17865,6 +17865,50 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Hedonites of Slaanesh the Decadent Host",
+      "productCodes": [
+        "99120201257"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-hedonites-of-slaanesh-the-decadent-host",
+        "https://www.goblingaming.co.uk/products/hedonites-of-slaanesh-the-decadent-host",
+        "https://mrmuffinstrains.com/products/gw-83-125",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/hedonites-of-slaanesh-the-decadent-host"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sigvald",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Slickblade Seekers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Myrmidesh Painbringers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Blissbarb Archers",
+              "count": 11
+            },
+            {
+              "role": "team",
+              "name": "Slaangor Fiendbloods",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
