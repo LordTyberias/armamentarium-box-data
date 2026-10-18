@@ -17574,6 +17574,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Putrid Blightkings",
+      "productCodes": [
+        "99120201210"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-putrid-blightkings",
+        "https://www.retrofixgames.com/products/age-of-sigmar-maggotkin-of-nurgle-putrid-blightkings",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/maggotkin-of-nurgle-putrid-blightkings",
+        "https://radaddel.de/products/maggotkin-of-nurgle-putrid-blightkings-1"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Putrid Blightkings",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
