@@ -18492,6 +18492,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth Dryads ( 92-06-W )",
+      "productCodes": [
+        "99120204035"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/sylvaneth-dryads-92-06",
+        "https://shop.afk.games/products/sylvaneth-dryads",
+        "https://obsidiangames.ca/products/sylvaneth-dryads",
+        "https://www.goblingaming.co.uk/products/sylvaneth-dry-ads"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "ccce-ab0c-7c1-bbc2",
+              "name": "Dryads",
+              "count": 16
+            }
+          ]
+        }
+      ]
     }
   ]
 }
