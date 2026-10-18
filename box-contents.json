@@ -29061,6 +29061,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Daemons of Nurgle Beast of Nurgle",
+      "productCodes": [
+        "99129915062"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/beast-of-nurgle",
+        "https://radaddel.de/products/maggotkin-of-nurgle-beast-of-nurgle"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Beast Of Nurgle",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
