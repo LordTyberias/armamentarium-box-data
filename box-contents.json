@@ -8762,6 +8762,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Chosen",
+      "productCodes": [
+        "99120102141"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-chosen",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-chosen",
+        "https://shop.afk.games/products/chaos-space-marines-chosen",
+        "https://www.goblingaming.co.uk/products/games-workshop-warhammer-40k-chaos-space-marines-chosen",
+        "https://mrmuffinstrains.com/products/gw-43-84",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-chosen",
+        "https://radaddel.de/products/chaos-space-marines-chosen"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Chosen",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
