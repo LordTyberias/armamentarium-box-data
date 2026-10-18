@@ -17548,6 +17548,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Sloven Knights",
+      "productCodes": [
+        "99120201209"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-sloven-knights",
+        "https://www.retrofixgames.com/products/age-of-sigmar-maggotkin-of-nurgle-sloven-knights",
+        "https://www.goblingaming.co.uk/products/maggotkin-of-nurgle-sloven-knights",
+        "https://mrmuffinstrains.com/products/gw-83-114",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/maggotkin-of-nurgle-sloven-knights",
+        "https://radaddel.de/products/maggotkin-of-nurgle-sloven-knights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sloven Knights",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
