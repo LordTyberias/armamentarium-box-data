@@ -14394,6 +14394,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Warriors",
+      "productCodes": [
+        "99120110052"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-warriors",
+        "https://www.retrofixgames.com/products/warhammer-40k-necron-warriors",
+        "https://shop.afk.games/products/necrons-necron-warriors",
+        "https://obsidiangames.ca/products/necrons-necron-warriors",
+        "https://www.goblingaming.co.uk/products/warriors-necrons-warhammer-40k-99120110052",
+        "https://mrmuffinstrains.com/products/gw-49-06",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-necron-warriors"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "58e9-5212-f5a6-c12d",
+              "name": "Necron Warriors",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Scarab Swarms",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
