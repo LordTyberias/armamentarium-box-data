@@ -26165,6 +26165,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Grand Cathay - Gate Masters of the Celestial Cities",
+      "productCodes": [
+        "99122720003"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-grand-cathay-gate-masters-of-the-celestial-cities",
+        "https://www.irresistibleforce.com.au/products/grand-cathay-gate-masters-of-the-celestial-cities",
+        "https://www.goblingaming.co.uk/products/grand-cathay-gate-masters-of-the-celestial-cities",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-gate-masters-of-the-celestial-cities"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Gate Masters of the Celestial Cities",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "atop",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
