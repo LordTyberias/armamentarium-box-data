@@ -27944,6 +27944,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Malcador Heavy Tank",
+      "productCodes": [
+        "99123005005"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-malcador",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-solar-auxilia-malcador-heavy-tank",
+        "https://shop.afk.games/products/horus-heresy-solar-auxilia-malcador",
+        "https://obsidiangames.ca/products/horus-heresy-malcador-heavy-tank",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-malcador"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "376e-d119-2489-580d",
+              "name": "Malcador Heavy Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
