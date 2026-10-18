@@ -20445,6 +20445,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Flesh Eater Courts Crypt Flayers",
+      "productCodes": [
+        "99120207172"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/flesh-eater-courts-crypt-flayer-s",
+        "https://elementgames.co.uk/flesh-eater-courts-crypt-flayers",
+        "https://radaddel.de/products/flesh-eater-courts-crypt-flayers-crypt-infernals"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Crypt Flayers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
