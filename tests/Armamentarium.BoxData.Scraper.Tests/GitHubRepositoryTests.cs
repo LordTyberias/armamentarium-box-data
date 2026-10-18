@@ -141,10 +141,28 @@ public sealed class GitHubRepositoryTests
             Json("""{"merged":true}"""),
         ]);
         var handler = new Recorder(_ => answers.Dequeue());
+        var log = new List<string>();
 
-        await new GitHubRepository(new HttpClient(handler), Token, TimeSpan.Zero).MergeAsync(12, default);
+        await new GitHubRepository(new HttpClient(handler), Token, TimeSpan.Zero, log.Add).MergeAsync(12, default);
 
         Assert.AreEqual(2, handler.Requests.Count);
+        CollectionAssert.AreEqual(new[] { "pull request 12: merge answered 405, try 2 of 3 in 0 s" }, log);
+    }
+
+    [TestMethod]
+    public async Task Merge_StoppedWhileWaiting_AsksNoMore()
+    {
+        using var stop = new CancellationTokenSource();
+        var handler = new Recorder(_ =>
+        {
+            stop.Cancel();
+            return Json("""{"message":"Base branch was modified."}""", HttpStatusCode.MethodNotAllowed);
+        });
+
+        await Assert.ThrowsAsync<OperationCanceledException>(
+            () => new GitHubRepository(new HttpClient(handler), Token, TimeSpan.FromMinutes(1)).MergeAsync(12, stop.Token));
+
+        Assert.AreEqual(1, handler.Requests.Count);
     }
 
     [TestMethod]

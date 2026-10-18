@@ -59,7 +59,7 @@ public static class Program
                 Timeout = TimeSpan.FromSeconds(100),
                 MaxResponseContentBufferSize = 64 * 1024 * 1024,
             };
-            IRepository repository = new GitHubRepository(github, dryRun ? null : ReadCredential("github-token"));
+            IRepository repository = new GitHubRepository(github, dryRun ? null : ReadCredential("github-token"), log: Log);
             if (dryRun)
             {
                 repository = new DryRunRepository(repository, Log);

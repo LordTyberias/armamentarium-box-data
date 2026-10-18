@@ -129,7 +129,8 @@ stopped by the timeout would lose it).
 - **A merge answered 405 is tried again** after five seconds, three tries in all, before the run goes on to the next
   product. Any 405, not only that message: GitHub also answers "not mergeable" while it still works a pull request out, and
   a real conflict costs ten seconds and ends as before (`not merged`, a notice, the pull request stays open). Other
-  answers are not tried again.
+  answers are not tried again. Each try again is one journal line (`pull request N: merge answered 405, try 2 of 3 in
+  5 s`), so the next run shows how often it happens.
 - Rejected: **waiting before every merge** (costs every merge for two in 24); **asking GitHub for `mergeable` first** (one
   more request per box and the same wait when it is not yet known); **matching the message text** (GitHub's wording is not
   a contract).

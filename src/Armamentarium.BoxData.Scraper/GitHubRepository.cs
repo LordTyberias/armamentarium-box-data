@@ -15,9 +15,11 @@ public sealed class GitHubException(string message, int? status = null) : Except
 /// This repository through the GitHub REST API (ADR 0003 §3): reads the table, lists the open scraper pull requests,
 /// opens a pull request and, with <c>--auto-merge</c>, merges it (ADR 0004). The token, when present, goes only into the
 /// Authorization header. A merge GitHub refuses with 405 is tried again after <paramref name="mergeRetry"/> (five seconds by
-/// default), <see cref="MergeAttempts"/> times in all (ADR 0004 Addendum ARMAM-603).
+/// default), <see cref="MergeAttempts"/> times in all, each try again named in <paramref name="log"/> (ADR 0004 Addendum
+/// ARMAM-603).
 /// </summary>
-public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? mergeRetry = null) : IRepository
+public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? mergeRetry = null, Action<string>? log = null)
+    : IRepository
 {
     public const string Repository = "LordTyberias/armamentarium-box-data";
     public const string BranchPrefix = "scraper/";
@@ -113,7 +115,9 @@ public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? m
             }
             catch (GitHubException ex) when (ex.Status == 405 && attempt < MergeAttempts)
             {
-                await Task.Delay(mergeRetry ?? TimeSpan.FromSeconds(5), cancellationToken);
+                var wait = mergeRetry ?? TimeSpan.FromSeconds(5);
+                log?.Invoke($"pull request {number}: merge answered 405, try {attempt + 1} of {MergeAttempts} in {wait.TotalSeconds:0} s");
+                await Task.Delay(wait, cancellationToken);
             }
         }
     }
