@@ -8452,6 +8452,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard: Deathshroud Bodyguard",
+      "productCodes": [
+        "99120102123"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/death-guard-deathshroud-bodyguard",
+        "https://abyssgamestore.ca/products/death-guard-deathshroud-bodyguard-43-50",
+        "https://shop.afk.games/products/death-guard-deathshroud-bodyguard",
+        "https://obsidiangames.ca/products/death-guard-deathshroud-bodyguard",
+        "https://elementgames.co.uk/death-guard-deathshroud-bodyguard",
+        "https://radaddel.de/products/death-guard-deathshroud-bodyguard"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Deathshroud Bodyguard",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
