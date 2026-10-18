@@ -22814,6 +22814,45 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of SigmarSpearhead Hurakan Vanguard",
+      "productCodes": [
+        "99120210064"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmarspearhead-hurakan-vanguard",
+        "https://mrmuffinstrains.com/products/gw-70-874",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/spearhead-lumineth-realm-lords-hurakan-vanguard",
+        "https://radaddel.de/products/lumineth-realm-lords-spearhead-hurakan-vanguard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Hurakan Windmage",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Hurakan Spirit of the Wind",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Hurakan Windchargers",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Vanari Auralan Wardens",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
