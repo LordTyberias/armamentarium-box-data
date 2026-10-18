@@ -5644,6 +5644,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Everchosen Gaunt Summoner of Tzeentch ( 83-52-W )",
+      "productCodes": [
+        "99070201014"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/everchosen-gaunt-summoner-of-tzeentch-83-52-w",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/gaunt-summoner"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "sinister Gaunt Summoner",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
