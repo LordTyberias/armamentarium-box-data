@@ -26687,6 +26687,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Legiones Astartes - Deimos Pattern Predator Battle Tank ( 31-14 )",
+      "productCodes": [
+        "99123001012"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/the-horus-heresy-legiones-astartes-predator-battle-tank-31-14",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-deimos-pattern-predator-battle-tank",
+        "https://shop.afk.games/products/hh-deimos-pattern-predator-battle-tank",
+        "https://www.goblingaming.co.uk/products/predator-battle-tank-horus-heresy"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Legion Predator",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
