@@ -19198,6 +19198,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kharadron Overlords: Vongrim Harpoon Crew",
+      "productCodes": [
+        "99120205064"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kharadron-overlords-vongrim-harpoon-crew",
+        "https://www.retrofixgames.com/products/age-of-sigmar-kharadron-overlords-vongrim-harpoon-crew",
+        "https://shop.afk.games/products/vongrim-harpoon-crew",
+        "https://www.goblingaming.co.uk/products/kharadron-overlords-vongrim-harpoon-crew",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/kharadron-overlords-vongrim-harpoon-crew",
+        "https://radaddel.de/products/kharadron-overlords-vongrim-harpoon-crew"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vongrim Harpoon Crew members",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
