@@ -6375,6 +6375,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tomb Kings of Khemri: Settra The Imperishable",
+      "productCodes": [
+        "99112717006"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/tomb-kings-settra-the-imperishable",
+        "https://www.goblingaming.co.uk/products/games-workshop-warhammer-the-old-world-tomb-kings-settra-the-imperishable",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/settra-the-imperishable"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Settra the Imperishable",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
