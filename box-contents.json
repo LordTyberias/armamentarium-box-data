@@ -17152,6 +17152,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Darkoath Marauders",
+      "productCodes": [
+        "99120201182"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-darkoath-marauders",
+        "https://abyssgamestore.ca/products/slaves-to-darkness-darkoath-marauders-83-52",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-darkoath-marauders",
+        "https://shop.afk.games/products/slaves-to-darkness-darkoath-marauders",
+        "https://obsidiangames.ca/products/slaves-to-darkness-darkoath-mauraders",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-slaves-to-darkness-darkoath-marauders",
+        "https://mrmuffinstrains.com/products/gw-83-52",
+        "https://radaddel.de/products/slaves-to-darkness-darkoath-marauders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Darkoath Marauders",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
