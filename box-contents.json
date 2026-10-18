@@ -23566,6 +23566,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes: Maulbeast Raiders",
+      "productCodes": [
+        "99120213042"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ogor-mawtribes-maulbeast-raiders",
+        "https://www.goblingaming.co.uk/products/ogor-mawtribes-maulbeast-raiders",
+        "https://mrmuffinstrains.com/products/gw-95-16",
+        "https://radaddel.de/products/ogor-mawtribes-maulbeast-raiders-maulbeast-cavalry"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Maulbeast Raiders",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
