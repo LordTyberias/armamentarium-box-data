@@ -5120,6 +5120,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Imperial Agents - Vindicare Assassin ( 52-10 )",
+      "productCodes": [
+        "99070108017"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/imperial-agents-vindicare-assassin-52-10",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-vindicare-assassin",
+        "https://obsidiangames.ca/products/vindicare-assassin",
+        "https://www.goblingaming.co.uk/products/imperial-agents-vindicare-assassin-2024",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-vindicare-assassin"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "efa3-2cf5-dcfb-b976",
+              "name": "Vindicare Assassin",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
