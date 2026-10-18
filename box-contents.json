@@ -15333,6 +15333,37 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tau Empire: Krootox Rampagers",
+      "productCodes": [
+        "99120113088"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tau-empire-krootox-rampagers",
+        "https://abyssgamestore.ca/products/tau-empire-krootox-rider-56-49",
+        "https://www.retrofixgames.com/products/warhammer-40k-tau-empire-krootox-rampagers",
+        "https://shop.afk.games/products/tau-empire-krootox-rampagers",
+        "https://obsidiangames.ca/products/tau-empire-krootox-rampagers",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-tau-empire-krootox-rampagers",
+        "https://mrmuffinstrains.com/products/gw-56-49",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/tau-empire/tau-empire-krootox-rampagers",
+        "https://radaddel.de/products/tau-empire-krootox-rampagers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d81a-61dd-6d27-a3ce",
+              "entryId": "7f73-6728-df6f-1446",
+              "name": "Krootox Rampagers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
