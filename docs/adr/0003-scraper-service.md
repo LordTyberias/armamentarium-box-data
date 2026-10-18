@@ -16,8 +16,8 @@ host that throttles, and a 429's `Retry-After` is honoured; §12 "the product co
 asked once more at the end of the same run first.
 
 **Changed by Addendum ARMAM-599:** §8 reads a single kit's count from its build sentence as well as lines; §9 matches
-two names of one root entry and drops a source with two counts for one entry; the waiting reason "no source lists models
-line by line" (Context) is now "no source states a model count".
+two names of one root entry and drops a source with two counts for one entry, and a source sharing no entry with another
+no longer holds the box; Context's "single kits are described in prose" no longer makes them wait.
 
 ## Context
 

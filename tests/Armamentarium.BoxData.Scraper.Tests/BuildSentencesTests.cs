@@ -5,7 +5,7 @@ namespace Armamentarium.BoxData.Scraper.Tests;
 public sealed class BuildSentencesTests
 {
     private static (int Count, string Name)[] Read(string html) =>
-        BuildSentences.Parse(html).SelectMany(s => new[] { s.Build }.Concat(s.Additions)).Select(l => (l.Count, l.Name)).ToArray();
+        BuildSentences.Parse(html).SelectMany(s => new[] { s.Build }.Concat(s.Additions.Select(a => a.Build))).Select(l => (l.Count, l.Name)).ToArray();
 
     [TestMethod]
     public void Parse_CountByArticle_IsMarked()
@@ -22,7 +22,15 @@ public sealed class BuildSentencesTests
             "<p>This kit builds ten Iron Brothers – each with a choice of a rust rifle or a rust reaper – as well as three Rust Swarms.</p>").Single();
 
         Assert.AreEqual(10, sentence.Build.Count);
-        CollectionAssert.AreEqual(new[] { (3, "Rust Swarms") }, sentence.Additions.Select(l => (l.Count, l.Name)).ToArray());
+        CollectionAssert.AreEqual(new[] { (3, "Rust Swarms") }, sentence.Additions.Select(a => (a.Build.Count, a.Build.Name)).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_AdditionByArticle_IsMarked()
+    {
+        var sentence = BuildSentences.Parse("<p>This kit builds 10 Iron Brothers, each armed with a rust rifle and a rust knife.</p>").Single();
+
+        Assert.IsTrue(sentence.Additions.Single().Article);
     }
 
     [TestMethod]

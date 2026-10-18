@@ -8,9 +8,10 @@ public sealed record Line(int Count, string Name, bool NonPlayer, bool Alternati
 
 /// <summary>
 /// What one build sentence counts ("builds a squad of 10 …", ADR 0003 addendum ARMAM-599): the build, whether its count
-/// was only an article ("builds a …"), and the models added after it ("as well as three …").
+/// was only an article ("builds a …"), and the models added after it ("as well as three …"), each an addition without
+/// additions of its own.
 /// </summary>
-public sealed record BuildSentence(Line Build, bool Article, IReadOnlyList<Line> Additions);
+public sealed record BuildSentence(Line Build, bool Article, IReadOnlyList<BuildSentence> Additions);
 
 /// <summary>
 /// A shop page that confirmed the product. <see cref="German"/> marks translated model names; <see cref="Sentences"/> holds

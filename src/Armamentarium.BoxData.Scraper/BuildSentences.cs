@@ -45,8 +45,8 @@ public static partial class BuildSentences
             var rest = sentence[(build.Index + build.Length)..];
             var alternative = AlternativeStart().Match(rest);
             var additions = Extra().Matches(alternative.Success ? rest[..alternative.Index] : rest)
-                .Select(Read)
-                .OfType<Line>()
+                .Select(m => Read(m) is { } line ? new BuildSentence(line, Articles.Contains(m.Groups["count"].Value), []) : null)
+                .OfType<BuildSentence>()
                 .ToList();
 
             // The same sentence twice (a summary and the description) is one finding.

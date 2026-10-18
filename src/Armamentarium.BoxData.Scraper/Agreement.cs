@@ -158,13 +158,17 @@ public static class Agreement
             return listing.Lines;
         }
 
+        // An addition by article follows the same rule: "… armed with a lasgun and a laspistol" adds no model.
+        IEnumerable<Line> Counted(BuildSentence s) =>
+            new[] { s.Build }.Concat(s.Additions.Where(a => !a.Article || Root(a.Build) is not null).Select(a => a.Build));
+
         var chosen = usable.Where(s => ReferenceEquals(s, main) || (Root(s.Build) is { } r && r != mainRoot))
-            .SelectMany(s => new[] { s.Build }.Concat(s.Additions))
+            .SelectMany(Counted)
             .ToList();
 
         // Two counts for one entry in one source ("a set of 10 …", "a squad of 9 …"): the source states neither, it drops
         // out for that entry; other sources still count.
-        var stated = usable.SelectMany(s => new[] { s.Build }.Concat(s.Additions)).GroupBy(l => key(l.Name))
+        var stated = usable.SelectMany(Counted).GroupBy(l => key(l.Name))
             .ToDictionary(g => g.Key, g => g.Select(l => l.Count).Distinct().Count());
         return chosen.Where(l => stated[key(l.Name)] == 1).DistinctBy(l => key(l.Name)).ToList();
     }

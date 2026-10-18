@@ -123,7 +123,7 @@ public sealed class AgreementTests
     };
 
     private static BuildSentence S(int count, string name, bool article = false, params Line[] additions) =>
-        new(L(count, name), article, additions);
+        new(L(count, name), article, additions.Select(a => new BuildSentence(a, false, [])).ToList());
 
     private static Listing WithSentences(Listing listing, params BuildSentence[] sentences) => listing with { Sentences = sentences };
 
@@ -197,6 +197,19 @@ public sealed class AgreementTests
         ], Root);
 
         CollectionAssert.AreEqual(new[] { "Iron Brothers", "Rust Swarms" }, result.Entries!.Select(e => e.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Agree_AdditionByArticleWithoutRootEntry_CountsNothing()
+    {
+        BuildSentence WithLaspistol() => new(L(10, "Iron Brothers"), false, [new BuildSentence(L(1, "laspistol"), true, [])]);
+
+        var result = Agreement.Agree([
+            WithSentences(English("a.test"), WithLaspistol()),
+            WithSentences(English("b.test"), WithLaspistol()),
+        ], Root);
+
+        CollectionAssert.AreEqual(new[] { "Iron Brothers" }, result.Entries!.Select(e => e.Name).ToArray());
     }
 
     [TestMethod]
