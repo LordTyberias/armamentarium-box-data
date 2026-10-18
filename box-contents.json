@@ -19299,6 +19299,49 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Skaven",
+      "productCodes": [
+        "99120206041"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-skaven",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-skaven",
+        "https://shop.afk.games/products/spearhead-skaven",
+        "https://obsidiangames.ca/products/spearhead-skaven",
+        "https://www.goblingaming.co.uk/products/spearhead-skaven",
+        "https://mrmuffinstrains.com/products/gw-70-901",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/spearhead-skaven",
+        "https://radaddel.de/products/skaven-spearhead"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Grey Seer",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Clanrats",
+              "count": 20
+            },
+            {
+              "role": "team",
+              "name": "Stormfiends",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "Warp Lightning Cannon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
