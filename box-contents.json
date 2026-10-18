@@ -18439,6 +18439,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Spiterider Lancers",
+      "productCodes": [
+        "99120204031"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-spiterider-lancers",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-sylvaneth-spiterider-lancers",
+        "https://shop.afk.games/products/spiterider-lancers",
+        "https://obsidiangames.ca/products/sylvaneth-spiterider-lancers",
+        "https://www.goblingaming.co.uk/products/sylvaneth-spiterider-lancers-age-of-sigmar-games-workshop",
+        "https://radaddel.de/products/sylvaneth-spiterider-lancers"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Spiterider Lancers",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
