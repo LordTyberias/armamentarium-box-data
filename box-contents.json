@@ -14252,6 +14252,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Imperial Agents - Exaction Squad",
+      "productCodes": [
+        "99120108153"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-imperial-agents-exaction-squad",
+        "https://www.retrofixgames.com/products/warhammer-40k-imperial-agents-exaction-squad",
+        "https://shop.afk.games/products/imperial-agents-exaction-squad",
+        "https://obsidiangames.ca/products/imperial-agents-exaction-squad",
+        "https://www.goblingaming.co.uk/products/imperial-agents-exaction-squad",
+        "https://mrmuffinstrains.com/products/gw-68-29",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-agents/imperial-agents-exaction-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Adeptus Arbites",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Cyber-mastiff",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
