@@ -24327,6 +24327,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Warriors of Chaos - Chaos Knights",
+      "productCodes": [
+        "99122701005"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-warriors-of-chaos-chaos-knights",
+        "https://radaddel.de/products/warriors-of-chaos-chaos-knights"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "mounted Chaos Knights",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
