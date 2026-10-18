@@ -7528,6 +7528,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Space Marines: Captain with Jump Pack",
+      "productCodes": [
+        "99120101394"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/space-marines-captain-with-jump-pack",
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-captain-with-jump-pack",
+        "https://shop.afk.games/products/space-marines-captain-with-jumppack",
+        "https://obsidiangames.ca/products/space-marines-captain-with-jump-pack",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-space-marines-captain-with-jump-pack"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Space Marine Captain equipped",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
