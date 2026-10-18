@@ -8535,6 +8535,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Death Guard Typhus",
+      "productCodes": [
+        "99120102126"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/death-guard-typhus",
+        "https://elementgames.co.uk/death-guard-typhus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "e6a4-7055-fd23-5123",
+              "name": "Typhus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
