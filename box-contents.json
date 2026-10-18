@@ -17230,6 +17230,47 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Spearhead: Darkoath Raiders",
+      "productCodes": [
+        "99120201189"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spearhead-darkoath-raiders",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-spearhead-saves-to-darkness-darkoath-raiders",
+        "https://www.goblingaming.co.uk/products/spearhead-slaves-to-darkness-darkoath-raiders",
+        "https://mrmuffinstrains.com/products/gw-70-836",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/slaves-to-darkness/spearhead-slaves-to-darkness-darkoath-raiders",
+        "https://radaddel.de/products/slaves-to-darkness-spearhead-darkoath-raiders"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Darkoath Warqueen",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Darkoath Fellriders",
+              "count": 5
+            },
+            {
+              "role": "team",
+              "name": "Darkoath Savagers",
+              "count": 10
+            },
+            {
+              "role": "team",
+              "name": "Darkoath Marauders",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
