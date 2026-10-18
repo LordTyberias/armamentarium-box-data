@@ -18358,6 +18358,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Cities Of Sigmar Aqshian Pyrocaster",
+      "productCodes": [
+        "99120202067"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-cities-of-sigmar-aqshian-pyrocaster",
+        "https://www.goblingaming.co.uk/products/cities-of-sigmar-aqshian-pyrocaster",
+        "https://mrmuffinstrains.com/products/gw-86-14",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/cities-of-sigmar-aqshian-pyrocaster"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Aqshian Pyrocaster",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
