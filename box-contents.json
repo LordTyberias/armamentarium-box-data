@@ -21094,6 +21094,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar: Nighthaunt - Spirit Hosts",
+      "productCodes": [
+        "99120207228"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-age-of-sigmar-nighthaunt-spirit-hosts",
+        "https://www.irresistibleforce.com.au/products/nighthaunt-spirit-hosts",
+        "https://www.goblingaming.co.uk/products/nighthaunt-spirit-hosts",
+        "https://elementgames.co.uk/nighthaunt-spirit-hosts"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Spirit Hosts",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
