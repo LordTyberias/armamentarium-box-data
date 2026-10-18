@@ -29686,6 +29686,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Warsong Revenant",
+      "productCodes": [
+        "99120204027"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/sylvaneth-warsong-revenant",
+        "https://obsidiangames.ca/products/sylvaneth-warsong-revenant"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Warsong Revenant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
