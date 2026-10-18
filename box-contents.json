@@ -8587,6 +8587,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Thousand Sons - Rubric Marines",
+      "productCodes": [
+        "99120102130"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-thousand-sons-rubric-marines",
+        "https://www.irresistibleforce.com.au/products/thousand-sons-rubric-marines",
+        "https://abyssgamestore.ca/products/thousand-sons-rubric-marines-43-35",
+        "https://www.retrofixgames.com/products/warhammer-40k-thousand-sons-rubric-marines",
+        "https://shop.afk.games/products/thousand-sons-rubric-marines",
+        "https://obsidiangames.ca/products/thousand-sons-rubric-marines",
+        "https://www.goblingaming.co.uk/products/thousand-sons-rubric-marines-43027220",
+        "https://mrmuffinstrains.com/products/gw-43-35",
+        "https://elementgames.co.uk/thousand-sons-rubric-marines"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Rubric Marines",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
