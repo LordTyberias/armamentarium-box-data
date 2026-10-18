@@ -22635,6 +22635,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm-Lords: Alarith Stoneguard",
+      "productCodes": [
+        "99120210055"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/alarith-stoneguard",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-lumineth-realm-lords-alarith-stoneguard",
+        "https://shop.afk.games/products/lumineth-realm-lords-alarith-stoneguard",
+        "https://www.goblingaming.co.uk/products/alarith-stoneguard-lumineth-realm-lords-age-of-sigmar-99120210036",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-alarith-stoneguard"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Alarith Stoneguard",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
