@@ -5691,6 +5691,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites of Slaanesh: Lord of Pain",
+      "productCodes": [
+        "99070201026"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hedonites-of-slaanesh-lord-of-pain",
+        "https://shop.afk.games/products/hedonites-of-slaanesh-lord-of-pain",
+        "https://www.goblingaming.co.uk/products/hedonites-of-slaanesh-lord-of-pain",
+        "https://mrmuffinstrains.com/products/gw-83-87",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/hedonites-of-slaanesh-lord-of-pain"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "single-pose Lord of Pain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
