@@ -4620,6 +4620,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Space Marines Primaris Ancient",
+      "productCodes": [
+        "99070101076"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-primaris-ancient",
+        "https://shop.afk.games/products/space-marines-primaris-ancient",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-space-marines-primaris-ancient",
+        "https://mrmuffinstrains.com/products/gw-48-96",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-ancient",
+        "https://radaddel.de/products/space-marines-primaris-ancient"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "model",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
