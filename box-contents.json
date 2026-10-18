@@ -10341,6 +10341,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orks: Beast Snagga Boyz",
+      "productCodes": [
+        "99120103073"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/orks-beast-snagga-boyz",
+        "https://www.retrofixgames.com/products/warhammer-40k-orks-beast-snagga-boyz",
+        "https://shop.afk.games/products/orks-beast-snagga-boyz",
+        "https://obsidiangames.ca/products/orks-beast-snagga-boyz",
+        "https://www.goblingaming.co.uk/products/new-games-workshop-beast-snagga-boyz-orks",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/orks-beast-snagga-boyz",
+        "https://radaddel.de/products/orks-beast-snagga-boyz"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "b7c3-d00e-daf2-76fb",
+              "name": "Beast Snagga Boyz",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
