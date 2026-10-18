@@ -3482,6 +3482,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kill Team: Nemesis Claw",
+      "productCodes": [
+        "99120102182"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kill-team-nemesis-claw",
+        "https://www.retrofixgames.com/products/kill-team-nemesis-claw",
+        "https://shop.afk.games/products/kill-team-nemesis-claw",
+        "https://obsidiangames.ca/products/kill-team-nemesis-claw",
+        "https://www.goblingaming.co.uk/products/nemesis-claw-kill-team",
+        "https://mrmuffinstrains.com/products/gw-103-43",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/kill-team-nemesis-claw-2024",
+        "https://radaddel.de/products/kill-team-nemesis-claw"
+      ],
+      "readings": [
+        {
+          "reading": "kt",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Nemesis Claw Chaos Space Marines",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
