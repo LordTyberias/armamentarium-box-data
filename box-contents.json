@@ -26583,6 +26583,29 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Horus Heresy Legiones Astartes Sicaran Battle Tank",
+      "productCodes": [
+        "99123001005"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-sicaran-batlle-tank",
+        "https://shop.afk.games/products/hh-sicaran-battle-tank",
+        "https://www.goblingaming.co.uk/products/warhammer-30-000-horus-heresy-legiones-astartes-sicaran-battle-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Sicaran Battle Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
