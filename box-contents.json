@@ -15586,6 +15586,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adeptus Mechanicus: Kastelan Robots",
+      "productCodes": [
+        "99120116036"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adeptus-mechanicus-kastelan-robots",
+        "https://shop.afk.games/products/adeptus-mechanicus-kastelan-robots",
+        "https://obsidiangames.ca/products/kastelan-robots",
+        "https://www.goblingaming.co.uk/products/adeptus-mechanicus-kastelan-robots",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/adeptus-mechanicus/adeptus-mechanicus-kastelan-robots"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "77b9-2f66-3f9b-5cf3",
+              "entryId": "bd6c-8683-8bc4-962d",
+              "name": "Kastelan Robots",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "catalogueId": "77b9-2f66-3f9b-5cf3",
+              "entryId": "d59d-ef1-9ef8-4f44",
+              "name": "Cybernetica Datasmith",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
