@@ -10922,6 +10922,46 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Orks - Battalion - Armageddon",
+      "productCodes": [
+        "99120103126"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-orks-battalion-armageddon",
+        "https://www.goblingaming.co.uk/products/armageddon-battalion-orks",
+        "https://mrmuffinstrains.com/products/gw-73-501",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/armageddon-battalion-orks"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "ca85-1d18-dc30-d64e",
+              "name": "Deffkilla Wartrike",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "a856-30b7-e56d-57db",
+              "name": "Rukkatrukk Squigbuggy",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "2d6e-aa3b-c28c-5ef0",
+              "name": "Deffkoptas",
+              "count": 6
+            }
+          ]
+        }
+      ]
     }
   ]
 }
