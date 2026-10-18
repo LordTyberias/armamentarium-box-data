@@ -9901,6 +9901,43 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Chaos Space Marines Red Corsairs Upgrades & Transfers",
+      "productCodes": [
+        "99120102226"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-red-corsairs-upgrades-transfers",
+        "https://shop.afk.games/products/chaos-space-marines-red-corsairs-upgrades-transfers",
+        "https://obsidiangames.ca/products/chaos-space-marines-red-corsairs-upgrades-and-transfers",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-red-corsairs-upgrades-transfers",
+        "https://mrmuffinstrains.com/products/gw-43-112",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/red-corsairs-upgrades-and-transfers",
+        "https://radaddel.de/products/chaos-space-marines-red-corsairs-upgrades-and-transfers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "bandoliers",
+              "count": 3
+            },
+            {
+              "role": "team",
+              "name": "chainswords",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "hanging trophies",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
