@@ -21739,6 +21739,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Man-Skewer Boltboyz",
+      "productCodes": [
+        "99120209075"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/warhammer-day-anasta-malkorian-vampire-lord",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-man-skewer-boltboyz",
+        "https://shop.afk.games/products/orruk-warclans-man-skewer-boltboyz",
+        "https://obsidiangames.ca/products/orruk-warclans-man-skewer-boltboyz",
+        "https://mrmuffinstrains.com/products/gw-89-67",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/orruk-warclans-man-skewer-boltboyz",
+        "https://radaddel.de/products/orruk-warclans-man-skewer-boltboyz"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Man-skewer Boltboyz",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
