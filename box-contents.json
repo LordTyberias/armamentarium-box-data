@@ -24842,6 +24842,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Kingdom of Bretonnia - Battle Standard on Royal Pegasus",
+      "productCodes": [
+        "99122703002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-kingdom-of-bretonnia-battle-standard-on-royal-pegasus",
+        "https://www.irresistibleforce.com.au/products/battle-standard-bearer-on-royal-pegasus",
+        "https://shop.afk.games/products/kingdom-of-bretonnia-battle-standard-on-royal-pegasus",
+        "https://www.goblingaming.co.uk/products/warhammer-fantasy-the-old-world-kingdom-of-bretonnia-battle-standard-on-royal-pegasus"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Battle Standard Bearer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
