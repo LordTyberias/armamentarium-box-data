@@ -12038,6 +12038,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Attilan Rough Riders",
+      "productCodes": [
+        "99120105092"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-attilan-rough-riders",
+        "https://abyssgamestore.ca/products/astra-militarum-attilan-rough-riders-47-38",
+        "https://www.retrofixgames.com/products/warhammer-40k-attilan-rough-riders",
+        "https://shop.afk.games/products/astra-militarum-attilan-rough-riders",
+        "https://obsidiangames.ca/products/astra-militarum-attilan-rough-riders",
+        "https://www.goblingaming.co.uk/products/attilan-rough-riders",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-attilan-rough-riders",
+        "https://radaddel.de/products/astra-militarum-attilan-rough-riders"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Attilan Rough Riders",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
