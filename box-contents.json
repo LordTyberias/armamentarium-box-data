@@ -12675,6 +12675,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Astra Militarum - Battleforce",
+      "productCodes": [
+        "99120105149"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-astra-militarum-battleforce",
+        "https://www.retrofixgames.com/products/warhammer-40kastra-militarum-krieg-siege-platoon",
+        "https://www.goblingaming.co.uk/products/astra-militarum-krieg-siege-platoon-battleforce"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Krieg Command Squad miniatures",
+              "count": 7
+            },
+            {
+              "role": "team",
+              "name": "Artillery Teams",
+              "count": 2
+            },
+            {
+              "role": "team",
+              "name": "Death Korps of Krieg troopers",
+              "count": 20
+            }
+          ]
+        }
+      ]
     }
   ]
 }
