@@ -22611,6 +22611,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumineth Realm-Lords: Vanari Bladelords",
+      "productCodes": [
+        "99120210054"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/vanari-bladelords",
+        "https://www.goblingaming.co.uk/products/vanari-bladelords-lumineth-realm-lords",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-vanari-bladelords",
+        "https://radaddel.de/products/lumineth-realm-lords-vanari-bladelords"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Vanari Bladelords",
+              "count": 5
+            }
+          ]
+        }
+      ]
     }
   ]
 }
