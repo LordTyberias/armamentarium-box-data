@@ -21414,6 +21414,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Kroxigor",
+      "productCodes": [
+        "99120208032"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kroxigor",
+        "https://abyssgamestore.ca/products/seraphon-kroxigor-88-23",
+        "https://shop.afk.games/products/kroxigor",
+        "https://obsidiangames.ca/products/seraphon-kroxigor",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-seraphon-kroxigor-2023",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/seraphon-kroxigor",
+        "https://radaddel.de/products/seraphon-kroxigor"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Kroxigor",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
