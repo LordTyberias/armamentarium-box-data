@@ -26221,6 +26221,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Grand Cathay: Grand Cannon & Fire Rain Rocket Battery",
+      "productCodes": [
+        "99122720005"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/grand-cathay-grand-cannon-fire-rain-rocket-battery",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/grand-cathay-grand-cannon-and-fire-rain-rocket-battery"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "artillery pieces",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
