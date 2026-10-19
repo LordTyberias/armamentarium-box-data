@@ -155,4 +155,12 @@ public sealed class BuildSentencesTests
     {
         CollectionAssert.AreEqual(new[] { (10, "Iron Brothers") }, Read("<p>This kit constructs 10 Iron Brothers.</p>"));
     }
+
+    [TestMethod]
+    public void Parse_FillerAndAdditionInTheName_AreTidied()
+    {
+        CollectionAssert.AreEqual(
+            new[] { (1, "Blade Warden") },
+            Read("<p>This kit builds a Blade Warden model.</p><p>This kit builds 10 Easy to build Rust Wraiths.</p>"));
+    }
 }

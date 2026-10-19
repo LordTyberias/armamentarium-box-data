@@ -66,10 +66,9 @@ public static partial class BuildSentences
 
     private static Line? Read(Match match)
     {
-        var name = Text.Clean(match.Groups["name"].Value);
         var raw = match.Groups["count"].Value;
         var count = Words.TryGetValue(raw, out var word) ? word : int.Parse(raw);
-        return count < 1 || !ContentLines.IsModelName(name) || ContentLines.IsExcluded(name)
+        return count < 1 || ContentLines.Tidy(Text.Clean(match.Groups["name"].Value)) is not { } name
             ? null
             : new Line(count, name, ContentLines.IsNonPlayer(name), false);
     }

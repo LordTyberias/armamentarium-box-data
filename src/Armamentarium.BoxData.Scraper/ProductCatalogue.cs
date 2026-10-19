@@ -45,7 +45,7 @@ public static partial class ProductCatalogue
     /// <summary>Miniatures of the app's systems that no box holds yet: Kill Team first, then current, then code.</summary>
     public static IReadOnlyList<Product> Candidates(IReadOnlyList<Product> products, IReadOnlySet<string> known) =>
         products
-            .Where(p => p.Category == "miniatures" && ArticleNumber().IsMatch(p.Code) && !known.Contains(p.Code))
+            .Where(p => p.Category == "miniatures" && ArticleNumber().IsMatch(p.Code) && !known.Contains(p.Code) && !IsUpgradeSet(p.Name))
             .Where(p => ReadingsOf(p).Count > 0)
             .OrderBy(p => p.Systems.Contains("Kill Team") ? 0 : 1)
             .ThenBy(p => p.Status == "current" ? 0 : 1)
@@ -62,6 +62,9 @@ public static partial class ProductCatalogue
     public static bool IsCombatPatrol(Product product) =>
         product.Name.Contains("combat patrol", StringComparison.OrdinalIgnoreCase);
 
+    // Parts, weapons and icons without a whole model: no box contents (ADR 0003 Addendum ARMAM-610).
+    public static bool IsUpgradeSet(string name) => UpgradeSet().IsMatch(name);
+
     private static string? Text(JsonElement item, string name) =>
         item.TryGetProperty(name, out var value) && value.ValueKind == JsonValueKind.String ? value.GetString() : null;
 
@@ -71,4 +74,7 @@ public static partial class ProductCatalogue
 
     [GeneratedRegex(@"^[0-9]{8,14}\z")]
     private static partial Regex Ean();
+
+    [GeneratedRegex(@"\bupgrades?\b|\baccessories\b|\bsponsons?\b", RegexOptions.IgnoreCase)]
+    private static partial Regex UpgradeSet();
 }

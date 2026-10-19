@@ -85,4 +85,27 @@ public sealed class NameRepairTests
 
         Assert.AreEqual(0, NameRepair.Apply(table, Hosts).Renamed.Count);
     }
+
+    [TestMethod]
+    public void Apply_UpgradeSet_IsRemovedWhole()
+    {
+        var table = Table("shop.test", "Rust Wardens");
+        table["boxes"]![0]!["name"] = "Rust Templars: Upgrades and Transfers";
+
+        var repairs = NameRepair.Apply(table, Hosts);
+
+        Assert.AreEqual(0, table["boxes"]!.AsArray().Count);
+        CollectionAssert.AreEqual(new[] { "Rust Templars: Upgrades and Transfers" }, repairs.BoxesRemoved.ToArray());
+    }
+
+    [TestMethod]
+    public void Apply_ReaderRulesOfARMAM610_AreApplied()
+    {
+        var table = Table("shop.test", "Blade Warden model", "heavy bolters", "of the following miniatures", "sinister Gaunt Seer", "Iron Strider");
+
+        var repairs = NameRepair.Apply(table, Hosts);
+
+        CollectionAssert.AreEqual(new[] { "Blade Warden", "Gaunt Seer", "Iron Strider" }, Names(table));
+        Assert.AreEqual(2, repairs.Removed.Count);
+    }
 }
