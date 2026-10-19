@@ -10,10 +10,17 @@ namespace Armamentarium.BoxData.Scraper;
 public sealed record RootEntry(string CatalogueId, string EntryId);
 
 /// <summary>
-/// A catalogue repository the service reads ids from (ADR 0004): owner, repository and branch, or the latest release
-/// when <see cref="Branch"/> is null. The rows follow the app's BsDataEditionSources; a change there is a change here.
+/// A root entry a normalised name names, with its catalogue's name and whether that catalogue is the entry's home: it
+/// defines the entry, at its root, in its shared entries or in its library (ADR 0004 Addendum ARMAM-598).
 /// </summary>
-public sealed record CatalogueSource(string Reading, string Owner, string Repository, string? Branch);
+public sealed record Candidate(RootEntry Entry, string CatalogueName, bool Home);
+
+/// <summary>
+/// A catalogue repository the service reads ids from (ADR 0004): owner, repository and branch, or the latest release
+/// when <see cref="Branch"/> is null. The rows follow the app's BsDataEditionSources; a change there is a change here. A
+/// <see cref="Preferred"/> source wins a name that it and another source of the reading name (ADR 0004 Addendum ARMAM-598).
+/// </summary>
+public sealed record CatalogueSource(string Reading, string Owner, string Repository, string? Branch, bool Preferred = false);
 
 /// <summary>
 /// What the catalogues of a run say about ids the table already holds (ADR 0004 Addendum ARMAM-597): still a root entry
@@ -29,7 +36,7 @@ public enum IdState
 
 /// <summary>
 /// The root entries of the catalogues of every reading, by normalised name (ADR 0004). A name gets ids only when it
-/// names exactly one root entry of its reading; one name in two catalogues, or none, gets none.
+/// names one root entry of its reading, by the rules of <see cref="Find"/> (ADR 0004 Addendum ARMAM-598); otherwise none.
 /// </summary>
 public sealed partial class CatalogueIndex
 {
@@ -40,7 +47,7 @@ public sealed partial class CatalogueIndex
         new("40k", "BSData", "wh40k-11e", "main"),
         new("kt", "BSData", "wh40k-killteam", null),
         new("aos", "BSData", "age-of-sigmar-4th", null),
-        new("aos", "LordTyberias", "armamentarium-spearhead-data", "main"),
+        new("aos", "LordTyberias", "armamentarium-spearhead-data", "main", Preferred: true),
         new("tow", "vflam", "Warhammer-The-Old-World", null),
         new("hh", "BSData", "horus-heresy-3rd-edition", "main"),
     ];
@@ -50,26 +57,104 @@ public sealed partial class CatalogueIndex
 
     private readonly Dictionary<string, Dictionary<string, HashSet<RootEntry>>> _byReading = new(StringComparer.Ordinal);
     private readonly Dictionary<string, Dictionary<RootEntry, HashSet<string>>> _namesByReading = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, Dictionary<string, HashSet<string>>> _homesByReading = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, HashSet<RootEntry>> _preferredByReading = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, string> _catalogueNames = new(StringComparer.Ordinal);
     private readonly HashSet<string> _unavailable = new(StringComparer.Ordinal);
 
-    /// <summary>The ids for a model name, or null when the name names no root entry of the reading or more than one.</summary>
+    // The word a shop leaves off a unit's name ("Intercessors" for "Intercessor Squad").
+    private static readonly string[] UnitWords = ["squad", "mob", "unit", "pack", "band", "regiment", "team"];
+
+    /// <summary>
+    /// The ids for a model name (ADR 0004, Addendum ARMAM-598), from the first of these that names any root entry of the
+    /// reading: the name; the name with a unit word after it; the name without one or two words before it that the
+    /// catalogue's name carries ("Ork Boyz" for Boyz of the Orks); from two words, the root names that go on after it.
+    /// Of the root entries found, one; or the one from a preferred source; or, all being the same entry, its one home.
+    /// Null otherwise: no rule picks among different entries.
+    /// </summary>
     public RootEntry? Find(string reading, string name) =>
-        !_unavailable.Contains(reading)
-        && _byReading.TryGetValue(reading, out var names)
-        && names.TryGetValue(ContentLines.Normalize(name), out var entries)
-        && entries.Count == 1
-            ? entries.First()
-            : null;
+        !_unavailable.Contains(reading) && Named(reading, name) is { } entries ? Resolve(reading, entries) : null;
+
+    /// <summary>The root entries of the step of <see cref="Find"/> that names any, for the id report; empty for none.</summary>
+    public IReadOnlyList<Candidate> Candidates(string reading, string name) =>
+        Named(reading, name)?.Select(e => new Candidate(e, CatalogueName(e), IsHome(reading, e))).ToList() ?? [];
+
+    // The root entries of the first step that names any (Find), or null.
+    private IReadOnlyCollection<RootEntry>? Named(string reading, string name)
+    {
+        if (!_byReading.TryGetValue(reading, out var names))
+        {
+            return null;
+        }
+
+        var key = ContentLines.Normalize(name);
+        if (names.TryGetValue(key, out var entries))
+        {
+            return entries;
+        }
+
+        var withUnitWord = UnitWords.Select(w => names.GetValueOrDefault($"{key} {w}")).OfType<HashSet<RootEntry>>().SelectMany(e => e).ToHashSet();
+        if (withUnitWord.Count > 0)
+        {
+            return withUnitWord;
+        }
+
+        var words = key.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        for (var drop = 1; drop <= 2 && drop < words.Length; drop++)
+        {
+            var army = $" {string.Join(' ', words[..drop])} ";
+            if (names.TryGetValue(string.Join(' ', words[drop..]), out var rest)
+                && rest.Where(e => $" {ContentLines.Normalize(CatalogueName(e))} ".Contains(army, StringComparison.Ordinal)).ToList() is { Count: > 0 } inArmy)
+            {
+                return inArmy;
+            }
+        }
+
+        // ponytail: scans every root name of the reading; an index by first word if a run measurably slows.
+        if (words.Length >= 2)
+        {
+            var longer = names.Where(n => n.Key.StartsWith(key + " ", StringComparison.Ordinal)).SelectMany(n => n.Value).ToHashSet();
+            if (longer.Count > 0)
+            {
+                return longer;
+            }
+        }
+
+        return null;
+    }
 
     /// <summary>
     /// Holds ids the table carries against this run's root entries: the pair must still be a root entry of the reading and
-    /// the name one of its normalised names. A reading not read whole is not checked: a missing source could hold the pair.
+    /// the name one of its normalised names, or a name <see cref="Find"/> gives the pair. A reading not read whole is not
+    /// checked: a missing source could hold the pair.
     /// </summary>
     public IdState Check(string reading, RootEntry ids, string name) =>
         _unavailable.Contains(reading) || !_namesByReading.TryGetValue(reading, out var entries) ? IdState.Unchecked
         : !entries.TryGetValue(ids, out var names) ? IdState.Orphaned
-        : names.Contains(ContentLines.Normalize(name)) ? IdState.Valid
+        : names.Contains(ContentLines.Normalize(name)) || Find(reading, name) == ids ? IdState.Valid
         : IdState.Renamed;
+
+    private RootEntry? Resolve(string reading, IReadOnlyCollection<RootEntry> entries)
+    {
+        var preferred = _preferredByReading.GetValueOrDefault(reading);
+        var pool = entries.Where(e => preferred?.Contains(e) == true).ToList() is { Count: > 0 } fromPreferred ? fromPreferred : entries.ToList();
+        if (pool.Count == 1)
+        {
+            return pool[0];
+        }
+
+        // A unit of one army that others link at their root (Brood Brothers, Chaos legions): the army it belongs to.
+        var homes = pool.Where(e => IsHome(reading, e)).ToList();
+        return pool.Select(e => e.EntryId).Distinct(StringComparer.Ordinal).Count() == 1 && homes.Count == 1 ? homes[0] : null;
+    }
+
+    // The catalogue defines the entry, or its library does ("Imperium - Astra Militarum - Library").
+    private bool IsHome(string reading, RootEntry entry) =>
+        _homesByReading.GetValueOrDefault(reading)?.GetValueOrDefault(entry.EntryId) is { } definedIn
+        && CatalogueName(entry) is var name
+        && (definedIn.Contains(name) || definedIn.Contains($"{name} - Library") || definedIn.Contains($"{name} Library"));
+
+    private string CatalogueName(RootEntry entry) => _catalogueNames.GetValueOrDefault(entry.CatalogueId, entry.CatalogueId);
 
     /// <summary>A reading whose sources could not all be read gets no ids in this run: a missing source could hide a twin.</summary>
     public void MarkUnavailable(string reading) => _unavailable.Add(reading);
@@ -81,15 +166,15 @@ public sealed partial class CatalogueIndex
     /// Reads one catalogue file, BattleScribe XML (.cat) or JSON; a library or anything else adds nothing. False when the
     /// file cannot be read whole: not well-formed, a document type declaration, or an id outside the BattleScribe form.
     /// </summary>
-    public bool AddCatalogue(string reading, string fileName, byte[] content) =>
-        fileName.EndsWith(".cat", StringComparison.OrdinalIgnoreCase) ? AddXml(reading, content)
-        : !fileName.EndsWith(".json", StringComparison.OrdinalIgnoreCase) || AddJson(reading, content);
+    public bool AddCatalogue(string reading, string fileName, byte[] content, bool preferred = false) =>
+        fileName.EndsWith(".cat", StringComparison.OrdinalIgnoreCase) ? AddXml(reading, content, preferred)
+        : !fileName.EndsWith(".json", StringComparison.OrdinalIgnoreCase) || AddJson(reading, content, preferred);
 
     /// <summary>
     /// Reads every catalogue of a repository archive in memory; nothing is unpacked to disk. A file that is skipped or
     /// unreadable leaves the whole reading without ids for this run (logged): it could hold the twin of a name.
     /// </summary>
-    public void AddArchive(string reading, Stream zip, int maxEntryBytes, Action<string> log)
+    public void AddArchive(string reading, Stream zip, int maxEntryBytes, Action<string> log, bool preferred = false)
     {
         using var archive = new ZipArchive(zip, ZipArchiveMode.Read, leaveOpen: true);
         foreach (var entry in archive.Entries)
@@ -112,7 +197,7 @@ public sealed partial class CatalogueIndex
                 // The declared length can lie; the copy stops one byte past the limit.
                 CopyAtMost(stream, buffer, maxEntryBytes + 1);
                 problem = buffer.Length > maxEntryBytes ? "larger than declared"
-                    : !AddCatalogue(reading, entry.Name, buffer.ToArray()) ? "unreadable"
+                    : !AddCatalogue(reading, entry.Name, buffer.ToArray(), preferred) ? "unreadable"
                     : null;
             }
 
@@ -143,7 +228,7 @@ public sealed partial class CatalogueIndex
                 using var response = await http.SendAsync(request, cancellationToken);
                 response.EnsureSuccessStatusCode();
                 using var zip = new MemoryStream(await response.Content.ReadAsByteArrayAsync(cancellationToken));
-                index.AddArchive(source.Reading, zip, MaxEntryBytes, log);
+                index.AddArchive(source.Reading, zip, MaxEntryBytes, log, source.Preferred);
                 log($"{source.Reading}: read {source.Owner}/{source.Repository} at {reference}");
             }
             catch (Exception ex) when (ex is HttpRequestException or InvalidDataException or JsonException or KeyNotFoundException
@@ -187,7 +272,7 @@ public sealed partial class CatalogueIndex
         }
     }
 
-    private bool AddXml(string reading, byte[] content)
+    private bool AddXml(string reading, byte[] content, bool preferred)
     {
         XElement root;
         try
@@ -202,7 +287,18 @@ public sealed partial class CatalogueIndex
             return false;
         }
 
-        if (root.Name.LocalName != "catalogue" || (string?)root.Attribute("library") == "true")
+        if (root.Name.LocalName != "catalogue")
+        {
+            return true;
+        }
+
+        // Every entry a catalogue or library defines, at any depth: where a linked unit is at home.
+        foreach (var defined in root.Descendants().Where(e => e.Name.LocalName == "selectionEntry"))
+        {
+            AddHome(reading, Attr(defined, "id"), Attr(root, "name"));
+        }
+
+        if ((string?)root.Attribute("library") == "true")
         {
             return true;
         }
@@ -213,7 +309,7 @@ public sealed partial class CatalogueIndex
         {
             foreach (var child in container.Elements())
             {
-                valid &= Add(reading, Attr(root, "id"), child.Name.LocalName, Attr(child, "type"), Attr(child, "id"), Attr(child, "name"), Attr(child, "targetId"));
+                valid &= Add(reading, preferred, Attr(root, "id"), Attr(root, "name"), child.Name.LocalName, Attr(child, "type"), Attr(child, "id"), Attr(child, "name"), Attr(child, "targetId"));
             }
         }
 
@@ -222,7 +318,7 @@ public sealed partial class CatalogueIndex
         static string? Attr(XElement element, string name) => (string?)element.Attribute(name);
     }
 
-    private bool AddJson(string reading, byte[] content)
+    private bool AddJson(string reading, byte[] content, bool preferred)
     {
         JsonDocument document;
         try
@@ -238,8 +334,13 @@ public sealed partial class CatalogueIndex
         {
             if (document.RootElement.ValueKind != JsonValueKind.Object
                 || !document.RootElement.TryGetProperty("catalogue", out var catalogue)
-                || catalogue.ValueKind != JsonValueKind.Object
-                || Scalar(catalogue, "library") == "true")
+                || catalogue.ValueKind != JsonValueKind.Object)
+            {
+                return true;
+            }
+
+            AddHomes(catalogue, Scalar(catalogue, "name"));
+            if (Scalar(catalogue, "library") == "true")
             {
                 return true;
             }
@@ -254,11 +355,38 @@ public sealed partial class CatalogueIndex
 
                 foreach (var child in children.EnumerateArray().Where(c => c.ValueKind == JsonValueKind.Object))
                 {
-                    valid &= Add(reading, Scalar(catalogue, "id"), element, Scalar(child, "type"), Scalar(child, "id"), Scalar(child, "name"), Scalar(child, "targetId"));
+                    valid &= Add(reading, preferred, Scalar(catalogue, "id"), Scalar(catalogue, "name"), element, Scalar(child, "type"), Scalar(child, "id"), Scalar(child, "name"), Scalar(child, "targetId"));
                 }
             }
 
             return valid;
+        }
+
+        // Every entry the catalogue defines, at any depth, as in the XML.
+        void AddHomes(JsonElement element, string? catalogueName)
+        {
+            if (element.ValueKind == JsonValueKind.Array)
+            {
+                foreach (var item in element.EnumerateArray())
+                {
+                    AddHomes(item, catalogueName);
+                }
+            }
+            else if (element.ValueKind == JsonValueKind.Object)
+            {
+                foreach (var property in element.EnumerateObject())
+                {
+                    if (property.Name is "selectionEntries" or "sharedSelectionEntries" && property.Value.ValueKind == JsonValueKind.Array)
+                    {
+                        foreach (var entry in property.Value.EnumerateArray().Where(e => e.ValueKind == JsonValueKind.Object))
+                        {
+                            AddHome(reading, Scalar(entry, "id"), catalogueName);
+                        }
+                    }
+
+                    AddHomes(property.Value, catalogueName);
+                }
+            }
         }
 
         // BattleScribe JSON writes some attributes as strings and some as booleans; both read as text.
@@ -272,7 +400,27 @@ public sealed partial class CatalogueIndex
     // A root selectionEntry of type unit or model, or a root entryLink to a selectionEntry (its own name, its target).
     // An id outside the forms the sources use (BSData's hex groups with dashes, the Spearhead repository's
     // "sph::box::01-name") makes the file unreadable: it would go into the table unchecked.
-    private bool Add(string reading, string? catalogueId, string element, string? type, string? id, string? name, string? targetId)
+    private void AddHome(string reading, string? entryId, string? catalogueName)
+    {
+        if (entryId is null || catalogueName is null)
+        {
+            return;
+        }
+
+        if (!_homesByReading.TryGetValue(reading, out var homes))
+        {
+            _homesByReading[reading] = homes = new(StringComparer.Ordinal);
+        }
+
+        if (!homes.TryGetValue(entryId.Trim(), out var catalogues))
+        {
+            homes[entryId.Trim()] = catalogues = new(StringComparer.Ordinal);
+        }
+
+        catalogues.Add(catalogueName.Trim());
+    }
+
+    private bool Add(string reading, bool preferred, string? catalogueId, string? catalogueName, string element, string? type, string? id, string? name, string? targetId)
     {
         var entryId = element switch
         {
@@ -305,6 +453,21 @@ public sealed partial class CatalogueIndex
 
         var root = new RootEntry(catalogueId, entryId);
         entries.Add(root);
+        if (catalogueName is not null)
+        {
+            _catalogueNames.TryAdd(catalogueId, catalogueName.Trim());
+        }
+
+        if (preferred)
+        {
+            if (!_preferredByReading.TryGetValue(reading, out var fromPreferred))
+            {
+                _preferredByReading[reading] = fromPreferred = [];
+            }
+
+            fromPreferred.Add(root);
+        }
+
         if (!_namesByReading.TryGetValue(reading, out var byEntry))
         {
             _namesByReading[reading] = byEntry = [];

@@ -84,15 +84,18 @@ public static partial class BuildSentences
 
     private const string Number = @"(?<![\p{L}\p{N}])(?<count>[0-9]{1,3}(?![0-9])|" + NumberWords + "|" + ArticleWords + ")";
 
-    // Words that end a name: the next clause ("with …", "which …"), a further count, the German verb.
+    // Words that end a name: the next clause ("with …", "which …", "accompanied by …", "usable by …"), a further count,
+    // the German verb.
     private const string Stop =
-        "(?:with|which|that|from|for|or|and|plus|as|along|using|including|to|on|each|armed|mit|und|sowie|oder|aus|" +
+        "(?:with|which|that|from|for|or|and|plus|as|along|using|including|to|on|each|armed|accompanied|usable|" +
+        "mit|und|sowie|oder|aus|" +
         "für|bauen|baust|kannst|du|als|" + NumberWords + "|" + ArticleWords + ")";
 
     // A name of letters, taken whole: followed by a count it was an adjective ("a whopping 20 …" names no model called
     // "whopping"), and no shorter part of it is tried instead.
+    // "2 accompanying Neuroloids": the word says how they come and is no part of the name (ADR 0004 Addendum ARMAM-598).
     private const string Name =
-        @"(?<name>(?>(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*(?:\s+(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*)*))(?!\s*[0-9])";
+        @"(?:accompanying\s+)?(?<name>(?>(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*(?:\s+(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*)*))(?!\s*[0-9])";
 
     [GeneratedRegex(
         @"\b(?:builds?|assembles?|makes?|constructs?)\s+(?:(?:a|an)\s+(?:squad|set|unit|team|kit|group)\s+of\s+)?" + Number + @"\s+" + Name +

@@ -17,12 +17,16 @@ namespace Armamentarium.BoxData.Scraper;
 ///                    then takes a comma-separated list (ADR 0003 addendum ARMAM-602)
 ///   --notify-failure mails that a run failed, from what systemd hands an OnFailure= unit; nothing else (ADR 0003 Addendum
 ///                    ARMAM-600)
+///   --id-report      reads the table and the catalogues without a token, asks no shop, writes nothing; prints per reading
+///                    the gaps with their reason, the gaps a run would now fill and the names it would repair (ADR 0004
+///                    Addendum ARMAM-598)
 /// </summary>
 public static class Program
 {
     public static async Task<int> Main(string[] args)
     {
-        var dryRun = args.Contains("--dry-run");
+        var idReport = args.Contains("--id-report");
+        var dryRun = args.Contains("--dry-run") || idReport;
         var autoMerge = args.Contains("--auto-merge");
         var codeAt = Array.IndexOf(args, "--code");
         var onlyCode = codeAt >= 0 && codeAt + 1 < args.Length ? args[codeAt + 1] : null;
@@ -63,6 +67,17 @@ public static class Program
             if (dryRun)
             {
                 repository = new DryRunRepository(repository, Log);
+            }
+
+            if (idReport)
+            {
+                var (text, _) = await repository.GetTableAsync(stop.Token);
+                IdReport.Write(
+                    Table.Read(text),
+                    await CatalogueIndex.LoadAsync(github, Log, stop.Token),
+                    Sources.All.Select(s => s.Host).ToHashSet(StringComparer.OrdinalIgnoreCase),
+                    Log);
+                return 0;
             }
 
             var statePath = dryRun ? null : Path.Combine(Required("STATE_DIRECTORY"), "state.json");

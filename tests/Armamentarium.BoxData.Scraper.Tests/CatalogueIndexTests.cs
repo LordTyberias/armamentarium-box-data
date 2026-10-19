@@ -81,6 +81,137 @@ public sealed class CatalogueIndexTests
         Assert.IsNull(index.Find("40k", "Captain"));
     }
 
+    // Brood Brothers: Genestealer Cults link the unit of another army at their root (ADR 0004 Addendum ARMAM-598).
+    private const string Linking = """
+        <catalogue id="cat-cult" name="Cult" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+          <entryLinks>
+            <entryLink id="el-captain" name="Captain" targetId="se-captain" type="selectionEntry"/>
+            <entryLink id="el-guard" name="Guard Squad" targetId="se-guard" type="selectionEntry"/>
+          </entryLinks>
+        </catalogue>
+        """;
+
+    // As BSData keeps most units: the army links the entry at its root, its library defines it.
+    private const string Army = """
+        <catalogue id="cat-army" name="Imperium - Army" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+          <entryLinks>
+            <entryLink id="el-guard" name="Guard Squad" targetId="se-guard" type="selectionEntry"/>
+          </entryLinks>
+        </catalogue>
+        """;
+
+    private const string ArmyLibrary = """
+        <catalogue id="cat-army-lib" name="Imperium - Army - Library" library="true" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+          <sharedSelectionEntries>
+            <selectionEntry type="unit" id="se-guard" name="Guard Squad"/>
+          </sharedSelectionEntries>
+        </catalogue>
+        """;
+
+    private static CatalogueIndex Index(params (string File, string Xml)[] catalogues)
+    {
+        var index = new CatalogueIndex();
+        foreach (var (file, xml) in catalogues)
+        {
+            index.AddCatalogue("40k", file, Bytes(xml));
+        }
+
+        return index;
+    }
+
+    [TestMethod]
+    public void SameEntryInItsHomeAndLinkedElsewhere_TheHomeWins()
+    {
+        var index = Index(("Iron Brothers.cat", Xml), ("Cult.cat", Linking));
+
+        Assert.AreEqual(new RootEntry("cat-iron", "se-captain"), index.Find("40k", "Captain"));
+    }
+
+    [TestMethod]
+    public void SameEntryDefinedInALibrary_TheCatalogueOfThatLibraryWins()
+    {
+        var index = Index(("Army.cat", Army), ("Army Library.cat", ArmyLibrary), ("Cult.cat", Linking));
+
+        Assert.AreEqual(new RootEntry("cat-army", "se-guard"), index.Find("40k", "Guard Squad"));
+    }
+
+    [TestMethod]
+    public void SameEntryWithoutAHome_IsNoHit()
+    {
+        var index = Index(("Cult.cat", Linking), ("Other Cult.cat", Linking.Replace("cat-cult", "cat-other")));
+
+        Assert.IsNull(index.Find("40k", "Captain"));
+    }
+
+    [TestMethod]
+    public void PreferredSource_WinsOverTheOthers()
+    {
+        var index = new CatalogueIndex();
+        index.AddCatalogue("aos", "Iron Brothers.cat", Bytes(Xml));
+        index.AddCatalogue("aos", "Spear.cat", Bytes(Xml.Replace("cat-iron", "sph-catalogue::iron").Replace("se-captain", "sph::box::01-captain")), preferred: true);
+
+        Assert.AreEqual(new RootEntry("sph-catalogue::iron", "sph::box::01-captain"), index.Find("aos", "Captain"));
+    }
+
+    [TestMethod]
+    public void NameWithoutTheUnitWord_FindsTheSquad()
+    {
+        var index = Index(("Army.cat", Army), ("Army Library.cat", ArmyLibrary));
+
+        Assert.AreEqual(new RootEntry("cat-army", "se-guard"), index.Find("40k", "Guards"));
+    }
+
+    [TestMethod]
+    public void NameWithTheArmyBeforeIt_FindsItInThatArmy()
+    {
+        var index = Index(("Army.cat", Army), ("Army Library.cat", ArmyLibrary), ("Iron Brothers.cat", Xml));
+
+        Assert.AreEqual(new RootEntry("cat-army", "se-guard"), index.Find("40k", "Army Guard Squad"));
+        Assert.IsNull(index.Find("40k", "Cult Captain"));
+    }
+
+    [TestMethod]
+    public void CatalogueNameStartingWithTheName_CountsFromTwoWords()
+    {
+        var index = Index(("Iron Brothers.cat", Xml.Replace("name=\"Line Troopers\"", "name=\"Line Troopers with Banner\"")));
+
+        Assert.AreEqual(new RootEntry("cat-iron", "lib-troopers"), index.Find("40k", "Line Troopers"));
+        Assert.IsNull(index.Find("40k", "Line"));
+    }
+
+    [TestMethod]
+    public void Check_IdsSetByARule_AreValid()
+    {
+        var index = Index(("Army.cat", Army), ("Army Library.cat", ArmyLibrary));
+
+        Assert.AreEqual(IdState.Valid, index.Check("40k", new RootEntry("cat-army", "se-guard"), "Army Guard Squad"));
+    }
+
+    [TestMethod]
+    public void Candidates_NameEveryRootEntryWithCatalogueAndWhetherItIsTheHome()
+    {
+        var index = Index(("Iron Brothers.cat", Xml), ("Cult.cat", Linking));
+
+        var candidates = index.Candidates("40k", "Captains").OrderBy(c => c.Entry.CatalogueId, StringComparer.Ordinal).ToList();
+
+        CollectionAssert.AreEqual(
+            new[]
+            {
+                new Candidate(new RootEntry("cat-cult", "se-captain"), "Cult", false),
+                new Candidate(new RootEntry("cat-iron", "se-captain"), "Iron Brothers", true),
+            },
+            candidates);
+        Assert.AreEqual(0, index.Candidates("40k", "Nobody").Count);
+    }
+
+    [TestMethod]
+    public void Candidates_FollowTheStepsOfFind()
+    {
+        var index = Index(("Army.cat", Army), ("Army Library.cat", ArmyLibrary));
+
+        Assert.AreEqual(new RootEntry("cat-army", "se-guard"), index.Candidates("40k", "Guards").Single().Entry);
+    }
+
     [TestMethod]
     public void OperativeWordsAndPlural_AreIgnored()
     {
