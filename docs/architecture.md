@@ -44,11 +44,12 @@ and ADR 0004:
 - Its own .NET 10 project **in this repository**, not part of `Armamentarium.slnx`, never shipped with the app.
 - Runs on the 1st and the 15th of every month on the project's own server (systemd timer).
 - Changes the table **only through a pull request**. With `--auto-merge` (ADR 0004) it merges each one itself, except the
-  draft of orphaned ids (ADR 0004 Addendum ARMAM-597), until the maintainer removes the switch; without it, it never merges and the merge is the hand check.
+  drafts of orphaned ids and of name repairs (ADR 0004 Addenda ARMAM-597, ARMAM-598), until the maintainer removes the switch; without it, it never merges and the merge is the hand check.
 - Write access through a fine-grained token scoped to this repository only (contents and pull requests), without expiry
   (ADR 0004), stored outside every repository, never logged.
 - Catalogue ids from the catalogues of a compiled allowlist of repositories (ADR 0004 §3), downloaded every run, with or
-  without `--auto-merge`; every run first checks the ids the table holds against them (ADR 0004 Addendum ARMAM-597).
+  without `--auto-merge`; every run first gives the gaps of its own boxes their ids and then checks the ids the table
+  holds against them (ADR 0004 Addenda ARMAM-597, ARMAM-598).
 - Candidates from warhub-catalog `products.json`, one request per run to a compiled address (ADR 0003 §4).
 - Sources from a compiled allowlist, no open search, measured with the `--host` probe before they enter (ADR 0003
   Addendum ARMAM-602); at most one request per five seconds and host (ADR 0003 §6; no host needs the per-minute interval
@@ -59,11 +60,11 @@ and ADR 0004:
 - Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
   ARMAM-599), never from part counts.
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
-  a ready one with the ids of exactly one name hit, merged at once (a merge refused with 405 is tried again, ADR 0004
+  a ready one with the ids of the one root entry a name names (ADR 0004 Addendum ARMAM-598), merged at once (a merge refused with 405 is tried again, ADR 0004
   Addendum ARMAM-603).
 - Besides, at most one draft `scraper/stale-ids` that removes orphaned ids (an id naming no root entry of its reading any
   more); never merged by the service, also with `--auto-merge`, and counted among the five open (ADR 0004 Addendum ARMAM-597).
-- Before that, one pull request `scraper/backfill-ids` that gives the gaps of boxes it wrote the ids their names now name,
+- At the start of a run, before the id check, one pull request `scraper/backfill-ids` that gives the gaps of boxes it wrote the ids their names now name,
   merged like a box; after it, one draft `scraper/fix-names` that repairs names read before the reader's fixes, never merged
   (ADR 0004 Addendum ARMAM-598). `--id-report` prints the gaps per reading with their reason and changes nothing.
 - Mails the maintainer (ADR 0003 Addendum ARMAM-600): a failed run through `OnFailure=` and the failure unit
