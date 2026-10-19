@@ -166,7 +166,7 @@ stopped by the timeout would lose it).
   with `--auto-merge`, a draft without it, counted among the five open. A box whose sources are not all allowlisted shops
   was written by hand; its gaps are decisions ("name without id", Armamentarium ADR 0118 Addendum ARMAM-588) and stay. This
   also gives a gap the merged `scraper/stale-ids` left the ids its name names now: a moved id is set again.
-- **Names repaired:** the build sentence reader ends a name at "accompanied", "usable" and "by" and drops a leading
+- **Names repaired:** the build sentence reader ends a name at "accompanied" and "usable" and drops a leading
   "accompanying"; "boards" is excluded like "board". Names written before stay wrong, so every run applies these fixes to
   the gaps of service boxes in one draft `scraper/fix-names`: a clause cut, an excluded or description-only name removed, a
   reading left without entries removed, a box left without readings removed whole (the schema asks for one; the next run
