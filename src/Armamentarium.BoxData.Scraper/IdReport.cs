@@ -5,7 +5,7 @@ namespace Armamentarium.BoxData.Scraper;
 /// <summary>
 /// What the catalogues of a run say about the table's ids (ADR 0004 Addendum ARMAM-598), for <c>--id-report</c>: per reading
 /// the entries with and without ids, every gap's name with the reason it has none (no root entry, or several with their
-/// catalogues and whether each defines or links the entry), the gaps a run would now fill, and the names it would repair.
+/// catalogues and whether each is the entry's home), the gaps a run would now fill, and the names it would repair.
 /// Reads only; one line per normalised name, the most frequent first.
 /// </summary>
 public static class IdReport
@@ -44,7 +44,7 @@ public static class IdReport
                      (g.InServiceBoxes < g.Count ? $", {g.Count - g.InServiceBoxes} in hand boxes stay gaps" : ""));
             Section("ambiguous", names.Where(g => g.Hit is null && g.Candidates.Count > 0).ToList(),
                 g => string.Join("; ", g.Candidates.OrderBy(c => c.CatalogueName, StringComparer.Ordinal)
-                    .Select(c => $"{c.CatalogueName} {c.Entry.CatalogueId} {c.Entry.EntryId} {(c.Defined ? "defined" : "linked")}")));
+                    .Select(c => $"{c.CatalogueName} {c.Entry.CatalogueId} {c.Entry.EntryId} {(c.Home ? "home" : "linked")}")));
             Section("no hit", names.Where(g => g.Candidates.Count == 0).ToList(), g => g.Key);
         }
 

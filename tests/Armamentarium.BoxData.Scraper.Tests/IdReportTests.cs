@@ -45,7 +45,7 @@ public sealed class IdReportTests
 
         CollectionAssert.Contains(log, "== 40k: 4 entries, 0 with ids, 4 gaps");
         CollectionAssert.Contains(log, "  1 x Captains | cat-iron se-captain");
-        CollectionAssert.Contains(log, "  1 x Troopers | Iron Brothers cat-iron se-troopers defined; Rust Brothers cat-rust se-rust-troopers defined");
+        CollectionAssert.Contains(log, "  1 x Troopers | Iron Brothers cat-iron se-troopers home; Rust Brothers cat-rust se-rust-troopers home");
         CollectionAssert.Contains(log, "  1 x Wizard | wizard");
         CollectionAssert.Contains(log, "== name repair: 0 renamed, 1 removed, 0 box(es) removed");
     }
