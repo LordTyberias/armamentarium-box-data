@@ -89,8 +89,8 @@ An edition without a reading falls back to the app's name-based candidates.
 An entry carries either `catalogueId` with `entryId`, or `catalogueId` with `choice`, or neither. An entry with neither
 is a name and a model count only: the box holds these models, but no catalogue entry of this reading matches them. It is
 shown, not addable. Ids are never guessed from a similar name. The one exception is the scraper service while it merges
-by itself (`docs/adr/0004-auto-merge-and-ids-by-name.md`): it sets ids where an entry's name names exactly one catalogue
-root entry of its reading.
+by itself (`docs/adr/0004-auto-merge-and-ids-by-name.md`): it sets ids where an entry's name names one catalogue root
+entry of its reading (rules of a hit: ADR 0004, Addendum ARMAM-598).
 
 A `choice` option may share its `entryId` with a fixed entry of the same reading (two Aspirants fixed, a third model
 free): the fixed entry counts its own models, the choice counts the remaining freely built ones.
@@ -98,7 +98,7 @@ free): the fixed entry counts its own models, the choice counts the remaining fr
 A kit counts as a unit of a reading only when the box holds exactly that unit's models. A box whose models differ from
 the unit (the Sanctifier kit holds a Confessor and a Cherub the 40k unit has no place for) is name and count only, even
 when an entry of the same name exists. Rows the scraper merges with `--auto-merge` are not checked for this: a name that
-names exactly one entry gets its ids whatever the model count (ADR 0004, Consequences).
+names one entry (ADR 0004, Addendum ARMAM-598) gets its ids whatever the model count (ADR 0004, Consequences).
 
 ### What goes in
 
