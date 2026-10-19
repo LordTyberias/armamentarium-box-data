@@ -32,8 +32,9 @@ The table, the schema and the README form **one contract**. A change to one that
   a reading it does not know. A Kill Team product gets `kt` only from the service (ADR 0002, Addendum ARMAM-601).
 - **No guessed data.** Catalogue ids come from the catalogues, never from a similar name; counts come from at least two
   sources, disagreement is recorded as `countCandidates`. One named exception (ADR 0004): while the service runs with
-  `--auto-merge`, it sets ids where an entry's name names exactly one root entry of its reading; the same hit picks a
-  build sentence over a source's lines and lets two names of one entry confirm each other (ADR 0003 Addendum ARMAM-599).
+  `--auto-merge`, it sets ids where an entry's name names one root entry of its reading (ADR 0004, rules of a hit in
+  Addendum ARMAM-598); the same hit picks a build sentence over a source's lines and lets two names of one entry confirm
+  each other (ADR 0003 Addendum ARMAM-599).
 
 ## 4 — Scraper service
 
@@ -62,6 +63,9 @@ and ADR 0004:
   Addendum ARMAM-603).
 - Besides, at most one draft `scraper/stale-ids` that removes orphaned ids (an id naming no root entry of its reading any
   more); never merged by the service, also with `--auto-merge`, and counted among the five open (ADR 0004 Addendum ARMAM-597).
+- Before that, one pull request `scraper/backfill-ids` that gives the gaps of boxes it wrote the ids their names now name,
+  merged like a box; after it, one draft `scraper/fix-names` that repairs names read before the reader's fixes, never merged
+  (ADR 0004 Addendum ARMAM-598). `--id-report` prints the gaps per reading with their reason and changes nothing.
 - Mails the maintainer (ADR 0003 Addendum ARMAM-600): a failed run through `OnFailure=` and the failure unit
   (`--notify-failure`), a run's notices at its end; through the mailbox and the password credential of the Armamentarium
   web services, nothing from the journal.

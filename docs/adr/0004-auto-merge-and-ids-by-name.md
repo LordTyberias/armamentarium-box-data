@@ -14,6 +14,12 @@ without the switch, and the ids the table already holds are checked against them
 **Changed by Addendum ARMAM-603:** §1 "merged at once": a merge GitHub refuses with 405 is tried again, three times in
 all, five seconds apart.
 
+**Changed by Addendum ARMAM-598:** §2 "exactly one" pair: a name names a root entry also through a unit word, an army
+before it or a longer root name, and of several pairs the preferred source's or the entry's home wins; Addendum ARMAM-597
+"No widening of the named exception" and "Moved ids are not set again": gaps of service boxes get the ids their names name
+in every run (`scraper/backfill-ids`), a moved id among them, and names read before the reader's fixes are repaired in a
+never-merged draft (`scraper/fix-names`).
+
 ## Context
 
 The service runs on the server since 2026-10-17 (ARMAM-593). Its drafts wait for the maintainer to add catalogue ids,
@@ -134,3 +140,42 @@ stopped by the timeout would lose it).
 - Rejected: **waiting before every merge** (costs every merge for two in 24); **asking GitHub for `mergeable` first** (one
   more request per box and the same wait when it is not yet known); **matching the message text** (GitHub's wording is not
   a contract).
+
+## Addendum ARMAM-598 — which root entry a name names, gaps get ids, names repaired (2026-10-19)
+
+- **Measured** with the new switch `--id-report` (reads the table and the catalogues without a token, asks no shop, writes
+  nothing; per reading the gaps with their reason, the gaps a run would fill, the names it would repair) on the table after
+  the full run of 2026-10-18 (984 boxes, 1857 entries, 460 with ids: `40k` 325 of 778, `kt` 87 of 122, `hh` 16 of 177,
+  `aos` 27 of 631, `tow` 5 of 149). Of the gaps, 76 in `40k`, 402 in `aos` and 64 in `tow` named several root entries.
+  The kinds, counted with the catalogues: the same entry linked at the root of several armies (Brood Brothers, Chaos
+  legions, Aeldari and Drukhari, The Old World's armies of infamy), the unit defined in one army's library or shared
+  entries and every root a link (no root defined it: the rule first considered here, "the catalogue that defines it at its
+  root wins", found none); an `aos` name in Age of Sigmar 4th and in the own Spearhead repository (236); different entries.
+  Names without a hit mostly leave off a unit word ("Intercessors" for "Intercessor Squad") or put the army before the name
+  ("Ork Boyz").
+- **Rules of a hit** (`CatalogueIndex.Find`), each from the first step that names any root entry: the name (§2); the name
+  with a unit word after it (`squad`, `mob`, `unit`, `pack`, `band`, `regiment`, `team`); the name without one or two words
+  before it that the catalogue's name carries ("Ork Boyz" for Boyz of the Orks); from two words, the root names that go on
+  after it ("Traitor Guardsmen" for "Traitor Guardsmen Squad"). Of the root entries found: the one; else the one from the
+  preferred source, the own Spearhead repository (`CatalogueSource.Preferred`); else, all being the same entry, its one
+  home: the catalogue that defines it at any depth or whose library ("<name> - Library", "<name> Library") does. Different
+  entries stay a gap. The same hit picks build sentences and matches sources (ADR 0003 Addendum ARMAM-599); an id a rule
+  set counts as valid in the id check. Measured gain: 488 gaps (`40k` 90, `aos` 314, `tow` 72, `hh` 12).
+- **Gaps get ids:** at the start of every run with catalogues, before the id check, the gaps (fixed entries without ids) of
+  boxes the service wrote get the ids their names now name, in one pull request `scraper/backfill-ids`; merged like a box
+  with `--auto-merge`, a draft without it, counted among the five open. A box whose sources are not all allowlisted shops
+  was written by hand; its gaps are decisions ("name without id", Armamentarium ADR 0118 Addendum ARMAM-588) and stay. This
+  also gives a gap the merged `scraper/stale-ids` left the ids its name names now: a moved id is set again.
+- **Names repaired:** the build sentence reader ends a name at "accompanied", "usable" and "by" and drops a leading
+  "accompanying"; "boards" is excluded like "board". Names written before stay wrong, so every run applies these fixes to
+  the gaps of service boxes in one draft `scraper/fix-names`: a clause cut, an excluded or description-only name removed, a
+  reading left without entries removed, a box left without readings removed whole (the schema asks for one; the next run
+  proposes it again). Never merged by the service, also with `--auto-merge`; counted among the five open. Measured: 4 renamed
+  ("Vespid Stingwings accompanied by", "accompanying Neuroloids", two "Endless Spells usable by …"), 15 removed (shoulder
+  pads, heads, a gaming board, "Push-fit").
+- **Named exception widened** in Armamentarium's `CLAUDE.md` (Armamentarium ADR 0118 Addendum ARMAM-598).
+- Decisions of the maintainer. Rejected: ids by the most similar name (§ Rejected stays); a one-off backfill; the backfill
+  in every box pull request; the backfill for boxes written by hand; repairs merged by the service; Age of Sigmar 4th
+  before Spearhead; no rule for the same entry in several armies; "root names that go on after it" for one-word names
+  ("Nob", "Archaon"). Further reader noise the report shows (parts of upgrade sets, sentence rests such as "of the following
+  miniatures") goes to a follow-up ticket.
