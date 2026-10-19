@@ -80,10 +80,10 @@ public sealed class ContentLinesTests
     }
 
     [TestMethod]
-    public void IsExcluded_PluralBoards_IsExcluded()
+    public void Tidy_PluralBoards_IsNoModel()
     {
-        Assert.IsTrue(ContentLines.IsExcluded("30\" by 22.4\" double-sided gaming boards"));
-        Assert.IsTrue(ContentLines.IsExcluded("gaming board"));
+        Assert.IsNull(ContentLines.Tidy("30\" by 22.4\" double-sided gaming boards"));
+        Assert.IsNull(ContentLines.Tidy("gaming board"));
     }
 
     [TestMethod]
@@ -201,5 +201,54 @@ public sealed class ContentLinesTests
     public void Parse_PartsAndHeads_AreDropped()
     {
         Assert.AreEqual(0, ContentLines.Parse("<ul><li>24x Köpfe</li><li>16x shoulder pads</li><li>70 x Kunststoffteile</li></ul>").Count);
+    }
+
+    [TestMethod]
+    public void Parse_HandWeaponsAndGear_AreDropped()
+    {
+        var lines = ContentLines.Parse(
+            "<ul><li>2x heavy bolters</li><li>1x chainsword</li><li>8x Boltguns</li><li>8x Bolt pistols</li><li>6x Backpacks</li>" +
+            "<li>5x combi-weapons</li><li>2x power fists</li><li>1x reaper chaincannon</li><li>1x shovel</li><li>1x flamer</li><li>5x Rust Terminators</li></ul>");
+
+        CollectionAssert.AreEqual(new[] { "Rust Terminators" }, lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_ModelsNamedLikeWeaponsOrFillers_AreKept()
+    {
+        var lines = ContentLines.Parse(
+            "<ul><li>1x Captain with Thunder Hammer</li><li>1x Rust Gunner w/ Meltagun</li><li>3x Flamers of Rust</li><li>1x Grand Cannon</li>" +
+            "<li>3x Plague Drones of Rust</li><li>1x Captain in Gravis Armour</li><li>1x Lord on Rust Steed</li></ul>");
+
+        CollectionAssert.AreEqual(
+            new[] { "Captain with Thunder Hammer", "Rust Gunner w/ Meltagun", "Flamers of Rust", "Grand Cannon", "Plague Drones of Rust", "Captain in Gravis Armour", "Lord on Rust Steed" },
+            lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_FillerNames_AreDropped()
+    {
+        var lines = ContentLines.Parse(
+            "<ul><li>1x model</li><li>5x models</li><li>1x of the following miniatures</li><li>1x of the squad into</li>" +
+            "<li>10x Easy</li><li>1x mounted</li><li>1x atop</li><li>3x crew</li><li>2x additional crew</li><li>2x Sergeants</li>" +
+            "<li>2x Drones</li><li>1x can be assembled</li><li>1x of Rust</li><li>2x double-sided Killzone tiles</li><li>5x Line Troopers</li></ul>");
+
+        CollectionAssert.AreEqual(new[] { "Line Troopers" }, lines.Select(l => l.Name).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_AdditionsToAName_AreCut()
+    {
+        var lines = ContentLines.Parse(
+            "<ul><li>1x Blade Warden model</li><li>10x Rust Wardens in</li><li>3x Hammerers wielding meteoric hammers</li>" +
+            "<li>1x Lord-Seer with 1x Rust-crow</li><li>1x Autarch equipped</li><li>1x sinister Gaunt Seer</li>" +
+            "<li>10x mounted Rust Knights</li><li>1x unit of Dark Reapers</li><li>5x Rust Guard in several different poses</li>" +
+            "<li>3x Praetors wearing thunder armour</li><li>1x Archon clad in rust armour inscribed</li><li>3x Rust Wasps accompanied by</li>" +
+            "<li>5x metal Rust Yeomen miniatures mounted</li><li>1x blade and cleaver for the Champion</li></ul>");
+
+        CollectionAssert.AreEqual(
+            new[] { "Blade Warden", "Rust Wardens", "Hammerers", "Lord-Seer", "Autarch", "Gaunt Seer", "Rust Knights", "Dark Reapers",
+                "Rust Guard", "Praetors", "Archon", "Rust Wasps", "Rust Yeomen", "blade and cleaver for the Champion" },
+            lines.Select(l => l.Name).ToArray());
     }
 }

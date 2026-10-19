@@ -782,4 +782,16 @@ public sealed class RunnerTests
         StringAssert.Contains(proposal.Table, "\"name\": \"Seers\"");
         StringAssert.Contains(proposal.Body, "Seers accompanied by");
     }
+
+    [TestMethod]
+    public async Task Run_UpgradeSetInTheTable_IsRemovedAndSaidNotToComeBack()
+    {
+        var (repo, _, _) = await Run(
+            [], TwoShops(), new FakeRepository { Text = Table.Replace("\"Kill Team: Known\"", "\"Kill Team: Known Upgrades\"") },
+            autoMerge: true, catalogues: Blades());
+
+        var proposal = repo.Proposals.Single();
+        Assert.AreEqual(Runner.FixNamesBranch, proposal.Branch);
+        StringAssert.Contains(proposal.Body, "Upgrade set removed, not proposed again: `Kill Team: Known Upgrades`");
+    }
 }

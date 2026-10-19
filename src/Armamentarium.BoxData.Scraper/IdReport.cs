@@ -55,6 +55,11 @@ public static class IdReport
             log($"  {Text.Clean(one.Box)} | {one.Reading} | {Text.Clean(one.Name)} -> {(one.NewName is { } name ? Text.Clean(name) : "removed")}");
         }
 
+        foreach (var box in repairs.BoxesRemoved)
+        {
+            log($"  box removed: {Text.Clean(box)}");
+        }
+
         void Section(string title, IReadOnlyList<GapName> group, Func<GapName, string> detail)
         {
             log($"-- {title}: {group.Count} name(s), {group.Sum(g => g.Count)} entries");

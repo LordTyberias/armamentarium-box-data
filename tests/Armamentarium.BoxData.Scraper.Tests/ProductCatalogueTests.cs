@@ -79,4 +79,20 @@ public sealed class ProductCatalogueTests
         Assert.IsTrue(ProductCatalogue.IsCombatPatrol(products.First(p => p.Code == "99120101001")));
         Assert.IsFalse(ProductCatalogue.IsCombatPatrol(products.First(p => p.Code == "60010199001")));
     }
+
+    [TestMethod]
+    public void Candidates_UpgradeSets_AreLeftOut()
+    {
+        var products = ProductCatalogue.Parse(
+            """
+            {"products":[
+              {"manufacturer":"games-workshop","productCode":"99120101001","name":"RUST TEMPLARS: UPGRADES AND TRANSFERS","gameSystems":["Warhammer 40,000"],"category":"miniatures","status":"current"},
+              {"manufacturer":"games-workshop","productCode":"99120101002","name":"Rust Upgrade Set","gameSystems":["Horus Heresy"],"category":"miniatures","status":"current"},
+              {"manufacturer":"games-workshop","productCode":"99120101003","name":"Rust Tank Sponsons & Accessories","gameSystems":["Warhammer 40,000"],"category":"miniatures","status":"current"},
+              {"manufacturer":"games-workshop","productCode":"99120101004","name":"Rust Captain with Jump Pack","gameSystems":["Warhammer 40,000"],"category":"miniatures","status":"current"}
+            ]}
+            """);
+
+        CollectionAssert.AreEqual(new[] { "99120101004" }, ProductCatalogue.Candidates(products, new HashSet<string>()).Select(p => p.Code).ToArray());
+    }
 }

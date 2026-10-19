@@ -58,15 +58,16 @@ and ADR 0004:
   0003 Addendum ARMAM-595); asked over HTTP/2, HTTP/1.1 only for a host without it (ADR 0003 Addendum ARMAM-603); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
 - Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
-  ARMAM-599), never from part counts.
+  ARMAM-599), never from part counts. A read name passes one rule: prose around it is cut, parts, hand weapons and filler
+  words are no model; upgrade sets are no candidates (ADR 0003 Addendum ARMAM-610).
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
   a ready one with the ids of the one root entry a name names (ADR 0004 Addendum ARMAM-598), merged at once (a merge refused with 405 is tried again, ADR 0004
   Addendum ARMAM-603).
 - Besides, at most one draft `scraper/stale-ids` that removes orphaned ids (an id naming no root entry of its reading any
   more); never merged by the service, also with `--auto-merge`, and counted among the five open (ADR 0004 Addendum ARMAM-597).
 - At the start of a run, before the id check, one pull request `scraper/backfill-ids` that gives the gaps of boxes it wrote the ids their names now name,
-  merged like a box; after it, one draft `scraper/fix-names` that repairs names read before the reader's fixes, never merged
-  (ADR 0004 Addendum ARMAM-598). `--id-report` prints the gaps per reading with their reason and changes nothing.
+  merged like a box; after it, one draft `scraper/fix-names` that repairs names read before the reader's fixes and removes
+  upgrade sets whole, never merged (ADR 0004 Addendum ARMAM-598, ADR 0003 Addendum ARMAM-610). `--id-report` prints the gaps per reading with their reason and changes nothing.
 - Mails the maintainer (ADR 0003 Addendum ARMAM-600): a failed run through `OnFailure=` and the failure unit
   (`--notify-failure`), a run's notices at its end; through the mailbox and the password credential of the Armamentarium
   web services, nothing from the journal.

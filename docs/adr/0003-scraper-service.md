@@ -35,6 +35,9 @@ longer hold for mail: a failed run and the notices of a run are mailed to the ma
 "A browser user agent" keep their decision; their "measured worse" is now only a guess, since the trigger measured is
 HTTP/1.1, not the user agent.
 
+**Changed by Addendum ARMAM-610:** §4 a product named as an upgrade set is no candidate; §8 drops parts, hand weapons,
+filler names and names starting with "of", and cuts prose before and after a name, in lines and build sentences alike.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -402,3 +405,43 @@ The table grows only by hand so far. Measured on 2026-10-17:
   after a shop's first 429** (each answers a limit per address that was not found, and each lengthens the run);
   **HTTP/2 only** (`RequestVersionExact`: a host without it would never answer, one source lost silently); **a notice mail
   when a host answers over HTTP/1.1** (it breaks nothing, the 429 count at the end of the run shows its effect).
+
+## Addendum ARMAM-610 — upgrade sets, parts and prose are no models (2026-10-19)
+
+- **Why:** `--id-report` on the table after the full run of 2026-10-18 (984 boxes, 1857 entries) listed among the gaps
+  without a hit many names that are no model: parts of upgrade sets ("purity seals", "Left arm with lasgun", "Breacher
+  combi-meltas"), weapons listed in model kits ("heavy bolters", "chainsword", "Boltguns" in Havocs, Chaos Terminators,
+  Legionaries), rests of sentences ("of the following miniatures", "of the squad into", "model", "Easy", "mounted", "atop")
+  and names with prose around them ("sinister Gaunt Summoner", "Blade Champion model", "Annihilators wielding meteoric
+  hammers", "Lord-Veritant with 1x Gryph-crow").
+- **Upgrade sets hold no box contents.** A product whose name says `upgrade(s)`, `accessories` or `sponsons` is no
+  candidate (§4); in warhub-catalog's `products.json` (2026-10-19) about eighty Games Workshop "miniatures" carry such a
+  name, every one a set of parts, weapons, heads or icons ("Black Templars: Upgrades and Transfers", "Cadian Upgrades",
+  "Breacher Squad Upgrade Set", "Baneblade Sponsons & Accessories"). The table held 13 of them (about 140 entries, none
+  with ids).
+- **One rule for a read name** (`ContentLines.Tidy`), used by the lines (§8), the build sentences (Addendum ARMAM-599) and
+  the repair of stored names (ADR 0004 Addendum ARMAM-598):
+  - cut before the name: up to three lower-case words before the first capital ("mounted Chaos Knights", "unit of Dark
+    Reapers", "varying towers of Nurglings"); a longer run is a part named for its bearer ("blade and cleaver for the
+    Champion") and stays as it is;
+  - cut after the name: "wielding", "wearing", "clad", "equipped", "armed", "inscribed", "accompanied", "usable" and what
+    follows, "with <count>x …", "in several …", and trailing "in", "model(s)", "miniature(s)", "mounted";
+  - no model: a name that starts with "of"; a name of nothing but filler (of, the, following, squad, into, model(s),
+    miniature(s), easy, mounted, atop, riding, huge, sinister, unhooded, can, be, assembled, additional, crew, drones,
+    sergeants, commanders, plastic, metal; plural only, a Kill Team lists a single "Sergeant" as its operative); a name
+    ending in a hand weapon or piece of kit (chainsword, chain axe, power sword/axe/maul/fist/lance, thunder hammer,
+    lightning claw, chainfist, meltagun, plasma gun/pistol, boltgun, bolter, bolt pistol, missile launcher, lascannon,
+    autocannon, flamer, combi-…, reaper chaincannon, shotgun, backpack, helmet, rope, crate, shovel, bayonet) unless "with"
+    or "w/" names its bearer ("Captain with Thunder Hammer", "Gunner w/ Meltagun"); "tiles" joins the excluded words of §8.
+    Guns that are models ("Grand Cannon", "Organ Gun", "Flamers of Tzeentch") are not in the list.
+- **Measured** against every root entry name of the online catalogues of all readings (2026-10-19): the new rules drop no
+  model (only the excluded words of §8 did before), and cut two names that are none as written ("Combat Elixir equipped
+  in current battle"; "Mist-clad Revellers" keeps its hyphen); a first list dropped fourteen Kill Team operatives named "… w/ Meltagun" or "… w/ Plasma Gun", hence "w/". On the table,
+  the repair renames 80 entries, removes 77 and 28 boxes: the 13 upgrade sets, and 15 boxes whose only entry was noise
+  ("Nighthaunt: Chainrasps" held only "Easy"), which the next run proposes again with the new reader.
+- **The repair draft** (`scraper/fix-names`, ADR 0004 Addendum ARMAM-598) applies the same rule and removes a service box
+  named as an upgrade set whole, also with ids (none had any); unlike a box left without entries, it is not proposed again.
+- **Rejected:** **keeping an upgrade set as a box without models** (the schema asks for a reading, the app would need a
+  box without contents); **only filtering the parts of an upgrade set** (arms, icons, ribbons and seals are too many words);
+  **"no capital letter, no model"** (misses "Boltguns" and "Backpacks" of a shop's list, and "Easy"); **dropping a name with
+  prose around it** (the model it names would be lost).

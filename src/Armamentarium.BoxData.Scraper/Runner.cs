@@ -251,12 +251,12 @@ public sealed class Runner(
     }
 
     // Names the service read before the reader's fixes, cut or removed in a draft it never merges, also with --auto-merge:
-    // a removed entry is data gone (ADR 0004 Addendum ARMAM-598).
+    // a removed entry is data gone (ADR 0004 Addendum ARMAM-598). An upgrade set leaves whole (ADR 0003 Addendum ARMAM-610).
     private async Task RepairNamesAsync(HashSet<string> open, string text, string sha, CancellationToken cancellationToken)
     {
         var table = Table.Read(text);
         var repairs = NameRepair.Apply(table, _hosts);
-        if (repairs.Renamed.Count + repairs.Removed.Count == 0)
+        if (repairs.Renamed.Count + repairs.Removed.Count + repairs.BoxesRemoved.Count == 0)
         {
             return;
         }
@@ -270,7 +270,8 @@ public sealed class Runner(
         var body = new StringBuilder()
             .AppendLine("From the scraper service (ADR 0004 Addendum ARMAM-598): names read before the reader's fixes. A clause read")
             .AppendLine("into a name is cut; a name that is no model leaves its box; a box left without entries goes whole and comes")
-            .AppendLine("back with the next run. Never merged by the service, also with `--auto-merge`: the merge is the hand check.")
+            .AppendLine("back with the next run; an upgrade set (ADR 0003 Addendum ARMAM-610) goes whole and does not come back.")
+            .AppendLine("Never merged by the service, also with `--auto-merge`: the merge is the hand check.")
             .AppendLine()
             .AppendLine("| Box | Reading | Entry | Becomes |")
             .AppendLine("|---|---|---|---|");
@@ -282,14 +283,16 @@ public sealed class Runner(
 
         foreach (var box in repairs.BoxesRemoved)
         {
-            body.AppendLine().Append($"Box removed, will be proposed again: {Text.Code(box)}");
+            body.AppendLine().Append(ProductCatalogue.IsUpgradeSet(box)
+                ? $"Upgrade set removed, not proposed again: {Text.Code(box)}"
+                : $"Box removed, will be proposed again: {Text.Code(box)}");
         }
 
         var proposal = new Proposal(FixNamesBranch, "data: repair names read before the reader's fixes", body.ToString(), Table.Write(table), Draft: true);
         if (await ProposeFixedAsync(proposal, sha, cancellationToken) is not null)
         {
             open.Add(FixNamesBranch);
-            Notice($"proposed {FixNamesBranch}: {repairs.Renamed.Count} renamed, {repairs.Removed.Count} removed");
+            Notice($"proposed {FixNamesBranch}: {repairs.Renamed.Count} renamed, {repairs.Removed.Count} removed, {repairs.BoxesRemoved.Count} box(es) removed");
         }
     }
 

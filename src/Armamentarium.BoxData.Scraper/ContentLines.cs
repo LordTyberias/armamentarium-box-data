@@ -60,8 +60,7 @@ public static partial class ContentLines
             {
                 var part = and.Success ? name[..and.Index] : name;
                 var alternative = AlternativeBuild().IsMatch(part);
-                var cut = Text.Clean(Cut(part, alternative));
-                if (IsModelName(cut))
+                if (Tidy(Text.Clean(Cut(part, alternative))) is { } cut)
                 {
                     lines.Add((new Line(count, cut, nonPlayer, alternative), bullet));
                 }
@@ -84,10 +83,28 @@ public static partial class ContentLines
     internal static string PlainText(string html) =>
         WebUtility.HtmlDecode(AnyTag().Replace(BlockTag().Replace(html, "\n"), string.Empty)).Replace('\u00A0', ' ');
 
-    internal static bool IsExcluded(string name) => Excluded().IsMatch(name);
+    /// <summary>
+    /// A read name as a model name, or null when it names none (ADR 0003 Addendum ARMAM-610): prose around the name is cut
+    /// ("sinister Gaunt Summoner", "Blade Champion model", "Annihilators wielding …", "Lord-Veritant with 1x Gryph-crow"),
+    /// and what is left must be a model, not a part, a weapon or a filler word. The build sentences and the repair of
+    /// stored names use it too.
+    /// </summary>
+    internal static string? Tidy(string name)
+    {
+        // "of the following miniatures" is the rest of a sentence; "Lord of Change" has its "of" inside.
+        if (OfStart().IsMatch(name))
+        {
+            return null;
+        }
 
-    // "1x multi-option, plastic Citadel Miniature" cut at its comma names a kind of kit, not a model.
-    internal static bool IsModelName(string name) => Normalize(name).Length > 0 && !DescriptionOnly().IsMatch(name);
+        name = Addition().Replace(Prose().Replace(name, string.Empty), string.Empty).Trim();
+
+        // "1x multi-option, plastic Citadel Miniature" cut at its comma names a kind of kit, not a model.
+        return Normalize(name).Length == 0 || DescriptionOnly().IsMatch(name) || Excluded().IsMatch(name)
+            || FillerOnly().IsMatch(name) || Gear().IsMatch(name)
+            ? null
+            : name;
+    }
 
     internal static bool IsNonPlayer(string name) => NonPlayer().IsMatch(name);
 
@@ -187,7 +204,7 @@ public static partial class ContentLines
 
     [GeneratedRegex(
         @"\b(terrain|scenery|gel(ä|ae|a)nde\w*|data ?cards?|\w*cards?|\w*karten|dice|d6|w(ü|ue)rfel|tokens?|\w*bogen|\w*bögen|" +
-        @"markers?|mats?|boards?|spielfeld|\w*books?|\w*buch|dossier|rules?|regel\w*|rulers?|transfers?|decals?|sheets?|" +
+        @"markers?|mats?|boards?|tiles?|spielfeld|\w*books?|\w*buch|dossier|rules?|regel\w*|rulers?|transfers?|decals?|sheets?|" +
         @"bases?|frames?|sprues?|components?|parts|\w*teile|heads?|k(ö|oe)pfe|shoulder ?pads?|schulter\w*|reference|" +
         @"referenz\w*|poster|citadel miniatures|" +
         @"miniatures total|seiten|pages?|paints?|farben|brush(es)?|pinsel|clippers?|tools?|werkzeug\w*|guides?|" +
@@ -197,6 +214,40 @@ public static partial class ContentLines
 
     [GeneratedRegex(@"^(?:\s|multi-?options?|multi-?part|push-?fit|plastic|kunststoff)*$", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex DescriptionOnly();
+
+    [GeneratedRegex(@"^of\b", RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex OfStart();
+
+    // Up to three lower-case words before the first capital are the shop's prose: "mounted Chaos Knights", "unit of Dark
+    // Reapers", "varying towers of Nurglings". A longer run is a part named for its bearer ("blade and cleaver for the Champion").
+    [GeneratedRegex(@"^(?:\p{Ll}[\p{L}'’-]*\s+){1,3}(?=\p{Lu})", RegexOptions.None, Page.RegexTimeout)]
+    private static partial Regex Prose();
+
+    // What follows a model's name and says how it comes: "… wielding meteoric hammers", "… with 1x Gryph-crow", "… in several
+    // different poses", "… accompanied by", "… usable by …", and trailing words such as "… miniatures mounted" or a dangling "in".
+    [GeneratedRegex(
+        @"(?:\s+(?:(?:wielding|wearing|clad|equipped|armed|inscribed|accompanied|usable)\b.*|with\s+[0-9]{1,3}\s?[x×]\s.*|" +
+        @"in\s+several\b.*)|(?:\s+(?:in|models?|miniatures?|mounted))+)$",
+        RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex Addition();
+
+    // A name of nothing but filler: rests of a sentence and the crew or sergeants a unit carries (plural only: a Kill Team
+    // lists a single "Sergeant" as its operative).
+    [GeneratedRegex(
+        @"^(?:\s|\b(?:of|the|following|squad|into|models?|miniatures?|easy|mounted|atop|riding|huge|sinister|unhooded|can|be|" +
+        @"assembled|additional|crew|drones|sergeants|commanders|plastic|metal)\b)*$",
+        RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex FillerOnly();
+
+    // A name that ends in a hand weapon or a piece of kit is a part; "Captain with Thunder Hammer" and "Gunner w/ Meltagun" name their bearer, and guns
+    // that are models ("Grand Cannon", "Organ Gun", "Flamers of Tzeentch") are not in the list.
+    [GeneratedRegex(
+        @"^(?!.*\b(?:with|w)\b).*\b(?:chain ?swords?|chain ?axes?|power (?:swords?|axes?|mauls?|fists?|lances?)|thunder hammers?|" +
+        @"lightning claws?|chainfists?|meltaguns?|plasma (?:guns?|pistols?)|boltguns?|bolters?|bolt pistols?|missile launchers?|" +
+        @"lascannons?|autocannons?|flamers?|combi-\w+|reaper chaincannons?|shotguns?|backpacks?|helmets?|ropes?|" +
+        @"crates?|shovels?|bayonets?)$",
+        RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex Gear();
 
     [GeneratedRegex(@"alternativ|can be built as|\bor\b|\boder\b", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex AlternativeBuild();
