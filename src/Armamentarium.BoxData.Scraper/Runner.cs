@@ -292,7 +292,7 @@ public sealed class Runner(
         if (await ProposeFixedAsync(proposal, sha, cancellationToken) is not null)
         {
             open.Add(FixNamesBranch);
-            Notice($"proposed {FixNamesBranch}: {repairs.Renamed.Count} renamed, {repairs.Removed.Count} removed");
+            Notice($"proposed {FixNamesBranch}: {repairs.Renamed.Count} renamed, {repairs.Removed.Count} removed, {repairs.BoxesRemoved.Count} box(es) removed");
         }
     }
 

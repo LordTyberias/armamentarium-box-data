@@ -75,6 +75,6 @@ public static partial class ProductCatalogue
     [GeneratedRegex(@"^[0-9]{8,14}\z")]
     private static partial Regex Ean();
 
-    [GeneratedRegex(@"\bupgrades?\b|\baccessories\b|\bsponsons?\b", RegexOptions.IgnoreCase)]
+    [GeneratedRegex(@"\bupgrades?\b|\baccessories\b|\bsponsons?\b", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex UpgradeSet();
 }

@@ -31,12 +31,12 @@ ARMAM-599's "no catalogues are loaded" without `--auto-merge` no longer holds (s
 **Changed by Addendum ARMAM-600:** §13 "Failures go to the journal only" and Rejected "Mail or an issue on failure" no
 longer hold for mail: a failed run and the notices of a run are mailed to the maintainer; an issue stays rejected.
 
-**Changed by Addendum ARMAM-610:** §4 a product named as an upgrade set is no candidate; §8 drops parts, hand weapons,
-filler names and names starting with "of", and cuts prose before and after a name, in lines and build sentences alike.
-
 **Changed by Addendum ARMAM-603:** §6 shops are asked over HTTP/2 (HTTP/1.1 only for a host without it). §7 and Rejected
 "A browser user agent" keep their decision; their "measured worse" is now only a guess, since the trigger measured is
 HTTP/1.1, not the user agent.
+
+**Changed by Addendum ARMAM-610:** §4 a product named as an upgrade set is no candidate; §8 drops parts, hand weapons,
+filler names and names starting with "of", and cuts prose before and after a name, in lines and build sentences alike.
 
 ## Context
 
