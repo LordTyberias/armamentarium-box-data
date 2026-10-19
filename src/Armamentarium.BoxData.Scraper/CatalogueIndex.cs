@@ -72,9 +72,17 @@ public sealed partial class CatalogueIndex
     /// Of the root entries found, one; or the one from a preferred source; or, all being the same entry, its one home.
     /// Null otherwise: no rule picks among different entries.
     /// </summary>
-    public RootEntry? Find(string reading, string name)
+    public RootEntry? Find(string reading, string name) =>
+        !_unavailable.Contains(reading) && Named(reading, name) is { } entries ? Resolve(reading, entries) : null;
+
+    /// <summary>The root entries of the step of <see cref="Find"/> that names any, for the id report; empty for none.</summary>
+    public IReadOnlyList<Candidate> Candidates(string reading, string name) =>
+        Named(reading, name)?.Select(e => new Candidate(e, CatalogueName(e), IsHome(reading, e))).ToList() ?? [];
+
+    // The root entries of the first step that names any (Find), or null.
+    private IReadOnlyCollection<RootEntry>? Named(string reading, string name)
     {
-        if (_unavailable.Contains(reading) || !_byReading.TryGetValue(reading, out var names))
+        if (!_byReading.TryGetValue(reading, out var names))
         {
             return null;
         }
@@ -82,13 +90,13 @@ public sealed partial class CatalogueIndex
         var key = ContentLines.Normalize(name);
         if (names.TryGetValue(key, out var entries))
         {
-            return Resolve(reading, entries);
+            return entries;
         }
 
-        var withUnitWord = UnitWords.Select(w => names.GetValueOrDefault($"{key} {w}")).OfType<HashSet<RootEntry>>().ToList();
+        var withUnitWord = UnitWords.Select(w => names.GetValueOrDefault($"{key} {w}")).OfType<HashSet<RootEntry>>().SelectMany(e => e).ToHashSet();
         if (withUnitWord.Count > 0)
         {
-            return withUnitWord.Count == 1 ? Resolve(reading, withUnitWord[0]) : null;
+            return withUnitWord;
         }
 
         var words = key.Split(' ', StringSplitOptions.RemoveEmptyEntries);
@@ -98,7 +106,7 @@ public sealed partial class CatalogueIndex
             if (names.TryGetValue(string.Join(' ', words[drop..]), out var rest)
                 && rest.Where(e => $" {ContentLines.Normalize(CatalogueName(e))} ".Contains(army, StringComparison.Ordinal)).ToList() is { Count: > 0 } inArmy)
             {
-                return Resolve(reading, inArmy);
+                return inArmy;
             }
         }
 
@@ -108,18 +116,12 @@ public sealed partial class CatalogueIndex
             var longer = names.Where(n => n.Key.StartsWith(key + " ", StringComparison.Ordinal)).SelectMany(n => n.Value).ToHashSet();
             if (longer.Count > 0)
             {
-                return Resolve(reading, longer);
+                return longer;
             }
         }
 
         return null;
     }
-
-    /// <summary>Every root entry of the reading the name itself names, for the id report; empty for none.</summary>
-    public IReadOnlyList<Candidate> Candidates(string reading, string name) =>
-        _byReading.TryGetValue(reading, out var names) && names.TryGetValue(ContentLines.Normalize(name), out var entries)
-            ? entries.Select(e => new Candidate(e, CatalogueName(e), IsHome(reading, e))).ToList()
-            : [];
 
     /// <summary>
     /// Holds ids the table carries against this run's root entries: the pair must still be a root entry of the reading and

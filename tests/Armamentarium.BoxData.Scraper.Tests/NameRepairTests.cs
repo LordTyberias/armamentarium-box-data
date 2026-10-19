@@ -68,9 +68,20 @@ public sealed class NameRepairTests
     }
 
     [TestMethod]
+    public void Apply_CutNameAlreadyInTheReading_IsRemoved()
+    {
+        var table = Table("shop.test", "Rust Wasps", "Rust Wasps accompanied by");
+
+        var repairs = NameRepair.Apply(table, Hosts);
+
+        CollectionAssert.AreEqual(new[] { "Rust Wasps" }, Names(table));
+        Assert.AreEqual(new NameRepairing("Box", "kt", "Rust Wasps accompanied by", null), repairs.Removed.Single());
+    }
+
+    [TestMethod]
     public void Apply_NamesWithOtherStopWords_AreKept()
     {
-        var table = Table("shop.test", "Lord on Rust Steed", "XV26 Rust Suits");
+        var table = Table("shop.test", "Lord on Rust Steed", "XV26 Rust Suits", "Guard by the Gate");
 
         Assert.AreEqual(0, NameRepair.Apply(table, Hosts).Renamed.Count);
     }

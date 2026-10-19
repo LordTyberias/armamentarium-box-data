@@ -18,14 +18,22 @@ public static class IdBackfill
         && sources.Count > 0
         && sources.All(s => Uri.TryCreate((string?)s, UriKind.Absolute, out var uri) && hosts.Contains(uri.Host));
 
-    /// <summary>Sets the ids of every gap in a service box whose name has a hit; returns what it set.</summary>
+    /// <summary>An entry without ids: a name and a count only (a choice always carries its catalogue id).</summary>
+    public static bool IsGap(JsonObject entry) => entry["catalogueId"] is null;
+
+    /// <summary>
+    /// Sets the ids of every gap in a service box whose name has a hit; returns what it set. A hit the reading of the box
+    /// already lists as a fixed entry stays a gap: no root entry is listed twice in a reading ("Intercessors" beside
+    /// "Intercessor Squad").
+    /// </summary>
     public static IReadOnlyList<Backfilled> Fill(JsonNode table, CatalogueIndex catalogues, IReadOnlySet<string> hosts)
     {
         var filled = new List<Backfilled>();
-        foreach (var (box, reading, entry) in Gaps(table, hosts))
+        foreach (var (box, reading, entries, entry) in Gaps(table, hosts))
         {
             var name = (string)entry["name"]!;
-            if (catalogues.Find(reading, name) is not { } ids)
+            if (catalogues.Find(reading, name) is not { } ids
+                || entries.OfType<JsonObject>().Any(e => (string?)e["catalogueId"] == ids.CatalogueId && (string?)e["entryId"] == ids.EntryId))
             {
                 continue;
             }
@@ -41,17 +49,17 @@ public static class IdBackfill
     }
 
     /// <summary>Every fixed entry without ids, with the reading it is read in.</summary>
-    public static IEnumerable<(JsonObject Box, string Reading, JsonObject Entry)> Gaps(JsonNode table, IReadOnlySet<string> hosts)
+    public static IEnumerable<(JsonObject Box, string Reading, JsonArray Entries, JsonObject Entry)> Gaps(JsonNode table, IReadOnlySet<string> hosts)
     {
         foreach (var box in table["boxes"]!.AsArray().OfType<JsonObject>().Where(b => IsServiceBox(b, hosts)))
         {
             // A Combat Patrol names only its generation and carries no entries.
             foreach (var block in (box["readings"]?.AsArray() ?? []).OfType<JsonObject>())
             {
-                foreach (var entry in block["entries"]!.AsArray().OfType<JsonObject>()
-                             .Where(e => e["catalogueId"] is null && e["choice"] is null))
+                var entries = block["entries"]!.AsArray();
+                foreach (var entry in entries.OfType<JsonObject>().Where(IsGap).ToList())
                 {
-                    yield return (box, (string?)entry["reading"] ?? (string)block["reading"]!, entry);
+                    yield return (box, (string?)entry["reading"] ?? (string)block["reading"]!, entries, entry);
                 }
             }
         }

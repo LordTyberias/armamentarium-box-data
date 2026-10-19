@@ -23,7 +23,7 @@ public static class IdReport
         foreach (var reading in entries.Select(e => e.Reading).Distinct().Order(StringComparer.Ordinal))
         {
             var inReading = entries.Where(e => e.Reading == reading).ToList();
-            var gaps = inReading.Where(e => e.Entry["catalogueId"] is null && e.Entry["choice"] is null).ToList();
+            var gaps = inReading.Where(e => IdBackfill.IsGap(e.Entry)).ToList();
             log($"== {reading}: {inReading.Count} entries, {inReading.Count - gaps.Count} with ids, {gaps.Count} gaps" +
                 (catalogues.Unavailable.Contains(reading) ? " (reading unreadable this run)" : ""));
 

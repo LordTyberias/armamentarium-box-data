@@ -87,7 +87,7 @@ public static partial class BuildSentences
     // Words that end a name: the next clause ("with …", "which …", "accompanied by …", "usable by …"), a further count,
     // the German verb.
     private const string Stop =
-        "(?:with|which|that|from|for|or|and|plus|as|along|using|including|to|on|each|armed|accompanied|usable|by|" +
+        "(?:with|which|that|from|for|or|and|plus|as|along|using|including|to|on|each|armed|accompanied|usable|" +
         "mit|und|sowie|oder|aus|" +
         "für|bauen|baust|kannst|du|als|" + NumberWords + "|" + ArticleWords + ")";
 

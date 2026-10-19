@@ -12,7 +12,7 @@ public sealed record NameRepairs(IReadOnlyList<NameRepairing> Renamed, IReadOnly
 /// <summary>
 /// Applies the reader's fixes of ADR 0004 Addendum ARMAM-598 to names the service wrote before them: a name that is no model
 /// (excluded or description only) leaves its box, a clause read into the name ("… accompanied by", "accompanying …",
-/// "… usable by …") is cut. A reading left without entries goes, a box left without readings goes whole (the schema asks
+/// "… usable by …") is cut, or the entry leaves when the cut name is already in the reading. A reading left without entries goes, a box left without readings goes whole (the schema asks
 /// for one) and comes back with the next run. Only gaps of service boxes: an entry with ids names a root entry, a box
 /// written by hand is a decision (<see cref="IdBackfill.IsServiceBox"/>). Builds the content of a draft the maintainer merges.
 /// </summary>
@@ -36,18 +36,21 @@ public static partial class NameRepair
             {
                 var reading = (string)block["reading"]!;
                 var entries = block["entries"]!.AsArray();
-                foreach (var entry in entries.OfType<JsonObject>().Where(e => e["catalogueId"] is null && e["choice"] is null).ToList())
+                foreach (var entry in entries.OfType<JsonObject>().Where(IdBackfill.IsGap).ToList())
                 {
                     var name = (string)entry["name"]!;
-                    if (ContentLines.IsExcluded(name) || !ContentLines.IsModelName(name))
+                    var cut = Clause().Match(name) is { Success: true } clause ? clause.Groups["name"].Value : name;
+                    var twice = cut != name && entries.OfType<JsonObject>().Any(e => e != entry
+                        && ContentLines.Normalize((string)e["name"]!) == ContentLines.Normalize(cut));
+                    if (ContentLines.IsExcluded(name) || !ContentLines.IsModelName(name) || twice)
                     {
                         entries.Remove(entry);
                         removed.Add(new NameRepairing(boxName, reading, name, null));
                     }
-                    else if (Clause().Match(name) is { Success: true } clause && clause.Groups["name"].Value != name)
+                    else if (cut != name)
                     {
-                        entry["name"] = clause.Groups["name"].Value;
-                        renamed.Add(new NameRepairing(boxName, reading, name, clause.Groups["name"].Value));
+                        entry["name"] = cut;
+                        renamed.Add(new NameRepairing(boxName, reading, name, cut));
                     }
                 }
 
@@ -69,6 +72,6 @@ public static partial class NameRepair
 
     // Only the words the build sentence reader learnt in ARMAM-598 (BuildSentences.Stop, BuildSentences.Name); other words
     // that end a name there ("on", "with") are part of names the lines wrote ("Lord on Steed").
-    [GeneratedRegex(@"^(?:accompanying\s+)?(?<name>.+?)(?:\s+(?:accompanied|usable|by)\b.*)?$", RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    [GeneratedRegex(@"^(?:accompanying\s+)?(?<name>.+?)(?:\s+(?:accompanied|usable)\b.*)?$", RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex Clause();
 }

@@ -234,7 +234,7 @@ public sealed class Runner(
             .AppendLine("|---|---|---|---|");
         foreach (var one in filled)
         {
-            body.AppendLine($"| {Text.Code(one.Box)} | {one.Reading} | {Text.Code(one.Name)} | " +
+            body.AppendLine($"| {Text.Code(one.Box)} | {Text.Code(one.Reading)} | {Text.Code(one.Name)} | " +
                 $"{Text.Code(one.Ids.CatalogueId)} {Text.Code(one.Ids.EntryId)} |");
         }
 
@@ -276,7 +276,7 @@ public sealed class Runner(
             .AppendLine("|---|---|---|---|");
         foreach (var one in repairs.Renamed.Concat(repairs.Removed))
         {
-            body.AppendLine($"| {Text.Code(one.Box)} | {one.Reading} | {Text.Code(one.Name)} | " +
+            body.AppendLine($"| {Text.Code(one.Box)} | {Text.Code(one.Reading)} | {Text.Code(one.Name)} | " +
                 $"{(one.NewName is { } name ? Text.Code(name) : "removed")} |");
         }
 

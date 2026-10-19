@@ -70,6 +70,31 @@ public sealed class IdBackfillTests
     }
 
     [TestMethod]
+    public void Fill_HitTheReadingAlreadyLists_StaysAGap()
+    {
+        const string Listed = """
+                            {
+                              "role": "team",
+                              "catalogueId": "cat-iron",
+                              "entryId": "se-sergeant",
+                              "name": "Sergeant",
+                              "count": 1
+                            },
+            """;
+        var table = Table(Box("Kill Team: Iron", "other.test", Listed + Gap));
+
+        Assert.AreEqual(0, IdBackfill.Fill(table, Iron(), Hosts).Count);
+    }
+
+    [TestMethod]
+    public void Fill_TwoGapsOfOneHit_GiveTheIdsOnce()
+    {
+        var table = Table(Box("Kill Team: Iron", "other.test", Gap + "," + Gap.Replace("Sergeants", "Sergeant")));
+
+        Assert.AreEqual(1, IdBackfill.Fill(table, Iron(), Hosts).Count);
+    }
+
+    [TestMethod]
     public void Fill_HandBox_IsLeftAlone()
     {
         var table = Table(Box("Kill Team: Iron", "review.test", Gap));

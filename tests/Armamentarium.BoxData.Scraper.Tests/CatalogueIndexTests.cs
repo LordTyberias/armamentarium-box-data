@@ -205,6 +205,14 @@ public sealed class CatalogueIndexTests
     }
 
     [TestMethod]
+    public void Candidates_FollowTheStepsOfFind()
+    {
+        var index = Index(("Army.cat", Army), ("Army Library.cat", ArmyLibrary));
+
+        Assert.AreEqual(new RootEntry("cat-army", "se-guard"), index.Candidates("40k", "Guards").Single().Entry);
+    }
+
+    [TestMethod]
     public void OperativeWordsAndPlural_AreIgnored()
     {
         var index = new CatalogueIndex();
