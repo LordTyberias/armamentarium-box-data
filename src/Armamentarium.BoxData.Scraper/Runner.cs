@@ -9,7 +9,10 @@ namespace Armamentarium.BoxData.Scraper;
 /// pull request is merged at once and the next one is built on the merged table (ADR 0004); entries get the ids of the
 /// one root entry their name names in <c>catalogues</c>. A product a shop did not answer is asked once more at the end of
 /// the run (ADR 0003 Addendum ARMAM-595). Before all that, each run holds the ids the table already carries against
-/// <c>catalogues</c> and may open one draft <see cref="StaleIdsBranch"/> that it never merges (ADR 0004 Addendum ARMAM-597).
+/// <c>catalogues</c> and may open one draft <see cref="StaleIdsBranch"/> that it never merges (ADR 0004 Addendum ARMAM-597);
+/// before that it gives the gaps of service boxes the ids their names now name (<see cref="BackfillIdsBranch"/>, merged like a
+/// box), after it cuts names read before the reader's fixes (<see cref="FixNamesBranch"/>, never merged) (ADR 0004 Addendum
+/// ARMAM-598).
 /// What the maintainer should hear of goes to <c>notice</c> as well as to the log: a refused proposal or merge, orphaned
 /// ids and their draft, ids of a reading that could not be checked; the run mails them at its end (ADR 0003 Addendum
 /// ARMAM-600).
@@ -30,6 +33,14 @@ public sealed class Runner(
     /// <summary>The one branch of the draft that removes orphaned ids (ADR 0004 Addendum ARMAM-597).</summary>
     public const string StaleIdsBranch = GitHubRepository.BranchPrefix + "stale-ids";
 
+    /// <summary>The one branch that gives gaps their ids (ADR 0004 Addendum ARMAM-598).</summary>
+    public const string BackfillIdsBranch = GitHubRepository.BranchPrefix + "backfill-ids";
+
+    /// <summary>The one branch of the draft that repairs names read before the reader's fixes (ADR 0004 Addendum ARMAM-598).</summary>
+    public const string FixNamesBranch = GitHubRepository.BranchPrefix + "fix-names";
+
+    private readonly IReadOnlySet<string> _hosts = sources.Select(s => s.Host).ToHashSet(StringComparer.OrdinalIgnoreCase);
+
     public async Task RunAsync(
         IReadOnlyList<Product> products, DateTimeOffset now, CancellationToken cancellationToken, string? onlyCode = null)
     {
@@ -37,9 +48,12 @@ public sealed class Runner(
         var (text, sha) = await repository.GetTableAsync(cancellationToken);
 
         // First, so a run stopped later has still checked; with five open it only reports (ADR 0004 Addendum ARMAM-597).
+        // The backfill is merged before, so the check and both drafts are built on the table it leaves (Addendum ARMAM-598).
         if (catalogues is not null)
         {
+            (text, sha) = await BackfillAsync(catalogues, open, text, sha, cancellationToken);
             await CheckIdsAsync(catalogues, open, text, sha, cancellationToken);
+            await RepairNamesAsync(open, text, sha, cancellationToken);
         }
 
         if (open.Count >= MaxOpen)
@@ -154,10 +168,22 @@ public sealed class Runner(
 
         Mark(codes, now);
         log($"proposed {proposal.Branch}: {proposal.Title}");
+        if (await MergeAsync(proposal, number, run.Open, cancellationToken))
+        {
+            (run.Text, run.Sha) = await repository.GetTableAsync(cancellationToken);
+        }
+
+        return Outcome.Answered;
+    }
+
+    // With --auto-merge: merges the pull request and deletes its branch; true when merged. A pull request left open counts
+    // like a draft.
+    private async Task<bool> MergeAsync(Proposal proposal, int number, HashSet<string> open, CancellationToken cancellationToken)
+    {
         if (!autoMerge)
         {
-            run.Open.Add(proposal.Branch);
-            return Outcome.Answered;
+            open.Add(proposal.Branch);
+            return false;
         }
 
         try
@@ -168,8 +194,8 @@ public sealed class Runner(
         {
             // The pull request stays open and counts like a draft; the maintainer sees why in the journal.
             Notice($"{proposal.Branch} not merged: {ex.Message}");
-            run.Open.Add(proposal.Branch);
-            return Outcome.Answered;
+            open.Add(proposal.Branch);
+            return false;
         }
 
         log($"merged {proposal.Branch}");
@@ -183,8 +209,130 @@ public sealed class Runner(
             log($"{proposal.Branch} merged, branch not deleted: {ex.Message}");
         }
 
-        (run.Text, run.Sha) = await repository.GetTableAsync(cancellationToken);
-        return Outcome.Answered;
+        return true;
+    }
+
+    // Gaps of service boxes whose names now name one root entry get their ids, in one pull request merged like a box
+    // (ADR 0004 Addendum ARMAM-598); without --auto-merge a draft. Returns the table the rest of the run builds on.
+    private async Task<(string Text, string Sha)> BackfillAsync(
+        CatalogueIndex index, HashSet<string> open, string text, string sha, CancellationToken cancellationToken)
+    {
+        var table = Table.Read(text);
+        var filled = IdBackfill.Fill(table, index, _hosts);
+        log($"backfill: {filled.Count} gap(s) of service boxes get ids");
+        if (filled.Count == 0 || !HasSlot(open, BackfillIdsBranch))
+        {
+            return (text, sha);
+        }
+
+        var body = new StringBuilder()
+            .AppendLine("From the scraper service (ADR 0004 Addendum ARMAM-598): gaps of boxes the service wrote whose name now")
+            .AppendLine("names one root entry of its reading, by the same hit that sets ids in a new box. Boxes written by hand keep")
+            .AppendLine($"their gaps. {(autoMerge ? "Merged by the scraper service (`--auto-merge`)." : "Draft; the merge is the hand check.")}")
+            .AppendLine()
+            .AppendLine("| Box | Reading | Entry | Ids |")
+            .AppendLine("|---|---|---|---|");
+        foreach (var one in filled)
+        {
+            body.AppendLine($"| {Text.Code(one.Box)} | {one.Reading} | {Text.Code(one.Name)} | " +
+                $"{Text.Code(one.Ids.CatalogueId)} {Text.Code(one.Ids.EntryId)} |");
+        }
+
+        var proposal = new Proposal(BackfillIdsBranch, "data: give gaps the ids their names name", body.ToString(), Table.Write(table), Draft: !autoMerge);
+        if (await ProposeFixedAsync(proposal, sha, cancellationToken) is not { } number)
+        {
+            return (text, sha);
+        }
+
+        log($"proposed {BackfillIdsBranch}: {filled.Count} gap(s)");
+        return await MergeAsync(proposal, number, open, cancellationToken)
+            ? await repository.GetTableAsync(cancellationToken)
+            : (text, sha);
+    }
+
+    // Names the service read before the reader's fixes, cut or removed in a draft it never merges, also with --auto-merge:
+    // a removed entry is data gone (ADR 0004 Addendum ARMAM-598).
+    private async Task RepairNamesAsync(HashSet<string> open, string text, string sha, CancellationToken cancellationToken)
+    {
+        var table = Table.Read(text);
+        var repairs = NameRepair.Apply(table, _hosts);
+        if (repairs.Renamed.Count + repairs.Removed.Count == 0)
+        {
+            return;
+        }
+
+        log($"name repair: {repairs.Renamed.Count} renamed, {repairs.Removed.Count} removed, {repairs.BoxesRemoved.Count} box(es) removed");
+        if (!HasSlot(open, FixNamesBranch))
+        {
+            return;
+        }
+
+        var body = new StringBuilder()
+            .AppendLine("From the scraper service (ADR 0004 Addendum ARMAM-598): names read before the reader's fixes. A clause read")
+            .AppendLine("into a name is cut; a name that is no model leaves its box; a box left without entries goes whole and comes")
+            .AppendLine("back with the next run. Never merged by the service, also with `--auto-merge`: the merge is the hand check.")
+            .AppendLine()
+            .AppendLine("| Box | Reading | Entry | Becomes |")
+            .AppendLine("|---|---|---|---|");
+        foreach (var one in repairs.Renamed.Concat(repairs.Removed))
+        {
+            body.AppendLine($"| {Text.Code(one.Box)} | {one.Reading} | {Text.Code(one.Name)} | " +
+                $"{(one.NewName is { } name ? Text.Code(name) : "removed")} |");
+        }
+
+        foreach (var box in repairs.BoxesRemoved)
+        {
+            body.AppendLine().Append($"Box removed, will be proposed again: {Text.Code(box)}");
+        }
+
+        var proposal = new Proposal(FixNamesBranch, "data: repair names read before the reader's fixes", body.ToString(), Table.Write(table), Draft: true);
+        if (await ProposeFixedAsync(proposal, sha, cancellationToken) is not null)
+        {
+            open.Add(FixNamesBranch);
+            Notice($"proposed {FixNamesBranch}: {repairs.Renamed.Count} renamed, {repairs.Removed.Count} removed");
+        }
+    }
+
+    // A pull request of a fixed branch: skipped while one is open or no slot is free.
+    private bool HasSlot(HashSet<string> open, string branch)
+    {
+        if (open.Contains(branch))
+        {
+            log($"{branch} is already open; skipped");
+            return false;
+        }
+
+        if (open.Count >= MaxOpen)
+        {
+            Notice($"{open.Count} scraper pull requests are open; no slot for {branch}");
+            return false;
+        }
+
+        return true;
+    }
+
+    // No pull request of the fixed branch is open, so a branch of its name is left from one merged or closed without
+    // deleting it; the one fixed name would otherwise fail every later run. Deleted once, then asked again.
+    private async Task<int?> ProposeFixedAsync(Proposal proposal, string sha, CancellationToken cancellationToken)
+    {
+        try
+        {
+            return await repository.ProposeAsync(proposal, sha, cancellationToken);
+        }
+        catch (GitHubException first)
+        {
+            log($"{proposal.Branch} not proposed: {first.Message}; deleting a leftover branch and trying once more");
+            try
+            {
+                await repository.DeleteBranchAsync(proposal.Branch, cancellationToken);
+                return await repository.ProposeAsync(proposal, sha, cancellationToken);
+            }
+            catch (GitHubException ex)
+            {
+                Notice($"{proposal.Branch} not proposed: {ex.Message}");
+                return null;
+            }
+        }
     }
 
     // The ids the table holds against this run's catalogues: each orphaned or renamed pair in the journal, a summary, and for
@@ -211,15 +359,8 @@ public sealed class Runner(
             return;
         }
 
-        if (open.Contains(StaleIdsBranch))
+        if (!HasSlot(open, StaleIdsBranch))
         {
-            log($"{StaleIdsBranch} is already open; skipped");
-            return;
-        }
-
-        if (open.Count >= MaxOpen)
-        {
-            Notice($"{open.Count} scraper pull requests are open; no slot for {StaleIdsBranch}");
             return;
         }
 
@@ -239,25 +380,9 @@ public sealed class Runner(
         }
 
         var proposal = new Proposal(StaleIdsBranch, "data: remove orphaned catalogue ids", body.ToString(), Table.Write(table), Draft: true);
-        try
+        if (await ProposeFixedAsync(proposal, sha, cancellationToken) is null)
         {
-            await repository.ProposeAsync(proposal, sha, cancellationToken);
-        }
-        catch (GitHubException first)
-        {
-            // No pull request of this branch is open, so a branch of its name is left from a draft merged or closed without
-            // deleting it; the one fixed name would otherwise fail every later run. Deleted once, then asked again.
-            log($"{StaleIdsBranch} not proposed: {first.Message}; deleting a leftover branch and trying once more");
-            try
-            {
-                await repository.DeleteBranchAsync(StaleIdsBranch, cancellationToken);
-                await repository.ProposeAsync(proposal, sha, cancellationToken);
-            }
-            catch (GitHubException ex)
-            {
-                Notice($"{StaleIdsBranch} not proposed: {ex.Message}");
-                return;
-            }
+            return;
         }
 
         open.Add(StaleIdsBranch);

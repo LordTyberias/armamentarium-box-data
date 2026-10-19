@@ -730,4 +730,56 @@ public sealed class RunnerTests
         Assert.AreEqual("scraper/60010199003", repo.Proposals[0].Branch);
         Assert.IsFalse(log.Any(l => l.Contains("catch-up", StringComparison.Ordinal)));
     }
+
+    // The known box, written by the service from the shops a.test and b.test, with a gap the catalogue now names.
+    private static readonly string GapTable = Table.Replace("\"Seer\"", "\"Blade Guards\"");
+
+    [TestMethod]
+    public async Task Run_GapWithAHit_IsBackfilledAndMergedBeforeTheBoxes()
+    {
+        var (repo, _, log) = await Run(
+            [P("60010199002", "5011921000002")], TwoShops(new Line(5, "Blade Guards", false, false)),
+            new FakeRepository { Text = GapTable }, autoMerge: true, catalogues: Blades());
+
+        Assert.AreEqual(Runner.BackfillIdsBranch, repo.Proposals[0].Branch);
+        Assert.IsFalse(repo.Proposals[0].Draft);
+        StringAssert.Contains(repo.Proposals[0].Table, "\"entryId\": \"se-guard\"");
+        StringAssert.Contains(repo.Proposals[0].Body, "Blade Guards");
+        CollectionAssert.AreEqual(new[] { Runner.BackfillIdsBranch, "scraper/60010199002" }, repo.Merged);
+        CollectionAssert.AreEqual(new[] { "sha0", "sha1" }, repo.ShasProposedOn);
+        Assert.IsTrue(log.Contains($"merged {Runner.BackfillIdsBranch}"));
+    }
+
+    [TestMethod]
+    public async Task Run_BackfillWithoutAutoMerge_IsADraft()
+    {
+        var (repo, _, _) = await Run([], TwoShops(), new FakeRepository { Text = GapTable }, catalogues: Blades());
+
+        Assert.AreEqual(Runner.BackfillIdsBranch, repo.Proposals.Single().Branch);
+        Assert.IsTrue(repo.Proposals.Single().Draft);
+        Assert.AreEqual(0, repo.Merged.Count);
+    }
+
+    [TestMethod]
+    public async Task Run_GapOfAHandBox_IsNotBackfilled()
+    {
+        var (repo, _, _) = await Run([], [], new FakeRepository { Text = GapTable }, autoMerge: true, catalogues: Blades());
+
+        Assert.AreEqual(0, repo.Proposals.Count);
+    }
+
+    [TestMethod]
+    public async Task Run_NameReadBeforeTheFix_OpensADraftThatIsNeverMerged()
+    {
+        var (repo, _, _) = await Run(
+            [], TwoShops(), new FakeRepository { Text = Table.Replace("\"Seer\"", "\"Seers accompanied by\"") },
+            autoMerge: true, catalogues: Blades());
+
+        var proposal = repo.Proposals.Single();
+        Assert.AreEqual(Runner.FixNamesBranch, proposal.Branch);
+        Assert.IsTrue(proposal.Draft);
+        Assert.AreEqual(0, repo.Merged.Count);
+        StringAssert.Contains(proposal.Table, "\"name\": \"Seers\"");
+        StringAssert.Contains(proposal.Body, "Seers accompanied by");
+    }
 }
