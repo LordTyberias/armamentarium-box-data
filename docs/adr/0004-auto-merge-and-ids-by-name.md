@@ -20,6 +20,10 @@ before it or a longer root name, and of several pairs the preferred source's or 
 in every run (`scraper/backfill-ids`), a moved id among them, and names read before the reader's fixes are repaired in a
 never-merged draft (`scraper/fix-names`).
 
+**Changed by ADR 0003 Addendum ARMAM-610:** the names repaired in `scraper/fix-names` follow the reader's rule of that
+addendum (prose cut, parts, weapons and filler removed), and a service box named as an upgrade set goes whole, also with
+ids, and is not proposed again, unlike a box left without entries.
+
 ## Context
 
 The service runs on the server since 2026-10-17 (ARMAM-593). Its drafts wait for the maintainer to add catalogue ids,
