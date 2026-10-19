@@ -81,6 +81,54 @@ public sealed class CatalogueIndexTests
         Assert.IsNull(index.Find("40k", "Captain"));
     }
 
+    // Brood Brothers: Genestealer Cults link the Astra Militarum unit at their root (ADR 0004 Addendum ARMAM-598).
+    private const string Linking = """
+        <catalogue id="cat-cult" name="Cult" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+          <entryLinks>
+            <entryLink id="el-captain" name="Captain" targetId="se-captain" type="selectionEntry"/>
+          </entryLinks>
+        </catalogue>
+        """;
+
+    [TestMethod]
+    public void SameEntryDefinedOnceAndLinkedElsewhere_TheDefiningCatalogueWins()
+    {
+        var index = new CatalogueIndex();
+        index.AddCatalogue("40k", "Iron Brothers.cat", Bytes(Xml));
+        index.AddCatalogue("40k", "Cult.cat", Bytes(Linking));
+
+        Assert.AreEqual(new RootEntry("cat-iron", "se-captain"), index.Find("40k", "Captain"));
+    }
+
+    [TestMethod]
+    public void SameEntryOnlyLinked_IsNoHit()
+    {
+        var index = new CatalogueIndex();
+        index.AddCatalogue("40k", "Cult.cat", Bytes(Linking));
+        index.AddCatalogue("40k", "Other Cult.cat", Bytes(Linking.Replace("cat-cult", "cat-other")));
+
+        Assert.IsNull(index.Find("40k", "Captain"));
+    }
+
+    [TestMethod]
+    public void Candidates_NameEveryRootEntryWithCatalogueAndWhetherItIsDefined()
+    {
+        var index = new CatalogueIndex();
+        index.AddCatalogue("40k", "Iron Brothers.cat", Bytes(Xml));
+        index.AddCatalogue("40k", "Cult.cat", Bytes(Linking));
+
+        var candidates = index.Candidates("40k", "Captains").OrderBy(c => c.Entry.CatalogueId, StringComparer.Ordinal).ToList();
+
+        CollectionAssert.AreEqual(
+            new[]
+            {
+                new Candidate(new RootEntry("cat-cult", "se-captain"), "Cult", false),
+                new Candidate(new RootEntry("cat-iron", "se-captain"), "Iron Brothers", true),
+            },
+            candidates);
+        Assert.AreEqual(0, index.Candidates("40k", "Nobody").Count);
+    }
+
     [TestMethod]
     public void OperativeWordsAndPlural_AreIgnored()
     {

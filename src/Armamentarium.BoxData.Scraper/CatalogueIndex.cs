@@ -10,6 +10,12 @@ namespace Armamentarium.BoxData.Scraper;
 public sealed record RootEntry(string CatalogueId, string EntryId);
 
 /// <summary>
+/// A root entry a normalised name names, with its catalogue's name and whether that catalogue defines the entry at its
+/// root (a selectionEntry) or only links it (an entryLink) (ADR 0004 Addendum ARMAM-598).
+/// </summary>
+public sealed record Candidate(RootEntry Entry, string CatalogueName, bool Defined);
+
+/// <summary>
 /// A catalogue repository the service reads ids from (ADR 0004): owner, repository and branch, or the latest release
 /// when <see cref="Branch"/> is null. The rows follow the app's BsDataEditionSources; a change there is a change here.
 /// </summary>
@@ -29,7 +35,8 @@ public enum IdState
 
 /// <summary>
 /// The root entries of the catalogues of every reading, by normalised name (ADR 0004). A name gets ids only when it
-/// names exactly one root entry of its reading; one name in two catalogues, or none, gets none.
+/// names exactly one root entry of its reading, or when every root entry it names is the same entry and exactly one
+/// catalogue defines it there while the others only link it (ADR 0004 Addendum ARMAM-598); otherwise none.
 /// </summary>
 public sealed partial class CatalogueIndex
 {
@@ -50,16 +57,49 @@ public sealed partial class CatalogueIndex
 
     private readonly Dictionary<string, Dictionary<string, HashSet<RootEntry>>> _byReading = new(StringComparer.Ordinal);
     private readonly Dictionary<string, Dictionary<RootEntry, HashSet<string>>> _namesByReading = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, HashSet<RootEntry>> _definedByReading = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, string> _catalogueNames = new(StringComparer.Ordinal);
     private readonly HashSet<string> _unavailable = new(StringComparer.Ordinal);
 
-    /// <summary>The ids for a model name, or null when the name names no root entry of the reading or more than one.</summary>
-    public RootEntry? Find(string reading, string name) =>
-        !_unavailable.Contains(reading)
-        && _byReading.TryGetValue(reading, out var names)
-        && names.TryGetValue(ContentLines.Normalize(name), out var entries)
-        && entries.Count == 1
-            ? entries.First()
+    /// <summary>
+    /// The ids for a model name: its one root entry of the reading, or of several the one whose catalogue defines the
+    /// entry they all name (a unit defined in one army and linked at the root of another, as Brood Brothers do). Null
+    /// for no root entry, for different entries, and for an entry no catalogue or more than one defines.
+    /// </summary>
+    public RootEntry? Find(string reading, string name)
+    {
+        if (_unavailable.Contains(reading)
+            || !_byReading.TryGetValue(reading, out var names)
+            || !names.TryGetValue(ContentLines.Normalize(name), out var entries))
+        {
+            return null;
+        }
+
+        if (entries.Count == 1)
+        {
+            return entries.First();
+        }
+
+        var defined = _definedByReading.GetValueOrDefault(reading);
+        var defining = entries.Where(e => defined?.Contains(e) == true).ToList();
+        return entries.Select(e => e.EntryId).Distinct(StringComparer.Ordinal).Count() == 1 && defining.Count == 1
+            ? defining[0]
             : null;
+    }
+
+    /// <summary>Every root entry of the reading a model name names, for the id report; empty for none.</summary>
+    public IReadOnlyList<Candidate> Candidates(string reading, string name)
+    {
+        if (!_byReading.TryGetValue(reading, out var names) || !names.TryGetValue(ContentLines.Normalize(name), out var entries))
+        {
+            return [];
+        }
+
+        var defined = _definedByReading.GetValueOrDefault(reading);
+        return entries
+            .Select(e => new Candidate(e, _catalogueNames.GetValueOrDefault(e.CatalogueId, e.CatalogueId), defined?.Contains(e) == true))
+            .ToList();
+    }
 
     /// <summary>
     /// Holds ids the table carries against this run's root entries: the pair must still be a root entry of the reading and
@@ -213,7 +253,7 @@ public sealed partial class CatalogueIndex
         {
             foreach (var child in container.Elements())
             {
-                valid &= Add(reading, Attr(root, "id"), child.Name.LocalName, Attr(child, "type"), Attr(child, "id"), Attr(child, "name"), Attr(child, "targetId"));
+                valid &= Add(reading, Attr(root, "id"), Attr(root, "name"), child.Name.LocalName, Attr(child, "type"), Attr(child, "id"), Attr(child, "name"), Attr(child, "targetId"));
             }
         }
 
@@ -254,7 +294,7 @@ public sealed partial class CatalogueIndex
 
                 foreach (var child in children.EnumerateArray().Where(c => c.ValueKind == JsonValueKind.Object))
                 {
-                    valid &= Add(reading, Scalar(catalogue, "id"), element, Scalar(child, "type"), Scalar(child, "id"), Scalar(child, "name"), Scalar(child, "targetId"));
+                    valid &= Add(reading, Scalar(catalogue, "id"), Scalar(catalogue, "name"), element, Scalar(child, "type"), Scalar(child, "id"), Scalar(child, "name"), Scalar(child, "targetId"));
                 }
             }
 
@@ -272,7 +312,7 @@ public sealed partial class CatalogueIndex
     // A root selectionEntry of type unit or model, or a root entryLink to a selectionEntry (its own name, its target).
     // An id outside the forms the sources use (BSData's hex groups with dashes, the Spearhead repository's
     // "sph::box::01-name") makes the file unreadable: it would go into the table unchecked.
-    private bool Add(string reading, string? catalogueId, string element, string? type, string? id, string? name, string? targetId)
+    private bool Add(string reading, string? catalogueId, string? catalogueName, string element, string? type, string? id, string? name, string? targetId)
     {
         var entryId = element switch
         {
@@ -305,6 +345,21 @@ public sealed partial class CatalogueIndex
 
         var root = new RootEntry(catalogueId, entryId);
         entries.Add(root);
+        if (catalogueName is not null)
+        {
+            _catalogueNames.TryAdd(catalogueId, catalogueName.Trim());
+        }
+
+        if (element == "selectionEntry")
+        {
+            if (!_definedByReading.TryGetValue(reading, out var defined))
+            {
+                _definedByReading[reading] = defined = [];
+            }
+
+            defined.Add(root);
+        }
+
         if (!_namesByReading.TryGetValue(reading, out var byEntry))
         {
             _namesByReading[reading] = byEntry = [];

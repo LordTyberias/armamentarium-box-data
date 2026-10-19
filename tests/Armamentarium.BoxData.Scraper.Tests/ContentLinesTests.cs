@@ -80,6 +80,13 @@ public sealed class ContentLinesTests
     }
 
     [TestMethod]
+    public void IsExcluded_PluralBoards_IsExcluded()
+    {
+        Assert.IsTrue(ContentLines.IsExcluded("30\" by 22.4\" double-sided gaming boards"));
+        Assert.IsTrue(ContentLines.IsExcluded("gaming board"));
+    }
+
+    [TestMethod]
     public void Parse_LinesUnderAnExcludedLineEndingInAColon_AreDropped()
     {
         var lines = ContentLines.Parse(

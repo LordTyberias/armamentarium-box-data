@@ -45,6 +45,23 @@ public sealed class BuildSentencesTests
         CollectionAssert.AreEqual(new[] { (10, "Iron Brothers") }, Read("<p>This kit builds a squad of 10 Iron Brothers.</p>"));
     }
 
+    // Read as names in the table until ARMAM-598: "… accompanied by", "accompanying …", "… usable by … wizards".
+    [TestMethod]
+    public void Parse_ClauseAfterTheName_EndsIt()
+    {
+        CollectionAssert.AreEqual(
+            new[] { (10, "Swamp Lizards"), (3, "Rust Spells") },
+            Read("<p>This kit builds 10 Swamp Lizards accompanied by a pet.</p><p>This kit builds 3 Rust Spells usable by Rust wizards.</p>"));
+    }
+
+    [TestMethod]
+    public void Parse_AccompanyingBeforeTheName_IsNoPartOfIt()
+    {
+        CollectionAssert.AreEqual(
+            new[] { (1, "Iron Strider"), (2, "Rust Drones") },
+            Read("<p>This kit builds 1 Iron Strider plus 2 accompanying Rust Drones.</p>"));
+    }
+
     [TestMethod]
     public void Parse_NumberWord_GivesCount()
     {

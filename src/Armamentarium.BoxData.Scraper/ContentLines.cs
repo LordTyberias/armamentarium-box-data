@@ -187,7 +187,7 @@ public static partial class ContentLines
 
     [GeneratedRegex(
         @"\b(terrain|scenery|gel(ä|ae|a)nde\w*|data ?cards?|\w*cards?|\w*karten|dice|d6|w(ü|ue)rfel|tokens?|\w*bogen|\w*bögen|" +
-        @"markers?|mats?|board|spielfeld|\w*books?|\w*buch|dossier|rules?|regel\w*|rulers?|transfers?|decals?|sheets?|" +
+        @"markers?|mats?|boards?|spielfeld|\w*books?|\w*buch|dossier|rules?|regel\w*|rulers?|transfers?|decals?|sheets?|" +
         @"bases?|frames?|sprues?|components?|parts|\w*teile|heads?|k(ö|oe)pfe|shoulder ?pads?|schulter\w*|reference|" +
         @"referenz\w*|poster|citadel miniatures|" +
         @"miniatures total|seiten|pages?|paints?|farben|brush(es)?|pinsel|clippers?|tools?|werkzeug\w*|guides?|" +
