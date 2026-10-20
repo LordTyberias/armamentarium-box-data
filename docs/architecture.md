@@ -49,7 +49,9 @@ and ADR 0004:
   (ADR 0004), stored outside every repository, never logged.
 - Catalogue ids from the catalogues of a compiled allowlist of repositories (ADR 0004 §3), downloaded every run, with or
   without `--auto-merge`; every run first gives the gaps of its own boxes their ids and then checks the ids the table
-  holds against them (ADR 0004 Addenda ARMAM-597, ARMAM-598).
+  holds against them (ADR 0004 Addenda ARMAM-597, ARMAM-598). Own names of models that belong to a root entry of
+  another name go to it through `aliases.json`, read from `main` every run, resolved by entry and catalogue name, never
+  ids by hand (ADR 0004 Addendum ARMAM-642).
 - Candidates from warhub-catalog `products.json`, one request per run to a compiled address (ADR 0003 §4).
 - Sources from a compiled allowlist, no open search, measured with the `--host` probe before they enter (ADR 0003
   Addendum ARMAM-602); at most one request per five seconds and host (ADR 0003 §6; no host needs the per-minute interval
@@ -58,7 +60,8 @@ and ADR 0004:
   0003 Addendum ARMAM-595); asked over HTTP/2, HTTP/1.1 only for a host without it (ADR 0003 Addendum ARMAM-603); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
 - Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
-  ARMAM-599), never from part counts. A read name passes one rule: prose around it is cut, parts, hand weapons and filler
+  ARMAM-599), a line "1 <name> miniature", a build of names ("builds Ciaphas Cain and Jurgen") when every name hits (ADR
+  0003 Addendum ARMAM-642), never from part counts. A read name passes one rule: prose around it is cut, parts, hand weapons and filler
   words are no model; upgrade sets are no candidates (ADR 0003 Addendum ARMAM-610).
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
   a ready one with the ids of the one root entry a name names (ADR 0004 Addendum ARMAM-598), merged at once (a merge refused with 405 is tried again, ADR 0004

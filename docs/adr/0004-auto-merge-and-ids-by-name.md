@@ -24,6 +24,10 @@ never-merged draft (`scraper/fix-names`).
 addendum (prose cut, parts, weapons and filler removed), and a service box named as an upgrade set goes whole, also with
 ids, and is not proposed again, unlike a box left without entries.
 
+**Changed by Addendum ARMAM-642:** §2 and Addendum ARMAM-598 "Rules of a hit": a name of `aliases.json` goes to its
+target before any rule; Addendum ARMAM-598 "no root entry is listed twice in a reading" does not hold for an alias, which
+gets the ids beside the other models of its entry.
+
 ## Context
 
 The service runs on the server since 2026-10-17 (ARMAM-593). Its drafts wait for the maintainer to add catalogue ids,
@@ -183,3 +187,26 @@ stopped by the timeout would lose it).
   before Spearhead; no rule for the same entry in several armies; "root names that go on after it" for one-word names
   ("Nob", "Archaon"). Further reader noise the report shows (parts of upgrade sets, sentence rests such as "of the following
   miniatures") goes to a follow-up ticket.
+
+## Addendum ARMAM-642 — aliases for own names (2026-10-20)
+
+- **Measured** on the scan test of 2026-10-20: the box "Captain Titus & The Wardens of Ultramar" (99120101459) lists seven
+  models; six of them (Plenipotentiary Lucia Vestha, Astropath Dainal Kornelius, Legatus Aemelia Minervas, Commodore Gaius
+  Silva, Veteran Sergeant Metaurus, Ancient Gadriel) have no root entry of their own, the catalogues hold them as one unit
+  "Wardens of Ultramar". Jurgen of the box "Ciaphas Cain" (99120105152) belongs to the entry of Ciaphas Cain. No rule of
+  a hit can know that.
+- **`aliases.json`** beside the table, with `aliases.schema.json`: per row a reading, a model's own name, the name of the
+  root entry it belongs to and the name of that entry's catalogue. No id is written there: the service reads the file from
+  `main` in every run, as it reads the table, and resolves each target by the rules of a hit among the root entries of the
+  named catalogue (`CatalogueIndex.UseAliases`). A change to the file takes effect with its merge, without a deploy.
+- **A hit by alias:** a line whose normalised name equals an alias of its reading gets the alias's target, before the rules
+  of Addendum ARMAM-598; an alias whose target is not one root entry of a reading read whole leaves the name a gap and is a
+  notice of the run (mail and `--id-report`). The id check counts an alias's pair as valid.
+- **One line per model:** an alias keeps its name and count 1 and gets the ids even where the reading already lists its
+  entry, in a new box and in `scraper/backfill-ids`; the matching of sources keys it by its entry and its own name, so Cain
+  and Jurgen stay two lines. The app labels each model with its own name (Armamentarium ARMAM-643).
+- **Named exception widened** in Armamentarium's `CLAUDE.md` (Armamentarium ADR 0118 Addendum ARMAM-642).
+- Decisions of the maintainer. Rejected: the alias table compiled into the code like the other rules (a deploy per alias);
+  the target as ids (ids by hand, against Addendum ARMAM-593); the target by name alone (several armies link one unit);
+  an alias matched through the rules of a hit (more hits, more false ones); a broken target failing the run; the lines of
+  an entry's models merged into one with their sum (one entry per model, ARMAM-643).
