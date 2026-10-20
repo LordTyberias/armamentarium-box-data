@@ -49,4 +49,19 @@ public sealed class IdReportTests
         CollectionAssert.Contains(log, "  1 x Wizard | wizard");
         CollectionAssert.Contains(log, "== name repair: 0 renamed, 1 removed, 0 box(es) removed");
     }
+
+    // An alias names no root entry by its own name; the report lists it once, under the ids it gets (ADR 0004 Addendum ARMAM-642).
+    [TestMethod]
+    public void Write_AliasGap_IsListedOnceUnderItsIds()
+    {
+        var index = new CatalogueIndex();
+        index.AddCatalogue("40k", "Iron.cat", Encoding.UTF8.GetBytes(Iron));
+        index.UseAliases([new Alias("40k", "Wizard", "Captain", "Iron Brothers")]);
+        var log = new List<string>();
+
+        IdReport.Write(Scraper.Table.Read(Table), index, new HashSet<string>(["shop.test"]), log.Add);
+
+        CollectionAssert.Contains(log, "  1 x Wizard | cat-iron se-captain");
+        CollectionAssert.DoesNotContain(log, "  1 x Wizard | wizard");
+    }
 }

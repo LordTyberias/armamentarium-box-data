@@ -45,7 +45,7 @@ public static class IdReport
             Section("ambiguous", names.Where(g => g.Hit is null && g.Candidates.Count > 0).ToList(),
                 g => string.Join("; ", g.Candidates.OrderBy(c => c.CatalogueName, StringComparer.Ordinal)
                     .Select(c => $"{c.CatalogueName} {c.Entry.CatalogueId} {c.Entry.EntryId} {(c.Home ? "home" : "linked")}")));
-            Section("no hit", names.Where(g => g.Candidates.Count == 0).ToList(), g => g.Key);
+            Section("no hit", names.Where(g => g.Hit is null && g.Candidates.Count == 0).ToList(), g => g.Key);
         }
 
         var repairs = NameRepair.Apply(table.DeepClone(), hosts);
