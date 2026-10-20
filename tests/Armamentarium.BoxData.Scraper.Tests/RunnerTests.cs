@@ -796,4 +796,27 @@ public sealed class RunnerTests
         Assert.AreEqual(Runner.FixNamesBranch, proposal.Branch);
         StringAssert.Contains(proposal.Body, "Upgrade set removed, not proposed again: `Kill Team: Known Upgrades`");
     }
+
+    // Cain and Jurgen: a build of names, the second an alias of the first's entry, stays two lines with the same ids
+    // (ADR 0004 and ADR 0003 Addenda ARMAM-642).
+    [TestMethod]
+    public async Task Run_BuildOfNamesWithAnAlias_ProposesEachModelWithTheIds()
+    {
+        var catalogues = new CatalogueIndex();
+        catalogues.AddCatalogue("kt", "Heroes.cat", System.Text.Encoding.UTF8.GetBytes(
+            """<catalogue id="cat-heroes" name="Heroes" library="false"><selectionEntries><selectionEntry type="model" id="se-hero" name="Iron Hero"/></selectionEntries></catalogue>"""));
+        catalogues.UseAliases([new Alias("kt", "Rust Aide", "Iron Hero", "Heroes")]);
+        ISource NamesShop(string host) => new FixedSource(host, p => new Listing(host, $"https://{host}/{p.Code}", false, "Iron Hero", [], [p.Ean!])
+        {
+            Sentences = BuildSentences.Parse("<p>This multipart plastic kit builds Iron Hero and Rust Aide.</p>"),
+        });
+
+        var (repo, _, _) = await Run(
+            [P("60010199002", "5011921000002")], [NamesShop("a.test"), NamesShop("b.test")], autoMerge: true, catalogues: catalogues);
+
+        var table = repo.Proposals.Single().Table;
+        StringAssert.Contains(table, "\"name\": \"Iron Hero\"");
+        StringAssert.Contains(table, "\"name\": \"Rust Aide\"");
+        Assert.AreEqual(2, table.Split("\"entryId\": \"se-hero\"").Length - 1);
+    }
 }

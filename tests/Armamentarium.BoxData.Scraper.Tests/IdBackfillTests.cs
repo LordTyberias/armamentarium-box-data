@@ -133,5 +133,6 @@ public sealed class IdBackfillTests
         var filled = IdBackfill.Fill(table, index, Hosts);
 
         CollectionAssert.AreEqual(new[] { "Sergeants", "Brother Aldo", "Brother Bero" }, filled.Select(f => f.Name).ToArray());
+        Assert.IsTrue(filled.All(f => f.Ids == new RootEntry("cat-iron", "se-sergeant")));
     }
 }

@@ -230,4 +230,25 @@ public sealed class GitHubRepositoryTests
         StringAssert.Contains(error.Message, "401");
         Assert.IsFalse(error.ToString().Contains(Token, StringComparison.Ordinal));
     }
+
+    [TestMethod]
+    public async Task GetAliases_DecodesTheFileOnMain()
+    {
+        var content = Convert.ToBase64String(Encoding.UTF8.GetBytes("{\"format\": 1, \"aliases\": []}"));
+        var handler = new Recorder(_ => Json($$"""{"sha":"abc","content":"{{content}}"}"""));
+
+        var text = await new GitHubRepository(new HttpClient(handler), null).GetAliasesAsync(default);
+
+        Assert.AreEqual("{\"format\": 1, \"aliases\": []}", text);
+        Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/contents/aliases.json?ref=main", handler.Requests[0].Path);
+    }
+
+    [TestMethod]
+    public async Task GetAliases_NoFile_IsNullAndAnyOtherFailureThrows()
+    {
+        Assert.IsNull(await new GitHubRepository(new HttpClient(new Recorder(_ => Json("{}", HttpStatusCode.NotFound))), null)
+            .GetAliasesAsync(default));
+        await Assert.ThrowsExactlyAsync<GitHubException>(() => new GitHubRepository(
+            new HttpClient(new Recorder(_ => Json("{}", HttpStatusCode.InternalServerError))), null).GetAliasesAsync(default));
+    }
 }

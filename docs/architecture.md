@@ -15,6 +15,7 @@ app bundles a fixed commit of it; it never fetches it at runtime). Everything el
 | Table | `box-contents.json` | The data. Single file, `format` number at the top. |
 | Schema | `box-contents.schema.json` | JSON Schema draft 2020-12 of the table. The table references it with `$schema`. |
 | Contract prose | `README.md` | The rules the schema cannot express (key uniqueness across boxes, what goes in, NPO fallback, sources). |
+| Aliases | `aliases.json`, `aliases.schema.json` | Configuration of the scraper service, read from `main` every run: a model's own name to a root entry by entry and catalogue name, never ids (ADR 0004 Addendum ARMAM-642). Not read by the app; own `format` number, independent of the table's. |
 | Decisions | `docs/adr/` | This repository's decisions, index `docs/adr/INDEX.md`. |
 | Scraper service | `src/Armamentarium.BoxData.Scraper/`, tests `tests/`, solution `armamentarium-box-data.slnx` | Opens pull requests with new boxes (ADR 0003); with `--auto-merge` sets ids by name and merges them itself (ADR 0004). See §4. |
 | Operation | `deploy/` | systemd service, its failure unit (ADR 0003 Addendum ARMAM-600) and timer, deploy script. Runbook: Armamentarium `docs/server/betrieb.md`. `*.service` and `*.timer` are LF (`.gitattributes`, `.editorconfig`): systemd reads a trailing CR as part of a value. Every other file stays CRLF. |
@@ -34,7 +35,11 @@ The table, the schema and the README form **one contract**. A change to one that
   sources, disagreement is recorded as `countCandidates`. One named exception (ADR 0004): while the service runs with
   `--auto-merge`, it sets ids where an entry's name names one root entry of its reading (ADR 0004, rules of a hit in
   Addendum ARMAM-598); the same hit picks a build sentence over a source's lines and lets two names of one entry confirm
-  each other (ADR 0003 Addendum ARMAM-599).
+  each other (ADR 0003 Addendum ARMAM-599); an own name listed in `aliases.json` gets the ids of its target, resolved by
+  entry and catalogue name, one line per model beside its entry's others (ADR 0004 Addendum ARMAM-642); no id is ever
+  written into `aliases.json`.
+- **Aliases format.** `aliases.json` carries its own `format` number, raised by the same rule as the table's and
+  independent of it.
 
 ## 4 — Scraper service
 

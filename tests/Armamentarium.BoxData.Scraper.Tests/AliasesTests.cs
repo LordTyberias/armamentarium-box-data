@@ -109,4 +109,27 @@ public sealed class AliasesTests
 
         throw new AssertFailedException($"{Aliases.File} not found above the test output.");
     }
+
+    [TestMethod]
+    public void Read_SameNameTwiceInAReading_Throws()
+    {
+        Assert.ThrowsExactly<InvalidDataException>(() => Aliases.Read(File(Gadriel + "," + Gadriel.Replace("Ancient Gadriel", "ancient  Gadriel"))));
+        Assert.AreEqual(2, Aliases.Read(File(Gadriel + "," + Gadriel.Replace("\"40k\"", "\"kt\""))).Count);
+    }
+
+    [TestMethod]
+    public void Read_FormatAsTextOrNoObject_ThrowsInvalidData()
+    {
+        Assert.ThrowsExactly<InvalidDataException>(() => Aliases.Read("""{"format": "1", "aliases": []}"""));
+        Assert.ThrowsExactly<InvalidDataException>(() => Aliases.Read("""{"format": {}, "aliases": []}"""));
+        Assert.ThrowsExactly<InvalidDataException>(() => Aliases.Read("[]"));
+    }
+
+    [TestMethod]
+    public void Read_FieldsAreTrimmed()
+    {
+        var alias = Aliases.Read(File(Gadriel.Replace("\"Imperium - Ultra\"", "\" Imperium - Ultra \""))).Single();
+
+        Assert.AreEqual("Imperium - Ultra", alias.Catalogue);
+    }
 }

@@ -34,19 +34,25 @@ public static class Aliases
             throw new InvalidDataException($"{File} is no JSON: {ex.Message}");
         }
 
-        if (root is not JsonObject file || (int?)file["format"] != 1 || file["aliases"] is not JsonArray rows)
+        if (root is not JsonObject file
+            || file["format"] is not JsonValue format || !format.TryGetValue<int>(out var number) || number != 1
+            || file["aliases"] is not JsonArray rows)
         {
             throw new InvalidDataException($"{File} is not format 1 with an aliases array.");
         }
 
-        return rows.Select(Row).ToList();
+        // One name, one target: the schema cannot say it, so a second row of a name fails the run instead of winning silently.
+        var aliases = rows.Select(Row).ToList();
+        return aliases.GroupBy(a => (a.Reading, ContentLines.Normalize(a.Name))).Any(g => g.Count() > 1)
+            ? throw new InvalidDataException($"{File} names one model twice in a reading.")
+            : aliases;
     }
 
     private static Alias Row(JsonNode? node)
     {
         string Field(string name) =>
             node is JsonObject row && row[name] is JsonValue value && value.TryGetValue<string>(out var text) && text.Trim().Length > 0
-                ? text
+                ? text.Trim()
                 : throw new InvalidDataException($"An alias of {File} has no {name}.");
 
         var alias = new Alias(Field("reading"), Field("name"), Field("target"), Field("catalogue"));

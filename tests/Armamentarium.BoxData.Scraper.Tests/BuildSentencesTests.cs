@@ -180,4 +180,14 @@ public sealed class BuildSentencesTests
     {
         Assert.AreEqual(0, BuildSentences.Parse("<p>This kit builds the hero and his retinue.</p>").Count);
     }
+
+    // Two units joined by "and" read as one model each; Agreement takes it only when both names hit and two sources agree
+    // (ADR 0003 Addendum ARMAM-642). Pinned here so a change to that rule is a decision.
+    [TestMethod]
+    public void Parse_BuildOfTwoUnitNames_ReadsAsNames()
+    {
+        var sentence = BuildSentences.Parse("<p>This kit builds Hellblasters and Eradicators.</p>").Single();
+
+        Assert.IsTrue(sentence.Names);
+    }
 }

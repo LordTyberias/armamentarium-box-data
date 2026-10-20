@@ -201,7 +201,9 @@ stopped by the timeout would lose it).
   named catalogue (`CatalogueIndex.UseAliases`). A change to the file takes effect with its merge, without a deploy.
 - **A hit by alias:** a line whose normalised name equals an alias of its reading gets the alias's target, before the rules
   of Addendum ARMAM-598; an alias whose target is not one root entry of a reading read whole leaves the name a gap and is a
-  notice of the run (mail and `--id-report`). The id check counts an alias's pair as valid.
+  notice of the run (mail and `--id-report`). A file that breaks `aliases.schema.json` or names one model twice in a
+  reading fails the run (mailed like any failure); only a target that names no one entry is a gap. The id check counts an
+  alias's pair as valid.
 - **One line per model:** an alias keeps its name and count 1 and gets the ids even where the reading already lists its
   entry, in a new box and in `scraper/backfill-ids`; the matching of sources keys it by its entry and its own name, so Cain
   and Jurgen stay two lines. The app labels each model with its own name (Armamentarium ARMAM-643).

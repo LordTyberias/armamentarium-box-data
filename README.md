@@ -84,7 +84,7 @@ An edition without a reading falls back to the app's name-based candidates.
 | `catalogueId` | `id` of the catalogue (`.cat`) holding the entry. |
 | `entryId` | `id` of the root `selectionEntry`: an operative in Kill Team, a unit in 40k. |
 | `choice` | Instead of `entryId`, when the box's models build freely chosen operatives: the operatives the kit builds, each `entryId` + `name`. `count` is then the number of models across all of them; the user distributes them. |
-| `name` | The entry's catalogue name, for checking only. |
+| `name` | The model's name as the box lists it: the entry's catalogue name, or, for an alias of `aliases.json`, the model's own name beside the ids of its entry. For checking only. |
 | `count` | Number of **models** in the box for this entry, as the box is sold. |
 | `countCandidates` | Instead of `count`, when the sources disagree and the number could not be settled: the numbers in question. The entry is not preselected; the user sets the number. |
 
@@ -123,8 +123,9 @@ name (`catalogue`):
 
 No id is written there. The scraper reads the file from `main` in every run and resolves each target in the named
 catalogue; a line whose name is an alias gets that entry's ids, keeps its own name and count 1, and stands beside the
-entry's other models. A target that names no one root entry leaves the name a gap and is reported
-(`docs/adr/0004-auto-merge-and-ids-by-name.md`, Addendum ARMAM-642).
+entry's other models. A target that names no one root entry leaves the name a gap and is reported; a file that breaks
+the schema or names one model twice in a reading fails the run (`docs/adr/0004-auto-merge-and-ids-by-name.md`, Addendum
+ARMAM-642).
 
 ## Sources and checking
 
