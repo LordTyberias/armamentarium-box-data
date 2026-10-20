@@ -24,7 +24,7 @@ public static class IdBackfill
     /// <summary>
     /// Sets the ids of every gap in a service box whose name has a hit; returns what it set. A hit the reading of the box
     /// already lists as a fixed entry stays a gap: no root entry is listed twice in a reading ("Intercessors" beside
-    /// "Intercessor Squad").
+    /// "Intercessor Squad"). An alias is one model of its entry and gets the ids beside the others (ADR 0004 Addendum ARMAM-642).
     /// </summary>
     public static IReadOnlyList<Backfilled> Fill(JsonNode table, CatalogueIndex catalogues, IReadOnlySet<string> hosts)
     {
@@ -33,7 +33,8 @@ public static class IdBackfill
         {
             var name = (string)entry["name"]!;
             if (catalogues.Find(reading, name) is not { } ids
-                || entries.OfType<JsonObject>().Any(e => (string?)e["catalogueId"] == ids.CatalogueId && (string?)e["entryId"] == ids.EntryId))
+                || (!catalogues.IsAlias(reading, name)
+                    && entries.OfType<JsonObject>().Any(e => (string?)e["catalogueId"] == ids.CatalogueId && (string?)e["entryId"] == ids.EntryId)))
             {
                 continue;
             }

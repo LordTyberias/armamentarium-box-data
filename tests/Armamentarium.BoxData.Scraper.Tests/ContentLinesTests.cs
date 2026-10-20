@@ -251,4 +251,15 @@ public sealed class ContentLinesTests
                 "Rust Guard", "Praetors", "Archon", "Rust Wasps", "Rust Yeomen", "blade and cleaver for the Champion" },
             lines.Select(l => l.Name).ToArray());
     }
+
+    // "1 Ciaphas Cain miniature" lists a model without bullet or x (ADR 0003 Addendum ARMAM-642); bases and parts stay out.
+    [TestMethod]
+    public void Parse_CountedMiniatureLinesWithoutBullet_AreLines()
+    {
+        var lines = ContentLines.Parse(
+            "<p>Contents</p><ul><li>1 Iron Hero miniature</li><li>1 Rust Aide miniature</li><li>19 plastic components</li>" +
+            "<li>2 Citadel 28.5mm Round Bases</li><li>1 construction guide</li></ul>");
+
+        CollectionAssert.AreEqual(new[] { new Line(1, "Iron Hero", false, false), new Line(1, "Rust Aide", false, false) }, lines.ToArray());
+    }
 }

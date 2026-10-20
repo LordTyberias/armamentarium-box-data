@@ -61,6 +61,7 @@ public sealed partial class CatalogueIndex
     private readonly Dictionary<string, HashSet<RootEntry>> _preferredByReading = new(StringComparer.Ordinal);
     private readonly Dictionary<string, string> _catalogueNames = new(StringComparer.Ordinal);
     private readonly HashSet<string> _unavailable = new(StringComparer.Ordinal);
+    private readonly Dictionary<string, Dictionary<string, RootEntry?>> _aliasesByReading = new(StringComparer.Ordinal);
 
     // The word a shop leaves off a unit's name ("Intercessors" for "Intercessor Squad").
     private static readonly string[] UnitWords = ["squad", "mob", "unit", "pack", "band", "regiment", "team"];
@@ -70,10 +71,48 @@ public sealed partial class CatalogueIndex
     /// reading: the name; the name with a unit word after it; the name without one or two words before it that the
     /// catalogue's name carries ("Ork Boyz" for Boyz of the Orks); from two words, the root names that go on after it.
     /// Of the root entries found, one; or the one from a preferred source; or, all being the same entry, its one home.
-    /// Null otherwise: no rule picks among different entries.
+    /// Null otherwise: no rule picks among different entries. An alias name goes to its target before any rule and stays a
+    /// gap when its target is not one entry (ADR 0004 Addendum ARMAM-642).
     /// </summary>
     public RootEntry? Find(string reading, string name) =>
-        !_unavailable.Contains(reading) && Named(reading, name) is { } entries ? Resolve(reading, entries) : null;
+        _unavailable.Contains(reading) ? null
+        : _aliasesByReading.GetValueOrDefault(reading) is { } aliases && aliases.TryGetValue(ContentLines.Normalize(name), out var target) ? target
+        : Named(reading, name) is { } entries ? Resolve(reading, entries)
+        : null;
+
+    /// <summary>
+    /// Takes the aliases of <c>aliases.json</c> (ADR 0004 Addendum ARMAM-642): each name goes to the root entry its target
+    /// names in the catalogue it names, by the rules of <see cref="Find"/> among that catalogue's hits. Returns the aliases
+    /// whose target is not one root entry of a reading read whole; their names stay gaps.
+    /// </summary>
+    public IReadOnlyList<Alias> UseAliases(IEnumerable<Alias> aliases)
+    {
+        var unresolved = new List<Alias>();
+        foreach (var alias in aliases)
+        {
+            var hits = Named(alias.Reading, alias.Target)?.Where(e => CatalogueName(e) == alias.Catalogue).ToList();
+            var target = hits is { Count: > 0 } ? Resolve(alias.Reading, hits) : null;
+            if (!_aliasesByReading.TryGetValue(alias.Reading, out var names))
+            {
+                _aliasesByReading[alias.Reading] = names = new Dictionary<string, RootEntry?>(StringComparer.Ordinal);
+            }
+
+            names[ContentLines.Normalize(alias.Name)] = target;
+            if (target is null && !_unavailable.Contains(alias.Reading))
+            {
+                unresolved.Add(alias);
+            }
+        }
+
+        return unresolved;
+    }
+
+    /// <summary>
+    /// The name is an alias with a target: one model of a root entry another line of the box may name too, so it keeps its
+    /// own line and its own key (ADR 0004 Addendum ARMAM-642).
+    /// </summary>
+    public bool IsAlias(string reading, string name) =>
+        _aliasesByReading.GetValueOrDefault(reading)?.GetValueOrDefault(ContentLines.Normalize(name)) is not null;
 
     /// <summary>The root entries of the step of <see cref="Find"/> that names any, for the id report; empty for none.</summary>
     public IReadOnlyList<Candidate> Candidates(string reading, string name) =>

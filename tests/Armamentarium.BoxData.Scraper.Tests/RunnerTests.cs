@@ -61,6 +61,8 @@ public sealed class RunnerTests
         public Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken) =>
             Task.FromResult((_table, $"sha{Merged.Count}"));
 
+        public Task<string?> GetAliasesAsync(CancellationToken cancellationToken) => Task.FromResult<string?>(null);
+
         public Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken) =>
             Task.FromResult<IReadOnlyList<string>>(Open);
 

@@ -72,11 +72,13 @@ public static class Program
             if (idReport)
             {
                 var (text, _) = await repository.GetTableAsync(stop.Token);
-                IdReport.Write(
-                    Table.Read(text),
-                    await CatalogueIndex.LoadAsync(github, Log, stop.Token),
-                    Sources.All.Select(s => s.Host).ToHashSet(StringComparer.OrdinalIgnoreCase),
-                    Log);
+                var index = await CatalogueIndex.LoadAsync(github, Log, stop.Token);
+                foreach (var notice in AliasNotices(index.UseAliases(Aliases.Read(await repository.GetAliasesAsync(stop.Token)))))
+                {
+                    Log(notice);
+                }
+
+                IdReport.Write(Table.Read(text), index, Sources.All.Select(s => s.Host).ToHashSet(StringComparer.OrdinalIgnoreCase), Log);
                 return 0;
             }
 
@@ -96,6 +98,7 @@ public static class Program
             var notices = catalogues.Unavailable.Order(StringComparer.Ordinal)
                 .Select(reading => $"{reading}: a catalogue source is unreadable, no ids and no id check for this reading this run")
                 .ToList();
+            notices.AddRange(AliasNotices(catalogues.UseAliases(Aliases.Read(await repository.GetAliasesAsync(stop.Token)))));
 
             using var fetcher = new Fetcher(Sources.All.ToDictionary(s => s.Host, s => s.Interval, StringComparer.OrdinalIgnoreCase), Log);
             try
@@ -171,6 +174,11 @@ public static class Program
         }
     }
 
+    // An alias whose target names no one root entry leaves its name a gap; the maintainer hears of it (ADR 0004 Addendum ARMAM-642).
+    private static IEnumerable<string> AliasNotices(IReadOnlyList<Alias> unresolved) =>
+        unresolved.Select(a =>
+            $"{a.Reading}: alias {Text.Code(a.Name)} -> {Text.Code(a.Target)} in {Text.Code(a.Catalogue)} names no one root entry; the name stays a gap");
+
     private static async Task<int> NotifyFailureAsync(Action<string> log)
     {
         var message = Mailer.FailureMessage(Environment.GetEnvironmentVariable);
@@ -233,6 +241,8 @@ public static class Program
     {
         public Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken) =>
             inner.GetTableAsync(cancellationToken);
+
+        public Task<string?> GetAliasesAsync(CancellationToken cancellationToken) => inner.GetAliasesAsync(cancellationToken);
 
         public Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken) =>
             inner.OpenScraperBranchesAsync(cancellationToken);

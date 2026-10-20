@@ -58,10 +58,10 @@ public static class Probe
 
         foreach (var sentence in listing.Sentences)
         {
-            yield return $"  build {sentence.Build.Count} x {sentence.Build.Name}{(sentence.Article ? " (article)" : "")}";
+            yield return $"  build {sentence.Build.Count} x {sentence.Build.Name}{(sentence.Names ? " (names)" : sentence.Article ? " (article)" : "")}";
             foreach (var addition in sentence.Additions)
             {
-                yield return $"    plus {addition.Build.Count} x {addition.Build.Name}{(addition.Article ? " (article)" : "")}";
+                yield return $"    plus {addition.Build.Count} x {addition.Build.Name}{(sentence.Names ? "" : addition.Article ? " (article)" : "")}";
             }
         }
     }

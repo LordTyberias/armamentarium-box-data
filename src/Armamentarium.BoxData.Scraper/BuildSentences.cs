@@ -35,8 +35,19 @@ public static partial class BuildSentences
                 build = Build().Match(sentence, build.Index + 1);
             }
 
+            // "builds Ciaphas Cain and Jurgen": no count, a list of names, one model each (ADR 0003 Addendum ARMAM-642).
+            if (!build.Success)
+            {
+                if (OfNames(sentence) is { } names && !sentences.Any(s => s.Names && Same(s, names)))
+                {
+                    sentences.Add(names);
+                }
+
+                continue;
+            }
+
             // "Alternatively, you can build a …" names a second way to build the same kit, not more models.
-            if (!build.Success || AlternativeStart().IsMatch(sentence[..build.Index]))
+            if (AlternativeStart().IsMatch(sentence[..build.Index]))
             {
                 continue;
             }
@@ -60,6 +71,29 @@ public static partial class BuildSentences
 
         return sentences;
     }
+
+    // A build of two or more capitalised names joined by commas and "and"; every part must read as a model name.
+    private static BuildSentence? OfNames(string sentence)
+    {
+        var match = NamesBuild().Match(sentence);
+        if (!match.Success || AlternativeStart().IsMatch(sentence[..match.Index]))
+        {
+            return null;
+        }
+
+        var names = NameSeparator().Split(match.Groups["names"].Value).Select(n => ContentLines.Tidy(Text.Clean(n))).ToList();
+        if (names.Any(n => n is null))
+        {
+            return null;
+        }
+
+        var lines = names.Select(n => new Line(1, n!, ContentLines.IsNonPlayer(n!), false)).ToList();
+        return new BuildSentence(lines[0], true, lines.Skip(1).Select(l => new BuildSentence(l, true, [])).ToList()) { Names = true };
+    }
+
+    private static bool Same(BuildSentence a, BuildSentence b) =>
+        new[] { a.Build }.Concat(a.Additions.Select(x => x.Build)).Select(l => ContentLines.Normalize(l.Name))
+            .SequenceEqual(new[] { b.Build }.Concat(b.Additions.Select(x => x.Build)).Select(l => ContentLines.Normalize(l.Name)));
 
     // An article counts one, but prose builds "a unique boarding party" as readily as "a Leman Russ"; "one" is a number.
     private static readonly HashSet<string> Articles = new(ArticleWords.Split('|'), StringComparer.OrdinalIgnoreCase);
@@ -102,6 +136,18 @@ public static partial class BuildSentences
         @"|(?:(?:einen|eine|ein)\s+(?:Trupp|Einheit|Satz)\s+(?:aus|von)\s+)?" + Number + @"\s+" + Name + @"\s+bauen\b",
         RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex Build();
+
+    // A name of the list starts with a capital ("builds the hero and his retinue" lists none).
+    private const string ProperName =
+        @"(?-i:(?=\p{Lu}))(?>(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*(?:\s+(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*)*)";
+
+    [GeneratedRegex(
+        @"\b(?:builds?|assembles?|makes?|constructs?)\s+(?<names>" + ProperName + @"(?:\s*,\s*" + ProperName + @")*\s+and\s+" + ProperName + ")",
+        RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex NamesBuild();
+
+    [GeneratedRegex(@"\s*,\s*|\s+and\s+", RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex NameSeparator();
 
     [GeneratedRegex(@"\b(?:and|plus|as\s+well\s+as|along\s+with|und|sowie)\s+" + Number + @"\s+" + Name, RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex Extra();

@@ -152,8 +152,11 @@ public static class Agreement
     {
         string? Root(Line line) => rootOf?.Invoke(line.Name);
 
-        // A count by article only with a hit: prose builds "a unique boarding party" as readily as "a Leman Russ".
-        var usable = listing.Sentences.Where(s => !s.Article || Root(s.Build) is not null).ToList();
+        // A count by article only with a hit: prose builds "a unique boarding party" as readily as "a Leman Russ". A build of
+        // names only when every name hits (ADR 0003 Addendum ARMAM-642).
+        var usable = listing.Sentences.Where(s => s.Names
+            ? Root(s.Build) is not null && s.Additions.All(a => Root(a.Build) is not null)
+            : !s.Article || Root(s.Build) is not null).ToList();
         if (usable.Count == 0)
         {
             return listing.Lines;

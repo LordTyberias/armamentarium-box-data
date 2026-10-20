@@ -20,7 +20,10 @@ public static partial class ContentLines
             var match = LineShape().Match(raw);
             var bullet = match.Success && match.Groups["bullet"].Success;
             var colon = raw.TrimEnd().EndsWith(':');
-            if (!match.Success || (!bullet && !match.Groups["x"].Success))
+
+            // "1 Ciaphas Cain miniature" names its model without bullet or x (ADR 0003 Addendum ARMAM-642).
+            var miniature = match.Success && MiniatureEnd().IsMatch(match.Groups["name"].Value);
+            if (!match.Success || (!bullet && !match.Groups["x"].Success && !miniature))
             {
                 // "15 plastic terrain pieces" or "these interchangeable parts:" heads the lines below it; a heading
                 // without an excluded word ends that run.
@@ -201,6 +204,9 @@ public static partial class ContentLines
 
     [GeneratedRegex(@"^\s*[0-9]{1,3}\s+\S", RegexOptions.None, Page.RegexTimeout)]
     private static partial Regex Heading();
+
+    [GeneratedRegex(@"\bminiatures?\s*$", RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex MiniatureEnd();
 
     [GeneratedRegex(
         @"\b(terrain|scenery|gel(ä|ae|a)nde\w*|data ?cards?|\w*cards?|\w*karten|dice|d6|w(ü|ue)rfel|tokens?|\w*bogen|\w*bögen|" +

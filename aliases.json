@@ -1,0 +1,48 @@
+{
+  "$schema": "./aliases.schema.json",
+  "format": 1,
+  "aliases": [
+    {
+      "reading": "40k",
+      "name": "Plenipotentiary Lucia Vestha",
+      "target": "Wardens of Ultramar",
+      "catalogue": "Imperium - Adeptus Astartes - Ultramarines"
+    },
+    {
+      "reading": "40k",
+      "name": "Astropath Dainal Kornelius",
+      "target": "Wardens of Ultramar",
+      "catalogue": "Imperium - Adeptus Astartes - Ultramarines"
+    },
+    {
+      "reading": "40k",
+      "name": "Legatus Aemelia Minervas",
+      "target": "Wardens of Ultramar",
+      "catalogue": "Imperium - Adeptus Astartes - Ultramarines"
+    },
+    {
+      "reading": "40k",
+      "name": "Commodore Gaius Silva",
+      "target": "Wardens of Ultramar",
+      "catalogue": "Imperium - Adeptus Astartes - Ultramarines"
+    },
+    {
+      "reading": "40k",
+      "name": "Veteran Sergeant Metaurus",
+      "target": "Wardens of Ultramar",
+      "catalogue": "Imperium - Adeptus Astartes - Ultramarines"
+    },
+    {
+      "reading": "40k",
+      "name": "Ancient Gadriel",
+      "target": "Wardens of Ultramar",
+      "catalogue": "Imperium - Adeptus Astartes - Ultramarines"
+    },
+    {
+      "reading": "40k",
+      "name": "Jurgen",
+      "target": "Ciaphas Cain",
+      "catalogue": "Imperium - Astra Militarum"
+    }
+  ]
+}
