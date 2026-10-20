@@ -299,4 +299,39 @@ public sealed class AgreementTests
 
         Assert.AreEqual("no two sources share an entry", result.Waiting);
     }
+
+    private static BuildSentence Names(params string[] names) =>
+        new(L(1, names[0]), true, names.Skip(1).Select(n => new BuildSentence(L(1, n), true, [])).ToList()) { Names = true };
+
+    // The key the run gives an alias: its target's root entry and its own name (Runner.RootOf).
+    private static string? HeroRoot(string name) => ContentLines.Normalize(name) switch
+    {
+        "iron hero" => "40k:root:hero",
+        "rust aide" => "40k:root:hero|alias:rust aide",
+        _ => null,
+    };
+
+    [TestMethod]
+    public void Agree_BuildOfNamesThatAllHit_CountsEachOnce()
+    {
+        var result = Agreement.Agree([
+            WithSentences(English("a.test", L(1, "Iron Hero"), L(1, "Rust Aide")), Names("Iron Hero", "Rust Aide")),
+            WithSentences(English("b.test"), Names("Iron Hero", "Rust Aide")),
+        ], HeroRoot);
+
+        Assert.IsNull(result.Waiting);
+        CollectionAssert.AreEqual(new[] { "Iron Hero", "Rust Aide" }, result.Entries!.Select(e => e.Name).ToArray());
+        CollectionAssert.AreEqual(new[] { 2, 2 }, result.Entries!.Select(e => e.Hosts.Count).ToArray());
+    }
+
+    [TestMethod]
+    public void Agree_BuildOfNamesWithOneMiss_CountsNothing()
+    {
+        var result = Agreement.Agree([
+            WithSentences(English("a.test"), Names("Iron Hero", "Loyal Hound")),
+            WithSentences(English("b.test"), Names("Iron Hero", "Loyal Hound")),
+        ], HeroRoot);
+
+        StringAssert.Contains(result.Waiting, "model count");
+    }
 }

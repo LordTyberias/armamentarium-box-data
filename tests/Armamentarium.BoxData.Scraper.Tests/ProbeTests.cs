@@ -84,4 +84,17 @@ public sealed class ProbeTests
             },
             Probe.Describe("shop.test", listing).ToArray());
     }
+
+    [TestMethod]
+    public void Describe_BuildOfNames_SaysNames()
+    {
+        var listing = new Listing("shop.test", "https://shop.test/p", German: false, "Hero", [], [])
+        {
+            Sentences = BuildSentences.Parse("<p>This kit builds Iron Hero and Rust Aide.</p>"),
+        };
+
+        CollectionAssert.AreEqual(
+            new[] { "shop.test: https://shop.test/p Hero", "  build 1 x Iron Hero (names)", "    plus 1 x Rust Aide" },
+            Probe.Describe("shop.test", listing).ToArray());
+    }
 }

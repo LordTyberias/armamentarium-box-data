@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/LordTyberias/armamentarium-box-data/aliases.schema.json",
+  "title": "Aliases of own names, format 1",
+  "description": "A model's own name in a reading and the root entry it belongs to, named by the entry's name and its catalogue's name. Ids come from the catalogues, never from this file (ADR 0004 Addendum ARMAM-642).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "aliases"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "format": {
+      "const": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/alias"
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reading",
+        "name",
+        "target",
+        "catalogue"
+      ],
+      "properties": {
+        "reading": {
+          "enum": [
+            "kt",
+            "40k",
+            "aos",
+            "tow",
+            "hh"
+          ]
+        },
+        "name": {
+          "$ref": "#/$defs/text"
+        },
+        "target": {
+          "$ref": "#/$defs/text"
+        },
+        "catalogue": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    }
+  }
+}

@@ -15,6 +15,7 @@ app bundles a fixed commit of it; it never fetches it at runtime). Everything el
 | Table | `box-contents.json` | The data. Single file, `format` number at the top. |
 | Schema | `box-contents.schema.json` | JSON Schema draft 2020-12 of the table. The table references it with `$schema`. |
 | Contract prose | `README.md` | The rules the schema cannot express (key uniqueness across boxes, what goes in, NPO fallback, sources). |
+| Aliases | `aliases.json`, `aliases.schema.json` | Configuration of the scraper service, read from `main` every run: a model's own name to a root entry by entry and catalogue name, never ids (ADR 0004 Addendum ARMAM-642). Not read by the app; own `format` number, independent of the table's. |
 | Decisions | `docs/adr/` | This repository's decisions, index `docs/adr/INDEX.md`. |
 | Scraper service | `src/Armamentarium.BoxData.Scraper/`, tests `tests/`, solution `armamentarium-box-data.slnx` | Opens pull requests with new boxes (ADR 0003); with `--auto-merge` sets ids by name and merges them itself (ADR 0004). See §4. |
 | Operation | `deploy/` | systemd service, its failure unit (ADR 0003 Addendum ARMAM-600) and timer, deploy script. Runbook: Armamentarium `docs/server/betrieb.md`. `*.service` and `*.timer` are LF (`.gitattributes`, `.editorconfig`): systemd reads a trailing CR as part of a value. Every other file stays CRLF. |
@@ -34,7 +35,11 @@ The table, the schema and the README form **one contract**. A change to one that
   sources, disagreement is recorded as `countCandidates`. One named exception (ADR 0004): while the service runs with
   `--auto-merge`, it sets ids where an entry's name names one root entry of its reading (ADR 0004, rules of a hit in
   Addendum ARMAM-598); the same hit picks a build sentence over a source's lines and lets two names of one entry confirm
-  each other (ADR 0003 Addendum ARMAM-599).
+  each other (ADR 0003 Addendum ARMAM-599); an own name listed in `aliases.json` gets the ids of its target, resolved by
+  entry and catalogue name, one line per model beside its entry's others (ADR 0004 Addendum ARMAM-642); no id is ever
+  written into `aliases.json`.
+- **Aliases format.** `aliases.json` carries its own `format` number, raised by the same rule as the table's and
+  independent of it.
 
 ## 4 — Scraper service
 
@@ -49,7 +54,9 @@ and ADR 0004:
   (ADR 0004), stored outside every repository, never logged.
 - Catalogue ids from the catalogues of a compiled allowlist of repositories (ADR 0004 §3), downloaded every run, with or
   without `--auto-merge`; every run first gives the gaps of its own boxes their ids and then checks the ids the table
-  holds against them (ADR 0004 Addenda ARMAM-597, ARMAM-598).
+  holds against them (ADR 0004 Addenda ARMAM-597, ARMAM-598). Own names of models that belong to a root entry of
+  another name go to it through `aliases.json`, read from `main` every run, resolved by entry and catalogue name, never
+  ids by hand (ADR 0004 Addendum ARMAM-642).
 - Candidates from warhub-catalog `products.json`, one request per run to a compiled address (ADR 0003 §4).
 - Sources from a compiled allowlist, no open search, measured with the `--host` probe before they enter (ADR 0003
   Addendum ARMAM-602); at most one request per five seconds and host (ADR 0003 §6; no host needs the per-minute interval
@@ -58,7 +65,8 @@ and ADR 0004:
   0003 Addendum ARMAM-595); asked over HTTP/2, HTTP/1.1 only for a host without it (ADR 0003 Addendum ARMAM-603); own user agent
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
 - Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
-  ARMAM-599), never from part counts. A read name passes one rule: prose around it is cut, parts, hand weapons and filler
+  ARMAM-599), a line "1 <name> miniature", a build of names ("builds Ciaphas Cain and Jurgen") when every name hits (ADR
+  0003 Addendum ARMAM-642), never from part counts. A read name passes one rule: prose around it is cut, parts, hand weapons and filler
   words are no model; upgrade sets are no candidates (ADR 0003 Addendum ARMAM-610).
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
   a ready one with the ids of the one root entry a name names (ADR 0004 Addendum ARMAM-598), merged at once (a merge refused with 405 is tried again, ADR 0004

@@ -557,13 +557,16 @@ public sealed class Runner(
 
     // The root entries a name names in the product's readings, as one key, or null: the same hit that sets ids decides
     // between a build sentence and lines and lets two names of one entry confirm each other (ADR 0003 addendum ARMAM-599).
+    // An alias is one model of its entry beside the others and keeps its own name in the key (ADR 0004 Addendum ARMAM-642).
     private Func<string, string?> RootOf(Product product)
     {
         var readings = ProductCatalogue.ReadingsOf(product);
         return name =>
         {
             var hits = readings.Select(r => IdsOf(r, name) is { } e ? $"{r}:{e.CatalogueId}:{e.EntryId}" : null).OfType<string>().ToList();
-            return hits.Count > 0 ? string.Join('|', hits) : null;
+            return hits.Count == 0 ? null
+                : readings.Any(r => catalogues!.IsAlias(r, name)) ? $"{string.Join('|', hits)}|alias:{ContentLines.Normalize(name)}"
+                : string.Join('|', hits);
         };
     }
 

@@ -11,7 +11,14 @@ public sealed record Line(int Count, string Name, bool NonPlayer, bool Alternati
 /// was only an article ("builds a …"), and the models added after it ("as well as three …"), each an addition without
 /// additions of its own.
 /// </summary>
-public sealed record BuildSentence(Line Build, bool Article, IReadOnlyList<BuildSentence> Additions);
+public sealed record BuildSentence(Line Build, bool Article, IReadOnlyList<BuildSentence> Additions)
+{
+    /// <summary>
+    /// A build of names without a count ("builds Ciaphas Cain and Jurgen", ADR 0003 Addendum ARMAM-642): the build and its
+    /// additions are one model each and count only when every name names a root entry.
+    /// </summary>
+    public bool Names { get; init; }
+}
 
 /// <summary>
 /// A shop page that confirmed the product. <see cref="German"/> marks translated model names; <see cref="Sentences"/> holds
@@ -56,6 +63,9 @@ public interface ISource
 public interface IRepository
 {
     Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken);
+
+    /// <summary>The text of <c>aliases.json</c> on main, or null when there is none (ADR 0004 Addendum ARMAM-642).</summary>
+    Task<string?> GetAliasesAsync(CancellationToken cancellationToken);
 
     Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken);
 

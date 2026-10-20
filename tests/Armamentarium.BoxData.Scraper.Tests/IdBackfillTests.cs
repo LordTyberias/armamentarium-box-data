@@ -120,4 +120,19 @@ public sealed class IdBackfillTests
         Assert.IsTrue(IdBackfill.IsServiceBox(boxes[0], Hosts));
         Assert.IsFalse(IdBackfill.IsServiceBox(boxes[1], Hosts));
     }
+
+    // Two models of a box that the catalogue holds as one unit (ADR 0004 Addendum ARMAM-642): each alias line gets the ids.
+    [TestMethod]
+    public void Fill_AliasLinesOfAnEntryTheReadingLists_GetTheIdsEach()
+    {
+        var table = Table(Box("Kill Team: Iron", "other.test",
+            Gap + "," + Gap.Replace("Sergeants", "Brother Aldo") + "," + Gap.Replace("Sergeants", "Brother Bero")));
+        var index = Iron();
+        index.UseAliases([new Alias("kt", "Brother Aldo", "Sergeant", "Iron Brothers"), new Alias("kt", "Brother Bero", "Sergeant", "Iron Brothers")]);
+
+        var filled = IdBackfill.Fill(table, index, Hosts);
+
+        CollectionAssert.AreEqual(new[] { "Sergeants", "Brother Aldo", "Brother Bero" }, filled.Select(f => f.Name).ToArray());
+        Assert.IsTrue(filled.All(f => f.Ids == new RootEntry("cat-iron", "se-sergeant")));
+    }
 }

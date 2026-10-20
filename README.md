@@ -20,6 +20,8 @@ is not affiliated with any publisher.
 |---|---|
 | `box-contents.json` | The table |
 | `box-contents.schema.json` | JSON Schema (draft 2020-12) of the table; the table points to it with `$schema` |
+| `aliases.json` | Own names of models that belong to a root entry of another name (see below) |
+| `aliases.schema.json` | JSON Schema (draft 2020-12) of the aliases |
 
 ## Format 1
 
@@ -82,7 +84,7 @@ An edition without a reading falls back to the app's name-based candidates.
 | `catalogueId` | `id` of the catalogue (`.cat`) holding the entry. |
 | `entryId` | `id` of the root `selectionEntry`: an operative in Kill Team, a unit in 40k. |
 | `choice` | Instead of `entryId`, when the box's models build freely chosen operatives: the operatives the kit builds, each `entryId` + `name`. `count` is then the number of models across all of them; the user distributes them. |
-| `name` | The entry's catalogue name, for checking only. |
+| `name` | The model's name as the box lists it: the entry's catalogue name, or, for an alias of `aliases.json`, the model's own name beside the ids of its entry. For checking only. |
 | `count` | Number of **models** in the box for this entry, as the box is sold. |
 | `countCandidates` | Instead of `count`, when the sources disagree and the number could not be settled: the numbers in question. The entry is not preselected; the user sets the number. |
 
@@ -107,6 +109,23 @@ names one entry (ADR 0004, Addendum ARMAM-598) gets its ids whatever the model c
 - **NPOs** point to the Kill Team non-player operative entry **without** a points suffix (`Necron Warrior`, not
   `Necron warrior (Pts 2)`): showcase entries are models, points belong to lists. Without such an entry, the regular 40k
   unit (`"reading": "40k"`); without that, name and count only.
+
+### Aliases
+
+A box can list models by their own names that the catalogues hold as one unit of another name: the six Wardens of the
+box "Captain Titus & The Wardens of Ultramar" are the unit "Wardens of Ultramar", Jurgen belongs to the entry of Ciaphas
+Cain. `aliases.json` names, per reading, such a model's own name, the root entry's name (`target`) and its catalogue's
+name (`catalogue`):
+
+```json
+{ "reading": "40k", "name": "Jurgen", "target": "Ciaphas Cain", "catalogue": "Imperium - Astra Militarum" }
+```
+
+No id is written there. The scraper reads the file from `main` in every run and resolves each target in the named
+catalogue; a line whose name is an alias gets that entry's ids, keeps its own name and count 1, and stands beside the
+entry's other models. A target that names no one root entry leaves the name a gap and is reported; a file that breaks
+the schema or names one model twice in a reading fails the run (`docs/adr/0004-auto-merge-and-ids-by-name.md`, Addendum
+ARMAM-642).
 
 ## Sources and checking
 

@@ -28,9 +28,23 @@ public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? m
     private const string File = "box-contents.json";
     private static readonly Uri Api = new("https://api.github.com/");
 
-    public async Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken)
+    public Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken) => GetFileAsync(File, cancellationToken);
+
+    public async Task<string?> GetAliasesAsync(CancellationToken cancellationToken)
     {
-        using var file = await SendAsync(HttpMethod.Get, $"repos/{Repository}/contents/{File}?ref=main", null, cancellationToken);
+        try
+        {
+            return (await GetFileAsync(Aliases.File, cancellationToken)).Text;
+        }
+        catch (GitHubException ex) when (ex.Status == 404)
+        {
+            return null;
+        }
+    }
+
+    private async Task<(string Text, string Sha)> GetFileAsync(string path, CancellationToken cancellationToken)
+    {
+        using var file = await SendAsync(HttpMethod.Get, $"repos/{Repository}/contents/{path}?ref=main", null, cancellationToken);
         var root = file.RootElement;
         var content = root.GetProperty("content").GetString()!.Replace("\n", string.Empty);
         return (Encoding.UTF8.GetString(Convert.FromBase64String(content)), root.GetProperty("sha").GetString()!);

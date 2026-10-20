@@ -38,6 +38,9 @@ HTTP/1.1, not the user agent.
 **Changed by Addendum ARMAM-610:** §4 a product named as an upgrade set is no candidate; §8 drops parts, hand weapons,
 filler names and names starting with "of", and cuts prose before and after a name, in lines and build sentences alike.
 
+**Changed by Addendum ARMAM-642:** §8 also reads a line "1 <name> miniature" without bullet or "x", and a build sentence
+that names models without a count ("builds Ciaphas Cain and Jurgen"), one each, when every name names a root entry.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -445,3 +448,22 @@ The table grows only by hand so far. Measured on 2026-10-17:
   box without contents); **only filtering the parts of an upgrade set** (arms, icons, ribbons and seals are too many words);
   **"no capital letter, no model"** (misses "Boltguns" and "Backpacks" of a shop's list, and "Easy"); **dropping a name with
   prose around it** (the model it names would be lost).
+
+## Addendum ARMAM-642 — a list of names builds one model each (2026-10-20)
+
+- **Measured** on "Astra Militarum: Ciaphas Cain" (99120105152), in the product catalogue and a candidate since its
+  release: five shops confirm it, none states a count the reader takes, so the box waits ("no source states a model
+  count"). `www.goblingaming.co.uk` lists "1 Ciaphas Cain miniature" and "1 Jurgen miniature" without bullet or "x";
+  `www.goblingaming.co.uk` and `www.retrofixgames.com` write "This multipart plastic kit builds Ciaphas Cain and Jurgen".
+- **A line of a miniature:** a counted line without bullet or "x" is read when its name ends in "miniature(s)"; the word
+  goes, as before. Parts, bases and guides stay out by the rules of Addendum ARMAM-610.
+- **A build of names:** a build verb followed by two or more names, each starting with a capital, joined by commas and
+  "and", is one model per name. It counts only when every name names a root entry, by a hit or by an alias (ADR 0004
+  Addendum ARMAM-642); one miss and the sentence counts nothing ("builds the hero and his retinue" names no model). The
+  two sources of §9 stay.
+- **The run that brings it:** the candidates are already the codes without a box line; a run after the deploy with
+  `state.json` emptied asks them all again, the prose kits waiting since the full run of 2026-10-18 among them. No mode of
+  its own.
+- Decisions of the maintainer. Rejected: only the miniature line (one source, the box would still wait); each name that
+  hits counting while the others drop (a box would lose a model); a run mode for named codes or for codes new in the
+  product catalogue.

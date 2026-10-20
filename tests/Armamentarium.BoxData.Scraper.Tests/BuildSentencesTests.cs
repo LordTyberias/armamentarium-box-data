@@ -163,4 +163,31 @@ public sealed class BuildSentencesTests
             new[] { (1, "Blade Warden") },
             Read("<p>This kit builds a Blade Warden model.</p><p>This kit builds 10 Easy to build Rust Wraiths.</p>"));
     }
+
+    // "builds Ciaphas Cain and Jurgen" names each model once; whether it counts decides Agreement (ADR 0003 Addendum ARMAM-642).
+    [TestMethod]
+    public void Parse_BuildOfNames_GivesEachNameOnce()
+    {
+        var sentence = BuildSentences.Parse("<p>This multipart plastic kit builds  Iron Hero and Rust Aide , a characterful pair of heroes.</p>").Single();
+
+        Assert.IsTrue(sentence.Names);
+        CollectionAssert.AreEqual(new[] { (1, "Iron Hero"), (1, "Rust Aide") },
+            new[] { sentence.Build }.Concat(sentence.Additions.Select(a => a.Build)).Select(l => (l.Count, l.Name)).ToArray());
+    }
+
+    [TestMethod]
+    public void Parse_BuildOfLowerCaseWords_IsNoNames()
+    {
+        Assert.AreEqual(0, BuildSentences.Parse("<p>This kit builds the hero and his retinue.</p>").Count);
+    }
+
+    // Two units joined by "and" read as one model each; Agreement takes it only when both names hit and two sources agree
+    // (ADR 0003 Addendum ARMAM-642). Pinned here so a change to that rule is a decision.
+    [TestMethod]
+    public void Parse_BuildOfTwoUnitNames_ReadsAsNames()
+    {
+        var sentence = BuildSentences.Parse("<p>This kit builds Hellblasters and Eradicators.</p>").Single();
+
+        Assert.IsTrue(sentence.Names);
+    }
 }
