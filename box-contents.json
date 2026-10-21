@@ -31968,6 +31968,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmar: Ironweld Great Cannon",
+      "productCodes": [
+        "99120202045"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-ironweld-great-cannon",
+        "https://abyssgamestore.ca/products/cities-of-sigmar-ironweld-great-cannon-86-11",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-ironweld-great-cannon",
+        "https://shop.afk.games/products/ironweld-great-cannon",
+        "https://obsidiangames.ca/products/cities-of-sigmar-ironweld-great-cannon",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-cities-of-sigmar-ironweld-great-cannon",
+        "https://mrmuffinstrains.com/products/gw-86-11"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::05-ironweld-great-cannon",
+              "name": "Ironweld Great Cannon",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
