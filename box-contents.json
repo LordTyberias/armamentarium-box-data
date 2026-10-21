@@ -31598,6 +31598,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Grey Knights: Strike Squad",
+      "productCodes": [
+        "99120107018"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/grey-knights-strike-squad",
+        "https://abyssgamestore.ca/products/grey-knights-strike-squad-57-08",
+        "https://shop.afk.games/products/grey-knights-strike-squad",
+        "https://www.goblingaming.co.uk/products/grey-knights-strike-squad-54316322",
+        "https://mrmuffinstrains.com/products/gw-57-08",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/grey-knights/grey-knights-strike-squad-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "50c4-3e83-fe54-97c4",
+              "entryId": "d81f-c9ac-e338-ba37",
+              "name": "Grey Knight Strike Squad",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
