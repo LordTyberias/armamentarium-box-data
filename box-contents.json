@@ -30851,6 +30851,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Primaris Pskyer",
+      "productCodes": [
+        "99070105003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-primaris-pskyer",
+        "https://shop.afk.games/products/primaris-psyker",
+        "https://www.goblingaming.co.uk/products/psyker",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-psyker"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "4ad0-e988-a513-9530",
+              "name": "Primaris Psyker",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
