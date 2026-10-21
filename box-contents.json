@@ -31246,6 +31246,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Traitor Enforcer",
+      "productCodes": [
+        "99120102220"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-traitor-enforcer",
+        "https://abyssgamestore.ca/products/chaos-space-marines-traitor-enforcer-43-106",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-traitor-enforcer",
+        "https://mrmuffinstrains.com/products/gw-43-106",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-traitor-enforcer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "f69d-2171-5f95-9c88",
+              "name": "Traitor Enforcer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
