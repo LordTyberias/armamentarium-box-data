@@ -31219,6 +31219,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines: Traitor Guardsmen Squad",
+      "productCodes": [
+        "99120102219"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/chaos-space-marines-traitor-guardsmen-squad",
+        "https://abyssgamestore.ca/products/chaos-space-marines-traitor-guardsmen-squad-43-107",
+        "https://mrmuffinstrains.com/products/gw-43-107",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-traitor-guardsmen-squad",
+        "https://radaddel.de/products/chaos-space-marines-traitor-guardsmen-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "8dc5-4dcb-d77f-7d23",
+              "name": "Traitor Guardsmen",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
