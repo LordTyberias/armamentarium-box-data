@@ -30952,6 +30952,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Hedonites of Slaanesh: Lord of Hubris",
+      "productCodes": [
+        "99070201033"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/hedonites-of-slaanesh-lord-of-hubris",
+        "https://abyssgamestore.ca/products/hedonites-of-slaanesh-lord-of-hubris-83-96",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-hedonites-of-slaanesh-lord-of-hubris",
+        "https://shop.afk.games/products/hedonites-of-slaanesh-lord-of-hubris",
+        "https://obsidiangames.ca/products/hedonites-of-slaanesh-lord-of-hubris",
+        "https://mrmuffinstrains.com/products/gw-83-96"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "afdb-68a1-283e-3bf2",
+              "entryId": "ef1b-a791-66b4-735f",
+              "name": "Lord of Hubris",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
