@@ -32357,6 +32357,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Doom Diver Catapault",
+      "productCodes": [
+        "99120209129"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/gloomspite-gitz-doom-diver-catapault",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-gloomspite-gitz-doom-diver-catapult",
+        "https://shop.afk.games/products/gloomspite-gitz-doom-diver-catapult",
+        "https://obsidiangames.ca/products/doom-diver-catapult",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/doom-diver-catapult"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "9baf-c109-f621-e60",
+              "entryId": "75f7-3cbc-97f2-2ecf",
+              "name": "Doom Diver Catapult",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
