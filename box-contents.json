@@ -32308,6 +32308,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Gobbapalooza",
+      "productCodes": [
+        "99120209054"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/gobbapalooza",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/gloomspite-gitz-gobbapalooza"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "9baf-c109-f621-e60",
+              "entryId": "a04f-574e-e278-ea32",
+              "name": "Gobbapalooza",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
