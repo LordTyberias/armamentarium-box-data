@@ -31650,6 +31650,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Canoness",
+      "productCodes": [
+        "99120108058"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-canoness",
+        "https://shop.afk.games/products/adepta-sororitas-canoness",
+        "https://obsidiangames.ca/products/adepta-sororitas-canoness"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "c338-14f9-4ee-f223",
+              "name": "Canoness",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
