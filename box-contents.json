@@ -31187,6 +31187,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Chaos Space Marines Dark Commune",
+      "productCodes": [
+        "99120102146"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-dark-commune",
+        "https://shop.afk.games/products/chaos-space-marines-dark-commune",
+        "https://obsidiangames.ca/products/dark-commune",
+        "https://www.goblingaming.co.uk/products/games-workshop-warhammer-40k-chaos-space-marines-dark-commune",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marines-dark-commune"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "1780-25b8-ce0b-898d",
+              "name": "Dark Commune",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Blessed Blades",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
