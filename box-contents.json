@@ -32332,6 +32332,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Orruk Warclans BeastSkewer Killbow",
+      "productCodes": [
+        "99120209072"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-orruk-warclans-beast-skewer-killbow",
+        "https://mrmuffinstrains.com/products/gw-89-60",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/orruk-warclans-beast-skewer-killbow"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::06-beast-skewer-killbow",
+              "name": "Beast-skewer Killbow",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
