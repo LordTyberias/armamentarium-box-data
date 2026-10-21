@@ -31028,6 +31028,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Mortisan Ossifector",
+      "productCodes": [
+        "99070207016"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ossiarch-bonereapers-mortisan-ossifector",
+        "https://shop.afk.games/products/ossiarch-bonereapers-mortisan-ossifector",
+        "https://obsidiangames.ca/products/ossiarch-bonereapers-mortisan-ossifector"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::01-mortisan-ossifector",
+              "name": "Mortisan Ossifector",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
