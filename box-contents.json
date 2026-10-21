@@ -31418,6 +31418,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K: Astra Militarum - Leman Russ Battle Tank",
+      "productCodes": [
+        "99120105111"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-astra-militarum-leman-russ-battle-tank",
+        "https://www.irresistibleforce.com.au/products/astra-militarum-leman-russ-battle-tank",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-leman-russ-battle-tank-1",
+        "https://shop.afk.games/products/leman-russ-battle-tank",
+        "https://obsidiangames.ca/products/astra-militarum-leman-russ-battle-tank",
+        "https://www.goblingaming.co.uk/products/leman-russ-battle-tank",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-leman-russ-battle-tank-2"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "c581-3ab5-49a0-9ec0",
+              "name": "Leman Russ Battle Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
