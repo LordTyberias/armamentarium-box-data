@@ -31626,6 +31626,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas Dialogus",
+      "productCodes": [
+        "99120108051"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/adepta-sororitas-dialogus",
+        "https://obsidiangames.ca/products/adepta-sororitas-dialogus"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "91b8-3ccb-de30-6e54",
+              "name": "Dialogus",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
