@@ -31327,6 +31327,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Rogal Dorn Battle Tank",
+      "productCodes": [
+        "99120105098"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-rogal-dorn-battle-tank",
+        "https://abyssgamestore.ca/products/astra-militarum-rogal-dorn-battle-tank-47-31",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-rogal-dorn-battle-tank",
+        "https://shop.afk.games/products/rogal-dorn-battle-tank",
+        "https://obsidiangames.ca/products/astra-militarum-rogal-dorn-battle-tank",
+        "https://www.goblingaming.co.uk/products/rogal-dorn-battle-tank",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-rogal-dorn-battle-tank"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "2127-efcc-1f62-7fab",
+              "name": "Rogal Dorn Battle Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
