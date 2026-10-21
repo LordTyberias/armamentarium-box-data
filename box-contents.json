@@ -32255,6 +32255,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ossiarch Bonereapers: Liege-Kavalos On War Chariot",
+      "productCodes": [
+        "99120207200"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/ossiarch-bonereapers-liege-kavalos-on-war-chariot",
+        "https://www.goblingaming.co.uk/products/ossiarch-bonereapers-liege-kavalos-on-war-chariot",
+        "https://mrmuffinstrains.com/products/gw-94-36",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ossiarch-bonereapers-liege-kavalos-on-war-chariot"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::kavalos-vanguard::01-liege-kavalos",
+              "name": "Liege-Kavalos",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
