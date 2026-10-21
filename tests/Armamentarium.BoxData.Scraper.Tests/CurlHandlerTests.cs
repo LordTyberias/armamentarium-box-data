@@ -51,6 +51,9 @@ public sealed class CurlHandlerTests
         Assert.IsEmpty(inner.Requested);
         var arguments = curl.Calls.Single();
         Assert.Contains("--http2", arguments);
+        Assert.AreEqual("-q", arguments[0]);
+        Assert.Contains("-g", arguments);
+        Assert.Contains("=https", arguments);
         Assert.Contains("User-Agent: ABD/1.0", arguments);
         Assert.AreEqual("https://shop.test/products/a-kit.js", arguments[^1]);
         Assert.DoesNotContain("-L", arguments);
@@ -104,6 +107,22 @@ public sealed class CurlHandlerTests
     {
         var curl = new Curl(Output("", exitCode: 28, error: "curl: (28) Operation timed out"));
         using var client = Client(new Inner(), curl);
+
+        await Assert.ThrowsExactlyAsync<TaskCanceledException>(() => client.GetAsync("https://shop.test/products/a-kit.js"));
+    }
+
+    [TestMethod]
+    public async Task Send_ClientTimeout_CancelsCurlAndIsATimeout()
+    {
+        var inner = new Inner();
+        using var client = new HttpClient(new CurlHandler(inner, async (_, token) =>
+        {
+            await Task.Delay(Timeout.Infinite, token);
+            throw new InvalidOperationException("not reached");
+        }))
+        {
+            Timeout = TimeSpan.FromMilliseconds(50),
+        };
 
         await Assert.ThrowsExactlyAsync<TaskCanceledException>(() => client.GetAsync("https://shop.test/products/a-kit.js"));
     }

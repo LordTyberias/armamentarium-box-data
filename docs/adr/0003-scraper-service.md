@@ -497,8 +497,9 @@ The table grows only by hand so far. Measured on 2026-10-17:
   `SocketsHttpHandler`): `curl -sS --http2 --compressed --max-filesize 16M -D -` with the request's headers, started
   without a shell, its answer turned into a response. `search/suggest.json`, `elementgames.co.uk` and GitHub stay with
   the .NET client. The fetcher is unchanged: `Retry-After`, the stretched interval, block pages, the redirect within the
-  host and the journal line for an answer below HTTP/2 apply to curl's answer as before. curl's timeout comes from the
-  client's 20 s; exit 28 is a timeout, any other exit an answer missing. The server needs `/usr/bin/curl` (Debian
+  host and the journal line for an answer below HTTP/2 apply to curl's answer as before. the client's 20 s timeout
+  cancels the call and kills curl; curl's own connect timeout (exit 28) is a timeout too, any other exit an answer
+  missing. curl starts with `-q` (no `.curlrc`), `-g` (no globbing of a handle) and `--proto =https`. The server needs `/usr/bin/curl` (Debian
   package, installed).
 - **Bound (maintainer's decision):** curl goes as it is, under the service's own name `ABD/1.0` (§7); no browser string,
   no cipher list or other setting shaped to look like another client, no other address or machine. A 429 with

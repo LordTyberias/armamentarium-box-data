@@ -38,8 +38,10 @@ public sealed class CurlHandler(HttpMessageHandler inner, CurlRun? run = null) :
             return await base.SendAsync(request, cancellationToken);
         }
 
-        // No -L: the fetcher follows a redirect itself, within the host only.
-        List<string> arguments = ["-sS", "--http2", "--compressed", "--max-filesize", MaxFileSize, "-D", "-"];
+        // -q: no .curlrc; -g: no globbing of [] and {} in a handle; no -L: the fetcher follows a redirect itself, within
+        // the host only. The fetcher's 20 s timeout cancels the call and kills curl.
+        List<string> arguments =
+            ["-q", "-sS", "-g", "--proto", "=https", "--http2", "--compressed", "--max-filesize", MaxFileSize, "-D", "-"];
         foreach (var header in request.Headers)
         {
             arguments.Add("-H");
@@ -51,7 +53,7 @@ public sealed class CurlHandler(HttpMessageHandler inner, CurlRun? run = null) :
         return result.ExitCode switch
         {
             0 => Parse(result.Output, request),
-            // CURLE_OPERATION_TIMEDOUT
+            // CURLE_OPERATION_TIMEDOUT: curl's own connect timeout
             28 => throw new TaskCanceledException($"curl timed out: {result.Error.Trim()}"),
             _ => throw new HttpRequestException($"curl exited {result.ExitCode}: {result.Error.Trim()}"),
         };
@@ -65,7 +67,7 @@ public sealed class CurlHandler(HttpMessageHandler inner, CurlRun? run = null) :
             throw new HttpRequestException("curl wrote no complete header block");
         }
 
-        var lines = Encoding.ASCII.GetString(output, 0, end).Split("\r\n");
+        var lines = Encoding.Latin1.GetString(output, 0, end).Split("\r\n");
         var status = lines[0].Split(' ', StringSplitOptions.RemoveEmptyEntries);
         if (status.Length < 2 || !status[0].StartsWith("HTTP/", StringComparison.Ordinal) || !int.TryParse(status[1], out var code))
         {
@@ -133,7 +135,12 @@ public sealed class CurlHandler(HttpMessageHandler inner, CurlRun? run = null) :
         }
         catch (OperationCanceledException)
         {
-            process.Kill(entireProcessTree: true);
+            // curl may have finished just before the cancellation; killing it then would throw over the cancellation.
+            if (!process.HasExited)
+            {
+                process.Kill(entireProcessTree: true);
+            }
+
             throw;
         }
     }

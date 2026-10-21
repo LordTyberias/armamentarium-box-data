@@ -62,8 +62,9 @@ public sealed class Fetcher : IFetcher, IDisposable
             Timeout = TimeSpan.FromSeconds(20),
             // The largest shop page measured is 1.4 MB.
             MaxResponseContentBufferSize = 16 * 1024 * 1024,
-            // Shopify answers /products/<handle>.js over HTTP/1.1 with 429 from the first request, over HTTP/2 with 200 up to
-            // two requests a second across ten shops (measured from the server, ADR 0003 Addendum ARMAM-603).
+            // Shopify answered /products/<handle>.js over HTTP/1.1 with 429 from the first request, over HTTP/2 with 200
+            // (measured from the server, ADR 0003 Addendum ARMAM-603); since 2026-10-20 it answers this client 429 there
+            // over HTTP/2 too, so that address goes through curl (CurlHandler, Addendum ARMAM-655).
             DefaultRequestVersion = HttpVersion.Version20,
             DefaultVersionPolicy = HttpVersionPolicy.RequestVersionOrLower,
         };
