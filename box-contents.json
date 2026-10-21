@@ -1607,11 +1607,6 @@
               "role": "team",
               "name": "Ripper Swarms",
               "count": 2
-            },
-            {
-              "role": "team",
-              "name": "30\" by 22.4\" double-sided gaming boards",
-              "count": 2
             }
           ]
         }
@@ -1655,28 +1650,6 @@
               "entryId": "e3b1-1240-2476-cd86",
               "name": "Ork Boyz",
               "count": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Warhammer 40k: 11th Edition - Base Set - Armageddon (EN)",
-      "productCodes": [
-        "60010199080"
-      ],
-      "sources": [
-        "https://www.wellplayed.ch/products/warhammer-40k-11th-edition-base-set-armageddon-en",
-        "https://abyssgamestore.ca/products/warhammer-40-000-armageddon-40-01"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "multipart plastic push-fit miniatures",
-              "count": 61
             }
           ]
         }
@@ -1868,11 +1841,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "Push-fit",
-              "count": 37
-            },
-            {
-              "role": "team",
               "catalogueId": "sph-catalogue::stormcast-eternals",
               "entryId": "sph::vigilant-brotherhood::01-lord-vigilant-on-gryph-stalker",
               "name": "Lord-Vigilant on Gryph-Stalker",
@@ -1880,7 +1848,7 @@
             },
             {
               "role": "team",
-              "name": "Lord-Veritant with 1x Gryph-crow",
+              "name": "Lord-Veritant",
               "count": 1
             },
             {
@@ -1951,12 +1919,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Push-fit",
-              "count": 35
-            },
-            {
-              "role": "team",
-              "name": "Lord-Veritant with 1x Gryph-crow",
+              "name": "Lord-Veritant",
               "count": 1
             },
             {
@@ -2152,11 +2115,6 @@
             },
             {
               "role": "team",
-              "name": "Crew",
-              "count": 3
-            },
-            {
-              "role": "team",
               "name": "double-sided folding playmat",
               "count": 1
             },
@@ -2219,28 +2177,6 @@
               "role": "team",
               "name": "Disintegrator weapons upgrades",
               "count": 36
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Warcry Briar and Bone",
-      "productCodes": [
-        "60120299006"
-      ],
-      "sources": [
-        "https://www.retrofixgames.com/products/warcry-briar-and-bone",
-        "https://elementgames.co.uk/clearance-sale/warcry-briar-and-bone-english-"
-      ],
-      "readings": [
-        {
-          "reading": "aos",
-          "entries": [
-            {
-              "role": "team",
-              "name": "plastic miniatures",
-              "count": 16
             }
           ]
         }
@@ -2347,60 +2283,6 @@
       ]
     },
     {
-      "name": "Deathwatch Upgrade Pack ( 39-15 )",
-      "productCodes": [
-        "99070109007"
-      ],
-      "sources": [
-        "https://abyssgamestore.ca/products/deathwatch-upgrade-pack-39-15",
-        "https://www.retrofixgames.com/products/warhammer-40k-deathwatch-upgrades",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/deathwatch/deathwatch-upgrades",
-        "https://radaddel.de/products/deathwatch-upgrades"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Deathwatch Space Marine shoulder pads",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "Deathwatch Space Marine Terminator shoulder pads",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Deathwatch Space Marine Sergeant chest plate",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Deathwatch Space Marine Sergeant helmets",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Deathwatch Space Marine power sword",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Deathwatch backpack icon",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Deathwatch vehicle/walker icons",
-              "count": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Warhammer COMBAT PATROL: SPACE MARINES New",
       "productCodes": [
         "99120101280"
@@ -2457,118 +2339,6 @@
               "entryId": "c570-c6ba-c9dc-5a44",
               "name": "Eradicators",
               "count": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Black Templars: Upgrades and Transfers",
-      "productCodes": [
-        "99120101369"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/black-templars-upgrades-and-transfers",
-        "https://www.retrofixgames.com/products/warhammer-40k-black-templars-upgrades-and-transfers"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Mk X Tacticus Armour shoulder pads",
-              "count": 12
-            },
-            {
-              "role": "team",
-              "name": "Mk X Gravis Armour shoulder pads",
-              "count": 6
-            },
-            {
-              "role": "team",
-              "name": "Mk VI power armour shoulder pad",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "multi-melta for use with Black Templars vehicles",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Initiate Heads",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Marshal's head",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Neophyte heads",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Neophyte arms with combat shotguns",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "alternate arm options",
-              "count": 3
-            },
-            {
-              "role": "team",
-              "name": "arm option with a choice of two hands",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Astartes chainsword in scabbard",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Black Templars backpack with a recess along its top edge for use with accessories",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "purity seals",
-              "count": 3
-            },
-            {
-              "role": "team",
-              "name": "larger honorific ribbons",
-              "count": 3
-            },
-            {
-              "role": "team",
-              "name": "sanctified grenade",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "ribbon",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "lanterns",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "relic bones",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "burning candle stacks",
-              "count": 2
             }
           ]
         }
@@ -3286,16 +3056,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "Shugengan Lord heads",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Great Spirit Longma heads",
-              "count": 2
-            },
-            {
-              "role": "team",
               "name": "iron talons",
               "count": 1
             },
@@ -3303,78 +3063,6 @@
               "role": "team",
               "name": "Celestial blade",
               "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Breacher Squad Upgrade Set",
-      "productCodes": [
-        "99123001073"
-      ],
-      "sources": [
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/breacher-squad-upgrade-set",
-        "https://radaddel.de/products/legiones-astartes-breacher-squad-upgrade-set"
-      ],
-      "readings": [
-        {
-          "reading": "hh",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Boarding shields",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "MKIII helmeted heads",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "MKIII command helmet",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Bare head",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Breacher charge",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Lascutter",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Graviton gun",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Bolters",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "Left arms",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "Right arms",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "Shield hands",
-              "count": 10
             }
           ]
         }
@@ -3485,7 +3173,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Canoptek Circle miniatures",
+              "name": "Canoptek Circle",
               "count": 8
             },
             {
@@ -3685,7 +3373,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Wrecka Krew miniatures",
+              "name": "Wrecka Krew",
               "count": 8
             }
           ]
@@ -3923,7 +3611,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Deathwatch miniatures",
+              "name": "Deathwatch",
               "count": 5
             }
           ]
@@ -4000,7 +3688,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "veteran Kroot mercenaries",
+              "name": "Kroot mercenaries",
               "count": 10
             }
           ]
@@ -4027,7 +3715,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Battleclade miniatures",
+              "name": "Battleclade",
               "count": 10
             }
           ]
@@ -4216,11 +3904,6 @@
               "entryId": "8dc5-4dcb-d77f-7d23",
               "name": "Traitor Guardsmen",
               "count": 10
-            },
-            {
-              "role": "team",
-              "name": "double-sided Killzone tiles",
-              "count": 4
             }
           ]
         }
@@ -4276,7 +3959,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Vespid Stingwings accompanied by",
+              "name": "Vespid Stingwings",
               "count": 10
             }
           ]
@@ -4332,11 +4015,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "plastic push-fit miniatures",
-              "count": 74
-            },
-            {
-              "role": "team",
               "name": "Stormcast Eternals",
               "count": 24
             },
@@ -4349,12 +4027,12 @@
             },
             {
               "role": "team",
-              "name": "Lord-Terminos with 1x Memorian",
+              "name": "Lord-Terminos",
               "count": 1
             },
             {
               "role": "team",
-              "name": "Lord-Veritant with 1x Gryph-crow",
+              "name": "Lord-Veritant",
               "count": 1
             },
             {
@@ -4366,7 +4044,7 @@
             },
             {
               "role": "team",
-              "name": "Reclusians with 2x Memorians",
+              "name": "Reclusians",
               "count": 3
             },
             {
@@ -4491,7 +4169,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "metal Prophetess of the Lady miniatures",
+              "name": "Prophetess of the Lady",
               "count": 2
             }
           ]
@@ -4635,48 +4313,6 @@
       ]
     },
     {
-      "name": "Iron Hands Primaris Upgrades and Transfers",
-      "productCodes": [
-        "99070101049"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/iron-hands-primaris-upgrades-and-transfers",
-        "https://www.goblingaming.co.uk/products/iron-hands-primaris-upgrades-transfers"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "left arm with bionics",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "right arm with bionic hand",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "purity seals",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "pauldron",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Iron Hands decorations",
-              "count": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Space Marines - Primaris Lieutenant with Power Sword ( 48-84 )",
       "productCodes": [
         "99070101053"
@@ -4750,32 +4386,6 @@
       ]
     },
     {
-      "name": "Warhammer 40K Space Marines Primaris Ancient",
-      "productCodes": [
-        "99070101076"
-      ],
-      "sources": [
-        "https://www.retrofixgames.com/products/warhammer-40k-space-marines-primaris-ancient",
-        "https://shop.afk.games/products/space-marines-primaris-ancient",
-        "https://www.goblingaming.co.uk/products/warhammer-40k-space-marines-primaris-ancient",
-        "https://mrmuffinstrains.com/products/gw-48-96",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/space-marines-primaris-ancient",
-        "https://radaddel.de/products/space-marines-primaris-ancient"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "model",
-              "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Warhammer 40K Space Marines Captain in Gravis Armour",
       "productCodes": [
         "99070101077"
@@ -4794,7 +4404,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Space Marine Captain in Gravis Armour equipped",
+              "name": "Space Marine Captain in Gravis Armour",
               "count": 1
             }
           ]
@@ -5016,7 +4626,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Autarch equipped",
+              "name": "Autarch",
               "count": 1
             }
           ]
@@ -5141,7 +4751,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Blade Champion model",
+              "name": "Blade Champion",
               "count": 1
             }
           ]
@@ -5404,7 +5014,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Haemonculus equipped",
+              "name": "Haemonculus",
               "count": 1
             }
           ]
@@ -5426,7 +5036,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Archon clad in Kabalite armour inscribed",
+              "name": "Archon",
               "count": 1
             }
           ]
@@ -5744,11 +5354,6 @@
               "entryId": "51e8-dac1-561a-aaa9",
               "name": "Locus",
               "count": 1
-            },
-            {
-              "role": "team",
-              "name": "unhooded",
-              "count": 2
             }
           ]
         }
@@ -5796,7 +5401,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "sinister Gaunt Summoner",
+              "name": "Gaunt Summoner",
               "count": 1
             }
           ]
@@ -5821,7 +5426,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "single-pose Shardspeaker of Slaanesh",
+              "name": "Shardspeaker of Slaanesh",
               "count": 1
             }
           ]
@@ -5846,7 +5451,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "single-pose Lord of Pain",
+              "name": "Lord of Pain",
               "count": 1
             }
           ]
@@ -6028,7 +5633,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Radukar the Wolf model",
+              "name": "Radukar the Wolf",
               "count": 1
             }
           ]
@@ -6302,7 +5907,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "metal Mounted Yeomen Command miniatures mounted",
+              "name": "Mounted Yeomen Command",
               "count": 3
             }
           ]
@@ -6324,7 +5929,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "metal Mounted Yeomen miniatures mounted",
+              "name": "Mounted Yeomen",
               "count": 5
             }
           ]
@@ -6346,7 +5951,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "metal Questing Knights",
+              "name": "Questing Knights",
               "count": 3
             }
           ]
@@ -6531,7 +6136,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "metal Orc Big",
+              "name": "Orc Big",
               "count": 5
             }
           ]
@@ -6774,11 +6379,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "of the squad into",
-              "count": 1
-            },
-            {
-              "role": "team",
               "catalogueId": "e0af-67df-9d63-8fb7",
               "entryId": "7044-bf1-f949-c32d",
               "name": "Bladeguard Veterans",
@@ -6806,11 +6406,6 @@
         {
           "reading": "40k",
           "entries": [
-            {
-              "role": "team",
-              "name": "of the squad into",
-              "count": 1
-            },
             {
               "role": "team",
               "catalogueId": "e0af-67df-9d63-8fb7",
@@ -7261,7 +6856,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Thunderwolf Cavalry models",
+              "name": "Thunderwolf Cavalry",
               "count": 3
             }
           ]
@@ -7284,7 +6879,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "plastic Fenrisian Wolves",
+              "name": "Fenrisian Wolves",
               "count": 5
             }
           ]
@@ -7731,7 +7326,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Space Marine Captain equipped",
+              "name": "Space Marine Captain",
               "count": 1
             }
           ]
@@ -7781,7 +7376,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Space Marine Chaplain clad in durable Terminator armour",
+              "name": "Space Marine Chaplain",
               "count": 1
             }
           ]
@@ -7914,99 +7509,6 @@
       ]
     },
     {
-      "name": "Upgrades and Transfers: Dark Angels",
-      "productCodes": [
-        "99120101411"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/upgrades-and-transfers-dark-angels",
-        "https://abyssgamestore.ca/products/dark-angels-upgrades-and-transfers-44-24",
-        "https://www.retrofixgames.com/products/warhammer-40k-dark-angels-upgrades-and-transfers",
-        "https://shop.afk.games/products/dark-angels-upgrades",
-        "https://obsidiangames.ca/products/dark-angels-upgrades-and-transfers",
-        "https://www.goblingaming.co.uk/products/warhammer-40k-space-marines-dark-angels-upgrades-and-transfers",
-        "https://mrmuffinstrains.com/products/gw-44-24",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/dark-angels/dark-angels-upgrades-and-transfers"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "relics and honours",
-              "count": 5
-            },
-            {
-              "role": "team",
-              "name": "backpack-mounted Chapter icon",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "tilting shield for models in Tacticus armour",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Sergeant's power sword for models in Tacticus armour",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "decorated tassets",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Sergeant's power sword",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Sergeant's breastplate",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "tilting plate",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "ornamental dagger",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "storm bolter decoration",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "plasma cannon",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Ravenwing icons",
-              "count": 6
-            },
-            {
-              "role": "team",
-              "name": "Dark Angels icons",
-              "count": 3
-            },
-            {
-              "role": "team",
-              "name": "Ravenwing biker rear wing-fitting",
-              "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Blood Angels: Sanguinary Guard",
       "productCodes": [
         "99120101413"
@@ -8026,7 +7528,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "elite Sanguinary Guard",
+              "name": "Sanguinary Guard",
               "count": 3
             }
           ]
@@ -8305,97 +7807,6 @@
               "entryId": "ea3d-f2b8-cce7-0762",
               "name": "Execrator",
               "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Ultramarines: Upgrades and Transfers",
-      "productCodes": [
-        "99120101451"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/ultramarines-upgrades-and-transfers",
-        "https://www.retrofixgames.com/products/ultramarines-upgrades-and-transfers",
-        "https://shop.afk.games/products/ultramarines-upgrades-and-transfers",
-        "https://www.goblingaming.co.uk/products/ultramarines-upgrades-and-transfers",
-        "https://mrmuffinstrains.com/products/gw-55-72",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/ultramarines/ultramarines-upgrades-and-transfers"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Tacticus helmets",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Helmet",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Terminator armour hood and torso",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Storm bolter barrel",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Tilting plate",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Power sword arm",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Combat blade arm",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Sheathed combat blade",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Empty sheath",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Pistol holster",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Set of pouches",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Ultima symbols",
-              "count": 6
-            },
-            {
-              "role": "team",
-              "name": "Ultima symbols with wings",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Large Ultima symbols",
-              "count": 4
             }
           ]
         }
@@ -9065,7 +8476,7 @@
             },
             {
               "role": "team",
-              "name": "horrifying Torments",
+              "name": "Torments",
               "count": 3
             }
           ]
@@ -9310,54 +8721,9 @@
           "entries": [
             {
               "role": "team",
-              "name": "autocannons",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "heavy bolters",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "lascannons",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "missile launchers",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "reaper chaincannon",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "plasma gun",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "meltagun",
-              "count": 1
-            },
-            {
-              "role": "team",
               "catalogueId": "1069-10ff-3ba9-873b",
               "entryId": "694f-a205-b260-783c",
               "name": "flamer",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "power maul",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "chainsword",
               "count": 1
             }
           ]
@@ -9385,56 +8751,6 @@
             {
               "role": "team",
               "name": "Chaos Terminators",
-              "count": 5
-            },
-            {
-              "role": "team",
-              "name": "chain axe",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "chainfist",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "power sword",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "power axe",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "power maul",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "power fists",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "lightning claws",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "heavy flamer",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "reaper autocannon",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "combi-weapons",
               "count": 5
             }
           ]
@@ -9490,32 +8806,6 @@
               "role": "team",
               "name": "Dark Disciples",
               "count": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Chaos Knights: Chaos Knight Ruinator",
-      "productCodes": [
-        "99120102191"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/chaos-knights-chaos-knight-ruinator",
-        "https://www.retrofixgames.com/products/chaos-knights-chaos-knight-ruinator",
-        "https://shop.afk.games/products/chaos-knights-chaos-knight-ruinator",
-        "https://www.goblingaming.co.uk/products/chaos-knights-chaos-knight-ruinator",
-        "https://mrmuffinstrains.com/products/gw-43-102",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-knights/chaos-knights-chaos-knight-ruinator"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "of the following miniatures",
-              "count": 1
             }
           ]
         }
@@ -9880,11 +9170,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "Backpacks",
-              "count": 6
-            },
-            {
-              "role": "team",
               "name": "Backpacks with a choice of three Chaos icons",
               "count": 3
             },
@@ -9892,21 +9177,6 @@
               "role": "team",
               "name": "Backpack with a choice of two Chaos icons",
               "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Boltguns",
-              "count": 8
-            },
-            {
-              "role": "team",
-              "name": "Bolt pistols",
-              "count": 8
-            },
-            {
-              "role": "team",
-              "name": "Chainswords",
-              "count": 8
             },
             {
               "role": "team",
@@ -9925,22 +9195,7 @@
             },
             {
               "role": "team",
-              "name": "Double-handed chainaxe",
-              "count": 1
-            },
-            {
-              "role": "team",
               "name": "Balefire tome",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Meltagun",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Plasma gun",
               "count": 1
             },
             {
@@ -9948,21 +9203,6 @@
               "catalogueId": "1069-10ff-3ba9-873b",
               "entryId": "694f-a205-b260-783c",
               "name": "Flamer",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Missile launcher",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Heavy bolter",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Reaper chaincannon",
               "count": 1
             }
           ]
@@ -10101,43 +9341,6 @@
       ]
     },
     {
-      "name": "Warhammer 40K Chaos Space Marines Red Corsairs Upgrades & Transfers",
-      "productCodes": [
-        "99120102226"
-      ],
-      "sources": [
-        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-red-corsairs-upgrades-transfers",
-        "https://shop.afk.games/products/chaos-space-marines-red-corsairs-upgrades-transfers",
-        "https://obsidiangames.ca/products/chaos-space-marines-red-corsairs-upgrades-and-transfers",
-        "https://www.goblingaming.co.uk/products/chaos-space-marines-red-corsairs-upgrades-transfers",
-        "https://mrmuffinstrains.com/products/gw-43-112",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/red-corsairs-upgrades-and-transfers",
-        "https://radaddel.de/products/chaos-space-marines-red-corsairs-upgrades-and-transfers"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "bandoliers",
-              "count": 3
-            },
-            {
-              "role": "team",
-              "name": "chainswords",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "hanging trophies",
-              "count": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Combat Patrol: Chaos Space Marines - Iron Warriors (73-434)",
       "productCodes": [
         "99120102228"
@@ -10172,38 +9375,6 @@
               "entryId": "7299-5b5-2b56-ef50",
               "name": "Mutilators",
               "count": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Iron Warriors Upgrades",
-      "productCodes": [
-        "99120102231"
-      ],
-      "sources": [
-        "https://www.goblingaming.co.uk/products/iron-warriors-upgrades",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/iron-warriors-upgrades"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "thunder hammer",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "power fist",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "plumed helmets",
-              "count": 2
             }
           ]
         }
@@ -10723,33 +9894,6 @@
       ]
     },
     {
-      "name": "Orks: Mek Gun",
-      "productCodes": [
-        "99120103086"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/orks-mek-gun",
-        "https://abyssgamestore.ca/products/orks-mek-gunz-smasha-gun-bubblechukka-traktor-kannon-kustom-mega-kannon-50-26",
-        "https://www.retrofixgames.com/products/warhammer-40k-ork-mek-gun",
-        "https://shop.afk.games/products/ork-mek-gun",
-        "https://obsidiangames.ca/products/orks-mek-gun",
-        "https://mrmuffinstrains.com/products/gw-50-26",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/orks/ork-mek-gun"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "of",
-              "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Orks - Flash Gitz ( 50-24 )",
       "productCodes": [
         "99120103087"
@@ -10866,30 +10010,6 @@
               "entryId": "3832-ad97-2b3b-8775",
               "name": "Wazbom Blastajet",
               "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Orks - Lootas / Burnas ( 50-22 )",
-      "productCodes": [
-        "99120103093"
-      ],
-      "sources": [
-        "https://abyssgamestore.ca/products/orks-lootas-burnas-50-22",
-        "https://www.retrofixgames.com/products/warhammer-40k-ork-lootas",
-        "https://shop.afk.games/products/orks-lootas",
-        "https://obsidiangames.ca/products/orks-lootas"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "models",
-              "count": 5
             }
           ]
         }
@@ -11503,7 +10623,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "unit of Dark Reapers",
+              "name": "Dark Reapers",
               "count": 1
             }
           ]
@@ -11552,11 +10672,6 @@
         {
           "reading": "40k",
           "entries": [
-            {
-              "role": "team",
-              "name": "unit of Shining Spears",
-              "count": 1
-            },
             {
               "role": "team",
               "catalogueId": "34a5-8c7e-f468-82d1",
@@ -11819,7 +10934,7 @@
             },
             {
               "role": "team",
-              "name": "towering Wraithknight",
+              "name": "Wraithknight",
               "count": 1
             }
           ]
@@ -12427,137 +11542,6 @@
       ]
     },
     {
-      "name": "Astra Militarum: Cadian Upgrades",
-      "productCodes": [
-        "99120105106"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/cadian-upgrades",
-        "https://abyssgamestore.ca/products/astra-militarum-cadian-upgrades-47-40",
-        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-cadian-upgrades",
-        "https://shop.afk.games/products/astra-militarum-cadian-upgrades",
-        "https://www.goblingaming.co.uk/products/cadian-upgrades",
-        "https://mrmuffinstrains.com/products/gw-47-40"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Right arm with belt-fed autogun",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Left arms",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Left arm with ammo tin",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Right arms",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Bedroll pack with stowed helmet",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Left arm in cast and sling",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Right arm with lasgun and sling",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Bundle of rope",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Left arm with lasgun",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Right arm with map",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Bedroll",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Left arm holding lasgun",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Right arm supporting lasgun",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Cadian Accessories",
-              "count": 14
-            },
-            {
-              "role": "team",
-              "name": "Bayonets",
-              "count": 5
-            },
-            {
-              "role": "team",
-              "name": "Sandbags",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Spare helmet",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Canister",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Holstered pistol",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Fuel can",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Backpack",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Right arm wielding an axe",
-              "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Astra Militarum: Valkyrie",
       "productCodes": [
         "99120105113"
@@ -12828,7 +11812,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "stalwart Death Korps of Krieg troopers",
+              "name": "Death Korps of Krieg troopers",
               "count": 10
             }
           ]
@@ -12852,11 +11836,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "rope",
-              "count": 1
-            },
-            {
-              "role": "team",
               "name": "stowage hooks",
               "count": 2
             },
@@ -12872,17 +11851,7 @@
             },
             {
               "role": "team",
-              "name": "crate",
-              "count": 1
-            },
-            {
-              "role": "team",
               "name": "set of wire cutters",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "shovel",
               "count": 1
             }
           ]
@@ -13031,30 +12000,8 @@
           "entries": [
             {
               "role": "team",
-              "name": "super-heavy Baneblade",
+              "name": "Baneblade",
               "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Astra Militarum Baneblade Sponsons & Accessories",
-      "productCodes": [
-        "99120105158"
-      ],
-      "sources": [
-        "https://tistaminis.com/products/astra-militarum-baneblade-sponsons-accessories",
-        "https://www.goblingaming.co.uk/products/astra-militarum-baneblade-sponsons-and-accessories"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "additional sponson mounts",
-              "count": 2
             }
           ]
         }
@@ -13104,11 +12051,6 @@
               "entryId": "30d0-521c-1d45-f57b",
               "name": "Toxicrene",
               "count": 1
-            },
-            {
-              "role": "team",
-              "name": "huge",
-              "count": 12
             }
           ]
         }
@@ -13477,7 +12419,7 @@
             },
             {
               "role": "team",
-              "name": "accompanying Neuroloids",
+              "name": "Neuroloids",
               "count": 2
             }
           ]
@@ -14006,37 +12948,6 @@
       ]
     },
     {
-      "name": "Adeptus Custodes: Allarus Custodians",
-      "productCodes": [
-        "99120108075"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/adeptus-custodes-allarus-custodians",
-        "https://abyssgamestore.ca/products/adeptus-custodes-allarus-custodians-01-13",
-        "https://shop.afk.games/products/adeptus-custodes-allarus-custodians",
-        "https://obsidiangames.ca/products/adeptus-custodes-allarus-custodians",
-        "https://www.goblingaming.co.uk/products/allarus-custodians",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/totp/adeptus-custodes-allarus-custodians"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "model",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "model can be assembled",
-              "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Warhammer 40k: Adeptus Custodes - Custodian Wardens",
       "productCodes": [
         "99120108077"
@@ -14284,34 +13195,6 @@
         "https://elementgames.co.uk/games-workshop/warhammer-40k/starting-warhammer-40k/combat-patrol-imperial-agents"
       ],
       "generation": "current"
-    },
-    {
-      "name": "Imperial Knights: Knight Questoris",
-      "productCodes": [
-        "99120108105"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/imperial-knights-knight-questoris",
-        "https://abyssgamestore.ca/products/imperial-knights-preceptor-canis-rex-crusader-warden-errant-paladin-54-15",
-        "https://www.retrofixgames.com/products/warhammer-40k-imperial-knights-knight-questoris-1",
-        "https://shop.afk.games/products/imperial-knightsl-knight-questoris",
-        "https://obsidiangames.ca/products/knight-questoris",
-        "https://www.goblingaming.co.uk/products/imperial-knights-knight-questoris",
-        "https://mrmuffinstrains.com/products/gw-54-22",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-knights/imperial-knights-knight-questoris"
-      ],
-      "readings": [
-        {
-          "reading": "40k",
-          "entries": [
-            {
-              "role": "team",
-              "name": "of the following miniatures",
-              "count": 1
-            }
-          ]
-        }
-      ]
     },
     {
       "name": "Imperial Agents - Inquisitorial Agents ( 68-13 )",
@@ -15590,11 +14473,6 @@
               "entryId": "a594-317-b90a-a226",
               "name": "Broadside Battlesuit",
               "count": 1
-            },
-            {
-              "role": "team",
-              "name": "Drones",
-              "count": 2
             }
           ]
         }
@@ -15815,17 +14693,17 @@
             },
             {
               "role": "team",
-              "name": "Riptide Battlesuit with 2x drones",
+              "name": "Riptide Battlesuit",
               "count": 1
             },
             {
               "role": "team",
-              "name": "Broadside Battlesuit with 2x drones",
+              "name": "Broadside Battlesuit",
               "count": 1
             },
             {
               "role": "team",
-              "name": "Crisis Battlesuits with 6x drones",
+              "name": "Crisis Battlesuits",
               "count": 3
             }
           ]
@@ -15961,11 +14839,6 @@
         {
           "reading": "40k",
           "entries": [
-            {
-              "role": "team",
-              "name": "models",
-              "count": 3
-            },
             {
               "role": "team",
               "catalogueId": "77b9-2f66-3f9b-5cf3",
@@ -16719,7 +15592,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Blade Champion model",
+              "name": "Blade Champion",
               "count": 1
             }
           ]
@@ -17536,28 +16409,6 @@
               "entryId": "sph::darkoath-raiders::03-darkoath-fellriders",
               "name": "Darkoath Fellriders",
               "count": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Maggotkin of Nurgle: Harbinger of Decay",
-      "productCodes": [
-        "99120201187"
-      ],
-      "sources": [
-        "https://www.goblingaming.co.uk/products/maggotkin-of-nurgle-harbinger-of-decay",
-        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/harbinger-of-decay-dawnbringers"
-      ],
-      "readings": [
-        {
-          "reading": "aos",
-          "entries": [
-            {
-              "role": "team",
-              "name": "sinister",
-              "count": 1
             }
           ]
         }
@@ -18698,7 +17549,7 @@
             },
             {
               "role": "team",
-              "name": "Freeguild Command Corps miniatures",
+              "name": "Freeguild Command Corps",
               "count": 6
             },
             {
@@ -19004,11 +17855,6 @@
               "entryId": "sph::bitterbark-copse::04-tree-revenants",
               "name": "Tree-Revenants",
               "count": 5
-            },
-            {
-              "role": "team",
-              "name": "can be assembled",
-              "count": 1
             }
           ]
         }
@@ -19630,7 +18476,7 @@
             },
             {
               "role": "team",
-              "name": "Arkanaut Company miniatures",
+              "name": "Arkanaut Company",
               "count": 10
             }
           ]
@@ -19759,30 +18605,6 @@
               "entryId": "sph::warpspark-clawpack::02-stormfiends",
               "name": "Stormfiends",
               "count": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Skaven: Verminlord Corruptor",
-      "productCodes": [
-        "99120206038"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/skaven-verminlord-corruptor",
-        "https://shop.afk.games/products/skaven-pestilens-verminlord-corruptor",
-        "https://www.goblingaming.co.uk/products/skaven-pestilens-verminlord-corruptor",
-        "https://elementgames.co.uk/skaven-pestilens-verminlord-corruptor"
-      ],
-      "readings": [
-        {
-          "reading": "aos",
-          "entries": [
-            {
-              "role": "team",
-              "name": "of",
-              "count": 1
             }
           ]
         }
@@ -19963,7 +18785,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "weapons teams wielding",
+              "name": "weapons teams",
               "count": 3
             }
           ]
@@ -20147,7 +18969,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Endless Spells usable by Nighthaunt wizards in games of Warhammer Age of Sigmar",
+              "name": "Endless Spells",
               "count": 3
             }
           ]
@@ -20218,7 +19040,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Kritza model",
+              "name": "Kritza",
               "count": 1
             }
           ]
@@ -20241,7 +19063,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Belladamma Volga model",
+              "name": "Belladamma Volga",
               "count": 1
             }
           ]
@@ -20391,7 +19213,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Lady Annika model",
+              "name": "Lady Annika",
               "count": 1
             }
           ]
@@ -20420,51 +19242,6 @@
               "entryId": "sph::slasher-host::02-spirit-hosts",
               "name": "Spirit Hosts",
               "count": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Nighthaunt: Chainrasps",
-      "productCodes": [
-        "99120207120"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/nighthaunt-chainrasps",
-        "https://shop.afk.games/products/etb-nighthaunt-chainrasp-hordes",
-        "https://obsidiangames.ca/products/nighthaunt-chainrasps"
-      ],
-      "readings": [
-        {
-          "reading": "aos",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Easy",
-              "count": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Nighthaunt: Dreadblade Harrows",
-      "productCodes": [
-        "99120207122"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/nighthaunt-dreadblade-harrows",
-        "https://shop.afk.games/products/etb-nighthaunt-dreadblade-harrows"
-      ],
-      "readings": [
-        {
-          "reading": "aos",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Easy",
-              "count": 2
             }
           ]
         }
@@ -21061,7 +19838,7 @@
             },
             {
               "role": "team",
-              "name": "Deathrattle Skeletons with 4x Tombstones",
+              "name": "Deathrattle Skeletons",
               "count": 20
             }
           ]
@@ -21754,28 +20531,6 @@
       ]
     },
     {
-      "name": "Nighthaunt: Myrmourn Banshees",
-      "productCodes": [
-        "99120207230"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/easy-to-build-myrmourn-banshees",
-        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/easy-to-build-nighthaunt-myrmourn-banshees"
-      ],
-      "readings": [
-        {
-          "reading": "aos",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Easy",
-              "count": 4
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Soulblight Gravelords Radukar, The Beast",
       "productCodes": [
         "99120207232"
@@ -21790,7 +20545,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Radukar the Beast model",
+              "name": "Radukar the Beast",
               "count": 1
             }
           ]
@@ -22273,7 +21028,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "orruk Gore-gruntas",
+              "name": "Gore-gruntas",
               "count": 3
             }
           ]
@@ -23136,7 +21891,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Light of Eltharion miniature",
+              "name": "Light of Eltharion",
               "count": 1
             }
           ]
@@ -23427,11 +22182,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "Auralan Wardens in",
-              "count": 10
-            },
-            {
-              "role": "team",
               "name": "Auralan Wardens",
               "countCandidates": [
                 1,
@@ -23664,7 +22414,7 @@
             },
             {
               "role": "team",
-              "name": "Infernal Cohort miniatures",
+              "name": "Infernal Cohort",
               "count": 11
             }
           ]
@@ -24454,7 +23204,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Endless Spells usable by Stormcast Eternals wizards in games of Warhammer Age of Sigmar",
+              "name": "Endless Spells",
               "count": 3
             }
           ]
@@ -24528,7 +23278,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Vigilors wearing sleek Thunderstrike armour",
+              "name": "Vigilors",
               "count": 10
             }
           ]
@@ -24577,7 +23327,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Vanquishers wearing sleek Thunderstrike armour",
+              "name": "Vanquishers",
               "count": 10
             }
           ]
@@ -24602,7 +23352,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Stormdrake Guard in several different poses",
+              "name": "Stormdrake Guard",
               "count": 2
             }
           ]
@@ -24627,7 +23377,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Annihilators wielding meteoric hammers",
+              "name": "Annihilators",
               "count": 3
             }
           ]
@@ -24652,7 +23402,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Vindictors wearing Thunderstrike armour",
+              "name": "Vindictors",
               "count": 10
             }
           ]
@@ -24675,7 +23425,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "Praetors wearing Thunderstrike armour",
+              "name": "Praetors",
               "count": 3
             }
           ]
@@ -24727,30 +23477,6 @@
               "role": "team",
               "name": "Vanguard-Raptors",
               "count": 3
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Stormcast Eternals: Lord-Cellestant on Stardrake",
-      "productCodes": [
-        "99120218073"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/lord-celestant-on-stardrake",
-        "https://abyssgamestore.ca/products/stormcast-eternals-lord-celestant-on-stardrake-drakesworn-templar-96-23",
-        "https://shop.afk.games/products/stormcast-eternals-stardrake",
-        "https://www.goblingaming.co.uk/products/stormcast-eternals-stardrake"
-      ],
-      "readings": [
-        {
-          "reading": "aos",
-          "entries": [
-            {
-              "role": "team",
-              "name": "of the",
-              "count": 1
             }
           ]
         }
@@ -25137,7 +23863,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "mounted Chaos Knights",
+              "name": "Chaos Knights",
               "count": 10
             }
           ]
@@ -25357,37 +24083,6 @@
             {
               "role": "team",
               "name": "Champions of Chaos",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "riding",
-              "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Warhammer Old World: Empire of Man - Commanders of the Empire",
-      "productCodes": [
-        "99122702004"
-      ],
-      "sources": [
-        "https://www.wellplayed.ch/products/warhammer-old-world-empire-of-man-commanders-of-the-empire",
-        "https://www.irresistibleforce.com.au/products/empire-of-man-commanders-of-the-empire",
-        "https://shop.afk.games/products/empire-of-man-commanders-of-the-empire",
-        "https://www.goblingaming.co.uk/products/empire-of-man-commanders-of-the-empire",
-        "https://elementgames.co.uk/card-games-board-games-and-more/seasonal/empire-of-man-commanders-of-the-empire",
-        "https://radaddel.de/products/empire-of-man-commanders-of-the-empire"
-      ],
-      "readings": [
-        {
-          "reading": "tow",
-          "entries": [
-            {
-              "role": "team",
-              "name": "commanders",
               "count": 2
             }
           ]
@@ -25830,7 +24525,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "elite Knights of the Realm",
+              "name": "Knights of the Realm",
               "count": 20
             }
           ]
@@ -26420,16 +25115,6 @@
                 1,
                 2
               ]
-            },
-            {
-              "role": "team",
-              "name": "atop",
-              "count": 1
-            },
-            {
-              "role": "team",
-              "name": "mounted",
-              "count": 1
             }
           ]
         }
@@ -26992,11 +25677,6 @@
               "entryId": "1fe1-59d-f3a6-eaf1",
               "name": "Royal Heralds",
               "count": 2
-            },
-            {
-              "role": "team",
-              "name": "mounted",
-              "count": 1
             }
           ]
         }
@@ -27019,11 +25699,6 @@
               "role": "team",
               "name": "Liche Priests",
               "count": 2
-            },
-            {
-              "role": "team",
-              "name": "mounted",
-              "count": 1
             }
           ]
         }
@@ -27077,11 +25752,6 @@
               "role": "team",
               "name": "Gate Masters of the Celestial Cities",
               "count": 2
-            },
-            {
-              "role": "team",
-              "name": "atop",
-              "count": 1
             }
           ]
         }
@@ -27181,7 +25851,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "imposing Sky Lantern",
+              "name": "Sky Lantern",
               "count": 1
             }
           ]
@@ -27982,139 +26652,6 @@
       ]
     },
     {
-      "name": "Horus Heresy: Legiones Astartes Melee Weapons Upgrade",
-      "productCodes": [
-        "99123001042"
-      ],
-      "sources": [
-        "https://www.irresistibleforce.com.au/products/horus-heresy-legiones-astartes-melee-weapons-upgrade",
-        "https://www.retrofixgames.com/products/warhammer-horus-heresy-legiones-astartes-melee-weapons-upgrade-set",
-        "https://shop.afk.games/products/horus-heresy-legion-astartes-melee-weapons-upgrade",
-        "https://obsidiangames.ca/products/melee-weapons-upgrade-set",
-        "https://www.goblingaming.co.uk/products/legion-astartes-melee-weapons-upgrade",
-        "https://mrmuffinstrains.com/products/gw-31-99",
-        "https://elementgames.co.uk/games-workshop/warhammer-40k/blood-angels/horus-heresy-legion-astartes-melee-weapons-upgrade",
-        "https://radaddel.de/products/legiones-astartes-melee-weapons-upgrade"
-      ],
-      "readings": [
-        {
-          "reading": "hh",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Sheathed chainswords",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Heavy chainswords",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Charnabal sabres",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Thunder hammers",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Power swords being drawn",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Power swords",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Power lances",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Hand flamers",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Plasma pistols",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Augury scanners",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Melta bombs",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Slung boltguns",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Power axes",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Power mauls",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Power fists",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Volkite serpenta",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Phobos bolt pistols",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Umbra bolt pistols",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Tigrus bolt pistols",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "Chainswords",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "Hands",
-              "count": 8
-            },
-            {
-              "role": "team",
-              "name": "Arms",
-              "count": 42
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Legiones Astartes: Rapier Laser Destroyer and Quad Launcher Battery",
       "productCodes": [
         "99123001044"
@@ -28133,11 +26670,6 @@
               "role": "team",
               "name": "Rapier Carrier weapons platforms",
               "count": 2
-            },
-            {
-              "role": "team",
-              "name": "crew",
-              "count": 4
             }
           ]
         }
@@ -28162,11 +26694,6 @@
               "role": "team",
               "name": "Rapier Carrier weapons platforms",
               "count": 2
-            },
-            {
-              "role": "team",
-              "name": "crew",
-              "count": 4
             }
           ]
         }
@@ -28226,13 +26753,8 @@
             },
             {
               "role": "team",
-              "name": "left-handed Saturnine disruption fists",
+              "name": "Saturnine disruption fists",
               "count": 4
-            },
-            {
-              "role": "team",
-              "name": "helmets",
-              "count": 8
             }
           ]
         }
@@ -28377,55 +26899,6 @@
               "role": "team",
               "name": "Saturnine Siege Dreadnought",
               "count": 1
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Legiones Astartes - Disintegrator Weapons Upgrade Set (31-130-W)",
-      "productCodes": [
-        "99123001069"
-      ],
-      "sources": [
-        "https://abyssgamestore.ca/products/legiones-astartes-disintegrator-weapons-upgrade-set-31-130-w",
-        "https://www.goblingaming.co.uk/products/legiones-astartes-disintegrator-weapons-upgrade-set",
-        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/disintegrator-weapons-upgrade-set",
-        "https://radaddel.de/products/legiones-astartes-disintegrator-weapons-upgrade-set"
-      ],
-      "readings": [
-        {
-          "reading": "hh",
-          "entries": [
-            {
-              "role": "team",
-              "name": "disintegrator rifles",
-              "count": 20
-            },
-            {
-              "role": "team",
-              "name": "combi-disintegrators",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "disintegrator pistols",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "disintegrator blasters",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "heavy disintegrators",
-              "count": 4
-            },
-            {
-              "role": "team",
-              "name": "battery packs",
-              "count": 20
             }
           ]
         }
@@ -28643,11 +27116,6 @@
           "entries": [
             {
               "role": "team",
-              "name": "Sergeants",
-              "count": 2
-            },
-            {
-              "role": "team",
               "name": "Space Marines Legionaries",
               "count": 20
             }
@@ -28673,80 +27141,6 @@
               "role": "team",
               "name": "Space Marine Assault Legionaries",
               "count": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Horus Heresy Legiones Astartes Combi-Weapons & Shotgun Upgrades",
-      "productCodes": [
-        "99123001087"
-      ],
-      "sources": [
-        "https://www.retrofixgames.com/products/horus-heresy-legiones-astartes-combi-weapons-shotgun-upgrades",
-        "https://shop.afk.games/products/l-a-combi-weapons-shotgun-upgrades",
-        "https://mrmuffinstrains.com/products/gw-31-173",
-        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/legiones-astartes-combi-weapons-and-shotgun-upgrades"
-      ],
-      "readings": [
-        {
-          "reading": "hh",
-          "entries": [
-            {
-              "role": "team",
-              "name": "Breacher combi-meltas",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Breacher combi-plasmas",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Breacher combi-volkites",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Breacher combi-flamers",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "Breacher Astartes shotguns",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "combi-meltas",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "combi-plasmas",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "combi-volkites",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "combi-flamers",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "Astartes shotguns",
-              "count": 10
-            },
-            {
-              "role": "team",
-              "name": "belt-mounted accessories",
-              "count": 60
             }
           ]
         }
@@ -29065,11 +27459,6 @@
               "role": "team",
               "name": "Rapier Carriers",
               "count": 2
-            },
-            {
-              "role": "team",
-              "name": "additional crew",
-              "count": 2
             }
           ]
         }
@@ -29095,11 +27484,6 @@
             {
               "role": "team",
               "name": "Rapier Carriers",
-              "count": 2
-            },
-            {
-              "role": "team",
-              "name": "additional crew",
               "count": 2
             }
           ]
@@ -29168,7 +27552,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "mighty Knight Questoris",
+              "name": "Knight Questoris",
               "count": 1
             }
           ]
@@ -29950,7 +28334,7 @@
             },
             {
               "role": "team",
-              "name": "varying towers of Nurglings",
+              "name": "Nurglings",
               "count": 3
             }
           ]
@@ -29965,7 +28349,7 @@
             },
             {
               "role": "team",
-              "name": "varying towers of Nurglings",
+              "name": "Nurglings",
               "count": 3
             }
           ]
@@ -30099,7 +28483,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "pairs of Brimstone Horrors of Tzeentch",
+              "name": "Brimstone Horrors of Tzeentch",
               "count": 10
             }
           ]
@@ -30109,7 +28493,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "pairs of Brimstone Horrors of Tzeentch",
+              "name": "Brimstone Horrors of Tzeentch",
               "count": 10
             }
           ]
@@ -30119,7 +28503,7 @@
           "entries": [
             {
               "role": "team",
-              "name": "pairs of Brimstone Horrors of Tzeentch",
+              "name": "Brimstone Horrors of Tzeentch",
               "count": 10
             }
           ]
