@@ -31565,6 +31565,39 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tyranids: Biovore",
+      "productCodes": [
+        "99120106065"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tyranids-biovore",
+        "https://abyssgamestore.ca/products/tyranids-biovore-51-41",
+        "https://shop.afk.games/products/tyranids-biovore",
+        "https://obsidiangames.ca/products/tyranids-biovore",
+        "https://www.goblingaming.co.uk/products/warhammer-40000-tyranids-biovore-2023",
+        "https://mrmuffinstrains.com/products/gw-51-41"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "3f2c-85ec-d83c-4a2f",
+              "name": "Biovore",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Spore Mines",
+              "count": 3
+            }
+          ]
+        }
+      ]
     }
   ]
 }
