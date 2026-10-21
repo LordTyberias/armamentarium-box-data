@@ -31537,6 +31537,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Astra Militarum - Kaskrin",
+      "productCodes": [
+        "99120105155"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-astra-militarum-kaskrin",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-kasrkin",
+        "https://shop.afk.games/products/astra-militarum-kasrkin",
+        "https://obsidiangames.ca/products/astra-militarum-kasrkin",
+        "https://www.goblingaming.co.uk/products/astra-militarum-kasrkin",
+        "https://radaddel.de/products/astra-militarum-kasrkin"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "abe4-ca71-d5a7-3883",
+              "name": "Kasrkin",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
