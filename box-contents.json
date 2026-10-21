@@ -31997,6 +31997,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmar: Cannonade Cogfort",
+      "productCodes": [
+        "99120202068"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-cannonade-cogfort",
+        "https://www.retrofixgames.com/products/age-of-sigmar-cities-of-sigmar-cannonade-cogfort",
+        "https://www.goblingaming.co.uk/products/cities-of-sigmar-cannonade-cogfort"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "42ad-8ca7-4b48-7df1",
+              "entryId": "2f5f-4d22-ec07-566c",
+              "name": "Cannonade Cogfort",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
