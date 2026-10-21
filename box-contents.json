@@ -31730,6 +31730,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Deathwatch - Battalion - Armageddon",
+      "productCodes": [
+        "99120109017"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-deathwatch-battalion-armageddon",
+        "https://www.retrofixgames.com/products/warhammer-40k-armageddon-battalion-deathwatch",
+        "https://elementgames.co.uk/wargames-and-miniatures/wargames-and-miniatures-by-manufacturer/games-workshop/armageddon-battalion-deathwatch"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "0744-61ce-619d-ffe1",
+              "name": "Deathwatch",
+              "count": 11
+            }
+          ]
+        }
+      ]
     }
   ]
 }
