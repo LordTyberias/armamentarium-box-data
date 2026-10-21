@@ -31356,6 +31356,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Cadian Castellan",
+      "productCodes": [
+        "99120105100"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-cadian-castellan",
+        "https://abyssgamestore.ca/products/astra-militarum-cadian-castellan-47-34",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-cadian-castellan",
+        "https://obsidiangames.ca/products/astra-millitarum-cadian-castellan",
+        "https://www.goblingaming.co.uk/products/cadian-castellan",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-cadian-castellan"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "2b49-4d03-aaf5-3532",
+              "name": "Cadian Castellan",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
