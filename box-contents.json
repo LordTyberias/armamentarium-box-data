@@ -30826,6 +30826,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Aeldari - Farseer ( 46-05 )",
+      "productCodes": [
+        "99070104011"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/craftworlds-farseer-46-05",
+        "https://shop.afk.games/products/craftworlds-farseer",
+        "https://obsidiangames.ca/products/farseer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "b2f5-8219-f875-917e",
+              "name": "Aeldari Farseer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
