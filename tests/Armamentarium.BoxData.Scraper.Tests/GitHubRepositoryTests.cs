@@ -251,4 +251,29 @@ public sealed class GitHubRepositoryTests
         await Assert.ThrowsExactlyAsync<GitHubException>(() => new GitHubRepository(
             new HttpClient(new Recorder(_ => Json("{}", HttpStatusCode.InternalServerError))), null).GetAliasesAsync(default));
     }
+
+    [TestMethod]
+    public async Task Propose_CutsABodyOverGitHubsLimitAtALine()
+    {
+        var handler = new Recorder(request => request.Method == HttpMethod.Get
+            ? Json("""{"object":{"sha":"main-sha"}}""")
+            : Json("""{"number":12}""", HttpStatusCode.Created));
+        var lines = Enumerable.Range(0, 2000).Select(i => $"| `box {i}` | `40k` | `name` | `ids` |").ToList();
+
+        await new GitHubRepository(new HttpClient(handler), Token).ProposeAsync(
+            new Proposal("scraper/backfill-ids", "data: ids", string.Join("\n", lines) + "\n", "{}\n"), "file-sha", default);
+
+        using var pull = JsonDocument.Parse(handler.Requests[3].Body!);
+        var body = pull.RootElement.GetProperty("body").GetString()!;
+        Assert.IsTrue(body.Length <= GitHubRepository.MaxBodyLength, $"{body.Length} characters");
+        var kept = body.Split('\n').TakeWhile(l => l.StartsWith('|')).Count();
+        CollectionAssert.AreEqual(lines.Take(kept).ToArray(), body.Split('\n').Take(kept).ToArray());
+        StringAssert.Contains(body, $"{2000 - kept} more line(s)");
+    }
+
+    [TestMethod]
+    public void BodyOf_KeepsABodyWithinTheLimit()
+    {
+        Assert.AreEqual("short\n", GitHubRepository.BodyOf("short\n"));
+    }
 }
