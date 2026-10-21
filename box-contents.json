@@ -31889,6 +31889,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch - Argent Shards (83-107)",
+      "productCodes": [
+        "99120201236"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/disciples-of-tzeentch-argent-shards-83-107",
+        "https://www.goblingaming.co.uk/products/disciples-of-tzeentch-argent-shards",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/disciples-of-tzeentch-argent-shards"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d731-9058-b0e5-6ff5",
+              "entryId": "6ca7-16cb-53a8-71c0",
+              "name": "Argent Shards",
+              "countCandidates": [
+                1,
+                2
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
