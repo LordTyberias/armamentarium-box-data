@@ -32229,6 +32229,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Nighthaunt: Lord Vitriolic",
+      "productCodes": [
+        "99120207183"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/nighthaunt-lord-vitriolic",
+        "https://www.retrofixgames.com/products/age-of-sigmar-nighthaunt-lord-vitriolic",
+        "https://shop.afk.games/products/nighthaunt-lord-vitriolic",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-death/nighthaunt-lord-vitriolic"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "640e-6bc1-c83d-13c",
+              "entryId": "202c-c298-11c5-361e",
+              "name": "Lord Vitriolic",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
