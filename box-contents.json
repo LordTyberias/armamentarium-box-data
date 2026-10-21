@@ -32436,6 +32436,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Helsmiths of Hashut: Deathshrieker Rocket Battery",
+      "productCodes": [
+        "99120211006"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/helsmiths-of-hashut-deathshrieker-rocket-battery",
+        "https://www.retrofixgames.com/products/age-of-sigmar-helsmiths-of-hashut-deathshrieker-rocket-battery",
+        "https://mrmuffinstrains.com/products/gw-82-07",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/helsmiths-of-hashut/helsmiths-of-hashut-deathshrieker-rocket-battery"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b7b7-cf58-4189-56ec",
+              "entryId": "b683-bbb0-9fd4-6fcc",
+              "name": "Deathshrieker Rocket Battery",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
