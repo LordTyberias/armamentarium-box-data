@@ -32281,6 +32281,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Seraphon: Spawn of Chotec",
+      "productCodes": [
+        "99120208033"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/spawn-of-chotec",
+        "https://abyssgamestore.ca/products/seraphon-spawn-of-chotec-88-22",
+        "https://obsidiangames.ca/products/seraphon-spawn-of-chotec",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-seraphon-spawn-of-chotec",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/seraphon-spawn-of-chotec"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::seraphon",
+              "entryId": "sph::sunblooded-prowlers::07-spawn-of-chotec",
+              "name": "Spawn of Chotec",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
