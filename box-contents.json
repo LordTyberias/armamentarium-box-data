@@ -31138,6 +31138,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blood Angels: Captain",
+      "productCodes": [
+        "99120101416"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blood-angels-captain",
+        "https://abyssgamestore.ca/products/blood-angels-captain-41-23",
+        "https://shop.afk.games/products/blood-angels-captain",
+        "https://obsidiangames.ca/products/blood-angels-captain",
+        "https://www.goblingaming.co.uk/products/blood-angels-captain"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "6c10-5b51-5bc0-8d2c",
+              "name": "Captain",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
