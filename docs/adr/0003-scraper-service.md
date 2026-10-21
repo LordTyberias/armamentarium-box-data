@@ -485,14 +485,14 @@ The table grows only by hand so far. Measured on 2026-10-17:
   |---|---|
   | the service, first `.js` after a long pause (`www.goblingaming.co.uk`) | 200 |
   | the service, every `.js` in the next minutes, to that and two other shops (`abyssgamestore.ca`, `www.retrofixgames.com`) | 429 |
-  | the service, one `.js` after a rest of five, ten and fifteen minutes | 429 |
+  | the service, one `.js` after a rest of five, ten, fifteen and twenty minutes | 429 |
   | curl `--http2`, the same three addresses, IPv4 and IPv6 | 200 |
   | curl `--http1.1`, the same addresses | 429 |
   | the service with this addendum, four shops, three codes, twice in a row | 24 lookups, no 429 |
 
   curl 8.14.1 on the server uses the same OpenSSL 3.5.7 as .NET 10.0.11, so the address and the TLS library are not
   what differs; Shopify sorts the .NET client from this address into a bucket shared by every storefront that refills
-  in more than fifteen minutes, which is no rate a run can keep (ten Shopify sources, about 3300 products).
+  in more than twenty minutes, which is no rate a run can keep (ten Shopify sources, about 3300 products).
 - **Shopify's product address goes through curl** (`CurlHandler`, a `DelegatingHandler` before the
   `SocketsHttpHandler`): `curl -sS --http2 --compressed --max-filesize 16M -D -` with the request's headers, started
   without a shell, its answer turned into a response. `search/suggest.json`, `elementgames.co.uk` and GitHub stay with
@@ -506,7 +506,7 @@ The table grows only by hand so far. Measured on 2026-10-17:
   `Retry-After` is a throttle the fetcher honours, not a guard; captchas, challenges, block pages and a 403 stay as §5
   and Addendum ARMAM-596 say. Measuring with the service's own client (Addendum ARMAM-602) stays; that client is now curl
   for this address.
-- **Rejected:** **keeping the bucket's pace** (allowed, but refills in more than fifteen minutes: weeks for one run);
+- **Rejected:** **keeping the bucket's pace** (allowed, but refills in more than twenty minutes: weeks for one run);
   **shaping .NET's TLS settings** (closer to imitating, and HTTP/2 framing would stay); **a libcurl package** (a
   dependency for what one process does); **curl for every request** (only this address was measured to need it);
   **asking Shopify or the shops** (maintainer's decision); **a run from another machine** (would sidestep the

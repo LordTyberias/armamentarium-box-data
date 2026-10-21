@@ -14,7 +14,7 @@ public delegate Task<CurlResult> CurlRun(IReadOnlyList<string> arguments, Cancel
 /// <summary>
 /// Asks Shopify's product address (<c>/products/&lt;handle&gt;.js</c>) through curl, every other address through the inner
 /// handler. From the server Shopify answers the .NET client 429 on that address after the first request, across every
-/// storefront and for at least fifteen minutes, while curl over HTTP/2 from the same address gets 200 (measured 2026-10-21,
+/// storefront and for at least twenty minutes, while curl over HTTP/2 from the same address gets 200 (measured 2026-10-21,
 /// ADR 0003 Addendum ARMAM-655). curl goes as it is, under the service's own name; the answer comes back as a response like
 /// any other, so <see cref="Fetcher"/> honours <c>Retry-After</c>, block pages and redirects the same way.
 /// </summary>
