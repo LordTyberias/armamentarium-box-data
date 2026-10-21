@@ -31702,6 +31702,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Sisters Novitiates Squad",
+      "productCodes": [
+        "99120108121"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-sisters-novitiates-squadron",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-sisters-novitiate-squad",
+        "https://obsidiangames.ca/products/sisters-novitiate-squad",
+        "https://www.goblingaming.co.uk/products/adepta-sororitas-novitiate-squad-kill-team",
+        "https://mrmuffinstrains.com/products/gw-52-64",
+        "https://radaddel.de/products/adepta-sororitas-sisters-novitiate-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "4269-a229-1461-67d0",
+              "name": "Sisters Novitiate",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
