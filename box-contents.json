@@ -31273,6 +31273,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40k: Chaos Space Marines - Fellgor Beastmen",
+      "productCodes": [
+        "99120102258"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-40k-chaos-space-marines-fellgor-beastmen",
+        "https://www.retrofixgames.com/products/warhammer-40k-chaos-space-marines-fellgor-beastmen",
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-fellgor-beastmen",
+        "https://radaddel.de/products/chaos-space-marines-fellgor-ravagers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "6bf7-888c-7aa6-6831",
+              "name": "Fellgor Beastmen",
+              "count": 10
+            }
+          ]
+        }
+      ]
     }
   ]
 }
