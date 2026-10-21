@@ -31165,6 +31165,28 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Chaos Space Marines Helbrute",
+      "productCodes": [
+        "99120102043"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/chaos-space-marines-helbrute",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/chaos-space-marine-helbrute"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "name": "Helbrute",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
