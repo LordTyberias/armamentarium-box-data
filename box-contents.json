@@ -31505,6 +31505,38 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Astra Militarum Ciaphas Cain",
+      "productCodes": [
+        "99120105152"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-ciaphas-cain",
+        "https://obsidiangames.ca/products/astra-militarum-ciaphas-cain",
+        "https://www.goblingaming.co.uk/products/astra-militarum-ciaphas-cain"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "4aa7-5845-84ad-2d7d",
+              "name": "Ciaphas Cain",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "4aa7-5845-84ad-2d7d",
+              "name": "Jurgen",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
