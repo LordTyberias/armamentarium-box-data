@@ -207,6 +207,11 @@ stopped by the timeout would lose it).
 - **One line per model:** an alias keeps its name and count 1 and gets the ids even where the reading already lists its
   entry, in a new box and in `scraper/backfill-ids`; the matching of sources keys it by its entry and its own name, so Cain
   and Jurgen stay two lines. The app labels each model with its own name (Armamentarium ARMAM-643).
+- **A long pull request text is cut** (measured 2026-10-21): the first run after the aliases filled 491 gaps, and GitHub
+  refused `scraper/backfill-ids` with 422 "body is too long" (at most 65,536 characters). Every proposal's text is cut
+  after the last line that leaves room for its closing line within 60,000 characters, and that line says how many lines
+  were left out (`GitHubRepository.BodyOf`); the commit holds every change. Rejected: only counts in the text (no line to
+  check by eye); one pull request per block of gaps (more merges, more code).
 - **Named exception widened** in Armamentarium's `CLAUDE.md` (Armamentarium ADR 0118 Addendum ARMAM-642).
 - Decisions of the maintainer. Rejected: the alias table compiled into the code like the other rules (a deploy per alias);
   the target as ids (ids by hand, against Addendum ARMAM-593); the target by name alone (several armies link one unit);

@@ -25,8 +25,38 @@ public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? m
     public const string BranchPrefix = "scraper/";
     public const int MergeAttempts = 3;
 
+    // GitHub refuses a pull request text over 65,536 characters with 422 (measured: the backfill of 491 gaps, 2026-10-21);
+    // the rest is a plain safety margin.
+    public const int MaxBodyLength = 60_000;
+
     private const string File = "box-contents.json";
     private static readonly Uri Api = new("https://api.github.com/");
+
+    /// <summary>
+    /// The text of a pull request as GitHub takes it: whole up to <see cref="MaxBodyLength"/>, else cut after the last line
+    /// that fits, with how many lines were left out; the table in the commit holds every change (ADR 0004 Addendum
+    /// ARMAM-642).
+    /// </summary>
+    public static string BodyOf(string body)
+    {
+        if (body.Length <= MaxBodyLength)
+        {
+            return body;
+        }
+
+        var lines = body.TrimEnd('\n').Split('\n');
+        var kept = new StringBuilder();
+        var count = 0;
+        // Room for the closing line.
+        while (count < lines.Length && kept.Length + lines[count].Length + 1 <= MaxBodyLength - 200)
+        {
+            kept.Append(lines[count++]).Append('\n');
+        }
+
+        return kept.Append('\n')
+            .Append($"_… {lines.Length - count} more line(s) left out: GitHub takes at most 65,536 characters here; the diff holds every change._\n")
+            .ToString();
+    }
 
     public Task<(string Text, string Sha)> GetTableAsync(CancellationToken cancellationToken) => GetFileAsync(File, cancellationToken);
 
@@ -91,7 +121,7 @@ public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? m
                 ["title"] = proposal.Title,
                 ["head"] = proposal.Branch,
                 ["base"] = "main",
-                ["body"] = proposal.Body,
+                ["body"] = BodyOf(proposal.Body),
                 ["draft"] = proposal.Draft,
             }, cancellationToken);
             return pull.RootElement.GetProperty("number").GetInt32();
