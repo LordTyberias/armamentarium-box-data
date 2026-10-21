@@ -30877,6 +30877,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch - Magister ( 83-34-W )",
+      "productCodes": [
+        "99070201019"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/disciples-of-tzeentch-magister-83-34-w",
+        "https://elementgames.co.uk/tzeentch-arcanites-tzeentch-magister"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d731-9058-b0e5-6ff5",
+              "entryId": "5f48-17e7-d89f-183b",
+              "name": "Magister",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
