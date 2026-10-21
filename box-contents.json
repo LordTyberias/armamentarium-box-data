@@ -31784,6 +31784,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons - Overlord with Translocation Shroud ( 49-70 )",
+      "productCodes": [
+        "99120110079"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/necrons-overlord-with-translocation-shroud-49-70",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-overlord-with-translocator-shroud",
+        "https://obsidiangames.ca/products/necrons-overlord-with-translocation-shroud",
+        "https://www.goblingaming.co.uk/products/warhammer-40k-necrons-overlord-translocation-shroud-2023",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-overlord-and-translocation-shroud"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "dbe5-257e-e2bd-1b40",
+              "name": "Necron Overlord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
