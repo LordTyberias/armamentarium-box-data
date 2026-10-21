@@ -31755,6 +31755,35 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Necrons: Hexmark Destroyer",
+      "productCodes": [
+        "99120110048"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/necrons-hexmark-destroyer",
+        "https://www.retrofixgames.com/products/warhammer-40k-necrons-hexmark-destroyer",
+        "https://shop.afk.games/products/necrons-hexmark-destroyer",
+        "https://obsidiangames.ca/products/necrons-hexmark-destroyer",
+        "https://www.goblingaming.co.uk/products/hexmark-destroyer-necrons-warhammer-40k-99120110048",
+        "https://mrmuffinstrains.com/products/gw-49-27",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/necrons/necrons-hexmark-destroyer"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "d504-e79e-f4d9-90aa",
+              "name": "Hexmark Destroyer",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
