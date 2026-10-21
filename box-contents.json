@@ -31299,6 +31299,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer 40K Aedari War Walkers",
+      "productCodes": [
+        "99120104107"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-40k-aedari-war-walkers",
+        "https://shop.afk.games/products/aeldari-war-walkers",
+        "https://obsidiangames.ca/products/war-walkers",
+        "https://www.goblingaming.co.uk/products/aeldari-war-walkers",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/eldar/aeldari-war-walkers",
+        "https://radaddel.de/products/aeldari-war-walkers"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "bcec-dc54-9242-4e13",
+              "name": "War Walkers",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
