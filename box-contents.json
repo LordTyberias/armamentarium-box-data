@@ -31675,6 +31675,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Adepta Sororitas: Canoness with Jump Pack",
+      "productCodes": [
+        "99120108103"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/adepta-sororitas-canoness-with-jump-pack",
+        "https://www.retrofixgames.com/products/warhammer-40k-adepta-sororitas-canoness-with-jump-pack",
+        "https://shop.afk.games/products/adepta-sororitas-canoness-w-jump-pack",
+        "https://obsidiangames.ca/products/canoness-with-jump-pack",
+        "https://www.goblingaming.co.uk/products/adepta-sororitas-canoness-w-jump-pack"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "c338-14f9-4ee-f223",
+              "name": "Canoness",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
