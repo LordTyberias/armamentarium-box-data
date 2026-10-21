@@ -32074,6 +32074,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth Branchwych",
+      "productCodes": [
+        "99120204052"
+      ],
+      "sources": [
+        "https://www.goblingaming.co.uk/products/sylvaneth-branchwych",
+        "https://elementgames.co.uk/sylvaneth-branchwych"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::01-branchwych",
+              "name": "Branchwych",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
