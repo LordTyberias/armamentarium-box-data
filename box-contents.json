@@ -30925,6 +30925,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Blades of Khorne: Realmgore Ritualist",
+      "productCodes": [
+        "99070201031"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/blades-of-khorne-realmgore-ritualist",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-blades-of-khorne-realmgore-ritualist",
+        "https://shop.afk.games/products/blades-of-khorne-realmgore-ritualist",
+        "https://obsidiangames.ca/products/blades-of-khorne-realmgore-ritualist",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-blades-of-khorne-realmgore-ritualist"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d545-cdca-9e60-ad27",
+              "entryId": "2592-295e-eed8-361b",
+              "name": "Realmgore Ritualist",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
