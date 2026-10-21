@@ -26,7 +26,7 @@ public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? m
     public const int MergeAttempts = 3;
 
     // GitHub refuses a pull request text over 65,536 characters with 422 (measured: the backfill of 491 gaps, 2026-10-21);
-    // the margin covers names whose characters GitHub counts wider.
+    // the rest is a plain safety margin.
     public const int MaxBodyLength = 60_000;
 
     private const string File = "box-contents.json";

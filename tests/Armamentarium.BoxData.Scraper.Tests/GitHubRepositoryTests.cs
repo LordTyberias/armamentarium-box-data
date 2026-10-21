@@ -272,8 +272,22 @@ public sealed class GitHubRepositoryTests
     }
 
     [TestMethod]
-    public void BodyOf_KeepsABodyWithinTheLimit()
+    public void BodyOf_KeepsABodyOfExactlyTheLimitWhole()
     {
-        Assert.AreEqual("short\n", GitHubRepository.BodyOf("short\n"));
+        var body = new string('x', GitHubRepository.MaxBodyLength - 1) + "\n";
+
+        Assert.AreEqual(body, GitHubRepository.BodyOf(body));
+    }
+
+    [TestMethod]
+    public void BodyOf_LeavesOutALineLongerThanTheLimit()
+    {
+        var body = new string('x', GitHubRepository.MaxBodyLength + 1) + "\nsecond\n";
+
+        var cut = GitHubRepository.BodyOf(body);
+
+        Assert.IsTrue(cut.Length <= GitHubRepository.MaxBodyLength);
+        Assert.IsFalse(cut.Contains('x'));
+        StringAssert.Contains(cut, "2 more line(s)");
     }
 }
