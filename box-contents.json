@@ -32122,6 +32122,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kharadron Overlords: Zontari Endrin Dock",
+      "productCodes": [
+        "99120205068"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/kharadron-overlords-zontari-endrin-dock",
+        "https://www.retrofixgames.com/products/kharadron-overlords-zontari-endrin-dock",
+        "https://shop.afk.games/products/zontari-endrin-dock",
+        "https://www.goblingaming.co.uk/products/kharadron-overlords-zontari-endrin-dock",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/kharadron-overlords-zontari-endrin-dock"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1100-a22f-15c6-bdea",
+              "entryId": "2c4d-116f-02a1-88ce",
+              "name": "Zontari Endrin Dock",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
