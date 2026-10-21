@@ -32384,6 +32384,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Snarlboss & Wolfgit Retinue",
+      "productCodes": [
+        "99120209137"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/gloomspite-gitz-snarlboss-wolfgit-retinue",
+        "https://shop.afk.games/products/gloomspite-gitz-snarlboss-wolfgit-retinue",
+        "https://obsidiangames.ca/products/snarlboss-and-wolfgit-retinue",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/snarlboss-and-wolfgit-retinue"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::gloomspite-gitz",
+              "entryId": "sph::snarlpack-huntaz::01-snarlboss",
+              "name": "Snarlboss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
