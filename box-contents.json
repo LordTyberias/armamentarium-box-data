@@ -32410,6 +32410,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Lumineth Realmlords Vanari Lord Regent",
+      "productCodes": [
+        "99120210065"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-lumineth-realmlords-vanari-lord-regent",
+        "https://shop.afk.games/products/lumineth-realmlords-vanari-lord-regent",
+        "https://mrmuffinstrains.com/products/gw-87-66",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/lumineth-realm-lords-vanari-lord-regent"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "69db-94ab-507b-0e92",
+              "name": "Vanari Lord Regent",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
