@@ -32048,6 +32048,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Sylvaneth: Grove Guardian",
+      "productCodes": [
+        "99120204051"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/sylvaneth-grove-guardian",
+        "https://www.retrofixgames.com/products/age-of-sigmar-sylvaneth-grove-guardian",
+        "https://mrmuffinstrains.com/products/gw-92-54",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/sylvaneth-grove-guardian"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "1902-0dee-b6d1-0f58",
+              "name": "Grove Guardian",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
