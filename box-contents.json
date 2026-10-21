@@ -32149,6 +32149,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Skaven: Arch-Warlock",
+      "productCodes": [
+        "99120206049"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/skaven-arch-warlock",
+        "https://shop.afk.games/products/skaven-arch-warlock",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-chaos/clan-pestilens/skaven-arch-warlock"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "a566-7135-d418-bc59",
+              "name": "Arch-Warlock",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
