@@ -31384,6 +31384,40 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Astra Militarum: Cadian Command Squad",
+      "productCodes": [
+        "99120105102"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/astra-militarum-cadian-command-squad",
+        "https://abyssgamestore.ca/products/astra-militarum-cadian-command-squad-47-9",
+        "https://www.retrofixgames.com/products/warhammer-40k-astra-militarum-cadian-command-squad",
+        "https://shop.afk.games/products/cadian-command-squad",
+        "https://obsidiangames.ca/products/astra-militarum-cadian-command-squad",
+        "https://www.goblingaming.co.uk/products/cadian-command-squad",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/imperial-guard/astra-militarum-cadian-command-squad"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "4d28-f2a7-67c1-eb2e",
+              "name": "Cadian Command Squad",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Veteran Guardsmen",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
