@@ -32174,6 +32174,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Flesh-Eater Courts: Abhorrant Cardinal",
+      "productCodes": [
+        "99120207155"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/flesh-eater-courts-abhorrant-cardinal",
+        "https://abyssgamestore.ca/products/flesh-eater-courts-abhorrant-cardinal-91-72",
+        "https://shop.afk.games/products/flesh-eater-courts-abhorrant-cardinal",
+        "https://obsidiangames.ca/products/flesh-eater-courts-abhorrant-cardinal",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-flesh-eater-courts-abhorrant-cardinal",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-death/flesh-eater-courts-abhorrant-cardinal"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b53b-1217-df2e-66d2",
+              "entryId": "2f4b-8632-d9fe-ac87",
+              "name": "Abhorrant Cardinal",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
