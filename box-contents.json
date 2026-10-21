@@ -31053,6 +31053,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Orruk Warclans - Ardboy Big Boss ( 89-57 )",
+      "productCodes": [
+        "99070209010"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/orruk-warclans-ardboy-big-boss-89-57",
+        "https://obsidiangames.ca/products/orruk-warclans-ardboy-big-boss",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-orruk-warclans-ardboy-big-boss"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "832c-fd6-a535-ffae",
+              "entryId": "e020-20c4-a638-6d2b",
+              "name": "Ardboy Big Boss",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
