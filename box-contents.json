@@ -31837,6 +31837,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Chaos Sorcerer Lord",
+      "productCodes": [
+        "99120201192"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/slaves-to-darkness-chaos-sorcerer-lord",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-chaos-sorcerer-lord",
+        "https://shop.afk.games/products/slaves-to-darkness-chaos-sorcerer-lord",
+        "https://www.goblingaming.co.uk/products/slaves-to-darkness-chaos-sorcerer-lord",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-space-marines/slaves-to-darkness-chaos-sorcerer-lord"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "eb21-eb7e-ebce-aafe",
+              "name": "Chaos Sorcerer Lord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
