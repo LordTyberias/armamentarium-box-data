@@ -32098,6 +32098,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Kharadron Overlords Arkanaut Frigate",
+      "productCodes": [
+        "99120205018"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/kharadron-overlords-arkanaut-frigate",
+        "https://www.goblingaming.co.uk/products/kharadron-overlords-arkanaut-frigate"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::kharadron-overlords",
+              "entryId": "sph::skyhammer-task-force::05-arkanaut-frigate",
+              "name": "Arkanaut Frigate",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
