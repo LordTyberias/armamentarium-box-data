@@ -31004,6 +31004,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Fyreslayers - Grimhold Exile ( 84-46-W )",
+      "productCodes": [
+        "99070205015"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/fyreslayers-grimhold-exile-84-46-w",
+        "https://www.goblingaming.co.uk/products/fyreslayers-grimhold-exile"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b3f9-6c96-b99a-1e71",
+              "entryId": "145f-e68f-3a4e-c25a",
+              "name": "Grimhold Exile",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
