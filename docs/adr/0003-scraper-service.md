@@ -38,6 +38,12 @@ HTTP/1.1, not the user agent.
 **Changed by Addendum ARMAM-610:** §4 a product named as an upgrade set is no candidate; §8 drops parts, hand weapons,
 filler names and names starting with "of", and cuts prose before and after a name, in lines and build sentences alike.
 
+**Changed by Addendum ARMAM-655:** Shopify's product address (`/products/<handle>.js`) is asked through curl, no longer
+through the .NET client; every other request stays with it (§6, Addendum ARMAM-603). Addendum ARMAM-603's "the trigger is
+HTTP/1.1 on `.js`, not the rate", "no limit per address across shops was found" and "every request goes over HTTP/2" (as
+.NET's) no longer hold for that address. §5's "never circumvented", §7's own name and Addendum ARMAM-596's rejected
+"working around the guard (browser fingerprint, challenge answers)" stay, bounded as the addendum says.
+
 **Changed by Addendum ARMAM-642:** §8 also reads a line "1 <name> miniature" without bullet or "x", and a build sentence
 that names models without a count ("builds Ciaphas Cain and Jurgen"), one each, when every name names a root entry.
 
@@ -467,3 +473,40 @@ The table grows only by hand so far. Measured on 2026-10-17:
 - Decisions of the maintainer. Rejected: only the miniature line (one source, the box would still wait); each name that
   hits counting while the others drop (a box would lose a model); a run mode for named codes or for codes new in the
   product catalogue.
+
+## Addendum ARMAM-655 — Shopify's product address goes through curl (2026-10-21)
+
+- **Why:** from 2026-10-20 on, the server's service drew 429 (`Retry-After 60 s`) from Shopify on `/products/<handle>.js`
+  from the first request, over HTTP/2, while the full run of 2026-10-18/19 had none. Neither the fetcher nor the server's
+  packages had changed since. No full run could start; "Astra Militarum: Ciaphas Cain" (99120105152) stayed missing.
+- **Measured** from the server on 2026-10-21 (service `--dry-run --host`, as `ben`, and curl with `ABD/1.0`):
+
+  | Probe | Answer |
+  |---|---|
+  | the service, first `.js` after a long pause (`www.goblingaming.co.uk`) | 200 |
+  | the service, every `.js` in the next minutes, to that and two other shops (`abyssgamestore.ca`, `www.retrofixgames.com`) | 429 |
+  | the service, one `.js` after a rest of five, ten and fifteen minutes | 429 |
+  | curl `--http2`, the same three addresses, IPv4 and IPv6 | 200 |
+  | curl `--http1.1`, the same addresses | 429 |
+  | the service with this addendum, four shops, three codes, twice in a row | 24 lookups, no 429 |
+
+  curl 8.14.1 on the server uses the same OpenSSL 3.5.7 as .NET 10.0.11, so the address and the TLS library are not
+  what differs; Shopify sorts the .NET client from this address into a bucket shared by every storefront that refills
+  in more than fifteen minutes, which is no rate a run can keep (ten Shopify sources, about 3300 products).
+- **Shopify's product address goes through curl** (`CurlHandler`, a `DelegatingHandler` before the
+  `SocketsHttpHandler`): `curl -sS --http2 --compressed --max-filesize 16M -D -` with the request's headers, started
+  without a shell, its answer turned into a response. `search/suggest.json`, `elementgames.co.uk` and GitHub stay with
+  the .NET client. The fetcher is unchanged: `Retry-After`, the stretched interval, block pages, the redirect within the
+  host and the journal line for an answer below HTTP/2 apply to curl's answer as before. curl's timeout comes from the
+  client's 20 s; exit 28 is a timeout, any other exit an answer missing. The server needs `/usr/bin/curl` (Debian
+  package, installed).
+- **Bound (maintainer's decision):** curl goes as it is, under the service's own name `ABD/1.0` (§7); no browser string,
+  no cipher list or other setting shaped to look like another client, no other address or machine. A 429 with
+  `Retry-After` is a throttle the fetcher honours, not a guard; captchas, challenges, block pages and a 403 stay as §5
+  and Addendum ARMAM-596 say. Measuring with the service's own client (Addendum ARMAM-602) stays; that client is now curl
+  for this address.
+- **Rejected:** **keeping the bucket's pace** (allowed, but refills in more than fifteen minutes: weeks for one run);
+  **shaping .NET's TLS settings** (closer to imitating, and HTTP/2 framing would stay); **a libcurl package** (a
+  dependency for what one process does); **curl for every request** (only this address was measured to need it);
+  **asking Shopify or the shops** (maintainer's decision); **a run from another machine** (would sidestep the
+  classification of the server's address).

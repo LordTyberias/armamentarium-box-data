@@ -12,7 +12,7 @@ namespace Armamentarium.BoxData.Scraper;
 /// until then (longer than <see cref="MaxRetryAfter"/> rests it for the run), and from the <see cref="StretchAfter"/>th 429
 /// on the host's interval is doubled up to <see cref="MaxStretchedInterval"/> for the rest of the run. A 403 throttles nothing.
 /// Every request goes over HTTP/2, over HTTP/1.1 only to a host without it, which the journal names once per host (ADR 0003
-/// Addendum ARMAM-603).
+/// Addendum ARMAM-603); Shopify's product address goes through curl (<see cref="CurlHandler"/>, Addendum ARMAM-655).
 /// </summary>
 public sealed class Fetcher : IFetcher, IDisposable
 {
@@ -44,11 +44,11 @@ public sealed class Fetcher : IFetcher, IDisposable
 
     /// <param name="hosts">Each allowlisted host with its least interval between two requests.</param>
     public Fetcher(IReadOnlyDictionary<string, TimeSpan> hosts, Action<string> log)
-        : this(hosts, log, new SocketsHttpHandler
+        : this(hosts, log, new CurlHandler(new SocketsHttpHandler
         {
             AllowAutoRedirect = false,
             AutomaticDecompression = DecompressionMethods.All,
-        })
+        }))
     {
     }
 
