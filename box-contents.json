@@ -31942,6 +31942,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Cities of Sigmar: Freeguild Cavalier Marshal",
+      "productCodes": [
+        "99120202044"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/cities-of-sigmar-freeguild-cavalier-marshal",
+        "https://abyssgamestore.ca/products/cities-of-sigmar-freeguild-cavalier-marshal-86-05",
+        "https://shop.afk.games/products/freeguild-cavalier-marshal",
+        "https://obsidiangames.ca/products/cities-of-sigmar-freeguild-cavalier-marshal"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::01-freeguild-cavalier-marshal",
+              "name": "Freeguild Cavalier-Marshal",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
