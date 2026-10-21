@@ -31864,6 +31864,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tzeentch Fatemaster",
+      "productCodes": [
+        "99120201214"
+      ],
+      "sources": [
+        "https://shop.afk.games/products/tzeentch-fatemaster",
+        "https://mrmuffinstrains.com/products/gw-83-111",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/disciples-of-tzeentch-fatemaster"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "d731-9058-b0e5-6ff5",
+              "entryId": "b352-db5e-477a-5db6",
+              "name": "Fatemaster",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
