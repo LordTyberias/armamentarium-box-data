@@ -31917,6 +31917,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Hedonites of Slaanesh Lord of Hysteria",
+      "productCodes": [
+        "99120201258"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-hedonites-of-slaanesh-lord-of-hysteria",
+        "https://www.goblingaming.co.uk/products/hedonites-of-slaanesh-lord-of-hysteria",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/hedonites-of-slaanesh-lord-of-hysteria"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "afdb-68a1-283e-3bf2",
+              "entryId": "1d30-89fa-6fba-3df7",
+              "name": "Lord of Hysteria",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
