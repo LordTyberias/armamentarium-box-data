@@ -30980,6 +30980,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Fyreslayers - Doomseeker ( 84-26-W )",
+      "productCodes": [
+        "99070205009"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/fyreslayers-doomseeker-84-26-w",
+        "https://elementgames.co.uk/doomseeker-fyreslayer"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b3f9-6c96-b99a-1e71",
+              "entryId": "2a37-8d73-b1ba-576d",
+              "name": "Fyreslayer Doomseeker",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
