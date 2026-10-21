@@ -1639,6 +1639,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "8da0-4570-c3c-819f",
               "name": "Intercessors",
               "count": 5
             },
@@ -1649,6 +1651,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "e3b1-1240-2476-cd86",
               "name": "Ork Boyz",
               "count": 5
             }
@@ -1706,6 +1710,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "8da0-4570-c3c-819f",
               "name": "Intercessors",
               "count": 5
             },
@@ -1737,6 +1743,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "e3b1-1240-2476-cd86",
               "name": "Ork Boyz",
               "count": 20
             },
@@ -1774,21 +1782,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "43ac-9228-ce2c-b739",
               "name": "Darkoath Wilderfiend",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "6bde-370e-478d-cf24",
               "name": "Darkoath Chieftain on Warsteed",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::03-darkoath-fellriders",
               "name": "Darkoath Fellriders",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::04-darkoath-marauders",
               "name": "Darkoath Marauders",
               "count": 20
             }
@@ -1857,6 +1873,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::01-lord-vigilant-on-gryph-stalker",
               "name": "Lord-Vigilant on Gryph-Stalker",
               "count": 1
             },
@@ -1867,16 +1885,22 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::03-prosecutors",
               "name": "Prosecutors",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::04-liberators",
               "name": "Stormcast Eternals Liberators",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::01-clawlord-on-gnaw-beast",
               "name": "Clawlord on Gnaw-Beast",
               "count": 1
             },
@@ -1887,11 +1911,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::03-warlock-engineer",
               "name": "Warlock Engineer",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::06-rat-ogors",
               "name": "Rat Ogors",
               "count": 3
             },
@@ -1933,11 +1961,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::03-prosecutors",
               "name": "Prosecutors",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::04-liberators",
               "name": "Stormcast Eternals Liberators",
               "count": 5
             },
@@ -1948,11 +1980,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::03-warlock-engineer",
               "name": "Warlock Engineer",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::06-rat-ogors",
               "name": "Rat Ogors",
               "count": 3
             },
@@ -1981,6 +2017,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::04-liberators",
               "name": "Stormcast Eternals Liberators",
               "count": 5
             },
@@ -2008,6 +2046,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::04-liberators",
               "name": "Stormcast Eternals Liberators",
               "count": 5
             },
@@ -2069,11 +2109,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "c166-6219-6b1c-412c",
               "name": "Chaos Warriors",
               "count": 16
             },
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "a632-1cca-9499-ce33",
               "name": "Chaos Knights",
               "count": 4
             },
@@ -2089,11 +2133,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "c5f3-400c-e140-fb65",
               "name": "Jade Warriors",
               "count": 20
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "4cc7-7623-fd30-5dc2",
               "name": "Jade Lancers",
               "count": 5
             },
@@ -2225,6 +2273,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "8da0-4570-c3c-819f",
               "name": "Intercessors",
               "count": 5
             },
@@ -2273,6 +2323,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "e3b1-1240-2476-cd86",
               "name": "Ork Boyz",
               "count": 20
             },
@@ -2394,11 +2446,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "7044-bf1-f949-c32d",
               "name": "Bladeguard Veterans",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "c570-c6ba-c9dc-5a44",
               "name": "Eradicators",
               "count": 3
             }
@@ -2654,31 +2710,43 @@
             },
             {
               "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "b793-b77e-9e49-d397",
               "name": "Plenipotentiary Lucia Vestha",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "b793-b77e-9e49-d397",
               "name": "Astropath Dainal Kornelius",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "b793-b77e-9e49-d397",
               "name": "Legatus Aemelia Minervas",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "b793-b77e-9e49-d397",
               "name": "Commodore Gaius Silva",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "b793-b77e-9e49-d397",
               "name": "Veteran Sergeant Metaurus",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "4029-9237-e8db-af55",
+              "entryId": "b793-b77e-9e49-d397",
               "name": "Ancient Gadriel",
               "count": 1
             }
@@ -2744,6 +2812,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "615-e6bf-cfd2-9384",
               "name": "Legionaries",
               "count": 10
             },
@@ -2793,21 +2863,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "b566-8903-3a36-62f1",
               "name": "Hippogriff AFVs",
               "count": 2
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "c871-4769-71ed-c4b3",
               "name": "Centaur RSV",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "2127-efcc-1f62-7fab",
               "name": "Rogal Dorn Battle Tank",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "a2aa-7688-dcb1-4132",
               "name": "Cadian Shock Troops",
               "count": 10
             }
@@ -2918,11 +2996,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "cf23-58db-8ba4-9ec8",
               "name": "Chimera",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "b00-cd86-4b4c-97ba",
+              "entryId": "15c0-9294-7eb8-f3a7",
               "name": "Grey Knights Terminator",
               "count": 5
             },
@@ -2996,11 +3078,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::blades-of-khorne",
+              "entryId": "sph::fangs-of-the-blood-god::01-karanak",
               "name": "Karanak",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::blades-of-khorne",
+              "entryId": "sph::fangs-of-the-blood-god::04-claws-of-karanak",
               "name": "Claws of Karanak",
               "count": 8
             },
@@ -3028,16 +3114,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::tzaangor-warflock::01-tzaangor-shaman",
               "name": "Tzaangor Shaman",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::tzaangor-warflock::03-tzaangor-enlightened",
               "name": "Tzaangor Enlightened",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::tzaangor-warflock::04-tzaangor-skyfires",
               "name": "Tzaangor Skyfires",
               "count": 3
             },
@@ -3065,16 +3157,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::nighthaunt",
+              "entryId": "sph::cursed-shacklehorde::01-spirit-torment",
               "name": "Spirit Torment",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::nighthaunt",
+              "entryId": "sph::cursed-shacklehorde::02-chainghasts",
               "name": "Chainghasts",
               "count": 2
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::nighthaunt",
+              "entryId": "sph::cursed-shacklehorde::07-dreadblade-harrows",
               "name": "Dreadblade Harrows",
               "count": 2
             },
@@ -3107,11 +3205,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::seraphon",
+              "entryId": "sph::starscale-warhost::01-saurus-oldblood-on-carnosaur",
               "name": "Saurus Oldblood on Carnosaur",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::seraphon",
+              "entryId": "sph::starscale-warhost::04-kroxigor",
               "name": "Kroxigor",
               "count": 3
             },
@@ -3139,6 +3241,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "8931-32bb-58ba-820a",
               "name": "Neave Blacktalon",
               "count": 1
             },
@@ -4108,6 +4212,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "8dc5-4dcb-d77f-7d23",
               "name": "Traitor Guardsmen",
               "count": 10
             },
@@ -4192,6 +4298,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "9baf-c109-f621-e60",
+              "entryId": "2a72-e12b-5933-67f5",
               "name": "Droggz da Sunchompa",
               "count": 1
             },
@@ -4234,6 +4342,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::01-lord-vigilant-on-gryph-stalker",
               "name": "Lord-Vigilant on Gryph-stalker",
               "count": 1
             },
@@ -4249,6 +4359,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "9f39-a639-e695-6de3",
               "name": "Knight-Questor",
               "count": 1
             },
@@ -4259,16 +4371,22 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::03-prosecutors",
               "name": "Prosecutors",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::vigilant-brotherhood::04-liberators",
               "name": "Liberators",
               "count": 10
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::01-clawlord-on-gnaw-beast",
               "name": "Clawlord on Gnaw-Beast",
               "count": 1
             },
@@ -4279,21 +4397,29 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::03-warlock-engineer",
               "name": "Warlock Engineer",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "6792-1e93-a367-95c8",
               "name": "Ratling Warpblaster",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::06-rat-ogors",
               "name": "Rat Ogors",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "160-3400-6da6-eb08",
               "name": "Warplock Jezzails",
               "count": 3
             },
@@ -4387,6 +4513,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1ddf-26c6-1d88-2b8c",
+              "entryId": "db5c-8ca7-cf1f-606e",
               "name": "Dwarf Engineers",
               "count": 4
             }
@@ -4690,6 +4818,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "ce15-e87e-7cff-b129",
               "name": "Space Marine Lieutenant",
               "count": 1
             }
@@ -4712,6 +4842,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "287f-7d48-59cf-dc1e",
               "name": "Master of Possession",
               "count": 1
             }
@@ -4907,6 +5039,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "833b-55bc-73be-8862",
               "name": "Aeldari Farseer Skyrunner",
               "count": 1
             }
@@ -5478,6 +5612,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "77b9-2f66-3f9b-5cf3",
+              "entryId": "6424-ed86-9e15-3e14",
               "name": "Tech-Priest Dominus",
               "count": 1
             }
@@ -5732,6 +5868,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bubonic-cell::01-rotbringer-sorcerer",
               "name": "Rotbringer Sorcerer",
               "count": 1
             }
@@ -5754,6 +5892,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "542a-9c27-908f-8c30",
               "name": "Lord of Plagues",
               "count": 1
             }
@@ -5789,6 +5929,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::tzaangor-warflock::01-tzaangor-shaman",
               "name": "Tzaangor Shaman",
               "count": 1
             }
@@ -5837,6 +5979,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "4b86-5244-fe24-99c6",
               "name": "Master Moulder",
               "count": 1
             }
@@ -5860,6 +6004,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::01-vampire-lord",
               "name": "Vampire Lord",
               "count": 1
             }
@@ -5933,6 +6079,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::ironjawz-bigmob::01-megaboss",
               "name": "orruk Megaboss",
               "count": 1
             }
@@ -5958,6 +6106,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "832c-fd6-a535-ffae",
+              "entryId": "e824-4e07-12f6-309c",
               "name": "Weirdnob Shaman",
               "count": 1
             }
@@ -5981,6 +6131,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "56b6-9e6e-4f51-60c",
               "name": "Scinari Calligrave",
               "count": 1
             }
@@ -6050,6 +6202,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "93e8-210a-cc3-ef22",
               "name": "High Gladiatrix",
               "count": 1
             }
@@ -6075,6 +6229,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "f858-254e-aaeb-4d19",
               "name": "Knight-Relictor",
               "count": 1
             }
@@ -6212,6 +6368,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "13b1-ec94-d107-d711",
+              "entryId": "ff64-94cc-3afd-5333",
               "name": "Tree Kin",
               "count": 3
             }
@@ -6234,6 +6392,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1ddf-26c6-1d88-2b8c",
+              "entryId": "2f5-4b61-6d40-247f",
               "name": "Bolt Thrower",
               "count": 1
             }
@@ -6301,6 +6461,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "2f44-19e3-996-656b",
               "name": "Snotling Pump Wagon",
               "count": 1
             }
@@ -6392,6 +6554,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "38a76fc0-593570a",
               "name": "Settra the Imperishable",
               "count": 1
             }
@@ -6415,6 +6579,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "81e7-bf62-d1a1-9693",
               "name": "Ushabti",
               "count": 3
             }
@@ -6438,6 +6604,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "81e7-bf62-d1a1-9693",
               "name": "Ushabti",
               "count": 3
             }
@@ -6576,6 +6744,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "a10b-fbfe-b1fa-6f0c",
               "name": "Assault Intercessors",
               "count": 10
             }
@@ -6609,6 +6779,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "7044-bf1-f949-c32d",
               "name": "Bladeguard Veterans",
               "count": 3
             }
@@ -6641,6 +6813,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "c570-c6ba-c9dc-5a44",
               "name": "Eradicators",
               "count": 3
             }
@@ -6669,6 +6843,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "7324-e591-939b-b675",
               "name": "Heavy Intercessors",
               "count": 5
             }
@@ -6923,6 +7099,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "d6c3-e9d2-430d-6c2f",
               "name": "Eliminators",
               "count": 3
             }
@@ -7024,6 +7202,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "94bb-3284-ee14-57a1",
+              "entryId": "c125-1106-f06d-9682",
               "name": "Space Wolves Venerable Dreadnought",
               "count": 1
             }
@@ -7132,6 +7312,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "36d3-36bc-68dd-40ac",
+              "entryId": "206c-6b4d-4aaa-7e79",
               "name": "Sword Brethren",
               "count": 5
             }
@@ -7327,6 +7509,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "36d3-36bc-68dd-40ac",
+              "entryId": "68dd-5f49-4f17-cd84",
               "name": "Black Templar Marshal",
               "count": 1
             }
@@ -8365,6 +8549,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "8dc5-4dcb-d77f-7d23",
               "name": "Traitor Guardsmen",
               "count": 10
             }
@@ -8756,6 +8942,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "cb1-5bcf-9e36-8136",
               "name": "Possessed",
               "count": 5
             }
@@ -8783,6 +8971,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "4e85-615b-5d49-dfa4",
               "name": "Chosen",
               "count": 5
             }
@@ -8868,6 +9058,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "23aa-b45a-6d5d-e92b",
               "name": "Accursed Cultists",
               "count": 8
             },
@@ -9289,6 +9481,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "d2b8-454a-d061-b592",
               "name": "Dark Apostle",
               "count": 1
             },
@@ -9347,6 +9541,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "e496-5a54-4cb2-4fc1",
               "name": "Chaos Lord miniature",
               "count": 1
             }
@@ -9373,6 +9569,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "e496-5a54-4cb2-4fc1",
               "name": "Chaos Lord",
               "count": 1
             }
@@ -10062,6 +10260,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "46e1-2159-7c26-9105",
               "name": "Lord Discordant",
               "count": 1
             },
@@ -10086,11 +10286,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "946c-d784-c8be-f21",
               "name": "Havocs",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "c8da-e875-58f7-f6d6",
+              "entryId": "615-e6bf-cfd2-9384",
               "name": "Legionaries",
               "count": 10
             }
@@ -10447,6 +10651,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "5a5d-c5a4-39b8-4a3f",
               "name": "Ork Beastboss",
               "count": 1
             }
@@ -10591,6 +10797,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "a55f-b7b3-6c65-a05f",
+              "entryId": "56d6-a7fc-fa08-4345",
               "name": "Ork Gorkanaut",
               "count": 1
             },
@@ -11404,6 +11612,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "b98b-701f-9c0c-5437",
               "name": "Aeldari Rangers",
               "count": 5
             }
@@ -11483,6 +11693,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "e6c2-f3b2-6d3e-c3d3",
               "name": "Aeldari Dire Avengers",
               "count": 5
             }
@@ -11600,6 +11812,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "34a5-8c7e-f468-82d1",
+              "entryId": "bfd-df5a-b358-4cf9",
               "name": "Aeldari Wraithknight",
               "count": 1
             },
@@ -11988,6 +12202,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "c28b-c3af-38b2-8865",
               "name": "Hellhound",
               "count": 1
             }
@@ -12010,6 +12226,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "bf53-4ab3-ff75-9aa0",
               "name": "Basilisk",
               "count": 1
             }
@@ -12032,6 +12250,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "41be-48c9-5476-f47a",
               "name": "Manticore",
               "count": 1
             }
@@ -12060,6 +12280,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "2299-bed9-3e-2b60",
               "name": "Attilan Rough Riders",
               "count": 5
             }
@@ -12142,6 +12364,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "a2aa-7688-dcb1-4132",
               "name": "Cadian Shock Troops",
               "count": 10
             }
@@ -12166,6 +12390,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "7e34-20cf-1149-74a1",
               "name": "Armoured Sentinel",
               "count": 1
             }
@@ -12347,6 +12573,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "9665-3160-8a04-d2bc",
               "name": "Valkyrie",
               "count": 1
             }
@@ -12371,6 +12599,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "cf23-58db-8ba4-9ec8",
               "name": "Chimera",
               "count": 1
             }
@@ -12394,6 +12624,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "4967-19b6-1e2a-a300",
               "name": "Hydra",
               "count": 1
             }
@@ -12445,6 +12677,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "37ad-63e5-1786-87cf",
               "name": "Bullgryns",
               "count": 3
             }
@@ -12541,6 +12775,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "f1a-7c78-ffdc-bf5b",
               "name": "Death Riders",
               "count": 5
             }
@@ -12566,6 +12802,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "3e90-9359-2aaa-205e",
               "name": "Krieg Combat Engineers",
               "count": 5
             }
@@ -12669,6 +12907,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "c871-4769-71ed-c4b3",
               "name": "Centaur RSV",
               "count": 1
             }
@@ -12692,11 +12932,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "fbcd-274b-0196-b4f6",
               "name": "Krieg Command Squad miniatures",
               "count": 7
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "0595-6d6c-a783-12ab",
               "name": "Artillery Teams",
               "count": 2
             },
@@ -12733,6 +12977,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "4d28-f2a7-67c1-eb2e",
               "name": "Cadian Command Squad miniatures",
               "count": 5
             },
@@ -12743,16 +12989,22 @@
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "2127-efcc-1f62-7fab",
               "name": "Rogal Dorn Battle Tank",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "bf53-4ab3-ff75-9aa0",
               "name": "Basilisk",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "b0ae-12a5-c84-ea45",
+              "entryId": "a2aa-7688-dcb1-4132",
               "name": "Cadian Shock Troops",
               "count": 10
             }
@@ -12926,6 +13178,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "1705-379b-330d-36d4",
               "name": "Tyranid Tyrannofex",
               "count": 1
             }
@@ -12981,6 +13235,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "b86a-b38a-380c-483d",
               "name": "Tyranid Broodlord",
               "count": 1
             }
@@ -13248,6 +13504,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b984-7317-81cc-20f",
+              "entryId": "31f9-9730-853c-6f13",
               "name": "Tyranid Prime",
               "count": 1
             }
@@ -13552,6 +13810,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "4b94-c22e-84f9-8d32",
               "name": "Aestred Thurga",
               "count": 1
             },
@@ -13582,6 +13842,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "f26d-450d-1c55-caeb",
               "name": "Battle Sisters",
               "count": 10
             },
@@ -13639,6 +13901,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "7d63-7b55-a632-6a10",
               "name": "Repentia",
               "count": 9
             }
@@ -13664,6 +13928,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "c49d-f150-4b3-c118",
               "name": "Retributors",
               "count": 5
             },
@@ -13692,6 +13958,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "bee9-172b-7db7-f748",
               "name": "Seraphim",
               "count": 5
             }
@@ -13718,6 +13986,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "91b3-2e1c-e642-d213",
               "name": "Adeptus Custodes Custodian Guard",
               "count": 5
             }
@@ -14115,6 +14385,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "52c7-3f6b-cece-8101",
               "name": "Adepta Sororitas Rhino",
               "count": 2
             },
@@ -14127,6 +14399,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "7d63-7b55-a632-6a10",
               "name": "Repentia",
               "count": 9
             },
@@ -14188,6 +14462,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "b39e-4401-8f3e-fdf7",
+              "entryId": "4269-a229-1461-67d0",
               "name": "Sisters Novitiate",
               "count": 9
             },
@@ -14302,6 +14578,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "db10-2662-da6a-516e",
               "name": "Necron Monolith",
               "count": 1
             }
@@ -14505,6 +14783,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "f81-b23c-e183-39d7",
               "name": "Necron Immortals",
               "count": 5
             }
@@ -14530,6 +14810,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "6829-6dcb-b342-afe4",
               "name": "Necron Triarch Praetorians",
               "count": 5
             }
@@ -14557,6 +14839,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "77d-d442-a3-422c",
               "name": "Necron Tomb Blades",
               "count": 3
             }
@@ -14585,6 +14869,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "a022-9bf6-f08b-c416",
               "name": "Necron Canoptek Wraiths",
               "count": 3
             }
@@ -14613,6 +14899,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "cae9-5277-87f4-54b8",
               "name": "Necron Canoptek Spyder",
               "count": 1
             }
@@ -14637,6 +14925,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "14fa-6813-e51b-7942",
               "name": "Necron Triarch Stalker",
               "count": 1
             }
@@ -14663,6 +14953,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "9928-da6-4e86-ec9f",
               "name": "Necron Ghost Ark",
               "count": 1
             }
@@ -14691,6 +14983,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "e667-b37c-61c-4893",
               "name": "Necron Catacomb Command Barge",
               "count": 1
             }
@@ -14796,6 +15090,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b654-a18a-ea1-3bf2",
+              "entryId": "aea6-b6a1-a924-d31",
               "name": "Necron Psychomancer",
               "count": 1
             }
@@ -15876,6 +16172,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "3bdf-a114-5035-c6ac",
+              "entryId": "b5d2-8681-6bba-f05b",
               "name": "Genestealer Cult Neophyte Hybrids",
               "count": 10
             }
@@ -16467,6 +16765,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::blades-of-khorne",
+              "entryId": "sph::bloodbound-gore-pilgrims::04-bloodreavers",
               "name": "Bloodreavers",
               "count": 20
             }
@@ -16491,6 +16791,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::fluxblade-coven::06-kairic-acolytes",
               "name": "Kairic Acolytes",
               "count": 20
             }
@@ -16514,6 +16816,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::blades-of-the-lurid-dream::04-slickblade-seekers",
               "name": "Slickblade Seeker miniatures",
               "count": 5
             }
@@ -16601,6 +16905,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::bloodwind-legion::01-chaos-lord",
               "name": "Chaos Lord",
               "count": 1
             }
@@ -16625,6 +16931,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::bloodwind-legion::05-chaos-knights",
               "name": "Chaos Knights",
               "count": 5
             }
@@ -16678,6 +16986,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "dc36-25e9-9522-971e",
               "name": "Ogroid Theridons",
               "count": 3
             }
@@ -16710,6 +17020,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "22ef-99c8-eb17-973f",
               "name": "Daemon Prince",
               "count": 1
             }
@@ -16797,6 +17109,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bleak-host::04-putrid-blightkings",
               "name": "Putrid Blightkings",
               "count": 5
             }
@@ -16836,6 +17150,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::tzaangor-warflock::03-tzaangor-enlightened",
               "name": "Tzaangor Enlightened",
               "count": 3
             }
@@ -16894,16 +17210,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::blades-of-the-lurid-dream::01-shardspeaker-of-slaanesh",
               "name": "Shardspeaker of Slaanesh",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::blades-of-the-lurid-dream::05-slaangor-fiendbloods",
               "name": "Slaangor Fiendbloods",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::blades-of-the-lurid-dream::04-slickblade-seekers",
               "name": "Slickblade Seekers",
               "count": 5
             },
@@ -16986,6 +17308,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "3f86-7961-558c-50aa",
               "name": "Varanguard",
               "count": 3
             }
@@ -17126,11 +17450,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "dd16-c1dc-4ff-85f2",
               "name": "Gunnar Brand",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "4191-4be9-6ccd-9f70",
               "name": "Singri Brand",
               "count": 1
             },
@@ -17174,6 +17502,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::04-darkoath-marauders",
               "name": "Darkoath Marauders",
               "count": 10
             }
@@ -17202,6 +17532,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::03-darkoath-fellriders",
               "name": "Darkoath Fellriders",
               "count": 5
             }
@@ -17250,21 +17582,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::01-darkoath-warqueen",
               "name": "Darkoath Warqueen",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::03-darkoath-fellriders",
               "name": "Darkoath Fellriders",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::02-darkoath-savagers",
               "name": "Darkoath Savagers",
               "count": 10
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::darkoath-raiders::04-darkoath-marauders",
               "name": "Darkoath Marauders",
               "count": 10
             }
@@ -17299,6 +17639,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bleak-host::04-putrid-blightkings",
               "name": "Putrid Blightkings",
               "count": 5
             },
@@ -17327,11 +17669,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::bloodwind-legion::01-chaos-lord",
               "name": "Chaos Lord",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::bloodwind-legion::02-chaos-chariot",
               "name": "Chaos Chariot",
               "count": 1
             },
@@ -17342,6 +17688,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::slaves-to-darkness",
+              "entryId": "sph::bloodwind-legion::05-chaos-knights",
               "name": "Chaos Knights",
               "count": 5
             }
@@ -17364,6 +17712,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "c473-7f30-9a81-12d4",
               "name": "Harbinger of Decay",
               "count": 1
             },
@@ -17374,11 +17724,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bleak-host::04-putrid-blightkings",
               "name": "Putrid Blightkings",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bubonic-cell::05-rotmire-creed",
               "name": "Rotmire Creed",
               "count": 10
             }
@@ -17404,16 +17758,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::blades-of-khorne",
+              "entryId": "sph::bloodbound-gore-pilgrims::01-slaughterpriest",
               "name": "Slaughterpriest",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "d545-cdca-9e60-ad27",
+              "entryId": "60f-d859-6aac-6dc6",
               "name": "Skullreapers",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::blades-of-khorne",
+              "entryId": "sph::bloodbound-gore-pilgrims::04-bloodreavers",
               "name": "Bloodreavers",
               "count": 10
             }
@@ -17440,11 +17800,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bubonic-cell::01-rotbringer-sorcerer",
               "name": "Rotbringer Sorcerer",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bubonic-cell::04-beast-of-nurgle",
               "name": "Beast of Nurgle",
               "count": 1
             },
@@ -17455,6 +17819,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bubonic-cell::05-rotmire-creed",
               "name": "Rotmire Creed miniatures",
               "count": 10
             }
@@ -17485,11 +17851,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::fluxblade-coven::01-magister-on-disc-of-tzeentch",
               "name": "Magister on Disc of Tzeentch",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::fluxblade-coven::03-screamers-of-tzeentch",
               "name": "Screamers of Tzeentch",
               "count": 3
             }
@@ -17516,6 +17886,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "17cc-0dd4-0154-7db5",
               "name": "Rotswords",
               "count": 10
             }
@@ -17542,6 +17914,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "63e1-62af-0f98-29f4",
               "name": "Pestigors",
               "count": 10
             }
@@ -17592,6 +17966,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bleak-host::04-putrid-blightkings",
               "name": "Putrid Blightkings",
               "count": 5
             }
@@ -17617,6 +17993,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "d545-cdca-9e60-ad27",
+              "entryId": "9c54-dbf9-f5be-a8b3",
               "name": "Deathbringer",
               "count": 1
             }
@@ -17649,6 +18027,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "f4aa-9ef3-286-f6db",
               "name": "Feculent Gnarlmaw",
               "count": 1
             },
@@ -17676,6 +18056,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bubonic-cell::01-rotbringer-sorcerer",
               "name": "Rotbringer Sorcerer",
               "count": 1
             }
@@ -17700,6 +18082,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "542a-9c27-908f-8c30",
               "name": "Lord of Plagues",
               "count": 1
             }
@@ -17744,6 +18128,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "d82c-ba5b-b703-0ab7",
               "name": "Cankerborn",
               "count": 2
             }
@@ -17805,11 +18191,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::epicurean-revellers::01-thricefold-discord",
               "name": "Thricefold Discord miniatures",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::epicurean-revellers::02-fiends",
               "name": "Fiends",
               "count": 3
             },
@@ -17820,6 +18210,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::epicurean-revellers::05-seekers",
               "name": "Seekers",
               "count": 5
             }
@@ -17844,6 +18236,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "afdb-68a1-283e-3bf2",
+              "entryId": "7ff4-32c2-f67e-5476",
               "name": "Contorted Epitome",
               "count": 1
             },
@@ -17888,11 +18282,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::blades-of-the-lurid-dream::04-slickblade-seekers",
               "name": "Slickblade Seekers",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "afdb-68a1-283e-3bf2",
+              "entryId": "af06-7271-8760-4a4",
               "name": "Myrmidesh Painbringers",
               "count": 5
             },
@@ -17903,6 +18301,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::hedonites-of-slaanesh",
+              "entryId": "sph::blades-of-the-lurid-dream::05-slaangor-fiendbloods",
               "name": "Slaangor Fiendbloods",
               "count": 3
             }
@@ -17957,6 +18357,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::04-freeguild-cavaliers",
               "name": "Freeguild Cavaliers",
               "count": 5
             }
@@ -17982,6 +18384,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::fusil-platoon::01-fusil-major-on-ogor-warhulk",
               "name": "Fusil-Major",
               "count": 1
             }
@@ -18164,6 +18568,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::zenestras-zealots::01-freeguild-marshal-and-relic-envoy",
               "name": "Freeguild Marshal",
               "count": 1
             },
@@ -18174,16 +18580,22 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::fusil-platoon::01-fusil-major-on-ogor-warhulk",
               "name": "Fusil-Major on Ogor Warhulk",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::05-ironweld-great-cannon",
               "name": "Ironweld Great Cannon",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::04-freeguild-cavaliers",
               "name": "Freeguild Cavaliers",
               "count": 5
             },
@@ -18223,16 +18635,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::fusil-platoon::01-fusil-major-on-ogor-warhulk",
               "name": "Fusil-Major on Ogor Warhulk",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::fusil-platoon::02-alchemite-warforger",
               "name": "Alchemite Warforger",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::fusil-platoon::05-wildercorps-hunters",
               "name": "Wildercorps Hunters",
               "count": 11
             },
@@ -18261,11 +18679,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::zenestras-zealots::02-pontifex-zenestra",
               "name": "Pontifex Zenestra",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::zenestras-zealots::01-freeguild-marshal-and-relic-envoy",
               "name": "Freeguild Marshal",
               "count": 1
             },
@@ -18304,6 +18726,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::sentinels-of-embergard::03-freeguild-gallants",
               "name": "Freeguild Gallants",
               "count": 5
             }
@@ -18328,6 +18752,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "42ad-8ca7-4b48-7df1",
+              "entryId": "7998-c3aa-9d41-ee11",
               "name": "Gate Gargants",
               "count": 2
             }
@@ -18352,6 +18778,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "42ad-8ca7-4b48-7df1",
+              "entryId": "4e2b-f8f0-8fad-1d28",
               "name": "Amethyst Knellmage",
               "count": 1
             }
@@ -18376,6 +18804,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "42ad-8ca7-4b48-7df1",
+              "entryId": "1f38-9f87-6b41-d900",
               "name": "Aqshian Pyrocaster",
               "count": 1
             }
@@ -18408,6 +18838,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::fusil-platoon::05-wildercorps-hunters",
               "name": "Wildercorp Hunters",
               "count": 11
             }
@@ -18459,6 +18891,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::spitewing-flight::03-spiterider-lancers",
               "name": "Spiterider Lancers",
               "count": 3
             }
@@ -18486,6 +18920,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::spitewing-flight::02-gossamid-archers",
               "name": "Gossamid Archers",
               "count": 5
             }
@@ -18534,6 +18970,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::02-treelord",
               "name": "Treelord",
               "count": 1
             }
@@ -18562,6 +19000,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::04-tree-revenants",
               "name": "Tree-Revenants",
               "count": 5
             },
@@ -18618,6 +19058,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "438e-768a-7545-d329",
               "name": "Warsong Revenant",
               "count": 1
             }
@@ -18664,11 +19106,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::01-branchwych",
               "name": "Branchwych",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::02-treelord",
               "name": "Treelord",
               "count": 1
             },
@@ -18681,6 +19127,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::04-tree-revenants",
               "name": "Tree-Revenants",
               "count": 5
             }
@@ -18707,21 +19155,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::spitewing-flight::01-arch-revenant",
               "name": "Arch-Revenant",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::spitewing-flight::04-revenant-seekers",
               "name": "Revenant Seekers",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::spitewing-flight::03-spiterider-lancers",
               "name": "Spiterider Lancers",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::spitewing-flight::02-gossamid-archers",
               "name": "Gossamid Archers",
               "count": 5
             }
@@ -18747,11 +19203,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::01-branchwych",
               "name": "Branchwych",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "64d1-d8c8-5bff-506c",
               "name": "The Twistweald miniatures",
               "count": 8
             }
@@ -18783,11 +19243,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "f163-eaf6-2b5b-1cd3",
               "name": "Spirit of Durthu",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "bede-574b-208d-f486",
               "name": "Spite-Revenants",
               "count": 15
             },
@@ -18821,11 +19285,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "f163-eaf6-2b5b-1cd3",
               "name": "Spirit of Durthu",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::sylvaneth",
+              "entryId": "sph::bitterbark-copse::02-treelord",
               "name": "Treelord",
               "count": 1
             },
@@ -18883,6 +19351,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::fyreslayers",
+              "entryId": "sph::saga-axeband::01-battlesmith",
               "name": "Battlesmith",
               "count": 1
             },
@@ -19015,6 +19485,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::kharadron-overlords",
+              "entryId": "sph::grundstok-trailblazers::04-endrinriggers",
               "name": "Endrinriggers",
               "count": 3
             }
@@ -19037,6 +19509,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::kharadron-overlords",
+              "entryId": "sph::grundstok-trailblazers::02-grundstok-thunderers",
               "name": "Grundstok Thunderers",
               "count": 5
             }
@@ -19104,6 +19578,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::fyreslayers",
+              "entryId": "sph::saga-axeband::01-battlesmith",
               "name": "Battlesmith",
               "count": 1
             },
@@ -19140,11 +19616,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1100-a22f-15c6-bdea",
+              "entryId": "5e57-174f-1a3-fa8e",
               "name": "Drekki Flynt",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::kharadron-overlords",
+              "entryId": "sph::skyhammer-task-force::05-arkanaut-frigate",
               "name": "Arkanaut Frigate",
               "count": 1
             },
@@ -19177,11 +19657,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::kharadron-overlords",
+              "entryId": "sph::grundstok-trailblazers::01-endrinmaster-with-dirigible-suit",
               "name": "Endrinmaster with Dirigible Suit",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::kharadron-overlords",
+              "entryId": "sph::grundstok-trailblazers::02-grundstok-thunderers",
               "name": "Grundstok Thunderers",
               "count": 5
             },
@@ -19192,6 +19676,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::kharadron-overlords",
+              "entryId": "sph::grundstok-trailblazers::04-endrinriggers",
               "name": "Endrinriggers",
               "count": 3
             }
@@ -19269,6 +19755,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::warpspark-clawpack::02-stormfiends",
               "name": "Stormfiends",
               "count": 3
             }
@@ -19331,11 +19819,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::warpspark-clawpack::02-stormfiends",
               "name": "Stormfiends",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::warpspark-clawpack::03-warp-lightning-cannon",
               "name": "Warp Lightning Cannon",
               "count": 1
             }
@@ -19360,6 +19852,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::skaven",
+              "entryId": "sph::gnawfeast-clawpack::06-rat-ogors",
               "name": "Rat Ogors",
               "count": 3
             }
@@ -19384,6 +19878,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "c759-c695-2cf9-5d59",
               "name": "Doom-Flayers",
               "count": 2
             }
@@ -19410,6 +19906,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "fed2-4975-ae44-473",
               "name": "Stormvermin",
               "count": 10
             }
@@ -19436,6 +19934,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "f51a-f96d-8cde-824c",
               "name": "Acolyte Globadiers",
               "count": 5
             }
@@ -19513,6 +20013,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "64d0-3abe-62b7-7e40",
               "name": "Krittok Foulblade",
               "count": 1
             }
@@ -19537,6 +20039,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "6792-1e93-a367-95c8",
               "name": "Ratling Warpblaster",
               "count": 1
             }
@@ -19560,16 +20064,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "a566-7135-d418-bc59",
               "name": "Arch-Warlock",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "6792-1e93-a367-95c8",
               "name": "Ratling Warpblaster",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "160-3400-6da6-eb08",
               "name": "Warplock Jezzails",
               "count": 3
             },
@@ -19580,11 +20090,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "f51a-f96d-8cde-824c",
               "name": "Acolyte Globadiers",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "231a-2a83-26f0-a718",
+              "entryId": "fed2-4975-ae44-473",
               "name": "Stormvermin",
               "count": 20
             }
@@ -19655,6 +20169,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "8073-6b0a-5c59-fb6",
               "name": "Mortek Crawler",
               "count": 1
             }
@@ -19749,6 +20265,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "640e-6bc1-c83d-13c",
+              "entryId": "d5e7-8080-3243-6c22",
               "name": "Krulghast Cruciator",
               "count": 1
             }
@@ -19772,6 +20290,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "992e-30dd-49de-a177",
               "name": "Deadwalker Zombies",
               "count": 20
             }
@@ -19796,6 +20316,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "39a-8a99-a014-7427",
               "name": "Fell Bats",
               "count": 3
             }
@@ -19819,6 +20341,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::04-blood-knights",
               "name": "Blood Knights",
               "count": 5
             }
@@ -19842,6 +20366,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "640e-6bc1-c83d-13c",
+              "entryId": "88e9-d216-bef6-b4fe",
               "name": "Craventhrone Guard",
               "count": 5
             }
@@ -19890,6 +20416,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::nighthaunt",
+              "entryId": "sph::slasher-host::02-spirit-hosts",
               "name": "Spirit Hosts",
               "count": 3
             }
@@ -20004,6 +20532,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "640e-6bc1-c83d-13c",
+              "entryId": "bd18-dcfd-b081-f533",
               "name": "Scriptor Mortis",
               "count": 1
             }
@@ -20111,6 +20641,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "33c3-992f-3564-9407",
               "name": "Lauka Vai",
               "count": 1
             }
@@ -20133,6 +20665,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "992e-30dd-49de-a177",
               "name": "Deadwalker Zombies",
               "count": 20
             }
@@ -20156,6 +20690,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "663e-ba88-e7a3-e042",
               "name": "Dire Wolves",
               "countCandidates": [
                 9,
@@ -20186,6 +20722,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::04-blood-knights",
               "name": "Blood Knights",
               "count": 5
             }
@@ -20214,6 +20752,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::02-cryptguard",
               "name": "Cryptguard",
               "count": 10
             }
@@ -20241,6 +20781,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::03-morbheg-knights",
               "name": "Morbheg Knights",
               "count": 3
             }
@@ -20302,6 +20844,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "3d7d-bb9a-b450-8a47",
               "name": "Arch-Kavalos Zandtos",
               "count": 1
             }
@@ -20324,6 +20868,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::tithe-reaper-echelon::05-gothizzar-harvester",
               "name": "Gothizzar Harvester",
               "count": 1
             }
@@ -20416,6 +20962,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "49c5-563d-d7b-6d61",
               "name": "Mortisan Soulmason",
               "count": 1
             }
@@ -20439,6 +20987,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::03-necropolis-stalkers",
               "name": "Necropolis Stalkers",
               "count": 3
             }
@@ -20462,6 +21012,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::charnel-watch::04-crypt-flayers",
               "name": "Crypt Flayers",
               "count": 3
             }
@@ -20488,16 +21040,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::deathrattle-tomb-host::01-wight-king",
               "name": "Wight King",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::deathrattle-tomb-host::03-barrow-knights",
               "name": "Barrow Knights",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::deathrattle-tomb-host::02-barrow-guard",
               "name": "Barrow Guard",
               "count": 10
             },
@@ -20530,6 +21088,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::deathrattle-tomb-host::02-barrow-guard",
               "name": "Barrow Guard",
               "count": 10
             }
@@ -20558,6 +21118,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::deathrattle-tomb-host::03-barrow-knights",
               "name": "Barrow Knights",
               "count": 5
             }
@@ -20620,11 +21182,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::tithe-reaper-echelon::01-mortisan-soulreaper",
               "name": "Mortisan Soulreaper",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::tithe-reaper-echelon::05-gothizzar-harvester",
               "name": "Gothizzar Harvester",
               "count": 1
             },
@@ -20684,21 +21250,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b53b-1217-df2e-66d2",
+              "entryId": "52f6-b3c0-7891-bb69",
               "name": "Grand Justice Gormayne",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::charnel-watch::03-crypt-horrors",
               "name": "Crypt Horrors",
               "count": 6
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::03-morbheg-knights",
               "name": "Morbheg Knights",
               "count": 6
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::02-cryptguard",
               "name": "Cryptguard",
               "count": 10
             }
@@ -20726,21 +21300,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::charnel-watch::01-abhorrant-gorewarden",
               "name": "Abhorrant Gorewarden",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::charnel-watch::04-crypt-flayers",
               "name": "Crypt Flayers",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::charnel-watch::03-crypt-horrors",
               "name": "Crypt Horrors",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::charnel-watch::02-royal-beastflayers",
               "name": "Royal Beastflayers",
               "count": 10
             }
@@ -20765,6 +21347,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b53b-1217-df2e-66d2",
+              "entryId": "52f6-b3c0-7891-bb69",
               "name": "Grand Justice Gormayne",
               "count": 1
             },
@@ -20775,6 +21359,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::02-cryptguard",
               "name": "Cryptguard",
               "count": 10
             }
@@ -20834,21 +21420,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::01-mortisan-ossifector",
               "name": "Mortisan Ossifector",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::03-necropolis-stalkers",
               "name": "Necropolis Stalkers",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::02-immortis-guard",
               "name": "Immortis Guard",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::04-morghast-archai",
               "name": "Morghast Archai",
               "count": 2
             }
@@ -20879,6 +21473,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::02-immortis-guard",
               "name": "Immortis Guard",
               "count": 3
             },
@@ -20910,11 +21506,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::kavalos-vanguard::01-liege-kavalos",
               "name": "Liege-Kavalos",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::kavalos-vanguard::04-teratic-cohort",
               "name": "Teratic Cohort miniatures",
               "count": 8
             },
@@ -20945,6 +21545,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "5809-fc53-2b72-a16f",
               "name": "Mortek Triaxes",
               "count": 20
             },
@@ -21022,6 +21624,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::01-vampire-lord",
               "name": "Vampire Lord",
               "count": 1
             }
@@ -21066,6 +21670,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::tithe-reaper-echelon::01-mortisan-soulreaper",
               "name": "Mortisan Soulreaper",
               "count": 1
             }
@@ -21088,6 +21694,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "640e-6bc1-c83d-13c",
+              "entryId": "88e9-d216-bef6-b4fe",
               "name": "Craventhrone Guard",
               "count": 5
             }
@@ -21112,6 +21720,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::nighthaunt",
+              "entryId": "sph::slasher-host::02-spirit-hosts",
               "name": "Spirit Hosts",
               "count": 3
             }
@@ -21134,6 +21744,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "33c3-992f-3564-9407",
               "name": "Lauka Vai",
               "count": 1
             }
@@ -21203,6 +21815,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "992e-30dd-49de-a177",
               "name": "Deadwalker Zombies",
               "count": 20
             }
@@ -21225,6 +21839,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "405e-c5f4-8579-b05c",
+              "entryId": "663e-ba88-e7a3-e042",
               "name": "Dire Wolves",
               "count": 9
             },
@@ -21252,6 +21868,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::04-blood-knights",
               "name": "Blood Knights",
               "count": 5
             }
@@ -21274,16 +21892,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::01-vampire-lord",
               "name": "Vampire Lord",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::05-vargheists",
               "name": "Vargheists",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::soulblight-gravelords",
+              "entryId": "sph::bloodcrave-hunt::04-blood-knights",
               "name": "Blood Knights",
               "count": 5
             }
@@ -21310,21 +21934,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "6652-19e0-6044-62e8",
               "name": "Arkhan the Black",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "49c5-563d-d7b-6d61",
               "name": "Mortisan Soulmason",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ossiarch-bonereapers",
+              "entryId": "sph::mortisan-elite::04-morghast-archai",
               "name": "Morghast Archai",
               "count": 2
             },
             {
               "role": "team",
+              "catalogueId": "8e0e-5e8c-5824-89c9",
+              "entryId": "16b9-87fe-ea6d-c02c",
               "name": "Morghast Harbingers",
               "count": 2
             },
@@ -21435,6 +22067,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::seraphon",
+              "entryId": "sph::starscale-warhost::04-kroxigor",
               "name": "Kroxigor",
               "count": 3
             }
@@ -21605,6 +22239,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::seraphon",
+              "entryId": "sph::sunblooded-prowlers::07-spawn-of-chotec",
               "name": "Spawn of Chotec",
               "count": 1
             },
@@ -21706,6 +22342,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "8aef-b85d-b63a-ef05",
+              "entryId": "5616-42d8-b4aa-2e4",
               "name": "Breaka-boss",
               "count": 1
             }
@@ -21760,6 +22398,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::03-man-skewer-boltboyz",
               "name": "Man-skewer Boltboyz",
               "count": 3
             }
@@ -21787,6 +22427,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "8aef-b85d-b63a-ef05",
+              "entryId": "c625-96c8-1d47-2e0b",
               "name": "Marshcrawla Sloggoth",
               "count": 1
             }
@@ -21864,6 +22506,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "9baf-c109-f621-e60",
+              "entryId": "3ce3-c35d-8e78-fa3f",
               "name": "Snarlfang Riders",
               "count": 5
             }
@@ -21916,6 +22560,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::ironjawz-bigmob::05-brutes",
               "name": "orruk Brutes",
               "count": 5
             }
@@ -21940,6 +22586,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::ironjawz-bigmob::01-megaboss",
               "name": "Megaboss",
               "count": 1
             }
@@ -21962,21 +22610,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::01-killaboss-on-great-gnashtoof",
               "name": "Killaboss on Great Gnashtoof",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::02-murknob-with-belcha-banna",
               "name": "Murknob with Belcha-banna",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::06-beast-skewer-killbow",
               "name": "Beast-skewer Killbow",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::03-man-skewer-boltboyz",
               "name": "Man-skewer Boltboyz",
               "count": 3
             },
@@ -22069,16 +22725,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::ironjawz-bigmob::01-megaboss",
               "name": "Megaboss",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::ironjawz-bigmob::02-brute-ragerz",
               "name": "Brute Ragerz",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::ironjawz-bigmob::05-brutes",
               "name": "Brutes",
               "count": 5
             },
@@ -22110,11 +22772,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::gloomspite-gitz",
+              "entryId": "sph::snarlpack-huntaz::01-snarlboss",
               "name": "Snarlboss",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::gloomspite-gitz",
+              "entryId": "sph::snarlpack-huntaz::02-wolfgit-retinue",
               "name": "Wolfgit Retinue",
               "count": 2
             },
@@ -22233,21 +22899,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::01-killaboss-on-great-gnashtoof",
               "name": "Killaboss on Great Gnashtoof",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::02-murknob-with-belcha-banna",
               "name": "Murknob with Belcha-banna",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::06-beast-skewer-killbow",
               "name": "Beast-skewer Killbow",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::orruk-warclans",
+              "entryId": "sph::swampskulka-gang::03-man-skewer-boltboyz",
               "name": "Man-skewer Boltboyz",
               "count": 3
             },
@@ -22302,6 +22976,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "9baf-c109-f621-e60",
+              "entryId": "3ce3-c35d-8e78-fa3f",
               "name": "Snarlfang Riders",
               "count": 5
             }
@@ -22353,6 +23029,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "9baf-c109-f621-e60",
+              "entryId": "9be3-6dc9-3f14-4553",
               "name": "Dankhold Troggoth",
               "count": 1
             },
@@ -22363,6 +23041,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::gloomspite-gitz",
+              "entryId": "sph::bad-moon-madmob::06-rockgut-troggoths",
               "name": "Rockgut Troggoths",
               "count": 6
             }
@@ -22386,6 +23066,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::hurakan-vanguard::01-hurakan-windmage",
               "name": "Hurakan Windmage",
               "count": 1
             }
@@ -22477,6 +23159,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "8f4-ae60-8a15-6d7d",
               "name": "Vanari Dawnriders",
               "count": 5
             }
@@ -22499,11 +23183,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::glittering-phalanx::01-scinari-cathallar",
               "name": "Scinari Cathallar",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::glittering-phalanx::05-vanari-bladelords",
               "name": "Vanari Bladelords",
               "count": 5
             },
@@ -22536,6 +23224,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "ac41-4a7-88c5-9ab2",
               "name": "Vanari Starshard Ballista",
               "count": 1
             }
@@ -22558,6 +23248,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::hurakan-vanguard::01-hurakan-windmage",
               "name": "Hurakan Windmage",
               "count": 1
             }
@@ -22582,6 +23274,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::hurakan-vanguard::02-hurakan-windchargers",
               "name": "Hurakan Windchargers",
               "count": 5
             }
@@ -22605,6 +23299,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "17ab-ba44-9593-e3d4",
               "name": "Lyrior Uthralle",
               "count": 1
             }
@@ -22629,6 +23325,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::glittering-phalanx::05-vanari-bladelords",
               "name": "Vanari Bladelords",
               "count": 5
             }
@@ -22654,6 +23352,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "4c4-918b-2c8e-d640",
               "name": "Alarith Stoneguard",
               "count": 5
             }
@@ -22760,11 +23460,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::glittering-phalanx::01-scinari-cathallar",
               "name": "Scinari Cathallar",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::glittering-phalanx::05-vanari-bladelords",
               "name": "Vanari Bladelords",
               "count": 5
             },
@@ -22798,6 +23502,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "56b6-9e6e-4f51-60c",
               "name": "Scinari Calligrave",
               "count": 1
             },
@@ -22832,16 +23538,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::hurakan-vanguard::01-hurakan-windmage",
               "name": "Hurakan Windmage",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::hurakan-vanguard::04-hurakan-spirit-of-the-wind",
               "name": "Hurakan Spirit of the Wind",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::hurakan-vanguard::02-hurakan-windchargers",
               "name": "Hurakan Windchargers",
               "count": 5
             },
@@ -22872,21 +23584,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "a494-b23a-e95e-ed3f",
               "name": "Ellania and Ellathor",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "ac41-4a7-88c5-9ab2",
               "name": "Vanari Starshard Ballista",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::lumineth-realm-lords",
+              "entryId": "sph::glittering-phalanx::05-vanari-bladelords",
               "name": "Vanari Bladelords",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "efc5-b8d-894c-67c6",
+              "entryId": "6e14-dd31-2bf8-c9d3",
               "name": "Ydrilan Riverblades",
               "count": 10
             },
@@ -22923,16 +23643,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::helsmiths-of-hashut",
+              "entryId": "sph::helforge-host::01-war-despot",
               "name": "War Despot",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::helsmiths-of-hashut",
+              "entryId": "sph::helforge-host::02-dominator-engine-with-immolation-cannons",
               "name": "Dominator Engine",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::helsmiths-of-hashut",
+              "entryId": "sph::helforge-host::03-tormentor-bombard",
               "name": "Tormentor Bombard",
               "count": 1
             },
@@ -22986,6 +23712,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::helsmiths-of-hashut",
+              "entryId": "sph::helforge-host::02-dominator-engine-with-immolation-cannons",
               "name": "Dominator Engine",
               "count": 1
             }
@@ -23010,6 +23738,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b7b7-cf58-4189-56ec",
+              "entryId": "22ff-9dca-f6e0-76cf",
               "name": "Daemonsmith",
               "count": 1
             }
@@ -23036,6 +23766,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "b7b7-cf58-4189-56ec",
+              "entryId": "e20f-a1a4-79f8-93af",
               "name": "Bull Centaurs",
               "count": 3
             }
@@ -23112,6 +23844,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "2194-f219-8c36-54d2",
               "name": "Khinerai Lifetakers",
               "count": 5
             }
@@ -23156,6 +23890,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "dfe7-6633-f21a-6ba3",
               "name": "Blood Sisters",
               "count": 5
             }
@@ -23220,6 +23956,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::daughters-of-khaine",
+              "entryId": "sph::heartflayer-troupe::04-doomfire-warlocks",
               "name": "Doomfire Warlocks",
               "count": 5
             }
@@ -23246,16 +23984,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::daughters-of-khaine",
+              "entryId": "sph::khainite-shadow-coven::01-slaughter-queen-on-cauldron-of-blood",
               "name": "Slaughter Queen on Cauldron of Blood",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::daughters-of-khaine",
+              "entryId": "sph::khainite-shadow-coven::03-bloodwrack-medusa",
               "name": "Bloodwrack Medusa",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::daughters-of-khaine",
+              "entryId": "sph::khainite-shadow-coven::04-khainite-shadowstalkers",
               "name": "Khainite Shadowstalkers",
               "count": 9
             },
@@ -23287,6 +24031,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "93e8-210a-cc3-ef22",
               "name": "High Gladiatrix",
               "count": 1
             },
@@ -23318,6 +24064,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "d65a-2556-6d7f-ad62",
               "name": "Blood Hags",
               "count": 10
             }
@@ -23340,6 +24088,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::daughters-of-khaine",
+              "entryId": "sph::heartflayer-troupe::01-melusai-ironscale",
               "name": "Melusai Ironscale",
               "count": 1
             }
@@ -23364,21 +24114,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "cb92-4063-ab41-97d5",
               "name": "Morathi-Khaine",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "c732-c4e6-a2ad-371",
               "name": "The Shadow Queen",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "192e-9619-7359-2e5c",
               "name": "Khinerai Heartrenders",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "5232-3bab-5562-3172",
+              "entryId": "dfe7-6633-f21a-6ba3",
               "name": "Blood Sisters",
               "count": 10
             }
@@ -23455,11 +24213,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ogor-mawtribes",
+              "entryId": "sph::scrapglutt::06-gnoblar-scraplauncher",
               "name": "Gnoblar Scraplauncher",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ogor-mawtribes",
+              "entryId": "sph::scrapglutt::05-gnoblars",
               "name": "Gnoblars",
               "count": 12
             },
@@ -23487,11 +24249,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "6353-cb84-ac7f-9a15",
+              "entryId": "8bfb-791d-158b-35a2",
               "name": "Huskard on Stonehorn",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "6353-cb84-ac7f-9a15",
+              "entryId": "e5a2-5b7c-b7af-8da6",
               "name": "Thundertusk Beastriders",
               "count": 1
             }
@@ -23584,6 +24350,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "6353-cb84-ac7f-9a15",
+              "entryId": "a30d-9041-ffdb-5a33",
               "name": "Maulbeast Raiders",
               "count": 2
             }
@@ -23609,6 +24377,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::ogor-mawtribes",
+              "entryId": "sph::mawseeker-mob::02-cleavers",
               "name": "Cleavers",
               "count": 3
             }
@@ -23707,6 +24477,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "8934-66a7-47ba-727d",
               "name": "Knight-Judicator",
               "count": 1
             }
@@ -23730,6 +24502,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::yndrastas-spearhead::06-stormstrike-chariot",
               "name": "Stormstrike Chariot",
               "count": 1
             }
@@ -23926,6 +24700,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "1e20-a039-6cc2-fc6c",
               "name": "Gryph-hounds",
               "count": 6
             }
@@ -23996,6 +24772,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "7d69-482-91aa-e846",
               "name": "Dracothian Guard Fulminators",
               "count": 2
             }
@@ -24033,11 +24811,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::yndrastas-spearhead::06-stormstrike-chariot",
               "name": "Stormstrike Chariot",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::stormcast-eternals",
+              "entryId": "sph::yndrastas-spearhead::03-annihilators",
               "name": "Annihilators",
               "count": 3
             },
@@ -24067,6 +24849,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "f96a-5448-b667-1ed5",
               "name": "Ionus Cryptborn",
               "count": 1
             }
@@ -24118,6 +24902,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "74e2-3cca-35ec-6e59",
               "name": "Reclusians",
               "count": 3
             }
@@ -24165,6 +24951,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::idoneth-deepkin",
+              "entryId": "sph::akhelian-tide-guard::04-namarti-reavers",
               "name": "Namarti Reavers",
               "count": 10
             }
@@ -24193,11 +24981,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::idoneth-deepkin",
+              "entryId": "sph::akhelian-tide-guard::01-akhelian-king",
               "name": "Akhelian King",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::idoneth-deepkin",
+              "entryId": "sph::akhelian-tide-guard::03-akhelian-ishlaen-guard",
               "name": "Akhelian Ishlaen Guard",
               "count": 3
             },
@@ -24208,6 +25000,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::idoneth-deepkin",
+              "entryId": "sph::akhelian-tide-guard::04-namarti-reavers",
               "name": "Namarti Reavers",
               "count": 10
             }
@@ -24397,6 +25191,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "8573-1345-8484-74cb",
               "name": "Chaos Marauders",
               "count": 20
             }
@@ -24423,6 +25219,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "10a8-69ca-b180-fad8",
               "name": "Chaos Marauder Horsemen",
               "count": 10
             }
@@ -24446,11 +25244,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "c166-6219-6b1c-412c",
               "name": "Chaos Warriors",
               "count": 8
             },
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "a632-1cca-9499-ce33",
               "name": "Chaos Knights",
               "count": 4
             },
@@ -24461,11 +25263,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "10a8-69ca-b180-fad8",
               "name": "Marauder Horsemen",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "8573-1345-8484-74cb",
               "name": "Chaos Marauders",
               "count": 20
             }
@@ -24493,6 +25299,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "c166-6219-6b1c-412c",
               "name": "Chaos Warriors",
               "count": 16
             }
@@ -24520,6 +25328,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "a632-1cca-9499-ce33",
               "name": "Chaos Knights",
               "count": 8
             }
@@ -24602,6 +25412,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "1b7e-3a24-5a85-7f02",
               "name": "Empire State Troops",
               "count": 30
             }
@@ -24628,6 +25440,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "5f37-778f-edf0-1fae",
               "name": "State Missile Troops",
               "count": 30
             }
@@ -24653,6 +25467,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "68ee-4733-e734-10b",
               "name": "Flagellants",
               "count": 30
             }
@@ -24677,6 +25493,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "499d-722a-5283-6ca5",
               "name": "Empire Greatswords",
               "count": 20
             }
@@ -24701,6 +25519,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "9737-2bec-4f15-d7ca",
               "name": "Empire Archers",
               "count": 20
             }
@@ -24727,6 +25547,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "aa4f-ba89-89d4-91d5",
               "name": "Empire Pistoliers",
               "count": 10
             }
@@ -24753,6 +25575,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "b4a9-61e8-2b85-9c99",
               "name": "Demigryph Knights",
               "count": 3
             }
@@ -24802,6 +25626,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "d5e8-4361-2b00-787a",
               "name": "Helblaster Volley Guns",
               "count": 2
             }
@@ -24831,11 +25657,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "1b7e-3a24-5a85-7f02",
               "name": "State Troops",
               "count": 30
             },
             {
               "role": "team",
+              "catalogueId": "7b8f-602e-29cd-5786",
+              "entryId": "5f37-778f-edf0-1fae",
               "name": "State Missile Troops",
               "count": 30
             }
@@ -24886,6 +25716,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "f8cb-e518-1881-292",
+              "entryId": "7fe1-69ab-7c6b-20d0",
               "name": "mounted Knights of the Realm",
               "count": 12
             }
@@ -24913,6 +25745,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "f8cb-e518-1881-292",
+              "entryId": "7070-3759-d579-6b24",
               "name": "Men-at-Arms",
               "count": 36
             }
@@ -24938,6 +25772,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "f8cb-e518-1881-292",
+              "entryId": "7e94-c1d1-11c2-d811",
               "name": "Pegasus Knights",
               "count": 3
             }
@@ -24966,6 +25802,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "f8cb-e518-1881-292",
+              "entryId": "5e10-1040-5760-5ed2",
               "name": "Peasant Bowmen",
               "count": 36
             }
@@ -25017,16 +25855,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "13b1-ec94-d107-d711",
+              "entryId": "3f3d-ccd8-ad95-1750",
               "name": "Wild Riders",
               "count": 10
             },
             {
               "role": "team",
+              "catalogueId": "13b1-ec94-d107-d711",
+              "entryId": "d37c-a95d-615e-71d9",
               "name": "Wildwood Rangers",
               "count": 20
             },
             {
               "role": "team",
+              "catalogueId": "13b1-ec94-d107-d711",
+              "entryId": "886b-7a97-d451-3f0c",
               "name": "Glade Guard",
               "count": 32
             }
@@ -25053,6 +25897,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "13b1-ec94-d107-d711",
+              "entryId": "b811-3815-bff1-1680",
               "name": "Glade Riders",
               "count": 12
             }
@@ -25080,6 +25926,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "13b1-ec94-d107-d711",
+              "entryId": "886b-7a97-d451-3f0c",
               "name": "Glade Guard",
               "count": 32
             }
@@ -25107,6 +25955,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "13b1-ec94-d107-d711",
+              "entryId": "d3d1-dd14-80c2-840e",
               "name": "Eternal Guard",
               "count": 20
             }
@@ -25156,6 +26006,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1ddf-26c6-1d88-2b8c",
+              "entryId": "b969-2677-1d5a-8449",
               "name": "Dwarf Warriors",
               "count": 36
             }
@@ -25417,6 +26269,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "7990-59e-8323-b39c",
               "name": "Orc Boar Chariots",
               "count": 2
             }
@@ -25445,6 +26299,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "6ce4-96c1-6e66-4e65",
               "name": "Goblins",
               "count": 40
             }
@@ -25472,6 +26328,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "e36d-11d8-5d9a-1198",
               "name": "Goblin Wolf Riders",
               "count": 15
             }
@@ -25499,6 +26357,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "399b-6e05-9a74-e18f",
               "name": "Night Goblins",
               "count": 40
             }
@@ -25526,6 +26386,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "7b25-6b08-b644-f26f",
               "name": "Black Orcs",
               "count": 20
             }
@@ -25551,6 +26413,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "7c6e-11dc-9fb-1702",
               "name": "High Elf Mages",
               "countCandidates": [
                 1,
@@ -25586,6 +26450,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "12f4-405f-3fb5-75dc",
               "name": "Lothern Sea Guard",
               "count": 35
             }
@@ -25640,6 +26506,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "24cb-795c-4110-f2d1",
               "name": "White Lions of Chrace",
               "count": 20
             }
@@ -25693,6 +26561,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "8312-1ed9-ecb-2e51",
               "name": "Eagle-claw Bolt Throwers",
               "count": 2
             }
@@ -25724,11 +26594,15 @@
             },
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "93df-6c31-ecb8-bc77",
               "name": "Elven Spearmen",
               "count": 32
             },
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "bf06-d67a-9359-a1eb",
               "name": "Elven Archers",
               "count": 32
             }
@@ -25754,6 +26628,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "93df-6c31-ecb8-bc77",
               "name": "Elven Spearmen",
               "count": 32
             }
@@ -25780,6 +26656,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "56fb-835b-a377-6639",
+              "entryId": "ec7-689f-9d5b-cdc2",
               "name": "Sisters of Avelorn",
               "count": 10
             }
@@ -25932,6 +26810,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "eaaf-1e11-a32d-ab11",
+              "entryId": "8a18-1069-8b4d-e941",
               "name": "Cygor",
               "count": 1
             },
@@ -25996,6 +26876,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "3aa7-ad25-7cea-ce6b",
               "name": "Skeleton Horsemen",
               "count": 16
             }
@@ -26023,6 +26905,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "bda8-d5bc-866e-92b6",
               "name": "Skeleton Chariots",
               "count": 3
             }
@@ -26050,6 +26934,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "57fe-aa08-f68-150f",
               "name": "Tomb Guard",
               "count": 20
             }
@@ -26077,6 +26963,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "b6a-99ba-7f14-8463",
               "name": "Sepulchral Stalkers",
               "count": 3
             }
@@ -26100,6 +26988,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "1fe1-59d-f3a6-eaf1",
               "name": "Royal Heralds",
               "count": 2
             },
@@ -26159,6 +27049,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "c5f3-400c-e140-fb65",
               "name": "Jade Warriors",
               "count": 20
             }
@@ -26215,6 +27107,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "4cc7-7623-fd30-5dc2",
               "name": "Jade Lancers",
               "count": 10
             }
@@ -26261,6 +27155,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "9189-88d5-e177-bf2a",
               "name": "Cathayan Sentinel",
               "count": 1
             }
@@ -26327,6 +27223,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "7ec9-6f7f-def1-13aa",
               "name": "Iron Hail Gunners",
               "count": 12
             },
@@ -26354,6 +27252,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "c1d1-1f77-2a7e-0a4e",
               "name": "Astromancers",
               "count": 2
             }
@@ -26377,6 +27277,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "7ec9-6f7f-def1-13aa",
               "name": "Iron Hail Gunners",
               "count": 12
             },
@@ -26427,16 +27329,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "0d66-ce16-3768-0611",
               "name": "Cathayan Grand Cannons",
               "count": 2
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "4cc7-7623-fd30-5dc2",
               "name": "Jade Lancers",
               "count": 10
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "c5f3-400c-e140-fb65",
               "name": "Jade Warriors",
               "count": 30
             }
@@ -26464,21 +27372,29 @@
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "c5f3-400c-e140-fb65",
               "name": "Jade Warriors",
               "count": 20
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "4cc7-7623-fd30-5dc2",
               "name": "Jade Lancers",
               "count": 5
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "7ec9-6f7f-def1-13aa",
               "name": "Iron Hail Gunners",
               "count": 6
             },
             {
               "role": "team",
+              "catalogueId": "90ea-cdfe-fbbc-00de",
+              "entryId": "8d5a-b1d5-8c39-5e3d",
               "name": "Crane Gunners",
               "count": 4
             }
@@ -26854,6 +27770,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "0a35-fce3-188c-b3aa",
+              "entryId": "3f9d-5f2f-a47a-bd1f",
               "name": "Tartaros Terminators",
               "count": 10
             }
@@ -27582,6 +28500,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "0a35-fce3-188c-b3aa",
+              "entryId": "cb0f-4537-6a7e-4ed7",
               "name": "Cataphractii Terminators",
               "count": 6
             }
@@ -27608,6 +28528,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "0a35-fce3-188c-b3aa",
+              "entryId": "cb0f-4537-6a7e-4ed7",
               "name": "Cataphractii Terminators",
               "count": 6
             }
@@ -27890,6 +28812,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "4c67-eea6-b446-a908",
               "name": "Dracosan Armoured Transport",
               "count": 1
             }
@@ -27938,6 +28862,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "3d63-4299-d15f-b3ba",
               "name": "Solar Auxilia Leman Russ Strike Tank",
               "count": 1
             }
@@ -27990,6 +28916,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "cd74-812f-c0a2-5d41",
               "name": "Solar Auxilia Leman Russ Assault Tank",
               "count": 1
             }
@@ -28041,6 +28969,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "ab2e-5984-a5b1-5253",
               "name": "Aethon Heavy Sentinel",
               "count": 1
             }
@@ -28067,6 +28997,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "5139-b21c-fb38-c365",
               "name": "Hermes Light Sentinels",
               "count": 2
             }
@@ -28201,6 +29133,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "5139-b21c-fb38-c365",
               "name": "Hermes Light Sentinels",
               "count": 2
             },
@@ -28538,6 +29472,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "2f57-6e9d-8a7b-5c2e",
+              "entryId": "229c-7b38-1dac-de3e",
               "name": "Myrmidon Destructors",
               "count": 6
             }
@@ -28563,6 +29499,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "1f19-6509-d906-ca10",
+              "entryId": "df80-bbdc-bd0a-3428",
               "name": "Sentinel Guards",
               "count": 6
             }
@@ -28573,6 +29511,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "acc1-f897-a117-9b4a",
+              "entryId": "29e3-59e0-53e7-a5db",
               "name": "Sentinel Guards",
               "count": 6
             }
@@ -28680,6 +29620,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "acc1-f897-a117-9b4a",
+              "entryId": "3125-22d7-c723-2737",
               "name": "Custodian Guard",
               "count": 6
             }
@@ -28853,6 +29795,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::fluxblade-coven::03-screamers-of-tzeentch",
               "name": "Screamers of Tzeentch",
               "count": 3
             }
@@ -29077,6 +30021,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::maggotkin-of-nurgle",
+              "entryId": "sph::bubonic-cell::04-beast-of-nurgle",
               "name": "Beast Of Nurgle",
               "count": 1
             }
@@ -29114,6 +30060,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "d731-9058-b0e5-6ff5",
+              "entryId": "6dc0-c258-8f57-d9ac",
               "name": "Lord of Change",
               "count": 1
             }
@@ -29206,6 +30154,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::fluxblade-coven::02-flamers-of-tzeentch",
               "name": "Flamers of Tzeentch",
               "count": 3
             }
@@ -29253,6 +30203,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "672f-33c8-1e61-cead",
               "name": "Be'lakor",
               "count": 1
             }
@@ -29332,6 +30284,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "afdb-68a1-283e-3bf2",
+              "entryId": "4011-5d78-a180-3c22",
               "name": "Keeper of Secrets",
               "count": 1
             }
@@ -29456,6 +30410,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "e0af-67df-9d63-8fb7",
+              "entryId": "7102-b3a4-9bfc-1b84",
               "name": "Hellblasters",
               "count": 5
             }
@@ -29617,6 +30573,8 @@
             },
             {
               "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "3f86-7961-558c-50aa",
               "name": "Varanguard",
               "count": 3
             }
@@ -29640,16 +30598,22 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::01-freeguild-cavalier-marshal",
               "name": "Freeguild Cavalier-Marshal",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::05-ironweld-great-cannon",
               "name": "Ironweld Great Cannon",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::cities-of-sigmar",
+              "entryId": "sph::castellite-company::04-freeguild-cavaliers",
               "name": "Freeguild Cavaliers",
               "count": 5
             },
@@ -29702,6 +30666,8 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "bb7e-b0da-5c2-a980",
+              "entryId": "438e-768a-7545-d329",
               "name": "Warsong Revenant",
               "count": 1
             }
@@ -29726,21 +30692,29 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::01-abhorrant-archregent",
               "name": "Abhorrant Archregent",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::04-varghulf-courtier",
               "name": "Varghulf Courtier",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::03-morbheg-knights",
               "name": "Morbheg Knights",
               "count": 3
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::flesh-eater-courts",
+              "entryId": "sph::carrion-retainers::02-cryptguard",
               "name": "Cryptguard",
               "count": 10
             }
@@ -29764,11 +30738,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::nighthaunt",
+              "entryId": "sph::slasher-host::01-knight-of-shrouds",
               "name": "Knight of Shrouds",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::nighthaunt",
+              "entryId": "sph::slasher-host::02-spirit-hosts",
               "name": "Spirit Hosts",
               "count": 3
             },
@@ -29823,11 +30801,15 @@
           "entries": [
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::idoneth-deepkin",
+              "entryId": "sph::soulraid-hunt::01-isharann-soulscryer",
               "name": "Isharann Soulscryer",
               "count": 1
             },
             {
               "role": "team",
+              "catalogueId": "sph-catalogue::idoneth-deepkin",
+              "entryId": "sph::soulraid-hunt::03-akhelian-allopex",
               "name": "Akhelian Allopex",
               "count": 1
             },
