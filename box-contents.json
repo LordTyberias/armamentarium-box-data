@@ -31078,6 +31078,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Gloomspite Gitz: Rabble-Rowza",
+      "productCodes": [
+        "99070209011"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/rabble-rowza",
+        "https://abyssgamestore.ca/products/gloomspite-gitz-rabble-rowza-89-84",
+        "https://shop.afk.games/products/gloomspite-gitz-rabble-rowza",
+        "https://obsidiangames.ca/products/gloomspite-gitz-rabble-rowza"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "9baf-c109-f621-e60",
+              "entryId": "13ce-b7ed-f419-cdd",
+              "name": "Rabble-Rowza",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
