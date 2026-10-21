@@ -30901,6 +30901,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Lord of Blights",
+      "productCodes": [
+        "99070201029"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-lord-of-blights",
+        "https://shop.afk.games/products/maggotkin-of-nurgle-lord-of-blights"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "b0b6-7b56-5e4-a46",
+              "name": "Lord of Blights",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
