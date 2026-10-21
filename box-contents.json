@@ -32022,6 +32022,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Cities Of Sigmar Dawner's Triumph",
+      "productCodes": [
+        "99120202072"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/age-of-sigmar-cities-of-sigmar-dawners-triumph",
+        "https://www.goblingaming.co.uk/products/cities-of-sigmar-dawners-triumph",
+        "https://mrmuffinstrains.com/products/gw-86-50",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/cities-of-sigmar-dawners-triumph"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "42ad-8ca7-4b48-7df1",
+              "entryId": "2be6-daba-0245-2e2a",
+              "name": "Dawner's Triumph",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
