@@ -32617,6 +32617,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Lord-Celestant",
+      "productCodes": [
+        "99120218090"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/stormcast-eternals-lord-celestant",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-stormcast-eternals-lord-celestant",
+        "https://shop.afk.games/products/stormcast-eternals-lord-celestant",
+        "https://obsidiangames.ca/products/lord-celestant"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "89a1-7e05-4334-25f5",
+              "name": "Lord-Celestant",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
