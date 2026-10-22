@@ -38,6 +38,22 @@ public sealed class GitHubRepositoryTests
     }
 
     [TestMethod]
+    public async Task GetTable_OverOneMegabyte_ReadsTheBlob()
+    {
+        // Over 1 MB the contents API answers without content (measured 2026-10-22 at 1,048,715 bytes).
+        var content = Convert.ToBase64String(Encoding.UTF8.GetBytes("{\"format\": 1}\n"));
+        var handler = new Recorder(request => request.RequestUri!.AbsolutePath.Contains("/git/blobs/")
+            ? Json($$"""{"sha":"abc","encoding":"base64","content":"{{content[..4]}}\n{{content[4..]}}"}""")
+            : Json("""{"sha":"abc","encoding":"none","content":""}"""));
+
+        var (text, sha) = await new GitHubRepository(new HttpClient(handler), null).GetTableAsync(default);
+
+        Assert.AreEqual("{\"format\": 1}\n", text);
+        Assert.AreEqual("abc", sha);
+        Assert.AreEqual("/repos/LordTyberias/armamentarium-box-data/git/blobs/abc", handler.Requests[1].Path);
+    }
+
+    [TestMethod]
     public async Task OpenScraperBranches_KeepsOnlyScraperHeads()
     {
         var handler = new Recorder(_ => Json("""[{"head":{"ref":"scraper/60010199001"}},{"head":{"ref":"data/manual"}}]"""));

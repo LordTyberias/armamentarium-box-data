@@ -75,10 +75,20 @@ public sealed class GitHubRepository(HttpClient http, string? token, TimeSpan? m
     private async Task<(string Text, string Sha)> GetFileAsync(string path, CancellationToken cancellationToken)
     {
         using var file = await SendAsync(HttpMethod.Get, $"repos/{Repository}/contents/{path}?ref=main", null, cancellationToken);
-        var root = file.RootElement;
-        var content = root.GetProperty("content").GetString()!.Replace("\n", string.Empty);
-        return (Encoding.UTF8.GetString(Convert.FromBase64String(content)), root.GetProperty("sha").GetString()!);
+        var sha = file.RootElement.GetProperty("sha").GetString()!;
+        // Over 1 MB the contents API answers with encoding "none" and no content (the table passed it on 2026-10-22); the
+        // blob API gives the same file up to 100 MB (ADR 0003 Addendum ARMAM-655).
+        if (file.RootElement.TryGetProperty("encoding", out var encoding) && encoding.GetString() == "none")
+        {
+            using var blob = await SendAsync(HttpMethod.Get, $"repos/{Repository}/git/blobs/{sha}", null, cancellationToken);
+            return (Decode(blob.RootElement), sha);
+        }
+
+        return (Decode(file.RootElement), sha);
     }
+
+    private static string Decode(JsonElement file) =>
+        Encoding.UTF8.GetString(Convert.FromBase64String(file.GetProperty("content").GetString()!.Replace("\n", string.Empty)));
 
     public async Task<IReadOnlyList<string>> OpenScraperBranchesAsync(CancellationToken cancellationToken)
     {

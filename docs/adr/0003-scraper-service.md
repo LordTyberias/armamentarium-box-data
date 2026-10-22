@@ -474,7 +474,7 @@ The table grows only by hand so far. Measured on 2026-10-17:
   hits counting while the others drop (a box would lose a model); a run mode for named codes or for codes new in the
   product catalogue.
 
-## Addendum ARMAM-655 — Shopify's product address goes through curl (2026-10-21)
+## Addendum ARMAM-655 — Shopify's product address goes through curl, the table over 1 MB through the blob API (2026-10-21)
 
 - **Why:** from 2026-10-20 on, the server's service drew 429 (`Retry-After 60 s`) from Shopify on `/products/<handle>.js`
   from the first request, over HTTP/2, while the full run of 2026-10-18/19 had none. Neither the fetcher nor the server's
@@ -506,6 +506,12 @@ The table grows only by hand so far. Measured on 2026-10-17:
   `Retry-After` is a throttle the fetcher honours, not a guard; captchas, challenges, block pages and a 403 stay as §5
   and Addendum ARMAM-596 say. Measuring with the service's own client (Addendum ARMAM-602) stays; that client is now curl
   for this address.
+- **The table over 1 MB** (found in the full run started on 2026-10-21, invocation `816e5437…`): after 61 merges, at
+  00:31 on 2026-10-22, the table reached 1,048,715 bytes; above 1 MB GitHub's contents API answers with `encoding` `none` and an empty `content`, so the
+  next read after a merge threw and the run failed. A file answered that way is read through the blob API
+  (`git/blobs/<sha>`, base64 up to 100 MB) with the same token; the sha for the update stays the contents API's.
+  Rejected: the raw media type (a second request all the same, and no sha), `raw.githubusercontent.com` (a second host,
+  cached, unauthenticated).
 - **Rejected:** **keeping the bucket's pace** (allowed, but refills in more than twenty minutes: weeks for one run);
   **shaping .NET's TLS settings** (closer to imitating, and HTTP/2 framing would stay); **a libcurl package** (a
   dependency for what one process does); **curl for every request** (only this address was measured to need it);
