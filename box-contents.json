@@ -32905,6 +32905,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum: Triaros Armoured Conveyor",
+      "productCodes": [
+        "99123016006"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/triaros-armoured-conveyor",
+        "https://abyssgamestore.ca/products/horus-heresy-triaros-armoured-conveyor-31-92",
+        "https://shop.afk.games/products/mechanicum-triaros-armoured-conveyor",
+        "https://www.goblingaming.co.uk/products/mechanicum-triaros-armoured-conveyor"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "2f57-6e9d-8a7b-5c2e",
+              "entryId": "0896-07f4-8844-9542",
+              "name": "Triaros Armoured Conveyor",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
