@@ -32721,6 +32721,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Warriors of Chaos - Lord on Manticore",
+      "productCodes": [
+        "99122701001"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-warriors-of-chaos-lord-on-manticore",
+        "https://www.irresistibleforce.com.au/products/chaos-lord-on-manticore",
+        "https://abyssgamestore.ca/products/warriors-of-chaos-lord-on-manticore-08-05",
+        "https://www.retrofixgames.com/products/warriors-of-chaos-lord-on-manticore",
+        "https://shop.afk.games/products/warriors-of-chaos-lord-on-manticore"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c908-5f26-5bdf-2a48",
+              "entryId": "617-b6cf-592e-8832",
+              "name": "Chaos Lord",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
