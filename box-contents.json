@@ -32592,6 +32592,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Age of Sigmar Stormcast Eternals Lord-Terminos",
+      "productCodes": [
+        "99120218087"
+      ],
+      "sources": [
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-stormcast-eternals-lord-terminos",
+        "https://shop.afk.games/products/stormcast-eternals-lord-terminos",
+        "https://obsidiangames.ca/products/lord-terminos"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "678a-136a-c7ce-fe8c",
+              "name": "Lord-Terminos",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
