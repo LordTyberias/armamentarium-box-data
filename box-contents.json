@@ -32542,6 +32542,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals Lord-Aquilor ( 96-32-W )",
+      "productCodes": [
+        "99120218020"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/stormcast-eternals-lord-aquilor-96-32-w",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/stormcast-eternals-lord-aquilor"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "feec-61cb-ca0-7d3c",
+              "name": "Lord-Aquilor",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
