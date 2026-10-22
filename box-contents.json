@@ -32774,6 +32774,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Orc & Goblin Tribes - Battalion",
+      "productCodes": [
+        "99122709008"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-orc-goblin-tribes-battalion",
+        "https://www.irresistibleforce.com.au/products/battalion-orc-goblin-tribes"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "c997-9d47-72ad-c5f1",
+              "entryId": "51e8-1471-ce4c-d5dd",
+              "name": "Orc",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
