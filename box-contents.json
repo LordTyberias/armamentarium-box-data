@@ -32643,6 +32643,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Idoneth Deepkin: Volturnos, High King of the Deep",
+      "productCodes": [
+        "99120219017"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/akhelian-king",
+        "https://obsidiangames.ca/products/idoneth-deepkin-volturnos-high-king-of-the-deep"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::idoneth-deepkin",
+              "entryId": "sph::akhelian-tide-guard::01-akhelian-king",
+              "name": "Akhelian King",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
