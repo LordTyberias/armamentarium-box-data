@@ -32995,6 +32995,30 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Disciples of Tzeentch - Tzaangor Shaman ( 83-76 )",
+      "productCodes": [
+        "99070201021"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/disciples-of-tzeentch-tzaangor-shaman-83-76",
+        "https://shop.afk.games/products/tzeentch-arcanites-tzaangor-shaman"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::disciples-of-tzeentch",
+              "entryId": "sph::tzaangor-warflock::01-tzaangor-shaman",
+              "name": "Tzaangor Shaman",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
