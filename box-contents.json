@@ -32849,6 +32849,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: Tomb Kings of Khemri - Necrosphinx",
+      "productCodes": [
+        "99122717007"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-tomb-kings-of-khemri-necrosphinx",
+        "https://www.irresistibleforce.com.au/products/tomb-kings-of-khemri-necrosphinx",
+        "https://www.goblingaming.co.uk/products/warhammer-fantasy-the-old-world-tomb-kings-of-khemri-necrosphinx",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/tomb-kings-of-khemri-necrosphinx"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "fe47-435b-7909-3c85",
+              "name": "Necrosphinx",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
