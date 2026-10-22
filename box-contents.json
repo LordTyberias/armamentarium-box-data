@@ -32516,6 +32516,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes: Butcher",
+      "productCodes": [
+        "99120213047"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ogor-mawtribes-butcher",
+        "https://shop.afk.games/products/ogor-mawtribes-butcher",
+        "https://www.goblingaming.co.uk/products/ogor-mawtribes-butcher",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-destruction/beastclaw-raiders/ogor-mawtribes-butcher"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "sph-catalogue::ogor-mawtribes",
+              "entryId": "sph::mawseeker-mob::01-butcher",
+              "name": "Butcher",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
