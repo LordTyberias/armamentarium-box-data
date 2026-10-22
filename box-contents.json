@@ -32798,6 +32798,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warhammer Old World: High Elf Realms - Lords",
+      "productCodes": [
+        "99122710002"
+      ],
+      "sources": [
+        "https://www.wellplayed.ch/products/warhammer-old-world-high-elf-realms-lords",
+        "https://www.irresistibleforce.com.au/products/high-elf-realms-high-elf-lords",
+        "https://www.goblingaming.co.uk/products/high-elf-realms-high-elf-lords",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/warhammer-the-old-world/high-elf-realms-high-elf-lords",
+        "https://radaddel.de/products/high-elf-realms-high-elf-lords"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "name": "High Elf Lords",
+              "count": 2
+            }
+          ]
+        }
+      ]
     }
   ]
 }
