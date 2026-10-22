@@ -32488,6 +32488,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ogor Mawtribes: Bloodpelt Hunter",
+      "productCodes": [
+        "99120213025"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/ogor-mawtribes-bloodpelt-hunter",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-ogor-mawtribes-bloodpelt-hunter",
+        "https://shop.afk.games/products/ogor-mawtribes-bloodpelt-hunter",
+        "https://obsidiangames.ca/products/ogor-mawtribes-bloodpelt-hunter",
+        "https://www.goblingaming.co.uk/products/ogor-mawtribes-bloodpelt-hunter",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/ogor-mawtribes-bloodpelt-hunter"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "6353-cb84-ac7f-9a15",
+              "entryId": "a800-1a5b-4097-8f11",
+              "name": "Bloodpelt Hunter",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
