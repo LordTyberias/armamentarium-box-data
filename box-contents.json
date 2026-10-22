@@ -33044,6 +33044,34 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Warcry Warband: Questor Soulsworn ( 111-99 )",
+      "productCodes": [
+        "99120218078"
+      ],
+      "sources": [
+        "https://abyssgamestore.ca/products/warcry-warband-questor-soulsworn-111-99",
+        "https://www.retrofixgames.com/products/warcry-questor-soulsworn-warband",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-warcry-stormcast-eternals-questor-soulsworn-warband"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "59c-6be3-dbf8-3fe3",
+              "name": "Questor Soulsworn",
+              "countCandidates": [
+                1,
+                6
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
