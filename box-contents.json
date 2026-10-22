@@ -32694,6 +32694,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Slaves to Darkness: Nexus Chaotica",
+      "productCodes": [
+        "99120299112"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/nexus-chaotica",
+        "https://abyssgamestore.ca/products/slaves-to-darkness-nexus-chaotica-83-54",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-slaves-to-darkness-nexus-chaotica",
+        "https://obsidiangames.ca/products/slaves-to-darkness-nexus-chaotica",
+        "https://www.goblingaming.co.uk/products/age-of-sigmar-slaves-to-darkness-nexus-chaotica"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "2c23-a678-196b-ad69",
+              "entryId": "22a9-a618-90cf-5bc7",
+              "name": "Nexus Chaotica",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
