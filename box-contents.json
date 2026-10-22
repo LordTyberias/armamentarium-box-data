@@ -32875,6 +32875,36 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Solar Auxilia: Tactical Command Section",
+      "productCodes": [
+        "99123005003"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/solar-auxilia-tactical-command-section",
+        "https://shop.afk.games/products/solar-auxilia-tactical-command-section",
+        "https://elementgames.co.uk/wargames-and-miniatures-by-manufacturer/games-workshop/horus-heresy-miniatures/horus-heresy-solar-auxilia-tactical-command-section"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "7851-69ac-f701-034e",
+              "entryId": "d20e-4cb8-54be-015d",
+              "name": "Solar Auxilia Tactical Command Section",
+              "count": 1
+            },
+            {
+              "role": "team",
+              "name": "Auxilia Companions",
+              "count": 4
+            }
+          ]
+        }
+      ]
     }
   ]
 }
