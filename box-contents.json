@@ -32566,6 +32566,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Stormcast Eternals: Lord Relictor",
+      "productCodes": [
+        "99120218085"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/stormcast-eternals-lord-relictor",
+        "https://www.retrofixgames.com/products/warhammer-age-of-sigmar-stormcast-eternals-lord-relictor",
+        "https://obsidiangames.ca/products/lord-relictor",
+        "https://www.goblingaming.co.uk/products/stormcast-eternals-lord-relictor"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "1bd9-ad7d-68ee-3b53",
+              "entryId": "8ec0-257f-7432-f7b9",
+              "name": "Lord-Relictor",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
