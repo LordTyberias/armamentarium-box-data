@@ -32667,6 +32667,33 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Idoneth Deepkin: Ikon Of The Sea",
+      "productCodes": [
+        "99120219025"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/idoneth-deepkin-ikon-of-the-sea",
+        "https://www.retrofixgames.com/products/age-of-sigmar-idoneth-deepkin-ikon-of-the-sea",
+        "https://shop.afk.games/products/idoneth-deepkin-ikon-of-the-sea",
+        "https://obsidiangames.ca/products/ikon-of-the-sea-storm",
+        "https://elementgames.co.uk/new-warhammer-age-of-sigmar/forces-of-order-/idoneth-deepkin/idoneth-deepkin-ikon-of-the-sea"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "40a4-1c1c-8a00-bb65",
+              "entryId": "565b-35a6-8589-d10b",
+              "name": "Ikon of the Sea",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
