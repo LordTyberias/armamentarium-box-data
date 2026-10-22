@@ -32931,6 +32931,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Mechanicum: Karacnos Assault Tank",
+      "productCodes": [
+        "99123016014"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/mechanicum-karacnos-assault-tank",
+        "https://www.retrofixgames.com/products/warhammer-horus-heresy-mechanicum-karacnos-assault-tank",
+        "https://shop.afk.games/products/mechanicum-karacnos-assault-tank",
+        "https://elementgames.co.uk/clearance-sale/mechanicum-karacnos-assault-tank"
+      ],
+      "readings": [
+        {
+          "reading": "hh",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "2f57-6e9d-8a7b-5c2e",
+              "entryId": "ce4c-753d-aaf1-b4ab",
+              "name": "Karacnos Assault Tank",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
