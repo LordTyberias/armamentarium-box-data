@@ -32823,6 +32823,32 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Tomb King on Necrolith Bone Dragon",
+      "productCodes": [
+        "99122717001"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/tomb-king-on-necrolith-bone-dragon",
+        "https://abyssgamestore.ca/products/tomb-kings-tomb-king-on-necrolith-bone-dragon-07-08",
+        "https://shop.afk.games/products/tomb-kings-of-khemri-tomb-king-on-necrolith-bone-dragon",
+        "https://www.goblingaming.co.uk/products/warhammer-the-old-world-tomb-kings-of-khemri-tomb-king-on-necrolith-bone-dragon"
+      ],
+      "readings": [
+        {
+          "reading": "tow",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "be27-8084-f552-1f4",
+              "entryId": "b2d7-8c5d-c681-cbeb",
+              "name": "Tomb King",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
