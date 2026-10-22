@@ -32957,6 +32957,44 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Maggotkin of Nurgle: Great Unclean One",
+      "productCodes": [
+        "99129915063"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/maggotkin-of-nurgle-great-unclean-one",
+        "https://shop.afk.games/products/daemons-of-nurgle-great-unclean-one",
+        "https://www.goblingaming.co.uk/products/great-unclean-one",
+        "https://elementgames.co.uk/games-workshop/warhammer-40k/chaos-daemons/greatuncleanonenew"
+      ],
+      "readings": [
+        {
+          "reading": "40k",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5108-f98-63c2-53cb",
+              "entryId": "2425-13a7-77f0-0112",
+              "name": "Great Unclean",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "5079-92b5-4879-69f8",
+              "entryId": "bbb9-4b05-be8a-af89",
+              "name": "Great Unclean",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
