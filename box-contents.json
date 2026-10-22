@@ -33019,6 +33019,31 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Flesh-Eater Courts: Crypt Ghouls",
+      "productCodes": [
+        "99120207032"
+      ],
+      "sources": [
+        "https://www.irresistibleforce.com.au/products/flesh-eater-courts-crypt-ghouls",
+        "https://abyssgamestore.ca/products/flesh-eater-courts-crypt-ghouls-91-12",
+        "https://shop.afk.games/products/flesh-eater-courts-crypt-ghouls"
+      ],
+      "readings": [
+        {
+          "reading": "aos",
+          "entries": [
+            {
+              "role": "team",
+              "catalogueId": "b53b-1217-df2e-66d2",
+              "entryId": "0eac-dd60-75d7-198a",
+              "name": "Crypt Ghast Courtier",
+              "count": 1
+            }
+          ]
+        }
+      ]
     }
   ]
 }
