@@ -37,7 +37,8 @@ The table, the schema and the README form **one contract**. A change to one that
   Addendum ARMAM-598); the same hit picks a build sentence over a source's lines and lets two names of one entry confirm
   each other (ADR 0003 Addendum ARMAM-599); an own name listed in `aliases.json` gets the ids of its target, resolved by
   entry and catalogue name, one line per model beside its entry's others (ADR 0004 Addendum ARMAM-642); no id is ever
-  written into `aliases.json`.
+  written into `aliases.json`; a member of a built unit the catalogue lists under it gets the unit's ids, one line per
+  model (ADR 0004 Addendum ARMAM-688).
 - **Aliases format.** `aliases.json` carries its own `format` number, raised by the same rule as the table's and
   independent of it.
 
@@ -67,7 +68,8 @@ and ADR 0004:
   without a contact address (ADR 0003 §7). Captchas and challenges are never circumvented.
 - Counts from a source's "N x Name" lines or from its build sentences ("builds a squad of 10 …"; ADR 0003 Addendum
   ARMAM-599), a line "1 <name> miniature", a build of names ("builds Ciaphas Cain and Jurgen") when every name hits (ADR
-  0003 Addendum ARMAM-642), never from part counts. A read name passes one rule: prose around it is cut, parts, hand weapons and filler
+  0003 Addendum ARMAM-642), the members of a unit built by article ("consisting of three … and one …"), never the unit
+  by article itself, a name carried over "on" when it hits (ADR 0003 Addendum ARMAM-688), never from part counts. A read name passes one rule: prose around it is cut, parts, hand weapons and filler
   words are no model; upgrade sets are no candidates (ADR 0003 Addendum ARMAM-610).
 - Proposes one pull request per box, every entry confirmed by two sources: a **draft** without ids, or with `--auto-merge`
   a ready one with the ids of the one root entry a name names (ADR 0004 Addendum ARMAM-598), merged at once (a merge refused with 405 is tried again, ADR 0004

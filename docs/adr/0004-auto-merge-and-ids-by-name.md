@@ -28,6 +28,10 @@ ids, and is not proposed again, unlike a box left without entries.
 target before any rule; Addendum ARMAM-598 "no root entry is listed twice in a reading" does not hold for an alias, which
 gets the ids beside the other models of its entry.
 
+**Changed by Addendum ARMAM-688:** §2 "exactly one" pair also reaches a member of a built unit: a model the catalogue
+lists under the unit a build sentence hits gets that unit's ids, one line per model beside the others; the id check
+counts a member's pair as valid.
+
 ## Context
 
 The service runs on the server since 2026-10-17 (ARMAM-593). Its drafts wait for the maintainer to add catalogue ids,
@@ -217,3 +221,16 @@ stopped by the timeout would lose it).
   the target as ids (ids by hand, against Addendum ARMAM-593); the target by name alone (several armies link one unit);
   an alias matched through the rules of a hit (more hits, more false ones); a broken target failing the run; the lines of
   an entry's models merged into one with their sum (one entry per model, ARMAM-643).
+
+## Addendum ARMAM-688 — members of a built unit (2026-10-27)
+
+- **Measured** on "Krieg Heavy Weapons Squad" (99120105130): its "Fire Coordinator" is a model of the unit, no root entry,
+  so no rule of a hit gave it ids (ADR 0003 Addendum ARMAM-688).
+- **A member** is a model a build sentence names after its unit ("consisting of three Heavy Weapons Gunners and one Fire
+  Coordinator") and the catalogue lists as a model of the unit the build hits, by its name or without its gear. It keeps
+  its own name and count and gets the unit's ids, one line per model beside the others, as an alias does; the matching of
+  sources keys it by the unit and its own name. Every catalogue and library records the model names under each unit it
+  defines (`CatalogueIndex.IsMember`); the id check counts a member's pair as valid.
+- **No row in `aliases.json`:** the sentence and the catalogue name the member, nobody writes it down.
+- **Named exception widened** in Armamentarium's `CLAUDE.md` (Armamentarium ADR 0118 Addendum ARMAM-688).
+- Decisions of the maintainer. Rejected: the members as aliases (a row per box by hand); the unit as one line with the sum.
