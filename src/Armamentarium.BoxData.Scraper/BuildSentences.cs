@@ -179,8 +179,11 @@ public static partial class BuildSentences
     [GeneratedRegex(@"\b(?:and|plus|as\s+well\s+as|along\s+with|und|sowie)\s+" + Number + @"\s+" + Name, RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex Extra();
 
-    // Capitalised words after "on" right behind a build's name: the mount ("on Warsteed", "on Necrolith Bone Dragon").
-    [GeneratedRegex(@"\G\s+on\s+(?<mount>\p{Lu}[\p{L}'’-]*(?:\s+\p{Lu}[\p{L}'’-]*)*)", RegexOptions.None, Page.RegexTimeout)]
+    // The words after "on" right behind a build's name, up to the next clause: the mount ("on Warsteed", "on Necrolith Bone
+    // Dragon", "on bike"); "on a base" names none.
+    [GeneratedRegex(
+        @"\G\s+on\s+(?<mount>(?>(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*(?:\s+(?!" + Stop + @"\b)\p{L}[\p{L}'’-]*)*))",
+        RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex OnMount();
 
     [GeneratedRegex(@"^\s*(?:[-–—,(:]\s*)?(?:consisting\s+of|comprising|made\s+up\s+of)\s+", RegexOptions.IgnoreCase, Page.RegexTimeout)]

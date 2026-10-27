@@ -549,9 +549,9 @@ The table grows only by hand so far. Measured on 2026-10-17:
   model of the unit the build hits, by its name or without its gear ("Heavy Weapons Gunners" for "Heavy Weapons Gunners
   w/ Lascannon"); each takes the unit's ids (ADR 0004 Addendum ARMAM-688). Else the source counts its lines, or the box
   waits.
-- **A mount:** the capitalised words after "on" right behind a build's name are offered as a longer name ("Darkoath
-  Chieftain on Warsteed"); the agreement takes it instead of the shorter one when it names a root entry. "on" still ends
-  a name that does not hit ("10 Kroot on Citadel bases").
+- **A mount:** the words after "on" right behind a build's name, up to the next clause, are offered as a longer name
+  ("Darkoath Chieftain on Warsteed", "Primaris Chaplain on bike"); the agreement takes it instead of the shorter one when
+  it names a root entry. "on" still ends a name that does not hit ("10 Kroot on Citadel bases").
 - **The `--host` probe** shows a longer name ("or …") and members ("member …").
 - **Boxes already in the table** keep their rows: a reader change never touches a box with ids. The sixteen service boxes
   measured are removed in a data pull request the maintainer merges, their marks in `state.json` are deleted, and the

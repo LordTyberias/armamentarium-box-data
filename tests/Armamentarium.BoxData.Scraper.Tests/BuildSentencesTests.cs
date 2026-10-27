@@ -224,4 +224,14 @@ public sealed class BuildSentencesTests
         CollectionAssert.AreEqual(new[] { (3, "Rust Gunners"), (1, "Fire Warden") }, sentence.Members.Select(m => (m.Count, m.Name)).ToArray());
         Assert.AreEqual(0, sentence.Additions.Count);
     }
+
+    // ARMAM-688: a shop writes the mount in lower case ("one Primaris Chaplain on bike"); it runs to the next clause.
+    [TestMethod]
+    public void Parse_MountInLowerCase_OffersTheLongerNameToTheNextClause()
+    {
+        var sentence = BuildSentences.Parse("<p>This kit builds one Rust Chaplain on bike with a choice of weapons.</p>").Single();
+
+        Assert.AreEqual("Rust Chaplain on bike", sentence.Longer?.Name);
+        Assert.IsNull(BuildSentences.Parse("<p>This kit builds 10 Rust Brothers on a base each.</p>").Single().Longer);
+    }
 }

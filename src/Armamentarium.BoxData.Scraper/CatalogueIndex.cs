@@ -511,6 +511,8 @@ public sealed partial class CatalogueIndex
         catalogues.Add(catalogueName.Trim());
     }
 
+    // ponytail: only model entries nested in the unit; a model the unit reaches through an entryLink is no member and the
+    // box falls back to its lines or waits. Resolve linked targets if such a box shows up.
     private void AddModels(string reading, string? unitId, IEnumerable<string?> names)
     {
         if (unitId is null)
