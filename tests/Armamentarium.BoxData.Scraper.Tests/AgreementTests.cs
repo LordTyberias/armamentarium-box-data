@@ -334,4 +334,76 @@ public sealed class AgreementTests
 
         StringAssert.Contains(result.Waiting, "model count");
     }
+
+    private static Listing Sentences(string host, string html) =>
+        new(host, $"https://{host}/p", false, "Box", [], []) { Sentences = BuildSentences.Parse(html) };
+
+    // ARMAM-688: "builds a <unit> – consisting of three … and one …": one line per member, each keyed apart under the unit.
+    [TestMethod]
+    public void Agree_UnitConsistingOfMembers_GivesTheMembersUnderTheUnit()
+    {
+        const string text = "<p>This kit builds a Rust Gun Squad – consisting of three Rust Gunners and one Fire Warden – for your army.</p>";
+        var result = Agreement.Agree(
+            [Sentences("a.test", text), Sentences("b.test", text)],
+            name => name == "Rust Gun Squad" ? "root:guns" : null,
+            (unit, member) => unit == "Rust Gun Squad" && member is "Rust Gunners" or "Fire Warden");
+
+        Assert.IsNull(result.Waiting);
+        CollectionAssert.AreEqual(
+            new[] { ("Rust Gunners", 3, "Rust Gun Squad"), ("Fire Warden", 1, "Rust Gun Squad") },
+            result.Entries!.Select(e => (e.Name, e.Counts.Single(), e.MemberOf)).ToArray());
+    }
+
+    // ARMAM-688: "builds a <unit>" counts no models; the source's lines count, or the box waits.
+    [TestMethod]
+    public void Agree_UnitByArticleWithoutMembers_CountsNoModel()
+    {
+        const string text = "<p>This kit builds a Rust Command Squad for your army.</p>";
+        string? Root(string name) => name == "Rust Command Squad" ? "root:command" : null;
+
+        Assert.IsNull(Agreement.Agree([Sentences("a.test", text), Sentences("b.test", text)], Root).Entries);
+
+        var withLines = Agreement.Agree(
+            [Sentences("a.test", text) with { Lines = [L(5, "Rust Veterans")] }, Sentences("b.test", text) with { Lines = [L(5, "Rust Veterans")] }],
+            Root);
+        CollectionAssert.AreEqual(new[] { ("Rust Veterans", 5) }, withLines.Entries!.Select(e => (e.Name, e.Counts.Single())).ToArray());
+    }
+
+    // ARMAM-688: members the catalogue does not list under the unit count nothing; neither does the unit.
+    [TestMethod]
+    public void Agree_MembersTheCatalogueDoesNotList_CountNothing()
+    {
+        const string text = "<p>This kit builds a Rust Gun Squad – consisting of three Rust Gunners and one Fire Warden.</p>";
+
+        Assert.IsNull(Agreement.Agree(
+            [Sentences("a.test", text), Sentences("b.test", text)],
+            name => name == "Rust Gun Squad" ? "root:guns" : null,
+            (_, _) => false).Entries);
+    }
+
+    // ARMAM-688: a single model by article still counts one ("builds a Rust Chieftain").
+    [TestMethod]
+    public void Agree_HeroByArticle_IsOne()
+    {
+        const string text = "<p>This kit builds a Rust Chieftain.</p>";
+        var result = Agreement.Agree([Sentences("a.test", text), Sentences("b.test", text)], name => name == "Rust Chieftain" ? "root:chief" : null);
+
+        CollectionAssert.AreEqual(new[] { ("Rust Chieftain", 1) }, result.Entries!.Select(e => (e.Name, e.Counts.Single())).ToArray());
+    }
+
+    // ARMAM-688: the name on a mount wins when it names a root entry; else the name before "on" stays.
+    [TestMethod]
+    public void Agree_NameOnAMount_TheLongerNameWinsWhenItHits()
+    {
+        const string text = "<p>This boxed set builds a Rust Chieftain on Iron Steed, an imposing leader.</p>";
+        var both = Agreement.Agree(
+            [Sentences("a.test", text), Sentences("b.test", text)],
+            name => name switch { "Rust Chieftain" => "root:foot", "Rust Chieftain on Iron Steed" => "root:steed", _ => null });
+        var footOnly = Agreement.Agree(
+            [Sentences("a.test", text), Sentences("b.test", text)],
+            name => name == "Rust Chieftain" ? "root:foot" : null);
+
+        Assert.AreEqual("Rust Chieftain on Iron Steed", both.Entries!.Single().Name);
+        Assert.AreEqual("Rust Chieftain", footOnly.Entries!.Single().Name);
+    }
 }

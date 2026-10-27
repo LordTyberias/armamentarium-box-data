@@ -11,21 +11,29 @@ public static class Agreement
     /// The root entry a name names in the product's readings, or null (ADR 0003 addendum ARMAM-599): a build sentence whose
     /// name names one wins over the source's lines, and two names of one root entry confirm each other.
     /// </param>
-    public static AgreementResult Agree(IReadOnlyList<Listing> listings, Func<string, string?>? rootOf = null)
+    /// <param name="isMember">
+    /// Whether the catalogue lists a name as a model of the unit a name names (ADR 0003 Addendum ARMAM-688): only then do the
+    /// members of a built unit count.
+    /// </param>
+    public static AgreementResult Agree(
+        IReadOnlyList<Listing> listings, Func<string, string?>? rootOf = null, Func<string, string, bool>? isMember = null)
     {
         string Key(string name) => rootOf?.Invoke(name) ?? ContentLines.Normalize(name);
+
+        // A member keeps its own key under its unit, as an alias does (ADR 0004 Addendum ARMAM-688).
+        string KeyOf(Line line) => line.MemberOf is { } unit ? $"{Key(unit)}|member:{ContentLines.Normalize(line.Name)}" : Key(line.Name);
 
         var effective = new Dictionary<Listing, IReadOnlyList<Line>>(ReferenceEqualityComparer.Instance);
         foreach (var listing in listings)
         {
-            effective.TryAdd(listing, Effective(listing, rootOf, Key));
+            effective.TryAdd(listing, Effective(listing, rootOf, isMember, KeyOf));
         }
 
         var described = listings.Where(l => !l.German && effective[l].Count > 0).ToList();
         var keys = new Dictionary<Listing, HashSet<string>>(ReferenceEqualityComparer.Instance);
         foreach (var listing in described)
         {
-            keys[listing] = effective[listing].Select(x => Key(x.Name)).ToHashSet();
+            keys[listing] = effective[listing].Select(KeyOf).ToHashSet();
         }
 
         // A source that shares no entry with another describes another thing, or the same one in its own way (a split
@@ -42,7 +50,7 @@ public static class Agreement
         var confirmations = new List<(Listing German, Listing English, IReadOnlyList<Line> Lines)>();
         foreach (var german in listings.Where(l => l.German))
         {
-            var own = new[] { german.Lines, Effective(german with { Lines = [] }, null, Key) }.Where(l => l.Count > 0).ToList();
+            var own = new[] { german.Lines, Effective(german with { Lines = [] }, null, null, KeyOf) }.Where(l => l.Count > 0).ToList();
             var match = candidates
                 .Select(e => (English: e, German: own.FirstOrDefault(g =>
                     effective[e].Select(l => l.Count).SequenceEqual(g.Select(l => l.Count)))))
@@ -91,7 +99,7 @@ public static class Agreement
         // source states; the box waits instead.
         foreach (var listing in english)
         {
-            if (effective[listing].GroupBy(l => Key(l.Name)).FirstOrDefault(g => g.Count() > 1) is { } twice)
+            if (effective[listing].GroupBy(KeyOf).FirstOrDefault(g => g.Count() > 1) is { } twice)
             {
                 return new AgreementResult(
                     null, sources, $"'{ContentLines.DisplayName(twice.First().Name)}' appears twice in {listing.Host}");
@@ -102,7 +110,7 @@ public static class Agreement
         {
             foreach (var line in effective[listing])
             {
-                Count(Key(line.Name), listing, line);
+                Count(KeyOf(line), listing, line);
             }
         }
 
@@ -111,7 +119,7 @@ public static class Agreement
             var englishLines = effective[match];
             for (var i = 0; i < englishLines.Count; i++)
             {
-                Count(Key(englishLines[i].Name), german, lines[i] with
+                Count(KeyOf(englishLines[i]), german, lines[i] with
                 {
                     NonPlayer = false,
                     AlternativeBuild = false,
@@ -139,7 +147,8 @@ public static class Agreement
                 display[key].NonPlayer,
                 counts[key].Values.Distinct().Order().ToList(),
                 counts[key].Keys.ToList(),
-                display[key].AlternativeBuild));
+                display[key].AlternativeBuild,
+                display[key].MemberOf));
         }
 
         return new AgreementResult(entries, sources, null);
@@ -148,17 +157,26 @@ public static class Agreement
     // What a source counts: its build sentences when their main build names a root entry ("builds a squad of 10 Imperial
     // Navy Breachers" over the shop's split by equipment) or when it lists no lines; else its lines (ADR 0003 addendum
     // ARMAM-599).
-    private static IReadOnlyList<Line> Effective(Listing listing, Func<string, string?>? rootOf, Func<string, string> key)
+    private static IReadOnlyList<Line> Effective(
+        Listing listing, Func<string, string?>? rootOf, Func<string, string, bool>? isMember, Func<Line, string> key)
     {
         string? Root(Line line) => rootOf?.Invoke(line.Name);
+
+        // "a Darkoath Chieftain on Warsteed" names the mounted hero when that name hits (ADR 0003 Addendum ARMAM-688).
+        var sentences = listing.Sentences.Select(s => s.Longer is { } longer && Root(longer) is not null ? s with { Build = longer } : s).ToList();
+
+        // "builds a … Squad" by article states no model count; the unit's members do, when the catalogue lists each of them
+        // under it (ADR 0003 Addendum ARMAM-688).
+        bool Unit(BuildSentence s) => s.Article && !s.Names && CatalogueIndex.IsUnitName(s.Build.Name);
+        bool Members(BuildSentence s) => s.Members.Count > 0 && s.Members.All(m => isMember?.Invoke(s.Build.Name, m.Name) == true);
 
         // A count by article only with a hit: prose builds "a unique boarding party" as readily as "a Leman Russ". A build of
         // names only when every name hits (ADR 0003 Addendum ARMAM-642).
         // ponytail: a hit does not tell a model from a unit ("builds Hellblasters and Eradicators" would count one each);
         // two agreeing sources are the guard, a check of the entry's type if such a box shows up.
-        var usable = listing.Sentences.Where(s => s.Names
+        var usable = sentences.Where(s => s.Names
             ? Root(s.Build) is not null && s.Additions.All(a => Root(a.Build) is not null)
-            : !s.Article || Root(s.Build) is not null).ToList();
+            : (!s.Article || Root(s.Build) is not null) && (!Unit(s) || Members(s))).ToList();
         if (usable.Count == 0)
         {
             return listing.Lines;
@@ -175,7 +193,8 @@ public static class Agreement
 
         // An addition by article follows the same rule: "… armed with a lasgun and a laspistol" adds no model.
         IEnumerable<Line> Counted(BuildSentence s) =>
-            new[] { s.Build }.Concat(s.Additions.Where(a => !a.Article || Root(a.Build) is not null).Select(a => a.Build));
+            (Unit(s) ? s.Members.Select(m => m with { MemberOf = s.Build.Name }) : [s.Build])
+                .Concat(s.Additions.Where(a => !a.Article || Root(a.Build) is not null).Select(a => a.Build));
 
         var chosen = usable.Where(s => ReferenceEquals(s, main) || (Root(s.Build) is { } r && r != mainRoot))
             .SelectMany(Counted)
@@ -183,8 +202,8 @@ public static class Agreement
 
         // Two counts for one entry in one source ("a set of 10 …", "a squad of 9 …"): the source states neither, it drops
         // out for that entry; other sources still count.
-        var stated = usable.SelectMany(Counted).GroupBy(l => key(l.Name))
+        var stated = usable.SelectMany(Counted).GroupBy(key)
             .ToDictionary(g => g.Key, g => g.Select(l => l.Count).Distinct().Count());
-        return chosen.Where(l => stated[key(l.Name)] == 1).DistinctBy(l => key(l.Name)).ToList();
+        return chosen.Where(l => stated[key(l)] == 1).DistinctBy(key).ToList();
     }
 }

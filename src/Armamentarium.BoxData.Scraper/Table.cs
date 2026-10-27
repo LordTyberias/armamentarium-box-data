@@ -43,7 +43,7 @@ public static class Table
             ["readings"] = new JsonArray(readings.Select(r => (JsonNode)new JsonObject
             {
                 ["reading"] = r,
-                ["entries"] = new JsonArray(entries.Select(e => Entry(e, r, idsOf?.Invoke(r, e.Name))).ToArray()),
+                ["entries"] = new JsonArray(entries.Select(e => Entry(e, r, idsOf?.Invoke(r, e.MemberOf ?? e.Name))).ToArray()),
             }).ToArray()),
         };
 

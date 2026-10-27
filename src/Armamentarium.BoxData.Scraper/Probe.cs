@@ -59,6 +59,16 @@ public static class Probe
         foreach (var sentence in listing.Sentences)
         {
             yield return $"  build {sentence.Build.Count} x {sentence.Build.Name}{(sentence.Names ? " (names)" : sentence.Article ? " (article)" : "")}";
+            if (sentence.Longer is { } longer)
+            {
+                yield return $"    or {longer.Count} x {longer.Name}";
+            }
+
+            foreach (var member in sentence.Members)
+            {
+                yield return $"    member {member.Count} x {member.Name}";
+            }
+
             foreach (var addition in sentence.Additions)
             {
                 yield return $"    plus {addition.Build.Count} x {addition.Build.Name}{(sentence.Names ? "" : addition.Article ? " (article)" : "")}";

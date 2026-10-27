@@ -47,6 +47,11 @@ HTTP/1.1 on `.js`, not the rate", "no limit per address across shops was found" 
 **Changed by Addendum ARMAM-642:** §8 also reads a line "1 <name> miniature" without bullet or "x", and a build sentence
 that names models without a count ("builds Ciaphas Cain and Jurgen"), one each, when every name names a root entry.
 
+**Changed by Addendum ARMAM-688:** §8 reads a build by article only before a name with a capital; a build of a unit by
+article ("builds a … Squad") states no model count, the unit's members do ("consisting of three … and one …"), and a
+name carried on over "on" counts when it names a root entry. Addendum ARMAM-599 "a number word or an article right before
+the name" holds for a model, no longer for a unit.
+
 ## Context
 
 The table grows only by hand so far. Measured on 2026-10-17:
@@ -517,3 +522,42 @@ The table grows only by hand so far. Measured on 2026-10-17:
   dependency for what one process does); **curl for every request** (only this address was measured to need it);
   **asking Shopify or the shops** (maintainer's decision); **a run from another machine** (would sidestep the
   classification of the server's address).
+
+## Addendum ARMAM-688 — articles, units, members and mounts (2026-10-27)
+
+- **Measured** on the full run of 2026-10-22 and the table at `1d208b9`, against the shops' texts and the online
+  catalogues (10th and 11th edition):
+  - "Krieg Heavy Weapons Squad" (99120105130) stood with count 1 and its "Fire Coordinator" without ids. The shops write
+    "builds a Krieg Heavy Weapons Squad – consisting of three Heavy Weapons Gunners and one Fire Coordinator"; the article
+    counted the unit as one model, only "and one Fire Coordinator" was read, and the gunners were lost. The catalogues
+    hold the unit as three gunners and one Fire Coordinator, models inside the unit, no root entry of their own.
+  - Four more units by article stood with count 1: Ravenwing Command Squad, Cadian Command Squad, Krieg Command Squad,
+    Grey Knight Strike Squad.
+  - "Darkoath Chieftain on Warsteed" (99120201181) pointed at the Chieftain on foot: "on" ends a name in a build
+    sentence, so "builds a Darkoath Chieftain on Warsteed" read "Darkoath Chieftain". Nine more mounted names were cut the
+    same way (Chaos Lord on Karkadrak, Vampire Lord on Nightmare Steed, Tomb King on Necrolith Bone Dragon and others).
+  - "Ciaphas Cain makes a striking addition to any Imperial Guard collection" read a build "1 x striking addition". The
+    agreement dropped it (an article without a hit), but it hid any build later in the same sentence.
+- **An article before a lower-case name is no build:** the reader tries the sentence further on. This is no name rule:
+  "no capital letter, no model" stays rejected for lines and builds by number (Addendum ARMAM-610, "Boltguns" and
+  "Easy" of a shop's list); it holds only for a build whose count is an article.
+- **A unit by article states no model count:** a build whose count is an article and whose name carries a unit word
+  (squad, team, mob, pack, unit, band, regiment; `CatalogueIndex.IsUnitName`) counts nothing by itself. "builds a
+  Farseer" still counts one.
+- **Members:** right after such a build, "consisting of", "comprising" or "made up of" followed by counted names joined
+  by commas and "and" names the unit's models. They count, one line each, when the catalogue lists every one of them as a
+  model of the unit the build hits, by its name or without its gear ("Heavy Weapons Gunners" for "Heavy Weapons Gunners
+  w/ Lascannon"); each takes the unit's ids (ADR 0004 Addendum ARMAM-688). Else the source counts its lines, or the box
+  waits.
+- **A mount:** the words after "on" right behind a build's name, up to the next clause, are offered as a longer name
+  ("Darkoath Chieftain on Warsteed", "Primaris Chaplain on bike"); the agreement takes it instead of the shorter one when
+  it names a root entry. "on" still ends a name that does not hit ("10 Kroot on Citadel bases").
+- **The `--host` probe** shows a longer name ("or …") and members ("member …").
+- **Boxes already in the table** keep their rows: a reader change never touches a box with ids. The sixteen service boxes
+  measured are removed in a data pull request the maintainer merges, their marks in `state.json` are deleted, and the
+  next run proposes them with this reader.
+- Decisions of the maintainer. Rejected: one line "Krieg Heavy Weapons Squad" with the sum of four (the Fire Coordinator
+  would lose its name); the members through `aliases.json` (one row per box by hand); an article on a unit counting the
+  catalogue's minimum (the box can differ); every entry of type unit as a unit (single heroes are units of one model in
+  the catalogues); "on" always carrying the name on (a base or a board after it); dropping "makes" as a build verb ("This
+  kit makes 10 …"); keeping the rows and waiting for a recheck that never comes.

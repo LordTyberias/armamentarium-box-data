@@ -3,8 +3,11 @@ namespace Armamentarium.BoxData.Scraper;
 /// <summary>A product of the product catalogue: article number, EAN, name, game systems, status, category.</summary>
 public sealed record Product(string Code, string? Ean, string Name, IReadOnlyList<string> Systems, string Status, string Category);
 
-/// <summary>One "N x Name" line of a shop's description. Only the number and the name are kept.</summary>
-public sealed record Line(int Count, string Name, bool NonPlayer, bool AlternativeBuild);
+/// <summary>
+/// One "N x Name" line of a shop's description. Only the number and the name are kept. <see cref="MemberOf"/> names the unit
+/// whose model the line is when a build sentence names its members (ADR 0003 Addendum ARMAM-688).
+/// </summary>
+public sealed record Line(int Count, string Name, bool NonPlayer, bool AlternativeBuild, string? MemberOf = null);
 
 /// <summary>
 /// What one build sentence counts ("builds a squad of 10 …", ADR 0003 addendum ARMAM-599): the build, whether its count
@@ -18,6 +21,17 @@ public sealed record BuildSentence(Line Build, bool Article, IReadOnlyList<Build
     /// additions are one model each and count only when every name names a root entry.
     /// </summary>
     public bool Names { get; init; }
+
+    /// <summary>
+    /// The build's name carried on over "on" ("a Darkoath Chieftain on Warsteed"), or null; it counts instead of the build
+    /// when it names a root entry (ADR 0003 Addendum ARMAM-688).
+    /// </summary>
+    public Line? Longer { get; init; }
+
+    /// <summary>
+    /// The models a built unit consists of ("a … Squad – consisting of three … and one …", ADR 0003 Addendum ARMAM-688).
+    /// </summary>
+    public IReadOnlyList<Line> Members { get; init; } = [];
 }
 
 /// <summary>
@@ -30,9 +44,12 @@ public sealed record Listing(
     public IReadOnlyList<BuildSentence> Sentences { get; init; } = [];
 }
 
-/// <summary>An entry two sources confirm: one count, or the counts they disagree on.</summary>
+/// <summary>
+/// An entry two sources confirm: one count, or the counts they disagree on. A member takes the ids of the unit
+/// <see cref="MemberOf"/> names (ADR 0004 Addendum ARMAM-688).
+/// </summary>
 public sealed record ProposedEntry(
-    string Name, bool NonPlayer, IReadOnlyList<int> Counts, IReadOnlyList<string> Hosts, bool AlternativeBuild);
+    string Name, bool NonPlayer, IReadOnlyList<int> Counts, IReadOnlyList<string> Hosts, bool AlternativeBuild, string? MemberOf = null);
 
 /// <summary>Either the entries and the source URLs behind them, or why the box waits.</summary>
 public sealed record AgreementResult(IReadOnlyList<ProposedEntry>? Entries, IReadOnlyList<string> Sources, string? Waiting);

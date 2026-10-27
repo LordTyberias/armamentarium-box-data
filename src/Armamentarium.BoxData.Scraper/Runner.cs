@@ -437,7 +437,7 @@ public sealed class Runner(
     private bool Suffices(Product product, IReadOnlyList<Listing> listings) =>
         ProductCatalogue.IsCombatPatrol(product)
             ? listings.Select(l => l.Url).Distinct().Count() >= 2
-            : Agreement.Agree(listings, RootOf(product)).Entries is not null;
+            : Agreement.Agree(listings, RootOf(product), MemberOf(product)).Entries is not null;
 
     // Retryable: at least one shop failed in a way the same run can still get past (a throttle, not a refusal).
     private async Task<(List<Listing> Listings, int Failed, bool Retryable)> AskAsync(
@@ -469,7 +469,7 @@ public sealed class Runner(
     {
         // The table names a box in English (README, Box); a German shop's title never becomes the name, nor the title of a
         // listing that is no source of the box (ADR 0003 addendum ARMAM-601).
-        var agreement = ProductCatalogue.IsCombatPatrol(product) ? null : Agreement.Agree(listings, RootOf(product));
+        var agreement = ProductCatalogue.IsCombatPatrol(product) ? null : Agreement.Agree(listings, RootOf(product), MemberOf(product));
         var sourceUrls = agreement?.Sources ?? listings.Select(l => l.Url).Distinct().ToList();
         var englishTitle = listings.FirstOrDefault(l => !l.German && l.Title.Length > 0 && sourceUrls.Contains(l.Url))?.Title;
         var name = englishTitle ?? Text.Clean(product.Name);
@@ -523,7 +523,7 @@ public sealed class Runner(
                 .AppendLine("|---|---|---|---|");
             foreach (var entry in agreement.Entries)
             {
-                var ids = readings.Select(r => IdsOf(r, entry.Name) is { } e ? $"{r}: {Text.Code(e.CatalogueId)} {Text.Code(e.EntryId)}" : null)
+                var ids = readings.Select(r => IdsOf(r, entry.MemberOf ?? entry.Name) is { } e ? $"{r}: {Text.Code(e.CatalogueId)} {Text.Code(e.EntryId)}" : null)
                     .OfType<string>()
                     .ToList();
                 body.AppendLine($"| {Text.Code(entry.Name)} | {string.Join(" or ", entry.Counts)} | {string.Join(", ", entry.Hosts)} | " +
@@ -568,6 +568,14 @@ public sealed class Runner(
                 : readings.Any(r => catalogues!.IsAlias(r, name)) ? $"{string.Join('|', hits)}|alias:{ContentLines.Normalize(name)}"
                 : string.Join('|', hits);
         };
+    }
+
+    // Whether a name is a model of the unit another name hits, in any of the product's readings: a member, which takes the
+    // unit's ids (ADR 0004 Addendum ARMAM-688).
+    private Func<string, string, bool> MemberOf(Product product)
+    {
+        var readings = ProductCatalogue.ReadingsOf(product);
+        return (unit, name) => readings.Any(r => IdsOf(r, unit) is { } ids && catalogues!.IsMember(r, ids, name));
     }
 
     private Proposal? LanguageVariants(string knownCode, IReadOnlyList<string> added, IReadOnlyList<Listing> listings, string text)
