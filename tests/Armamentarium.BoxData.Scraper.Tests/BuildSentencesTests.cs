@@ -190,4 +190,38 @@ public sealed class BuildSentencesTests
 
         Assert.IsTrue(sentence.Names);
     }
+
+    // ARMAM-688: "… makes a striking addition to any army" names no model; a build later in the sentence still counts.
+    [TestMethod]
+    public void Parse_ArticleBuildWithoutACapital_IsNoBuild()
+    {
+        CollectionAssert.AreEqual(Array.Empty<(int, string)>(), Read("<p>The Iron Strider makes a striking addition to any army.</p>"));
+        CollectionAssert.AreEqual(
+            new[] { (10, "Iron Brothers") },
+            Read("<p>The Iron Strider makes a fine centrepiece, and this kit builds 10 Iron Brothers.</p>"));
+    }
+
+    // ARMAM-688: "builds a Rust Chieftain on Iron Steed" stopped at "on" and named the hero on foot.
+    [TestMethod]
+    public void Parse_NameOnAMount_OffersTheLongerName()
+    {
+        var sentence = BuildSentences.Parse("<p>This boxed set builds a Rust Chieftain on Iron Steed, an imposing mounted leader.</p>").Single();
+
+        Assert.AreEqual("Rust Chieftain", sentence.Build.Name);
+        Assert.AreEqual("Rust Chieftain on Iron Steed", sentence.Longer?.Name);
+        Assert.AreEqual(1, sentence.Longer?.Count);
+    }
+
+    // ARMAM-688: "builds a <unit> – consisting of three … and one …" names the unit's models.
+    [TestMethod]
+    public void Parse_UnitConsistingOfModels_GivesTheMembers()
+    {
+        var sentence = BuildSentences.Parse(
+            "<p>This kit builds a Rust Gun Squad – consisting of three Rust Gunners and one Fire Warden – for use in your armies.</p>").Single();
+
+        Assert.AreEqual("Rust Gun Squad", sentence.Build.Name);
+        Assert.IsTrue(sentence.Article);
+        CollectionAssert.AreEqual(new[] { (3, "Rust Gunners"), (1, "Fire Warden") }, sentence.Members.Select(m => (m.Count, m.Name)).ToArray());
+        Assert.AreEqual(0, sentence.Additions.Count);
+    }
 }

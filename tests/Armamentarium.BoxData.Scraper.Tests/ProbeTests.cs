@@ -97,4 +97,27 @@ public sealed class ProbeTests
             new[] { "shop.test: https://shop.test/p Hero", "  build 1 x Iron Hero (names)", "    plus 1 x Rust Aide" },
             Probe.Describe("shop.test", listing).ToArray());
     }
+
+    // ARMAM-688: the name over "on" and the members of a built unit, as the agreement may take them.
+    [TestMethod]
+    public void Describe_LongerNameAndMembers_AreShown()
+    {
+        var listing = new Listing("shop.test", "https://shop.test/p", German: false, "Box", [], [])
+        {
+            Sentences = BuildSentences.Parse(
+                "<p>This kit builds a Rust Chieftain on Iron Steed.</p><p>This kit builds a Rust Gun Squad – consisting of three Rust Gunners and one Fire Warden.</p>"),
+        };
+
+        CollectionAssert.AreEqual(
+            new[]
+            {
+                "shop.test: https://shop.test/p Box",
+                "  build 1 x Rust Chieftain (article)",
+                "    or 1 x Rust Chieftain on Iron Steed",
+                "  build 1 x Rust Gun Squad (article)",
+                "    member 3 x Rust Gunners",
+                "    member 1 x Fire Warden",
+            },
+            Probe.Describe("shop.test", listing).ToArray());
+    }
 }

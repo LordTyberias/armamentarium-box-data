@@ -63,8 +63,30 @@ public sealed partial class CatalogueIndex
     private readonly HashSet<string> _unavailable = new(StringComparer.Ordinal);
     private readonly Dictionary<string, Dictionary<string, RootEntry?>> _aliasesByReading = new(StringComparer.Ordinal);
 
+    // The normalised names of the models under each unit a catalogue or library defines, by the unit's entry id.
+    private readonly Dictionary<string, Dictionary<string, HashSet<string>>> _modelsByReading = new(StringComparer.Ordinal);
+
     // The word a shop leaves off a unit's name ("Intercessors" for "Intercessor Squad").
     private static readonly string[] UnitWords = ["squad", "mob", "unit", "pack", "band", "regiment", "team"];
+
+    /// <summary>
+    /// The name names a unit of several models ("Krieg Heavy Weapons Squad"): a build of it by article states no model count
+    /// (ADR 0003 Addendum ARMAM-688).
+    /// </summary>
+    public static bool IsUnitName(string name) =>
+        name.ToLowerInvariant().Split([' ', '-', ','], StringSplitOptions.RemoveEmptyEntries).Any(w => UnitWords.Contains(w));
+
+    /// <summary>
+    /// The name is a model of the unit, as the catalogue names it or without its gear ("Heavy Weapons Gunners" for
+    /// "Heavy Weapons Gunners w/ Lascannon"): a member, which takes the unit's ids (ADR 0004 Addendum ARMAM-688).
+    /// </summary>
+    public bool IsMember(string reading, RootEntry unit, string name)
+    {
+        var key = ContentLines.Normalize(name);
+        return key.Length > 0
+            && _modelsByReading.GetValueOrDefault(reading)?.GetValueOrDefault(unit.EntryId) is { } models
+            && models.Any(m => m == key || m.StartsWith(key + " w ", StringComparison.Ordinal) || m.StartsWith(key + " with ", StringComparison.Ordinal));
+    }
 
     /// <summary>
     /// The ids for a model name (ADR 0004, Addendum ARMAM-598), from the first of these that names any root entry of the
@@ -170,7 +192,7 @@ public sealed partial class CatalogueIndex
     public IdState Check(string reading, RootEntry ids, string name) =>
         _unavailable.Contains(reading) || !_namesByReading.TryGetValue(reading, out var entries) ? IdState.Unchecked
         : !entries.TryGetValue(ids, out var names) ? IdState.Orphaned
-        : names.Contains(ContentLines.Normalize(name)) || Find(reading, name) == ids ? IdState.Valid
+        : names.Contains(ContentLines.Normalize(name)) || Find(reading, name) == ids || IsMember(reading, ids, name) ? IdState.Valid
         : IdState.Renamed;
 
     private RootEntry? Resolve(string reading, IReadOnlyCollection<RootEntry> entries)
@@ -335,6 +357,12 @@ public sealed partial class CatalogueIndex
         foreach (var defined in root.Descendants().Where(e => e.Name.LocalName == "selectionEntry"))
         {
             AddHome(reading, Attr(defined, "id"), Attr(root, "name"));
+            if (Attr(defined, "type") == "unit")
+            {
+                AddModels(reading, Attr(defined, "id"), defined.Descendants()
+                    .Where(e => e.Name.LocalName == "selectionEntry" && Attr(e, "type") == "model")
+                    .Select(e => Attr(e, "name")));
+            }
         }
 
         if ((string?)root.Attribute("library") == "true")
@@ -420,10 +448,34 @@ public sealed partial class CatalogueIndex
                         foreach (var entry in property.Value.EnumerateArray().Where(e => e.ValueKind == JsonValueKind.Object))
                         {
                             AddHome(reading, Scalar(entry, "id"), catalogueName);
+                            if (Scalar(entry, "type") == "unit")
+                            {
+                                AddModels(reading, Scalar(entry, "id"), Models(entry));
+                            }
                         }
                     }
 
                     AddHomes(property.Value, catalogueName);
+                }
+            }
+        }
+
+        // The names of the model entries at any depth under a unit, as in the XML.
+        static IEnumerable<string?> Models(JsonElement unit)
+        {
+            foreach (var property in unit.EnumerateObject().Where(p => p.Value.ValueKind == JsonValueKind.Array))
+            {
+                foreach (var child in property.Value.EnumerateArray().Where(c => c.ValueKind == JsonValueKind.Object))
+                {
+                    if (property.Name == "selectionEntries" && Scalar(child, "type") == "model")
+                    {
+                        yield return Scalar(child, "name");
+                    }
+
+                    foreach (var name in Models(child))
+                    {
+                        yield return name;
+                    }
                 }
             }
         }
@@ -457,6 +509,26 @@ public sealed partial class CatalogueIndex
         }
 
         catalogues.Add(catalogueName.Trim());
+    }
+
+    private void AddModels(string reading, string? unitId, IEnumerable<string?> names)
+    {
+        if (unitId is null)
+        {
+            return;
+        }
+
+        if (!_modelsByReading.TryGetValue(reading, out var units))
+        {
+            _modelsByReading[reading] = units = new(StringComparer.Ordinal);
+        }
+
+        if (!units.TryGetValue(unitId.Trim(), out var models))
+        {
+            units[unitId.Trim()] = models = new(StringComparer.Ordinal);
+        }
+
+        models.UnionWith(names.OfType<string>().Select(n => ContentLines.Normalize(n.Trim())).Where(n => n.Length > 0));
     }
 
     private bool Add(string reading, bool preferred, string? catalogueId, string? catalogueName, string element, string? type, string? id, string? name, string? targetId)

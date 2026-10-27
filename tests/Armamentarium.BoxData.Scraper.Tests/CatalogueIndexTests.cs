@@ -384,4 +384,74 @@ public sealed class CatalogueIndexTests
         Assert.IsNull(index.Find("40k", "Warlord"));
         Assert.IsTrue(log.Any(l => l.Contains("Big.cat", StringComparison.Ordinal)));
     }
+
+    private const string UnitXml = """
+        <?xml version="1.0" encoding="utf-8"?>
+        <catalogue id="cat-rust" name="Rust Army - Library" library="true" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+          <sharedSelectionEntries>
+            <selectionEntry type="unit" id="lib-guns" name="Rust Gun Squad">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="g1" name="3 Rust Gunners">
+                  <selectionEntries>
+                    <selectionEntry type="model" id="m1" name="Rust Gunners w/ Lascannon"/>
+                    <selectionEntry type="model" id="m2" name="Rust Gunners w/ Flamer"/>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="g2" name="Fire Warden">
+                  <selectionEntries>
+                    <selectionEntry type="model" id="m3" name="Fire Warden"/>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </sharedSelectionEntries>
+        </catalogue>
+        """;
+
+    private const string UnitLinkXml = """
+        <?xml version="1.0" encoding="utf-8"?>
+        <catalogue id="cat-rust-army" name="Rust Army" library="false" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+          <entryLinks>
+            <entryLink id="el-guns" name="Rust Gun Squad" targetId="lib-guns" type="selectionEntry"/>
+          </entryLinks>
+        </catalogue>
+        """;
+
+    private const string UnitJson = """
+        {"catalogue": {"id": "cat-rust", "name": "Rust Army - Library", "library": true,
+          "sharedSelectionEntries": [{"type": "unit", "id": "lib-guns", "name": "Rust Gun Squad",
+            "selectionEntryGroups": [{"id": "g1", "name": "3 Rust Gunners",
+              "selectionEntries": [{"type": "model", "id": "m1", "name": "Rust Gunners w/ Lascannon"}]},
+              {"id": "g2", "name": "Fire Warden", "selectionEntries": [{"type": "model", "id": "m3", "name": "Fire Warden"}]}]}]}}
+        """;
+
+    // ARMAM-688: a model of a unit, named as the catalogue names it or without its "w/ …" gear, is a member of that unit.
+    [TestMethod]
+    public void IsMember_ModelsOfTheUnit_AreMembersInXmlAndJson()
+    {
+        foreach (var (file, library) in new[] { ("Rust Army - Library.cat", UnitXml), ("Rust Army - Library.json", UnitJson) })
+        {
+            var index = new CatalogueIndex();
+            index.AddCatalogue("40k", file, Bytes(library));
+            index.AddCatalogue("40k", "Rust Army.cat", Bytes(UnitLinkXml));
+            var unit = index.Find("40k", "Rust Gun Squad")!;
+
+            Assert.IsTrue(index.IsMember("40k", unit, "Fire Warden"), file);
+            Assert.IsTrue(index.IsMember("40k", unit, "Rust Gunners"), file);
+            Assert.IsFalse(index.IsMember("40k", unit, "Rust"), file);
+            Assert.IsFalse(index.IsMember("40k", unit, "Iron Brothers"), file);
+            Assert.IsFalse(index.IsMember("kt", unit, "Fire Warden"), file);
+            Assert.AreEqual(IdState.Valid, index.Check("40k", unit, "Fire Warden"), file);
+            Assert.AreEqual(IdState.Renamed, index.Check("40k", unit, "Iron Brothers"), file);
+        }
+    }
+
+    [TestMethod]
+    public void IsUnitName_NamesWithAUnitWord()
+    {
+        Assert.IsTrue(CatalogueIndex.IsUnitName("Rust Gun Squad"));
+        Assert.IsTrue(CatalogueIndex.IsUnitName("Rust Kill Team"));
+        Assert.IsFalse(CatalogueIndex.IsUnitName("Rust Chieftain"));
+        Assert.IsFalse(CatalogueIndex.IsUnitName("Squadron Leader"));
+    }
 }

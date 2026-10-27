@@ -29,8 +29,11 @@ public static partial class BuildSentences
         {
             // The first build of the sentence whose name is a model. A start inside the parts ("70 Teile, aus denen du zehn
             // … bauen") is tried again further on, so the parts never hide the build behind them.
+            // "makes a striking addition to any army": a build by article names a model only with a capital (ADR 0003 Addendum
+            // ARMAM-688); a lower-case name of a shop's list ("Boltguns") stays with Tidy.
             var build = Build().Match(sentence);
-            while (build.Success && Read(build) is null)
+            while (build.Success && (Read(build) is null
+                || (Articles.Contains(build.Groups["count"].Value) && !build.Groups["name"].Value.Any(char.IsUpper))))
             {
                 build = Build().Match(sentence, build.Index + 1);
             }
@@ -52,16 +55,40 @@ public static partial class BuildSentences
                 continue;
             }
 
-            // An alternative ends the additions ("or two units of 10"); an "or" between two weapons does not.
+            var line = Read(build)!;
+
+            // "a Darkoath Chieftain on Warsteed": "on" ends a name ("10 Kroot on Citadel bases"), so the name carried on over
+            // it is offered beside; the agreement takes it when it names a root entry (ADR 0003 Addendum ARMAM-688).
+            var name = build.Groups["name"];
+            var mount = OnMount().Match(sentence, name.Index + name.Length);
+            var longer = mount.Success && ContentLines.Tidy(Text.Clean($"{name.Value} on {mount.Groups["mount"].Value}")) is { } carried
+                ? line with { Name = carried }
+                : null;
+
+            // "a … Squad – consisting of three Gunners and one Fire Coordinator": the unit's models (ADR 0003 Addendum ARMAM-688).
             var rest = sentence[(build.Index + build.Length)..];
+            var members = new List<Line>();
+            if (Composition().Match(rest) is { Success: true } composition)
+            {
+                var at = composition.Length;
+                for (var member = Member().Match(rest, at); member.Success && Read(member) is { } read; member = Member().Match(rest, at))
+                {
+                    members.Add(read);
+                    at = member.Index + member.Length;
+                }
+
+                rest = members.Count > 0 ? rest[at..] : rest;
+            }
+
+            // An alternative ends the additions ("or two units of 10"); an "or" between two weapons does not.
             var alternative = AlternativeStart().Match(rest);
             var additions = Extra().Matches(alternative.Success ? rest[..alternative.Index] : rest)
-                .Select(m => Read(m) is { } line ? new BuildSentence(line, Articles.Contains(m.Groups["count"].Value), []) : null)
+                .Select(m => Read(m) is { } addition ? new BuildSentence(addition, Articles.Contains(m.Groups["count"].Value), []) : null)
                 .OfType<BuildSentence>()
                 .ToList();
 
             // The same sentence twice (a summary and the description) is one finding.
-            var found = new BuildSentence(Read(build)!, Articles.Contains(build.Groups["count"].Value), additions);
+            var found = new BuildSentence(line, Articles.Contains(build.Groups["count"].Value), additions) { Longer = longer, Members = members };
             if (!sentences.Any(s => s.Build.Count == found.Build.Count
                 && ContentLines.Normalize(s.Build.Name) == ContentLines.Normalize(found.Build.Name)))
             {
@@ -151,6 +178,17 @@ public static partial class BuildSentences
 
     [GeneratedRegex(@"\b(?:and|plus|as\s+well\s+as|along\s+with|und|sowie)\s+" + Number + @"\s+" + Name, RegexOptions.IgnoreCase, Page.RegexTimeout)]
     private static partial Regex Extra();
+
+    // Capitalised words after "on" right behind a build's name: the mount ("on Warsteed", "on Necrolith Bone Dragon").
+    [GeneratedRegex(@"\G\s+on\s+(?<mount>\p{Lu}[\p{L}'’-]*(?:\s+\p{Lu}[\p{L}'’-]*)*)", RegexOptions.None, Page.RegexTimeout)]
+    private static partial Regex OnMount();
+
+    [GeneratedRegex(@"^\s*(?:[-–—,(:]\s*)?(?:consisting\s+of|comprising|made\s+up\s+of)\s+", RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex Composition();
+
+    // One counted model of a composition, joined to the one before by a comma or "and".
+    [GeneratedRegex(@"\G(?:\s*,\s*(?:and\s+)?|\s+and\s+)?" + Number + @"\s+" + Name, RegexOptions.IgnoreCase, Page.RegexTimeout)]
+    private static partial Regex Member();
 
     // "or" starts an alternative build only before a number ("or two units of 10"), not between two weapons ("a gauss
     // flayer or a gauss reaper").
